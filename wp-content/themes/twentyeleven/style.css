@@ -36,7 +36,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	outline: 0;
 }
 body {
-	background: #fff;
+	background: #000;
 	line-height: 1;
 }
 ol, ul {
@@ -321,7 +321,7 @@ body, input, textarea {
 	line-height: 1.625;
 }
 body {
-	background: #e2e2e2;
+	background: #000;
 }
 #page {
 	background: #fff;
