@@ -1,0 +1,42 @@
+<!-- 
+    Author: Mike Newell © 2012
+-->
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instagram API Prototype</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        <div id="wrap">
+            
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../javascripts/jquery.min.js">\x3C/script>')</script>
+        <script>
+            //https://api.instagram.com/v1/tags/snow/media/recent?access_token=231409256.f59def8.2ff900bc94ab4dbe848190d109b7fd91
+            
+            (function() {
+                $(window).load(function() {
+                    $.getJSON('feed.php', function(data) {
+                        
+                        console.dir(data)
+                        
+//                        var items = [];
+
+                        $.each(data, function(key, val) {
+                            //items.push('<li id="' + key + '">' + val + '</li>');
+                        });
+
+                    });
+                });
+            })(jQuery);
+            
+        </script>
+    </body>
+</html>
