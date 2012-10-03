@@ -22,15 +22,18 @@ require_once 'Instagram.php';
  * instagram provide you at http://instagr.am/developer/
  */
 $config = array(
-        'client_id' => '', // Your client id
-        'client_secret' => '', // Your client secret
+        'client_id' => '05e13afcd3d6439fb57afa11fc64ccb7',
+        'client_secret' => '1666fc9a74d44502a062e7d2c863856d',
         'grant_type' => 'authorization_code',
-        'redirect_uri' => '', // The redirect URI you provided when signed up for the service
+        'redirect_uri' => 'http://sfsuperbowl.com/instagram/api/callback.php',
      );
 
 // Instantiate the API handler object
 $instagram = new Instagram($config);
 $accessToken = $instagram->getAccessToken();
+
+echo $accessToken;
+
 $_SESSION['InstagramAccessToken'] = $accessToken;
 
 $instagram->setAccessToken($_SESSION['InstagramAccessToken']);
@@ -50,6 +53,7 @@ $response = json_decode($popular, true);
 <body>
 
 <h1>Popular Media</h1>
+<p>access_token: <?php echo $accessToken; ?></p>
 
 <?
     foreach ($response['data'] as $data) {
