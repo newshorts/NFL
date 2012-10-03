@@ -19,21 +19,65 @@ and open the template in the editor.
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../javascripts/jquery.min.js">\x3C/script>')</script>
         <script>
-            //https://api.instagram.com/v1/tags/snow/media/recent?access_token=231409256.f59def8.2ff900bc94ab4dbe848190d109b7fd91
+            //https://api.instagram.com/v1/tags/snow/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9
             
             (function() {
                 $(window).load(function() {
-                    $.getJSON('feed.php', function(data) {
+                    
+                    var Instagram = function(access_token) {
                         
-                        console.dir(data)
+                        var _access_token;
                         
-//                        var items = [];
+                        var init = function() {
+                            
+                            _access_token = access_token;
+                            
+                            window.addEventListener('newPhotos', photosLoaded, false);
+                            
+                            getNewPhotos();
+                        };
+                        
+                        var getNewPhotos = function() {
+                            $.ajax({
+                                url: 'https://api.instagram.com/v1/tags/snow/media/recent?access_token=' + _access_token,
+                                type: 'GET',
+                                dataType: 'jsonp',
+                                success: function(data) {
+    //                                console.log('data returned')
+    //                                console.dir(data);
 
-                        $.each(data, function(key, val) {
-                            //items.push('<li id="' + key + '">' + val + '</li>');
-                        });
-
-                    });
+                                    var evt = new CustomEvent('newPhotos', {
+                                        detail: data
+                                    });
+                                    window.dispatchEvent(evt);
+                                }
+                            });
+                        };
+                        
+                        var photosLoaded = function(evt) {
+                            console.log('custom event dispatched')
+                            outputImages(evt.detail.data);
+                            setTimeout(function() {
+                                getNewPhotos();
+                            }, 15000);
+                        };
+                        
+                        var outputImages = function(data) {
+                            $(data).each(function(idx) {
+                                
+                                console.log(data)
+                                
+                                var imageURL = data[idx].images.standard_resolution.url;
+                                
+                                $('#wrap').append('<img src="'+imageURL+'" />');
+                            });
+                        };
+                        
+                        init();
+                    };
+                    
+                    var instagram = new Instagram('231409256.05e13af.c3f64f166e634b1c967cc819f12061d9');
+                    
                 });
             })(jQuery);
             

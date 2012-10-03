@@ -25,7 +25,7 @@ $config = array(
         'client_id' => '05e13afcd3d6439fb57afa11fc64ccb7',
         'client_secret' => '1666fc9a74d44502a062e7d2c863856d',
         'grant_type' => 'authorization_code',
-        'redirect_uri' => 'http://sfsuperbowl.com/instagram/api/callback.php',
+        'redirect_uri' => 'http://sfsuperbowl.com/instagram/feed.php',
      );
 
 // Instantiate the API handler object
@@ -44,5 +44,6 @@ header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 echo $popular;
+
 ?>
 <?php die(); ?>
