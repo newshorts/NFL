@@ -1,21 +1,21 @@
 <?php
 /**
  * Instagram PHP API example usage.
- * This is the entry point of your application, it will detect whether
- * the user is already authenticated and will present her the login
- * window in case she is not.
+ * This script must be the one receiving the response from
+ * instagram's servers after requesting an access token.
  * 
- * If the authentication token is already stored (as a cookie in this case),
- * the user will be redirected to callback.php which is basically the same
- * URI callback that you must set up with Instagram as the return address
- * for your application on their developers section:
- * http://instagr.am/developer/
+ * For example, if the redirect URI that you set up with instagram
+ * is http://example.com/callback.php, this script must be named
+ * callback.php and put at the root of your server so the access token
+ * can be processed and all the actions executed.
  * 
- * 
- * If you have any question, check http://mauriciocuenca.com/ for the
- * latest updates
+ * http://example.com/callback.php must be replaced for REDIRECT-URI
+ * in the following URI, along with your CLIENT-ID:
+ * https://instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token
+ * https://api.instagram.com/oauth/authorize/?client_id=e8d6b06f7550461e897b45b02d84c23e&redirect_uri=http://mauriciocuenca.com/qnktwit/confirm.php&response_type=code
  */
-require_once 'api/Instagram.php';
+session_start();
+require_once 'Instagram.php';
 
 /**
  * Configuration params, make sure to write exactly the ones
@@ -28,16 +28,21 @@ $config = array(
         'redirect_uri' => 'http://sfsuperbowl.com/instagram/api/callback.php',
      );
 
-/**
- * This is how a wrong response looks like
- * array(1) { ["InstagramOAuthToken"]=> string(89) "{"code": 400, "error_type": "OAuthException", "error_message": "No matching code found."}" }
- */
-session_start();
-if (isset($_SESSION['InstagramAccessToken']) && !empty($_SESSION['InstagramAccessToken'])) {
-    header('Location: api/callback.php');
-    die();
-}
-
 // Instantiate the API handler object
 $instagram = new Instagram($config);
-$instagram->openAuthorizationUrl();
+$accessToken = $instagram->getAccessToken();
+
+echo $accessToken;
+
+$_SESSION['InstagramAccessToken'] = $accessToken;
+
+$instagram->setAccessToken($_SESSION['InstagramAccessToken']);
+$popular = $instagram->getPopularMedia();
+
+// After getting the response, let's iterate the payload
+header('Cache-Control: no-cache, must-revalidate');
+header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
+header('Content-type: application/json');
+echo $popular;
+?>
+<?php die(); ?>
