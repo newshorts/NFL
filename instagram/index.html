@@ -29,17 +29,15 @@ and open the template in the editor.
                     var Instagram = function(access_token) {
                         
                         var _access_token;
-                        
                         var canvas = $('#canvas');
-                        
                         var imgArr = new Array();
                         
                         var init = function() {
                             
                             $('#wrap').isotope({
                                 itemSelector: '.item',
-                                masonryHorizontal: {
-                                    rowHeight: 1750
+                                masonry: {
+                                    columnWidtht: 75
                                 },
                                 sortBy: 'random'
                             });
@@ -52,10 +50,11 @@ and open the template in the editor.
                                 photosLoaded(evt.originalEvent);
                             });
                             
-                            getNewPhotos('snow');
-                            setTimeout(function() {
-                                getNewPhotos('awesome');
-                            }, 7500);
+                            getNewPhotos('nfl');
+                            getNewPhotos('sanfrancisco');
+//                            setTimeout(function() {
+//                                getNewPhotos('sanfrancisco');
+//                            }, 7500);
 //                            getNewPhotos('football');
                             
                             shuffle();
@@ -68,7 +67,7 @@ and open the template in the editor.
                                 dataType: 'jsonp',
                                 success: function(data) {
     //                                console.log('data returned')
-    //                                console.dir(data);
+                                    console.dir(data);
 
                                     var evt = new CustomEvent('newPhotos', {
                                         detail: data
@@ -83,8 +82,10 @@ and open the template in the editor.
                             console.log('custom event dispatched')
                             outputImages(evt.detail.data);
                             setTimeout(function() {
+                                console.log('dipatching get new photos again');
                                 getNewPhotos();
                             }, 15000);
+                            
                         };
                         
                         var outputImages = function(data) {
@@ -106,6 +107,7 @@ and open the template in the editor.
                                 }
 
                                 if(notInArr) {
+                                    console.log('inserting new image')
                                     var img = new Image();
                                     img.style.display = 'none';
                                     $(img).one('load', addImageToScreen);
@@ -119,13 +121,12 @@ and open the template in the editor.
                         var addImageToScreen = function(evt) {
                             // add the images in a brick array fashion
                             var img = evt.currentTarget;
-                            
                             var selector = (Math.floor(Math.random()*3) + 1);
                             
                             var widths = {
                                 1: 150,
                                 2: 150,
-                                3: 300
+                                3: 150
                             };
                             
                             var newImage = $('<img class="item" src="'+img.src+'" />');
@@ -140,12 +141,13 @@ and open the template in the editor.
                         };
                         
                         var shuffle = function() {
-                            
-//                            setInterval(function() {
-//                                $('#wrap').isotope('suffle', function() {
-//                                    // complete
-//                                });
-//                            }, 28000)
+                            setInterval(function() {
+
+                                $('#wrap').isotope('shuffle', function() {
+                                    // complete
+                                    console.log('shuffle')
+                                });
+                            }, 10000)
                             
                         };
                         
