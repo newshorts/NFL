@@ -44,6 +44,16 @@ get_header(); ?>
 				</article><!-- #post-0 -->
 
 			<?php endif; ?>
+			
+			
+			<?php echo gplus_count(); ?>
+			
+			<?php echo twitter_count(); ?>
+			
+			<?php echo fb_count(); ?>
+			
+			
+			
 
 			</div><!-- #content -->
 		</div><!-- #primary -->
