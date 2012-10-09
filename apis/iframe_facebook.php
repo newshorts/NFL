@@ -145,54 +145,7 @@ $page = 'home';
 			
 			
 			
-			<div class="panel">
-				<div id="gplus">
-					<h6>Google +1's (TechCrunch.com)</h6>
-					
-					<div class="numberboard">
-					<?php
-
-					 $url = "http://techcrunch.com/";
-					 
-					 $ch = curl_init();  
-					 curl_setopt($ch, CURLOPT_URL, "https://clients6.google.com/rpc?key=AIzaSyCKSbrvQasunBoV16zDH9R33D88CeLr9gQ");
-					 curl_setopt($ch, CURLOPT_POST, 1);
-					 curl_setopt($ch, CURLOPT_POSTFIELDS, '[{"method":"pos.plusones.get","id":"p","params":{"nolog":true,"id":"' . $url . '","source":"widget","userId":"@viewer","groupId":"@self"},"jsonrpc":"2.0","key":"p","apiVersion":"v1"}]');
-					 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-					 curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
-					 
-					 $curl_results = curl_exec ($ch);
-					 
-					 curl_close ($ch);
-					 
-					 $parsed_results = json_decode($curl_results, true);
-
-					 /*
-echo "stuff";
-					 print_r($curl_results);
-*/
-					 
-					?>
-
-					<span id="googlePluses" data-google="<?php echo $parsed_results[0]['result']['metadata']['globalCounts']['count']; ?>">
-					</span>
-					<span id="output"></span>
-					</div>
-							
-				</div>
-			</div>
 			
-
-
-
-			<div class="panel">
-				<div id="total">
-					<h6>Totals</h6>
-					<div class="scoreboard">
-					<span id="outputTotal"></span>
-					</div>	
-				</div>
-			</div>
 			
 			
 			

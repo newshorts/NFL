@@ -132,19 +132,7 @@ $page = 'home';
 	<!-- container -->
 	<div class="container">
 
-			<div class="panel">
-				<div id="fblikes">
-					<h6>Facebook Likes (Sonic Drive-In)</h6>
-					<div class="numberboard">
-					<div class="facebookfeed">
-				        <h6>Loading...</h6>
-				    </div>
-					</div>
-				</div>
-			</div>
-			
-			
-			
+
 			<div class="panel">
 				<div id="gplus">
 					<h6>Google +1's (TechCrunch.com)</h6>
@@ -181,20 +169,6 @@ echo "stuff";
 							
 				</div>
 			</div>
-			
-
-
-
-			<div class="panel">
-				<div id="total">
-					<h6>Totals</h6>
-					<div class="scoreboard">
-					<span id="outputTotal"></span>
-					</div>	
-				</div>
-			</div>
-			
-			
 			
 		</div>
 
