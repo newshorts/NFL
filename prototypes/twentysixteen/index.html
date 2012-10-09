@@ -1,0 +1,268 @@
+<!-- 
+    Author: Mike Newell © 2012
+-->
+<!--
+TODO: reverse stacking order of boxes down instead of up
+TODO: get scroll to work inside of boxes
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Theme for SF Super Bowl</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <style>
+            html { 
+                background: url(images/backgrounds/clouds.png) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            
+            body {
+                min-width: 320px; 
+                overflow: hidden;
+            }
+            
+            #wrap {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                /*overflow: hidden;*/
+            }
+            
+            #scaffold {
+                background: url(images/backgrounds/score-base.png) scroll repeat-x;
+                -webkit-background-size: 100% 100%;
+                -moz-background-size: 100% 100%;
+                -o-background-size: 100% 100%;
+                background-size: 100% 100%;
+
+                width: 100%;
+/*                min-width: 320px;*/
+                height: 23.9%;
+                position: fixed;
+                top: 100%;
+                margin-top: -23.9%;
+                left: 50%;
+                margin-left: -50%;
+            }
+            
+            #border {
+/*                background: url(images/backgrounds/screen-border.png) scroll no-repeat;
+                -webkit-background-size: 100% 100%;
+                -moz-background-size: 100% 100%;
+                -o-background-size: 100% 100%;
+                background-size: 100% 100%;*/
+                
+                width: 50%;
+                /*max-width: 1024px;*/
+/*                min-width: 320px;*/
+                /*height: 573px;*/
+                height: 60%;
+                min-height: 179px;
+                position: fixed;
+                top: 100%;
+                /*top: 17%;*/
+                margin-top: -83%;
+/*                margin-top: 10%;*/
+                left: 50%;
+                margin-left: -25%;
+            }
+            
+/*            @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+                #border {
+                    left: 0;
+                    margin-left: -25%;
+                }
+            }*/
+            
+            #container {
+                width: 80%;
+/*                min-width: 320px;*/
+                height: 65%;
+/*                min-height: 179px;*/
+                position: fixed;
+                top: 100%;
+                margin-top: -88%;
+                left: 50%;
+                margin-left: -40%;
+                
+                background-color: red;
+            }
+            
+            #innerContainer {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                /*overflow: scroll;*/
+                
+                background-color: black;
+            }
+            
+            #innerContainer img {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            
+            #testContent {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+/*                overflow: scroll;*/
+                
+                background-color: greenyellow;
+            }
+            
+            .content {
+                width: 100px;
+                min-height: 100px;
+/*                height: 20%;*/
+/*                height: 100px;*/
+                float: left;
+                
+                border: 1px dotted #232323;
+                background-color: black;
+                opacity: 0.8;
+            }
+            
+            /* because firefox is fugged with out this */
+            @-moz-document url-prefix() {
+                #scaffold {
+                    top: 76%;
+                    margin-top: 0%;
+                }
+
+/*                #border {
+                    top: 17%;
+                    margin-top: 0%;
+                }*/
+
+                #container {
+                    top: 17%;
+                    margin-top: 0%;
+                }
+            }
+            
+            /* Clounds */
+            .cloudAnimated {
+                position: absolute;
+                opacity: 0.8;
+            }
+            
+            #cloud1 {
+                top: 15px;
+                left: -200px;
+                opacity: 0.6;
+            }
+            
+            #cloud2 {
+                top: 120px;
+                left: -200px;
+                opacity: 0.6;
+            }
+            
+            #cloud3 {
+                top: 250px;
+                left: -200px;
+                opacity: 0.6;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div id="clouds">
+            <img id="cloud1" class="cloudAnimated" src="images/backgrounds/CL02.png" />
+            <img id="cloud2" class="cloudAnimated" src="images/backgrounds/CL04.png" />
+            <img id="cloud3" class="cloudAnimated" src="images/backgrounds/CL14.png" />
+        </div>
+        <div id="wrap">
+            <div id="scaffold"></div>
+            <div id="container">
+                <div id="innerContainer">
+                    <div id="testContent">
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                        <div class="content"></div>
+                    </div>
+                    <img src="images/backgrounds/screen-border-wide.png" />
+                </div>
+            </div>
+            <div id="border"></div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery.min.js">\x3C/script>')</script>
+        <script src="js/Transition.js"></script>
+        <script src="js/Tweener.js"></script>
+        <script>
+            
+            (function() {
+                $(window).load(function() {
+                    
+                    var cloud1 = $('#cloud1');
+                    var cloud2 = $('#cloud2');
+                    var cloud3 = $('#cloud3');
+                    
+                    Tweener.addTween(cloud1, { x: 2000, alpha: 0.4, delay: 20, time: 80, transition: 'linear', repeat: 'infinite' })
+                    Tweener.addTween(cloud2, { x: 2000, alpha: 0.4, delay: 30, time: 90, transition: 'linear', repeat: 'infinite' })
+                    Tweener.addTween(cloud3, { x: 2000, alpha: 0.4, delay: 1, time: 120, transition: 'linear', repeat: 'infinite' })
+                    
+                    Tweener.run();
+                    
+                });
+            })(jQuery);
+            
+        </script>
+    </body>
+</html>
