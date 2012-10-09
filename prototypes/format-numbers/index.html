@@ -1,0 +1,36 @@
+<!-- 
+    Author: Mike Newell © 2012
+-->
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+            (function($) {
+                $(window).load(function() {
+                    var num = $('#number').text();
+                    
+                    function numberWithCommas(x) {
+                        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                    }
+                    
+                    var output = numberWithCommas(num);
+                    
+                    $('#output').text(output);
+                });
+            })(jQuery);
+        </script>
+    </head>
+    <body>
+        <div id="wrap">
+            <p><span id="number">1923874512087351614356</span></p>
+            <p><span id="output"></span></p>
+        </div>
+    </body>
+</html>
