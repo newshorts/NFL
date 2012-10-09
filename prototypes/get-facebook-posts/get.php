@@ -10,7 +10,7 @@ $facebook = new Facebook(array(
 // Get User ID
 $user = $facebook->getUser();
 
-echo "<pre>";
+echo "<pre>\n";
 print_r($user);
 
 ?>
