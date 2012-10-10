@@ -40,53 +40,18 @@ $page = 'home';
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	
 	
+	<script src="javascripts/socialtracker.js"></script>
 	<!-- NUMBER SCRIPT -->
 	<script>
-	function numberWithCommas(x) {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
-    
-
-	
             (function($) {
                 $(window).load(function() {
-                    var googlePluses = $('#googlePluses').data('google');
-                    var output = numberWithCommas(googlePluses);
-                    
-                    $('#output').text(output);
+                
+                	var ft = new SocialTracker();
+                	ft.trackFacebook();
+                
+               
                 });
             })(jQuery);
-        </script>
-	<!-- END NUMBER SCRIPT -->        
-        
-        
-        
-        
-	<!-- FACEBOOK SCRIPT -->
-	<script type="text/javascript">
-	  $(function() {
-	    //Set Url of JSON data from the facebook graph api. make sure callback is set   with a '?' to overcome the cross domain problems with JSON
-	    var url = "https://graph.facebook.com/sonicdrivein?callback=?";
-	
-	    //Use jQuery getJSON method to fetch the data from the url and then create our unordered list with the relevant data.
-	    $.getJSON(url,function(json){
-        	var output = numberWithCommas(json.likes);
-	        var html = "<ul><li>" + output + "</li></ul>";
-	        //A little animation once fetched
-	        $('.facebookfeed').animate({opacity:0}, 500, function(){
-	            $('.facebookfeed').html(html);
-	            
-	            var gPluses = $('#googlePluses').data('google');
-	            
-	            var total = json.likes + gPluses;
-	            
-	            var totalFormatted = numberWithCommas(total);
-	            
-	            $('#outputTotal').text(totalFormatted);
-	        });
-	        $('.facebookfeed').animate({opacity:1}, 500);
-	    });
-	  });
 	</script>
 	<!-- END FACEBOOK SCRIPT -->
 	
@@ -133,22 +98,13 @@ $page = 'home';
 	<div class="container">
 
 			<div class="panel">
-				<div id="fblikes">
-					<h6>Facebook Likes (Sonic Drive-In)</h6>
-					<div class="numberboard">
-					<div class="facebookfeed">
-				        <h6>Loading...</h6>
-				    </div>
-					</div>
+				<div id="total">
+					<h6>Totals</h6>
+					<div class="scoreboard">
+					<span id="outputTotal"></span>
+					</div>	
 				</div>
 			</div>
-			
-			
-			
-			
-			
-			
-			
 		</div>
 
 	</div>
