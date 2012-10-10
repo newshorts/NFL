@@ -100,7 +100,7 @@ body { background-color: #12304e; font-family: "Helvetica Neue", "HelveticaNeue"
 
 }
 
-@media handheld, only screen and (max-width: 481px) {
+@media handheld, only screen and (max-width: 480px) {
    #container { background: transparent url(../images/background_mobile_landscape.jpg) no-repeat 50% 0; height: 990px;}
 
    #screen { display: none; background-color: white; height: 236px; width: 413px; position: relative; left: 34px; top: 28px; } 
@@ -114,7 +114,7 @@ body { background-color: #12304e; font-family: "Helvetica Neue", "HelveticaNeue"
 }
 
 
-@media handheld, only screen and (max-width: 319px) {
+@media handheld, only screen and (max-width: 320px) {
    #container { background: transparent url(../images/background_mobile_portrait.jpg) no-repeat 50% 0; height: 480px;}
 
    #screen {  display: none;background-color: white; height: 400px; width: 293px; position: relative; left: 13px; top: 33px;}
