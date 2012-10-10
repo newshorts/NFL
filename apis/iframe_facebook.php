@@ -37,20 +37,23 @@ $page = 'home';
 	<!-- TWITTER SCRIPTS -->
 <!-- 	<script src="javascripts/twitter.js"></script> -->
 	
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	
-	<script src="javascripts/socialtracker.js"></script>
+	
 	<!-- NUMBER SCRIPT -->
 	<script>
+	function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+    
 
 	
             (function($) {
                 $(window).load(function() {
-                
-                	var st = new SocialTracker();
-                	st.trackTotal();
-                
-               
+                    var googlePluses = $('#googlePluses').data('google');
+                    var output = numberWithCommas(googlePluses);
+                    
+                    $('#output').text(output);
                 });
             })(jQuery);
         </script>
@@ -62,7 +65,27 @@ $page = 'home';
 	<!-- FACEBOOK SCRIPT -->
 	<script type="text/javascript">
 	  $(function() {
-	    
+	    //Set Url of JSON data from the facebook graph api. make sure callback is set   with a '?' to overcome the cross domain problems with JSON
+	    var url = "https://graph.facebook.com/sonicdrivein?callback=?";
+	
+	    //Use jQuery getJSON method to fetch the data from the url and then create our unordered list with the relevant data.
+	    $.getJSON(url,function(json){
+        	var output = numberWithCommas(json.likes);
+	        var html = "<ul><li>" + output + "</li></ul>";
+	        //A little animation once fetched
+	        $('.facebookfeed').animate({opacity:0}, 500, function(){
+	            $('.facebookfeed').html(html);
+	            
+	            var gPluses = $('#googlePluses').data('google');
+	            
+	            var total = json.likes + gPluses;
+	            
+	            var totalFormatted = numberWithCommas(total);
+	            
+	            $('#outputTotal').text(totalFormatted);
+	        });
+	        $('.facebookfeed').animate({opacity:1}, 500);
+	    });
 	  });
 	</script>
 	<!-- END FACEBOOK SCRIPT -->
@@ -109,8 +132,7 @@ $page = 'home';
 	<!-- container -->
 	<div class="container">
 
-			<!--
-<div class="panel">
+			<div class="panel">
 				<div id="fblikes">
 					<h6>Facebook Likes (Sonic Drive-In)</h6>
 					<div class="numberboard">
@@ -123,31 +145,7 @@ $page = 'home';
 			
 			
 			
-			<div class="panel">
-				<div id="gplus">
-					<h6>Google +1's (TechCrunch.com)</h6>
-					
-					<div class="numberboard">
-					
-
-					<span id="googlePluses" data-google="">
-					</span>
-					<span id="output"></span>
-					</div>
-							
-				</div>
-			</div>
--->
-
-
-			<div class="panel">
-				<div id="total">
-					<h6>Totals</h6>
-					<div class="scoreboard">
-					<span id="outputTotal"></span>
-					</div>	
-				</div>
-			</div>
+			
 			
 			
 			
@@ -161,8 +159,8 @@ $page = 'home';
 
 	<!-- Included JS Files -->
 	<script src="javascripts/jquery.min.js"></script>
-<!-- 	<script src="javascripts/foundation.js"></script> -->
-<!-- 	<script src="javascripts/app.js"></script> -->
+	<script src="javascripts/foundation.js"></script>
+	<script src="javascripts/app.js"></script>
 
 </body>
 </html>
