@@ -1,2 +1,4 @@
 # ignore local-config.php  
 local-config.php
+.htpasswd
+.htaccess
