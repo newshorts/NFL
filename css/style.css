@@ -72,7 +72,7 @@ body { background-color: #286891; font-family: "Helvetica Neue", "HelveticaNeue"
 
 
 @media handheld, only screen and (max-width: 1024px) {
-   #container { background: transparent url(../images/images/background_tablet_landscape.jpg) no-repeat 50% 0; height: 990px;}
+   #container { background: transparent url(../images/background_tablet_landscape.jpg) no-repeat 50% 0; height: 990px;}
 
    #screen { background-color: white; height: 496px; width: 882px; position: relative; left: 72px; top: 62px;} 
   
@@ -86,7 +86,7 @@ body { background-color: #286891; font-family: "Helvetica Neue", "HelveticaNeue"
 
 
 @media handheld, only screen and (max-width: 768px) {
-   #container { background: transparent url(../images/images/background_tablet_portrait.jpg) no-repeat 50% 0; height: 990px;}
+   #container { background: transparent url(../images/background_tablet_portrait.jpg) no-repeat 50% 0; height: 990px;}
 
    #screen { background-color: white; height: 656px; width: 703px; position: relative; left: 32px; top: 54px;} 
   
@@ -99,7 +99,7 @@ body { background-color: #286891; font-family: "Helvetica Neue", "HelveticaNeue"
 }
 
 @media handheld, only screen and (max-width: 480px) {
-   #container { background: transparent url(../images/images/background_mobile_landscape.jpg) no-repeat 50% 0; height: 990px;}
+   #container { background: transparent url(../images/background_mobile_landscape.jpg) no-repeat 50% 0; height: 990px;}
 
    #screen { background-color: white; height: 236px; width: 413px; position: relative; left: 34px; top: 28px; } 
   
@@ -113,7 +113,7 @@ body { background-color: #286891; font-family: "Helvetica Neue", "HelveticaNeue"
 
 
 @media handheld, only screen and (max-width: 320px) {
-   #container { background: transparent url(../images/images/background_mobile_portrait.jpg) no-repeat 50% 0; height: 480px;}
+   #container { background: transparent url(../images/background_mobile_portrait.jpg) no-repeat 50% 0; height: 480px;}
 
    #screen { background-color: white; height: 400px; width: 293px; position: relative; left: 13px; top: 33px;}
    #screen li { float: left;   }
