@@ -42,6 +42,7 @@ $page = 'home';
 	<script src="javascripts/socialtracker.js"></script>
 	<!-- NUMBER SCRIPT -->
 	<script>
+
 	
             (function($) {
                 $(window).load(function() {

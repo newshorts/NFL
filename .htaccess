@@ -1,0 +1,4 @@
+AuthUserFile /var/www/vhosts/sfsuperbowl.com/.htpasswd
+AuthType Basic
+AuthName "bowl_admin"
+Require valid-user
