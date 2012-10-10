@@ -63,6 +63,8 @@ body { background-color: #FFFFFF; font-family: "Helvetica Neue", "HelveticaNeue"
 #screen { background-color: white; height: 565px; width: 1003px; position: relative; left: 428px; top: 210px;}
 #screen li { float: left;   }
 
+
+#menu { background-color: #e2e2e2; width: 994px; height: 68px; position: relative; left: 5px; top: 5px;  }
 #box1 { background-color: #e2e2e2; width: 993px; height: 300px; position: relative; left: 5px; top: 5px;  }
 .bottom { background-color: #e2e2e2; width: 328px; height: 250px; position: relative; margin-top: 10px; margin-left: 5px; }
 
@@ -236,9 +238,9 @@ body { background-color: #FFFFFF; font-family: "Helvetica Neue", "HelveticaNeue"
 
 .scoreboard {
 	font-family: 'ds-digitalitalic', Arial, sans-serif;
-	font-size: 168px;
+	font-size: 238px;
 	color: #e75406;
-	margin: 68px 0 68px 0;
+	margin: 88px 0 48px 18px;
 }
 
 .numberboard {
