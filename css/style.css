@@ -56,15 +56,16 @@ table {
 }
 
 
-body { background-color: #286891; font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 13px; font-size: 1.3rem; line-height: 18px; color: #555; position: relative; -webkit-font-smoothing: antialiased; }
+body { background-color: #12304e; font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 13px; font-size: 1.3rem; line-height: 18px; color: #555; position: relative; -webkit-font-smoothing: antialiased; }
 
 #container { background: transparent url(../images/background.jpg) no-repeat 50% 0; height: 1013px;}
 
-#screen { background-color: white; height: 565px; width: 1003px; position: relative; left: 428px; top: 210px;}
-#screen li { float: left;   }
+#screen { display: block; float: left; vertical-align: middle; margin-left: auto; margin-right: auto; background-color: #e5e5e5; width: 1004px; height: 566px; position: relative; left: 50%; margin-left: -504px; top: 50%; margin-top: -300px; border: 0px solid black; }
 
-#box1 { background-color: #e2e2e2; width: 993px; height: 300px; position: relative; left: 5px; top: 5px;  }
-.bottom { background-color: #e2e2e2; width: 328px; height: 250px; position: relative; margin-top: 10px; margin-left: 5px; }
+#screen li { float: left; }
+
+#box1 { background-color: #e2e2e2; width: 994px; height: 392px; position: relative; left: 5px; top: 5px;  }
+.bottom { background-color: #e2e2e2; width: 328px; height: 160px; position: relative; margin-top: 10px; margin-left: 5px; }
 
 
 
@@ -136,7 +137,7 @@ body { background-color: #286891; font-family: "Helvetica Neue", "HelveticaNeue"
 	ul.square { list-style: square outside; }
 	ul.circle { list-style: circle outside; }
 	ul.disc { list-style: disc outside; }
-	li { margin-bottom: 12px; }
+	li { margin-bottom: 0px; }
 	ul.large li { line-height: 21px; }
 
 /*	--------------------------------------------------

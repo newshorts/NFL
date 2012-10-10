@@ -97,14 +97,12 @@ $page = 'home';
 	<!-- container -->
 	<div class="container">
 
-			<div class="panel">
 				<div id="total">
 					<h6>Totals</h6>
-					<div class="scoreboard">
+					<div class="numberboard">
 					<span id="outputTotal"></span>
 					</div>	
 				</div>
-			</div>
 		</div>
 
 	</div>
@@ -115,8 +113,10 @@ $page = 'home';
 
 	<!-- Included JS Files -->
 	<script src="javascripts/jquery.min.js"></script>
+<!--
 	<script src="javascripts/foundation.js"></script>
 	<script src="javascripts/app.js"></script>
+-->
 
 </body>
 </html>
