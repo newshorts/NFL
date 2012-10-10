@@ -37,38 +37,24 @@ $page = 'home';
 	<!-- TWITTER SCRIPTS -->
 <!-- 	<script src="javascripts/twitter.js"></script> -->
 	
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	
 	<script src="javascripts/socialtracker.js"></script>
 	<!-- NUMBER SCRIPT -->
 	<script>
-
-	
             (function($) {
                 $(window).load(function() {
                 
-                	var st = new SocialTracker();
-                	st.trackTotal();
+                	var gt = new SocialTracker();
+                	gt.trackGoogle();
                 
                
                 });
             })(jQuery);
-        </script>
-	<!-- END NUMBER SCRIPT -->        
-        
-        
-        
-        
-	<!-- FACEBOOK SCRIPT -->
-	<script type="text/javascript">
-	  $(function() {
-	    
-	  });
 	</script>
 	<!-- END FACEBOOK SCRIPT -->
 	
 	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-	
 	
 	<!-- GOOGLE+ SCRIPT -->
 	<script type="text/javascript">
@@ -109,36 +95,6 @@ $page = 'home';
 	<!-- container -->
 	<div class="container">
 
-			<!--
-<div class="panel">
-				<div id="fblikes">
-					<h6>Facebook Likes (Sonic Drive-In)</h6>
-					<div class="numberboard">
-					<div class="facebookfeed">
-				        <h6>Loading...</h6>
-				    </div>
-					</div>
-				</div>
-			</div>
-			
-			
-			
-			<div class="panel">
-				<div id="gplus">
-					<h6>Google +1's (TechCrunch.com)</h6>
-					
-					<div class="numberboard">
-					
-
-					<span id="googlePluses" data-google="">
-					</span>
-					<span id="output"></span>
-					</div>
-							
-				</div>
-			</div>
--->
-
 
 			<div class="panel">
 				<div id="total">
@@ -148,8 +104,6 @@ $page = 'home';
 					</div>	
 				</div>
 			</div>
-			
-			
 			
 		</div>
 
@@ -161,8 +115,8 @@ $page = 'home';
 
 	<!-- Included JS Files -->
 	<script src="javascripts/jquery.min.js"></script>
-<!-- 	<script src="javascripts/foundation.js"></script> -->
-<!-- 	<script src="javascripts/app.js"></script> -->
+	<script src="javascripts/foundation.js"></script>
+	<script src="javascripts/app.js"></script>
 
 </body>
 </html>
