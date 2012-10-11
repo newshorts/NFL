@@ -93,5 +93,19 @@ $page = 'home';
 
 <body>
 
+<!-- container -->
+	<div class="container">
+
+
+				<div>
+					<img src="../images/bring_the_bowl_to_the_bay.png">
+				</div>
+			
+		</div>
+
+	</div>
+	<!-- container -->
+
+
 </body>
 </html>

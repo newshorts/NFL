@@ -96,12 +96,23 @@ $page = 'home';
 
 	<!-- container -->
 	<div class="container">
-
+	
+				<div id="smallpanel">
+				
 				<div id="total">
-					<h6>Totals</h6>
+					<img src="../images/title_tweets.png">
+					<img src="../images/icon_twitter.png" align="right">
+				</div>
+				
+				<hr>
+				
+				<div id="total">
+					
 					<div class="numberboard">
 					<span id="outputTotal"></span>
 					</div>	
+				</div>
+				
 				</div>
 		</div>
 

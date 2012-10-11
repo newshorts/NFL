@@ -113,8 +113,10 @@ $page = 'home';
 
 	<!-- Included JS Files -->
 	<script src="javascripts/jquery.min.js"></script>
+<!--
 	<script src="javascripts/foundation.js"></script>
 	<script src="javascripts/app.js"></script>
+-->
 
 </body>
 </html>
