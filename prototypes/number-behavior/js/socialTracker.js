@@ -62,15 +62,10 @@ var SocialTracker = Class.extend({
     // TIMING FUNCTIONS
     
     update: function(newNum) {
-        
         var oldNum = parseInt(this._elem.attr(this._name));
-        
         this.setAttribute(newNum);
-        
         this.delta = Math.abs(oldNum - newNum);
-        
         this.monitorChange(oldNum);
-        
     },
     
     setAttribute: function(newNum) {
@@ -80,7 +75,6 @@ var SocialTracker = Class.extend({
     monitorChange: function(oldNum) {
         if(this.delta > 0) {
             var interval = Math.floor(10000/this.delta);
-
             this.count = 0;
             this.setTimer(interval, oldNum);
         }
@@ -115,8 +109,6 @@ var SocialTracker = Class.extend({
         self.count = 0;
         window.clearInterval(self._intervalObj);
     }
-    
-    
     
 });
 

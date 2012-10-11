@@ -32,9 +32,11 @@ class Social {
     }
     
     private function get_tweets($url) {
-        $json_string = file_get_contents('http://urls.api.twitter.com/1/urls/count.json?url=' . $url);
+//        $json_string = file_get_contents('http://urls.api.twitter.com/1/urls/count.json?url=' . $url);
+        $json_string = file_get_contents('http://otter.topsy.com/searchcount.json?q=sfsuperbowl&apikey=EA7FB3A842894C08B31348305D339A8E');
         $json = json_decode($json_string, true);
-        return intval( $json['count'] );
+        
+        return intval( $json['response']['a'] );
     }
     
     private function get_likes() {
