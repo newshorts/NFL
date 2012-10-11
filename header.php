@@ -7,7 +7,6 @@
         <link href="css/reset.css" type="text/css" rel="stylesheet" />
         <link href="css/font.css" type="text/css" rel="stylesheet" />
         <link href="css/style.css" type="text/css" rel="stylesheet" />
-        <link href="css/tweet.css" type="text/css" rel="stylesheet" />
 
     </head>
     <body>
