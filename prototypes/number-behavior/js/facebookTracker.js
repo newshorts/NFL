@@ -4,10 +4,10 @@
  */
 
 
-var GoogleTracker = SocialTracker.extend({
+var FacebookTracker = SocialTracker.extend({
     
     _elem: {},
-    name: 'google_data',
+    name: 'facebook_data',
     _intervalObj: {},
     count: 0,
     delta: 0,
@@ -20,7 +20,7 @@ var GoogleTracker = SocialTracker.extend({
         
         window.addEventListener(this.name, function(evt) {
             console.dir(evt.detail.data.output)
-            self.update(parseInt(evt.detail.data.output.google));
+            self.update(parseInt(evt.detail.data.output.facebook));
         }, false);
         
         this._elem = $(elem);

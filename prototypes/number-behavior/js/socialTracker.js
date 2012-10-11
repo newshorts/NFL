@@ -43,7 +43,14 @@ var SocialTracker = Class.extend({
             self.poll();
         }, 5000);
         this.poll();
+    },
+    
+    formatNumber: function(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
+    
+    
+    
 });
 
 // var google = new SocialTracker('#elem', 'http://stuff.com/');

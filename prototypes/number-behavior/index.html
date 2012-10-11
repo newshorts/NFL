@@ -14,10 +14,15 @@ and open the template in the editor.
         <script src="js/class.js"></script>
         <script src="js/socialTracker.js"></script>
         <script src="js/googleTracker.js"></script>
+        <script src="js/twitterTracker.js"></script>
+        <script src="js/facebookTracker.js"></script>
+        
         <script>
             (function($) {
                 $(window).load(function() {
                     var gt = new GoogleTracker('#output');
+                    var ft = new FacebookTracker('#output');
+                    var tt = new TwitterTracker('#output');
                 });
             })(jQuery);
         </script>
