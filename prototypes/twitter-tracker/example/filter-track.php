@@ -26,5 +26,5 @@ class FilterTrackConsumer extends Phirehose
 
 // Start streaming
 $sc = new FilterTrackConsumer('newshorts', 'GD_00bouer', Phirehose::METHOD_FILTER);
-$sc->setTrack(array('morning', 'sfsuperbowl', 'hello', 'the'));
+$sc->setTrack(array('sfsuperbowl', 'tweening'));
 $sc->consume();

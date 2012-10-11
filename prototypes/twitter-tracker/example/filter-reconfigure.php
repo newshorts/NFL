@@ -9,7 +9,7 @@ class DynamicTrackConsumer extends Phirehose
   /**
    * Subclass specific attribs
    */
-  protected $myTrackWords = array('morning', 'goodnight', 'hello', 'the');
+  protected $myTrackWords = array('sfsuperbowl', 'goodnight', 'hello', 'the');
   
   /**
    * Enqueue each status
