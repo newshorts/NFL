@@ -11,6 +11,7 @@ var SocialTracker = Class.extend({
     _intervalObj: {},
     count: 0,
     delta: 0,
+    firstLoad: true,
     
     init: function(eventName, url, elem) {
         
@@ -66,6 +67,13 @@ var SocialTracker = Class.extend({
         this.setAttribute(newNum);
         this.delta = Math.abs(oldNum - newNum);
         this.monitorChange(oldNum);
+        
+        // if it's our first load we want to see the number right away
+        if(this.firstLoad) {
+            var str = this.formatNumber(newNum);
+            this.setText(str);
+            this.firstLoad = false;
+        }
     },
     
     setAttribute: function(newNum) {
@@ -84,15 +92,13 @@ var SocialTracker = Class.extend({
         var self = this;
 
         this._intervalObj = window.setInterval(function() {
-            // set the text and increment the count
-//            var num = parseInt(self._elem.attr(self.name));
             self.count++;
             var formattedNum = self.formatNumber(oldNum + self.count);
             self.setText(formattedNum);
             
             console.log('count: ' + self.count)
             console.log('delta: ' + self.delta)
-            // if the (count === delta) destroy the interval and stop
+
             if(self.count > self.delta) {
                 self.destroyTimer();
             }
@@ -111,6 +117,3 @@ var SocialTracker = Class.extend({
     }
     
 });
-
-// var google = new SocialTracker('#elem', 'http://stuff.com/');
-// 
