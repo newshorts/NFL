@@ -12,14 +12,17 @@ body {
 }
 
 #background {
-    background: url(../images/background.jpg) scroll center center no-repeat;
+    background: url(../images/background.jpg) scroll no-repeat;
+/*    background-size: 1920px 1080px;
+    background-position: center center;*/
     width: 1920px;
-    height: 1256px;
-    position: absolute;
+    height: 1080px;
+    position: fixed;
     top: 50%;
     left: 50%;
     margin-left: -960px;
     margin-top: -628px;
+    overflow: hidden;
 }
 
 #wrap {
