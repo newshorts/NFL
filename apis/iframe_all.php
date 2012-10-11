@@ -140,11 +140,15 @@ $page = 'home';
 -->
 
 
-				<div id="total">
-					<img src="../images/sfsuperbowl_buzz.png">
-					<div class="scoreboard">
+				<div id="boardcontainer">
 					
-					<span id="outputTotal"></span>
+					<div class="headline">
+						<img src="../images/buzz_sign.png"><span>SFSUPERBOWL BUZZ</span>
+					</div>
+					
+					
+					<div class="scoreboard">
+						<span id="outputTotal"></span>
 					</div>	
 				</div>
 			

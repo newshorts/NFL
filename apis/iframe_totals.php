@@ -139,14 +139,19 @@ $page = 'home';
 			</div>
 -->
 
-
-				<div id="total">
-					<h6>Totals</h6>
-					<div class="numberboard">
-					<span id="outputTotal"></span>
-					</div>	
-				</div>
+			<div id="boxcontainer">
 			
+				<div class="left"><h5>SUPPORTERS</h5></div>
+				
+				<div class="right"><img src="../images/icon_google.png"></div>
+				<div class="right"><img src="../images/icon_facebook.png"></div>
+				
+				<hr>
+				
+				<div class="numberboard">
+					<span id="outputTotal"></span>
+				</div>	
+			</div>
 			
 			
 		</div>

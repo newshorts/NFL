@@ -95,13 +95,17 @@ $page = 'home';
 	<!-- container -->
 	<div class="container">
 
-
-				<div id="total">
-					<h6>Totals</h6>
+			<div id="boxcontainer">
+				<div class="left"><h5>PHOTOS</h5></div>
+				<div class="right"><img src="../images/icon_instagram.png"></div>
+					
+					<hr>
+					
 					<div class="numberboard">
 					<span id="outputTotal"></span>
 					</div>	
 				</div>
+			</div>
 			
 		</div>
 

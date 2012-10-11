@@ -97,8 +97,8 @@ $page = 'home';
 	<div class="container">
 
 
-				<div>
-					<img src="../images/bring_the_bowl_to_the_bay.png">
+				<div id="boardcontainer">
+					<h2>BRING THE BOWL TO THE BAY</h2>
 				</div>
 			
 		</div>

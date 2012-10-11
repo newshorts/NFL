@@ -24,7 +24,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	
 }
 
 html {
@@ -68,7 +68,15 @@ body { background-color: #FFFFFF; font-family: "Helvetica Neue", "HelveticaNeue"
 #box1 { background-color: #e2e2e2; width: 993px; height: 300px; position: relative; left: 5px; top: 5px;  }
 .bottom { background-color: #e2e2e2; width: 328px; height: 250px; position: relative; margin-top: 10px; margin-left: 5px; }
 
+#boxcontainer { font-family: FranklinGothicURW-HeaIta; font-weight: normal; font-style: normal; color: #666666; background-color: #FFF; width: 288px; position: absolute; margin-top: 0; margin-left: 0; display:block; float:left; }
 
+#boxcontainer .left { width: 138px; height: 28px; position: absolute; display:block; float:left; }
+#boxcontainer .right { width: 16px; height: 28px; position: relative; display:block; float:right; margin-left: 8px; }
+
+
+#boardcontainer { font-family: FranklinGothicURW-HeaIta; font-weight: normal; font-style: normal; color: #666666; background-color: #FFF; width: 968px; position: absolute; margin-top: 0; margin-left: 0; }
+
+#boardcontainer .headline { font-family: FranklinGothicURW-HeaIta; font-size: 29px; font-weight: normal; font-style: normal; color: #666666; width: 668px; position: absolute; display:block; float:left; margin-top: 0; margin-left: 0; }
 
 
 
@@ -144,12 +152,12 @@ body { background-color: #FFFFFF; font-family: "Helvetica Neue", "HelveticaNeue"
 /*	--------------------------------------------------
     :: Typography
 	-------------------------------------------------- */
-	h1, h2, h3, h4, h5, h6 { color: #181818; font-weight: bold; line-height: 1.25 }
+	h1, h2, h3, h4, h5, h6 { color: #666666; font-weight: normal; line-height: 1.25 }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-	h1 { font-size: 46px; font-size: 4.6rem; margin-bottom: 12px;}
-	h2 { font-size: 35px; font-size: 3.5rem; margin-bottom: 9px; }
-	h3 { font-size: 28px; font-size: 2.8rem; margin-bottom: 9px; }
-	h4 { font-size: 21px; font-size: 2.1rem; margin-bottom: 3px; }
+	h1 { font-size: 46px; font-size: 4.6rem; font-weight: normal; margin-bottom: 12px;}
+	h2 { font-size: 35px; font-size: 3.5rem; font-weight: normal; margin-bottom: 9px; }
+	h3 { font-size: 28px; font-size: 2.8rem; font-weight: normal; margin-bottom: 9px; }
+	h4 { font-size: 21px; font-size: 2.1rem; font-weight: normal; margin-bottom: 3px; }
 	h5 { font-size: 18px; font-size: 1.8rem; font-weight: normal; margin-bottom: 8px;  }
 	h6 { font-size: 15px; font-size: 1.5rem; font-weight: normal; margin-bottom: 8px; }
 
@@ -172,7 +180,7 @@ body { background-color: #FFFFFF; font-family: "Helvetica Neue", "HelveticaNeue"
 	blockquote cite:before { content: "\2014 \0020"; }
 	blockquote cite a, blockquote cite a:visited { color: #555; }
 	
-	hr { border: solid #ddd; border-width: 2px 0 0; clear: both; margin: 12px 21px 12px 6px; height: 0; }
+	hr { border: solid #ddd; border-width: 2px 0 0; clear: both; margin: 12px 0px 12px 0px; height: 0; }
 	
 	abbr, acronym { text-transform: uppercase; font-size: 90%; color: #222; border-bottom: 1px solid #ddd; cursor: help; }
 	abbr { text-transform: none; }
@@ -219,19 +227,7 @@ body { background-color: #FFFFFF; font-family: "Helvetica Neue", "HelveticaNeue"
 		margin: 0 0 20px 0;
 	}
 	
-	.smallpanel {
-		width: 328px;
-		padding: 0 0 0 0;
-		background: #efefef;
-		background: -moz-linear-gradient(top, #FFFFFF 0%, #F4F4F4 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F4F4F4));
-		background: -o-linear-gradient(top, #ffffff 0%,#f4f4f4 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
-		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-		margin: 0 0 20px 0;
-	}
+	
 
 
 
@@ -254,7 +250,8 @@ body { background-color: #FFFFFF; font-family: "Helvetica Neue", "HelveticaNeue"
 	font-family: 'ds-digitalitalic', Arial, sans-serif;
 	font-size: 238px;
 	color: #e75406;
-	margin: 88px 0 48px 18px;
+	height: auto;
+	margin: 138px 0 48px 18px;
 }
 
 .numberboard {
@@ -262,6 +259,45 @@ body { background-color: #FFFFFF; font-family: "Helvetica Neue", "HelveticaNeue"
 	font-size: 75px;
 	color: #e75406;
 	margin: 38px 0 48px 0;
+}
+
+
+
+
+
+
+
+
+
+/* @license
+ * MyFonts Webfont Build ID 2382004, 2012-10-10T22:20:37-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Franklin Gothic Heavy Italic by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-heavy-italic/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * Licensed pageviews: 100,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2382004
+ * 
+ * © 2012 Bitstream Inc
+*/
+
+
+
+  
+@font-face {font-family: 'FranklinGothicURW-HeaIta';src: url('webfonts/2458B4_0_0.eot');src: url('webfonts/2458B4_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2458B4_0_0.woff') format('woff'),url('webfonts/2458B4_0_0.ttf') format('truetype');}
+ 
+.FranklinGothicURW-HeaIta { 
+	font-family: FranklinGothicURW-HeaIta;
+	font-weight: normal;
+	font-style: normal;
 }
 
 

@@ -97,13 +97,11 @@ $page = 'home';
 	<!-- container -->
 	<div class="container">
 	
-				<div id="smallpanel">
+				<div id="boxcontainer">
 				
-				<div id="total">
-					<img src="../images/title_tweets.png">
-					<img src="../images/icon_twitter.png" align="right">
-				</div>
-				
+				<div class="left"><h5>TWEETS</h5></div>
+				<div class="right"><img src="../images/icon_twitter.png"></div>
+									
 				<hr>
 				
 				<div id="total">
