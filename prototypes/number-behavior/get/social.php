@@ -20,6 +20,7 @@ class Social {
                             'google' => $this->get_plusones('http://techcrunch.com/'),
                             'twitter' => $this->get_tweets('http://techcrunch.com/'),
                             'facebook' => $this->get_likes(),
+                            'instagram' => $this->get_instagrams('snow'),
                             'filename' => $this->filename,
                             'usingClass' => 'true'
                         );
@@ -57,6 +58,13 @@ class Social {
 
         $json = json_decode($curl_results, true);
         return intval( $json[0]['result']['metadata']['globalCounts']['count'] );
+    }
+    
+    private function get_instagrams($tag) {
+        //https://api.instagram.com/v1/tags/search?q=snow&access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9
+        $json_string = file_get_contents('https://api.instagram.com/v1/tags/search?q='.$tag.'&access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9');
+        $json = json_decode($json_string, true);
+        return intval( $json['data'][0]['media_count'] );
     }
 }
 
