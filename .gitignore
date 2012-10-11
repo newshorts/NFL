@@ -2,3 +2,4 @@
 local-config.php
 .htpasswd
 .htaccess
+prototypes/number-behavior/get/output.json
