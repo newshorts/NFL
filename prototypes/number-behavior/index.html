@@ -14,10 +14,15 @@ and open the template in the editor.
         <script src="js/class.js"></script>
         <script src="js/socialTracker.js"></script>
         <script src="js/googleTracker.js"></script>
+        <script src="js/twitterTracker.js"></script>
+        <script src="js/facebookTracker.js"></script>
+        
         <script>
             (function($) {
                 $(window).load(function() {
-                    var gt = new GoogleTracker('#output');
+                    var gt = new GoogleTracker('#google');
+                    var ft = new FacebookTracker('#facebook');
+                    var tt = new TwitterTracker('#twitter');
                 });
             })(jQuery);
         </script>
@@ -26,7 +31,9 @@ and open the template in the editor.
         <div id="wrap">
             <div id="num">
                 <p>
-                    <span id="output"></span>
+                    Google: <span id="google"></span><br />
+                    Facebook: <span id="facebook"></span><br />
+                    Twitter: <span id="twitter"></span><br />
                 </p>
             </div>
         </div>
