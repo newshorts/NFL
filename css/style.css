@@ -48,9 +48,6 @@ p a, p a:visited { line-height: inherit; }
 	z-index: 10;
 }
 
-header {
-	z-index: 4;
-}
 
 #boardcontainer { 
     width: 994px; 
@@ -588,27 +585,66 @@ header {
 /*	--------------------------------------------------
     Supporters
     -------------------------------------------------- */
+
+
+
+.supporters {
+	height: 497px;
+	width: 1003px; 
+}
+
+#supporters_main {
+	height: 367px; 
+	width: 1003px;
+}
+
 #latest_news {
-	height: 314px;
-	width: 435px;
-	padding: 30px 0 0 60px; 
+	background-color: #fff;
+	height: 317px;
+	width: 462px;
+	padding: 30px 30px 0 60px;
+	margin: 10px 10px 10px 0; 
 	position: relative;
 	float: left; 
+}
+
+#supporter_numbers {
+	background-color: #fff;
+	position: relative;
+	float: right;
+	height: 317px;
+	width: 381px;
+	padding: 30px 30px 0 30px;
+	margin: 10px 0;
+}
+
+
+#supporters_footer {
+	background-color: #fff;
+	position: relative;
+	height: 110px;
+	width: 973px;
+	padding: 30px 0 0 30px;
+}
+
+#google_pluses {
+	height: 159px;
+	width: 381px; 
+	
+}
+
+#facebook_likes {
+	height: 158px;
+	width: 481px; 
+	
 }
 
 
 #supporters_internal {
 	padding: 20px 0 0 36px;
-	
-	
 }
 
-#supporters_footer {
-	position: relative;
-	height: 130px;
-	width: 1000px;
-	margin: 30px 0 0 30px;
-}
+
 
 #supporters_footer li div span {
 	border-bottom: #cbcbcb 2px solid;
@@ -627,6 +663,8 @@ header {
 	font-weight: bold;
 }
 
+
+
 #latest_header {
 	border-bottom: #cbcbcb 2px solid;
 	padding-bottom: 7px; 
@@ -636,7 +674,7 @@ header {
 	text-indent: -9999px; 
 }
 
-#follow {
+#supporters_follow {
 	float: right;
 	position: relative;
 	top: -25px;
@@ -652,20 +690,15 @@ header {
 	position: relative;
 }
 
-#follow span {
+#supporters_follow span {
 	color: #767676;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	position: relative;
-	top: -8px;
-	
-	 
+	top: -8px;	 
 }
 
-#news {
-	
-}
 
 #news li {
 	border-bottom: #cbcbcb 1px solid;
@@ -674,30 +707,42 @@ header {
 }
 
 
-#supporter_numbers {
-	position: relative;
-	float: right;
-	height: 314px;
-	width: 435px;
-	padding: 30px 0 0 60px;
-}
+
 
 #supporter_numbers li {
-	width: 390px;
+	width: 380px;
 }
 
-#google_pluses {
-	height: 166px;
-	width: 491px; 
+
+
+#google_pluses li div span {
+    font-size: 24px;
+    font-family: 'FranklinGothicURW-HeaIta'; 
+    color: #666666; 
+    text-decoration: none;
+	
+}
+
+#google_pluses li div {
+	margin: 30px 0 0 0;
+}
+
+#facebook_likes li div span {
+	font-size: 24px;
+    font-family: 'FranklinGothicURW-HeaIta'; 
+    color: #666666; 
+    text-decoration: none;
 	
 }
 
 
 
-#facebook_likes {
-	height: 166px;
-	width: 491px; 
-	
+#facebook_likes li div {
+	margin: 30px 0 0 0;
+}
+
+#facebook_likes li div img { 
+	margin: 0 10px 0 0;
 }
 
 #google_header {
