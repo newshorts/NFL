@@ -144,8 +144,6 @@ class TwitterTracker {
         return $this->ts->search('#' . $tag, array('lang' => 'en', 'rpp' => 100));
     }
     
-    
-    
 }
 
 /**
@@ -175,10 +173,10 @@ class Tag extends TwitterTracker {
     
     /**
      * An array of tweet ids to be matched with the database
-     * @access private
+     * @access protected
      * @var array
      */
-    private $tweets;
+    protected $tweets;
     
     /**
      * Construct
@@ -219,10 +217,3 @@ class Tag extends TwitterTracker {
 $sfsuperbowl = new Tag('sfsuperbowl');
 
 $sfsuperbowl->search();
-
-//$t = new TwitterTracker();
-//
-//$t->searchForTags(array('sfsuperbowl', 'awesome'));
-//
-//echo "<pre>";
-//print_r($output);
