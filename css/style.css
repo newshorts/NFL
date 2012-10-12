@@ -115,9 +115,9 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	top: 15px;
 	right: 35px;
 	width: 109px;
-	height: 20px;
+	height: 22px;
 	background: url(../images/share.png) scroll 0 0 no-repeat;
-	background-size: 109px 20px;
+	background-size: 109px 22px;
 	overflow: hidden;
 }
 
@@ -125,6 +125,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	width: 109px;
 	height: 156px;
 	background: url(../images/share_hover.png) scroll 0 0 no-repeat;
+	background-size: 109px 156px;
 }
 
 .sharebutton ul {
@@ -203,7 +204,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #movements p {
 	font-size: 14px; 
-	line-height: 1.28;
+	line-height: 1.5;
 	color: #767676;
 	margin: 18px 21px 38px 18px;
 }
@@ -326,7 +327,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     -------------------------------------------------- */
 
 .headlineLargeGray {
-    font-size: 29px;
+    font-size: 30px;
     font-family: FranklinGothicURW-HeaIta; 
     font-weight: normal; 
     font-style: normal; 
