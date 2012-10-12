@@ -58,6 +58,7 @@ header {
     position: relative;
     top: 74px;
     left: 0;
+    border-top: #d3d3d3 10px solid;
 }
 
 /*	--------------------------------------------------
@@ -170,28 +171,27 @@ header {
 	margin: 0 34px 0 34px;
 	padding: 31px 0 0 0; 
 	position: relative;
-	width: 936px; 
+	width: 926px; 
 
 }
 
 .tweet:before {
-	content: '"';
-	color: #a4bc27;
-	font-family: 'FranklinGothicURW-HeaIta', Helvetica, Arial, sans-serif; 
-	font-size: 60px;
+	content: url(../images/quote_open.png);
 	float: left;
 	position: relative;
+	width: 25px;
+	height: 17px;
 
 	
 } 
 
 .tweet:after{
-	content: '"';
-	color: #a4bc27;
-	font-family: 'FranklinGothicURW-HeaIta', Helvetica, Arial, sans-serif; 
-	font-size: 60px;
+	content: url(../images/quote_close.png);
 	float: right;
 	position: relative;
+	width: 25px;
+	height: 17px;
+	top: 190px;
 
 }
 
@@ -207,10 +207,11 @@ header {
 	font-weight: bold; 
 	font-size: 18px;
 	height: 102px; 
-	margin: 0 0 0 0;
+	margin: 0 0 0 30px;
 	padding: 0 0 0 0; 
-	width: 265px;
+	width: 215px;
 	overflow: hidden;
+	position: relative;
 
 }
 
@@ -240,9 +241,9 @@ header {
 
 .tweet{
 	height: 102px;
-	margin: 0 25px 0 0;
-	padding: 0 0 0 15px;
-	width: 600px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	width: 680px;
 
 }	
 
@@ -250,11 +251,12 @@ header {
 	color: #858585;
 	font-family: Helvetica, Arial, sans-serif; 
 	font-size: 24px;
-	margin: 5px 0 0 45px;
+	margin: 0 0 0 50px;
 	padding: 0 0 0 0;
-	float: relative;
 	line-height: 26px; 
-	width: 550px;
+	width: 580px;
+	position: absolute;
+	float: right;
 
 
   
@@ -302,7 +304,7 @@ header {
 
 #twitter_footer {
 	position: relative;
-	height: 150px;
+	height: 130px;
 	width: 530px;
 	margin: 30px 0 0 30px;
 	
