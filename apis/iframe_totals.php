@@ -107,7 +107,7 @@ $page = 'home';
 
 
 	<!-- container -->
-<a href="../instagram/" target="_parent">
+<a href="../supporters/" target="_parent">
 	
 	<div class="container">
 
