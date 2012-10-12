@@ -13,8 +13,56 @@
     <body>
         <div id="background"></div>
         <div id="wrap">
+        
             <div id="header">
                 <div id="boardcontainer">
-                    <h2 class="headlineLargeGray">BRING THE BOWL TO THE BAY</h2>
-                </div>
-            </div>
+	                <div class="left">
+	                    <h2 class="headlineLargeGray">BRING THE BOWL TO THE BAY</h2>
+	                </div>
+	                
+	                <div class="right">
+	                	<div class="rightWrap">
+	                	
+		                	<div class="tabs">
+		                        <a class="active" href="#">SEE THE BUZZ</a> / <a href="#">JOIN THE MOVEMENT</a>
+		                    </div>
+		                    
+<!-- 		                    <img class="sharebutton" src="images/share.png"> -->
+		                    <div class="sharebutton">
+			                    <ul>
+				                    <li><a class="facebook link" href="#"></a></li>
+				                    <li><a class="twitter link" href="#"></a></li>
+				                    <li><a class="google link" href="#"></a></li>
+<!--
+				                    <li><a class="linkedin link" href="#"></a></li>
+				                    <li><a class="tumblr link" href="#"></a></li>
+				                    <li><a class="email link" href="#"></a></li>
+-->
+			                    </ul>
+		                    </div>
+		                    
+		                	<div class="hoverbutton"></div>
+
+	                	</div><!-- /rightwrap -->
+	                	
+	                	
+		                <!--
+<div class="share">
+
+			                
+		                	
+		                	<div class="dropdown">
+			                	<ul>
+			                		<li><img src="images/share_fb.png"></li>
+			                		<li><img src="images/share_twitter.png"></li>
+			                		<li><img src="images/share_google.png"></li>
+			                	</ul>
+		                	</div>
+	 	              </div>
+		                
+-->
+	                	
+	                </div><!-- /class right -->
+	                
+	            </div><!-- /boardcontainer-->
+            </div><!-- /header -->
