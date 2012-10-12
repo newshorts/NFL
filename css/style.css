@@ -585,218 +585,58 @@ p a, p a:visited { line-height: inherit; }
 /*	--------------------------------------------------
     Supporters
     -------------------------------------------------- */
+    
+.supporters { height: 497px; width: 1003px; }
+#supporters_main { height: 367px;  width: 1003px; }
 
 
 
-.supporters {
-	height: 497px;
-	width: 1003px; 
-}
+#latest_news { background-color: #fff; height: 317px; width: 422px; padding: 30px 30px 0 60px; margin: 10px 10px 10px 0;  position: relative; float: left; }
+#latest_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
 
-#supporters_main {
-	height: 367px; 
-	width: 1003px;
-}
+#supporters_follow { float: right; position: relative; top: -25px; }
+#facebook_follow { margin: 0px 5px 0px 8px; }
+#google_follow { margin: 2px 5px 0px 5px; top: 1px; position: relative; }
+#supporters_follow span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; position: relative; top: -8px; }
 
-#latest_news {
-	background-color: #fff;
-	height: 317px;
-	width: 422px;
-	padding: 30px 30px 0 60px;
-	margin: 10px 10px 10px 0; 
-	position: relative;
-	float: left; 
-}
 
-#latest_header {
-	border-bottom: #cbcbcb 2px solid;
-	padding-bottom: 7px; 
-}
 
-/*
-#latest_header a {
-	text-indent: -9999px; 
-}
-*/
+#news li { border-bottom: #cbcbcb 1px solid; height: 91px; }
 
 
 
-#supporter_numbers {
-	background-color: #fff;
-	position: relative;
-	float: right;
-	height: 317px;
-	width: 421px;
-	padding: 30px 30px 0 30px;
-	margin: 10px 0;
-}
+#supporter_numbers { background-color: #fff; position: relative; float: right; height: 317px; width: 421px; padding: 30px 30px 0 30px; margin: 10px 0; }
 
+#google_pluses { height: 159px; width: 421px; }
 
-#google_pluses {
-	height: 159px;
-	width: 421px; 	
-}
+#google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
+#google_pluses li div span { font-size: 24px; font-family: 'FranklinGothicURW-HeaIta';  color: #666666;  text-decoration: none; }
+#google_pluses li div { margin: 30px 0 0 0; }
 
-#google_header {
-	border-bottom: #cbcbcb 2px solid;
-	padding-bottom: 7px; 
-}
+#google_cta { width: 200px;  }
+#google_cta img { margin: 0 10px 0 0; }
+#google_cta span {position: relative;top: -15px; }
 
-#facebook_likes {
-	height: 158px;
-	width: 421px; 	
-}
 
-#facebook_header {
-	border-bottom: #cbcbcb 2px solid;
-	padding-bottom: 7px; 
-}
+#facebook_likes { height: 158px; width: 421px; }
 
+#facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
+#facebook_likes li div { margin: 30px 0 0 0; }
+#facebook_likes li div span { font-size: 24px; font-family: 'FranklinGothicURW-HeaIta'; color: #666666; text-decoration: none; }
 
+#facebook_cta { width: 200px; }
+#facebook_cta img { margin: 0 10px 0 0; }
+#facebook_cta span { position: relative; top: -15px; }
 
-#google_cta {
-	width: 200px; 
-	
-}
 
-#google_cta img {
-	margin: 0 10px 0 0;
-}
 
-#google_cta span {
-	position: relative;
-	top: -15px; 
-}
+#supporters_footer { background-color: #fff; position: relative; height: 110px; width: 973px; padding: 25px 0 0 30px; }
 
+#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding: 0 87px 2px 0; }
 
-
-#facebook_cta {
-	width: 200px;
-	
-}
-
-#facebook_cta img {
-	margin: 0 10px 0 0;
-}
-
-
-#facebook_cta span {
-	position: relative;
-	top: -15px; 
-}
-
-
-
-#supporters_footer {
-	background-color: #fff;
-	position: relative;
-	height: 110px;
-	width: 973px;
-	padding: 25px 0 0 30px;
-}
-
-
-
-
-#supporters_internal {
-	padding: 20px 0 0 36px;
-}
-
-
-
-#supporters_footer li div span {
-	border-bottom: #cbcbcb 2px solid;
-	padding: 0 87px 2px 0;
-	
-}
-
-#supporters_internal p {
-	color: #767676;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-}	
-
-#supporters_internal em {
-	color: #e75405;
-	font-weight: bold;
-}
-
-
-
-
-
-#supporters_follow {
-	float: right;
-	position: relative;
-	top: -25px;
-}
-
-#facebook_follow {
-	margin: 0px 5px 0px 8px;
-}
-
-#google_follow {
-	margin: 2px 5px 0px 5px;
-	top: 1px;
-	position: relative;
-}
-
-#supporters_follow span {
-	color: #767676;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	position: relative;
-	top: -8px;	 
-}
-
-
-#news li {
-	border-bottom: #cbcbcb 1px solid;
-	height: 91px;
-	
-}
-
-
-
-
-
-
-
-
-#google_pluses li div span {
-    font-size: 24px;
-    font-family: 'FranklinGothicURW-HeaIta'; 
-    color: #666666; 
-    text-decoration: none;
-	
-}
-
-#google_pluses li div {
-	margin: 30px 0 0 0;
-}
-
-#facebook_likes li div span {
-	font-size: 24px;
-    font-family: 'FranklinGothicURW-HeaIta'; 
-    color: #666666; 
-    text-decoration: none;
-	
-}
-
-
-
-#facebook_likes li div {
-	margin: 30px 0 0 0;
-}
-
-
-
-
-
-
-
-
+#supporters_internal { padding: 20px 0 0 36px; }
+#supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
+#supporters_internal em { color: #e75405; font-weight: bold; }
 
 
 
