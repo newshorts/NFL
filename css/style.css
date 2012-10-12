@@ -11,6 +11,15 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
+a { color: #666666; text-decoration: none; line-height: inherit; }
+a:hover { color: #e75406; }
+a:focus { color: #e75406; outline: none; }
+p a, p a:visited { line-height: inherit; }
+
+	
+	
+
 #background {
     background: url(../images/background.jpg) scroll no-repeat;
 /*    background-size: 1920px 1080px;
@@ -21,7 +30,7 @@ body {
     top: 50%;
     left: 50%;
     margin-left: -960px;
-    margin-top: -628px;
+    margin-top: -568px;
     overflow: hidden;
 }
 
@@ -32,7 +41,11 @@ body {
     top: 50%;
     left: 50%;
     margin-left: -500px;
-    margin-top: -383px;
+    margin-top: -328px;
+}
+
+#header {
+	z-index: 10;
 }
 
 header {
@@ -45,12 +58,188 @@ header {
     position: absolute; 
     margin-top: 0; 
     margin-left: 0; 
+    overflow: visible;
+    z-index: 10;
 }
-
+/*
 #boardcontainer h2 {
     margin-top: 31px;
     margin-left: 33px;
 }
+*/
+
+#boardcontainer .left {
+	float: left;
+    margin-top: 32px;
+    margin-left: 33px;
+    display:block;
+}
+
+#boardcontainer .right {
+/*
+	float: right;
+    margin-top: 12px;
+    margin-right: 28px;
+*/
+    position: absolute;
+/*     display:block; */
+    width: 394px;
+    height: 70px;
+    top: 0;
+    right: -5px;
+    overflow: visible;
+}
+
+#boardcontainer .rightWrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+    overflow: visible;
+}
+
+#boardcontainer .tabs {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 500px;
+	height: 28px;
+}
+
+#boardcontainer .sharebutton {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	width: 109px;
+	height: 20px;
+	background: url(../images/share.png) scroll 0 0 no-repeat;
+	background-size: 109px 20px;
+	overflow: hidden;
+}
+
+#boardcontainer .sharebutton:hover {
+	width: 109px;
+	height: 126px;
+	background: url(../images/share_hover.png) scroll 0 0 no-repeat;
+}
+
+.sharebutton ul {
+	margin-top: 36px;
+}
+
+.sharebutton ul li a {
+	width: 106px;
+	height: 26px;
+	display: block;
+}
+
+.sharebutton .facebook {
+	background: url(../images/share_fb.png) scroll no-repeat;
+}
+
+.sharebutton .twitter {
+	background: url(../images/share_twitter.png) scroll no-repeat;
+}
+
+.sharebutton .google {
+	background: url(../images/share_google.png) scroll no-repeat;
+}
+
+.sharebutton .linkedin {
+	background: url(../images/share_linkedin.png) scroll no-repeat;
+}
+
+.sharebutton .tumblr {
+	background: url(../images/share_tumblr.png) scroll no-repeat;
+}
+
+.sharebutton .email {
+	background: url(../images/share_email.png) scroll no-repeat;
+}
+
+
+
+/*
+#boardcontainer .share {
+	width: 394px;
+	height: 70px;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+#boardcontainer .share:hover {
+	height: 200px;
+}
+
+#boardcontainer .sharebutton {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	width: 73px;
+	height: 20px;
+}
+
+
+
+#boardcontainer .dropdown {
+	position: absolute;
+	top: 20px;
+	right: 35px;
+	width: 109px;
+	height: 203px;
+}
+
+#boardcontainer .dropdown {
+	background: white;
+	width: 106px;
+	height: 88px;
+}
+
+#boardcontainer .dropdown ul {
+	margin-top: 20px;
+}
+
+#boardcontainer .share .dropdown li {
+	width: 106px;
+	height: 26px;
+	position: relative;
+    display:block;
+    overflow: hidden;
+}
+*/
+
+/*
+#boardcontainer .share .dropdown {
+	background: white;
+	width: 106px;
+	height: 88px;
+	top: 0;
+	right: 0;
+	position: absolute;
+    display:block;
+    overflow: hidden;
+}
+*/
+
+/*
+#boardcontainer .share:hover{
+	float: right;
+	clear: left;
+	width: 106px;
+	height: 101px;
+	margin-bottom: 2px;
+    position: absolute;
+    display:block;
+    overflow: hidden;
+    z-index: 1688;
+}
+
+*/
+
+
+
+
 
 #dynamic {
     width: 1004px;
@@ -58,7 +247,8 @@ header {
     position: relative;
     top: 74px;
     left: 0;
-    border-top: #d3d3d3 10px solid;
+    z-index: 1;
+
 }
 
 /*	--------------------------------------------------
@@ -70,7 +260,8 @@ header {
     font-family: FranklinGothicURW-HeaIta; 
     font-weight: normal; 
     font-style: normal; 
-    color: #666666; 
+    color: #666666;
+    text-decoration: none;
 }
 
 .headlineMediumGray {
@@ -79,6 +270,7 @@ header {
     font-weight: normal; 
     font-style: normal; 
     color: #666666; 
+    text-decoration: none;
 }
 
 .smallNumbersOrange {
@@ -97,6 +289,37 @@ header {
     margin: 138px 0 48px 18px;
     line-height: 245px;
 }
+
+.tabs {
+	font-size: 21px;
+    font-family: FranklinGothicURW-HeaIta;
+	color: #666666;
+	font-weight: normal; 
+    font-style: normal;
+    text-decoration: none;
+    clear: right;
+}
+
+.tabs a.active {
+	font-size: 21px;
+    font-family: FranklinGothicURW-HeaIta;
+	color: #e75406;
+	font-weight: normal; 
+    font-style: normal;
+    text-decoration: none;
+}
+
+.tabs dl, dd {
+	font-size: 21px;
+    font-family: FranklinGothicURW-HeaIta;
+	color: #666666;
+	font-weight: normal; 
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+
 
 /*	--------------------------------------------------
     Numbers
@@ -372,6 +595,37 @@ header {
     Debugging
     -------------------------------------------------- */
 
+/*
 div {
     border: 1px dotted red;
 }
+
+*/
+
+
+/*	--------------------------------------------------
+    SHARE
+    -------------------------------------------------- */
+
+#shareContainer {
+    overflow: hidden;
+}
+
+#shareContainer .panelBlack {
+    -webkit-transition: height 0.3s ease-out;  /* Safari 3.2+, Chrome */
+     -moz-transition: height 0.3s ease-out;  /* Firefox 4-15 */
+       -o-transition: height 0.3s ease-out;  /* Opera 10.5?12.00 */
+          transition: height 0.3s ease-out;  /* Firefox 16+, Opera 12.50+ */
+}
+
+#shareContainer .expanded {
+    height: 84px;
+    overflow: hidden;
+}
+
+#shareContainer .minimized {
+    height: 21px;
+    overlflow: hidden;
+}
+
+
