@@ -187,6 +187,7 @@ class Tag extends TwitterTracker {
      */
     public function __construct($tag = 'sfsuperbowl') {
         parent::__construct();
+        $this->tag_name = $tag;
     }
     
     /**
