@@ -11,8 +11,8 @@
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../js/jquery.min.js">\x3C/script>')</script>
-        <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>/js/socialTrackers/class.js"></script>
+        <script>window.jQuery || document.write('<script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/jquery.min.js">\x3C/script>')</script>
+        <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/class.js"></script>
         <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/socialTracker.js"></script>
         <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/googleTracker.js"></script>
         <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/twitterTracker.js"></script>
@@ -53,7 +53,7 @@
 	                	<div class="rightWrap">
                                         <?php // echo $request; ?>
 		                	<div class="tabs">
-		                        <a href="../buzz" <?php echo (strpos($request, 'buzz')) ? 'class="active"' : ''; ?>>SEE THE BUZZ</a> / <a href="../movements" <?php echo (strpos($request, 'movement')) ? 'class="active"' : ''; ?>>JOIN THE MOVEMENT</a>
+		                        <a href="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>/buzz" <?php echo (strpos($request, 'buzz')) ? 'class="active"' : ''; ?>>SEE THE BUZZ</a> / <a href="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>/movements" <?php echo (strpos($request, 'movement')) ? 'class="active"' : ''; ?>>JOIN THE MOVEMENT</a>
 		                    </div>
 		                    
 		                    <div class="sharebutton">
