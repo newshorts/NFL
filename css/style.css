@@ -588,6 +588,131 @@ header {
 /*	--------------------------------------------------
     Supporters
     -------------------------------------------------- */
+#latest_news {
+	height: 314px;
+	width: 435px;
+	padding: 30px 0 0 60px; 
+	position: relative;
+	float: left; 
+}
+
+
+#supporters_internal {
+	padding: 20px 0 0 36px;
+	
+	
+}
+
+#supporters_footer {
+	position: relative;
+	height: 130px;
+	width: 1000px;
+	margin: 30px 0 0 30px;
+}
+
+#supporters_footer li div span {
+	border-bottom: #cbcbcb 2px solid;
+	padding: 0 87px 2px 0;
+	
+}
+
+#supporters_internal p {
+	color: #767676;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}	
+
+#supporters_internal em {
+	color: #e75405;
+	font-weight: bold;
+}
+
+#latest_header {
+	border-bottom: #cbcbcb 2px solid;
+	padding-bottom: 7px; 
+}
+
+#latest_header a {
+	text-indent: -9999px; 
+}
+
+#follow {
+	float: right;
+	position: relative;
+	top: -25px;
+}
+
+#facebook_follow {
+	margin: 0px 5px 0px 8px;
+}
+
+#google_follow {
+	margin: 2px 5px 0px 5px;
+	top: 1px;
+	position: relative;
+}
+
+#follow span {
+	color: #767676;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	top: -8px;
+	
+	 
+}
+
+#news {
+	
+}
+
+#news li {
+	border-bottom: #cbcbcb 1px solid;
+	height: 91px;
+	
+}
+
+
+#supporter_numbers {
+	position: relative;
+	float: right;
+	height: 314px;
+	width: 435px;
+	padding: 30px 0 0 60px;
+}
+
+#supporter_numbers li {
+	width: 390px;
+}
+
+#google_pluses {
+	height: 166px;
+	width: 491px; 
+	
+}
+
+
+
+#facebook_likes {
+	height: 166px;
+	width: 491px; 
+	
+}
+
+#google_header {
+	border-bottom: #cbcbcb 2px solid;
+	padding-bottom: 7px; 
+}
+
+#facebook_header {
+	border-bottom: #cbcbcb 2px solid;
+	padding-bottom: 7px; 
+}
+
+
+
+
 
 
 
