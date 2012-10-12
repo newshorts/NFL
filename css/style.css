@@ -12,12 +12,13 @@ body {
 }
 
 
+
 a { color: #666666; text-decoration: none; line-height: inherit; }
 a:hover { color: #e75406; }
 a:focus { color: #e75406; outline: none; }
 p a, p a:visited { line-height: inherit; }
 
-	
+hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30px 12px 0px; height: 0; }
 	
 
 #background {
@@ -33,6 +34,21 @@ p a, p a:visited { line-height: inherit; }
     margin-top: -568px;
     overflow: hidden;
 }
+
+
+#intro {
+    width: 1004px;
+    height: 578px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -501px;
+    margin-top: -325px;
+}
+
+
+
+
 
 #wrap {
     width: 1004px;
@@ -53,20 +69,18 @@ header {
 }
 
 #boardcontainer { 
-    width: 994px; 
+	background: white;
+    width: 998px; 
     height: 68px;
+    top: 8px;
+    left: 3px;
     position: absolute; 
     margin-top: 0; 
     margin-left: 0; 
     overflow: visible;
     z-index: 10;
 }
-/*
-#boardcontainer h2 {
-    margin-top: 31px;
-    margin-left: 33px;
-}
-*/
+
 
 #boardcontainer .left {
 	float: left;
@@ -76,13 +90,7 @@ header {
 }
 
 #boardcontainer .right {
-/*
-	float: right;
-    margin-top: 12px;
-    margin-right: 28px;
-*/
     position: absolute;
-/*     display:block; */
     width: 394px;
     height: 70px;
     top: 0;
@@ -158,85 +166,149 @@ header {
 
 
 
-/*
-#boardcontainer .share {
-	width: 394px;
-	height: 70px;
-    position: relative;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-}
 
-#boardcontainer .share:hover {
-	height: 200px;
-}
 
-#boardcontainer .sharebutton {
-	position: absolute;
-	top: 15px;
-	right: 35px;
-	width: 73px;
-	height: 20px;
+#movements { 
+    width: 1000px; 
+    height: 492px;
+    top: 6px;
+    left: 0px;
+    position: absolute; 
+    margin-top: 0px; 
+    margin-left: 0; 
+    overflow: visible;
+    z-index: 12;
 }
 
 
-
-#boardcontainer .dropdown {
-	position: absolute;
-	top: 20px;
-	right: 35px;
-	width: 109px;
-	height: 203px;
-}
-
-#boardcontainer .dropdown {
+#movements .left {
 	background: white;
-	width: 106px;
-	height: 88px;
-}
-
-#boardcontainer .dropdown ul {
-	margin-top: 20px;
-}
-
-#boardcontainer .share .dropdown li {
-	width: 106px;
-	height: 26px;
-	position: relative;
+	width: 580px; 
+    height: 468px;
+	float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    left: 4px;
     display:block;
-    overflow: hidden;
-}
-*/
-
-/*
-#boardcontainer .share .dropdown {
-	background: white;
-	width: 106px;
-	height: 88px;
-	top: 0;
-	right: 0;
-	position: absolute;
-    display:block;
-    overflow: hidden;
-}
-*/
-
-/*
-#boardcontainer .share:hover{
-	float: right;
-	clear: left;
-	width: 106px;
-	height: 101px;
-	margin-bottom: 2px;
+    padding: 28px 0 0 28px;
     position: absolute;
-    display:block;
-    overflow: hidden;
-    z-index: 1688;
 }
 
-*/
+#movements .right {
+	background: white;
+    position: absolute;
+    width: 380px;
+    height: 498px;
+    top: 0;
+    right: 0px;
+    overflow: visible;
+}
 
+#movements p {
+	font-size: 14px; 
+	line-height: 1.28;
+	color: #767676;
+	margin: 18px 21px 38px 18px;
+}
+
+#movements a {
+	font-weight: bold;
+	color: #e75406;
+}
+
+#movements a:hover {
+	font-weight: bold;
+	color: #666666;
+}
+
+#movements hr { 
+	border: solid #cdcdcd;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 12px 30px 12px 0px;
+	height: 0;
+}
+
+#movements .img {
+	float: left;
+    left: 0px;
+    display:block;
+	margin: 16px 21px 21px 0px;
+}
+
+
+#movements .headline {
+	float: left;
+    display:block;
+    width: 498px;
+	margin: 25px 0px 32px 0px;
+}
+
+#movements .headline .left {
+	float: left;
+    display: block;
+    width: 468px;
+    height: 20px;
+    position: relative;
+}
+
+#movements .headline .right {
+	float: right;
+    display: block;
+    width: 34px;
+    height: 34px; 
+    position: relative;
+    margin-left: 8px; 
+    margin-top: -10px;
+}
+
+#movements .headline h3 {
+    display:block;
+    width: 318px;
+    font-size: 21px;
+    font-family: 'FranklinGothicURW-HeaIta'; 
+    font-weight: normal; 
+    font-style: normal; 
+    color: #666666; 
+    text-decoration: none;
+}
+
+#movements #followSF {
+	float: left;
+}
+
+#movements .headline P {
+    font-size: 14px;
+    font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	line-height: 1.28;
+	color: #767676;
+	font-weight: normal; 
+    text-decoration: none;
+    
+	margin: 2px 0px 0px 0px;
+}
+
+#movements .headline a {
+    font-size: 14px;
+    font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	line-height: 1.28;
+	color: #e75406;
+	font-weight: bold;
+    text-decoration: none;
+    
+	margin: 6px 0px 0px 0px;
+}
+
+#movements .headline a:hover {
+    font-size: 14px;
+    font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	line-height: 1.28;
+	color: #666666;
+	font-weight: bold;
+    text-decoration: none;
+    
+	margin: 6px 0px 0px 0px;
+}
 
 
 
@@ -245,7 +317,7 @@ header {
     width: 1004px;
     height: 504px;
     position: relative;
-    top: 74px;
+    top: 76px;
     left: 0;
     z-index: 1;
 

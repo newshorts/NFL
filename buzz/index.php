@@ -1,4 +1,4 @@
-<?php include('../header.php'); ?>
+<?php include('../header_buzz.php'); ?>
 
     <div id="dynamic">
         <?php include('numbers.php'); ?>

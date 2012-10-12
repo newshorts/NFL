@@ -107,37 +107,9 @@ $page = 'home';
 
 
 	<!-- container -->
+<a href="../instagram/" target="_parent">
+	
 	<div class="container">
-
-			<!--
-<div class="panel">
-				<div id="fblikes">
-					<h6>Facebook Likes (Sonic Drive-In)</h6>
-					<div class="numberboard">
-					<div class="facebookfeed">
-				        <h6>Loading...</h6>
-				    </div>
-					</div>
-				</div>
-			</div>
-			
-			
-			
-			<div class="panel">
-				<div id="gplus">
-					<h6>Google +1's (TechCrunch.com)</h6>
-					
-					<div class="numberboard">
-					
-
-					<span id="googlePluses" data-google="">
-					</span>
-					<span id="output"></span>
-					</div>
-							
-				</div>
-			</div>
--->
 
 			<div id="boxcontainer">
 			
@@ -157,6 +129,7 @@ $page = 'home';
 		</div>
 
 	</div>
+</a>	
 	<!-- container -->
 
 
