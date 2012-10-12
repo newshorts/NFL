@@ -141,6 +141,6 @@ class GhettoQueueCollector extends Phirehose
 } // End of class
 
 // Start streaming/collecting
-$sc = new GhettoQueueCollector('username', 'password');
-$sc->setTrack(array('morning', 'goodnight', 'hello', 'the', 'and'));
+$sc = new GhettoQueueCollector('newshorts', 'kGD_00bouer');
+$sc->setTrack(array('sfsuperbowl', 'vanilla'));
 $sc->consume();
