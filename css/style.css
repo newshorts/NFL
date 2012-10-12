@@ -11,6 +11,15 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
+a { color: #666666; text-decoration: none; line-height: inherit; }
+a:hover { color: #e75406; }
+a:focus { color: #e75406; outline: none; }
+p a, p a:visited { line-height: inherit; }
+
+	
+	
+
 #background {
     background: url(../images/background.jpg) scroll no-repeat;
 /*    background-size: 1920px 1080px;
@@ -21,7 +30,7 @@ body {
     top: 50%;
     left: 50%;
     margin-left: -960px;
-    margin-top: -628px;
+    margin-top: -568px;
     overflow: hidden;
 }
 
@@ -32,7 +41,15 @@ body {
     top: 50%;
     left: 50%;
     margin-left: -500px;
-    margin-top: -383px;
+    margin-top: -328px;
+}
+
+#header {
+	z-index: 10;
+}
+
+header {
+	z-index: 4;
 }
 
 #boardcontainer { 
@@ -41,12 +58,188 @@ body {
     position: absolute; 
     margin-top: 0; 
     margin-left: 0; 
+    overflow: visible;
+    z-index: 10;
 }
-
+/*
 #boardcontainer h2 {
     margin-top: 31px;
     margin-left: 33px;
 }
+*/
+
+#boardcontainer .left {
+	float: left;
+    margin-top: 32px;
+    margin-left: 33px;
+    display:block;
+}
+
+#boardcontainer .right {
+/*
+	float: right;
+    margin-top: 12px;
+    margin-right: 28px;
+*/
+    position: absolute;
+/*     display:block; */
+    width: 394px;
+    height: 70px;
+    top: 0;
+    right: -5px;
+    overflow: visible;
+}
+
+#boardcontainer .rightWrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+    overflow: visible;
+}
+
+#boardcontainer .tabs {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 500px;
+	height: 28px;
+}
+
+#boardcontainer .sharebutton {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	width: 109px;
+	height: 20px;
+	background: url(../images/share.png) scroll 0 0 no-repeat;
+	background-size: 109px 20px;
+	overflow: hidden;
+}
+
+#boardcontainer .sharebutton:hover {
+	width: 109px;
+	height: 126px;
+	background: url(../images/share_hover.png) scroll 0 0 no-repeat;
+}
+
+.sharebutton ul {
+	margin-top: 36px;
+}
+
+.sharebutton ul li a {
+	width: 106px;
+	height: 26px;
+	display: block;
+}
+
+.sharebutton .facebook {
+	background: url(../images/share_fb.png) scroll no-repeat;
+}
+
+.sharebutton .twitter {
+	background: url(../images/share_twitter.png) scroll no-repeat;
+}
+
+.sharebutton .google {
+	background: url(../images/share_google.png) scroll no-repeat;
+}
+
+.sharebutton .linkedin {
+	background: url(../images/share_linkedin.png) scroll no-repeat;
+}
+
+.sharebutton .tumblr {
+	background: url(../images/share_tumblr.png) scroll no-repeat;
+}
+
+.sharebutton .email {
+	background: url(../images/share_email.png) scroll no-repeat;
+}
+
+
+
+/*
+#boardcontainer .share {
+	width: 394px;
+	height: 70px;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+#boardcontainer .share:hover {
+	height: 200px;
+}
+
+#boardcontainer .sharebutton {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	width: 73px;
+	height: 20px;
+}
+
+
+
+#boardcontainer .dropdown {
+	position: absolute;
+	top: 20px;
+	right: 35px;
+	width: 109px;
+	height: 203px;
+}
+
+#boardcontainer .dropdown {
+	background: white;
+	width: 106px;
+	height: 88px;
+}
+
+#boardcontainer .dropdown ul {
+	margin-top: 20px;
+}
+
+#boardcontainer .share .dropdown li {
+	width: 106px;
+	height: 26px;
+	position: relative;
+    display:block;
+    overflow: hidden;
+}
+*/
+
+/*
+#boardcontainer .share .dropdown {
+	background: white;
+	width: 106px;
+	height: 88px;
+	top: 0;
+	right: 0;
+	position: absolute;
+    display:block;
+    overflow: hidden;
+}
+*/
+
+/*
+#boardcontainer .share:hover{
+	float: right;
+	clear: left;
+	width: 106px;
+	height: 101px;
+	margin-bottom: 2px;
+    position: absolute;
+    display:block;
+    overflow: hidden;
+    z-index: 1688;
+}
+
+*/
+
+
+
+
 
 #dynamic {
     width: 1004px;
@@ -54,6 +247,8 @@ body {
     position: relative;
     top: 74px;
     left: 0;
+    z-index: 1;
+
 }
 
 /*	--------------------------------------------------
@@ -65,15 +260,17 @@ body {
     font-family: FranklinGothicURW-HeaIta; 
     font-weight: normal; 
     font-style: normal; 
-    color: #666666; 
+    color: #666666;
+    text-decoration: none;
 }
 
 .headlineMediumGray {
     font-size: 20px;
-    font-family: FranklinGothicURW-HeaIta; 
+    font-family: 'FranklinGothicURW-HeaIta'; 
     font-weight: normal; 
     font-style: normal; 
     color: #666666; 
+    text-decoration: none;
 }
 
 .smallNumbersOrange {
@@ -92,6 +289,37 @@ body {
     margin: 138px 0 48px 18px;
     line-height: 245px;
 }
+
+.tabs {
+	font-size: 21px;
+    font-family: FranklinGothicURW-HeaIta;
+	color: #666666;
+	font-weight: normal; 
+    font-style: normal;
+    text-decoration: none;
+    clear: right;
+}
+
+.tabs a.active {
+	font-size: 21px;
+    font-family: FranklinGothicURW-HeaIta;
+	color: #e75406;
+	font-weight: normal; 
+    font-style: normal;
+    text-decoration: none;
+}
+
+.tabs dl, dd {
+	font-size: 21px;
+    font-family: FranklinGothicURW-HeaIta;
+	color: #666666;
+	font-weight: normal; 
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+
 
 /*	--------------------------------------------------
     Numbers
@@ -150,9 +378,254 @@ body {
 }
 
 /*	--------------------------------------------------
+    Twitter
+    -------------------------------------------------- */
+
+
+#twitter_overlay { background: url(../images/twitter_overlay.png) top left no-repeat; display: block; height: 337px; position: absolute; width: 1000px; z-index: 3;} 
+  
+.twitter { width: 1004px; height: 337px; position: relative; overflow: hidden; }
+
+.tweet_list { position: relative; top: -40px; }
+
+.unique_tweet { 
+	border-bottom: #ccc 2px solid;
+	height: 102px;
+	margin: 0 34px 0 34px;
+	padding: 31px 0 0 0; 
+	position: relative;
+	width: 926px; 
+
+}
+
+.tweet:before {
+	content: url(../images/quote_open.png);
+	float: left;
+	position: relative;
+	width: 25px;
+	height: 17px;
+
+	
+} 
+
+.tweet:after{
+	content: url(../images/quote_close.png);
+	float: right;
+	position: relative;
+	width: 25px;
+	height: 17px;
+	top: 190px;
+
+}
+
+.unique_tweet li { float: left; list-style: none; position: relative;
+	
+	
+}
+
+
+.tweet_info {
+	color: #e75405;
+	font-family: Helvetica, Arial, sans-serif; 
+	font-weight: bold; 
+	font-size: 18px;
+	height: 102px; 
+	margin: 0 0 0 30px;
+	padding: 0 0 0 0; 
+	width: 215px;
+	overflow: hidden;
+	position: relative;
+
+}
+
+.tweet_info ul {
+	
+}
+
+.tweet_info ul li { float: left; position: relative; 
+	
+	
+}
+
+.avatar {
+	margin-right: 7px;
+}
+
+.screenname {
+	position: relative; 
+	clear: right;
+
+}
+
+.username {
+	float: left;
+
+}
+
+.tweet{
+	height: 102px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	width: 680px;
+
+}	
+
+.tweet_text {
+	color: #858585;
+	font-family: Helvetica, Arial, sans-serif; 
+	font-size: 24px;
+	margin: 0 0 0 50px;
+	padding: 0 0 0 0;
+	line-height: 26px; 
+	width: 580px;
+	position: absolute;
+	float: right;
+
+
+  
+}
+
+.external_link {
+	color: #a4bc27;
+	text-decoration: underline;
+	font-family: Helvetica, Arial, sans-serif; 
+	font-size: 24px;
+
+}
+
+.tweet_hashtag {
+	color: #e75405;
+	text-decoration: none; 
+	font: Helvetica, Arial, sans-serif;  
+
+}
+
+
+.tweet_user {
+	color: #858585;
+	font-weight: normal;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+
+}
+
+.tweet_avatar {
+	float: left;
+	height: 48px;
+	width: 48px; 
+
+}
+
+.at_user {
+	color: #a4bc27;
+	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif; 
+	font-size: 24px;
+
+}
+
+#twitter_footer {
+	position: relative;
+	height: 130px;
+	width: 530px;
+	margin: 30px 0 0 30px;
+	
+}
+
+
+#twitter_footer li div span {
+	border-bottom: #cbcbcb 2px solid;
+	 padding-right: 177px; 
+}
+
+
+#social {
+	padding: 20px 0 0 36px; 
+}
+
+#social p {
+	color: #767676;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	width: 240px; 	
+}
+
+#social .links {
+	position: relative;
+	float: right;
+	top: -30px;	
+	
+}
+#social .links li{
+	position: relative;
+	float: left;	
+	
+}
+
+#social .links a {
+	text-decoration: none;
+}
+
+#social .links span {
+	color: #767676;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	top: -11px;
+}
+
+#tweet {
+	margin-right: 20px; 
+}
+
+#social img {
+	margin-right: 7px;
+}
+
+
+/*	--------------------------------------------------
+    Supporters
+    -------------------------------------------------- */
+
+
+
+/*	--------------------------------------------------
     Debugging
     -------------------------------------------------- */
 
+/*
 div {
     border: 1px dotted red;
 }
+
+*/
+
+
+/*	--------------------------------------------------
+    SHARE
+    -------------------------------------------------- */
+
+#shareContainer {
+    overflow: hidden;
+}
+
+#shareContainer .panelBlack {
+    -webkit-transition: height 0.3s ease-out;  /* Safari 3.2+, Chrome */
+     -moz-transition: height 0.3s ease-out;  /* Firefox 4-15 */
+       -o-transition: height 0.3s ease-out;  /* Opera 10.5?12.00 */
+          transition: height 0.3s ease-out;  /* Firefox 16+, Opera 12.50+ */
+}
+
+#shareContainer .expanded {
+    height: 84px;
+    overflow: hidden;
+}
+
+#shareContainer .minimized {
+    height: 21px;
+    overlflow: hidden;
+}
+
+

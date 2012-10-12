@@ -35,7 +35,7 @@
           var div = $(this).find(".tweet_list");
           var ticker = function() {
             setTimeout(function() {
-              div.find('ul:first').animate( {marginTop: '-143px'}, 400, function() {
+              div.find('ul:first').animate( {marginTop: '-134px'}, 400, function() {
                 $(this).detach().appendTo(div).removeAttr('style');
               });
               ticker();
