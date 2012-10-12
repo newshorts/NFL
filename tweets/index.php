@@ -15,7 +15,7 @@
   </div>
   <ul id="twitter_footer">
 	<li>
-		<div class="headlineLargeGray">
+		<div class="headlineMediumGray">
 			<img src="../images/buzz_sign.png"><span>SFSUPERBOWL TWEETS</span>
 		</div>
 	</li>

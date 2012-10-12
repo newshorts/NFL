@@ -3,7 +3,7 @@
 
 <div id="movements">
 	<div class="left">
-		<div class="headlineLargeGray">
+		<div class="headlineMediumGray">
 	    	<img src="../images/buzz_sign.png"><span>SFSUPERBOWL: JOIN THE MOVEMENT</span>
 		</div>
 		
