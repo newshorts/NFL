@@ -24,6 +24,7 @@
   </script>    
     
     <div class="code">
+        <script>
       jQuery(function($){
         $("#ticker").tweet({
           query: "#sanfrancisco OR #oakland",
@@ -44,4 +45,5 @@
           ticker();
         });
       });
+      </script>
     </div>

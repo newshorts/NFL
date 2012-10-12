@@ -17,6 +17,6 @@
 		</ul>
 	</li>
 	<li id="instagram_count">
-	  	<div class="photo_count">39,825</div>
+	  	<div id="instagram_photo_count" class="photo_count">39,825</div>
 	</li> 
   </ul>   

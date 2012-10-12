@@ -8,7 +8,7 @@ var TwitterTracker = SocialTracker.extend({
     
     init: function(elem) {
         
-        this._super('twitter_data', 'get/output.json', elem);
+        this._super('twitter_data', '../services/output.json', elem);
         
         var self = this;
         

@@ -8,7 +8,7 @@ var GoogleTracker = SocialTracker.extend({
     
     init: function(elem) {
         
-        this._super('google_data', 'get/output.json', elem);
+        this._super('google_data', '../services/output.json', elem);
         
         var self = this;
         

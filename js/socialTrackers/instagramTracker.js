@@ -8,7 +8,7 @@ var InstagramTracker = SocialTracker.extend({
     
     init: function(elem) {
         
-        this._super('instagram_data', 'get/output.json', elem);
+        this._super('instagram_data', '../services/output.json', elem);
         
         var self = this;
         

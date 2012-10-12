@@ -509,6 +509,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 
 #twitter_footer { background-color: #fff; position: relative; height: 120px; padding: 20px 0px 0px 30px; width: 966px; }
+#twitter_footer #twitter_count { position: absolute; width: 300px; top: 0; right: 0px; }
 #twitter_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
 
 #social { padding: 20px 0 0 36px; width: 491px}

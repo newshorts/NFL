@@ -4,6 +4,30 @@
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/jquery.min.js">\x3C/script>')</script>
+        <script src="../js/socialTrackers/class.js"></script>
+        <script src="../js/socialTrackers/socialTracker.js"></script>
+        <script src="../js/socialTrackers/googleTracker.js"></script>
+        <script src="../js/socialTrackers/twitterTracker.js"></script>
+        <script src="../js/socialTrackers/facebookTracker.js"></script>
+        <script src="../js/socialTrackers/instagramTracker.js"></script>
+        
+        <script>
+            /*
+             *
+             *  ATTENTION: One window load function initiates all scripts
+             *
+             **/
+            (function($) {
+                $(window).load(function() {
+//                    var gt = new GoogleTracker('#google');
+//                    var ft = new FacebookTracker('#facebook');
+                    var tt = new TwitterTracker('#twitter_count');
+                    var It = new InstagramTracker('#instagram_photo_count');
+                });
+            })(jQuery);
+        </script>
+        
         <link href="../css/reset.css" type="text/css" rel="stylesheet" />
         <link href="../css/font.css" type="text/css" rel="stylesheet" />
         <link href="../css/style.css" type="text/css" rel="stylesheet" />

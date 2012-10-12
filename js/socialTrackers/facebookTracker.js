@@ -8,7 +8,7 @@ var FacebookTracker = SocialTracker.extend({
     
     init: function(elem) {
         
-        this._super('facebook_data', 'get/output.json', elem);
+        this._super('facebook_data', '../services/output.json', elem);
         
         var self = this;
         
