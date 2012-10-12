@@ -93,6 +93,7 @@ $page = 'home';
 
 
 	<!-- container -->
+<a href="../instagram/" target="_parent">
 	<div class="container">
 
 			<div id="boxcontainer">
@@ -105,11 +106,12 @@ $page = 'home';
 					<span id="outputTotal"></span>
 					</div>	
 				</div>
-			</div>
+				</div>
 			
 		</div>
-
+		
 	</div>
+</a>
 	<!-- container -->
 
 

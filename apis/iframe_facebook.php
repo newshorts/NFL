@@ -95,6 +95,7 @@ $page = 'home';
 
 
 	<!-- container -->
+	<a href="../tweets/" target="_parent">
 	<div class="container">
 	
 				<div id="boxcontainer">
@@ -115,6 +116,7 @@ $page = 'home';
 		</div>
 
 	</div>
+	</a>
 	<!-- container -->
 
 

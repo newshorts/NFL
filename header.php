@@ -23,7 +23,7 @@
 	                	<div class="rightWrap">
 	                	
 		                	<div class="tabs">
-		                        <a class="active" href="#">SEE THE BUZZ</a> / <a href="#">JOIN THE MOVEMENT</a>
+		                        <a href="../buzz">SEE THE BUZZ</a> / <a href="../movements">JOIN THE MOVEMENT</a>
 		                    </div>
 		                    
 <!-- 		                    <img class="sharebutton" src="images/share.png"> -->
