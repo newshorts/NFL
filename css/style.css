@@ -601,22 +601,90 @@ p a, p a:visited { line-height: inherit; }
 #latest_news {
 	background-color: #fff;
 	height: 317px;
-	width: 462px;
+	width: 422px;
 	padding: 30px 30px 0 60px;
 	margin: 10px 10px 10px 0; 
 	position: relative;
 	float: left; 
 }
 
+#latest_header {
+	border-bottom: #cbcbcb 2px solid;
+	padding-bottom: 7px; 
+}
+
+/*
+#latest_header a {
+	text-indent: -9999px; 
+}
+*/
+
+
+
 #supporter_numbers {
 	background-color: #fff;
 	position: relative;
 	float: right;
 	height: 317px;
-	width: 381px;
+	width: 421px;
 	padding: 30px 30px 0 30px;
 	margin: 10px 0;
 }
+
+
+#google_pluses {
+	height: 159px;
+	width: 421px; 	
+}
+
+#google_header {
+	border-bottom: #cbcbcb 2px solid;
+	padding-bottom: 7px; 
+}
+
+#facebook_likes {
+	height: 158px;
+	width: 421px; 	
+}
+
+#facebook_header {
+	border-bottom: #cbcbcb 2px solid;
+	padding-bottom: 7px; 
+}
+
+
+
+#google_cta {
+	width: 200px; 
+	
+}
+
+#google_cta img {
+	margin: 0 10px 0 0;
+}
+
+#google_cta span {
+	position: relative;
+	top: -15px; 
+}
+
+
+
+#facebook_cta {
+	width: 200px;
+	
+}
+
+#facebook_cta img {
+	margin: 0 10px 0 0;
+}
+
+
+#facebook_cta span {
+	position: relative;
+	top: -15px; 
+}
+
 
 
 #supporters_footer {
@@ -624,20 +692,10 @@ p a, p a:visited { line-height: inherit; }
 	position: relative;
 	height: 110px;
 	width: 973px;
-	padding: 30px 0 0 30px;
+	padding: 25px 0 0 30px;
 }
 
-#google_pluses {
-	height: 159px;
-	width: 381px; 
-	
-}
 
-#facebook_likes {
-	height: 158px;
-	width: 481px; 
-	
-}
 
 
 #supporters_internal {
@@ -665,14 +723,7 @@ p a, p a:visited { line-height: inherit; }
 
 
 
-#latest_header {
-	border-bottom: #cbcbcb 2px solid;
-	padding-bottom: 7px; 
-}
 
-#latest_header a {
-	text-indent: -9999px; 
-}
 
 #supporters_follow {
 	float: right;
@@ -709,9 +760,7 @@ p a, p a:visited { line-height: inherit; }
 
 
 
-#supporter_numbers li {
-	width: 380px;
-}
+
 
 
 
@@ -741,19 +790,9 @@ p a, p a:visited { line-height: inherit; }
 	margin: 30px 0 0 0;
 }
 
-#facebook_likes li div img { 
-	margin: 0 10px 0 0;
-}
 
-#google_header {
-	border-bottom: #cbcbcb 2px solid;
-	padding-bottom: 7px; 
-}
 
-#facebook_header {
-	border-bottom: #cbcbcb 2px solid;
-	padding-bottom: 7px; 
-}
+
 
 
 

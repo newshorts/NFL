@@ -21,7 +21,7 @@
 					<span>GOOGLE+</span>
 					</li>
 				<li>
-					<div><a href=""><img src="../images/google_pluses.png"></a><span>+1'S</span></div>
+					<div id="google_cta"><a href=""><img src="../images/google_pluses.png"></a><span>+1'S</span></div>
 					<div></div>
 				</li>
 			</ul>
@@ -31,7 +31,7 @@
 					<span>FACEBOOK</span>
 				</li>
 				<li>
-					<div><a href=""><img src="../images/facebook_likes.png"></a><span>LIKES</span></div>
+					<div id="facebook_cta"><a href=""><img src="../images/facebook_likes.png"></a><span>LIKES</span></div>
 					<div></div>
 				</li>
 			</ul>
