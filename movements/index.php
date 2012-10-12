@@ -1,4 +1,4 @@
-<?php include('../header_movements.php'); ?>
+<?php include('../header.php'); ?>
 
     <div id="dynamic">
         <?php include('movements.php'); ?>
