@@ -126,7 +126,7 @@ class Dbconnect {
     }
 
     /**
-     * Query the database and return everything
+     * Query the database and return everything, good for inserts and updates
      * @access public
      * @param string $qstring a mysql query string
      * @return object 

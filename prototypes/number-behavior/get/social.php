@@ -1,5 +1,5 @@
 <?php
-
+require_once 'twitterTracker.php';
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -10,8 +10,13 @@ class Social {
     public $filename;
     protected $output = Array();
     
+    protected $twitter;
+    
     public function __construct($filename = 'get') {
         $this->filename = $filename;
+        
+        $this->twitter = new TwitterTracker();
+        
     }
     
     public function get_all() {
@@ -34,10 +39,13 @@ class Social {
     
     private function get_tweets($url) {
 //        $json_string = file_get_contents('http://urls.api.twitter.com/1/urls/count.json?url=' . $url);
-        $json_string = file_get_contents('http://otter.topsy.com/searchcount.json?q=sfsuperbowl&apikey=EA7FB3A842894C08B31348305D339A8E');
-        $json = json_decode($json_string, true);
-        
-        return intval( $json['response']['a'] );
+//        $json_string = file_get_contents('http://otter.topsy.com/searchcount.json?q=sfsuperbowl&apikey=EA7FB3A842894C08B31348305D339A8E');
+//        $json = json_decode($json_string, true);
+//        
+//        return intval( $json['response']['a'] );
+
+        $count = $this->twitter->getTagCount();
+        return $count['tweet_count'];
     }
     
     private function get_likes() {

@@ -1,20 +1,34 @@
 <?php
-require_once 'db.php';
+//require_once 'db.php';
 /**
  * Simple Twitter class
  * @package Twitter
  * @subpackage Dbconnect
+ * @version 1
  */
 class Twitter {
     
-    protected $db;
+    /**
+     * Store the local db class
+     * @deprecated since version 1
+     */
+//    protected $db;
+    
+    /**
+     * Constructor
+     * @access public
+     * @deprecated since version 1
+     */
+//    public function __construct () {
+//        $this->db = new Dbconnect("localhost", "root", "", "twitter_tracker");
+//    }
     
     /**
      * Constructor
      * @access public
      */
     public function __construct () {
-        $this->db = new Dbconnect("localhost", "root", "", "twitter_tracker");
+        
     }
     
     /**
@@ -24,12 +38,13 @@ class Twitter {
      * TODO: specify whether this should store the return from twitter or return it to the controller
      * @return array 
      */
-    protected function callTwitter ($query = "?q=%40newshorts+OR+%40jweav1+OR+%40boxsavant+OR+%40pedrosorren+OR+%40fouhy+OR+%40emzosmizo+OR+%40kadisco+OR+%40jennarconlin+OR+%40charliesheen&rpp=100&page=15&since=2011-03-18") {
-        $response = file_get_contents("http://search.twitter.com/search.json".$query);
+    public function callTwitter ($query = "sfsuperbowl") {
+        
+        $q = '?q=%23'.$query.'&rpp=100&since=2011-03-18';
+        
+        $response = file_get_contents("http://search.twitter.com/search.json".$q);
         if($response) {
-            $this->twitterResponse = json_decode($response, true);
-        } else {
-            $this->twitterResponse = false;
+            return json_decode($response, true);
         }
     }
     
@@ -38,10 +53,11 @@ class Twitter {
      * @access public
      * @param string $qstring a mysql query string
      * @return array 
+     * @deprecated since version 1
      */
-    protected function getTweetById($id) {
-       return $this->db->get_arr("SELECT * FROM tweets WHERE tid = ".$id." LIMIT 1");
-    }
+//    protected function getTweetById($id) {
+//       return $this->db->get_arr("SELECT * FROM tweets WHERE tid = ".$id." LIMIT 1");
+//    }
 }
 
 
