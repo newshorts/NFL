@@ -453,8 +453,8 @@ p a, p a:visited { line-height: inherit; }
     Supporters
     -------------------------------------------------- */
     
-.supporters { height: 497px; width: 1003px; }
-#supporters_main { height: 367px;  width: 1003px; }
+.supporters { height: 497px; width: 997px; }
+#supporters_main { height: 367px;  width: 997px; }
 
 
 
@@ -472,9 +472,9 @@ p a, p a:visited { line-height: inherit; }
 
 
 
-#supporter_numbers { background-color: #fff; position: relative; float: right; height: 317px; width: 421px; padding: 30px 30px 0 30px; margin: 10px 0; }
+#supporter_numbers { background-color: #fff; position: relative; float: right; height: 317px; width: 415px; padding: 30px 30px 0 30px; margin: 10px 0; }
 
-#google_pluses { height: 159px; width: 421px; }
+#google_pluses { height: 159px; width: 415px; }
 
 #google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
 #google_pluses li div span { font-size: 24px; font-family: 'FranklinGothicURW-HeaIta';  color: #666666;  text-decoration: none; }
@@ -485,7 +485,7 @@ p a, p a:visited { line-height: inherit; }
 #google_cta span {position: relative;top: -15px; }
 
 
-#facebook_likes { height: 158px; width: 421px; }
+#facebook_likes { height: 158px; width: 415px; }
 
 #facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
 #facebook_likes li div { margin: 30px 0 0 0; }
@@ -497,7 +497,7 @@ p a, p a:visited { line-height: inherit; }
 
 
 
-#supporters_footer { background-color: #fff; position: relative; height: 110px; width: 973px; padding: 25px 0 0 30px; }
+#supporters_footer { background-color: #fff; position: relative; height: 110px; width: 967px; padding: 25px 0 0 30px; }
 
 #supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding: 0 87px 2px 0; }
 
