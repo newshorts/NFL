@@ -22,7 +22,11 @@ var SocialTracker = Class.extend({
         this._elem = $(elem);
         this._name = eventName;
         
-        this.track();
+        if(elem.length > 0) {
+            this.track();
+            console.log(eventName + ' is not available on this page - shutting down');
+        }
+        
     },
     
     randomString: function(string_length) {
