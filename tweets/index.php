@@ -3,8 +3,9 @@
 
 
 <div id="dynamic">
-<div id="twitter_overlay">
-</div> 
+<div id="twitter_overlay_top"></div>
+<div id="twitter_overlay_bottom"></div> 
+
   <div class="twitter">
   
   	<?php include('tweet_code.php'); ?>

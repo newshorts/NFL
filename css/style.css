@@ -64,9 +64,6 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	z-index: 10;
 }
 
-header {
-	z-index: 4;
-}
 
 #boardcontainer { 
 	background: white;
@@ -126,7 +123,7 @@ header {
 
 #boardcontainer .sharebutton:hover {
 	width: 109px;
-	height: 126px;
+	height: 156px;
 	background: url(../images/share_hover.png) scroll 0 0 no-repeat;
 }
 
@@ -319,6 +316,7 @@ header {
     position: relative;
     top: 76px;
     left: 0;
+
     z-index: 1;
 
 }
@@ -348,6 +346,14 @@ header {
 .smallNumbersOrange {
     font-family: 'ds-digitalitalic', Arial, sans-serif;
     font-size: 75px;
+    color: #e75406;
+    margin: 38px 0 48px 0;
+    line-height: 80px;
+}
+
+.mediumNumbersOrange {
+	 font-family: 'ds-digitalitalic', Arial, sans-serif;
+    font-size: 116px;
     color: #e75406;
     margin: 38px 0 48px 0;
     line-height: 80px;
@@ -432,234 +438,145 @@ header {
 
 #instagram {
     overflow: hidden;
+    height: 345px; 
+    margin: 10px 0px; 
 }
 
-#belowInstagram hr {
-    background-color: #c8c8c8;
+#instagram_footer { background-color: #fff; position: relative; height: 120px; padding: 20px 0px 0px 30px; width: 966px; }
+#instagram_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
+
+
+#instagram_count {
+	position: relative;
+	float: right;
 }
 
-#belowInstagram .headline {
-    float: left;
-    width: 573px;
+.photo_count {
+	font-family: 'ds-digitalitalic', Arial, sans-serif;
+    font-size: 116px;
+    color: #e75406;
+    margin: 15px 20px 0px 0px;
+	
 }
 
-#belowInstagram .photoCount {
-    float: right;
-    width: 425px;
-    text-align: right;
+
+#instagram_social { padding: 20px 0 0 36px; width: 495px; positionL: relative; float: left; 
+	
 }
+
+#instagram_social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 370px; 
+	
+}
+
+#instagram_social em { color: #e75405; font-weight: bold; 
+	
+}
+
+#instagram_button { position: relative; top: -30px;  float: right; }
 
 /*	--------------------------------------------------
     Twitter
     -------------------------------------------------- */
 
-
-#twitter_overlay { background: url(../images/twitter_overlay.png) top left no-repeat; display: block; height: 337px; position: absolute; width: 1000px; z-index: 3;} 
+.twitter { background-color: #fff; height: 347px; position: relative; overflow: hidden; margin: 10px 0px; width: 996px; }
+/* #twitter_overlay { background: url(../images/twitter_overlay.png) top left no-repeat; display: block; height: 347px; position: absolute; width: 996px; z-index: 3;}    */
+#twitter_overlay_top { background: url(../images/twitter_overlay_top.png) top left no-repeat; display: block; height: 127px; position: absolute; width: 996px; z-index: 3; }
+#twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 136px; position: absolute; width: 996px; top: 211px; z-index: 3; } 
   
-.twitter { width: 1004px; height: 337px; position: relative; overflow: hidden; }
 
-.tweet_list { position: relative; top: -40px; }
+.tweet_list { position: relative; top: -50px; }
 
-.unique_tweet { 
-	border-bottom: #ccc 2px solid;
-	height: 102px;
-	margin: 0 34px 0 34px;
-	padding: 31px 0 0 0; 
-	position: relative;
-	width: 926px; 
+.unique_tweet { border-bottom: #ccc 2px solid; height: 110px; margin: 0 34px 0 34px; padding: 34px 0 0 0;  position: relative; width: 926px; }
+.unique_tweet li { float: left; list-style: none; position: relative; }
 
-}
-
-.tweet:before {
-	content: url(../images/quote_open.png);
-	float: left;
-	position: relative;
-	width: 25px;
-	height: 17px;
-
-	
-} 
-
-.tweet:after{
-	content: url(../images/quote_close.png);
-	float: right;
-	position: relative;
-	width: 25px;
-	height: 17px;
-	top: 190px;
-
-}
-
-.unique_tweet li { float: left; list-style: none; position: relative;
-	
-	
-}
+.tweet_info { color: #e75405; font-family: Helvetica, Arial, sans-serif;  font-weight: bold;  font-size: 18px; height: 102px;  margin: 0 0 0 30px; padding: 0 0 0 0;  width: 215px; overflow: hidden; position: relative; }
+.tweet_info ul li { float: left; position: relative; }
+.avatar { margin-right: 7px; }
+.tweet_avatar { float: left; height: 48px; width: 48px; }
+.screenname { position: relative;  clear: right; }
+.username { float: left; }
+.tweet_user { color: #858585; font-weight: normal; text-decoration: none; font-family: Arial, Helvetica, sans-serif;  font-size: 12px; }
 
 
-.tweet_info {
-	color: #e75405;
-	font-family: Helvetica, Arial, sans-serif; 
-	font-weight: bold; 
-	font-size: 18px;
-	height: 102px; 
-	margin: 0 0 0 30px;
-	padding: 0 0 0 0; 
-	width: 215px;
-	overflow: hidden;
-	position: relative;
+.tweet{ height: 102px; width: 680px; }	
+.tweet:before { content: url(../images/quote_open.png); float: left; position: relative; width: 25px; height: 17px; } 
+.tweet:after { content: url(../images/quote_close.png); float: right; position: relative; width: 25px; height: 17px; top: 210px; }
 
-}
-
-.tweet_info ul {
-	
-}
-
-.tweet_info ul li { float: left; position: relative; 
-	
-	
-}
-
-.avatar {
-	margin-right: 7px;
-}
-
-.screenname {
-	position: relative; 
-	clear: right;
-
-}
-
-.username {
-	float: left;
-
-}
-
-.tweet{
-	height: 102px;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-	width: 680px;
-
-}	
-
-.tweet_text {
-	color: #858585;
-	font-family: Helvetica, Arial, sans-serif; 
-	font-size: 24px;
-	margin: 0 0 0 50px;
-	padding: 0 0 0 0;
-	line-height: 26px; 
-	width: 580px;
-	position: absolute;
-	float: right;
+.tweet_text { color: #858585; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; margin: 0 0 0 50px; line-height: 26px; width: 580px; position: absolute; float: right; }
+.external_link { color: #a4bc27; text-decoration: underline; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
+.tweet_hashtag { color: #e75405; text-decoration: none;  font: Helvetica, Arial, sans-serif; }
+.at_user { color: #a4bc27; text-decoration: none; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
 
 
-  
-}
+#twitter_footer { background-color: #fff; position: relative; height: 120px; padding: 20px 0px 0px 30px; width: 966px; }
+#twitter_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
 
-.external_link {
-	color: #a4bc27;
-	text-decoration: underline;
-	font-family: Helvetica, Arial, sans-serif; 
-	font-size: 24px;
+#social { padding: 20px 0 0 36px; width: 491px}
+#social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 240px; }
+#social .links { position: relative; float: right; top: -30px; }
+#social .links li { position: relative; float: left; }
+#social .links a { text-decoration: none; }
+#social .links span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; position: relative; top: -11px; }
 
-}
-
-.tweet_hashtag {
-	color: #e75405;
-	text-decoration: none; 
-	font: Helvetica, Arial, sans-serif;  
-
-}
-
-
-.tweet_user {
-	color: #858585;
-	font-weight: normal;
-	text-decoration: none;
-	font-family: Arial, Helvetica, sans-serif; 
-	font-size: 12px; 
-
-}
-
-.tweet_avatar {
-	float: left;
-	height: 48px;
-	width: 48px; 
-
-}
-
-.at_user {
-	color: #a4bc27;
-	text-decoration: none;
-	font-family: Helvetica, Arial, sans-serif; 
-	font-size: 24px;
-
-}
-
-#twitter_footer {
-	position: relative;
-	height: 130px;
-	width: 530px;
-	margin: 30px 0 0 30px;
-	
-}
-
-
-#twitter_footer li div span {
-	border-bottom: #cbcbcb 2px solid;
-	 padding-right: 177px; 
-}
-
-
-#social {
-	padding: 20px 0 0 36px; 
-}
-
-#social p {
-	color: #767676;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	width: 240px; 	
-}
-
-#social .links {
-	position: relative;
-	float: right;
-	top: -30px;	
-	
-}
-#social .links li{
-	position: relative;
-	float: left;	
-	
-}
-
-#social .links a {
-	text-decoration: none;
-}
-
-#social .links span {
-	color: #767676;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	position: relative;
-	top: -11px;
-}
-
-#tweet {
-	margin-right: 20px; 
-}
-
-#social img {
-	margin-right: 7px;
-}
+#social img { margin-right: 7px; }
+#tweet { margin-right: 20px;  }
 
 
 /*	--------------------------------------------------
     Supporters
     -------------------------------------------------- */
+    
+.supporters { height: 497px; width: 997px; }
+#supporters_main { height: 367px;  width: 997px; }
+
+
+
+#latest_news { background-color: #fff; height: 317px; width: 422px; padding: 30px 30px 0 60px; margin: 10px 10px 10px 0;  position: relative; float: left; }
+#latest_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
+
+#supporters_follow { float: right; position: relative; top: -25px; }
+#facebook_follow { margin: 0px 5px 0px 8px; }
+#google_follow { margin: 2px 5px 0px 5px; top: 1px; position: relative; }
+#supporters_follow span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; position: relative; top: -8px; }
+
+
+
+#news li { border-bottom: #cbcbcb 1px solid; height: 91px; }
+
+
+
+#supporter_numbers { background-color: #fff; position: relative; float: right; height: 317px; width: 415px; padding: 30px 30px 0 30px; margin: 10px 0; }
+
+#google_pluses { height: 159px; width: 415px; }
+
+#google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
+#google_pluses li div span { font-size: 24px; font-family: 'FranklinGothicURW-HeaIta';  color: #666666;  text-decoration: none; }
+#google_pluses li div { margin: 30px 0 0 0; }
+
+#google_cta { width: 200px;  }
+#google_cta img { margin: 0 10px 0 0; }
+#google_cta span {position: relative;top: -15px; }
+
+
+#facebook_likes { height: 158px; width: 415px; }
+
+#facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
+#facebook_likes li div { margin: 30px 0 0 0; }
+#facebook_likes li div span { font-size: 24px; font-family: 'FranklinGothicURW-HeaIta'; color: #666666; text-decoration: none; }
+
+#facebook_cta { width: 200px; }
+#facebook_cta img { margin: 0 10px 0 0; }
+#facebook_cta span { position: relative; top: -15px; }
+
+
+
+#supporters_footer { background-color: #fff; position: relative; height: 110px; width: 967px; padding: 25px 0 0 30px; }
+
+#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding: 0 87px 2px 0; }
+
+#supporters_internal { padding: 20px 0 0 36px; }
+#supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
+#supporters_internal em { color: #e75405; font-weight: bold; }
 
 
 

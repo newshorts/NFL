@@ -2,16 +2,21 @@
     // do nothing?
 ?>
 <iframe id="instagram" name="photos" frameborder="0" src="../prototypes/instagram/index.html" width="998" height="316"></iframe>
-<div id="belowInstagram">
-    <div class="headline">
-        <img src="../images/buzz_sign.png" />
-        <span class="headlineMediumGray">SFSUPERBOWL PHOTOS</span>
-        <hr class="lightGray" />
-        <p>
-            Show the league why the Bay Area is perfect for the Super Bowl L. Tag your Instagram photos with <span class="orange">#SFSuperBowl</span>.
-            <img src="../images/icon_instagram_large.png" />
-        </p>
-    </div>
-    
-    <div class="photoCount smallNumbersOrange">39,825</div>
-</div>
+
+
+  <ul id="instagram_footer">
+	<li>
+		<div class="headlineLargeGray">
+			<img src="../images/buzz_sign.png"><span>SFSUPERBOWL PHOTOS</span>
+		</div>
+	</li>
+	<li id="instagram_social">
+		<p>Show the league why the Bay Area is perfect for Super Bowl L. Tag your Instagram photo with <em>#SFSuperBowl</em>.</p>
+		<ul class="links">
+			<li id="instagram_button"><a href="http://instagr.am" target="_blank"><img src="../images/instagram_button.png"></a></li>
+		</ul>
+	</li>
+	<li id="instagram_count">
+	  	<div class="photo_count">39,825</div>
+	</li> 
+  </ul>   
