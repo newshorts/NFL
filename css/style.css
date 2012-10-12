@@ -115,7 +115,7 @@ p a, p a:visited { line-height: inherit; }
 
 #boardcontainer .sharebutton:hover {
 	width: 109px;
-	height: 126px;
+	height: 156px;
 	background: url(../images/share_hover.png) scroll 0 0 no-repeat;
 }
 
