@@ -9,7 +9,7 @@
 		
 		<hr>
 		
-		<p>Our bid for the Super Bowl starts with you. Help us show why the Bay Area will be a perfect host for Super Bowl L. Simply tweet, share or post with <a href="https://twitter.com/SFSuperbowl" target="_blank";>#SFSuperBowl</a> to show your support.</p>
+		<p>Our bid for the Super Bowl starts with you. Help us show why the Bay Area will be a perfect host for Super Bowl L. Simply tweet, share or post with <a href="https://twitter.com/SFSuperbowl" target="_blank";>&#35;SFSuperBowl</a> to show your support.</p>
 		
 		<hr>
 		
@@ -29,7 +29,7 @@
 		
 		<div class="headline">
 				<h3>COMING SOON: THE LIVING LOGO</h3>
-				<P>Use your smartphone to unlock exclusive <a href="https://twitter.com/SFSuperbowl" target="_blank";>#SFSuperbowl</a> content.</P>
+				<P>Use your smartphone to unlock exclusive <a href="https://twitter.com/SFSuperbowl" target="_blank";>&#35;SFSuperbowl</a> content.</P>
 		</div>
 		
 		
@@ -41,9 +41,9 @@
 		
 		<div class="headline">
 		<h3 id="followSF">FOLLOW @SFSUPERBOWL</h3>
-		<div class="right"><img src="../images/follow_twitter.png"></div>
-		<div class="right"><img src="../images/follow_facebook.png"></div>
-		<div class="right"><img src="../images/follow_google.png"></div>
+		<div class="right"><a href="https://plus.google.com/u/0/116535953378851378506/" target="_blank"><img src="../images/follow_google.png"></a></div>
+		<div class="right"><a href="https://www.facebook.com/SFSuperbowl" target="_blank"><img src="../images/follow_facebook.png"></a></div>
+		<div class="right"><a href="https://twitter.com/SFSuperbowl" target="_blank"><img src="../images/follow_twitter.png"></a></div>
 		</div>
 		
 		<hr>
