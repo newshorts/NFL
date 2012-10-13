@@ -1,0 +1,45 @@
+  _________             .__       .__    ___________                     __                 
+ /   _____/ ____   ____ |__|____  |  |   \__    ___/___________    ____ |  | __ ___________ 
+ \_____  \ /  _ \_/ ___\|  \__  \ |  |     |    |  \_  __ \__  \ _/ ___\|  |/ // __ \_  __ \
+ /        (  <_> )  \___|  |/ __ \|  |__   |    |   |  | \// __ \\  \___|    <\  ___/|  | \/
+/_______  /\____/ \___  >__(____  /____/   |____|   |__|  (____  /\___  >__|_ \\___  >__|   
+        \/            \/        \/                             \/     \/     \/    \/       
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Couple things: 
+
+Inside the "get" folder we have two libraries "social" and "twitterTracker". The "get" files
+are polled every minute and are responsible for pulling social tracking numbers into a local
+file called "output.json". When a client browser makes a social tracking request, this 
+"output.json" file is served. "twitterTracker" is responsible to querying the twitter 
+database and for polling twitter with the latest tweets. "pollTwitter" files are also called
+every minute and are set to sleep at 15 second intervals. They poll for new tweets and add 
+them to the database. Then the "get" files poll the database to get the total tweets. If we
+want to add support for multiple hash tags, we need to add another field in the db with a
+"tag" value so we can match correct tags.
+
+
+file                cron            sleep           purpose
+____________________________________________________________________________________________________
+get.php             */1             sleep(0)        compiles all social + writes "output.json"
+get1.php            */1             sleep(30)       compiles all social + writes "output.json"
+get2.php            */1             sleep(30)       inactive
+get3.php            */1             sleep(45)       inactive
+
+pollTwitter.php     */1             sleep(0)        calls twitter + writes new tweet ids to db
+pollTwitter1.php    */1             sleep(15)       calls twitter + writes new tweet ids to db
+pollTwitter2.php    */1             sleep(30)       calls twitter + writes new tweet ids to db
+pollTwitter3.php    */1             sleep(45)       calls twitter + writes new tweet ids to db
+
+
+Service             Rate Limit
+_______________________________
+
+Twitter             every 5s (180/15 min)
+Facebook            every 1s (600/600 seconds)
+Instagram           every 1s (5,000/hour)
+Google+             every 10s (10,000/day)
+
