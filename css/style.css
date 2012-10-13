@@ -35,7 +35,6 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     overflow: hidden;
 }
 
-
 #intro {
     width: 1004px;
     height: 578px;
@@ -43,12 +42,9 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     top: 50%;
     left: 50%;
     margin-left: -501px;
-    margin-top: -325px;
+    margin-top: -289px;
+    z-index: 20;
 }
-
-
-
-
 
 #wrap {
     width: 1004px;
@@ -181,7 +177,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 
 #movements .left {
-	background: white;
+	/*background: white;*/
 	width: 580px; 
     height: 468px;
 	float: left;
@@ -194,7 +190,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 #movements .right {
-	background: white;
+	/*background: white;*/
     position: absolute;
     width: 380px;
     height: 498px;
@@ -252,13 +248,15 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 #movements .headline .right {
-	float: right;
+    float: right;
     display: block;
-    width: 34px;
-    height: 34px; 
+    width: 33px;
+    height: 33px; 
     position: relative;
     margin-left: 8px; 
     margin-top: -10px;
+    box-shadow: 1px 2px 3px 2px #ccc;
+    border-radius: 8px;
 }
 
 #movements .headline h3 {
@@ -455,7 +453,11 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 #screen li { 
-    float: left; 
+    float: left;
+}
+
+#screen li:hover {
+    background: white;
 }
 
 #box1 { 
@@ -478,6 +480,10 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     width: 899px;
     text-align: right;
     margin: 0;
+    
+    direction: rtl;
+    text-align: justify;
+    white-space: pre;
 }
 
 #box2 {
@@ -499,12 +505,14 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 .count {
+    display: inline;
     top: 78px;
     left: 26px;
     margin: 0;
     width: 263px;
     direction: rtl;
     text-align: justify;
+    white-space: pre;
 }
 
 .smallBoxHeading {
@@ -528,11 +536,14 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     width: 271px;
 }
 
-.bottom { 
+.bottom, .bottom a { 
     width: 328px; 
     height: 164px; 
-    position: relative; 
+    position: relative;
+    display: block;
 }
+
+
 
 /*	--------------------------------------------------
     Instagram

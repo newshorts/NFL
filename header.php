@@ -8,65 +8,76 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>SFSuperBowl || 2016</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/jquery.min.js">\x3C/script>')</script>
-        <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/class.js"></script>
-        <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/socialTracker.js"></script>
-        <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/googleTracker.js"></script>
-        <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/twitterTracker.js"></script>
-        <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/facebookTracker.js"></script>
-        <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/instagramTracker.js"></script>
-        <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/gfbTracker.js"></script>
-        <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/totalTracker.js"></script>
+        <script>window.jQuery || document.write('<script src="<?php echo ROOT; ?>js/lib/jquery.min.js">\x3C/script>')</script>
+        
+        <script src="<?php echo ROOT; ?>js/lib/class.js"></script>
+        
+        <script src="<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js"></script>
+        <script src="<?php echo ROOT; ?>js/lib/pageNavigation.js"></script>
+        
+        <script src="<?php echo ROOT; ?>js/socialTrackers/socialTracker.js"></script>
+        <script src="<?php echo ROOT; ?>js/socialTrackers/googleTracker.js"></script>
+        <script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>
+        <script src="<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js"></script>
+        <script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>
+        <script src="<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js"></script>
+        <script src="<?php echo ROOT; ?>js/socialTrackers/totalTracker.js"></script>
         <script>
+            
             /*
              *  ATTENTION: One window load function initiates all scripts
              **/
             (function($) {
                 $(window).load(function() {
+                    
                     var gt = new GoogleTracker('#google_count');
                     var ft = new FacebookTracker('#facebook_count');
                     var tt = new TwitterTracker('#twitter_count');
                     var It = new InstagramTracker('#instagram_photo_count');
                     var gfb = new GfbTracker('#gfb_count');
                     var total = new TotalTracker('#total');
+                    
+//                    var nav = new PageNavigation('#wrap');
+                    
                 });
             })(jQuery);
         </script>
         
-        <link href="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>css/reset.css" type="text/css" rel="stylesheet" />
-        <link href="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>css/font.css" type="text/css" rel="stylesheet" />
-        <link href="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>css/style.css" type="text/css" rel="stylesheet" />
+        <link href="<?php echo ROOT; ?>css/reset.css" type="text/css" rel="stylesheet" />
+        <link href="<?php echo ROOT; ?>css/font.css" type="text/css" rel="stylesheet" />
+        <link href="<?php echo ROOT; ?>css/style.css" type="text/css" rel="stylesheet" />
 
     </head>
-    <body>
+    <body data-device="<?php echo DEVICE_TYPE; ?>">
         <div id="background"></div>
         <div id="wrap">
         
             <div id="header">
                 <div id="boardcontainer">
+                    
 	                <div class="left">
 	                    <h2 class="headlineLargeGray">BRING THE BOWL TO THE BAY</h2>
 	                </div>
 	                
 	                <div class="right">
+                            
 	                	<div class="rightWrap">
-                                        <?php // echo $request; ?>
-		                	<div class="tabs">
-		                        <a href="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>buzz" <?php echo (strpos($request, 'buzz')) ? 'class="active"' : ''; ?>>SEE THE BUZZ</a> / <a href="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>movements" <?php echo (strpos($request, 'movement')) ? 'class="active"' : ''; ?>>JOIN THE MOVEMENT</a>
+                                    <div class="tabs">
+		                        <a href="<?php echo ROOT; ?>buzz" class="ajaxify <?php echo (strpos($request, 'buzz')) ? 'active' : ''; ?>"><?php echo (strpos($request, 'buzz')) ? 'SEE THE BUZZ' : 'SCOREBOARD'; ?></a> / <a href="<?php echo ROOT; ?>movements" class="ajaxify <?php echo (strpos($request, 'movement')) ? 'active' : ''; ?>" >JOIN THE MOVEMENT</a>
 		                    </div>
 		                    
 		                    <div class="sharebutton">
-			                    <ul>
-				                    <li><a class="facebook link" href="#"></a></li>
-				                    <li><a class="twitter link" href="#"></a></li>
-				                    <li><a class="google link" href="#"></a></li>
-			                    </ul>
+                                        <ul>
+                                            <li><a class="facebook link" href="#"></a></li>
+                                            <li><a class="twitter link" href="#"></a></li>
+                                            <li><a class="google link" href="#"></a></li>
+                                        </ul>
 		                    </div>
 		                    
-		                	<div class="hoverbutton"></div>
+                                    <div class="hoverbutton"></div>
 
 	                	</div><!-- /rightwrap -->
 	                	
