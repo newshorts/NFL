@@ -178,14 +178,14 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #movements .left {
 	/*background: white;*/
-	width: 580px; 
-    height: 468px;
+	width: 588px; 
+    height: 460px;
 	float: left;
     margin-top: 0px;
     margin-left: 0px;
-    left: 4px;
+    left: 0px;
     display:block;
-    padding: 28px 0 0 28px;
+    padding: 28px 0 0 25px;
     position: absolute;
 }
 
@@ -196,6 +196,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     height: 498px;
     top: 0;
     right: 0px;
+    margin: 0px 0 0 -1px;
     overflow: visible;
 }
 
@@ -203,7 +204,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	font-size: 14px; 
 	line-height: 1.5;
 	color: #767676;
-	margin: 18px 21px 38px 18px;
+	margin: 12px 21px 25px 18px;
 }
 
 #movements a {
@@ -266,9 +267,36 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     font-family: 'FranklinGothicURW-HeaIta'; 
     font-weight: normal; 
     font-style: normal; 
+    color: #666666;
+    height: 28px;
+    margin: -8px 0px 0px 0px;
+    text-decoration: none;
+}
+
+#movements .headline h3 a {
+    display:block;
+    width: 318px;
+    font-size: 21px;
+    font-family: 'FranklinGothicURW-HeaIta'; 
+    font-weight: normal; 
+    font-style: normal; 
     color: #666666; 
     text-decoration: none;
 }
+
+#movements .headline h3 a:hover {
+    display:block;
+    width: 318px;
+    font-size: 21px;
+    font-family: 'FranklinGothicURW-HeaIta'; 
+    font-weight: normal; 
+    font-style: normal; 
+    color: #e75406; 
+    text-decoration: none;
+}
+
+
+
 
 #movements #followSF {
 	float: left;
@@ -282,7 +310,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	font-weight: normal; 
     text-decoration: none;
     
-	margin: 2px 0px 0px 0px;
+	margin: -10px 0px 0px 0px;
 }
 
 #movements .headline a {
