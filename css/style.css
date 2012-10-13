@@ -630,11 +630,13 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 #social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 240px; }
 #social .links { position: relative; float: right; top: -30px; }
 #social .links li { position: relative; float: left; }
+/*
 #social .links a { text-decoration: none; }
 #social .links span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; position: relative; top: -11px; }
+*/
 
-#social img { margin-right: 7px; }
-#tweet { margin-right: 20px;  }
+/* #social img { margin-right: 7px; } */
+/* #tweet { margin-right: 20px;  } */
 
 
 /*	--------------------------------------------------
