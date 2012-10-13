@@ -52,6 +52,9 @@
 
     </head>
     <body data-device="<?php echo DEVICE_TYPE; ?>">
+    
+    <script src='http://connect.facebook.net/en_US/all.js'></script>
+       
         <div id="background"></div>
         <div id="wrap">
         
@@ -71,9 +74,9 @@
 		                    
 		                    <div class="sharebutton">
                                         <ul>
-                                            <li><a class="facebook link" href="#"></a></li>
-                                            <li><a class="twitter link" href="#"></a></li>
-                                            <li><a class="google link" href="#"></a></li>
+                                            <li><a class="facebook link" onclick='postToFeed(); return false;'></a><p id='msg'></p></li>
+                                            <li><a class="twitter link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Share%20SFSUPERBOWL%20This%20is%20going%20to%20be%20the%20story"></a></li>
+                                            <li><a class="google link" href="https://plus.google.com/u/0/116535953378851378506/" target="_blank"></a></li>
                                         </ul>
 		                    </div>
 		                    

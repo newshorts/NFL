@@ -4,7 +4,7 @@
 <div id="dynamic">
   <div class="supporters">
 	  <div id="supporters_main">
-		<div id="latest_news">
+		<div id="latest_news" class="bgTextureLight">
 			<ul id="latest_header" class="headlineLargeGray">
 				<li class="supporters_header"><span>LATEST NEWS</span></li>
 				<li id="supporters_follow"><span>Follow</span><a href="" id="facebook_follow"><img src="../images/facebook_follow.png"></a><a href=""><img id="google_follow" src="../images/google_follow.png"></a></li>
@@ -15,7 +15,7 @@
 				<li></li>
 			</ul>
 		</div>
-		<div id="supporter_numbers">
+		<div id="supporter_numbers"  class="bgTextureLight">
 			<ul id="google_pluses">
 				<li id="google_header" class="headlineLargeGray">
 					<span>GOOGLE+</span>
@@ -38,7 +38,7 @@
 		</div>
 	  </div>
   	
-	  <ul id="supporters_footer">
+	  <ul id="supporters_footer" class="bgTextureLight">
 		  <li>
 			  <div class="headlineMediumGray">
 				  <img src="../images/buzz_sign.png"><span>SFSUPERBOWL SUPPORTERS</span>
