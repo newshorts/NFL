@@ -551,10 +551,11 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 #instagram {
     overflow: hidden;
     height: 345px; 
-    margin: 10px 0px; 
+    margin: 10px 0px;
+    width: 996px; 
 }
 
-#instagram_footer { background-color: #fff; position: relative; height: 120px; padding: 20px 0px 0px 30px; width: 966px; }
+#instagram_footer {  background: url(../images/bg-texture-light.png) scroll repeat; position: relative; height: 107px; padding: 20px 0px 0px 30px; width: 966px; }
 #instagram_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
 
 
