@@ -47,13 +47,13 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 #wrap {
-    width: 1004px;
-    height: 578px;
+    width: 996px;
+    height: 569px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -500px;
-    margin-top: -328px;
+    margin-left: -497px;
+    margin-top: -319px;
     background: url(../images/bg-texture-dark.png) scroll repeat;
 }
 
@@ -64,7 +64,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #boardcontainer { 
     background: url(../images/bg-texture-light.png) scroll repeat;
-    width: 1003px; 
+    width: 996px; 
     height: 76px;
     top: 0px;
     left: 0px;
@@ -315,7 +315,6 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     height: 504px;
     position: relative;
     top: 76px;
-    left: 3px;
 
     z-index: 1;
 
@@ -591,7 +590,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     Twitter
     -------------------------------------------------- */
 
-.twitter { background-color: #fff; height: 347px; position: relative; overflow: hidden; margin: 10px 0px; width: 996px; }
+.twitter {  background: url(../images/bg-texture-light.png) scroll repeat; height: 347px; position: relative; overflow: hidden; margin: 10px 0px; width: 996px; }
 /* #twitter_overlay { background: url(../images/twitter_overlay.png) top left no-repeat; display: block; height: 347px; position: absolute; width: 996px; z-index: 3;}    */
 #twitter_overlay_top { background: url(../images/twitter_overlay_top.png) top left no-repeat; display: block; height: 127px; position: absolute; width: 996px; z-index: 3; }
 #twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 136px; position: absolute; width: 996px; top: 211px; z-index: 3; } 
@@ -621,7 +620,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 .at_user { color: #a4bc27; text-decoration: none; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
 
 
-#twitter_footer { background-color: #fff; position: relative; height: 115px; padding: 20px 0px 0px 30px; width: 966px; }
+#twitter_footer {  background: url(../images/bg-texture-light.png) scroll repeat; position: relative; height: 106px; padding: 20px 0px 0px 30px; width: 966px; }
 #twitter_footer #twitter_count { position: absolute; width: 300px; top: 0; right: 0px; }
 #twitter_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
 
