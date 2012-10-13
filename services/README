@@ -43,3 +43,25 @@ Facebook            every 1s (600/600 seconds)
 Instagram           every 1s (5,000/hour)
 Google+             every 10s (10,000/day)
 
+
+CronTab Output:
+_______________________________
+
+#       $NetBSD: crontab,v 1.13 1997/10/26 13:36:31 lukem Exp $
+#
+# /etc/crontab - root's crontab
+#
+SHELL=/bin/sh
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
+HOME=/var/log
+
+#min    hour    mday    month   wday    user    command
+*/1     *       *       *       *       /usr/bin/curl -o temp.txt       http://localhost.com/GSP/clients/NFL/services/get.php
+*/1     *       *       *       *       /usr/bin/curl -o temp.txt       http://localhost.com/GSP/clients/NFL/services/get1.php
+*/1     *       *       *       *       /usr/bin/curl -o temp.txt       http://localhost.com/GSP/clients/NFL/services/get2.php
+*/1     *       *       *       *       /usr/bin/curl -o temp.txt       http://localhost.com/GSP/clients/NFL/services/get3.php
+*/1     *       *       *       *       /usr/bin/curl -o temp.txt       http://localhost.com/GSP/clients/NFL/services/pollTwitter.php
+*/1     *       *       *       *       /usr/bin/curl -o temp.txt       http://localhost.com/GSP/clients/NFL/services/pollTwitter1.php
+*/1     *       *       *       *       /usr/bin/curl -o temp.txt       http://localhost.com/GSP/clients/NFL/services/pollTwitter2.php
+*/1     *       *       *       *       /usr/bin/curl -o temp.txt       http://localhost.com/GSP/clients/NFL/services/pollTwitter3.php
+
