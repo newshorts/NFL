@@ -113,6 +113,9 @@ var SocialTracker = Class.extend({
     
     setText: function(str) {
         this._elem.text(str);
+        
+        
+        
     },
 
     destroyTimer: function() {
