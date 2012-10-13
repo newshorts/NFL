@@ -238,7 +238,7 @@
 
     function render_tweets(widget, tweets) {
       var list = $('<div class="tweet_list">');
-      list.append($.map(tweets, function(o) { return '<ul class="unique_tweet">' + '<li class="tweet_info">' + '<ul>' + '<li class="avatar">' + t(s.tweet_avatar, o) + '</li>' + '<li class="screenname">' + '<span>' + t(s.tweet_name, o) + '</span>' + '</li>' + '<br />' + '<li class="username">' + t(s.tweet_user, o) + '</li>' + '</ul>' + '</li>' + '<li class="tweet">' + t(s.template_tweet, o) + '</li>' + '</ul>'; }).join(''));
+      list.append($.map(tweets, function(o) { return '<ul class="unique_tweet">' + '<li class="tweet_info">' + '<ul>' + '<li class="avatar">' + t(s.tweet_avatar, o) + '</li>' + '<li class="screenname">' + '<p>' + t(s.tweet_name, o) + '</p>' + '</li>' + '<br />' + '<li class="username">' + t(s.tweet_user, o) + '</li>' + '</ul>' + '</li>' + '<li class="tweet">' + t(s.template_tweet, o) + '</li>' + '</ul>'; }).join(''));
 
       $(widget).empty().append(list);
       if (s.intro_text) list.before('<p class="tweet_intro">'+s.intro_text+'</p>');
