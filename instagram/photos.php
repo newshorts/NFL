@@ -4,7 +4,7 @@
 <iframe id="instagram" name="photos" frameborder="0" src="../prototypes/instagram/index.html" width="998" height="316"></iframe>
 
 
-  <ul id="instagram_footer">
+  <ul id="instagram_footer" class="bgTextureLight">
 	<li>
 		<div class="headlineMediumGray">
 			<img src="../images/buzz_sign.png"><span>SFSUPERBOWL PHOTOS</span>

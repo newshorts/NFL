@@ -22,8 +22,8 @@
 	<li id="social">
             <p>Add to the Super Bowl buzz and show your support via Twitter.</p>
             <ul class="links">
-                    <li id="tweet"><a href="twitter.com/tweet" target="_blank"><img src="../images/tweet_button.png"><span>Tweet</span></a></li>
-                    <li id="follow"><a href="twitter.com/follow" target="_blank"><img src="../images/follow_button.png"><span>Follow</span></a></li>
+                <li id="tweet"><a href="twitter.com/tweet" target="_blank"><img src="../images/tweet_button.png"><span>Tweet</span></a></li>
+                <li id="follow"><a href="twitter.com/follow" target="_blank"><img src="../images/follow_button.png"><span>Follow</span></a></li>
             </ul>
 	</li>
         <li id="twitter_count" class="mediumNumbersOrange">
