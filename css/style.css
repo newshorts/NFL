@@ -444,8 +444,8 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #screen {
     display: block; 
-    width: 1004px; 
-    height: 566px; 
+    width: 996px; 
+    height: 492px; 
     position: absolute; 
     top: 0;
     left: 0;
@@ -460,10 +460,10 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 #box1 { 
-    width: 1001px; 
+    width: 996px; 
     height: 318px; 
     position: relative; 
-    margin: 10px 0px 10px -2px;
+    margin: 10px 0px 10px 0px;
 }
 
 #box1 .headlineMediumGray {
@@ -486,7 +486,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 #box2 {
-	margin: 0px 5px 0px -3px
+	margin: 0px 5px 0px 0px;
 }
 
 #box2 span, #box2 img, #box2 hr,
@@ -496,11 +496,12 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 #box3 {
-	margin: 0px 5px 0px 5px
+	margin: 0px 5px 0px 5px;
 }
 
 #box4 {
-	margin: 0px 0px 0px 5px
+	margin: 0px 0px 0px 5px;
+	padding-right: 1px;
 }
 
 .count {
@@ -536,8 +537,8 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 .bottom, .bottom a { 
-    width: 328px; 
-    height: 164px; 
+    width: 325px; 
+    height: 155px; 
     position: relative;
     display: block;
 }
@@ -591,7 +592,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     Twitter
     -------------------------------------------------- */
 
-.twitter {  background: url(../images/bg-texture-light.png) scroll repeat; height: 347px; position: relative; overflow: hidden; margin: 10px 0px; width: 996px; }
+.twitter { height: 347px; position: relative; overflow: hidden; margin: 10px 0px; width: 996px; }
 /* #twitter_overlay { background: url(../images/twitter_overlay.png) top left no-repeat; display: block; height: 347px; position: absolute; width: 996px; z-index: 3;}    */
 #twitter_overlay_top { background: url(../images/twitter_overlay_top.png) top left no-repeat; display: block; height: 127px; position: absolute; width: 996px; z-index: 3; }
 #twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 136px; position: absolute; width: 996px; top: 211px; z-index: 3; } 
@@ -621,7 +622,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 .at_user { color: #a4bc27; text-decoration: none; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
 
 
-#twitter_footer {  background: url(../images/bg-texture-light.png) scroll repeat; position: relative; height: 106px; padding: 20px 0px 0px 30px; width: 966px; }
+#twitter_footer { position: relative; height: 106px; padding: 20px 0px 0px 30px; width: 966px; }
 #twitter_footer #twitter_count { position: absolute; width: 300px; top: 0; right: 0px; }
 #twitter_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
 

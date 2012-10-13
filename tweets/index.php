@@ -6,14 +6,14 @@
 <div id="twitter_overlay_top"></div>
 <div id="twitter_overlay_bottom"></div> 
 
-  <div class="twitter">
+  <div class="twitter bgTextureLight">
   
   	<?php include('tweet_code.php'); ?>
     
     <div id="ticker" class="query"></div>
     
   </div>
-  <ul id="twitter_footer">
+  <ul id="twitter_footer" class="bgTextureLight">
 	<li>
 		<div class="headlineMediumGray">
 			<img src="../images/buzz_sign.png"><span>SFSUPERBOWL TWEETS</span>
