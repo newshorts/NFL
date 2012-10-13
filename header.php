@@ -34,9 +34,10 @@
             (function($) {
                 $(window).load(function() {
                     
+                    var fst = new FacebookStatusTracker('#facebook_statuses');
+                    
                     var gt = new GoogleTracker('#google_count');
                     var ft = new FacebookTracker('#facebook_count');
-                    var fst = new FacebookStatusTracker('#facebook_statuses');
                     var tt = new TwitterTracker('#twitter_count');
                     var It = new InstagramTracker('#instagram_photo_count');
                     var gfb = new GfbTracker('#gfb_count');
@@ -51,7 +52,7 @@
         <link href="<?php echo ROOT; ?>css/reset.css" type="text/css" rel="stylesheet" />
         <link href="<?php echo ROOT; ?>css/font.css" type="text/css" rel="stylesheet" />
         <link href="<?php echo ROOT; ?>css/style.css" type="text/css" rel="stylesheet" />
-
+        
     </head>
     <body data-device="<?php echo DEVICE_TYPE; ?>">
     

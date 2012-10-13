@@ -164,40 +164,33 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 
 #movements { 
-    width: 1000px; 
-    height: 492px;
-    top: 6px;
-    left: 0px;
-    position: absolute; 
-    margin-top: 0px; 
-    margin-left: 0; 
-    overflow: visible;
+    width: 996px; 
+    height: 483px;
+    position: relative; 
+    margin: 10px 0 0 0; 
     z-index: 12;
 }
 
 
 #movements .left {
 	/*background: white;*/
-	width: 588px; 
-    height: 460px;
+	width: 580px; 
+    height: 455px;
 	float: left;
-    margin-top: 0px;
-    margin-left: 0px;
-    left: 0px;
     display:block;
-    padding: 28px 0 0 25px;
-    position: absolute;
+    padding: 28px 0 0 28px;
+    margin: 0px 10px 0px 0px;
+    position: relative;
 }
 
 #movements .right {
 	/*background: white;*/
     position: absolute;
-    width: 380px;
-    height: 498px;
-    top: 0;
+    width: 378px;
+    height: 483px;
     right: 0px;
-    margin: 0px 0 0 -1px;
-    overflow: visible;
+
+    overflow: hidden;
 }
 
 #movements p {
