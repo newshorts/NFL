@@ -607,7 +607,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 .tweet_info ul li { float: left; position: relative; }
 .avatar { margin-right: 7px; }
 .tweet_avatar { float: left; height: 48px; width: 48px; }
-.screenname { position: relative;  clear: right; }
+.screenname { position: relative;  clear: right; width: 158px;}
 .username { float: left; }
 .tweet_user { color: #858585; font-weight: normal; text-decoration: none; font-family: Arial, Helvetica, sans-serif;  font-size: 12px; }
 
