@@ -22,6 +22,7 @@
         <script src="<?php echo ROOT; ?>js/socialTrackers/googleTracker.js"></script>
         <script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>
         <script src="<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js"></script>
+        <script src="<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js"></script>
         <script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>
         <script src="<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js"></script>
         <script src="<?php echo ROOT; ?>js/socialTrackers/totalTracker.js"></script>
@@ -35,6 +36,7 @@
                     
                     var gt = new GoogleTracker('#google_count');
                     var ft = new FacebookTracker('#facebook_count');
+                    var fst = new FacebookStatusTracker('#facebook_statuses');
                     var tt = new TwitterTracker('#twitter_count');
                     var It = new InstagramTracker('#instagram_photo_count');
                     var gfb = new GfbTracker('#gfb_count');

@@ -24,6 +24,7 @@ var SocialTracker = Class.extend({
         
         if(elem.length > 0) {
             this.track();
+        } else {
             console.log(eventName + ' is not available on this page - shutting down');
         }
         

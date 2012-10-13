@@ -25,6 +25,7 @@ class Social {
         $tweets = $this->get_tweets();
         $likes = $this->get_likes();
         $insta = $this->get_instagrams('sfsuperbowl');
+        $fb_statuses = $this->get_facebook_statuses();
         
         $gfb = $pluses + $likes;
         
@@ -34,6 +35,7 @@ class Social {
                             'google' => $pluses,
                             'twitter' => $tweets,
                             'facebook' => $likes,
+                            'facebook_statuses' => $fb_statuses,
                             'instagram' => $insta,
                             'gfb' => $gfb,
                             'total' => $total,
@@ -84,6 +86,24 @@ class Social {
         $json_string = file_get_contents('https://api.instagram.com/v1/tags/search?q='.$tag.'&access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9');
         $json = json_decode($json_string, true);
         return intval( $json['data'][0]['media_count'] );
+    }
+    
+    private function get_facebook_statuses() {
+        $qry_str = "?format=json&id=234250320035133";
+        $ch = curl_init();
+
+        curl_setopt($ch,CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
+
+        // Set query data here with the URL
+        curl_setopt($ch, CURLOPT_URL, 'https://www.facebook.com/feeds/page.php' . $qry_str); 
+
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_TIMEOUT, '3');
+        $content = curl_exec($ch);
+        curl_close($ch);
+        $json = json_decode($content, true);
+        return $json;
+        
     }
 }
 
