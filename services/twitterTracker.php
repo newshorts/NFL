@@ -51,30 +51,49 @@ class TwitterTracker {
      */
     public function __construct() {
         
+        // detect server environment
+        $root = $_SERVER['DOCUMENT_ROOT'];
+        
+        $is_local = (strpos($root, 'XAMPP')) ? true : false;
+        
         // db
         $options = array(
             Zend_Db::ALLOW_SERIALIZATION => false
         );
-
+        
         $params = array(
             'host'           => 'localhost',
-            'username'       => 'root',
-            'password'       => '',
+            'username'       => 'sfsb_admin',
+            'password'       => 'superdata',
             'dbname'         => 'twitter_tracker',
             'options'        => $options
         );
+        
+        if($is_local) {
+            $params = array(
+                'host'           => 'localhost',
+                'username'       => 'root',
+                'password'       => '',
+                'dbname'         => 'twitter_tracker',
+                'options'        => $options
+            );
+        }
 
         try {
             $this->db = Zend_Db::factory('Pdo_Mysql', $params);
             $this->db->getConnection();
         } catch (Zend_Db_Adapter_Exception $e) {
             // perhaps a failed login credential, or perhaps the RDBMS is not running
-            echo 'failed login credentials\n';
-            print_r($e);
+            if($is_local) {
+                echo 'failed login credentials\n';
+                print_r($e);
+            }
         } catch (Zend_Exception $e) {
             // perhaps factory() failed to load the specified Adapter class
-            echo 'failed to load specified adapter class\n';
-            print_r($e);
+            if($is_local) {
+                echo 'failed to load specified adapter class\n';
+                print_r($e);
+            }
         }
         
         $this->table_name = 'tweets';

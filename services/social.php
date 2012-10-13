@@ -21,11 +21,22 @@ class Social {
     
     public function get_all() {
         
+        $pluses = $this->get_plusones('http://techcrunch.com/');
+        $tweets = $this->get_tweets();
+        $likes = $this->get_likes();
+        $insta = $this->get_instagrams('sfsuperbowl');
+        
+        $gfb = $pluses + $likes;
+        
+        $total = $pluses + $tweets + $likes + $insta;
+        
         $this->output = Array(
-                            'google' => $this->get_plusones('http://techcrunch.com/'),
-                            'twitter' => $this->get_tweets(),
-                            'facebook' => $this->get_likes(),
-                            'instagram' => $this->get_instagrams('sfsuperbowl'),
+                            'google' => $pluses,
+                            'twitter' => $tweets,
+                            'facebook' => $likes,
+                            'instagram' => $insta,
+                            'gfb' => $gfb,
+                            'total' => $total,
                             'filename' => $this->filename,
                             'usingClass' => 'true'
                         );

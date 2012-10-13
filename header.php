@@ -18,18 +18,20 @@
         <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/twitterTracker.js"></script>
         <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/facebookTracker.js"></script>
         <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/instagramTracker.js"></script>
+        <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/gfbTracker.js"></script>
+        <script src="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>js/socialTrackers/totalTracker.js"></script>
         <script>
             /*
-             *
              *  ATTENTION: One window load function initiates all scripts
-             *
              **/
             (function($) {
                 $(window).load(function() {
-                    var gt = new GoogleTracker('#google');
-                    var ft = new FacebookTracker('#facebook');
+                    var gt = new GoogleTracker('#google_count');
+                    var ft = new FacebookTracker('#facebook_count');
                     var tt = new TwitterTracker('#twitter_count');
                     var It = new InstagramTracker('#instagram_photo_count');
+                    var gfb = new GfbTracker('#gfb_count');
+                    var total = new TotalTracker('#total');
                 });
             })(jQuery);
         </script>
@@ -53,7 +55,7 @@
 	                	<div class="rightWrap">
                                         <?php // echo $request; ?>
 		                	<div class="tabs">
-		                        <a href="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>/buzz" <?php echo (strpos($request, 'buzz')) ? 'class="active"' : ''; ?>>SEE THE BUZZ</a> / <a href="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>/movements" <?php echo (strpos($request, 'movement')) ? 'class="active"' : ''; ?>>JOIN THE MOVEMENT</a>
+		                        <a href="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>buzz" <?php echo (strpos($request, 'buzz')) ? 'class="active"' : ''; ?>>SEE THE BUZZ</a> / <a href="<?php echo ROOT . DIRECTORY_SEPARATOR; ?>movements" <?php echo (strpos($request, 'movement')) ? 'class="active"' : ''; ?>>JOIN THE MOVEMENT</a>
 		                    </div>
 		                    
 		                    <div class="sharebutton">
@@ -71,4 +73,5 @@
 	                </div><!-- /class right -->
 	                
 	            </div><!-- /boardcontainer-->
+                    
             </div><!-- /header -->

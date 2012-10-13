@@ -58,6 +58,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     left: 50%;
     margin-left: -500px;
     margin-top: -328px;
+    background: url(../images/bg-texture-dark.png) scroll repeat;
 }
 
 #header {
@@ -66,11 +67,11 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 
 #boardcontainer { 
-	background: white;
-    width: 998px; 
-    height: 68px;
-    top: 8px;
-    left: 3px;
+    background: url(../images/bg-texture-light.png) scroll repeat;
+    width: 1003px; 
+    height: 76px;
+    top: 0px;
+    left: 0px;
     position: absolute; 
     margin-top: 0; 
     margin-left: 0; 
@@ -81,7 +82,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #boardcontainer .left {
 	float: left;
-    margin-top: 32px;
+    margin-top: 42px;
     margin-left: 30px;
     display:block;
 }
@@ -104,7 +105,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #boardcontainer .tabs {
 	position: absolute;
-	bottom: 0px;
+	bottom: -5px;
 	left: 0px;
 	width: 500px;
 	height: 28px;
@@ -345,16 +346,25 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     text-decoration: none;
 }
 
+.headlineSmallGray {
+    font-size: 16px;
+    font-family: 'FranklinGothicURW-HeaIta'; 
+    font-weight: normal; 
+    font-style: normal; 
+    color: #666666; 
+    text-decoration: none;
+}
+
 .smallNumbersOrange {
     font-family: 'ds-digitalitalic', Arial, sans-serif;
-    font-size: 75px;
+    font-size: 71px;
     color: #e75406;
     margin: 38px 0 48px 0;
-    line-height: 80px;
+    line-height: 75px;
 }
 
 .mediumNumbersOrange {
-	 font-family: 'ds-digitalitalic', Arial, sans-serif;
+    font-family: 'ds-digitalitalic', Arial, sans-serif;
     font-size: 116px;
     color: #e75406;
     margin: 38px 0 48px 0;
@@ -363,12 +373,34 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 .largeNumbersOrange {
     font-family: 'ds-digitalitalic', Arial, sans-serif;
-    font-size: 238px;
+    /*font-size: 161px;*/
+    font-size: 243px;
     color: #e75406;
     height: auto;
     margin: 138px 0 48px 18px;
-    line-height: 245px;
+    line-height: 175px;
 }
+
+.largNumbersGrey {
+    font-family: 'ds-digitalitalic', Arial, sans-serif;
+    /*font-size: 161px;*/
+    font-size: 243px;
+    color: #444;
+    height: auto;
+    margin: 138px 0 48px 18px;
+    line-height: 175px;
+    opacity: 0.1;
+}
+
+.smallNumbersGrey {
+    font-family: 'ds-digitalitalic', Arial, sans-serif;
+    font-size: 71px;
+    color: #444;
+    margin: 38px 0 48px 0;
+    line-height: 75px;
+    opacity: 0.1;
+}
+
 
 .tabs {
 	font-size: 21px;
@@ -398,6 +430,14 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     text-decoration: none;
 }
 
+.bgTextureLight {
+    background: url(../images/bg-texture-light.png) scroll repeat;
+}
+
+.bgTextureDark {
+    background: url(../images/bg-texture-dark.png) scroll repeat;
+}
+
 
 
 
@@ -405,7 +445,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     Numbers
     -------------------------------------------------- */
 
-#screen { 
+#screen {
     display: block; 
     width: 1004px; 
     height: 566px; 
@@ -419,14 +459,35 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 #box1 { 
-    width: 994px; 
+    width: 1001px; 
     height: 318px; 
     position: relative; 
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 10px -2px;
+}
+
+#box1 .headlineMediumGray {
+    position: absolute;
+    top: 44px;
+    left: 30px;
+}
+
+#box1 #total, #box1 .largNumbersGrey {
+    position: absolute;
+    top: 105px;
+    left: 35px;
+    width: 899px;
+    text-align: right;
+    margin: 0;
 }
 
 #box2 {
-	margin: 0px 5px 0px 0px
+	margin: 0px 5px 0px -3px
+}
+
+#box2 span, #box2 img, #box2 hr,
+#box3 span, #box3 img, #box3 hr,
+#box4 span, #box4 img, #box4 hr {
+    position: absolute;
 }
 
 #box3 {
@@ -437,11 +498,40 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	margin: 0px 0px 0px 5px
 }
 
-.bottom { 
-    width: 319px; 
-    height: 160px; 
-    position: relative; 
+.count {
+    top: 78px;
+    left: 26px;
+    margin: 0;
+    width: 263px;
+    direction: rtl;
+    text-align: justify;
+}
 
+.smallBoxHeading {
+    top: 30px;
+    left: 30px;
+}
+
+.smallBoxIcon {
+    top: 31px;
+    left: 287px;
+}
+
+.smallBoxIconLeft {
+    top: 31px;
+    left: 264px;
+}
+
+.smallBoxHR {
+    top: 47px;
+    left: 28px;
+    width: 271px;
+}
+
+.bottom { 
+    width: 328px; 
+    height: 164px; 
+    position: relative; 
 }
 
 /*	--------------------------------------------------
