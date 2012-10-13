@@ -22,8 +22,14 @@
 	<li id="social">
             <p>Add to the Super Bowl buzz and show your support via Twitter.</p>
             <ul class="links">
-                <li id="tweet"><a href="twitter.com/tweet" target="_blank"><img src="../images/tweet_button.png"><span>Tweet</span></a></li>
-                <li id="follow"><a href="twitter.com/follow" target="_blank"><img src="../images/follow_button.png"><span>Follow</span></a></li>
+                <li id="tweet">
+                	<a href="https://twitter.com/intent/tweet?button" class="twitter-hashtag-button" data-size="large">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</li>
+                <li id="follow">
+                	<a href="https://twitter.com/twitter" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</li>
             </ul>
 	</li>
         <li id="twitter_count" class="mediumNumbersOrange">
