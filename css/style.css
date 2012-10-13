@@ -638,6 +638,10 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 /* #social img { margin-right: 7px; } */
 /* #tweet { margin-right: 20px;  } */
 
+#twitter_count {
+	float: right;
+	position: relative;
+}
 
 /*	--------------------------------------------------
     Supporters
