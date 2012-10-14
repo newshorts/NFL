@@ -252,6 +252,8 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     margin-top: -10px;
     box-shadow: 1px 2px 3px 2px #ccc;
     border-radius: 8px;
+    
+    behavior: url(../lib/pie/PIE.htc);
 }
 
 #movements .headline h3 {
