@@ -694,10 +694,16 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 
 #twitter_footer { position: relative; height: 106px; padding: 20px 0px 0px 30px; width: 966px; }
-#twitter_footer #twitter_count { position: absolute; width: 300px; top: 0; right: 0px; }
+/* #twitter_footer #twitter_count { position: absolute; width: 300px; top: 0; right: 0px; } */
 #twitter_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
 
-#social { padding: 20px 0 0 36px; width: 491px}
+#twitter_headline {
+	width: 530px; 
+}
+
+
+
+#social { position: relative; float: left; padding: 20px 0 0 36px; width: 491px}
 #social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 240px; }
 #social .links { position: relative; float: right; top: -30px; }
 #social .links li { position: relative; float: left; }
@@ -709,9 +715,27 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 /* #social img { margin-right: 7px; } */
 /* #tweet { margin-right: 20px;  } */
 
-#twitter_count {
+
+
+#twitter_number_count {
+	height: 130px; 
+	width: 439px;
 	float: right;
 	position: relative;
+	top: 0px; 
+}
+
+#twitter_count_bg {
+	width: 439px;
+	margin: 0 0 0 0;
+	
+}
+
+#twitter_count {
+	position: relative;
+	width: 439px;
+/* 	margin: 15px 0 0 0; */
+	top: 0px;  
 }
 
 /*	--------------------------------------------------
