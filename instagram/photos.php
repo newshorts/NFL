@@ -18,6 +18,6 @@
 	</li>
 	<li id="instagram_count">
             <div id="instagram_photo_count_bg" class="mediumNumbersGrey">888,888</div>    
-            <div id="instagram_photo_count" class="mediumNumbersOrange">39,825</div>
+            <div id="instagram_photo_count" class="instagram_photo_count mediumNumbersOrange"></div>
 	</li> 
   </ul>   

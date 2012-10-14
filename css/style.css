@@ -690,7 +690,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #instagram_button { position: relative; top: -30px;  float: right; }
 
-#instagram_photo_count {
+.instagram_photo_count {
 	margin: 31px 0px 0px 0px; 
 }
 
