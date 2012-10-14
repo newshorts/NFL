@@ -35,8 +35,8 @@
 <div class="fb-activity" data-href="http://sfsuperbowl.com/" data-app-id="250470255075519" data-width="300" data-height="300" data-header="true" data-recommendations="false"></div>-->
 			</ul>
 		</div>
-		<div id="supporter_numbers"  class="bgTextureLight">
-			<ul id="google_pluses">
+		<div id="supporter_numbers">
+			<ul id="google_pluses" class="bgTextureLight">
 				<li id="google_header" class="headlineMediumGray">
 					<span>GOOGLE+</span>
 				</li>
@@ -51,7 +51,7 @@
 					  })();
 					</script>
 					</div>
-					<div>
+					<div id="google_plus_count">
 				        <div id="google_count_bg" class="supportersNumbersGrey">888,888</div>    
 				        <div id="google_count" class="supportersNumbersOrange"></div>
 
@@ -59,7 +59,7 @@
 				</li>
 			</ul>
 		
-			<ul id="facebook_likes">
+			<ul id="facebook_likes" class="bgTextureLight">
 				<li id="facebook_header" class="headlineMediumGray">
 					<span>FACEBOOK</span>
 				</li>
@@ -67,8 +67,8 @@
 					<div id="facebook_cta">
 						<div class="fb-like" data-href="http://sfsuperbowl.com" data-send="false" data-width="450" data-show-faces="false" data-font="arial"></div>
 					</div>
-					<div>
-				        <div id="facebook_count_bg" class="supportersNumbersGrey">888,888</div>    
+					<div id="facebook_likes_count">
+				        <div id="facebook_count_bg" class="supportersNumbersGrey">8,888,888</div>    
 				        <div id="facebook_count" class="supportersNumbersOrange"></div>
 					</div>
 				</li>
@@ -88,7 +88,7 @@
   
 	      <li id="supporters_count">
 	        <div id="gfb_count_bg" class="mediumNumbersGrey">888,888</div>    
-	      	<div id="gfb_count" class="mediumNumbersOrange"></div>
+	      	<div id="gfb_count" class="gfb_count mediumNumbersOrange"></div>
 	      </li>
 	  </ul>
 	</div>

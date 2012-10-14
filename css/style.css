@@ -393,6 +393,8 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     color: #e75406;
 /*     margin: 38px 0 48px 0; */
 /*     line-height: 75px; */
+    text-align: right;
+
 }
 
 .mediumNumbersOrange {
@@ -438,6 +440,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     filter: alpha(opacity=10);
     -moz-opacity: 0.1;
     -khtml-opacity: 0.1;
+    text-align: right;
     }
 
 .mediumNumbersGrey {
@@ -802,9 +805,9 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 
 
-#supporter_numbers { background-color: #fff; position: relative; float: right; height: 317px; width: 415px; padding: 30px 30px 0 30px; margin: 10px 0; }
+#supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; }
 
-#google_pluses { height: 159px; width: 415px; }
+#google_pluses { height: 139px; width: 409px; margin: 0px 0px 10px 0px; padding: 30px 30px 0px 35px;}
 
 #google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
 
@@ -819,7 +822,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 */
 
 
-#facebook_likes { height: 158px; width: 415px; }
+#facebook_likes { height: 138px; width: 409px; padding: 30px 30px 0px 35px;}
 
 #facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
 
@@ -843,9 +846,19 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 #supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
 #supporters_internal em { color: #e75405; font-weight: bold; }
 
-#supporters_count { float: right;}
+#supporters_count { position: absolute; right: 0px; top: 0px; }
 
 
+#google_plus_count { width: 376px; position: relative; float: right; top: -20px; }
+#google_count { top: -18px; position: relative; }
+
+#facebook_likes_count { width: 376px; position: relative; float: right; top: -20px;  }
+#facebook_count { top: -18px; position: relative; }
+
+
+#gfb_count_bg {margin: 26px 30px 0px 0px; text-align: right; }
+
+.gfb_count { position: relative; right: 30px; top: -49px; }
 
 /*	--------------------------------------------------
     Debugging
