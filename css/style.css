@@ -78,7 +78,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #boardcontainer .left {
 	float: left;
-    margin-top: 42px;
+    margin-top: 31px;
     margin-left: 30px;
     display:block;
 }
@@ -352,6 +352,8 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     font-style: normal; 
     color: #666666;
     text-decoration: none;
+    line-height: 45px;
+    
 }
 
 
@@ -399,6 +401,8 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     line-height: 175px;
 }
 
+
+
 .largNumbersGrey {
     font-family: 'ds-digitalitalic', Arial, sans-serif;
     /*font-size: 161px;*/
@@ -407,7 +411,26 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     height: auto;
     margin: 138px 0 48px 18px;
     line-height: 175px;
+    
     opacity: 0.1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    filter: alpha(opacity=10);
+    -moz-opacity: 0.1;
+    -khtml-opacity: 0.1;
+}
+
+.mediumNumbersGrey {
+    font-family: 'ds-digitalitalic', Arial, sans-serif;
+    font-size: 116px;
+    color: #444;
+    margin: 38px 0 48px 0;
+    line-height: 80px;
+    
+    opacity: 0.1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    filter: alpha(opacity=10);
+    -moz-opacity: 0.1;
+    -khtml-opacity: 0.1;
 }
 
 .smallNumbersGrey {
@@ -416,7 +439,12 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     color: #444;
     margin: 38px 0 48px 0;
     line-height: 75px;
+    
     opacity: 0.1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    filter: alpha(opacity=10);
+    -moz-opacity: 0.1;
+    -khtml-opacity: 0.1;
 }
 
 
@@ -581,9 +609,26 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 #instagram_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
 
 
+
 #instagram_count {
 	position: relative;
 	float: right;
+        width: 363px;
+        display: inline-block;
+        margin-top: -55px;
+        margin-right: 28px;
+}
+
+#instagram_count .mediumNumbersOrange,
+#instagram_count .mediumNumbersGrey {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    direction: rtl;
+    text-align: justify;
+    white-space: pre;
+    
 }
 
 .photo_count {
