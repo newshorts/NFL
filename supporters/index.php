@@ -16,7 +16,7 @@
 		<div id="latest_news" class="bgTextureLight">
 			<ul id="latest_header" class="headlineMediumGray">
 				<li class="supporters_header"><span>LATEST NEWS</span></li>
-				<li id="supporters_follow"><span>Follow</span><a href="" id="facebook_follow"><img src="../images/facebook_follow.png"></a><a href=""><img id="google_follow" src="../images/google_follow.png"></a></li>
+				<li id="supporters_follow"><span>Follow</span><a href="http://www.facebook.com/SFSuperbowl" id="facebook_follow"><img src="../images/facebook_follow.png"></a><a href="https://plus.google.com/u/0/116535953378851378506/posts"><img id="google_follow" src="../images/google_follow.png"></a></li>
 			</ul>
 			<ul id="news">
 				<li></li>
@@ -35,8 +35,8 @@
 <div class="fb-activity" data-href="http://sfsuperbowl.com/" data-app-id="250470255075519" data-width="300" data-height="300" data-header="true" data-recommendations="false"></div>-->
 			</ul>
 		</div>
-		<div id="supporter_numbers"  class="bgTextureLight">
-			<ul id="google_pluses">
+		<div id="supporter_numbers">
+			<ul id="google_pluses" class="bgTextureLight">
 				<li id="google_header" class="headlineMediumGray">
 					<span>GOOGLE+</span>
 				</li>
@@ -50,13 +50,16 @@
 					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 					  })();
 					</script>
-<!-- 					<span>+1'S</span> -->
 					</div>
-					<div></div>
+					<div id="google_plus_count">
+				        <div id="google_count_bg" class="supportersNumbersGrey">888,888</div>    
+				        <div id="google_count" class="supportersNumbersOrange"></div>
+
+					</div>
 				</li>
 			</ul>
 		
-			<ul id="facebook_likes">
+			<ul id="facebook_likes" class="bgTextureLight">
 				<li id="facebook_header" class="headlineMediumGray">
 					<span>FACEBOOK</span>
 				</li>
@@ -64,7 +67,10 @@
 					<div id="facebook_cta">
 						<div class="fb-like" data-href="http://sfsuperbowl.com" data-send="false" data-width="450" data-show-faces="false" data-font="arial"></div>
 					</div>
-					<div></div>
+					<div id="facebook_likes_count">
+				        <div id="facebook_count_bg" class="supportersNumbersGrey">888,888</div>    
+				        <div id="facebook_count" class="supportersNumbersOrange"></div>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -80,8 +86,9 @@
 			  <p>Share you excitement for a Bay Area Super Bowl with a <em>Like</em> or a <em>+1</em>.</p>
 	      </li>
   
-	      <li id="supporters_count" class="mediumNumbersOrange">
-	      	<div id="gfb_count" class="gfb_count"></div>
+	      <li id="supporters_count">
+	        <div id="gfb_count_bg" class="mediumNumbersGrey">888,888</div>    
+	      	<div id="gfb_count" class="gfb_count mediumNumbersOrange"></div>
 	      </li>
 	  </ul>
 	</div>

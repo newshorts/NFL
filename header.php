@@ -8,6 +8,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+    	
+    	<!-- GOOGLE+ META TAGS FOR DEFAULT THUMBNAIL IMAGE -->
+    	<html itemscope itemtype="http://schema.org/">
+
+		<meta itemprop="SFSUPERBOWL" content="BRING THE BOWL TO THE BAY">
+		<meta itemprop="description" content="Our bid for the Super Bowl starts with you. Help us show why the Bay Area will be a perfect host for Super Bowl L. Simply tweet, share or post with #SFSuperBowl to show your support.">
+		<meta itemprop="image" content="http://www.sfsuperbowl.com/images/movement_poster.png">
+
+
+
+    
         <title>SFSuperBowl || 2016</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -127,6 +138,19 @@
         <link href="<?php echo ROOT; ?>css/font.css" type="text/css" rel="stylesheet" />
         <link href="<?php echo ROOT; ?>css/style.css" type="text/css" rel="stylesheet" />
         
+        
+        
+        <!-- INTRO ANIMATION -->
+        <script type="text/javascript">
+			jQuery(function(){
+			   $("#introAnimation").delay(3500).fadeOut(1500);
+			});
+		</script>
+
+
+
+
+        
     </head>
     <body data-device="<?php echo DEVICE_TYPE; ?>">
     
@@ -146,15 +170,18 @@
                             
 	                	<div class="rightWrap">
                                     <div class="tabs">
-		                        <a href="<?php echo ROOT; ?>buzz" class="ajaxify <?php echo (strpos($request, 'buzz')) ? 'active' : ''; ?>"><?php echo (strpos($request, 'buzz')) ? 'SEE THE BUZZ' : 'SCOREBOARD'; ?></a> / <a href="<?php echo ROOT; ?>movement" class="ajaxify <?php echo (strpos($request, 'movement')) ? 'active' : ''; ?>" >JOIN THE MOVEMENT</a>
+		                        <a href="<?php echo ROOT; ?>buzz" class="ajaxify <?php echo (strpos($request, 'buzz')) ? 'active' : ''; ?>"><?php echo (strpos($request, 'buzz')) ? 'SCOREBOARD' : 'SCOREBOARD'; ?></a> / <a href="<?php echo ROOT; ?>movement" class="ajaxify <?php echo (strpos($request, 'movement')) ? 'active' : ''; ?>" >JOIN THE MOVEMENT</a>
 		                    </div>
 		                    
 		                    <div class="sharebutton">
-                                        <ul>
-                                            <li><a class="facebook link" onclick='postToFeed(); return false;'></a><p id='msg'></p></li>
-                                            <li><a class="twitter link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Share%20SFSUPERBOWL%20This%20is%20going%20to%20be%20the%20story"></a></li>
-                                            <li><a class="google link" href="https://plus.google.com/u/0/116535953378851378506/" target="_blank"></a></li>
-                                        </ul>
+
+			                    <ul>
+                                        <li><a class="facebook link" onclick='postToFeed(); return false;'></a><p id='msg'></p></li>
+                                        <li><a class="twitter link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Share%20SFSUPERBOWL%20This%20is%20going%20to%20be%20the%20story"></a></li>
+                                        <li><a class="google link" href="https://plus.google.com/share?url=http://www.sfsuperbowl.com" target="_blank"></a></li>
+                                        <!-- <li><link rel="image_src" href="http://www.labnol.org/screenshot.png" /></li> -->
+                                    </ul>
+
 		                    </div>
 		                    
                                     <div class="hoverbutton"></div>

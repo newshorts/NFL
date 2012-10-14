@@ -27,7 +27,7 @@
         <script>
       jQuery(function($){
         $("#ticker").tweet({
-          query: "#sanfrancisco OR #oakland",
+          query: "#sanfrancisco OR #awesome",
           page: 1,
           avatar_size: 48,
           count: 150,
