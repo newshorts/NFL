@@ -9,6 +9,10 @@
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+UPDATE: Instagram hit the api limit today so I moved everything to the server.
+        Server now calls instagram every 30 seconds and gets recent photos by tag then it 
+        outputs to output.json file and clients consume that resource. 
+
 Couple things: 
 
 Inside the "get" folder we have two libraries "social" and "twitterTracker". The "get" files

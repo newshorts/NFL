@@ -1,6 +1,6 @@
 <?php
 
-
+//setcookie("PHPSESSID",$_COOKIE['PHPSESSID'],time()+1800);
 
 $abs = dirname(__FILE__);
 
@@ -20,7 +20,7 @@ define('DEVICE_TYPE', $deviceType);
 
 /* setcookie("sfsuperbowlintro", true); */
 
-$_SESSION['sfsuperbowlintro'] = true;
+
 
 //echo "<pre>";
 //print_r($_SERVER);

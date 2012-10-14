@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset($_SESSION['sfsuperbowlintro'])) {
+    $_SESSION['sfsuperbowlintro'] = true;
+}
     
     require_once 'config.php';
     
@@ -123,25 +127,26 @@
                             $(this).trigger('click');
                         });
                     }
-                    
-                    // scotts intro animation
-			    	var beginAnimation = function() {
-						$(function(){
-						   $("#intro").delay(3000).fadeOut(1000, function(){$(this).remove();});
-						   $.cookie('sfsuperbowlintro', 'true', { expires: 1 });
-						});
-					}; 
-					
-					// scotts intro animation	                
-		            $('#intro').ready(function() {
-		                var loadedBefore = $.cookie('sfsuperbowlintro'); // => "the_value"
-		                if(loadedBefore == 'true') {
-		                    $('#intro').hide();
-		                    $('#main').css({ 'opacity' : 1 });
-		                } else {
-		                    beginAnimation();
-		                }
-		            });
+                    <?php if($_SESSION['sfsuperbowlintro']) : ?>
+                        // scotts intro animation
+                        var beginAnimation = function() {
+                            $(function(){
+                               $("#intro").delay(3000).fadeOut(1000, function(){$(this).remove();});
+                               $.cookie('sfsuperbowlintro', 'true', { expires: 1 });
+                            });
+                        }; 
+
+                                    // scotts intro animation	                
+                        $('#intro').ready(function() {
+                            var loadedBefore = $.cookie('sfsuperbowlintro'); // => "the_value"
+                            if(loadedBefore == 'true') {
+                                $('#intro').hide();
+                                $('#main').css({ 'opacity' : 1 });
+                            } else {
+                                beginAnimation();
+                            }
+                        });
+                    <?php endif; ?>
 		            
 //                    var nav = new PageNavigation('#wrap');
                     
@@ -198,9 +203,10 @@
 	            </div><!-- /boardcontainer-->
                     
             </div><!-- /header -->
+            
             <?php if($_SESSION['sfsuperbowlintro']) : ?>
             <div id="intro">
-				<img src="../images/intro_logo.png" id="introAnimation">
-			</div><!-- /intro -->
-			<?php $_SESSION['sfsuperbowlintro'] = false; ?>
-			<?php endif; ?>
+                    <img src="../images/intro_logo.png" id="introAnimation">
+            </div>
+            <?php $_SESSION['sfsuperbowlintro'] = false; ?>
+            <?php endif; ?>

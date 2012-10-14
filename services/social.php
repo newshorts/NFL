@@ -95,7 +95,7 @@ class Social {
 //        $json_string = file_get_contents('https://api.instagram.com/v1/tags/search?q='.$tag.'&access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9');
         $json_string = file_get_contents('https://api.instagram.com/v1/tags/'.$tag.'?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9');
         $json = json_decode($json_string, true);
-        return intval( $json['data'][0]['media_count'] );
+        return intval( $json['data']['media_count'] );
     }
     
     private function get_instagram_photos($tag) {

@@ -46,9 +46,9 @@ and open the template in the editor.
             (function() {
                 $(window).load(function() {
                     
-                    var Instagram = function(access_token, tag) {
+                    var Instagram = function() {
                         
-                        var _access_token;
+//                        var _access_token;
                         var canvas = $('#canvas');
                         var imgArr = new Array();
                         
@@ -62,7 +62,7 @@ and open the template in the editor.
                                 sortBy: 'random'
                             });
                             
-                            _access_token = access_token;
+//                            _access_token = access_token;
                             
 //                            window.addEventListener('newPhotos', photosLoaded, false);
                             $(window).bind('newPhotos', function(evt) {
@@ -82,27 +82,38 @@ and open the template in the editor.
                         
                         var getNewPhotos = function() {
                             
-                            console.log('https://api.instagram.com/v1/tags/'+tag+'/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9')
+//                            console.log('https://api.instagram.com/v1/tags/'+tag+'/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9')
                             
-                            $.ajax({
-/*                                 url: 'https://api.instagram.com/v1/tags/'+searchTag+'/media/recent?access_token=' + _access_token, */
-                                url: 'https://api.instagram.com/v1/tags/'+tag+'/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9',
-                                type: 'GET',
-                                dataType: 'jsonp',
-                                success: function(data) {
-    //                                console.log('data returned')
-                                    console.dir(data);
-                                    
-                                    $(window).trigger({
-                                        type:"newPhotos",
-                                        detail: data
-                                    });
-
-//                                    var evt = new CustomEvent('newPhotos', {
+//                            $.ajax({
+///*                                 url: 'https://api.instagram.com/v1/tags/'+searchTag+'/media/recent?access_token=' + _access_token, */
+//                                url: 'https://api.instagram.com/v1/tags/'+tag+'/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9',
+//                                type: 'GET',
+//                                dataType: 'jsonp',
+//                                success: function(data) {
+//    //                                console.log('data returned')
+//                                    console.dir(data);
+//                                    
+//                                    $(window).trigger({
+//                                        type:"newPhotos",
 //                                        detail: data
 //                                    });
-//                                    window.dispatchEvent(evt);
-                                }
+//
+////                                    var evt = new CustomEvent('newPhotos', {
+////                                        detail: data
+////                                    });
+////                                    window.dispatchEvent(evt);
+//                                }
+//                            });
+
+                            $.getJSON('../../services/output.json', function(data) {
+                                console.dir(data);
+                                
+                                $(data.output.photos).each(function(idx) {
+                                    $(window).trigger({
+                                        type: 'newPhotos',
+                                        detail: data.output.photos[idx]
+                                    })
+                                });
                             });
                         };
                         
@@ -184,7 +195,7 @@ and open the template in the editor.
                         init();
                     };
                     
-                    var gspsf = new Instagram('231409256.05e13af.c3f64f166e634b1c967cc819f12061d9', 'gspsf');
+                    var photos = new Instagram();
 //                    setTimeout(function() {
 //                        var cheerful = new Instagram('231409256.05e13af.c3f64f166e634b1c967cc819f12061d9', 'cheerfulsundays');
 //                    }, 1000);
