@@ -1,5 +1,13 @@
 <?php
 /**
+ * 
+ * 
+ * 
+ * NOTE: OLD DONT USE
+ * 
+ * 
+ * 
+ * 
  * Instagram PHP API example usage.
  * This script must be the one receiving the response from
  * instagram's servers after requesting an access token.

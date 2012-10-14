@@ -22,10 +22,10 @@ require_once 'Instagram.php';
  * instagram provide you at http://instagr.am/developer/
  */
 $config = array(
-        'client_id' => 'e8d6b06f7550461e897b45b02d84c23e',
-        'client_secret' => '2357fc69da344800acef2592ef647491',
+        'client_id' => '05e13afcd3d6439fb57afa11fc64ccb7',
+        'client_secret' => '1666fc9a74d44502a062e7d2c863856d',
         'grant_type' => 'authorization_code',
-        'redirect_uri' => 'http://mauriciocuenca.com/qnktwit/confirm.php',
+        'redirect_uri' => 'http://sfsuperbowl.com/prototypes/instagram/api/callback.php',
      );
 
 /**
