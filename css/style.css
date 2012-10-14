@@ -73,6 +73,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     margin-left: 0; 
     overflow: visible;
     z-index: 10;
+    
 }
 
 
@@ -379,16 +380,16 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     font-family: 'ds-digitalitalic', Arial, sans-serif;
     font-size: 71px;
     color: #e75406;
-    margin: 38px 0 48px 0;
-    line-height: 75px;
+/*     margin: 38px 0 48px 0; */
+/*     line-height: 75px; */
 }
 
 .mediumNumbersOrange {
     font-family: 'ds-digitalitalic', Arial, sans-serif;
     font-size: 116px;
     color: #e75406;
-    margin: 38px 0 48px 0;
-    line-height: 80px;
+/*     margin: 38px 0 48px 0; */
+/*     line-height: 80px; */
 }
 
 .largeNumbersOrange {
@@ -397,8 +398,8 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     font-size: 243px;
     color: #e75406;
     height: auto;
-    margin: 138px 0 48px 18px;
-    line-height: 175px;
+/*     margin: 138px 0 48px 18px; */
+/*     line-height: 175px; */
 }
 
 
@@ -521,14 +522,18 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     left: 30px;
 }
 
+#total {
+	margin: 178px 0 0 52px;
+}
+
+#totalBG {
+		margin: 98px 0 0 52px;
+}
+
 #box1 #total, #box1 .largNumbersGrey {
     position: absolute;
-    top: 105px;
-    left: 35px;
     width: 899px;
-    text-align: right;
-    margin: 0;
-    
+    text-align: right;    
     direction: rtl;
     text-align: justify;
     white-space: pre;
@@ -730,6 +735,11 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #news li { border-bottom: #cbcbcb 1px solid; height: 91px; }
 
+#news li p { color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; }
+
+#news li p a { color: #e75405; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; }
+
+
 
 
 #supporter_numbers { background-color: #fff; position: relative; float: right; height: 317px; width: 415px; padding: 30px 30px 0 30px; margin: 10px 0; }
@@ -772,6 +782,8 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 #supporters_internal { padding: 20px 0 0 36px; }
 #supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
 #supporters_internal em { color: #e75405; font-weight: bold; }
+
+.gfb_count { float: right;}
 
 
 
