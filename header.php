@@ -48,6 +48,7 @@
                 {load: '<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js'},
                 {load: '<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js'},
                 {load: '<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js'},
+                //{load: '<?php echo ROOT; ?>js/lib/jquery.cookie.js'},
                 {
                     load: '<?php echo ROOT; ?>js/socialTrackers/totalTracker.js',
                     complete: function() {
@@ -59,6 +60,7 @@
                         var It = new InstagramTracker('#instagram_photo_count');
                         var gfb = new GfbTracker('#gfb_count');
                         var total = new TotalTracker('#total');
+                        
                     }
                 },
                 
@@ -105,6 +107,8 @@
         <!--<script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>-->
         <!--<script src="<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js"></script>-->
         <!--<script src="<?php echo ROOT; ?>js/socialTrackers/totalTracker.js"></script>-->
+        
+        <script src="<?php echo ROOT; ?>js/lib/jquery.cookie.js"></script>
         <script>
             
             /*
@@ -113,21 +117,32 @@
             (function($) {
                 $(window).load(function() {
                     
+                    // mikes
                     if(Modernizr.touch) {
                         $('*').on('touchstart', function() {
                             $(this).trigger('click');
                         });
                     }
                     
-//                    var fst = new FacebookStatusTracker('#facebook_statuses');
-//                    
-//                    var gt = new GoogleTracker('#google_count');
-//                    var ft = new FacebookTracker('#facebook_count');
-//                    var tt = new TwitterTracker('#twitter_count');
-//                    var It = new InstagramTracker('#instagram_photo_count');
-//                    var gfb = new GfbTracker('#gfb_count');
-//                    var total = new TotalTracker('#total');
-                    
+                    // scotts intro animation
+			    	var beginAnimation = function() {
+						$(function(){
+						   $("#intro").delay(3000).fadeOut(1000, function(){$(this).remove();});
+						   $.cookie('sfsuperbowlintro', 'true', { expires: 1 });
+						});
+					}; 
+					
+					// scotts intro animation	                
+		            $('#intro').ready(function() {
+		                var loadedBefore = $.cookie('sfsuperbowlintro'); // => "the_value"
+		                if(loadedBefore == 'true') {
+		                    $('#intro').hide();
+		                    $('#main').css({ 'opacity' : 1 });
+		                } else {
+		                    beginAnimation();
+		                }
+		            });
+		            
 //                    var nav = new PageNavigation('#wrap');
                     
                 });
@@ -141,16 +156,6 @@
         
         
         <!-- INTRO ANIMATION -->
-	    <script type="text/javascript">
-			jQuery(function(){
-			   $("#intro").delay(3500).fadeOut(1500, function(){$(this).remove();});
-			});
-		</script>
-
-		
-
-
-        
     </head>
     <body data-device="<?php echo DEVICE_TYPE; ?>">
     
@@ -193,3 +198,9 @@
 	            </div><!-- /boardcontainer-->
                     
             </div><!-- /header -->
+            <?php if($_SESSION['sfsuperbowlintro']) : ?>
+            <div id="intro">
+				<img src="../images/intro_logo.png" id="introAnimation">
+			</div><!-- /intro -->
+			<?php $_SESSION['sfsuperbowlintro'] = false; ?>
+			<?php endif; ?>

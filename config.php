@@ -18,6 +18,10 @@ $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') 
 
 define('DEVICE_TYPE', $deviceType);
 
+/* setcookie("sfsuperbowlintro", true); */
+
+$_SESSION['sfsuperbowlintro'] = true;
+
 //echo "<pre>";
 //print_r($_SERVER);
 
