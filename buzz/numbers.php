@@ -16,7 +16,7 @@
         <span id="total" class="largeNumbersOrange"></span>
     </li>
     <li id="box2" class="bottom bgTextureLight">
-        <a href="<?php echo ROOT; ?>/tweets/" class="ajaxify">
+        <a href="<?php echo ROOT; ?>tweets/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">TWEETS</span>
             <img class="smallBoxIcon" src="../images/icon_twitter.png">
             <hr class="smallBoxHR" />
@@ -25,7 +25,7 @@
         </a>
     </li>
     <li id="box3" class="bottom bgTextureLight">
-        <a href="<?php echo ROOT; ?>/instagram/" class="ajaxify">
+        <a href="<?php echo ROOT; ?>instagram/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">PHOTOS</span>
             <img class="smallBoxIcon" src="../images/icon_instagram.png">
             <hr class="smallBoxHR" />
@@ -34,7 +34,7 @@
         </a>
     </li>
     <li id="box4" class="bottom bgTextureLight">
-        <a href="<?php echo ROOT; ?>/supporters/" class="ajaxify">
+        <a href="<?php echo ROOT; ?>supporters/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">SUPPORTERS</span>
             <img class="smallBoxIconLeft" src="../images/icon_facebook.png"><img class="smallBoxIcon" src="../images/icon_google.png">
             <hr class="smallBoxHR" />
