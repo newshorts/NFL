@@ -49,15 +49,22 @@ var FacebookStatusTracker = SocialTracker.extend({
 	            
             */
             
-            console.dir(entry);
-            var str = '<div class="post">'  + entry.content +'</div>';
+            console.log('entry coming next');
             
-            var img = $(str).find(".img").remove();
-            var copy = $(str).text();
+            var str = '<div class="post">' + entry.content + '</div>';
             
+            var img = $(str).find('img');
             
-            $(this).html(img);
-            $(this).append('<p class="feed_copy">' + copy + '</p>');
+            console.dir(img);
+            
+//            var str = '<div class="post">'  + entry.content +'</div>';
+            
+//            var img = $(str).find(".img").remove();
+//            var copy = $(str).text();
+//            
+//            
+//            $(this).html(img);
+//            $(this).append('<p class="feed_copy">' + copy + '</p>');
 
             
         });
