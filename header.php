@@ -140,7 +140,12 @@
         
         
         
-
+        <!-- INTRO ANIMATION -->
+        <script type="text/javascript">
+			jQuery(function(){
+			   $("#introAnimation").delay(3500).fadeOut(1500);
+			});
+		</script>
 
 
 
@@ -165,7 +170,7 @@
                             
 	                	<div class="rightWrap">
                                     <div class="tabs">
-		                        <a href="<?php echo ROOT; ?>buzz" class="ajaxify <?php echo (strpos($request, 'buzz')) ? 'active' : ''; ?>"><?php echo (strpos($request, 'buzz')) ? 'SEE THE BUZZ' : 'SCOREBOARD'; ?></a> / <a href="<?php echo ROOT; ?>movement" class="ajaxify <?php echo (strpos($request, 'movement')) ? 'active' : ''; ?>" >JOIN THE MOVEMENT</a>
+		                        <a href="<?php echo ROOT; ?>buzz" class="ajaxify <?php echo (strpos($request, 'buzz')) ? 'active' : ''; ?>"><?php echo (strpos($request, 'buzz')) ? 'SCOREBOARD' : 'SCOREBOARD'; ?></a> / <a href="<?php echo ROOT; ?>movement" class="ajaxify <?php echo (strpos($request, 'movement')) ? 'active' : ''; ?>" >JOIN THE MOVEMENT</a>
 		                    </div>
 		                    
 		                    <div class="sharebutton">
