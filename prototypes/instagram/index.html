@@ -27,8 +27,8 @@ and open the template in the editor.
                 height: 316px;
                 overflow: hidden;
                 position: absolute;
-                top: -25px;
-                left: -100px;
+                top: -200px;
+                left: -125px;
                 overflow: hidden;
             }
         </style>
@@ -46,7 +46,7 @@ and open the template in the editor.
             (function() {
                 $(window).load(function() {
                     
-                    var Instagram = function(access_token) {
+                    var Instagram = function(access_token, tag) {
                         
                         var _access_token;
                         var canvas = $('#canvas');
@@ -57,7 +57,7 @@ and open the template in the editor.
                             $('#wrap').isotope({
                                 itemSelector: '.item',
                                 masonry: {
-                                    columnWidth: 100
+                                    columnWidth: 125
                                 },
                                 sortBy: 'random'
                             });
@@ -65,12 +65,12 @@ and open the template in the editor.
                             _access_token = access_token;
                             
 //                            window.addEventListener('newPhotos', photosLoaded, false);
-                            $(window).on('newPhotos', function(evt) {
-//                                console.dir(evt)
-                                photosLoaded(evt.originalEvent);
+                            $(window).bind('newPhotos', function(evt) {
+                                console.dir(evt)
+                                photosLoaded(evt.detail.data);
                             });
                             
-                            getNewPhotos('gspsf');
+                            getNewPhotos();
                             /* getNewPhotos('cheerfulsundays'); */
 //                            setTimeout(function() {
 //                                getNewPhotos('sanfrancisco');
@@ -80,28 +80,36 @@ and open the template in the editor.
                             shuffle();
                         };
                         
-                        var getNewPhotos = function(searchTag) {
+                        var getNewPhotos = function() {
+                            
+                            console.log('https://api.instagram.com/v1/tags/'+tag+'/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9')
+                            
                             $.ajax({
 /*                                 url: 'https://api.instagram.com/v1/tags/'+searchTag+'/media/recent?access_token=' + _access_token, */
-								url: 'https://api.instagram.com/v1/tags/gspsf/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9',
+                                url: 'https://api.instagram.com/v1/tags/'+tag+'/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9',
                                 type: 'GET',
                                 dataType: 'jsonp',
                                 success: function(data) {
     //                                console.log('data returned')
                                     console.dir(data);
-
-                                    var evt = new CustomEvent('newPhotos', {
+                                    
+                                    $(window).trigger({
+                                        type:"newPhotos",
                                         detail: data
                                     });
-                                    window.dispatchEvent(evt);
+
+//                                    var evt = new CustomEvent('newPhotos', {
+//                                        detail: data
+//                                    });
+//                                    window.dispatchEvent(evt);
                                 }
                             });
                         };
                         
-                        var photosLoaded = function(evt) {
+                        var photosLoaded = function(data) {
                             
                             console.log('custom event dispatched')
-                            outputImages(evt.detail.data);
+                            outputImages(data);
                             setTimeout(function() {
                                 console.log('dipatching get new photos again');
                                 getNewPhotos();
@@ -145,9 +153,9 @@ and open the template in the editor.
                             var selector = (Math.floor(Math.random()*3) + 1);
                             
                             var widths = {
-                                1: 200,
-                                2: 200,
-                                3: 200
+                                1: 250,
+                                2: 250,
+                                3: 250
                             };
                             
                             var newImage = $('<img class="item" src="'+img.src+'" />');
@@ -166,8 +174,9 @@ and open the template in the editor.
 
                                 $('#wrap').isotope('shuffle', function() {
                                     // complete
-                                    console.log('shuffle')
+//                                    console.log('shuffle')
                                 });
+                                
                             }, 10000)
                             
                         };
@@ -175,7 +184,10 @@ and open the template in the editor.
                         init();
                     };
                     
-                    var instagram = new Instagram('231409256.05e13af.c3f64f166e634b1c967cc819f12061d9');
+                    var gspsf = new Instagram('231409256.05e13af.c3f64f166e634b1c967cc819f12061d9', 'gspsf');
+                    setTimeout(function() {
+                        var cheerful = new Instagram('231409256.05e13af.c3f64f166e634b1c967cc819f12061d9', 'cheerfulsundays');
+                    }, 1000);
                     
                 });
             })(jQuery);
