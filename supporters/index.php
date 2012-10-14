@@ -16,7 +16,7 @@
 		<div id="latest_news" class="bgTextureLight">
 			<ul id="latest_header" class="headlineMediumGray">
 				<li class="supporters_header"><span>LATEST NEWS</span></li>
-				<li id="supporters_follow"><span>Follow</span><a href="" id="facebook_follow"><img src="../images/facebook_follow.png"></a><a href=""><img id="google_follow" src="../images/google_follow.png"></a></li>
+				<li id="supporters_follow"><span>Follow</span><a href="http://www.facebook.com/SFSuperbowl" id="facebook_follow"><img src="../images/facebook_follow.png"></a><a href="https://plus.google.com/u/0/116535953378851378506/posts"><img id="google_follow" src="../images/google_follow.png"></a></li>
 			</ul>
 			<ul id="news">
 				<li></li>
@@ -68,7 +68,7 @@
 						<div class="fb-like" data-href="http://sfsuperbowl.com" data-send="false" data-width="450" data-show-faces="false" data-font="arial"></div>
 					</div>
 					<div id="facebook_likes_count">
-				        <div id="facebook_count_bg" class="supportersNumbersGrey">8,888,888</div>    
+				        <div id="facebook_count_bg" class="supportersNumbersGrey">888,888</div>    
 				        <div id="facebook_count" class="supportersNumbersOrange"></div>
 					</div>
 				</li>
