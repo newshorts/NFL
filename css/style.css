@@ -657,7 +657,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 #instagram_count .mediumNumbersOrange,
 #instagram_count .mediumNumbersGrey {
     position: absolute;
-    top: 0;
+    top: 41px;
     right: 0;
     text-align: right;
     direction: rtl;
@@ -688,6 +688,10 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 #instagram_button { position: relative; top: -30px;  float: right; }
+
+#instagram_photo_count {
+	margin: 31px 0px 0px 0px; 
+}
 
 /*	--------------------------------------------------
     Twitter
