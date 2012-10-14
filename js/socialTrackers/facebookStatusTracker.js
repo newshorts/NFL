@@ -28,9 +28,33 @@ var FacebookStatusTracker = SocialTracker.extend({
         $('#news li').each(function(idx) {
             var entry = data.entries[idx];
             
-            console.dir(entry);
+            /*
+	            
+	            $(entry).each(function(idx) {
+	            	// content: entry[idx].content
+	            });
+	            
+	            
+	            CSS SELECTORS
+	            .post:first-child .img
+	            
+	            .post:nth-of-type[2] .img
+	            
+	            .post:last-child .img
+	            
+            */
             
-            $(this).html('<p>' + entry.content + '</p>');
+            console.dir(entry);
+            var str = '<div class="post">'  + entry.content +'</div>';
+            
+            var img = $(str).find(".img").remove();
+            var copy = $(str).text();
+            
+            
+            $(this).html(img);
+            $(this).append('<p class="feed_copy">' + copy + '</p>');
+
+            
         });
     }
     

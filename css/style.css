@@ -798,9 +798,29 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #news li { border-bottom: #cbcbcb 1px solid; height: 91px; }
 
-#news li p { color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; position: relative; float: right;}
+#news li  p { color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; position: relative; width: 390px;  }
 
-#news li p a { color: #e75405; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; position: relative; float: left; }
+#news li div a { color: #e75405; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; float: right; position: relative; }
+
+
+#news div.post {
+	position: relative;
+	width:272px;
+	height: 91px;
+	padding: 0px 0px 0px 40px;
+	float: right;
+	top: -15px;
+
+}
+
+#news li div br {display: none}
+
+.post p
+
+
+#news .post a:nth-of-type(2) {
+display: none;
+}
 
 
 
