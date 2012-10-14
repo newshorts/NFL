@@ -141,13 +141,13 @@
         
         
         <!-- INTRO ANIMATION -->
-        <script type="text/javascript">
+	    <script type="text/javascript">
 			jQuery(function(){
-			   $("#introAnimation").delay(3500).fadeOut(1500);
+			   $("#intro").delay(3500).fadeOut(1500, function(){$(this).remove();});
 			});
 		</script>
 
-
+		
 
 
         
