@@ -70,7 +70,7 @@ and open the template in the editor.
                                 photosLoaded(evt.originalEvent);
                             });
                             
-                            getNewPhotos('gspsf');
+/*                             getNewPhotos('gspsf'); */
                             /* getNewPhotos('cheerfulsundays'); */
 //                            setTimeout(function() {
 //                                getNewPhotos('sanfrancisco');
@@ -82,7 +82,8 @@ and open the template in the editor.
                         
                         var getNewPhotos = function(searchTag) {
                             $.ajax({
-                                url: 'https://api.instagram.com/v1/tags/'+searchTag+'/media/recent?access_token=' + _access_token,
+/*                                 url: 'https://api.instagram.com/v1/tags/'+searchTag+'/media/recent?access_token=' + _access_token, */
+								url: 'https://api.instagram.com/v1/tags/gspsf/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9',
                                 type: 'GET',
                                 dataType: 'jsonp',
                                 success: function(data) {
