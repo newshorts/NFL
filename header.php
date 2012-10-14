@@ -24,19 +24,87 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="<?php echo ROOT; ?>js/lib/jquery.min.js">\x3C/script>')</script>
         
-        <script src="<?php echo ROOT; ?>js/lib/class.js"></script>
+        <script src="<?php echo ROOT; ?>js/lib/modernizr.custom.nfl.js"></script>
         
-        <script src="<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js"></script>
-        <script src="<?php echo ROOT; ?>js/lib/pageNavigation.js"></script>
+        <script>
+            Modernizr.load([
+                
+                {
+                    load: '//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js',
+                    complete: function () {
+                        if ( !window.jQuery ) {
+                            Modernizr.load('<?php echo ROOT; ?>js/lib/jquery.min.js');
+                        }
+                    }
+                },
+                
+                {load: '<?php echo ROOT; ?>js/lib/class.js'},
+                {load: '<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js'},
+                {load: '<?php echo ROOT; ?>js/lib/pageNavigation.js'},
+                {load: '<?php echo ROOT; ?>js/socialTrackers/socialTracker.js'},
+                {load: '<?php echo ROOT; ?>js/socialTrackers/googleTracker.js'},
+                {load: '<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js'},
+                {load: '<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js'},
+                {load: '<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js'},
+                {load: '<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js'},
+                {load: '<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js'},
+                {
+                    load: '<?php echo ROOT; ?>js/socialTrackers/totalTracker.js',
+                    complete: function() {
+                        var fst = new FacebookStatusTracker('#facebook_statuses');
+                    
+                        var gt = new GoogleTracker('#google_count');
+                        var ft = new FacebookTracker('#facebook_count');
+                        var tt = new TwitterTracker('#twitter_count');
+                        var It = new InstagramTracker('#instagram_photo_count');
+                        var gfb = new GfbTracker('#gfb_count');
+                        var total = new TotalTracker('#total');
+                    }
+                },
+                
+                // Presentational polyfills
+                {
+                    // Logical list of things we would normally need
+                    test : Modernizr.fontface && Modernizr.canvas && Modernizr.cssgradients,
+                    // Modernizr.load loads css and javascript by default
+                    nope : ['presentational-polyfill.js', 'presentational.css']
+                },
+//                // Functional polyfills
+//                {
+//                    // This just has to be truthy
+//                    test : Modernizr.websockets && window.JSON,
+//                    // socket-io.js and json2.js
+//                    nope : 'functional-polyfills.js',
+//                    // You can also give arrays of resources to load.
+//                    both : [ 'app.js', 'extra.js' ],
+//                    complete : function () {
+//                    // Run this after everything in this group has downloaded
+//                    // and executed, as well everything in all previous groups
+//                    myApp.init();
+//                    }
+//                },
+//                
+//                
+//                
+                // Run your analytics after you've already kicked off all the rest
+                // of your app.
+//                'post-analytics.js'
+            ]);
+        </script>
         
-        <script src="<?php echo ROOT; ?>js/socialTrackers/socialTracker.js"></script>
-        <script src="<?php echo ROOT; ?>js/socialTrackers/googleTracker.js"></script>
-        <script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>
-        <script src="<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js"></script>
-        <script src="<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js"></script>
-        <script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>
-        <script src="<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js"></script>
-        <script src="<?php echo ROOT; ?>js/socialTrackers/totalTracker.js"></script>
+        <!--<script src="<?php echo ROOT; ?>js/lib/class.js"></script>-->
+        
+        <!--<script src="<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js"></script>-->
+        <!--<script src="<?php echo ROOT; ?>js/lib/pageNavigation.js"></script>-->
+        
+        <!--<script src="<?php echo ROOT; ?>js/socialTrackers/socialTracker.js"></script>-->
+        <!--<script src="<?php echo ROOT; ?>js/socialTrackers/googleTracker.js"></script>-->
+        <!--<script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>-->
+        <!--<script src="<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js"></script>-->
+        <!--<script src="<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js"></script>-->
+        <!--<script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>-->
+        <!--<script src="<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js"></script>-->
+        <!--<script src="<?php echo ROOT; ?>js/socialTrackers/totalTracker.js"></script>-->
         <script>
             
             /*
@@ -45,14 +113,20 @@
             (function($) {
                 $(window).load(function() {
                     
-                    var fst = new FacebookStatusTracker('#facebook_statuses');
+                    if(Modernizr.touch) {
+                        $('*').on('touchstart', function() {
+                            $(this).trigger('click');
+                        });
+                    }
                     
-                    var gt = new GoogleTracker('#google_count');
-                    var ft = new FacebookTracker('#facebook_count');
-                    var tt = new TwitterTracker('#twitter_count');
-                    var It = new InstagramTracker('#instagram_photo_count');
-                    var gfb = new GfbTracker('#gfb_count');
-                    var total = new TotalTracker('#total');
+//                    var fst = new FacebookStatusTracker('#facebook_statuses');
+//                    
+//                    var gt = new GoogleTracker('#google_count');
+//                    var ft = new FacebookTracker('#facebook_count');
+//                    var tt = new TwitterTracker('#twitter_count');
+//                    var It = new InstagramTracker('#instagram_photo_count');
+//                    var gfb = new GfbTracker('#gfb_count');
+//                    var total = new TotalTracker('#total');
                     
 //                    var nav = new PageNavigation('#wrap');
                     
@@ -91,7 +165,7 @@
                             
 	                	<div class="rightWrap">
                                     <div class="tabs">
-		                        <a href="<?php echo ROOT; ?>buzz" class="ajaxify <?php echo (strpos($request, 'buzz')) ? 'active' : ''; ?>"><?php echo (strpos($request, 'buzz')) ? 'SEE THE BUZZ' : 'SCOREBOARD'; ?></a> / <a href="<?php echo ROOT; ?>movements" class="ajaxify <?php echo (strpos($request, 'movement')) ? 'active' : ''; ?>" >JOIN THE MOVEMENT</a>
+		                        <a href="<?php echo ROOT; ?>buzz" class="ajaxify <?php echo (strpos($request, 'buzz')) ? 'active' : ''; ?>"><?php echo (strpos($request, 'buzz')) ? 'SEE THE BUZZ' : 'SCOREBOARD'; ?></a> / <a href="<?php echo ROOT; ?>movement" class="ajaxify <?php echo (strpos($request, 'movement')) ? 'active' : ''; ?>" >JOIN THE MOVEMENT</a>
 		                    </div>
 		                    
 		                    <div class="sharebutton">

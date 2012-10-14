@@ -14,7 +14,7 @@
     
   </div>
   <ul id="twitter_footer" class="bgTextureLight">
-	<li>
+	<li id="twitter_headline">
 		<div class="headlineMediumGray">
 			<img src="../images/buzz_sign.png"><span>SFSUPERBOWL TWEETS</span>
 		</div>
@@ -31,11 +31,11 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</li>
             </ul>
-	</li>
-        <li id="twitter_number_count" class="mediumNumbersOrange">
-        	<div id="twitter_count"></div>
-            
-        </li>
+    </li>
+    <li id="twitter_number_count">
+        <div id="twitter_count_bg" class="mediumNumbersGrey">888,888</div>    
+        <div id="twitter_count" class="tweets_count mediumNumbersOrange"></div>
+    </li>
   </ul>
   
 </div>

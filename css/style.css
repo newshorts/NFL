@@ -73,12 +73,13 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     margin-left: 0; 
     overflow: visible;
     z-index: 10;
+    
 }
 
 
 #boardcontainer .left {
 	float: left;
-    margin-top: 42px;
+    margin-top: 31px;
     margin-left: 30px;
     display:block;
 }
@@ -251,6 +252,8 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     margin-top: -10px;
     box-shadow: 1px 2px 3px 2px #ccc;
     border-radius: 8px;
+    
+    behavior: url(../lib/pie/PIE.htc);
 }
 
 #movements .headline h3 {
@@ -353,6 +356,8 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     font-style: normal; 
     color: #666666;
     text-decoration: none;
+    line-height: 45px;
+    
 }
 
 
@@ -378,16 +383,16 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     font-family: 'ds-digitalitalic', Arial, sans-serif;
     font-size: 71px;
     color: #e75406;
-    margin: 38px 0 48px 0;
-    line-height: 75px;
+/*     margin: 38px 0 48px 0; */
+/*     line-height: 75px; */
 }
 
 .mediumNumbersOrange {
     font-family: 'ds-digitalitalic', Arial, sans-serif;
     font-size: 116px;
     color: #e75406;
-    margin: 38px 0 48px 0;
-    line-height: 80px;
+/*     margin: 38px 0 48px 0; */
+/*     line-height: 80px; */
 }
 
 .largeNumbersOrange {
@@ -396,8 +401,8 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     font-size: 243px;
     color: #e75406;
     height: auto;
-    margin: 138px 0 48px 18px;
-    line-height: 175px;
+/*     margin: 138px 0 48px 18px; */
+/*     line-height: 175px; */
 }
 
 .largNumbersGrey {
@@ -408,7 +413,26 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     height: auto;
     margin: 138px 0 48px 18px;
     line-height: 175px;
+    
     opacity: 0.1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    filter: alpha(opacity=10);
+    -moz-opacity: 0.1;
+    -khtml-opacity: 0.1;
+}
+
+.mediumNumbersGrey {
+    font-family: 'ds-digitalitalic', Arial, sans-serif;
+    font-size: 116px;
+    color: #444;
+/*     margin: 38px 0 48px 0; */
+    line-height: 80px;
+    
+    opacity: 0.1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    filter: alpha(opacity=10);
+    -moz-opacity: 0.1;
+    -khtml-opacity: 0.1;
 }
 
 .smallNumbersGrey {
@@ -417,7 +441,12 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     color: #444;
     margin: 38px 0 48px 0;
     line-height: 75px;
+    
     opacity: 0.1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    filter: alpha(opacity=10);
+    -moz-opacity: 0.1;
+    -khtml-opacity: 0.1;
 }
 
 
@@ -494,14 +523,18 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     left: 30px;
 }
 
+#total {
+	margin: 178px 0 0 52px;
+}
+
+#totalBG {
+		margin: 98px 0 0 52px;
+}
+
 #box1 #total, #box1 .largNumbersGrey {
     position: absolute;
-    top: 105px;
-    left: 35px;
     width: 899px;
-    text-align: right;
-    margin: 0;
-    
+    text-align: right;    
     direction: rtl;
     text-align: justify;
     white-space: pre;
@@ -526,9 +559,20 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	padding-right: 1px;
 }
 
-.count {
+.countGrey {
     display: inline;
     top: 78px;
+    left: 26px;
+    margin: 0;
+    width: 263px;
+    direction: rtl;
+    text-align: justify;
+    white-space: pre;
+}
+
+.countOrange {
+    display: inline;
+    top: 107px;
     left: 26px;
     margin: 0;
     width: 263px;
@@ -582,9 +626,26 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 #instagram_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
 
 
+
 #instagram_count {
 	position: relative;
 	float: right;
+        width: 363px;
+        display: inline-block;
+        margin-top: -55px;
+        margin-right: 28px;
+}
+
+#instagram_count .mediumNumbersOrange,
+#instagram_count .mediumNumbersGrey {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    direction: rtl;
+    text-align: justify;
+    white-space: pre;
+    
 }
 
 .photo_count {
@@ -645,10 +706,16 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 
 #twitter_footer { position: relative; height: 106px; padding: 20px 0px 0px 30px; width: 966px; }
-#twitter_footer #twitter_count { position: absolute; width: 300px; top: 0; right: 0px; }
+/* #twitter_footer #twitter_count { position: absolute; width: 300px; top: 0; right: 0px; } */
 #twitter_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
 
-#social { padding: 20px 0 0 36px; width: 491px}
+#twitter_headline {
+	width: 530px; 
+}
+
+
+
+#social { position: relative; float: left; padding: 20px 0 0 36px; width: 491px}
 #social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 240px; }
 #social .links { position: relative; float: right; top: -30px; }
 #social .links li { position: relative; float: left; }
@@ -660,9 +727,28 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 /* #social img { margin-right: 7px; } */
 /* #tweet { margin-right: 20px;  } */
 
-#twitter_count {
+
+
+#twitter_number_count {
+	height: 130px; 
+	width: 439px;
 	float: right;
 	position: relative;
+	top: -43px;
+	text-align: right; 
+}
+
+
+#twitter_count_bg {
+	margin: 23px 25px 0 0;
+	
+}
+
+.tweets_count {
+	margin: 0px 25px 0 0;
+	position: relative;
+	top: -49px; 
+
 }
 
 /*	--------------------------------------------------
@@ -686,6 +772,11 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #news li { border-bottom: #cbcbcb 1px solid; height: 91px; }
 
+#news li p { color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; }
+
+#news li p a { color: #e75405; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; }
+
+
 
 
 #supporter_numbers { background-color: #fff; position: relative; float: right; height: 317px; width: 415px; padding: 30px 30px 0 30px; margin: 10px 0; }
@@ -693,23 +784,31 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 #google_pluses { height: 159px; width: 415px; }
 
 #google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
+
+#google_cta { margin: 40px 0 0 0; width: 39px;  }
+
+/*
 #google_pluses li div span { font-size: 24px; font-family: 'FranklinGothicURW-HeaIta';  color: #666666;  text-decoration: none; }
 #google_pluses li div { margin: 30px 0 0 0; }
 
-#google_cta { width: 200px;  }
 #google_cta img { margin: 0 10px 0 0; }
-#google_cta span {position: relative;top: -15px; }
+#google_cta span {position: relative; top: -15px; }
+*/
 
 
 #facebook_likes { height: 158px; width: 415px; }
 
 #facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
-#facebook_likes li div { margin: 30px 0 0 0; }
-#facebook_likes li div span { font-size: 24px; font-family: 'FranklinGothicURW-HeaIta'; color: #666666; text-decoration: none; }
 
-#facebook_cta { width: 200px; }
+#facebook_cta { margin: 40px 0 0 0; width: 49px; overflow: hidden; }
+
+/*
+#facebook_likes li div span { font-size: 24px; font-family: 'FranklinGothicURW-HeaIta'; color: #666666; text-decoration: none; }
+#facebook_likes li div { margin: 30px 0 0 0; }
+
 #facebook_cta img { margin: 0 10px 0 0; }
 #facebook_cta span { position: relative; top: -15px; }
+*/
 
 
 
@@ -720,6 +819,8 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 #supporters_internal { padding: 20px 0 0 36px; }
 #supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
 #supporters_internal em { color: #e75405; font-weight: bold; }
+
+.gfb_count { float: right;}
 
 
 
