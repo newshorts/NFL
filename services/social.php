@@ -25,7 +25,7 @@ class Social {
         $tweets = $this->get_tweets();
         $likes = $this->get_likes();
         $insta = $this->get_instagrams('cheerfulsundays');
-        $insta += $this->get_instagrams('lovebuttonSF');
+        $insta += $this->get_instagrams('gspsf');
         $fb_statuses = $this->get_facebook_statuses();
         
         $gfb = $pluses + $likes;
