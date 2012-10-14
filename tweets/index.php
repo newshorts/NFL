@@ -34,7 +34,7 @@
     </li>
     <li id="twitter_number_count">
         <div id="twitter_count_bg" class="mediumNumbersGrey">888,888</div>    
-        <div id="twitter_count" class="mediumNumbersOrange"></div>
+        <div id="twitter_count" class="tweets_count mediumNumbersOrange"></div>
     </li>
   </ul>
   

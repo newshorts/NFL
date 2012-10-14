@@ -422,7 +422,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     font-family: 'ds-digitalitalic', Arial, sans-serif;
     font-size: 116px;
     color: #444;
-    margin: 38px 0 48px 0;
+/*     margin: 38px 0 48px 0; */
     line-height: 80px;
     
     opacity: 0.1;
@@ -731,20 +731,21 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	width: 439px;
 	float: right;
 	position: relative;
-	top: 0px; 
+	top: -43px;
+	text-align: right; 
 }
 
+
 #twitter_count_bg {
-	width: 439px;
-	margin: 0 0 0 0;
+	margin: 23px 25px 0 0;
 	
 }
 
-#twitter_count {
+.tweets_count {
+	margin: 0px 25px 0 0;
 	position: relative;
-	width: 439px;
-/* 	margin: 15px 0 0 0; */
-	top: 0px;  
+	top: -49px; 
+
 }
 
 /*	--------------------------------------------------
