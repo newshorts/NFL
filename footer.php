@@ -42,10 +42,10 @@
 
 
 
-    
+    <script src="<?php echo ROOT; ?>/tweets/tweet.js" charset="utf-8"></script>
     </body>
     
-     <script src="tweet.js" charset="utf-8"></script>
+     
      
      
 

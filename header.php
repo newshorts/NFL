@@ -10,142 +10,217 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
     
 ?>
 <!DOCTYPE html>
-<html>
+<html itemtype="http://schema.org/">
     <head>
     	
-    	<!-- GOOGLE+ META TAGS FOR DEFAULT THUMBNAIL IMAGE -->
-    	<html itemscope itemtype="http://schema.org/">
-
-		<meta itemprop="SFSUPERBOWL" content="BRING THE BOWL TO THE BAY">
-		<meta itemprop="description" content="Our bid for the Super Bowl starts with you. Help us show why the Bay Area will be a perfect host for Super Bowl L. Simply tweet, share or post with #SFSuperBowl to show your support.">
-		<meta itemprop="image" content="http://www.sfsuperbowl.com/images/movement_poster.png">
-
-
-
-    
         <title>SFSuperBowl || 2016</title>
+        <!-- GOOGLE+ META TAGS FOR DEFAULT THUMBNAIL IMAGE -->
+        <meta itemprop="SFSUPERBOWL" content="BRING THE BOWL TO THE BAY">
+        <meta itemprop="description" content="Our bid for the Super Bowl starts with you. Help us show why the Bay Area will be a perfect host for Super Bowl L. Simply tweet, share or post with #SFSuperBowl to show your support.">
+        <meta itemprop="image" content="http://www.sfsuperbowl.com/images/movement_poster.png">
+        
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="<?php echo ROOT; ?>js/lib/jquery.min.js">\x3C/script>')</script>
         
-        <script src="<?php echo ROOT; ?>js/lib/modernizr.custom.nfl.js"></script>
+<!--        <script src="<?php echo ROOT; ?>js/lib/modernizr.custom.nfl.js"></script>-->
         
         <script>
-            Modernizr.load([
-                
-                {
-                    load: '//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js',
-                    complete: function () {
-                        if ( !window.jQuery ) {
-                            Modernizr.load('<?php echo ROOT; ?>js/lib/jquery.min.js');
-                        }
-                    }
-                },
-                
-                {load: '<?php echo ROOT; ?>js/lib/class.js'},
-                {load: '<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js'},
-                {load: '<?php echo ROOT; ?>js/lib/pageNavigation.js'},
-                {load: '<?php echo ROOT; ?>js/socialTrackers/socialTracker.js'},
-                {load: '<?php echo ROOT; ?>js/socialTrackers/googleTracker.js'},
-                {load: '<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js'},
-                {load: '<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js'},
-                {load: '<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js'},
-                {load: '<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js'},
-                {load: '<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js'},
-                //{load: '<?php echo ROOT; ?>js/lib/jquery.cookie.js'},
-                {
-                    load: '<?php echo ROOT; ?>js/socialTrackers/totalTracker.js',
-                    complete: function() {
-                        var fst = new FacebookStatusTracker('#facebook_statuses');
-                    
-                        var gt = new GoogleTracker('#google_count');
-                        var ft = new FacebookTracker('#facebook_count');
-                        var tt = new TwitterTracker('#twitter_count');
-                        var It = new InstagramTracker('#instagram_photo_count');
-                        var gfb = new GfbTracker('#gfb_count');
-                        var total = new TotalTracker('#total');
-                        
-                    }
-                },
-                
-                // Presentational polyfills
-                {
-                    // Logical list of things we would normally need
-                    test : Modernizr.fontface && Modernizr.canvas && Modernizr.cssgradients,
-                    // Modernizr.load loads css and javascript by default
-                    nope : ['presentational-polyfill.js', 'presentational.css']
-                },
-//                // Functional polyfills
+//            Modernizr.load([
+//                
 //                {
-//                    // This just has to be truthy
-//                    test : Modernizr.websockets && window.JSON,
-//                    // socket-io.js and json2.js
-//                    nope : 'functional-polyfills.js',
-//                    // You can also give arrays of resources to load.
-//                    both : [ 'app.js', 'extra.js' ],
-//                    complete : function () {
-//                    // Run this after everything in this group has downloaded
-//                    // and executed, as well everything in all previous groups
-//                    myApp.init();
+//                    load: '//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js',
+//                    complete: function () {
+//                        if ( !window.jQuery ) {
+//                            console.log('unable to find jquery, loading modernizr local version')
+//                            Modernizr.load('<?php echo ROOT; ?>js/lib/jquery.min.js');
+//                        } else {
+//                            Modernizr.load('<?php echo ROOT; ?>js/lib/class.js');
+//                            Modernizr.load('<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js');
+//                            Modernizr.load('<?php echo ROOT; ?>js/lib/pageNavigation.js');
+//                            Modernizr.load('<?php echo ROOT; ?>js/socialTrackers/socialTracker.js');
+//                            Modernizr.load('<?php echo ROOT; ?>js/socialTrackers/googleTracker.js');
+//                            Modernizr.load('<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js');
+//                            Modernizr.load('<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js');
+//                            Modernizr.load('<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js');
+//                            Modernizr.load('<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js');
+//                            Modernizr.load('<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js');
+//                            Modernizr.load('<?php echo ROOT; ?>js/socialTrackers/totalTracker.js');
+//                        }
 //                    }
-//                },
+//                }
 //                
+////                {
+////                    var fst = new FacebookStatusTracker('#facebook_statuses');
+////                    
+////                    var gt = new GoogleTracker('#google_count');
+////                    var ft = new FacebookTracker('#facebook_count');
+////                    var tt = new TwitterTracker('#twitter_count');
+////                    var It = new InstagramTracker('#instagram_photo_count');
+////                    var gfb = new GfbTracker('#gfb_count');
+////                    var total = new TotalTracker('#total');
+////                }
+////                
+////                {load: '<?php echo ROOT; ?>js/lib/class.js'},
+//                {load: '<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js'},
+//                {load: '<?php echo ROOT; ?>js/lib/pageNavigation.js'},
+//                {load: '<?php echo ROOT; ?>js/socialTrackers/socialTracker.js'},
+//                {load: '<?php echo ROOT; ?>js/socialTrackers/googleTracker.js'},
+//                {load: '<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js'},
+//                {load: '<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js'},
+//                {load: '<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js'},
+//                {load: '<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js'},
+//                {load: '<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js'},
+//                {load: '<?php echo ROOT; ?>js/lib/jquery.cookie.js'},
+//                {
+//                    load: '<?php echo ROOT; ?>js/socialTrackers/totalTracker.js',
+////                    complete: function() {
+////                        var fst = new FacebookStatusTracker('#facebook_statuses');
+////                    
+////                        var gt = new GoogleTracker('#google_count');
+////                        var ft = new FacebookTracker('#facebook_count');
+////                        var tt = new TwitterTracker('#twitter_count');
+////                        var It = new InstagramTracker('#instagram_photo_count');
+////                        var gfb = new GfbTracker('#gfb_count');
+////                        var total = new TotalTracker('#total');
+////                        
+////                    }
+////                }
 //                
-//                
-                // Run your analytics after you've already kicked off all the rest
-                // of your app.
-//                'post-analytics.js'
-            ]);
+//                // Presentational polyfills
+////                {
+////                    // Logical list of things we would normally need
+////                    test : Modernizr.fontface && Modernizr.canvas && Modernizr.cssgradients,
+////                    // Modernizr.load loads css and javascript by default
+////                    nope : ['presentational-polyfill.js', 'presentational.css']
+////                },
+////                // Functional polyfills
+////                {
+////                    // This just has to be truthy
+////                    test : Modernizr.websockets && window.JSON,
+////                    // socket-io.js and json2.js
+////                    nope : 'functional-polyfills.js',
+////                    // You can also give arrays of resources to load.
+////                    both : [ 'app.js', 'extra.js' ],
+////                    complete : function () {
+////                    // Run this after everything in this group has downloaded
+////                    // and executed, as well everything in all previous groups
+////                    myApp.init();
+////                    }
+////                },
+////                
+////                
+////                
+//                // Run your analytics after you've already kicked off all the rest
+//                // of your app.
+////                'post-analytics.js'
+//            ]);
         </script>
         
-        <!--<script src="<?php echo ROOT; ?>js/lib/class.js"></script>-->
+        <script src="<?php echo ROOT; ?>js/lib/class.js"></script>
+        <script src="<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js"></script>
+        <script src="<?php echo ROOT; ?>js/lib/pageNavigation.js"></script>
+        <script src="<?php echo ROOT; ?>js/socialTrackers/socialTracker.js"></script>
         
-        <!--<script src="<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js"></script>-->
-        <!--<script src="<?php echo ROOT; ?>js/lib/pageNavigation.js"></script>-->
+        <?php if(strpos($request, 'buzz')): ?>
         
-        <!--<script src="<?php echo ROOT; ?>js/socialTrackers/socialTracker.js"></script>-->
-        <!--<script src="<?php echo ROOT; ?>js/socialTrackers/googleTracker.js"></script>-->
-        <!--<script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>-->
-        <!--<script src="<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js"></script>-->
-        <!--<script src="<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js"></script>-->
-        <!--<script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>-->
-        <!--<script src="<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js"></script>-->
-        <!--<script src="<?php echo ROOT; ?>js/socialTrackers/totalTracker.js"></script>-->
+            <script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>
+            <script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>
+            <script src="<?php echo ROOT; ?>js/socialTrackers/totalTracker.js"></script>
+            <script src="<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js"></script>
         
-        <script src="<?php echo ROOT; ?>js/lib/jquery.cookie.js"></script>
+        <?php elseif(strpos($request, 'instagram')): ?>
+        
+            <script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>
+        
+        <?php elseif(strpos($request, 'tweets')): ?>
+        
+            <script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>
+        
+        <?php elseif(strpos($request, 'movement')): ?>
+        
+        <?php elseif(strpos($request, 'supporters')): ?>
+        
+            <script src="<?php echo ROOT; ?>js/socialTrackers/googleTracker.js"></script>
+            <script src="<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js"></script>
+            <script src="<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js"></script>
+            <script src="<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js"></script>
+        
+        <?php endif; ?>
+        
         <script>
-            
             /*
              *  ATTENTION: One window load function initiates all scripts
              **/
             (function($) {
                 $(window).load(function() {
                     
+                    
+                    
                     // mikes
-                    if(Modernizr.touch) {
-                        $('*').on('touchstart', function() {
-                            $(this).trigger('click');
-                        });
-                    }
-                    <?php if($_SESSION['sfsuperbowlintro']) : ?>
-                        // scotts intro animation
-                        var beginAnimation = function() {
-                            $(function(){
-                               $("#intro").delay(3000).fadeOut(1000, function(){$(this).remove();});
-                               $.cookie('sfsuperbowlintro', 'true', { expires: 1 });
-                            });
-                        }; 
+//                    if(Modernizr.touch) {
+//                        $('*').on('touchstart', function() {
+//                            $(this).trigger('click');
+//                        });
+//                    }
 
-                                    // scotts intro animation	                
-                        $('#intro').ready(function() {
-                            var loadedBefore = $.cookie('sfsuperbowlintro'); // => "the_value"
-                            if(loadedBefore == 'true') {
-                                $('#intro').hide();
-                                $('#main').css({ 'opacity' : 1 });
-                            } else {
-                                beginAnimation();
-                            }
-                        });
+                    <?php if(strpos($request, 'buzz')): ?>
+                    
+                        var total = new TotalTracker('#total');
+                        var It = new InstagramTracker('#instagram_photo_count');
+                        var tt = new TwitterTracker('#twitter_count');
+                        var gfb = new GfbTracker('#gfb_count');
+        
+                    <?php elseif(strpos($request, 'instagram')): ?>
+                        
+                        var It = new InstagramTracker('#instagram_photo_count');
+
+                    <?php elseif(strpos($request, 'tweets')): ?>
+                        
+                        var tt = new TwitterTracker('#twitter_count');
+
+                    <?php elseif(strpos($request, 'movement')): ?>
+
+                    <?php elseif(strpos($request, 'supporters')): ?>
+                        
+                        var fst = new FacebookStatusTracker('#facebook_statuses');
+                        var gt = new GoogleTracker('#google_count');
+                        var ft = new FacebookTracker('#facebook_count');
+                        var gfb = new GfbTracker('#gfb_count');
+
+                    <?php endif; ?>
+                    
+                    <?php if($_SESSION['sfsuperbowlintro']) : ?>
+                        setTimeout(function() {
+                            $('#intro').animate({
+                                opacity: 0
+                            }, 500, function() {
+                                // complete
+                                $(this).css({
+                                    display: 'none'
+                                });
+                            });
+                        }, 1300);
+                        
+                        
+                        // scotts intro animation
+//                        var beginAnimation = function() {
+//                            $(function(){
+//                               $("#intro").delay(3000).fadeOut(1000, function(){$(this).remove();});
+////                               $.cookie('sfsuperbowlintro', 'true', { expires: 1 });
+//                            });
+//                        }; 
+//
+//                                    // scotts intro animation	                
+//                        $('#intro').ready(function() {
+////                            var loadedBefore = $.cookie('sfsuperbowlintro'); // => "the_value"
+//                            if(loadedBefore == 'true') {
+//                                $('#intro').hide();
+//                                $('#main').css({ 'opacity' : 1 });
+//                            } else {
+//                                beginAnimation();
+//                            }
+//                        });
                     <?php endif; ?>
 		            
 //                    var nav = new PageNavigation('#wrap');
@@ -205,8 +280,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
             </div><!-- /header -->
             
             <?php if($_SESSION['sfsuperbowlintro']) : ?>
-            <div id="intro">
+                <div id="intro">
                     <img src="../images/intro_logo.png" id="introAnimation">
-            </div>
-            <?php $_SESSION['sfsuperbowlintro'] = false; ?>
+                </div>
+                <?php $_SESSION['sfsuperbowlintro'] = false; ?>
             <?php endif; ?>

@@ -12,9 +12,13 @@ var TwitterTracker = SocialTracker.extend({
         
         var self = this;
         
-        window.addEventListener('twitter_data', function(evt) {
-            self.update(parseInt(evt.detail.data.output.twitter));
-        }, false);
+        $(window).on('twitter_data', function(evt, data) {
+            self.update(parseInt(data.output.twitter));
+        });
+        
+//        window.addEventListener('twitter_data', function(evt) {
+//            self.update(parseInt(evt.detail.data.output.twitter));
+//        }, false);
         
     }
     

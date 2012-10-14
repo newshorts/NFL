@@ -44,12 +44,15 @@ var SocialTracker = Class.extend({
     poll: function() {
         var self = this;
         $.getJSON(this._url,function(data){
-            var newData = new CustomEvent(self._eventName, {
-                detail: {
-                    data: data
-                }
-            });
-            window.dispatchEvent(newData);
+            
+            $(window).trigger(self._eventName, data);
+            
+//            var newData = new CustomEvent(self._eventName, {
+//                detail: {
+//                    data: data
+//                }
+//            });
+//            window.dispatchEvent(newData);
         });
     },
     

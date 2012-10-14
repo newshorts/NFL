@@ -13,9 +13,13 @@ var TotalTracker = SocialTracker.extend({
         
         var self = this;
         
-        window.addEventListener('total_data', function(evt) {
-            self.update(parseInt(evt.detail.data.output.total));
-        }, false);
+        $(window).on('total_data', function(evt, data) {
+            self.update(parseInt(data.output.total));
+        });
+        
+//        window.addEventListener('total_data', function(evt) {
+//            self.update(parseInt(evt.detail.data.output.total));
+//        }, false);
         
     }
     

@@ -11,14 +11,19 @@ var FacebookStatusTracker = SocialTracker.extend({
         
         var self = this;
         
-        window.addEventListener('facebook_status_data', function(evt) {
-            
-            // data: evt.detail.data.output.facebook_statuses
-//            console.log(evt.detail.data.output.facebook_statuses);
-            console.dir(evt.detail.data.output.facebook_statuses);
-            
-            self.outputThree(evt.detail.data.output.facebook_statuses);
-        }, false);
+        $(window).on('facebook_status_data', function(evt, data) {
+            console.dir(data)
+            self.outputThree(data.output.facebook_statuses);
+        });
+        
+//        window.addEventListener('facebook_status_data', function(evt) {
+//            
+//            // data: evt.detail.data.output.facebook_statuses
+////            console.log(evt.detail.data.output.facebook_statuses);
+//            console.dir(evt.detail.data.output.facebook_statuses);
+//            
+//            self.outputThree(evt.detail.data.output.facebook_statuses);
+//        }, false);
         
     },
     

@@ -12,9 +12,13 @@ var InstagramTracker = SocialTracker.extend({
         
         var self = this;
         
-        window.addEventListener('instagram_data', function(evt) {
-            self.update(parseInt(evt.detail.data.output.instagram));
-        }, false);
+        $(window).on('instagram_data', function(evt, data) {
+            self.update(parseInt(data.output.instagram));
+        });
+        
+//        window.addEventListener('instagram_data', function(evt) {
+//            self.update(parseInt(evt.detail.data.output.instagram));
+//        }, false);
         
     }
     

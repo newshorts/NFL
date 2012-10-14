@@ -13,9 +13,13 @@ var GfbTracker = SocialTracker.extend({
         
         var self = this;
         
-        window.addEventListener('gfb_data', function(evt) {
-            self.update(parseInt(evt.detail.data.output.gfb));
-        }, false);
+        $(window).on('gfb_data', function(evt, data) {
+            self.update(parseInt(data.output.gfb));
+        });
+        
+//        window.addEventListener('gfb_data', function(evt) {
+//            self.update(parseInt(evt.detail.data.output.gfb));
+//        }, false);
         
     }
     

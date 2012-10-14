@@ -12,9 +12,13 @@ var GoogleTracker = SocialTracker.extend({
         
         var self = this;
         
-        window.addEventListener('google_data', function(evt) {
-            self.update(parseInt(evt.detail.data.output.google));
-        }, false);
+        $(window).on('google_data', function(evt, data) {
+            self.update(parseInt(data.output.google));
+        });
+        
+//        window.addEventListener('google_data', function(evt) {
+//            self.update(parseInt(evt.detail.data.output.google));
+//        }, false);
         
     }
     
