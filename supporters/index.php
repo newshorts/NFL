@@ -19,9 +19,18 @@
 				<li id="supporters_follow"><span>Follow</span><a href="http://www.facebook.com/SFSuperbowl" id="facebook_follow"><img src="../images/facebook_follow.png"></a><a href="https://plus.google.com/u/0/116535953378851378506/posts"><img id="google_follow" src="../images/google_follow.png"></a></li>
 			</ul>
 			<ul id="news">
-				<li></li>
-				<li></li>
-				<li></li>
+				<li>
+                                    <div class="imgContainer"></div>
+                                    <!--<div class="post"></div>-->
+                                </li>
+				<li>
+                                    <div class="imgContainer"></div>
+                                    <!--<div class="post"></div>-->
+                                </li>
+				<li>
+                                    <div class="imgContainer"></div>
+                                    <!--<div class="post"></div>-->
+                                </li>
 			</ul>
 		</div>
 		<div id="supporter_numbers">

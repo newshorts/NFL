@@ -822,12 +822,8 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #news li .imgContainer img {
     position: absolute;
-}
-
-#news li img {
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    top: -5px;
+    left: -25px;
     width: 100px;
 }
 
