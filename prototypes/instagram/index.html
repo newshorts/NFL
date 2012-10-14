@@ -27,8 +27,8 @@ and open the template in the editor.
                 height: 316px;
                 overflow: hidden;
                 position: absolute;
-                top: -25px;
-                left: -100px;
+                top: -200px;
+                left: -125px;
                 overflow: hidden;
             }
         </style>
@@ -46,18 +46,21 @@ and open the template in the editor.
             (function() {
                 $(window).load(function() {
                     
-                    var Instagram = function(access_token) {
+                    var Instagram = function(access_token, tag) {
                         
                         var _access_token;
                         var canvas = $('#canvas');
                         var imgArr = new Array();
+                        var tag = '';
                         
                         var init = function() {
+                            
+                            this.tag = tag;
                             
                             $('#wrap').isotope({
                                 itemSelector: '.item',
                                 masonry: {
-                                    columnWidth: 100
+                                    columnWidth: 125
                                 },
                                 sortBy: 'random'
                             });
@@ -70,7 +73,7 @@ and open the template in the editor.
                                 photosLoaded(evt.originalEvent);
                             });
                             
-                            getNewPhotos('gspsf');
+                            getNewPhotos(this.tag);
                             /* getNewPhotos('cheerfulsundays'); */
 //                            setTimeout(function() {
 //                                getNewPhotos('sanfrancisco');
@@ -81,9 +84,12 @@ and open the template in the editor.
                         };
                         
                         var getNewPhotos = function(searchTag) {
+                            
+                            console.log('https://api.instagram.com/v1/tags/'+searchTag+'/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9')
+                            
                             $.ajax({
 /*                                 url: 'https://api.instagram.com/v1/tags/'+searchTag+'/media/recent?access_token=' + _access_token, */
-								url: 'https://api.instagram.com/v1/tags/gspsf/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9',
+                                url: 'https://api.instagram.com/v1/tags/'+searchTag+'/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9',
                                 type: 'GET',
                                 dataType: 'jsonp',
                                 success: function(data) {
@@ -104,7 +110,7 @@ and open the template in the editor.
                             outputImages(evt.detail.data);
                             setTimeout(function() {
                                 console.log('dipatching get new photos again');
-                                getNewPhotos();
+                                getNewPhotos(this.tag);
                             }, 15000);
                             
                         };
@@ -145,9 +151,9 @@ and open the template in the editor.
                             var selector = (Math.floor(Math.random()*3) + 1);
                             
                             var widths = {
-                                1: 200,
-                                2: 200,
-                                3: 200
+                                1: 250,
+                                2: 250,
+                                3: 250
                             };
                             
                             var newImage = $('<img class="item" src="'+img.src+'" />');
@@ -168,6 +174,7 @@ and open the template in the editor.
                                     // complete
                                     console.log('shuffle')
                                 });
+                                
                             }, 10000)
                             
                         };
@@ -175,7 +182,7 @@ and open the template in the editor.
                         init();
                     };
                     
-                    var instagram = new Instagram('231409256.05e13af.c3f64f166e634b1c967cc819f12061d9');
+                    var instagram = new Instagram('231409256.05e13af.c3f64f166e634b1c967cc819f12061d9', 'gspsf');
                     
                 });
             })(jQuery);
