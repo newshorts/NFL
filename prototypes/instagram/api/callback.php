@@ -31,6 +31,8 @@ $config = array(
 // Instantiate the API handler object
 $instagram = new Instagram($config);
 $accessToken = $instagram->getAccessToken();
+echo "<pre>";
+print_r($accessToken);
 
 echo $accessToken;
 
