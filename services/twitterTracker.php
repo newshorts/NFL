@@ -227,9 +227,9 @@ class Tag extends TwitterTracker {
      * @access public
      */
     public function search() {
-        echo "<pre>";
+//        echo "<pre>";
         $this->results = $this->searchForTag($this->tag_name);
-        print_r($this->results);
+//        print_r($this->results);
         $this->parseResults();
 //        print_r($this->tweets);
         $this->checkTweets();
