@@ -402,8 +402,6 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 /*     line-height: 175px; */
 }
 
-
-
 .largNumbersGrey {
     font-family: 'ds-digitalitalic', Arial, sans-serif;
     /*font-size: 161px;*/
@@ -558,9 +556,20 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	padding-right: 1px;
 }
 
-.count {
+.countGrey {
     display: inline;
     top: 78px;
+    left: 26px;
+    margin: 0;
+    width: 263px;
+    direction: rtl;
+    text-align: justify;
+    white-space: pre;
+}
+
+.countOrange {
+    display: inline;
+    top: 107px;
     left: 26px;
     margin: 0;
     width: 263px;
