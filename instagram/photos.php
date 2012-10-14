@@ -1,7 +1,7 @@
 <?php
     // do nothing?
 ?>
-<iframe id="instagram" name="photos" frameborder="0" src="../prototypes/instagram/index.html" width="998" height="316"></iframe>
+<iframe id="instagram" name="photos" frameborder="0" src="../prototypes/instagram/index.html" width="998" height="316" scrolling="no"></iframe>
 
 
   <ul id="instagram_footer" class="bgTextureLight">
