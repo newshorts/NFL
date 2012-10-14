@@ -230,9 +230,9 @@
       
 /*       o.time = t('<span class="tweet_time"><a href="{tweet_url}" title="view tweet on twitter">{tweet_relative_time}</a></span>', o); */
       o.retweeted_text = t('<p class="tweet_text">{retweeted_tweet_text}</p>', o);
-      o.reply_action = t('<a class="tweet_action tweet_reply" href="{reply_url}">reply</a>', o);
-      o.retweet_action = t('<a class="tweet_action tweet_retweet" href="{retweet_url}">retweet</a>', o);
-      o.favorite_action = t('<a class="tweet_action tweet_favorite" href="{favorite_url}">favorite</a>', o);
+      o.reply_action = t('<a class="tweet_action tweet_reply" href="{reply_url}" target="_blank">reply</a>', o);
+      o.retweet_action = t('<a class="tweet_action tweet_retweet" href="{retweet_url}" target="_blank">retweet</a>', o);
+      o.favorite_action = t('<a class="tweet_action tweet_favorite" href="{favorite_url}" target="_blank">favorite</a>', o);
       return o;
     }
 
