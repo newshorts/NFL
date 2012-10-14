@@ -50,9 +50,12 @@
 					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 					  })();
 					</script>
-<!-- 					<span>+1'S</span> -->
 					</div>
-					<div></div>
+					<div>
+				        <div id="google_count_bg" class="supportersNumbersGrey">888,888</div>    
+				        <div id="google_count" class="supportersNumbersOrange"></div>
+
+					</div>
 				</li>
 			</ul>
 		
@@ -64,7 +67,10 @@
 					<div id="facebook_cta">
 						<div class="fb-like" data-href="http://sfsuperbowl.com" data-send="false" data-width="450" data-show-faces="false" data-font="arial"></div>
 					</div>
-					<div></div>
+					<div>
+				        <div id="facebook_count_bg" class="supportersNumbersGrey">888,888</div>    
+				        <div id="facebook_count" class="supportersNumbersOrange"></div>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -80,8 +86,9 @@
 			  <p>Share you excitement for a Bay Area Super Bowl with a <em>Like</em> or a <em>+1</em>.</p>
 	      </li>
   
-	      <li id="supporters_count" class="mediumNumbersOrange">
-	      	<div id="gfb_count" class="gfb_count"></div>
+	      <li id="supporters_count">
+	        <div id="gfb_count_bg" class="mediumNumbersGrey">888,888</div>    
+	      	<div id="gfb_count" class="mediumNumbersOrange"></div>
 	      </li>
 	  </ul>
 	</div>
