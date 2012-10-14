@@ -15,7 +15,7 @@
  * https://api.instagram.com/oauth/authorize/?client_id=e8d6b06f7550461e897b45b02d84c23e&redirect_uri=http://mauriciocuenca.com/qnktwit/confirm.php&response_type=code
  */
 session_start();
-require_once 'Instagram.php';
+require_once 'api/Instagram.php';
 
 /**
  * Configuration params, make sure to write exactly the ones
@@ -25,7 +25,7 @@ $config = array(
         'client_id' => '05e13afcd3d6439fb57afa11fc64ccb7',
         'client_secret' => '1666fc9a74d44502a062e7d2c863856d',
         'grant_type' => 'authorization_code',
-        'redirect_uri' => 'http://sfsuperbowl.com/instagram/feed.php',
+        'redirect_uri' => 'http://sfsuperbowl.com/prototypes/instagram/feed.php',
      );
 
 // Instantiate the API handler object

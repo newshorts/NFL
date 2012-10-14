@@ -22,10 +22,17 @@ class Social {
     public function get_all() {
         
         $pluses = $this->get_plusones('http://techcrunch.com/');
+        
         $tweets = $this->get_tweets();
+        
         $likes = $this->get_likes();
-        $insta = $this->get_instagrams('cheerfulsundays');
-        $insta += $this->get_instagrams('gspsf');
+        
+        $insta = $this->get_instagram_count('cheerfulsundays');
+        $insta += $this->get_instagram_count('gspsf');
+        
+        $photos[] = $this->get_instagram_photos('cheerfulsundays');
+        $photos[] =  $this->get_instagram_photos('gspsf');
+        
         $fb_statuses = $this->get_facebook_statuses();
         
         $gfb = $pluses + $likes;
@@ -38,6 +45,7 @@ class Social {
                             'facebook' => $likes,
                             'facebook_statuses' => $fb_statuses,
                             'instagram' => $insta,
+                            'photos' => $photos,
                             'gfb' => $gfb,
                             'total' => $total,
                             'filename' => $this->filename,
@@ -82,11 +90,19 @@ class Social {
         return intval( $json[0]['result']['metadata']['globalCounts']['count'] );
     }
     
-    private function get_instagrams($tag) {
+    private function get_instagram_count($tag) {
         //https://api.instagram.com/v1/tags/search?q=snow&access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9
-        $json_string = file_get_contents('https://api.instagram.com/v1/tags/search?q='.$tag.'&access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9');
+//        $json_string = file_get_contents('https://api.instagram.com/v1/tags/search?q='.$tag.'&access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9');
+        $json_string = file_get_contents('https://api.instagram.com/v1/tags/'.$tag.'?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9');
         $json = json_decode($json_string, true);
         return intval( $json['data'][0]['media_count'] );
+    }
+    
+    private function get_instagram_photos($tag) {
+        //snow/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9
+        $json_string = file_get_contents('https://api.instagram.com/v1/tags/'.$tag.'/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9');
+        $json = json_decode($json_string, true);
+        return $json;
     }
     
     private function get_facebook_statuses() {
