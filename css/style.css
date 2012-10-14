@@ -384,6 +384,14 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 /*     line-height: 75px; */
 }
 
+.supportersNumbersOrange {
+    font-family: 'ds-digitalitalic', Arial, sans-serif;
+    font-size: 88px;
+    color: #e75406;
+/*     margin: 38px 0 48px 0; */
+/*     line-height: 75px; */
+}
+
 .mediumNumbersOrange {
     font-family: 'ds-digitalitalic', Arial, sans-serif;
     font-size: 116px;
@@ -417,6 +425,17 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     -moz-opacity: 0.1;
     -khtml-opacity: 0.1;
 }
+
+.supportersNumbersGrey {
+    font-family: 'ds-digitalitalic', Arial, sans-serif;
+    font-size: 88px;
+    color: #444;
+        opacity: 0.1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    filter: alpha(opacity=10);
+    -moz-opacity: 0.1;
+    -khtml-opacity: 0.1;
+    }
 
 .mediumNumbersGrey {
     font-family: 'ds-digitalitalic', Arial, sans-serif;
@@ -817,7 +836,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 #supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
 #supporters_internal em { color: #e75405; font-weight: bold; }
 
-.gfb_count { float: right;}
+#supporters_count { float: right;}
 
 
 
