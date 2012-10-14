@@ -24,7 +24,8 @@ class Social {
         $pluses = $this->get_plusones('http://techcrunch.com/');
         $tweets = $this->get_tweets();
         $likes = $this->get_likes();
-        $insta = $this->get_instagrams('sfsuperbowl');
+        $insta = $this->get_instagrams('cheerfulsundays');
+        $insta += $this->get_instagrams('lovebuttonSF');
         $fb_statuses = $this->get_facebook_statuses();
         
         $gfb = $pluses + $likes;

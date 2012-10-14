@@ -109,18 +109,19 @@ class TwitterTracker {
      * @param integer $tid a twitter id (required)
      * @return boolean 
      */	
-    private function insert($tid) {
+    private function insert($tweet) {
         
-        $result = $this->checkTID($tid); 
+//        $result = $this->checkTID($tweet['tid']); 
         
-        if(empty($result)) {
+//        if(empty($result)) {
             $data = array(
-                'tid' => $tid
+                'tid' => $tweet['tid'],
+                'tag_name' => $tweet['tag_name']
             );
             return $this->db->insert($this->table_name, $data);
-        }
+//        }
         
-        return false;
+//        return false;
     }
     
     /**
@@ -145,7 +146,7 @@ class TwitterTracker {
      */
     protected function checkTweets() {
         foreach($this->tweets as $tweet) {
-            $return = $this->checkTID($tweet);
+            $return = $this->checkTID($tweet['tid']);
             
             if(empty($return)) {
                 $this->insert($tweet);
@@ -160,7 +161,7 @@ class TwitterTracker {
      * @return json 
      */
     protected function searchForTag($tag) {
-        return $this->ts->search('#' . $tag, array('lang' => 'en', 'rpp' => 100));
+        return $this->ts->search($tag, array('lang' => 'en', 'rpp' => 100));
     }
     
     /**
@@ -216,7 +217,7 @@ class Tag extends TwitterTracker {
      * @access public
      * @param string $tag a string to search twitter for
      */
-    public function __construct($tag = 'sfsuperbowl') {
+    public function __construct($tag = '#cheerfulsundays+OR+#lovebuttonSF') {
         parent::__construct();
         $this->tag_name = $tag;
     }
@@ -226,9 +227,9 @@ class Tag extends TwitterTracker {
      * @access public
      */
     public function search() {
-//        echo "<pre>";
+        echo "<pre>";
         $this->results = $this->searchForTag($this->tag_name);
-//        print_r($this->results);
+        print_r($this->results);
         $this->parseResults();
 //        print_r($this->tweets);
         $this->checkTweets();
@@ -241,7 +242,7 @@ class Tag extends TwitterTracker {
      */	
     private function parseResults() {
         foreach($this->results['results'] as $tweet) {
-            $this->tweets[] = $tweet['id_str'];
+            $this->tweets[] = array('tid' => $tweet['id_str'], 'tag_name' => $this->tag_name);
         }
     }
     

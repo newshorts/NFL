@@ -5,7 +5,7 @@ require_once 'twitterTracker.php';
 
 sleep(45);
 
-$sfsuperbowl = new Tag('sfsuperbowl');
+$sfsuperbowl = new Tag();
 
 $sfsuperbowl->search();
 

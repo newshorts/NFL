@@ -28,6 +28,8 @@ var FacebookStatusTracker = SocialTracker.extend({
         $('#news li').each(function(idx) {
             var entry = data.entries[idx];
             
+            console.dir(entry);
+            
             $(this).html('<p>' + entry.content + '</p>');
         });
     }
