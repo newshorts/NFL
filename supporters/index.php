@@ -1,11 +1,20 @@
 <?php include('../header.php'); ?>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=423821150969335";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
 <div id="dynamic">
   <div class="supporters">
 	  <div id="supporters_main">
 		<div id="latest_news" class="bgTextureLight">
-			<ul id="latest_header" class="headlineLargeGray">
+			<ul id="latest_header" class="headlineMediumGray">
 				<li class="supporters_header"><span>LATEST NEWS</span></li>
 				<li id="supporters_follow"><span>Follow</span><a href="" id="facebook_follow"><img src="../images/facebook_follow.png"></a><a href=""><img id="google_follow" src="../images/google_follow.png"></a></li>
 			</ul>
@@ -14,7 +23,8 @@
 				<li></li>
 				<li></li>
 
-<!--                                <div id="fb-root"></div>
+<!--
+<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -27,21 +37,33 @@
 		</div>
 		<div id="supporter_numbers"  class="bgTextureLight">
 			<ul id="google_pluses">
-				<li id="google_header" class="headlineLargeGray">
+				<li id="google_header" class="headlineMediumGray">
 					<span>GOOGLE+</span>
-					</li>
+				</li>
 				<li>
-					<div id="google_cta"><a href=""><img src="../images/google_pluses.png"></a><span>+1'S</span></div>
+					<div id="google_cta">
+					<div class="g-plusone" data-annotation="none" data-href="http://sfsuperbowl.com"></div>
+					<script type="text/javascript">
+					  (function() {
+					    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+					    po.src = 'https://apis.google.com/js/plusone.js';
+					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+					  })();
+					</script>
+<!-- 					<span>+1'S</span> -->
+					</div>
 					<div></div>
 				</li>
 			</ul>
 		
 			<ul id="facebook_likes">
-				<li id="facebook_header" class="headlineLargeGray">
+				<li id="facebook_header" class="headlineMediumGray">
 					<span>FACEBOOK</span>
 				</li>
 				<li>
-					<div id="facebook_cta"><a href=""><img src="../images/facebook_likes.png"></a><span>LIKES</span></div>
+					<div id="facebook_cta">
+						<div class="fb-like" data-href="http://sfsuperbowl.com" data-send="false" data-width="450" data-show-faces="false" data-font="arial"></div>
+					</div>
 					<div></div>
 				</li>
 			</ul>

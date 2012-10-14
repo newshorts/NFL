@@ -4,3 +4,4 @@ local-config.php
 .htaccess
 prototypes/number-behavior/get/output.json
 services/output.json
+services/test.php
