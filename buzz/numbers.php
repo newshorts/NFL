@@ -10,7 +10,7 @@
         <div class="headlineMediumGray">
             <img src="../images/buzz_sign.png"><span>SFSUPERBOWL BUZZ</span>
         </div>
-        <span id="totalBG" class="largNumbersGrey">0,000,000</span>
+        <span id="totalBG" class="largNumbersGrey">8,888,888</span>
         <span id="total" class="largeNumbersOrange"></span>
     </li>
     <li id="box2" class="bottom bgTextureLight">
@@ -18,7 +18,7 @@
             <span class="headlineSmallGray smallBoxHeading">TWEETS</span>
             <img class="smallBoxIcon" src="../images/icon_twitter.png">
             <hr class="smallBoxHR" />
-            <span id="twitter_countBG" class="smallNumbersGrey count">0,000,000</span>
+            <span id="twitter_countBG" class="smallNumbersGrey count">8,888,888</span>
             <span id="twitter_count" class="smallNumbersOrange count"></span>
         </a>
     </li>
@@ -27,7 +27,7 @@
             <span class="headlineSmallGray smallBoxHeading">PHOTOS</span>
             <img class="smallBoxIcon" src="../images/icon_instagram.png">
             <hr class="smallBoxHR" />
-            <span id="instagram_photo_countBG" class="smallNumbersGrey count">0,000,000</span>
+            <span id="instagram_photo_countBG" class="smallNumbersGrey count">8,888,888</span>
             <span id="instagram_photo_count" class="smallNumbersOrange count"></span>
         </a>
     </li>
@@ -36,7 +36,7 @@
             <span class="headlineSmallGray smallBoxHeading">SUPPORTERS</span>
             <img class="smallBoxIconLeft" src="../images/icon_facebook.png"><img class="smallBoxIcon" src="../images/icon_google.png">
             <hr class="smallBoxHR" />
-            <span id="gfb_countBG" class="smallNumbersGrey count">0,000,000</span>
+            <span id="gfb_countBG" class="smallNumbersGrey count">8,888,888</span>
             <span id="gfb_count" class="smallNumbersOrange count"></span>
         </a>
     </li>
