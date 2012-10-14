@@ -296,6 +296,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #movements #followSF {
 	float: left;
+	margin-top: -1px;
 }
 
 #movements .headline P {
