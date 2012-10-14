@@ -786,7 +786,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 
 
-#latest_news { background-color: #fff; height: 317px; width: 422px; padding: 30px 30px 0 60px; margin: 10px 10px 10px 0;  position: relative; float: left; }
+#latest_news { background-color: #fff; height: 317px; width: 422px; padding: 30px 30px 0 60px; margin: 10px 10px 10px 0;  position: relative; float: left; overflow: hidden;}
 #latest_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
 
 #supporters_follow { float: right; position: relative; top: -25px; }
@@ -796,29 +796,44 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 
 
-#news li { border-bottom: #cbcbcb 1px solid; height: 91px; }
 
-#news li  p { color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; position: relative; width: 390px;  }
+
+#news li  p { color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; position: relative; width: 290px; float: left; margin: 10px 0px 0px 145px; }
 
 #news li div a { color: #e75405; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; float: right; position: relative; }
 
 
-#news div.post {
+#news li {
+border-bottom: #cbcbcb 1px solid;
 	position: relative;
-	width:272px;
+	width: 422px;
 	height: 91px;
-	padding: 0px 0px 0px 40px;
-	float: right;
+	padding: 0px 0px 0px 0px;
+	float: left: 
+
+}
+
+#news li:nth-of-type(1) {
 	top: -15px;
+	height: 106px;
+}
+
+#news {
+	
+}
+
+#news li .img {
+ float: left;
+ position: absolute;
+ margin: 5px 0px 0px 5px;
 
 }
 
 #news li div br {display: none}
 
-.post p
 
 
-#news .post a:nth-of-type(2) {
+#news a:nth-of-type(2) {
 display: none;
 }
 

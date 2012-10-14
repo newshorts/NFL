@@ -22,7 +22,6 @@
 				<li></li>
 				<li></li>
 				<li></li>
-
 			</ul>
 		</div>
 		<div id="supporter_numbers">
