@@ -685,6 +685,11 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #news li { border-bottom: #cbcbcb 1px solid; height: 91px; }
 
+#news li p { color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; }
+
+#news li p a { color: #e75405; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; }
+
+
 
 
 #supporter_numbers { background-color: #fff; position: relative; float: right; height: 317px; width: 415px; padding: 30px 30px 0 30px; margin: 10px 0; }
