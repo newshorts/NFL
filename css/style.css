@@ -419,7 +419,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     color: #e75406;
 /*     margin: 38px 0 48px 0; */
 /*     line-height: 75px; */
-    text-align: right;
+    /*text-align: right;*/
 
 }
 
@@ -466,7 +466,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     filter: alpha(opacity=10);
     -moz-opacity: 0.1;
     -khtml-opacity: 0.1;
-    text-align: right;
+    /*text-align: right;*/
     }
 
 .mediumNumbersGrey {
@@ -581,8 +581,14 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 		margin: 98px 0 0 52px;
 }
 
-#box1 #total, #box1 .largNumbersGrey {
+#box1 .numbers_large {
     position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+#box1 #total, #box1 .largNumbersGrey {
+    /*position: absolute;*/
     width: 899px;
     text-align: right;    
     direction: rtl;
@@ -592,6 +598,14 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #box2 {
 	margin: 0px 5px 0px 0px;
+}
+
+#box2 .numbers_small,
+#box3 .numbers_small,
+#box4 .numbers_small {
+    position: absolute;
+    bottom: 18px;
+    right: 29px;
 }
 
 #box2 span, #box2 img, #box2 hr,
@@ -687,15 +701,21 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
         margin-right: 28px;
 }
 
+#instagram_count .numbers_medium {
+    position: absolute;
+    bottom: -90px;
+    right: -2px;
+}
+
 #instagram_count .mediumNumbersOrange,
 #instagram_count .mediumNumbersGrey {
-    position: absolute;
+/*    position: absolute;
     top: 41px;
     right: 0;
     text-align: right;
     direction: rtl;
     text-align: justify;
-    white-space: pre;
+    white-space: pre;*/
     
 }
 
@@ -790,7 +810,13 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	float: right;
 	position: relative;
 	top: -43px;
-	text-align: right; 
+	/*text-align: right;*/ 
+}
+
+#twitter_number_count .numbers_medium {
+    position: absolute;
+    bottom: 24px;
+    right: 33px;
 }
 
 
@@ -800,9 +826,9 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 .tweets_count {
-	margin: 0px 25px 0 0;
+/*	margin: 0px 25px 0 0;
 	position: relative;
-	top: -49px; 
+	top: -49px; */
 
 }
 
@@ -943,23 +969,38 @@ display: none;
 
 #supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding: 0 87px 2px 0; }
 
-#supporters_internal { padding: 20px 0 0 36px; }
+#supporters_internal { padding: 20px 0 0 36px; display: inline-block; width: 500px; }
 #supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
 #supporters_internal em { color: #e75405; font-weight: bold; }
 
-#supporters_count { position: absolute; right: 0px; top: 0px; }
+#supporters_count { display: inline-block; float: right; width: 200px; }
 
 
 #google_plus_count { width: 376px; position: relative; float: right; top: -20px; }
-#google_count { top: -18px; position: relative; }
+
+#google_plus_count .numbers_small,
+#facebook_likes_count .numbers_small {
+    position: absolute;
+    bottom: -49px;
+    right: -9px;
+}
+
+#google_count { /*top: -18px;*/ position: relative; }
 
 #facebook_likes_count { width: 376px; position: relative; float: right; top: -20px;  }
-#facebook_count { top: -18px; position: relative; }
+#facebook_count { /*top: -18px;*/ position: relative; }
 
 
 #gfb_count_bg {margin: 26px 30px 0px 0px; text-align: right; }
 
-.gfb_count { position: relative; right: 30px; top: -49px; }
+/*.gfb_count { position: relative; right: 30px; top: -49px; }*/
+
+#supporters_count .numbers_medium, 
+#gfb_count .numbers_medium {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+}
 
 /*	--------------------------------------------------
     Debugging
@@ -998,4 +1039,93 @@ div {
     overlflow: hidden;
 }
 
+/*	--------------------------------------------------
+    Numbers
+    -------------------------------------------------- */
 
+.numbers_large {
+	height: 162px; 
+}
+
+.numbers_large li {
+	background: url(../images/numbers_sprite_large.png) top left no-repeat;
+	float: left;
+	height: 162px;
+	position: relative;
+	text-indent: -9999px; 
+	width: 118px;
+}
+
+.numbers_large .nil {}
+.numbers_large .zero { background-position: 0 -180px;}
+.numbers_large .one { background-position: 0 -360px; }
+.numbers_large .two { background-position: 0 -540px; }
+.numbers_large .three { background-position: 0 -720px; }
+.numbers_large .four { background-position: 0 -900px; }
+.numbers_large .five { background-position: 0 -1080px; }
+.numbers_large .six { background-position: 0 -1260px; }
+.numbers_large .seven { background-position: 0 -1440px; }
+.numbers_large .eight { background-position: 0 -1620px; }
+.numbers_large .nine { background-position: 0 -1800px; }
+.numbers_large .comma { background-position: 0 -1964px; right: 5px; top: 8px; width: 24px; }
+
+
+
+
+
+.numbers_medium {
+	height: 79px;
+}
+
+.numbers_medium li {
+	background: url(../images/numbers_sprite_medium.png) top left no-repeat;
+	float: left;
+	height: 79px;
+	position: relative;
+	text-indent: -9999px; 
+	width: 58px;
+}
+
+
+.numbers_medium .nil {}
+.numbers_medium .zero { background-position: 0 -90px;}
+.numbers_medium .one { background-position: 0 -180px; }
+.numbers_medium .two { background-position: 0 -270px; }
+.numbers_medium .three { background-position: 0 -360px; }
+.numbers_medium .four { background-position: 0 -450px; }
+.numbers_medium .five { background-position: 0 -540px; }
+.numbers_medium .six { background-position: 0 -630px; }
+.numbers_medium .seven { background-position: 0 -720px; }
+.numbers_medium .eight { background-position: 0 -810px; }
+.numbers_medium .nine { background-position: 0 -900px; }
+.numbers_medium .comma { background-position: 0 -990px; right: 7px; top: 6px; width: 13px; }
+
+
+
+
+
+.numbers_small {
+	height: 59px;
+}
+
+.numbers_small li {
+	background: url(../images/numbers_sprite_small.png) top left no-repeat;
+	float: left;
+	height: 59px;
+	position: relative;
+	text-indent: -9999px; 
+	width: 43px;
+}
+
+.numbers_small .nil {}
+.numbers_small .zero { background-position: 0 -72px;}
+.numbers_small .one { background-position: 0 -144px; }
+.numbers_small .two { background-position: 0 -216px; }
+.numbers_small .three { background-position: 0 -288px; }
+.numbers_small .four { background-position: 0 -360px; }
+.numbers_small .five { background-position: 0 -432px; }
+.numbers_small .six { background-position: 0 -504px; }
+.numbers_small .seven { background-position: 0 -576px; }
+.numbers_small .eight { background-position: 0 -648px; }
+.numbers_small .nine { background-position: 0 -720px; }
+.numbers_small .comma { background-position: 0 -792px; right: 2px; top: 7px; width: 13px; }

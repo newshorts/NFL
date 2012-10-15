@@ -12,16 +12,40 @@
         <div class="headlineMediumGray">
             <img src="../images/buzz_sign.png"><span>SFSUPERBOWL BUZZ</span>
         </div>
-        <span id="totalBG" class="largNumbersGrey">8,888,888</span>
-        <span id="total" class="largeNumbersOrange"></span>
+<!--        <span id="totalBG" class="largNumbersGrey">
+            
+        </span>-->
+        
+        <ul class="numbers_large">
+            <li class="nil">0</li>
+            <li class="comma">,</li>
+            <li class="nil">0</li>
+            <li class="nil">0</li>
+            <li class="nil">0</li>
+            <li class="comma">,</li>
+            <li class="nil">0</li>
+            <li class="nil">0</li>
+            <li class="nil">0</li>
+        </ul>
+        
+        <div id="total" class="largeNumbersOrange large"></div>
     </li>
     <li id="box2" class="bottom bgTextureLight">
         <a href="<?php echo ROOT; ?>tweets/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">TWEETS</span>
             <img class="smallBoxIcon" src="../images/icon_twitter.png">
             <hr class="smallBoxHR" />
-            <span id="twitter_countBG" class="smallNumbersGrey countGrey">8,888,888</span>
-            <span id="twitter_count" class="smallNumbersOrange countOrange"></span>
+            <!--<div id="twitter_countBG" class="smallNumbersGrey countGrey">8,888,888</div>-->
+            <ul class="numbers_small">
+                <li class="nil">0</li>
+                <li class="nil">0</li>
+                <li class="nil">0</li>
+                <li class="comma">,</li>
+                <li class="nil">0</li>
+                <li class="nil">0</li>
+                <li class="nil">0</li>
+            </ul>
+            <div id="twitter_count" class="smallNumbersOrange countOrange small"></div>
         </a>
     </li>
     <li id="box3" class="bottom bgTextureLight">
@@ -29,8 +53,17 @@
             <span class="headlineSmallGray smallBoxHeading">PHOTOS</span>
             <img class="smallBoxIcon" src="../images/icon_instagram.png">
             <hr class="smallBoxHR" />
-            <span id="instagram_photo_countBG" class="smallNumbersGrey countGrey">8,888,888</span>
-            <span id="instagram_photo_count" class="smallNumbersOrange countOrange"></span>
+<!--            <div id="instagram_photo_countBG" class="smallNumbersGrey countGrey">8,888,888</div>-->
+            <ul class="numbers_small">
+                <li class="nil">0</li>
+                <li class="nil">0</li>
+                <li class="nil">0</li>
+                <li class="comma">,</li>
+                <li class="nil">0</li>
+                <li class="nil">0</li>
+                <li class="nil">0</li>
+            </ul>
+            <div id="instagram_photo_count" class="smallNumbersOrange countOrange small"></div>
         </a>
     </li>
     <li id="box4" class="bottom bgTextureLight">
@@ -38,8 +71,17 @@
             <span class="headlineSmallGray smallBoxHeading">SUPPORTERS</span>
             <img class="smallBoxIconLeft" src="../images/icon_facebook.png"><img class="smallBoxIcon" src="../images/icon_google.png">
             <hr class="smallBoxHR" />
-            <span id="gfb_countBG" class="smallNumbersGrey countGrey">8,888,888</span>
-            <span id="gfb_count" class="smallNumbersOrange countOrange"></span>
+            <!--<div id="gfb_countBG" class="smallNumbersGrey countGrey">8,888,888</div>-->
+            <ul class="numbers_small">
+                <li class="nil">0</li>
+                <li class="nil">0</li>
+                <li class="nil">0</li>
+                <li class="comma">,</li>
+                <li class="nil">0</li>
+                <li class="nil">0</li>
+                <li class="nil">0</li>
+            </ul>
+            <div id="gfb_count" class="smallNumbersOrange countOrange small"></div>
         </a>
     </li>
 </ul>
