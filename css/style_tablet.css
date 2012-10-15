@@ -54,7 +54,7 @@ html {
 }
 
 #border {
-    background: url(../images/screen-border.png) scroll no-repeat;
+/*     background: url(../images/screen-border.png) scroll no-repeat; */
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -95,7 +95,9 @@ html {
 /* ============  LANDSCAPE STYLES ========================================================================================================================================================== */
 
 @media handheld, only screen and (min-width: 769px) {
-    #border { min-height: 570px; }
+    #border {
+        background: url(../images/screen-border.png) scroll no-repeat;
+     min-height: 570px; }
     
     #container { min-height: 565px; }
     
@@ -128,7 +130,7 @@ html {
  /* TWITTER STYLES LANDSCAPE */   
  
  
-    .twitter { height: 327px; position: relative; overflow: hidden; margin: 10px 0px; width: 909px; top: 80px;}
+    .twitter { height: 500px; position: relative; overflow: hidden; margin: 10px 0px; width: 909px; top: 80px;}
 	/* #twitter_overlay { background: url(../images/twitter_overlay.png) top left no-repeat; display: block; height: 347px; position: absolute; width: 996px; z-index: 3;}    */
 	#twitter_overlay_top { background: url(../images/twitter_overlay_top.png) top left no-repeat; display: block; height: 127px; position: absolute; width:889px; z-index: 3; top: 90px; left: 9px; }
 	#twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 136px; position: absolute; width: 889px; bottom: 130px; z-index: 3; left: 9px } 
@@ -214,6 +216,7 @@ html {
 
  @media handheld, only screen and (max-width: 768px) {
  	 #border {
+/*  	     background: url(../images/screen-border.png) scroll no-repeat; */
         min-height: 725px;
 
     }
