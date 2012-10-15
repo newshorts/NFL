@@ -92,6 +92,17 @@ html {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* ============  LANDSCAPE STYLES ========================================================================================================================================================== */
 
 @media only screen and (orientation : landscape) {
@@ -104,7 +115,7 @@ html {
     
     #wrap {
 	    width: 891px;
-	    height: 5550px;
+	    height: 566px;
 	    position: relative;
 	    background: url(../images/bg-texture-dark.png) scroll repeat;
 	    overflow: hidden;
@@ -140,7 +151,7 @@ html {
     .twitter { height: 327px; position: relative; overflow: hidden; margin: 10px 0px; width: 909px; top: 80px;}
 	/* #twitter_overlay { background: url(../images/twitter_overlay.png) top left no-repeat; display: block; height: 347px; position: absolute; width: 996px; z-index: 3;}    */
 	#twitter_overlay_top { background: url(../images/twitter_overlay_top.png) top left no-repeat; display: block; height: 127px; position: absolute; width:889px; z-index: 3; top: 90px; left: 9px; }
-	#twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 136px; position: absolute; width: 889px; bottom: 140px; z-index: 3; left: 9px } 
+	#twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 136px; position: absolute; width: 889px; bottom: 130px; z-index: 3; left: 9px } 
 	  
 	
 	.tweet_list { position: relative; top: -50px; }
@@ -213,7 +224,133 @@ html {
 	
 	}
     
-}
+
+
+
+	/*	--------------------------------------------------
+	    Numbers
+	    -------------------------------------------------- */
+	
+	#screen {
+	    display: block; 
+	    width: 909px; 
+	    height: 492px; 
+	    position: absolute; 
+	    top: 0;
+	    left: 0;
+	}
+	
+	#screen li { 
+	    float: left;
+	}
+	
+	#screen li:hover {
+	    background: white;
+	}
+	
+	#box1 { 
+	    width: 9px; 
+	    height: 318px; 
+	    position: relative; 
+	    margin: 10px 0px 10px 0px;
+	}
+	
+	#box1 .headlineMediumGray {
+	    position: absolute;
+	    top: 44px;
+	    left: 30px;
+	}
+	
+	#total {
+		margin: 178px 0 0 52px;
+	}
+	
+	#totalBG {
+			margin: 98px 0 0 52px;
+	}
+	
+	#box1 #total, #box1 .largNumbersGrey {
+	    position: absolute;
+	    width: 800px;
+	    text-align: right;    
+	    direction: rtl;
+	    text-align: justify;
+	    white-space: pre;
+	}
+	
+	#box2 {
+		margin: 0px 5px 0px 0px;
+	}
+	
+	#box2 span, #box2 img, #box2 hr,
+	#box3 span, #box3 img, #box3 hr,
+	#box4 span, #box4 img, #box4 hr {
+	    position: absolute;
+	}
+	
+	#box3 {
+		margin: 0px 5px 0px 5px;
+	}
+	
+	#box4 {
+		margin: 0px 0px 0px 5px;
+		padding-right: 1px;
+	}
+	
+	.countGrey {
+	    display: inline;
+	    top: 78px;
+	    left: 26px;
+	    margin: 0;
+	    width: 263px;
+	    direction: rtl;
+	    text-align: justify;
+	    white-space: pre;
+	}
+	
+	.countOrange {
+	    display: inline;
+	    top: 107px;
+	    left: 26px;
+	    margin: 0;
+	    width: 263px;
+	    direction: rtl;
+	    text-align: justify;
+	    white-space: pre;
+	}
+	
+	.smallBoxHeading {
+	    top: 30px;
+	    left: 30px;
+	}
+	
+	.smallBoxIcon {
+	    top: 31px;
+	    left: 287px;
+	}
+	
+	.smallBoxIconLeft {
+	    top: 31px;
+	    left: 264px;
+	}
+	
+	.smallBoxHR {
+	    top: 47px;
+	    left: 28px;
+	    width: 271px;
+	}
+	
+	.bottom, .bottom a { 
+	    width: 325px; 
+	    height: 155px; 
+	    position: relative;
+	    display: block;
+	}
+	
+	
+
+
+} /* close media query landscape */
 
 
 
@@ -340,7 +477,8 @@ html {
 	
 	}
     
-}
+} /* close media query portrait */
+
  
  
              
@@ -660,7 +798,7 @@ html {
     -------------------------------------------------- */
 
 .headlineLargeGray {
-    font-size: 38px;
+    font-size: 30px;
     font-family: FranklinGothicURW-HeaIta; 
     font-weight: normal; 
     font-style: normal; 
@@ -820,126 +958,6 @@ html {
 
 
 
-
-/*	--------------------------------------------------
-    Numbers
-    -------------------------------------------------- */
-
-#screen {
-    display: block; 
-    width: 996px; 
-    height: 492px; 
-    position: absolute; 
-    top: 0;
-    left: 0;
-}
-
-#screen li { 
-    float: left;
-}
-
-#screen li:hover {
-    background: white;
-}
-
-#box1 { 
-    width: 996px; 
-    height: 318px; 
-    position: relative; 
-    margin: 10px 0px 10px 0px;
-}
-
-#box1 .headlineMediumGray {
-    position: absolute;
-    top: 44px;
-    left: 30px;
-}
-
-#total {
-	margin: 178px 0 0 52px;
-}
-
-#totalBG {
-		margin: 98px 0 0 52px;
-}
-
-#box1 #total, #box1 .largNumbersGrey {
-    position: absolute;
-    width: 899px;
-    text-align: right;    
-    direction: rtl;
-    text-align: justify;
-    white-space: pre;
-}
-
-#box2 {
-	margin: 0px 5px 0px 0px;
-}
-
-#box2 span, #box2 img, #box2 hr,
-#box3 span, #box3 img, #box3 hr,
-#box4 span, #box4 img, #box4 hr {
-    position: absolute;
-}
-
-#box3 {
-	margin: 0px 5px 0px 5px;
-}
-
-#box4 {
-	margin: 0px 0px 0px 5px;
-	padding-right: 1px;
-}
-
-.countGrey {
-    display: inline;
-    top: 78px;
-    left: 26px;
-    margin: 0;
-    width: 263px;
-    direction: rtl;
-    text-align: justify;
-    white-space: pre;
-}
-
-.countOrange {
-    display: inline;
-    top: 107px;
-    left: 26px;
-    margin: 0;
-    width: 263px;
-    direction: rtl;
-    text-align: justify;
-    white-space: pre;
-}
-
-.smallBoxHeading {
-    top: 30px;
-    left: 30px;
-}
-
-.smallBoxIcon {
-    top: 31px;
-    left: 287px;
-}
-
-.smallBoxIconLeft {
-    top: 31px;
-    left: 264px;
-}
-
-.smallBoxHR {
-    top: 47px;
-    left: 28px;
-    width: 271px;
-}
-
-.bottom, .bottom a { 
-    width: 325px; 
-    height: 155px; 
-    position: relative;
-    display: block;
-}
 
 
 

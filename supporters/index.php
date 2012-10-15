@@ -94,7 +94,7 @@
 			  </div>
 		  </li>
 		  <li id="supporters_internal">
-			  <p>Share you excitement for a Bay Area Super Bowl with a <em>Like</em> or a <em>+1</em>.</p>
+			  <p>Share you excitement for a Bay Area Super Bowl.</p>
 	      </li>
   
 	      <li id="supporters_count">

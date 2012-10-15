@@ -1,8 +1,6 @@
 <?php include('../header.php'); ?>
 
 
-<div id="container">
-<div id="scaffold"></div>
 
 
 <div id="dynamic">
@@ -23,7 +21,7 @@
 		</div>
 	</li>
 	<li id="social">
-            <p>Add to the Super Bowl buzz and show your support via Twitter.</p>
+            <p>Build the buzz.</p>
             <ul class="links">
                 <li id="tweet">
                 	<a href="https://twitter.com/intent/tweet?button" class="twitter-hashtag-button" data-size="large">Tweet</a>
@@ -52,7 +50,7 @@
   
 </div>
 
-<div id="border"></div>
+
 </div>
   
 <?php include('../footer.php'); ?>

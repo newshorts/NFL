@@ -259,11 +259,13 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <div id="background"></div>
         <div id="wrap">
         
+		<div id="container">
+		<div id="scaffold"></div>
             <div id="header">
                 <div id="boardcontainer">
                     
 	                <div class="left">
-	                    <h2 class="headlineLargeGray">BRING THE BOWL TO THE BAY</h2>
+	                    <h2 class="headlineLargeGray"><a href="../buzz/">BRING THE BOWL TO THE BAY</a></h2>
 	                </div>
 	                
 	                <div class="right">
