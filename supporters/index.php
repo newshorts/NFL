@@ -34,12 +34,14 @@
 		<div id="supporter_numbers">
 -->
 			<ul id="google_pluses" class="bgTextureLight">
-			
-				<li>
-				<div class="fb-like-box" data-href="http://www.facebook.com/SFSuperbowl" data-width="500" data-height="250" data-show-faces="true" data-border-color="#ffffff" data-stream="false" data-header="false"></div>
-				</li>
+<!--
 				<li id="google_header" class="headlineMediumGray">
 					<span>GOOGLE+</span>
+				</li>
+-->
+				<li>
+					<!-- Place this tag where you want the badge to render. -->
+					<div class="g-plus" data-width="450" data-href="https://plus.google.com/b/116535953378851378506/+TechCrunch" data-rel="publisher"></div>
 				</li>
 				<li>
 					<div id="google_cta">
@@ -55,6 +57,8 @@
 					<div id="google_plus_count">
 				        <!--<div id="google_count_bg" class="supportersNumbersGrey">888,888</div>-->    
                                         <ul class="numbers_small">
+                                      
+                                            <li class="nil">0</li>                                        
                                             <li class="nil">0</li>
                                             <li class="nil">0</li>
                                             <li class="comma">,</li>
@@ -69,8 +73,13 @@
 			</ul>
 		
 			<ul id="facebook_likes" class="bgTextureLight">
+<!--
 				<li id="facebook_header" class="headlineMediumGray">
 					<span>FACEBOOK</span>
+				</li>
+-->
+				<li>
+				<div class="fb-like-box" data-href="http://www.facebook.com/SFSuperbowl" data-width="450" data-height="155" data-show-faces="true" data-border-color="#ffffff" data-stream="false" data-header="false" di></div>
 				</li>
 				<li>
 					<div id="facebook_cta">
@@ -78,7 +87,8 @@
 					</div>
                                     <div id="facebook_likes_count">
 				        <!--<div id="facebook_count_bg" class="supportersNumbersGrey">888,888</div>-->    
-                                        <ul class="numbers_small">
+                                        <ul class="numbers_small">                                       
+                                            <li class="nil">0</li>                                        
                                             <li class="nil">0</li>
                                             <li class="nil">0</li>
                                             <li class="comma">,</li>

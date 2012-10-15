@@ -909,11 +909,13 @@ display: none;
 
 #supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; }
 
-#google_pluses { height: 139px; width: 409px; margin: 0px 0px 10px 0px; padding: 30px 30px 0px 35px;}
+#google_pluses { height: 153px; width: 931px; margin: 10px 0px 2px 0px; padding: 30px 30px 0px 35px;}
+#google_pluses li { float: left; }
 
-#google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
+#google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 930px;  }
 
-#google_cta { margin: 40px 0 0 0; width: 39px;  }
+#google_cta { margin: 50px 40px 0 70px;  width: 39px;  }
+
 
 /*
 #google_pluses li div span { font-size: 24px; font-family: 'FranklinGothicURW-HeaIta';  color: #666666;  text-decoration: none; }
@@ -924,11 +926,13 @@ display: none;
 */
 
 
-#facebook_likes { height: 138px; width: 409px; padding: 30px 30px 0px 35px;}
+#facebook_likes { height: 162px; width: 931px; padding: 10px 30px 0px 35px;}
 
-#facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
+#facebook_likes li {float: left;}
 
-#facebook_cta { margin: 40px 0 0 0; width: 49px; overflow: hidden; }
+#facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 930px; }
+
+#facebook_cta { margin: 60px 40px 0 70px; width: 49px; overflow: hidden; }
 
 /*
 #facebook_likes li div span { font-size: 24px; font-family: 'FranklinGothicURW-HeaIta'; color: #666666; text-decoration: none; }
@@ -951,7 +955,7 @@ display: none;
 #supporters_count { display: inline-block; float: right; width: 200px; }
 
 
-#google_plus_count { width: 376px; position: relative; float: right; top: -20px; }
+#google_plus_count { width: 481px; position: relative; float: right; top: -20px; }
 
 #google_plus_count .numbers_small,
 #facebook_likes_count .numbers_small {
@@ -962,7 +966,7 @@ display: none;
 
 #google_count { /*top: -18px;*/ position: relative; }
 
-#facebook_likes_count { width: 376px; position: relative; float: right; top: -20px;  }
+#facebook_likes_count { width: 481px; position: relative; float: right; top: -20px;  }
 #facebook_count { /*top: -18px;*/ position: relative; }
 
 
