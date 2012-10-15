@@ -166,6 +166,26 @@ var FacebookStatusTracker = SocialTracker.extend({
             
             var jImg = $(div).find('img');
             var jAnchors = $(div).find('a');
+            var anchorTextArr = new Array();
+            
+            for(var t = 0; t < jAnchors.length; t++) {
+                
+                var tmpText = $(jAnchors[t]).text();
+                var tmpLink = $(jAnchors[t]).attr('href');
+                if(tmpText.length > 0) {
+                    anchorTextArr.push({
+                        text: tmpText,
+                        link: tmpLink
+                    });
+                }
+                    
+            }
+            
+            console.dir(entries[i])
+            
+//            console.log('array anchor text');
+//            console.dir(anchorTextArr);
+            
             
             img = jImg[0];
             
@@ -181,21 +201,35 @@ var FacebookStatusTracker = SocialTracker.extend({
             
             var words = $(div).text();
             
-            var count = this.countWords(words);
-            
-            if(count > 20) {
+            var trimmedString = $.trim(words).substring(0, 100).split(' ').slice(0, -1).join(' ') + '... ';
+            if(anchorTextArr.length > 0) {
+                
+                for(var s = 0; s < anchorTextArr.length; s++) {
+                    console.log('replacing: "' + anchorTextArr[s].text + '" with: ' + '<a href="' + anchorTextArr[s].link + '">' + anchorTextArr[s].text + '</a>');
+                    trimmedString = trimmedString.replace(anchorTextArr[s].text, '<a href="' + anchorTextArr[s].link + '">' + anchorTextArr[s].text + '</a>');
+                }
                 
             }
             
-            console.dir(count);
+            $(div).html(trimmedString);
             
+//            var trimmedString = $(div).shorten({maxWords: 10, variance: 2, shortenedSuffix : '... '});
             
+//            words = words.replace(/(^\s*)|(\s*$)/gi,"");
+//            
+//            words = words.replace(/[ ]{2,}/gi," ");
+//            
+//            words = words.replace(/\n /,"\n");
+//            
+//            var trimmedString = words.substr(0, 100);
+//            
+//            trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
+            
+//            console.dir(trimmedString);
+            
+            $li.append(div);
             
         }
-        
-    },
-    
-    snipText: function() {
         
     },
     
