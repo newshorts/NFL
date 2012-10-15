@@ -957,7 +957,7 @@ display: none;
 #facebook_likes_count .numbers_small {
     position: absolute;
     bottom: -41px;
-    right: -5px;
+    right: 5px;
 }
 
 #google_count { /*top: -18px;*/ position: relative; }
