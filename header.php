@@ -144,11 +144,12 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         
         <?php elseif(strpos($request, 'supporters')): ?>
         
+            <script src="<?php echo ROOT; ?>js/lib/jquery.shorten.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/googleTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js"></script>
-        
+            
         <?php endif; ?>
         
         <script>
@@ -158,7 +159,13 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
             (function($) {
                 $(window).load(function() {
                     
-                    
+                $('.sharebutton').on('click touchstart', function() {
+                    if($(this).hasClass('expanded')) {
+                        $(this).removeClass('expanded');
+                    } else {
+                        $(this).addClass('expanded');
+                    }
+                });
                     
                     // mikes
 //                    if(Modernizr.touch) {
@@ -242,7 +249,6 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <?php elseif(DEVICE_TYPE == 'phone'): ?>
             <link href="<?php echo ROOT; ?>css/style_phone.css" type="text/css" rel="stylesheet" />
         <?php endif; ?>
-        
         
         <!-- INTRO ANIMATION -->
     </head>
