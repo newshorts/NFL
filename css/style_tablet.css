@@ -133,7 +133,7 @@ html {
 	
 	.tweet_list { position: relative; top: -50px; }
 	
-	.unique_tweet { border-bottom: #ccc 2px solid; height: 110px; margin: 0 34px 0 34px; padding-top: 34px 0 0 0;  position: relative; width: 836px; }
+	.unique_tweet { border-bottom: #ccc 2px solid; height: 110px; margin: 0 34px 0 34px; padding: 34px 0 0 0;  position: relative; width: 836px; }
 	.unique_tweet li { float: left; list-style: none; position: relative; }
 	
 	.tweet_info { color: #e75405; font-family: Helvetica, Arial, sans-serif;  font-weight: bold;  font-size: 18px; height: 102px;  margin: 0 0 0 30px; padding: 0 0 0 0;  width: 215px; overflow: hidden; position: relative; }
