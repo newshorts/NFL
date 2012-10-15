@@ -212,7 +212,7 @@ html {
 
 
 
- @media handheld, only screen and (max-width: 767px) {
+ @media handheld, only screen and (max-width: 768px) {
  	 #border {
         min-height: 725px;
 
@@ -252,7 +252,7 @@ html {
  /* TWITTER STYLES PORTRAIT */   
     
    
-    .twitter { height: 627px; position: relative; overflow: hidden; margin: 10px 0px; width: 909px; top: 80px;}
+    .twitter { display: none; height: 627px; position: relative; overflow: hidden; margin: 10px 0px; width: 909px; top: 80px;}
 	/* #twitter_overlay { background: url(../images/twitter_overlay.png) top left no-repeat; display: block; height: 347px; position: absolute; width: 996px; z-index: 3;}    */
 	#twitter_overlay_top { background: url(../images/twitter_overlay_top.png) top left no-repeat; display: block; height: 127px; position: absolute; width:889px; z-index: 3; top: 90px; left: 9px; }
 	#twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 136px; position: absolute; width: 889px; bottom: 130px; z-index: 3; left: 9px } 
@@ -331,7 +331,6 @@ html {
 }
  
  
- }
              
 /* END OF IMPORTED TABLET BACKGROUND STYLES */             
 
