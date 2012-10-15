@@ -158,36 +158,20 @@ var FacebookStatusTracker = SocialTracker.extend({
         for(var i = 0, l = 3; i < l; i++) {
             
             var content = entries[i].content;
+            var title = entries[i].title;
             
             var div = document.createElement('div');
-            var img = document.createElement('img');
             
             $(div).addClass('post').html(content);
             
-            var jImg = $(div).find('img');
-            var jAnchors = $(div).find('a');
-            var anchorTextArr = new Array();
+            var img = this.pullImageFromContent(div);
             
-            for(var t = 0; t < jAnchors.length; t++) {
-                
-                var tmpText = $(jAnchors[t]).text();
-                var tmpLink = $(jAnchors[t]).attr('href');
-                if(tmpText.length > 0) {
-                    anchorTextArr.push({
-                        text: tmpText,
-                        link: tmpLink
-                    });
-                }
-                    
-            }
+            var anchorArr = this.pullAnchorsFromContent(div);
             
             console.dir(entries[i])
             
 //            console.log('array anchor text');
 //            console.dir(anchorTextArr);
-            
-            
-            img = jImg[0];
             
             $(div).find('br').remove();
             
@@ -202,35 +186,51 @@ var FacebookStatusTracker = SocialTracker.extend({
             var words = $(div).text();
             
             var trimmedString = $.trim(words).substring(0, 100).split(' ').slice(0, -1).join(' ') + '... ';
-            if(anchorTextArr.length > 0) {
+            
+            if(anchorArr.length > 0) {
                 
-                for(var s = 0; s < anchorTextArr.length; s++) {
-                    console.log('replacing: "' + anchorTextArr[s].text + '" with: ' + '<a href="' + anchorTextArr[s].link + '">' + anchorTextArr[s].text + '</a>');
-                    trimmedString = trimmedString.replace(anchorTextArr[s].text, '<a href="' + anchorTextArr[s].link + '">' + anchorTextArr[s].text + '</a>');
+                for(var s = 0; s < anchorArr.length; s++) {
+                    var tmp = trimmedString;
+                    trimmedString = trimmedString.replace(anchorArr[s].text, '<a href="' + anchorArr[s].link + '">' + anchorArr[s].text + '</a>');
+                    console.log('replacing: ' + tmp + ' with: ' + trimmedString);
                 }
                 
             }
             
             $(div).html(trimmedString);
             
-//            var trimmedString = $(div).shorten({maxWords: 10, variance: 2, shortenedSuffix : '... '});
-            
-//            words = words.replace(/(^\s*)|(\s*$)/gi,"");
-//            
-//            words = words.replace(/[ ]{2,}/gi," ");
-//            
-//            words = words.replace(/\n /,"\n");
-//            
-//            var trimmedString = words.substr(0, 100);
-//            
-//            trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
-            
-//            console.dir(trimmedString);
-            
             $li.append(div);
             
         }
         
+    },
+    
+    pullAnchorsFromContent: function(div) {
+        var jAnchors = $(div).find('a');
+        
+        var anchorTextArr = new Array();
+        
+        for(var t = 0; t < jAnchors.length; t++) {
+
+            var tmpText = $(jAnchors[t]).text();
+            var tmpLink = $(jAnchors[t]).attr('href');
+            if(tmpText.length > 0) {
+                anchorTextArr.push({
+                    text: tmpText,
+                    link: tmpLink
+                });
+            }
+
+        }
+        
+        return anchorTextArr;
+        
+    },
+    
+    pullImageFromContent: function(div) {
+        var img = document.createElement('img');
+        var jImg = $(div).find('img');
+        return jImg[0];
     },
     
     countWords: function(s) {
