@@ -1,6 +1,10 @@
 <?php include('../header.php'); ?>
 
 
+<div id="container">
+<div id="scaffold"></div>
+
+
 <div id="dynamic">
 <div id="twitter_overlay_top"></div>
 <div id="twitter_overlay_bottom"></div> 
@@ -37,6 +41,9 @@
     </li>
   </ul>
   
+</div>
+
+<div id="border"></div>
 </div>
   
 <?php include('../footer.php'); ?>
