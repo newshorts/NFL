@@ -17,7 +17,16 @@
             </ul>
 	</li>
 	<li id="instagram_count">
-            <div id="instagram_photo_count_bg" class="mediumNumbersGrey">888,888</div>    
-            <div id="instagram_photo_count" class="instagram_photo_count mediumNumbersOrange"></div>
+            <!--<div id="instagram_photo_count_bg" class="mediumNumbersGrey">888,888</div>-->    
+            <ul class="numbers_medium">
+                <li class="nil">0</li>
+                <li class="nil">0</li>
+                <li class="nil">0</li>
+                <li class="comma">,</li>
+                <li class="nil">0</li>
+                <li class="nil">0</li>
+                <li class="nil">0</li>
+            </ul>
+            <div id="instagram_photo_count" class="instagram_photo_count mediumNumbersOrange medium"></div>
 	</li> 
   </ul>   

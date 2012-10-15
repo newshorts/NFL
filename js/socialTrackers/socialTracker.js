@@ -115,10 +115,89 @@ var SocialTracker = Class.extend({
     },
     
     setText: function(str) {
-        this._elem.text(str);
+//        this._elem.text(str);
         
+        var length = str.length;
         
+        // reformat numbers here
+        console.log(str.charAt(length - 1));
         
+        var classSize = this.getSize();
+        
+        var output = '<ul class="'+classSize+'">';
+        
+        for(var i = 0; i < length; i++) {
+            var num = str.charAt(i);
+            var word = this.getWord(String(num));
+            output += '<li class="'+word+'">'+num+'</li>';
+        }
+        
+        output += '</ul>';
+        
+        this._elem.html(output);
+        
+    },
+    
+    getSize: function() {
+//        var parent = this._elem.parent();
+        
+//        console.dir(parent);
+        
+        if(this._elem.hasClass('large')) {
+            return 'numbers_large';
+        }
+        
+        if(this._elem.hasClass('medium')) {
+            return 'numbers_medium';
+        }
+        
+        if(this._elem.hasClass('small')) {
+            return 'numbers_small';
+        }
+    },
+    
+    getWord: function(num) {
+        var output = '';
+        switch(num) {
+            case '0':
+                output = 'zero';
+                break;
+            case '1':
+                output = 'one';
+                break;
+            case '2':
+                output = 'two';
+                break;
+            case '3':
+                output = 'three';
+                break;
+            case '4':
+                output = 'four';
+                break;
+            case '5':
+                output = 'five';
+                break;
+            case '6':
+                output = 'six';
+                break;
+            case '7':
+                output = 'seven';
+                break;
+            case '8':
+                output = 'eight';
+                break;
+            case '9':
+                output = 'nine';
+                break;
+            case ',':
+                output = 'comma';
+                break;
+            default:
+                output = 'nil';
+                break
+        }
+        
+        return output;
     },
 
     destroyTimer: function() {
