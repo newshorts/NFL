@@ -137,6 +137,11 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	display: block;
 }
 
+.sharebutton ul li a:hover {
+	cursor: pointer;
+}
+
+
 .sharebutton .facebook {
 	background: url(../images/share_fb.png) scroll no-repeat;
 }
@@ -251,8 +256,6 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     position: relative;
     margin-left: 8px; 
     margin-top: -10px;
-    box-shadow: 1px 2px 3px 2px #ccc;
-    border-radius: 8px;
     
     behavior: url(../lib/pie/PIE.htc);
 }
