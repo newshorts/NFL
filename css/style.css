@@ -125,6 +125,25 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	height: 156px;
 	background: url(../images/share_hover.png) scroll 0 0 no-repeat;
 	background-size: 109px 156px;
+<<<<<<< HEAD
+	display: visible;
+}
+
+#boardcontainer .sharebutton:active {
+	width: 109px;
+	height: 156px;
+	background: url(../images/share_hover.png) scroll 0 0 no-repeat;
+	background-size: 109px 156px;
+	display: visible;
+}
+
+#boardcontainer .sharebutton:focus {
+	width: 109px;
+	height: 156px;
+	background: url(../images/share_hover.png) scroll 0 0 no-repeat;
+	background-size: 109px 156px;
+	display: visible;
+=======
 }*/
 
 #boardcontainer .expanded {
