@@ -126,6 +126,13 @@ html {
     
     }
     
+    #boardcontainer .expanded {
+	    width: 109px;
+	    height: 156px;
+	    background: url(../images/share_hover.png) scroll 0 0 no-repeat;
+	    background-size: 109px 156px;
+	}
+    
        
  /* TWITTER STYLES LANDSCAPE */   
  
@@ -420,11 +427,11 @@ html {
 	overflow: hidden;
 }
 
-#boardcontainer .sharebutton:hover {
-	width: 109px;
-	height: 156px;
-	background: url(../images/share_hover.png) scroll 0 0 no-repeat;
-	background-size: 109px 156px;
+#boardcontainer .expanded {
+    width: 109px;
+    height: 156px;
+    background: url(../images/share_hover.png) scroll 0 0 no-repeat;
+    background-size: 109px 156px;
 }
 
 .sharebutton ul {

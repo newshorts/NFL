@@ -120,31 +120,6 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	overflow: hidden;
 }
 
-/*#boardcontainer .sharebutton:hover {
-	width: 109px;
-	height: 156px;
-	background: url(../images/share_hover.png) scroll 0 0 no-repeat;
-	background-size: 109px 156px;
-<<<<<<< HEAD
-	display: visible;
-}
-
-#boardcontainer .sharebutton:active {
-	width: 109px;
-	height: 156px;
-	background: url(../images/share_hover.png) scroll 0 0 no-repeat;
-	background-size: 109px 156px;
-	display: visible;
-}
-
-#boardcontainer .sharebutton:focus {
-	width: 109px;
-	height: 156px;
-	background: url(../images/share_hover.png) scroll 0 0 no-repeat;
-	background-size: 109px 156px;
-	display: visible;
-=======
-}*/
 
 #boardcontainer .expanded {
     width: 109px;
@@ -774,7 +749,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 .tweet:before { content: url(../images/quote_open.png); float: left; position: relative; width: 25px; height: 17px; } 
 .tweet_text:after { content: url(../images/quote_close.png); position: relative; width: 25px; height: 17px; padding-left: 25px;}
 
-.tweet_text { color: #858585; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; margin: 0 0 0 50px; line-height: 26px; width: 580px; position: absolute; float: right; }
+.tweet_text { color: #858585; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; margin: 0 0 0 50px; line-height: 26px; width: 608px; position: absolute; float: right; }
 .external_link { color: #a4bc27; text-decoration: underline; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
 .tweet_hashtag { color: #e75405; text-decoration: none;  font: Helvetica, Arial, sans-serif; }
 .at_user { color: #a4bc27; text-decoration: none; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
