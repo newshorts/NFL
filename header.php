@@ -210,7 +210,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                                     display: 'none'
                                 });
                             });
-                        }, 1300);
+                        }, 3800);
                         
                         
                         // scotts intro animation
