@@ -529,7 +529,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     float: left;
 }
 
-#screen li:hover {
+#box2:hover, #box3:hover, #box4:hover  {
     background: white;
 }
 
@@ -539,6 +539,8 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     position: relative; 
     margin: 10px 0px 10px 0px;
 }
+
+
 
 #box1 .headlineMediumGray {
     position: absolute;
@@ -585,7 +587,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 .countGrey {
     display: inline;
     top: 78px;
-    left: 26px;
+    left: 34px;
     margin: 0;
     width: 263px;
     direction: rtl;
@@ -596,7 +598,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 .countOrange {
     display: inline;
     top: 107px;
-    left: 26px;
+    left: 34px;
     margin: 0;
     width: 263px;
     direction: rtl;
@@ -611,18 +613,19 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 .smallBoxIcon {
     top: 31px;
-    left: 287px;
+    left: 277px;
 }
 
 .smallBoxIconLeft {
     top: 31px;
-    left: 264px;
+    left: 254px;
 }
 
 .smallBoxHR {
     top: 47px;
     left: 28px;
-    width: 271px;
+    width: 268px;
+
 }
 
 .bottom, .bottom a { 
@@ -724,7 +727,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 .tweet{ height: 102px; width: 680px; }	
 .tweet:before { content: url(../images/quote_open.png); float: left; position: relative; width: 25px; height: 17px; } 
-.tweet:after { content: url(../images/quote_close.png); float: right; position: relative; width: 25px; height: 17px; top: 210px; }
+.tweet_text:after { content: url(../images/quote_close.png); position: relative; width: 25px; height: 17px; padding-left: 25px;}
 
 .tweet_text { color: #858585; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; margin: 0 0 0 50px; line-height: 26px; width: 580px; position: absolute; float: right; }
 .external_link { color: #a4bc27; text-decoration: underline; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }

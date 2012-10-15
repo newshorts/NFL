@@ -51,7 +51,7 @@
 	</div>
 	
 	<div class="right">
-	    <span><img src="../images/movement_poster.png"></span>
+	    <span><a href="#" target="_blank"><img src="../images/movement_poster.png"></a></span>
 	</div>
 	
 </div>
