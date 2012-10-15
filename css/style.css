@@ -956,8 +956,8 @@ display: none;
 #google_plus_count .numbers_small,
 #facebook_likes_count .numbers_small {
     position: absolute;
-    bottom: -49px;
-    right: -9px;
+    bottom: -41px;
+    right: -5px;
 }
 
 #google_count { /*top: -18px;*/ position: relative; }
@@ -973,8 +973,8 @@ display: none;
 #supporters_count .numbers_medium, 
 #gfb_count .numbers_medium {
     position: absolute;
-    bottom: 24px;
-    right: 24px;
+    bottom: 21px;
+    right: 39px;
 }
 
 /*	--------------------------------------------------
