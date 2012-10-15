@@ -2,7 +2,7 @@
     General
     -------------------------------------------------- */
 body {
-    background-color: #092134;
+
     font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-size: 13px; 
     font-size: 1.3rem; 
@@ -20,20 +20,209 @@ p a, p a:visited { line-height: inherit; }
 
 hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30px 12px 0px; height: 0; }
 	
-
-#background {
-    background: url(../images/background_t_h.jpg) scroll no-repeat;
-/*    background-size: 1920px 1080px;
-    background-position: center center;*/
-    width: 1024px;
-    height: 768px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-left: -512px;
-    margin-top: -379px;
-    overflow: hidden;
+/* START OF IMPORTED TABLET BACKGROUND STYLES */  
+html { 
+    background: url(../images/clouds.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
+
+#container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+#scaffold {
+    background: url(../images/score-base.png) scroll repeat-x;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+
+    width: 100%;
+    height: 23.9%;
+    position: fixed;
+    top: 100%;
+    margin-top: -11%;
+    left: 50%;
+    margin-left: -50%;
+}
+
+#border {
+    background: url(../images/screen-border.png) scroll no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+/*
+    width: 96%;
+    height: 96%;
+    margin-top: -96%;
+    position: fixed; 
+*/
+    
+    width: 96%;
+    min-width: 768px;
+    height: 88%;
+/*              min-height: 725px; */
+    position: fixed;
+    top: 100%;
+    margin-top: -98%;
+    left: 27%;
+    margin-left: -25%;
+}
+
+#dynamic {
+    width: 92%;
+    min-width: 768px;
+    height: 85%;
+/*                 min-height: 725px; */
+    position: fixed;
+    top: 100%;
+    margin-top: -96%;
+    left: 27%;
+    margin-left: -23%;
+    
+    background: url(images/backgrounds/bg-texture-dark.png) top left;
+}
+
+
+
+
+@media handheld, only screen and (min-width: 769px) {
+    #border { min-height: 570px; }
+    
+    #container { min-height: 565px; }
+    
+    
+    #wrap {
+	    width: 931px;
+	    height: 5550px;
+	    position: relative;
+	    background: url(../images/bg-texture-dark.png) scroll repeat;
+	    overflow: hidden;
+	    top: 31px;
+		left: 49px;
+	}
+    
+    #boardcontainer { 
+	    background: url(../images/bg-texture-light.png) scroll repeat;
+	    width: 916px; 
+	    height: 76px;
+	    top: 0px;
+	    left: 0px;
+	    position: absolute; 
+	    margin-top: 0; 
+	    margin-left: 0; 
+	    overflow: visible;
+	    z-index: 10;
+    
+    }
+    
+    
+    .twitter { height: 327px; position: relative; overflow: hidden; margin: 10px 0px; width: 925px; top: 80px;}
+	/* #twitter_overlay { background: url(../images/twitter_overlay.png) top left no-repeat; display: block; height: 347px; position: absolute; width: 996px; z-index: 3;}    */
+	#twitter_overlay_top { background: url(../images/twitter_overlay_top.png) top left no-repeat; display: block; height: 127px; position: absolute; width: 925px; z-index: 3; top: 90px; }
+	#twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 136px; position: absolute; width: 925px; bottom: 145px; z-index: 3; } 
+	  
+	
+	.tweet_list { position: relative; top: -50px; }
+	
+	.unique_tweet { border-bottom: #ccc 2px solid; height: 110px; margin: 0 34px 0 34px; padding: 34px 0 0 0;  position: relative; width: 856px; }
+	.unique_tweet li { float: left; list-style: none; position: relative; }
+	
+	.tweet_info { color: #e75405; font-family: Helvetica, Arial, sans-serif;  font-weight: bold;  font-size: 18px; height: 102px;  margin: 0 0 0 30px; padding: 0 0 0 0;  width: 215px; overflow: hidden; position: relative; }
+	.tweet_info ul li { float: left; position: relative; }
+	.avatar { margin-right: 7px; }
+	.tweet_avatar { float: left; height: 48px; width: 48px; }
+	.screenname { position: relative;  clear: right; width: 158px;}
+	.username { float: left; }
+	.tweet_user { color: #858585; font-weight: normal; text-decoration: none; font-family: Arial, Helvetica, sans-serif;  font-size: 12px; }
+	
+	
+	.tweet{ height: 102px; width: 610px; }	
+	.tweet:before { content: url(../images/quote_open.png); float: left; position: relative; width: 25px; height: 17px; } 
+	.tweet:after { content: url(../images/quote_close.png); float: right; position: relative; width: 25px; height: 17px; top: 210px; }
+	
+	.tweet_text { color: #858585; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; margin: 0 0 0 50px; line-height: 26px; width: 530px; position: absolute; float: right; }
+	.external_link { color: #a4bc27; text-decoration: underline; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
+	.tweet_hashtag { color: #e75405; text-decoration: none;  font: Helvetica, Arial, sans-serif; }
+	.at_user { color: #a4bc27; text-decoration: none; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
+	
+	
+	#twitter_footer { position: relative; height: 106px; padding: 20px 0px 0px 30px; width: 895px; top: 81px; }
+	/* #twitter_footer #twitter_count { position: absolute; width: 300px; top: 0; right: 0px; } */
+	#twitter_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 143px; }
+	
+	#twitter_headline {
+		width: 500px; 
+	}
+	
+	
+	
+	#social { position: relative; float: left; padding: 20px 0 0 36px; width: 461px}
+	#social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 240px; }
+	#social .links { position: relative; float: right; top: -30px; }
+	#social .links li { position: relative; float: left; }
+	/*
+	#social .links a { text-decoration: none; }
+	#social .links span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; position: relative; top: -11px; }
+	*/
+	
+	/* #social img { margin-right: 7px; } */
+	/* #tweet { margin-right: 20px;  } */
+	
+	
+	
+	#twitter_number_count {
+		height: 130px; 
+		width: 389px;
+		float: right;
+		position: relative;
+		top: -43px;
+		text-align: right; 
+	}
+	
+	
+	#twitter_count_bg {
+		margin: 23px 25px 0 0;
+		
+	}
+	
+	.tweets_count {
+		margin: 0px 25px 0 0;
+		position: relative;
+		top: -49px; 
+	
+	}
+
+    
+    
+}
+
+ @media handheld, only screen and (max-width: 768px) {
+ 	 #border {
+        min-height: 725px;
+
+    }
+    
+    #container {
+    	min-height: 720px;
+
+    }
+ 
+ }
+             
+/* END OF IMPORTED TABLET BACKGROUND STYLES */             
+
+
+
+
 
 #intro {
     width: 1004px;
@@ -46,23 +235,14 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     z-index: 20;
 }
 
-#wrap {
-    width: 996px;
-    height: 569px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -497px;
-    margin-top: -289px;
-    background: url(../images/bg-texture-dark.png) scroll repeat;
-    overflow: hidden;
-}
+
 
 #header {
 	z-index: 10;
 }
 
 
+/*
 #boardcontainer { 
     background: url(../images/bg-texture-light.png) scroll repeat;
     width: 996px; 
@@ -76,6 +256,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     z-index: 10;
     
 }
+*/
 
 
 #boardcontainer .left {
@@ -336,6 +517,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 
 
+/*
 #dynamic {
     width: 996px;
     height: 497px;
@@ -345,6 +527,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     z-index: 1;
 
 }
+*/
 
 /*	--------------------------------------------------
     Utility
@@ -702,81 +885,6 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     Twitter
     -------------------------------------------------- */
 
-.twitter { height: 347px; position: relative; overflow: hidden; margin: 10px 0px; width: 996px; }
-/* #twitter_overlay { background: url(../images/twitter_overlay.png) top left no-repeat; display: block; height: 347px; position: absolute; width: 996px; z-index: 3;}    */
-#twitter_overlay_top { background: url(../images/twitter_overlay_top.png) top left no-repeat; display: block; height: 127px; position: absolute; width: 996px; z-index: 3; }
-#twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 136px; position: absolute; width: 996px; top: 211px; z-index: 3; } 
-  
-
-.tweet_list { position: relative; top: -50px; }
-
-.unique_tweet { border-bottom: #ccc 2px solid; height: 110px; margin: 0 34px 0 34px; padding: 34px 0 0 0;  position: relative; width: 926px; }
-.unique_tweet li { float: left; list-style: none; position: relative; }
-
-.tweet_info { color: #e75405; font-family: Helvetica, Arial, sans-serif;  font-weight: bold;  font-size: 18px; height: 102px;  margin: 0 0 0 30px; padding: 0 0 0 0;  width: 215px; overflow: hidden; position: relative; }
-.tweet_info ul li { float: left; position: relative; }
-.avatar { margin-right: 7px; }
-.tweet_avatar { float: left; height: 48px; width: 48px; }
-.screenname { position: relative;  clear: right; width: 158px;}
-.username { float: left; }
-.tweet_user { color: #858585; font-weight: normal; text-decoration: none; font-family: Arial, Helvetica, sans-serif;  font-size: 12px; }
-
-
-.tweet{ height: 102px; width: 680px; }	
-.tweet:before { content: url(../images/quote_open.png); float: left; position: relative; width: 25px; height: 17px; } 
-.tweet:after { content: url(../images/quote_close.png); float: right; position: relative; width: 25px; height: 17px; top: 210px; }
-
-.tweet_text { color: #858585; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; margin: 0 0 0 50px; line-height: 26px; width: 580px; position: absolute; float: right; }
-.external_link { color: #a4bc27; text-decoration: underline; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
-.tweet_hashtag { color: #e75405; text-decoration: none;  font: Helvetica, Arial, sans-serif; }
-.at_user { color: #a4bc27; text-decoration: none; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
-
-
-#twitter_footer { position: relative; height: 106px; padding: 20px 0px 0px 30px; width: 966px; }
-/* #twitter_footer #twitter_count { position: absolute; width: 300px; top: 0; right: 0px; } */
-#twitter_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
-
-#twitter_headline {
-	width: 530px; 
-}
-
-
-
-#social { position: relative; float: left; padding: 20px 0 0 36px; width: 491px}
-#social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 240px; }
-#social .links { position: relative; float: right; top: -30px; }
-#social .links li { position: relative; float: left; }
-/*
-#social .links a { text-decoration: none; }
-#social .links span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; position: relative; top: -11px; }
-*/
-
-/* #social img { margin-right: 7px; } */
-/* #tweet { margin-right: 20px;  } */
-
-
-
-#twitter_number_count {
-	height: 130px; 
-	width: 439px;
-	float: right;
-	position: relative;
-	top: -43px;
-	text-align: right; 
-}
-
-
-#twitter_count_bg {
-	margin: 23px 25px 0 0;
-	
-}
-
-.tweets_count {
-	margin: 0px 25px 0 0;
-	position: relative;
-	top: -49px; 
-
-}
 
 /*	--------------------------------------------------
     Supporters
