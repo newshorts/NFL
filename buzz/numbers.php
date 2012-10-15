@@ -8,6 +8,8 @@
 
 
 <ul id="screen">
+
+
     <li id="box1" class="bgTextureLight">
         <div class="headlineMediumGray">
             <img src="../images/buzz_sign.png"><span>SFSUPERBOWL BUZZ</span>
@@ -30,6 +32,12 @@
         
         <div id="total" class="largeNumbersOrange large"></div>
     </li>
+    
+
+    
+    
+    
+    
     <li id="box2" class="bottom bgTextureLight">
         <a href="<?php echo ROOT; ?>tweets/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">TWEETS</span>
