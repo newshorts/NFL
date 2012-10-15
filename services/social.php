@@ -21,7 +21,7 @@ class Social {
     
     public function get_all() {
         
-        $pluses = $this->get_plusones('http://techcrunch.com/');
+        $pluses = $this->get_plusones('http://www.sfsuperbowl.com/');
         
         $tweets = $this->get_tweets();
         
@@ -71,7 +71,7 @@ class Social {
     }
     
     private function get_likes() {
-        $json_string = file_get_contents('https://graph.facebook.com/sonicdrivein');
+        $json_string = file_get_contents('https://graph.facebook.com/sfsuperbowl');
         $json = json_decode($json_string, true);
         return intval( $json['likes'] );
     }
