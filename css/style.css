@@ -37,13 +37,56 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #intro {
     width: 1004px;
-    height: 528px;
-    position: absolute;
+    height: 574px;
+    position: absolute;;
     top: 50%;
     left: 50%;
     margin-left: -501px;
     margin-top: -289px;
     z-index: 20;
+    
+    background: url(../images/intro_bg.png) scroll no-repeat;
+}
+
+#introWrap {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#intro .introCopy {
+    position: absolute;
+    left: 0;
+    
+    opacity: 0;
+}
+
+#intro .text1 {
+    top: 200px;
+}
+
+#intro .text2 {
+    top: 231px;
+}
+
+#intro .text3 {
+    top: 264px;
+}
+
+#intro .text4 {
+    top: 294px;
+}
+
+#intro .text5 {
+    top: 325px;
+}
+
+
+
+#intro .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #wrap {
