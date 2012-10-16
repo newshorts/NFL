@@ -46,7 +46,7 @@
             <li class="nil">0</li>
             <li class="nil">0</li>
         </ul>
-        <div id="twitter_count" class="tweets_count mediumNumbersOrange medium"></div>
+        <div id="twitter_count" class="tweets_count medium"></div>
     </li>
   </ul>
   
