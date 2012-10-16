@@ -22,7 +22,7 @@
                 <li class="nil">0</li>
                 <li class="nil">0</li>
                 <li class="nil">0</li>
-                <li class="comma">,</li>
+                <li class="comma_gray">,</li>
                 <li class="nil">0</li>
                 <li class="nil">0</li>
                 <li class="nil">0</li>
