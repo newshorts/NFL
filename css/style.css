@@ -935,6 +935,33 @@ display: none;
     right: 39px;
 }
 
+
+#plus_post {
+	position: relative; 
+	top: 35px;
+	height: 172px; 
+	width: 420px;
+	border: #ccc 1px solid;
+	padding: 10px 0px 0px 10px;   
+	 
+}
+
+#plus_post div img {float: left; margin: 0px 10px 10px 0px; height: 80%;  }
+
+#plus_post div h3 { 
+	padding-left: 5px; 
+	font-size: 18px;
+    font-family: 'FranklinGothicURW-HeaIta'; 
+    font-weight: normal; 
+    font-style: normal; 
+    color: #e75405; 
+    text-decoration: none; }
+    
+#plus_post div p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 220px; margin-right: 5px;  float: right; text-align: left; position: relative; }
+	
+#plus_post div span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 12px; bottom: 5px; position: absolute;  }	
+
+
 /*	--------------------------------------------------
     Debugging
     -------------------------------------------------- */
