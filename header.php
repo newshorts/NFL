@@ -216,10 +216,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                             });
                         }, 3800);
                         
-                        	
-                        
-                        
-                       
+                                               
                     <?php endif; ?>
 		            
 //                    var nav = new PageNavigation('#wrap');
