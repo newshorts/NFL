@@ -59,7 +59,6 @@
 					<div id="google_plus_count">
 				        <!--<div id="google_count_bg" class="supportersNumbersGrey">888,888</div>-->    
                         <ul class="numbers_small">
-                      
                             <li class="nil">0</li>                                        
                             <li class="nil">0</li>
                             <li class="nil">0</li>

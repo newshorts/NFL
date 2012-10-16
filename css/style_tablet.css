@@ -148,10 +148,10 @@ html {
  /* TWITTER STYLES LANDSCAPE */   
  
  
-    .twitter { height: 327px; position: relative; overflow: hidden; margin: 10px 0px; width: 909px; top: 80px;}
+    .twitter { height: 341px; position: relative; overflow: hidden; margin: 10px 0px; width: 909px; top: 80px; left: 3px;}
 	/* #twitter_overlay { background: url(../images/twitter_overlay.png) top left no-repeat; display: block; height: 347px; position: absolute; width: 996px; z-index: 3;}    */
-	#twitter_overlay_top { background: url(../images/twitter_overlay_top.png) top left no-repeat; display: block; height: 127px; position: absolute; width:889px; z-index: 3; top: 90px; left: 9px; }
-	#twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 136px; position: absolute; width: 889px; bottom: 130px; z-index: 3; left: 9px } 
+	#twitter_overlay_top { background: url(../images/twitter_overlay_top.png) top left no-repeat; display: block; height: 127px; position: absolute; width:888px; z-index: 3; top: 90px; left: 9px; }
+	#twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 136px; position: absolute; width: 888px; bottom: 130px; z-index: 3; left: 9px } 
 	  
 	
 	.tweet_list { position: relative; top: -50px; }
@@ -178,7 +178,7 @@ html {
 	.at_user { color: #a4bc27; text-decoration: none; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
 	
 	
-	#twitter_footer { position: relative; height: 106px; padding: 20px 0px 0px 30px; width: 868px; top: 81px; }
+	#twitter_footer { position: relative; height: 91px; padding: 20px 0px 0px 30px; width: 868px; top: 83px; }
 	/* #twitter_footer #twitter_count { position: absolute; width: 300px; top: 0; right: 0px; } */
 	#twitter_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 123px; }
 	
@@ -188,9 +188,9 @@ html {
 	
 	
 	
-	#social { position: relative; float: left; padding: 20px 0 0 36px; width: 441px}
+	#social { position: relative; float: left; padding: 20px 0 0 36px; width: 341px}
 	#social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 230px; }
-	#social .links { position: relative; float: right; top: -30px; }
+	#social .links { position: relative; float: right; top: -20px; }
 	#social .links li { position: relative; float: left; }
 	/*
 	#social .links a { text-decoration: none; }
@@ -210,13 +210,7 @@ html {
 		top: -43px;
 		text-align: right; 
 	}
-	
-	
-	#twitter_count_bg {
-		margin: 23px 25px 0 0;
-		
-	}
-	
+
 	.tweets_count {
 		margin: 0px 17px 0 0;
 		position: relative;
@@ -618,68 +612,6 @@ html {
 	    -------------------------------------------------- */
 	.supporters { height: 497px; width: 997px; }
 	#supporters_main { height: 367px;  width: 997px; }
-	
-	
-/*
-	
-	#latest_news { background-color: #fff; height: 317px; width: 422px; padding: 30px 30px 0 60px; margin: 10px 10px 10px 0;  position: relative; float: left; overflow: hidden;}
-	#latest_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
-*/
-	
-/*
-	#supporters_follow { float: right; position: relative; top: -25px; }
-	#facebook_follow { margin: 0px 5px 0px 8px; }
-	#google_follow { margin: 2px 5px 0px 5px; top: 1px; position: relative; }
-	#supporters_follow span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; position: relative; top: -8px; }
-*/
-	
-/*
-	
-	#news li {
-	    position: relative;
-	    display: inline-block;
-	    width: 404px;
-	    height: 89px;
-	    margin: 0;
-	    padding: 0;
-	    top: -16px;
-	    border-bottom: 1px solid #cacaca;
-	    
-	    font-size: 14px;
-	    font-family: Helvetica, Arial, sans-serif;
-	    color: #666;
-	    font-weight: bolder;
-	}
-	
-	#news li .imgContainer {
-	    position: relative;
-	    overflow: hidden;
-	    width: 50px;
-	    height: 50px;
-	    top: 20px;
-	    left: 335px;
-	}
-	
-	#news li .imgContainer img {
-	    position: absolute;
-	    top: -5px;
-	    left: -25px;
-	    width: 100px;
-	}
-	
-	#news li .post {
-	    display: block;
-	    position: absolute;
-	    top: 20px;
-	    left: 20px;
-	    width: 310px;
-	}
-	
-	#news li a {
-	    color: #e75406;
-	}
-*/
-		
 	
 	
 	#supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; }
