@@ -16,6 +16,7 @@ div{ background-color: black; opacity: .7;  }
 */
 
 a { color: #666666; text-decoration: none; line-height: inherit; }
+p { font-style: italic; }
 a:hover { color: #e75406; }
 a:focus { color: #e75406; outline: none; }
 p a, p a:visited { line-height: inherit; }
@@ -511,6 +512,8 @@ html {
 	#instagram_social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 348px; 
 		
 	}
+	#instagram_social p a { color: #e75405; font-weight: bold;}
+	
 	
 	#instagram_social em { color: #e75405; font-weight: bold; 
 		
@@ -1000,6 +1003,8 @@ html {
 	#instagram_social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 18px; width: 330px; 
 		
 	}
+	
+	#instagram_social p a { color: #e75405; font-weight: bold;}
 	
 	#instagram_social em { color: #e75405; font-weight: bold; 
 		
@@ -1736,3 +1741,6 @@ html {
 .numbers_small .comma { background-position: 0 -792px; right: 2px; top: 7px; width: 13px; }
 .numbers_small .comma_gray { background-position: -30 -792px; right: 7px; top: 6px; width: 13px; }
 
+
+
+.trainCompartment span { font-size: 23px;  } 

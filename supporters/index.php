@@ -70,7 +70,7 @@
 			</div>
 		</li>
 		<li id="supporters_internal">
-			<p>Share you excitement for a Bay Area Super Bowl.</p>
+			<p>Share your excitement for a Bay Area Super Bowl.</p>
 	    </li>
 	    <li id="supporters_count">
 	        <ul class="numbers_medium">
