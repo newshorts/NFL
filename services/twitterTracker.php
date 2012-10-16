@@ -116,7 +116,11 @@ class TwitterTracker {
 //        if(empty($result)) {
             $data = array(
                 'tid' => $tweet['tid'],
-                'tag_name' => $tweet['tag_name']
+                'tag_name' => $tweet['tag_name'],
+                'profile_img' => $tweet['profile_img'],
+                'name' => $tweet['name'],
+                'username' => $tweet['username'],
+                'text' => $tweet['text']
             );
             return $this->db->insert($this->table_name, $data);
 //        }
@@ -175,6 +179,23 @@ class TwitterTracker {
         $result = $this->db->fetchAll('SELECT COUNT(*) as "tweet_count" FROM '.$this->table_name);
         
         return $result[0];
+        
+    }
+    
+    /**
+     * Get latest tweet from database and output the json
+     * @access public
+     * @return object 
+     */	
+    public function getLatestTweet() {
+        $this->db->setFetchMode(Zend_Db::FETCH_ASSOC);
+        
+        $result = $this->db->fetchAll('SELECT profile_img, name, username, text FROM '.$this->table_name.' ORDER BY id DESC LIMIT 1');
+        
+//        echo '<pre>';
+//        print_r($result);
+        
+        return $result;
         
     }
     
@@ -241,8 +262,22 @@ class Tag extends TwitterTracker {
      * @param array $tweets an array of twitter results returned from a search 
      */	
     private function parseResults() {
-        foreach($this->results['results'] as $tweet) {
-            $this->tweets[] = array('tid' => $tweet['id_str'], 'tag_name' => $this->tag_name);
+        
+        $tweets = $this->results['results'];
+        
+        $tweets = array_reverse($tweets);
+        
+        foreach($tweets as $tweet) {
+            echo "<pre>";
+            print_r($tweet);
+            $this->tweets[] =   array(  
+                                        'tid' => $tweet['id_str'], 
+                                        'tag_name' => $this->tag_name,
+                                        'profile_img' => $tweet['profile_image_url'],
+                                        'name' => $tweet['from_user_name'],
+                                        'username' => $tweet['from_user'],
+                                        'text' => $tweet['text']
+                                    );
         }
     }
     

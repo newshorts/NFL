@@ -94,6 +94,43 @@
                 <li class="trainCompartment" data-pos="">five</li>
                 <li class="trainCompartment" data-pos="">six</li>
             </ul>
+            <ul class="trainCar" data-pos="335">
+                <li id="tweet" class="trainCompartmentLong" data-pos="">
+                    <div class="tweet_list">
+                        <ul class="unique_tweet">
+                            <li class="tweet_info">
+                                <ul>
+                                    <li class="avatar">
+                                        <a class="tweet_avatar" href="http://twitter.com/newshorts" target="_blank">
+                                            <img src="http://a0.twimg.com/profile_images/1771921314/profile_normal.jpg" height="48" width="48" alt="newshorts's avatar" title="newshorts's avatar" border="0">
+                                        </a>
+                                    </li>
+                                    <li class="screenname">
+                                        <p>mike</p>
+                                    </li>
+                                    <br>
+                                    <li class="username">
+                                        <a class="tweet_user" href="http://twitter.com/newshorts" target="_blank">@newshorts</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="tweet"> 
+                                <p class="tweet_text">Another tweet from <a href="http://search.twitter.com/search?q=&amp;tag=gspsf&amp;lang=all" class="tweet_hashtag" target="_blank">#gspsf</a> and <a href="http://search.twitter.com/search?q=&amp;tag=cheerfulsundays&amp;lang=all" class="tweet_hashtag" target="_blank">#cheerfulsundays</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        
+            <ul class="trainCar" data-pos="335">
+                <li class="trainCompartmentLong" data-pos="">
+                    
+                </li>
+            </ul>
+        
+            <ul class="trainCar" data-pos="335">
+                <li class="trainCompartmentLong" data-pos=""><img src="../images/coming-soon.png" /></li>
+            </ul>
             
             
         <!--</ul>-->

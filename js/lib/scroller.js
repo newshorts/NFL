@@ -18,6 +18,8 @@ var Scroller = Class.extend({
         this.setPositions();
         
         this.ticker();
+        
+        this.getTweet();
     },
     
     setPositions: function() {
@@ -93,6 +95,36 @@ var Scroller = Class.extend({
             }
             
         });
+    },
+    
+    getTweet: function() {
+        
+        var self = this;
+        
+        $.getJSON('../services/output.json', function(data) {
+            var tweet = data.output.latest_tweet[0];
+            
+            self.replaceTweetData(tweet);
+        });
+    },
+    
+    replaceTweetData: function(tweet) {
+        
+        console.dir(tweet);
+        
+        var userLink = 'http://twitter.com/' + tweet.username;
+        
+        $('.tweet_avatar').attr('href', userLink);
+        $('.tweet_avatar img').attr('src', tweet.profile_img);
+        $('.screenname p').text(tweet.name);
+        $('.tweet_user').attr('href', userLink);
+        $('.tweet_user').text(tweet.username);
+        var newText = this.wraptags
+        $('.tweet_text').html
+        
+    },
+    
+    getInstagrams: function() {
+        
     }
-
 });

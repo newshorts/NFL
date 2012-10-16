@@ -523,6 +523,21 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     height: 155px;
 }
 
+.trainCar .tweet_list {
+    top: 0;
+}
+
+.trainCompartmentLong {
+    position: relative;
+    display: block;
+    width: 995px;
+    height: 155px;
+    background: url(../images/bg-texture-light.png) scroll repeat;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
 .trainCompartment {
     float: left;
     width: 325px;
@@ -533,7 +548,8 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     margin-left: 10px;
 }
 
-.trainCompartment:first-child {
+.trainCompartment:first-child,
+.trainCompartmentLong:first-child{
     margin-left: 0px;
 }
 
