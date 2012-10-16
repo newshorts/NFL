@@ -25,6 +25,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="<?php echo ROOT; ?>js/lib/jquery.min.js">\x3C/script>')</script>
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>-->
         
 <!--        <script src="<?php echo ROOT; ?>js/lib/modernizr.custom.nfl.js"></script>-->
         
@@ -121,12 +122,14 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         </script>
         
         <script src="<?php echo ROOT; ?>js/lib/class.js"></script>
+        <script src="<?php echo ROOT; ?>js/lib/jquery.easing.js"></script>
         <script src="<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js"></script>
         <script src="<?php echo ROOT; ?>js/lib/pageNavigation.js"></script>
         <script src="<?php echo ROOT; ?>js/socialTrackers/socialTracker.js"></script>
         
         <?php if(strpos($request, 'buzz')): ?>
         
+            <script src="<?php echo ROOT; ?>js/lib/scroller.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/totalTracker.js"></script>
@@ -176,6 +179,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 
                     <?php if(strpos($request, 'buzz')): ?>
                     
+                        var scroller = new Scroller('.train', 1005);
                         var total = new TotalTracker('#total');
                         var It = new InstagramTracker('#instagram_photo_count');
                         var tt = new TwitterTracker('#twitter_count');

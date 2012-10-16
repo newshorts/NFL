@@ -529,9 +529,9 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     float: left;
 }
 
-#box2:hover, #box3:hover, #box4:hover  {
+/*#box2:hover, #box3:hover, #box4:hover  {
     background: white;
-}
+}*/
 
 #box1 { 
     width: 996px; 
@@ -539,8 +539,6 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     position: relative; 
     margin: 10px 0px 10px 0px;
 }
-
-
 
 #box1 .headlineMediumGray {
     position: absolute;
@@ -572,31 +570,57 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 #box2 {
-	margin: 0px 5px 0px 0px;
+    /*margin: 0px 5px 0px 0px;*/
+    /*overflow: hidden;*/
+    /*width: 998px;*/
 }
 
-#box2 .numbers_small,
-#box3 .numbers_small,
-#box4 .numbers_small {
+/*#box2 .numbers_small,*/
+/*#box3 .numbers_small,
+#box4 .numbers_small {*/
+.trainCompartment .numbers_small{
     position: absolute;
     bottom: 18px;
     right: 29px;
 }
 
-#box2 span, #box2 img, #box2 hr,
-#box3 span, #box3 img, #box3 hr,
-#box4 span, #box4 img, #box4 hr {
+/*#box2 span, #box2 img, #box2 hr,*/
+/*#box3 span, #box3 img, #box3 hr,*/
+/*#box4 span, #box4 img, #box4 hr {*/
+.trainCompartment hr, .trainCompartment span, .trainCompartment img {
     position: absolute;
 }
 
-#box3 {
+.train {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 9999px;
+    height: 155px;
+}
+
+.trainCompartment {
+    float: left;
+    width: 325px;
+    height: 155px;
+    position: relative;
+    display: block;
+    background: url(../images/bg-texture-light.png) scroll repeat;
+    margin-left: 10px;
+}
+
+.trainCompartment:first-child {
+    margin-left: 0px;
+}
+
+/*#box3 {
 	margin: 0px 5px 0px 5px;
 }
 
 #box4 {
 	margin: 0px 0px 0px 5px;
 	padding-right: 1px;
-}
+}*/
 
 .countGrey {
     display: inline;
