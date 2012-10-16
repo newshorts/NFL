@@ -23,8 +23,10 @@
 			        <div id="facebook_count" class="small" facebook_data="1"><ul class="numbers_small"><li class="one">1</li></ul></div>
                 </div>
 			</li>
-			<li>
-				<div class="fb-like-box" data-href="http://facebook.com/SFSuperbowl"  data-border-color="#cccccc" data-width="425" data-height="185" data-show-faces="true" data-stream="false" data-header="false"></div>
+			<li id="facebook_box">
+				<div id="facebook_box_inner">
+					<div class="fb-like-box" data-href="http://facebook.com/SFSuperbowl"  data-border-color="#cccccc" data-width="425" data-height="185" data-show-faces="true" data-stream="false" data-header="false"></div>
+				</div>
 			</li>
 		</ul>
 		<ul id="google_pluses" class="bgTextureLight">
