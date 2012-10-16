@@ -82,7 +82,20 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	float: left;
     margin-top: 31px;
     margin-left: 30px;
+    width: 530px;
     display:block;
+}
+
+#boardcontainer .left a {
+	color: #666666
+}
+
+#boardcontainer .left a:hover {
+	color: #666666
+}
+
+#boardcontainer .left a:focus {
+	color: #666666
 }
 
 #boardcontainer .right {
@@ -307,8 +320,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	color: #767676;
 	font-weight: normal; 
     text-decoration: none;
-    
-	margin: -10px 0px 0px 0px;
+	margin: -5px 0px 0px 0px;
 }
 
 #movements .headline a {
@@ -318,8 +330,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	color: #e75406;
 	font-weight: bold;
     text-decoration: none;
-    
-	margin: 6px 0px 0px 0px;
+   	margin: -16px 0px 8px 0px;
 }
 
 #movements .headline a:hover {
@@ -330,7 +341,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	font-weight: bold;
     text-decoration: none;
     
-	margin: 6px 0px 0px 0px;
+	margin: -16px 0px 8px 0px;
 }
 
 
@@ -529,9 +540,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     float: left;
 }
 
-#box2:hover, #box3:hover, #box4:hover  {
-    background: white;
-}
+
 
 #box1 { 
     width: 996px; 
@@ -663,7 +672,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 #instagram_footer { position: relative; height: 107px; padding: 20px 0px 0px 30px; width: 966px; }
-#instagram_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
+#instagram_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 143px; margin: 4px 0px 4px 0px; }
 
 
 
@@ -703,7 +712,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 
-#instagram_social { padding: 20px 0 0 36px; width: 495px; positionL: relative; float: left; 
+#instagram_social { padding: 20px 0 0 4px; width: 495px; positionL: relative; float: left; 
 	
 }
 
@@ -760,7 +769,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 #twitter_footer { position: relative; height: 106px; padding: 20px 0px 0px 30px; width: 966px; }
 /* #twitter_footer #twitter_count { position: absolute; width: 300px; top: 0; right: 0px; } */
-#twitter_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
+#twitter_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 143px; margin: 4px 0px 4px 0px; }
 
 #twitter_headline {
 	width: 530px; 
@@ -768,9 +777,9 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 
 
-#social { position: relative; float: left; padding: 20px 0 0 36px; width: 491px}
-#social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 240px; }
-#social .links { position: relative; float: right; top: -30px; }
+#social { position: relative; float: left; padding: 20px 0 0 4px; width: 491px}
+#social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 240px; margin: 0px 0px 0px 0px; }
+#social .links { position: relative; float: right; top: -21px; }
 #social .links li { position: relative; float: left; }
 /*
 #social .links a { text-decoration: none; }
@@ -951,9 +960,9 @@ display: none;
 
 #supporters_footer { background-color: #fff; position: relative; height: 101px; width: 967px; padding: 25px 0 0 30px; }
 
-#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding: 0 87px 2px 0; }
+#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding: 4px 0px 4px 0px; }
 
-#supporters_internal { padding: 20px 0 0 36px; display: inline-block; width: 500px; }
+#supporters_internal { padding: 20px 0 0 4px; display: inline-block; width: 500px; }
 #supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
 #supporters_internal em { color: #e75405; font-weight: bold; }
 

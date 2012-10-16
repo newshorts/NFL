@@ -18,7 +18,8 @@
 		</div>
 		
 		<div class="headline">
-		<h3><a href="../images/movement_poster.png" target="_blank">PRINT THE POSTER >></a></h3>
+		<h3><a href="../images/movement_poster.png" target="_blank">SHARE THE LOGO >></a></h3>
+		<P>Help grow the movement by sharing the logo with friends, <br>and displaying it in your home or business.</P>
 		</div>
 		
 		<hr>
