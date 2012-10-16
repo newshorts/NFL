@@ -1065,6 +1065,158 @@ html {
 		margin: 31px 0px 0px 0px; 
 	}
  
+ 
+ 
+ 
+ 	/*	--------------------------------------------------
+	    Numbers
+	    -------------------------------------------------- */
+	
+	#screen {
+	    display: block; 
+	    width: 890px; 
+	    height: 888px; 
+	    position: absolute; 
+	    top: 58px;
+	    left: 0;
+	}
+	
+	#screen li { 
+	    float: left;
+	}
+	
+	#box2:hover, #box3:hover, #box4:hover  {
+    	background: white;
+    }
+	
+	#box1 { 
+	    width: 909px; 
+	    height: 298px;
+	    position: relative; 
+	    margin: 84px 0px 4px 0px;
+	}
+	
+	#box1 .headlineMediumGray {
+	    position: absolute;
+	    top: 44px;
+	    left: 30px;
+	}
+	
+	#total {
+		margin: 168px 0 0 52px;
+	}
+	
+	#totalBG {
+			margin: 98px 0 0 52px;
+	}
+	
+	#box1 #total, #box1 .largNumbersGrey {
+	    position: absolute;
+	    width: 888px;
+	    text-align: right;    
+	    direction: rtl;
+	    text-align: justify;
+	    white-space: pre;
+	}
+	
+	#box2 {
+		width: 909px; 
+	    height: 108px; 
+	    position: relative; 
+		margin: 0px 0px 0px 0px;
+	}
+	
+	
+	#box2 .numbers_small,
+	#box3 .numbers_small,
+	#box4 .numbers_small {
+	    position: absolute;
+	    bottom: 58px;
+	    right: 21px;
+	}
+
+
+	
+	#box2 span, #box2 img, #box2 hr,
+	#box3 span, #box3 img, #box3 hr,
+	#box4 span, #box4 img, #box4 hr {
+	    position: absolute;
+	}
+	
+	#box3 {
+		width: 909px; 
+	    height: 108px; 
+	    position: relative; 
+		margin: 0px 0px 0px 5px;
+	}
+	
+	#box4 {
+		width: 909px; 
+	    height: 108px; 
+	    position: relative; 
+		margin: 0px 0px 0px 5px;
+		padding-right: 1px;
+	}
+	
+	.countGrey {
+	    display: inline;
+	    top: 78px;
+	    left: 26px;
+	    margin: 0;
+	    width: 263px;
+	    direction: rtl;
+	    text-align: justify;
+	    white-space: pre;
+	}
+	
+	.countOrange {
+	    display: inline;
+	    top: 107px;
+	    left: 26px;
+	    margin: 0;
+	    width: 263px;
+	    direction: rtl;
+	    text-align: justify;
+	    white-space: pre;
+	}
+	
+	.smallBoxHeading {
+	    top: 12px;
+	    left: 21px;
+	}
+	
+	.smallBoxIcon {
+	    top: 12px;
+	    left: 258px;
+	}
+	
+	.smallBoxIconLeft {
+	    top: 12px;
+	    left: 238px;
+	}
+	
+	.smallBoxHR {
+	    top: 24px;
+	    left: 18px;
+	    width: 258px;
+	}
+	
+	.bottom, .bottom a { 
+	    width: 293px; 
+	    height: 155px; 
+	    position: relative;
+	    display: block;
+	}
+	
+/* END OF NUMBERS */
+
+
+
+
+
+
+
+
              
 /* END OF IMPORTED TABLET BACKGROUND STYLES */             
 
