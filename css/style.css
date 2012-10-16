@@ -983,6 +983,7 @@ display: none;
 #facebook_likes_count { width: 426px; position: relative; float: right; top: -24px;  }
 #facebook_count { /*top: -18px;*/ position: relative; }
 
+.fb-like-box fb_iframe_widget {width: 200px; }
 
 #gfb_count_bg {margin: 26px 30px 0px 0px; text-align: right; }
 

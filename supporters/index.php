@@ -71,7 +71,6 @@
 					<div id="google_cta">
 						<!-- Place this tag where you want the +1 button to render. -->
 						<div class="g-plusone" data-annotation="none" data-href="http://sfsuperbowl.com"></div>
-						
 						<!-- Place this tag after the last +1 button tag. -->
 						<script type="text/javascript">
 						  (function() {
@@ -90,18 +89,17 @@
 					</div>
 					<div id="google_plus_count">
 				        <!--<div id="google_count_bg" class="supportersNumbersGrey">888,888</div>-->    
-                                        <ul class="numbers_small">
-                                      
-                                            <li class="nil">0</li>                                        
-                                            <li class="nil">0</li>
-                                            <li class="nil">0</li>
-                                            <li class="comma">,</li>
-                                            <li class="nil">0</li>
-                                            <li class="nil">0</li>
-                                            <li class="nil">0</li>
-                                        </ul>
+                        <ul class="numbers_small">
+                      
+                            <li class="nil">0</li>                                        
+                            <li class="nil">0</li>
+                            <li class="nil">0</li>
+                            <li class="comma">,</li>
+                            <li class="nil">0</li>
+                            <li class="nil">0</li>
+                            <li class="nil">0</li>
+                        </ul>
 				        <div id="google_count" class="supportersNumbersOrange small" google_data="0"><ul class="numbers_small"><li class="zero">0</li></ul></div>
-
 					</div>
 				</li>
 			</ul>

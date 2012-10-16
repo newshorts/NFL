@@ -616,20 +616,24 @@ html {
 	/*	--------------------------------------------------
 	    Supporters
 	    -------------------------------------------------- */
-	    
-	.supporters { height: 497px; width: 909px; }
-	#supporters_main { height: 367px;  width: 909px; }
+	.supporters { height: 497px; width: 997px; }
+	#supporters_main { height: 367px;  width: 997px; }
 	
 	
+/*
 	
 	#latest_news { background-color: #fff; height: 317px; width: 422px; padding: 30px 30px 0 60px; margin: 10px 10px 10px 0;  position: relative; float: left; overflow: hidden;}
 	#latest_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
+*/
 	
+/*
 	#supporters_follow { float: right; position: relative; top: -25px; }
 	#facebook_follow { margin: 0px 5px 0px 8px; }
 	#google_follow { margin: 2px 5px 0px 5px; top: 1px; position: relative; }
 	#supporters_follow span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; position: relative; top: -8px; }
+*/
 	
+/*
 	
 	#news li {
 	    position: relative;
@@ -653,129 +657,93 @@ html {
 	    width: 50px;
 	    height: 50px;
 	    top: 20px;
-	    left: 10px;
+	    left: 335px;
 	}
 	
 	#news li .imgContainer img {
 	    position: absolute;
-	}
-	
-	#news li img {
-	    position: absolute;
-	    top: 0px;
-	    left: 0px;
+	    top: -5px;
+	    left: -25px;
 	    width: 100px;
 	}
 	
 	#news li .post {
 	    display: block;
 	    position: absolute;
-	    top: 10%;
-	    left: 81px;
+	    top: 20px;
+	    left: 20px;
 	    width: 310px;
 	}
 	
 	#news li a {
 	    color: #e75406;
 	}
-	
-	
-	/*#news li  p { color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; position: relative; width: 290px; float: left; margin: 10px 0px 0px 145px; }
-	
-	#news li div a { color: #e75405; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; float: right; position: relative; }
-	
-	
-	#news li {
-	border-bottom: #cbcbcb 1px solid;
-		position: relative;
-		width: 422px;
-		height: 91px;
-		padding: 0px 0px 0px 0px;
-		float: left;
-	}
-	
-	#news li:nth-of-type(1) {
-		top: -15px;
-		height: 106px;
-	}
-	
-	#news {
+*/
 		
-	}
-	
-	#news li .img {
-	 float: left;
-	 position: absolute;
-	 margin: 5px 0px 0px 5px;
-	
-	}
-	
-	#news a:nth-of-type(2) {
-	display: none;
-	}*/
-	
-	
 	
 	
 	#supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; }
 	
-	#google_pluses { height: 138px; width: 438px; margin: 82px 0px 10px 0px; padding: 10px 28px 0px 18px;}
+	#google_pluses { height: 328px; width: 409px; margin: 10px 0px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 78px; } 
 	#google_pluses li { float: left; }
 	
-	#google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: "909"; }
+	#google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 379px;  }
 	
-	#google_cta { margin: 40px 0 0 0; width: 39px;  }
-	
-	/*
-	#google_pluses li div span { font-size: 24px; font-family: 'FranklinGothicURW-HeaIta';  color: #666666;  text-decoration: none; }
-	#google_pluses li div { margin: 30px 0 0 0; }
-	
-	#google_cta img { margin: 0 10px 0 0; }
-	#google_cta span {position: relative; top: -15px; }
-	*/
-	
-	
-	#facebook_likes { height: 138px; width: 409px; padding: 30px 30px 0px 35px;}
-	
-	#facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
-	
-	#facebook_cta { margin: 40px 0 0 0; width: 49px; overflow: hidden; }
-	
-	/*
-	#facebook_likes li div span { font-size: 24px; font-family: 'FranklinGothicURW-HeaIta'; color: #666666; text-decoration: none; }
-	#facebook_likes li div { margin: 30px 0 0 0; }
-	
-	#facebook_cta img { margin: 0 10px 0 0; }
-	#facebook_cta span { position: relative; top: -15px; }
-	*/
+	#google_cta { margin: 27px 0px 0px 0px; width: 49px;  width: 39px;  }
 	
 	
 	
-	#supporters_footer { background-color: #fff; position: relative; height: 101px; width: 909px; padding: 0px 0 0 30px; }
+	#facebook_likes { height: 328px; width: 409px; margin: 10px 10px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 78px; }
 	
-	#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding: 0 87px 2px 0; }
+	#facebook_likes li {float: left;}
 	
-	#supporters_internal { padding: 20px 0 0 36px; }
+	#facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 379px; }
+	
+	#facebook_like_button { height: 96px; }
+	
+	#facebook_cta { margin: 27px 0px 0px 0px; width: 51px; overflow: hidden; }
+	
+
+
+
+	#supporters_footer { background-color: #fff; position: relative; height: 91px; width: 867px; padding: 15px 0 0 30px; top: 80px; }
+	
+	#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding: 4px 0px 4px 0px; }
+	
+	#supporters_internal { padding: 30px 0 0 4px; display: inline-block; width: 500px; }
 	#supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
 	#supporters_internal em { color: #e75405; font-weight: bold; }
 	
-	#supporters_count { position: absolute; right: 0px; top: 0px; }
+	#supporters_count { display: inline-block; float: right; width:420px; padding-top: 25px; position: relative; }
 	
 	
-	#google_plus_count { width: 376px; position: relative; float: right; top: -20px; }
-	#google_count { top: -18px; position: relative; }
+	#google_plus_count { width: 380px; position: relative; float: right;  top: -17px; }
 	
-	#facebook_likes_count { width: 376px; position: relative; float: right; top: -20px;  }
-	#facebook_count { top: -18px; position: relative; }
+	#google_plus_count .numbers_small,
+	#facebook_likes_count .numbers_small {
+	    position: absolute;
+	    bottom: -41px;
+	    right: 5px;
+	}
+	
+	#google_count { /*top: -18px;*/ position: relative; }
+	
+	#facebook_likes_count { width: 380px; position: relative; float: right; top: -34px;  }
+	#facebook_count { /*top: -18px;*/ position: relative; }
+	
 	
 	
 	#gfb_count_bg {margin: 26px 30px 0px 0px; text-align: right; }
 	
-	.gfb_count { position: relative; right: 30px; top: -49px; }
+	/*.gfb_count { position: relative; right: 30px; top: -49px; }*/
 	
-
-
-
+	#supporters_count .numbers_medium, 
+	#gfb_count .numbers_medium {
+	    position: absolute;
+	    bottom: 21px;
+	    right: 39px;
+	}
+	
 
 
 
