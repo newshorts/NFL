@@ -1,8 +1,6 @@
 <?php include('../header.php'); ?>
 
 
-<div id="container">
-<div id="scaffold"></div>
 
 
 <div id="dynamic">
@@ -13,7 +11,9 @@
   
   	<?php include('tweet_code.php'); ?>
     
-    <div id="ticker" class="query"></div>
+    <div id="ticker" class="query">
+	    <div id="filler_tweet"></div>
+    </div>
     
   </div>
   <ul id="twitter_footer" class="bgTextureLight">
@@ -23,7 +23,7 @@
 		</div>
 	</li>
 	<li id="social">
-            <p>Add to the Super Bowl buzz and show your support via Twitter.</p>
+            <p>Build the buzz.</p>
             <ul class="links">
                 <li id="tweet">
                 	<a href="https://twitter.com/intent/tweet?button" class="twitter-hashtag-button" data-size="large">Tweet</a>
@@ -36,7 +36,6 @@
             </ul>
     </li>
     <li id="twitter_number_count">
-        <!--<div id="twitter_count_bg" class="mediumNumbersGrey">888,888</div>-->    
         <ul class="numbers_medium">
             <li class="nil">0</li>
             <li class="nil">0</li>
@@ -46,13 +45,13 @@
             <li class="nil">0</li>
             <li class="nil">0</li>
         </ul>
-        <div id="twitter_count" class="tweets_count mediumNumbersOrange medium"></div>
+        <div id="twitter_count" class="tweets_count medium"></div>
     </li>
   </ul>
   
 </div>
 
-<div id="border"></div>
+
 </div>
   
 <?php include('../footer.php'); ?>

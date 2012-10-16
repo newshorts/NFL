@@ -258,16 +258,26 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
     </head>
     <body data-device="<?php echo DEVICE_TYPE; ?>">
     
-    <script src='http://connect.facebook.net/en_US/all.js'></script>
+    <div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=423821150969335";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+    
        
         <div id="background"></div>
         <div id="wrap">
         
+		<div id="container">
+		<div id="scaffold"></div>
             <div id="header">
                 <div id="boardcontainer">
                     
 	                <div class="left">
-	                    <h2 class="headlineLargeGray">BRING THE BOWL TO THE BAY</h2>
+	                    <h2 class="headlineLargeGray"><a href="../buzz/">BRING THE BOWL TO THE BAY</a></h2>
 	                </div>
 	                
 	                <div class="right">

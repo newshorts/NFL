@@ -237,7 +237,7 @@
     }
 
     function render_tweets(widget, tweets) {
-      var list = $('<div class="tweet_list">');
+      var list = $('<div class="tweet_list">' + '<ul class="first_tweet">' + '</ul>');
       list.append($.map(tweets, function(o) { return '<ul class="unique_tweet">' + '<li class="tweet_info">' + '<ul>' + '<li class="avatar">' + t(s.tweet_avatar, o) + '</li>' + '<li class="screenname">' + '<p>' + t(s.tweet_name, o) + '</p>' + '</li>' + '<br />' + '<li class="username">' + t(s.tweet_user, o) + '</li>' + '</ul>' + '</li>' + '<li class="tweet">' + t(s.template_tweet, o) + '</li>' + '</ul>'; }).join(''));
 
       $(widget).empty().append(list);
