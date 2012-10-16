@@ -46,7 +46,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     margin-top: -289px;
     z-index: 20;
     
-    background: url(../images/intro_bg.png) scroll no-repeat;
+    background: url(../images/intro_bg.png) scroll repeat;
 }
 
 #introWrap {
@@ -55,14 +55,18 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     left: 0;
 }
 
-#intro .introCopy {
+#intro .introItem {
     position: absolute;
+    top: 0;
     left: 0;
-    
     opacity: 0;
+    
+    width: 1004px;
 }
 
-#intro .text1 {
+
+
+/*#intro .text1 {
     top: 200px;
 }
 
@@ -88,7 +92,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     position: absolute;
     top: 0;
     left: 0;
-}
+}*/
 
 #wrap {
     width: 996px;
