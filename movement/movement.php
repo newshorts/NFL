@@ -39,7 +39,7 @@
 					<h3 class="headlineSmallGray" id="followSF">FOLLOW @SFSUPERBOWL</h3>
 					<div class="right"><a href="https://plus.google.com/u/0/116535953378851378506/" target="_blank"><img src="../images/follow_google.png"></a></div>
 					<div class="right"><a class="facebook link" href="https://www.facebook.com/SFSuperbowl" target="_blank"><img src="../images/follow_facebook.png"></a><p id='msg'></p></div>
-					<div class="right"><a class="twitter link" href="https://twitter.com/SFSuperbowl" target="_blank"><img src="../images/follow_twitter.png"></a></div>
+					<div class="right"><a class="twitter_link link" href="https://twitter.com/SFSuperbowl" target="_blank"><img src="../images/follow_twitter.png"></a></div>
 				</div>
 			</li>
 		</ul>
