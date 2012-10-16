@@ -92,14 +92,14 @@ var GoogleStatusTracker = SocialTracker.extend({
         
         if(this.post.attachmentType == 'photo') {
             $('#plus_post > div').append('<img src="'+this.post.attachmentImage+'" alt="Plus Image Here..." />');
-            $('#plus_post > div').append('<h3>' + this.post.attachmentTitle + '</h3>');
+            $('#plus_post > div').append('<h3>' + this.post.title + '</h3>');
             $('#plus_post > div').append('<p>' + this.post.attachmentContent + '</p>');
             $('#plus_post > div').append('<span>' + this.post.date + '</span>');
         }
         
         if(this.post.attachmentType == 'video') {
             $('#plus_post > div').append('<img src="'+this.post.attachmentImage+'" alt="Plus Image Here..." />');
-            $('#plus_post > div').append('<h3>' + this.post.attachmentTitle + '</h3>');
+            $('#plus_post > div').append('<h3>' + this.post.title + '</h3>');
             $('#plus_post > div').append('<p>' + this.post.attachmentContent + '</p>');
             $('#plus_post > div').append('<span>' + this.post.date + '</span>');
         }
@@ -107,7 +107,7 @@ var GoogleStatusTracker = SocialTracker.extend({
     },
     
     formatBlank: function() {
-        $('#plus_post > div').append('<h3>' + this.post.attachmentTitle + '</h3>');
+        $('#plus_post > div').append('<h3>' + this.post.title + '</h3>');
         $('#plus_post > div').append('<p>' + this.post.attachmentContent + '</p>');
         $('#plus_post > div').append('<span>' + this.post.date + '</span>');
     },

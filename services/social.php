@@ -74,7 +74,7 @@ class Social {
     }
     
     private function get_likes() {
-        $json_string = file_get_contents('https://graph.facebook.com/sfsuperbowl');
+        $json_string = @file_get_contents('http://graph.facebook.com/sfsuperbowl');
         $json = json_decode($json_string, true);
         return intval( $json['likes'] );
     }
