@@ -710,11 +710,11 @@ html {
 	
 	#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding: 4px 0px 4px 0px; }
 	
-	#supporters_internal { padding: 30px 0 0 4px; display: inline-block; width: 500px; }
+	#supporters_internal { padding: 20px 0 0 24px; display: inline-block; width: 500px; }
 	#supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
 	#supporters_internal em { color: #e75405; font-weight: bold; }
 	
-	#supporters_count { display: inline-block; float: right; width:420px; padding-top: 25px; position: relative; }
+	#supporters_count { display: inline-block; float: right; width:420px; top: 35px; position: relative; }
 	
 	
 	#google_plus_count { width: 380px; position: relative; float: right;  top: -17px; }
