@@ -199,7 +199,7 @@ html {
 
  /* MOVEMENT STYLES LANDSCAPE */   
     
-    #movement_left { width: 512px; height: 483px; float: left; margin: 10px 10px 0px 0px; position: relative; top: 78px; }
+    #movement_left { width: 512px; height: 473px; float: left; margin: 10px 10px 0px 0px; position: relative; top: 78px; }
 
 	
 	#movement_header { position: relative; height: 137px; padding: 30px 0px 0px 30px; width: 482px;  }
@@ -229,9 +229,13 @@ html {
 	#movement_steps p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
 	#movement_steps p a { color: #e75405; font-weight: bold; }
 	
-	.right {float: right; position: relative; right: -315px; top: -40px; margin-left: 10px;  }
+	.right {float: right; position: relative; right: -135px; top: -40px; margin-left: 10px;  }
 	
 	#poster { margin-top: 10px; width: 379px; height: 465px; position: relative; float: right;  top: 78px; overflow: hidden;}
+     
+     
+     
+     
        
  /* TWITTER STYLES LANDSCAPE */   
  
@@ -706,7 +710,41 @@ html {
 	}
 	
 		
+/* MOVEMENT STYLES PORTRAIT */   
+    
+    #movement_left { width: 512px; height: 483px; float: left; margin: 10px 10px 0px 0px; position: relative; top: 78px; }
 
+	
+	#movement_header { position: relative; height: 137px; padding: 30px 0px 0px 30px; width: 482px;  }
+	#movement_header li div span { border-bottom: #cbcbcb 2px solid; margin: 4px 0px 4px 0px; font-size: 25px; }
+	#movement_header li p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 420px; margin: 25px 0px 0px 25px; }
+	#movement_header li p a { color: #e75405; font-weight: bold;  }
+	
+	
+	#movement_steps { padding: 0px 0px 0px 55px; }
+	#movement_steps li { border-bottom: #ccc 2px solid; position: relative; height: 87px;  width: 427px; float: left; padding: 8px 0px 0px 0px; }
+	#movement_steps li:first-child { border-top: #ccc 2px solid; }
+	#movement_steps li:first-child img { margin-top: 20px; }
+	#movement_steps li:nth-child(2) img { margin-top: 20px; } 
+	#movement_steps li:nth-child(3) { height: 77px; } 
+	
+	/* #movement_steps li:nth-child(2) { padding: 25px 0px 0px 0px; height: 77px; } */
+	
+	
+	#movement_steps li:nth-child(1) .headline { top: -41px; } 
+	#movement_steps li:nth-child(2) .headline { top: -33px; }
+	#movement_steps li:nth-child(3) .headline { top: -29px; } 
+	
+	#movement_steps img { margin-top: 15px; }
+	#movement_steps .headline { position: relative; float: left; margin-left: 45px; top: -25px; } 
+	
+	#movement_steps h3 { font-size: 21px; font-family: 'FranklinGothicURW-HeaIta'; font-weight: normal; font-style: normal; color: #666666; text-decoration: none; }
+	#movement_steps p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+	#movement_steps p a { color: #e75405; font-weight: bold; }
+	
+	.right {float: right; position: relative; right: -315px; top: -40px; margin-left: 10px;  }
+	
+	#poster { margin-top: 10px; width: 379px; height: 465px; position: relative; float: right;  top: 78px; overflow: hidden;}
 			
 
     
