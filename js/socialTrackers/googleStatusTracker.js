@@ -110,5 +110,10 @@ var GoogleStatusTracker = SocialTracker.extend({
         $('#plus_post > div').append('<h3>' + this.post.attachmentTitle + '</h3>');
         $('#plus_post > div').append('<p>' + this.post.attachmentContent + '</p>');
         $('#plus_post > div').append('<span>' + this.post.date + '</span>');
+    },
+    
+    cropImage: function() {
+        
     }
+    
 });
