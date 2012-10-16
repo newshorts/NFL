@@ -13,7 +13,9 @@
   
   	<?php include('tweet_code.php'); ?>
     
-    <div id="ticker" class="query"></div>
+    <div id="ticker" class="query">
+	    <div id="filler_tweet"></div>
+    </div>
     
   </div>
   <ul id="twitter_footer" class="bgTextureLight">

@@ -725,15 +725,18 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     Twitter
     -------------------------------------------------- */
 
-.twitter { height: 347px; position: relative; overflow: hidden; margin: 10px 0px; width: 996px; }
+.twitter { height: 347px; position: relative;  overflow: hidden; margin: 10px 0px; width: 996px; }
 /* #twitter_overlay { background: url(../images/twitter_overlay.png) top left no-repeat; display: block; height: 347px; position: absolute; width: 996px; z-index: 3;}    */
-#twitter_overlay_top { background: url(../images/twitter_overlay_top.png) top left no-repeat; display: block; height: 127px; position: absolute; width: 996px; z-index: 3; }
-#twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 136px; position: absolute; width: 996px; top: 211px; z-index: 3; } 
+#twitter_overlay_top { background: url(../images/twitter_overlay_top.png) top left no-repeat; display: block; height: 127px; position: absolute; width: 981px; z-index: 3; }
+#twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 136px; position: absolute; width: 981px; top: 211px; z-index: 3; } 
   
+.tweet_list { position: relative; top:-50px; }
 
-.tweet_list { position: relative; top: -50px; }
 
-.unique_tweet { border-bottom: #ccc 2px solid; height: 110px; margin: 0 34px 0 34px; padding: 34px 0 0 0;  position: relative; width: 926px; }
+.first_tweet { border-bottom: #ccc 2px solid; height: 110px; margin: 0 34px 0 34px; padding: 34px 0 0 0;  position: relative; width: 926px;  }
+
+/* .unique_tweet:first-child { border-top: #ccc 2px solid; } */
+.unique_tweet { border-bottom: #ccc 2px solid; height: 110px; margin: 0 34px 0 34px; padding: 34px 0 0 0;  position: relative; width: 926px;  }
 .unique_tweet li { float: left; list-style: none; position: relative; }
 
 .tweet_info { color: #e75405; font-family: Helvetica, Arial, sans-serif;  font-weight: bold;  font-size: 18px; height: 102px;  margin: 0 0 0 30px; padding: 0 0 0 0;  width: 215px; overflow: hidden; position: relative; }
@@ -909,12 +912,12 @@ display: none;
 
 #supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; }
 
-#google_pluses { height: 153px; width: 931px; margin: 10px 0px 2px 0px; padding: 30px 30px 0px 35px;}
+#google_pluses { height: 318px; width: 457px; margin: 10px 0px 0px 0px; padding: 30px 0px 0px 35px; position: relative; float: left;} 
 #google_pluses li { float: left; }
 
-#google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 930px;  }
+#google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 420px;  }
 
-#google_cta { margin: 50px 40px 0 70px;  width: 39px;  }
+#google_cta { margin: 37px 0px 0px 0px; width: 49px;  width: 39px;  }
 
 
 /*
@@ -926,13 +929,15 @@ display: none;
 */
 
 
-#facebook_likes { height: 162px; width: 931px; padding: 10px 30px 0px 35px;}
+#facebook_likes { height: 318px; width: 459px; margin: 10px 10px 0px 0px; padding: 30px 0px 0px 35px; position: relative; float: left;}
 
 #facebook_likes li {float: left;}
 
-#facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 930px; }
+#facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 420px; }
 
-#facebook_cta { margin: 60px 40px 0 70px; width: 49px; overflow: hidden; }
+#facebook_like_button { height: 96px; }
+
+#facebook_cta { margin: 37px 0px 0px 0px; width: 49px; overflow: hidden; }
 
 /*
 #facebook_likes li div span { font-size: 24px; font-family: 'FranklinGothicURW-HeaIta'; color: #666666; text-decoration: none; }
@@ -955,7 +960,7 @@ display: none;
 #supporters_count { display: inline-block; float: right; width: 200px; }
 
 
-#google_plus_count { width: 481px; position: relative; float: right; top: -20px; }
+#google_plus_count { width: 426px; position: relative; float: right; top: -24px; }
 
 #google_plus_count .numbers_small,
 #facebook_likes_count .numbers_small {
@@ -966,7 +971,7 @@ display: none;
 
 #google_count { /*top: -18px;*/ position: relative; }
 
-#facebook_likes_count { width: 481px; position: relative; float: right; top: -20px;  }
+#facebook_likes_count { width: 426px; position: relative; float: right; top: -24px;  }
 #facebook_count { /*top: -18px;*/ position: relative; }
 
 
