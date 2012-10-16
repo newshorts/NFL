@@ -7,7 +7,7 @@
 				</div>
 			</li>
 			<li>
-				<p>Our bid for the Super Bowl starts with you. Help us show why the Bay Area will be a perfect host for Super Bowl L. Simply tweet, share or post with <a href="https://twitter.com/SFSuperbowl" target="_blank";>&#35;SFSuperBowl</a> to show your support.</p>
+				<p>Our bid for the Super Bowl starts with you. Help us show why the Bay Area will be a perfect host for Super Bowl L. Simply tweet, share or post with <a href="https://twitter.com/search/realtime?q=%23SFSuperbowl&src=typd" target="_blank";>&#35;SFSuperBowl</a> to show your support.</p>
 			</li>
 		</ul>	
 		<ul id="movement_steps">
@@ -17,7 +17,7 @@
 				</div>
 				<div class="headline">
 					<h3 class="headlineSmallGray"><a href="../images/movement_poster.png" target="_blank">SHARE THE LOGO >></a></h3>
-					<p>Help grow the movement by sharing the logo with friends, <br>and displaying it in your home or business.</p>
+					<p>Grow the movement. <a href="image files goes here" target="_blank">Download</a> or <a href="pdf file goes here" target="_blank">print</a> the logo.</p>
 				</div>
 			</li>
 			
@@ -27,7 +27,7 @@
 				</div>
 				<div class="headline">
 					<h3 class="headlineSmallGray"><a href="../images/movement_poster.png" target="_blank">COMING SOON: THE LIVING LOGO</a></h3>
-					<p>Use your smartphone to unlock exclusive <a href="https://twitter.com/SFSuperbowl" target="_blank";>&#35;SFSuperbowl</a> content.</p>
+					<p>Use your smartphone to unlock exclusive <a href="https://twitter.com/search/realtime?q=%23SFSuperbowl&src=typd" target="_blank";>&#35;SFSuperbowl</a> content.</p>
 				</div>
 			</li>
 			

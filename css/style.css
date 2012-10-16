@@ -15,6 +15,7 @@ body {
 
 a { color: #666666; text-decoration: none; line-height: inherit; }
 a:hover { color: #e75406; }
+p { font-style: italic; }
 a:focus { color: #e75406; outline: none; }
 p a, p a:visited { line-height: inherit; }
 
@@ -436,6 +437,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 
 
+
 /*	--------------------------------------------------
     Numbers
     -------------------------------------------------- */
@@ -508,12 +510,16 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     right: 29px;
 }
 
+/* .trainCompartment:hover { background-color: white; } */
+
 /*#box2 span, #box2 img, #box2 hr,*/
 /*#box3 span, #box3 img, #box3 hr,*/
 /*#box4 span, #box4 img, #box4 hr {*/
 .trainCompartment hr, .trainCompartment span, .trainCompartment img {
     position: absolute;
 }
+
+.trainCompartment span { font-size: 23px;  } 
 
 .train {
     position: relative;
@@ -659,9 +665,9 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	
 }
 
-#instagram_social em { color: #e75405; font-weight: bold; 
-	
-}
+#instagram_social p a { color: #e75405; font-weight: bold;}
+
+
 
 #instagram_button { position: relative; top: -30px;  float: right; }
 
