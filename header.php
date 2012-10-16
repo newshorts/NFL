@@ -254,7 +254,15 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
     </head>
     <body data-device="<?php echo DEVICE_TYPE; ?>">
     
-    <script src='http://connect.facebook.net/en_US/all.js'></script>
+    <div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=423821150969335";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+    
        
         <div id="background"></div>
         <div id="wrap">
