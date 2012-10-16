@@ -43,18 +43,23 @@
 					</script>
 				</div>
 				<div id="google_plus_count">
-                    <ul class="numbers_small">
-                        <li class="nil">0</li>                                        
-                        <li class="nil">0</li>
-                        <li class="nil">0</li>
-                        <li class="comma">,</li>
-                        <li class="nil">0</li>
-                        <li class="nil">0</li>
-                        <li class="nil">0</li>
-                    </ul>
+                                <ul class="numbers_small">
+                                    <li class="nil">0</li>                                        
+                                    <li class="nil">0</li>
+                                    <li class="nil">0</li>
+                                    <li class="comma">,</li>
+                                    <li class="nil">0</li>
+                                    <li class="nil">0</li>
+                                    <li class="nil">0</li>
+                                </ul>
 			        <div id="google_count" class="small" google_data="0"><ul class="numbers_small"><li class="zero">0</li></ul></div>
 				</div>
 			</li>
+                        <li id="plus_post">
+                            <div>
+                                
+                            </div>
+                        </li>
 		</ul>
 	</div> <!---- CLOSE SUPPORTERS_MAIN ---->
 	

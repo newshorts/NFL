@@ -151,7 +151,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
             <script src="<?php echo ROOT; ?>js/socialTrackers/googleTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js"></script>
-            <script src="<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js"></script>
+            <script src="<?php echo ROOT; ?>js/socialTrackers/googleStatusTracker.js"></script>
+            <!--<script src="<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js"></script>-->
             
         <?php endif; ?>
         
@@ -197,7 +198,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 
                     <?php elseif(strpos($request, 'supporters')): ?>
                         
-                        var fst = new FacebookStatusTracker('#facebook_statuses');
+                        var gst = new GoogleStatusTracker('#google_statuses');
+//                        var fst = new FacebookStatusTracker('#facebook_statuses');
                         var gt = new GoogleTracker('#google_count');
                         var ft = new FacebookTracker('#facebook_count');
                         var gfb = new GfbTracker('#gfb_count');
