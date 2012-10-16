@@ -818,26 +818,26 @@ html {
 	
 /* 	#supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; } */
 	
-	#facebook_likes { height: 625px; width: 410px; margin: 10px 10px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 138px; }
+	#facebook_likes { height: 625px; width: 410px; margin: 10px 10px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 135px; }
 	#facebook_likes li { float: left; }
-	#facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 350px; }
+	#facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 380px; }
 	#facebook_like_button { height: 96px; }
 	#facebook_cta { margin: 27px 0px 0px 0px; width: 51px; overflow: hidden; }
 	
-	#facebook_likes_count { width: 330px; position: relative; float: right; top: -34px;  }
+	#facebook_likes_count { width: 385px; position: relative; float: right; top: -34px;  }
 	#facebook_count { /*top: -18px;*/ position: relative; }
 	
-	#google_pluses { height: 625px; width: 410px; margin: 10px 0px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 138px;  } 
+	#google_pluses { height: 625px; width: 410px; margin: 10px 0px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 135px;  } 
 	#google_pluses li { float: left; }
 	#google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 379px;  }
 	#google_cta { margin: 27px 0px 0px 0px; width: 49px;  width: 39px;  }
 
-	#google_plus_count { width: 330px; position: relative; float: right;  top: -17px; }
+	#google_plus_count { width: 385px; position: relative; float: right;  top: -17px; }
 	#google_count { /*top: -18px;*/ position: relative; }
 
-	#supporters_footer { position: relative; height: 210px; padding: 50px 0px 0px 40px; width: 868px; top: 135px; }
+	#supporters_footer { position: relative; height: 158px; padding: 50px 0px 0px 40px; width: 868px; top: 135px; }
 	
-	#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 233px; font-size: 45px;  }
+	#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 183px; font-size: 45px;  }
 	
 	#supporters_internal { padding: 20px 0 0 24px; display: inline-block; width: 500px; }
 	#supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
