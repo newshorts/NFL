@@ -219,7 +219,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 
                     <?php endif; ?>
                     
-                    <?php //if($_SESSION['sfsuperbowlintro']) : ?>
+                    <?php if($_SESSION['sfsuperbowlintro']) : ?>
                         
 //                        setTimeout(function() {
 //                            $('#intro .logo').animate({
@@ -360,8 +360,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         
                         var sequence = function() {
                             delay(fadeInHeadline, 1000);
-                            delay(fadeInCopy, 4000);
-                            delay(fadeOutIntro, 12000);
+                            delay(fadeInCopy, 3000);
+                            delay(fadeOutIntro, 14000);
                         };
                         
                         var delay = function(func, time) {
@@ -372,7 +372,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         setTimeout(sequence, 200);
                         
                                                
-                    <?php //endif; ?>
+                    <?php endif; ?>
 		            
 //                    var nav = new PageNavigation('#wrap');
                     
@@ -469,7 +469,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     
             </div><!-- /header -->
             
-            <?php //if($_SESSION['sfsuperbowlintro']) : ?>
+            <?php if($_SESSION['sfsuperbowlintro']) : ?>
                 
                 <div id="intro">
                     <div id="introWrap">
@@ -493,7 +493,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                 
                 
                 <?php $_SESSION['sfsuperbowlintro'] = false; ?>
-            <?php //endif; ?>
+            <?php endif; ?>
             
             
             
