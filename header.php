@@ -151,7 +151,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
             <script src="<?php echo ROOT; ?>js/socialTrackers/googleTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js"></script>
-            <script src="<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js"></script>
+            <script src="<?php echo ROOT; ?>js/socialTrackers/googleStatusTracker.js"></script>
+            <!--<script src="<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js"></script>-->
             
         <?php endif; ?>
         
@@ -197,7 +198,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 
                     <?php elseif(strpos($request, 'supporters')): ?>
                         
-                        var fst = new FacebookStatusTracker('#facebook_statuses');
+                        var gst = new GoogleStatusTracker('#google_statuses');
+//                        var fst = new FacebookStatusTracker('#facebook_statuses');
                         var gt = new GoogleTracker('#google_count');
                         var ft = new FacebookTracker('#facebook_count');
                         var gfb = new GfbTracker('#gfb_count');
@@ -205,16 +207,125 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     <?php endif; ?>
                     
                     <?php if($_SESSION['sfsuperbowlintro']) : ?>
+                        
                         setTimeout(function() {
+                            $('#intro .logo').animate({
+                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
+                                'filter': 'alpha(opacity=00)',
+                                '-moz-opacity': '0.0',
+                                '-khtml-opacity': '0.0',
+                                'opacity': '0.0'
+                            }, 500, function() {
+                                // complete
+                                $(this).css({
+                                    display: 'none'
+                                });
+                                
+                                setTimeout(function() {
+//                                    fadeInText1();
+                                    sequence();
+                                }, 200);
+                            });
+                        }, 3800);
+                        
+                        var fadeInText1 = function() {
+                            $('.text1').animate({
+                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
+                                'filter': 'alpha(opacity=100)',
+                                '-moz-opacity': '1.0',
+                                '-khtml-opacity': '1.0',
+                                'opacity': '1.0'
+                                
+                            }, 500, function() {
+                                // complete
+//                                delay(fadeInText2, 1000);
+                            });
+                        };
+                        var fadeInText2 = function() {
+                            $('.text2').animate({
+                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
+                                'filter': 'alpha(opacity=100)',
+                                '-moz-opacity': '1.0',
+                                '-khtml-opacity': '1.0',
+                                'opacity': '1.0'
+                            }, 500, function() {
+                                // complete
+//                                delay(fadeInText3);
+                            });
+                        };
+                        var fadeInText3 = function() {
+                            $('.text3').animate({
+                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
+                                'filter': 'alpha(opacity=100)',
+                                '-moz-opacity': '1.0',
+                                '-khtml-opacity': '1.0',
+                                'opacity': '1.0'
+                            }, 500, function() {
+                                // complete
+//                                delay(fadeInText4);
+                            });
+                        };
+                        var fadeInText4 = function() {
+                            $('.text4').animate({
+                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
+                                'filter': 'alpha(opacity=100)',
+                                '-moz-opacity': '1.0',
+                                '-khtml-opacity': '1.0',
+                                'opacity': '1.0'
+                            }, 500, function() {
+                                // complete
+//                                delay(fadeInText5);
+                            });
+                        };
+                        var fadeInText5 = function() {
+                            $('.text5').animate({
+                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
+                                'filter': 'alpha(opacity=100)',
+                                '-moz-opacity': '1.0',
+                                '-khtml-opacity': '1.0',
+                                'opacity': '1.0'
+                            }, 500, function() {
+                                // complete
+                                delay(fadeOutIntro, 7500);
+                            });
+                        };
+                        var fadeOutIntro = function() {
                             $('#intro').animate({
-                                opacity: 0
+                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
+                                'filter': 'alpha(opacity=00)',
+                                '-moz-opacity': '0.0',
+                                '-khtml-opacity': '0.0',
+                                'opacity': '0.0'
                             }, 500, function() {
                                 // complete
                                 $(this).css({
                                     display: 'none'
                                 });
                             });
-                        }, 3800);
+                        };
+                        
+                        var sequence = function() {
+                            delay(fadeInText1, 1000);
+                            
+                            // all at once
+//                            setTimeout(function() {
+//                                fadeInText2();
+//                                fadeInText3();
+//                                fadeInText4();
+//                                fadeInText5();
+//                            }, 3000);
+                            
+                            delay(fadeInText2, 2600);
+                            delay(fadeInText3, 2650);
+                            delay(fadeInText4, 2700);
+                            delay(fadeInText5, 2750);
+                        };
+                        
+                        var delay = function(func, time) {
+                            time = time || 80;
+                            
+                            setTimeout(func, time);
+                        }
                         
                                                
                     <?php endif; ?>
@@ -237,7 +348,31 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <?php endif; ?>
         
         <!-- INTRO ANIMATION -->
+        
+    
+    
+    <!-- GOOGLE ANALYTICS TRACKING -->
+    <script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-35558308-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+    <!-- GOOGLE ANALYTICS TRACKING -->    
+        
     </head>
+    
+    
+    
+    
+    
     <body data-device="<?php echo DEVICE_TYPE; ?>">
     
     <div id="fb-root"></div>
@@ -291,38 +426,20 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
             </div><!-- /header -->
             
             <?php if($_SESSION['sfsuperbowlintro']) : ?>
+                
                 <div id="intro">
-                    <img src="../images/intro_logo.png" id="introAnimation">
-                    <span>
-                </div>
-                
-                <div id="introtext1">
-                    <img src="../images/intro_text1.png" id="introAnimation">
-                    <span>
-                </div>
-                
-                <div id="introtext2">
-                    <img src="../images/intro_text2.png" id="introAnimation">
-                    <span>
-                </div>
-                
-                <div id="introtext3">
-                    <img src="../images/intro_text3.png" id="introAnimation">
-                    <span>
-                </div>
-                
-                <div id="introtext4">
-                    <img src="../images/intro_text4.png" id="introAnimation">
-                    <span>
-                </div>
-                
-                <div id="introtext5">
-                    <img src="../images/intro_text5.png" id="introAnimation">
-                    <span>
-                </div>
-                
-                <div id="introBG">
-                    <img src="../images/intro_bg.png" id="introAnimation">
+                    <div id="introWrap">
+                        <!-- text -->
+                        <!--<img src="../images/intro_bg.png" id="introAnimation" />-->
+                        <img class="introCopy text1" src="../images/intro_text1.png" id="introAnimation" />
+                        <img class="introCopy text2" src="../images/intro_text2.png" id="introAnimation" />
+                        <img class="introCopy text3" src="../images/intro_text3.png" id="introAnimation" />
+                        <img class="introCopy text4" src="../images/intro_text4.png" id="introAnimation" />
+                        <img class="introCopy text5" src="../images/intro_text5.png" id="introAnimation" />
+
+                        <!-- logo -->
+                        <img class="logo" src="../images/intro_logo.png" id="introAnimation">
+                    </div>
                 </div>
                 
                 

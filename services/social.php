@@ -23,6 +23,8 @@ class Social {
         
         $pluses = $this->get_plusones('http://www.sfsuperbowl.com/');
         
+        $google_statuses = $this->get_google_statuses();
+        
         $tweets = $this->get_tweets();
         
         $likes = $this->get_likes();
@@ -41,6 +43,7 @@ class Social {
         
         $this->output = Array(
                             'google' => $pluses,
+                            'google_statuses' => $google_statuses,
                             'twitter' => $tweets,
                             'facebook' => $likes,
                             'facebook_statuses' => $fb_statuses,
@@ -88,6 +91,14 @@ class Social {
 
         $json = json_decode($curl_results, true);
         return intval( $json[0]['result']['metadata']['globalCounts']['count'] );
+    }
+    
+    private function get_google_statuses() {
+        // api key: AIzaSyBHW-NafE0H1igaSWyAktBw8ADlkDkC8Dc
+        // url: https://www.googleapis.com/plus/v1/people/116535953378851378506/activities/public?key={YOUR_API_KEY}
+        $json_string = file_get_contents('https://www.googleapis.com/plus/v1/people/116535953378851378506/activities/public?key=AIzaSyBHW-NafE0H1igaSWyAktBw8ADlkDkC8Dc');
+        $json = json_decode($json_string, true);
+        return $json;
     }
     
     private function get_instagram_count($tag) {

@@ -147,6 +147,7 @@ html {
 	}
     
     
+<<<<<<< HEAD
  /* MOVEMENT STYLES LANDSCAPE */   
     
     #movement_left { width: 512px; height: 483px; float: left; margin: 10px 10px 0px 0px; position: relative; top: 78px; }
@@ -184,6 +185,60 @@ html {
 	#poster { margin-top: 10px; width: 379px; height: 465px; position: relative; float: right;  top: 78px; overflow: hidden;}
 
     
+=======
+    #boardcontainer .left {
+		float: left;
+	    margin-top: 18px;
+	    margin-left: 30px;
+	    display:block;
+	}
+	
+	#boardcontainer .right {
+	    position: absolute;
+	    width: 394px;
+	    height: 70px;
+	    top: 0;
+	    right: -5px;
+	    overflow: visible;
+	}
+	
+	#boardcontainer .rightWrap {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	    overflow: visible;
+	}
+	
+	#boardcontainer .tabs {
+		position: absolute;
+		bottom: -5px;
+		left: 0px;
+		width: 500px;
+		height: 28px;
+	}
+	
+	#boardcontainer .sharebutton {
+		position: absolute;
+		top: 15px;
+		right: 35px;
+		width: 109px;
+		height: 22px;
+		background: url(../images/share.png) scroll 0 0 no-repeat;
+		background-size: 109px 22px;
+		overflow: hidden;
+	}
+	
+	#boardcontainer .expanded {
+	    width: 109px;
+	    height: 156px;
+	    background: url(../images/share_hover.png) scroll 0 0 no-repeat;
+	    background-size: 109px 156px;
+	}
+
+
+
+
+>>>>>>> f3978924e9d0891c8e2f4b867458ca9d005ff9a8
        
  /* TWITTER STYLES LANDSCAPE */   
  
@@ -770,6 +825,73 @@ html {
     
     }
     
+    #boardcontainer .left .headlineLargeGray {
+		font-size: 60px;
+	}
+	
+	#boardcontainer .left {
+		float: left;
+	    margin-top: 24px;
+	    margin-left: 30px;
+	    display:block;
+	}
+	
+	#boardcontainer .right {
+	    position: absolute;
+	    width: 394px;
+	    height: 70px;
+	    top: 30px;
+	    left: 30px;
+	    overflow: visible;
+	}
+	
+	#boardcontainer .rightWrap {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	    overflow: visible;
+	}
+	
+	#boardcontainer .tabs {
+		position: absolute;
+		top: 58px;
+		left: 0px;
+		width: 668px;
+		height: 28px;
+		font-size: 30px;
+	}
+	
+	#boardcontainer .tabs a.active {
+		font-size: 30px;
+	}
+	
+	#boardcontainer .tabs dl, dd {
+		font-size: 30px;
+	}
+	
+	
+	#boardcontainer .sharebutton {
+		position: absolute;
+		top: 56px;
+		left: 708px;
+		width: 109px;
+		height: 22px;
+		background: url(../images/share.png) scroll 0 0 no-repeat;
+		background-size: 109px 22px;
+		overflow: hidden;
+	}
+	
+	#boardcontainer .expanded {
+	    width: 109px;
+	    height: 156px;
+	    background: url(../images/share_hover.png) scroll 0 0 no-repeat;
+	    background-size: 109px 156px;
+	}
+	
+		
+
+			
+
     
  /* TWITTER STYLES PORTRAIT */   
     
@@ -1160,6 +1282,158 @@ html {
 
 
  
+ 
+ 
+ 
+ 	/*	--------------------------------------------------
+	    Numbers
+	    -------------------------------------------------- */
+	
+	#screen {
+	    display: block; 
+	    width: 890px; 
+	    height: 888px; 
+	    position: absolute; 
+	    top: 58px;
+	    left: 0;
+	}
+	
+	#screen li { 
+	    float: left;
+	}
+	
+	#box2:hover, #box3:hover, #box4:hover  {
+    	background: white;
+    }
+	
+	#box1 { 
+	    width: 909px; 
+	    height: 298px;
+	    position: relative; 
+	    margin: 84px 0px 4px 0px;
+	}
+	
+	#box1 .headlineMediumGray {
+	    position: absolute;
+	    top: 44px;
+	    left: 30px;
+	}
+	
+	#total {
+		margin: 168px 0 0 52px;
+	}
+	
+	#totalBG {
+			margin: 98px 0 0 52px;
+	}
+	
+	#box1 #total, #box1 .largNumbersGrey {
+	    position: absolute;
+	    width: 888px;
+	    text-align: right;    
+	    direction: rtl;
+	    text-align: justify;
+	    white-space: pre;
+	}
+	
+	#box2 {
+		width: 909px; 
+	    height: 108px; 
+	    position: relative; 
+		margin: 0px 0px 0px 0px;
+	}
+	
+	
+	#box2 .numbers_small,
+	#box3 .numbers_small,
+	#box4 .numbers_small {
+	    position: absolute;
+	    bottom: 58px;
+	    right: 21px;
+	}
+
+
+	
+	#box2 span, #box2 img, #box2 hr,
+	#box3 span, #box3 img, #box3 hr,
+	#box4 span, #box4 img, #box4 hr {
+	    position: absolute;
+	}
+	
+	#box3 {
+		width: 909px; 
+	    height: 108px; 
+	    position: relative; 
+		margin: 0px 0px 0px 5px;
+	}
+	
+	#box4 {
+		width: 909px; 
+	    height: 108px; 
+	    position: relative; 
+		margin: 0px 0px 0px 5px;
+		padding-right: 1px;
+	}
+	
+	.countGrey {
+	    display: inline;
+	    top: 78px;
+	    left: 26px;
+	    margin: 0;
+	    width: 263px;
+	    direction: rtl;
+	    text-align: justify;
+	    white-space: pre;
+	}
+	
+	.countOrange {
+	    display: inline;
+	    top: 107px;
+	    left: 26px;
+	    margin: 0;
+	    width: 263px;
+	    direction: rtl;
+	    text-align: justify;
+	    white-space: pre;
+	}
+	
+	.smallBoxHeading {
+	    top: 12px;
+	    left: 21px;
+	}
+	
+	.smallBoxIcon {
+	    top: 12px;
+	    left: 258px;
+	}
+	
+	.smallBoxIconLeft {
+	    top: 12px;
+	    left: 238px;
+	}
+	
+	.smallBoxHR {
+	    top: 24px;
+	    left: 18px;
+	    width: 258px;
+	}
+	
+	.bottom, .bottom a { 
+	    width: 293px; 
+	    height: 155px; 
+	    position: relative;
+	    display: block;
+	}
+	
+/* END OF NUMBERS */
+
+
+
+
+
+
+
+
              
 /* END OF IMPORTED TABLET BACKGROUND STYLES */             
 
@@ -1202,54 +1476,6 @@ html {
 */
 
 
-#boardcontainer .left {
-	float: left;
-    margin-top: 31px;
-    margin-left: 30px;
-    display:block;
-}
-
-#boardcontainer .right {
-    position: absolute;
-    width: 394px;
-    height: 70px;
-    top: 0;
-    right: -5px;
-    overflow: visible;
-}
-
-#boardcontainer .rightWrap {
-	position: relative;
-	width: 100%;
-	height: 100%;
-    overflow: visible;
-}
-
-#boardcontainer .tabs {
-	position: absolute;
-	bottom: -5px;
-	left: 0px;
-	width: 500px;
-	height: 28px;
-}
-
-#boardcontainer .sharebutton {
-	position: absolute;
-	top: 15px;
-	right: 35px;
-	width: 109px;
-	height: 22px;
-	background: url(../images/share.png) scroll 0 0 no-repeat;
-	background-size: 109px 22px;
-	overflow: hidden;
-}
-
-#boardcontainer .expanded {
-    width: 109px;
-    height: 156px;
-    background: url(../images/share_hover.png) scroll 0 0 no-repeat;
-    background-size: 109px 156px;
-}
 
 .sharebutton ul {
 	margin-top: 36px;
@@ -1304,6 +1530,13 @@ html {
 }
 */
 
+
+
+
+
+
+
+
 /*	--------------------------------------------------
     Utility
     -------------------------------------------------- */
@@ -1318,6 +1551,8 @@ html {
     line-height: 45px;
     
 }
+
+
 
 
 .headlineMediumGray {
