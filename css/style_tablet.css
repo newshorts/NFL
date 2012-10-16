@@ -11,7 +11,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-
+div{ background-color: black; opacity: .7;  }
 
 a { color: #666666; text-decoration: none; line-height: inherit; }
 a:hover { color: #e75406; }
