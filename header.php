@@ -126,6 +126,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         
         <script src="<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js"></script>
         <script src="<?php echo ROOT; ?>js/lib/pageNavigation.js"></script>
+        <script src="<?php echo ROOT; ?>js/socialTrackers/subscription.js"></script>
         <script src="<?php echo ROOT; ?>js/socialTrackers/socialTracker.js"></script>
         
         
@@ -179,7 +180,9 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 //                            $(this).trigger('click');
 //                        });
 //                    }
-
+                        
+                        sub = new Subscription();
+                        
                     <?php if(strpos($request, 'buzz')): ?>
                     
                         var scroller = new Scroller('.train', 1005);
@@ -187,6 +190,14 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         var It = new InstagramTracker('#instagram_photo_count');
                         var tt = new TwitterTracker('#twitter_count');
                         var gfb = new GfbTracker('#gfb_count');
+                        
+                        var It = new InstagramTracker('#instagram_photo_count1');
+                        var tt = new TwitterTracker('#twitter_count1');
+                        var gfb = new GfbTracker('#gfb_count1');
+                        
+                        var It = new InstagramTracker('#instagram_photo_count2');
+                        var tt = new TwitterTracker('#twitter_count2');
+                        var gfb = new GfbTracker('#gfb_count2');
         
                     <?php elseif(strpos($request, 'instagram')): ?>
                         

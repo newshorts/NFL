@@ -3,6 +3,7 @@
  * and open the template in the editor.
  */
 
+//var SocialTracker = Class.extend({
 var SocialTracker = Class.extend({
     _elem: {},
     _eventName: '',
@@ -15,6 +16,10 @@ var SocialTracker = Class.extend({
     
     init: function(eventName, url, elem) {
         
+//        this._super(eventName, url);
+
+        sub.addSubscription(eventName);
+        
         console.dir(elem)
         
         this._eventName = eventName;
@@ -22,11 +27,11 @@ var SocialTracker = Class.extend({
         this._elem = $(elem);
         this._name = eventName;
         
-        if(elem.length > 0) {
-            this.track();
-        } else {
-            console.log(eventName + ' is not available on this page - shutting down');
-        }
+//        if(elem.length > 0) {
+//            this.track();
+//        } else {
+//            console.log(eventName + ' is not available on this page - shutting down');
+//        }
         
     },
     
@@ -41,28 +46,28 @@ var SocialTracker = Class.extend({
         return randomstring;
     },
     
-    poll: function() {
-        var self = this;
-        $.getJSON(this._url,function(data){
-            
-            $(window).trigger(self._eventName, data);
-            
-//            var newData = new CustomEvent(self._eventName, {
-//                detail: {
-//                    data: data
-//                }
-//            });
-//            window.dispatchEvent(newData);
-        });
-    },
+//    poll: function() {
+//        var self = this;
+//        $.getJSON(this._url,function(data){
+//            
+//            $(window).trigger(self._eventName, data);
+//            
+////            var newData = new CustomEvent(self._eventName, {
+////                detail: {
+////                    data: data
+////                }
+////            });
+////            window.dispatchEvent(newData);
+//        });
+//    },
     
-    track: function() {
-        var self = this;
-        setInterval(function() {
-            self.poll();
-        }, 5000);
-        this.poll();
-    },
+//    track: function() {
+//        var self = this;
+//        setInterval(function() {
+//            self.poll();
+//        }, 5000);
+//        this.poll();
+//    },
     
     formatNumber: function(x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
