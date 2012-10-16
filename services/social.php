@@ -27,6 +27,8 @@ class Social {
         
         $tweets = $this->get_tweets();
         
+        $latest_tweet = $this->get_tweet();
+        
         $likes = $this->get_likes();
         
         $insta = $this->get_instagram_count('cheerfulsundays');
@@ -45,6 +47,7 @@ class Social {
                             'google' => $pluses,
                             'google_statuses' => $google_statuses,
                             'twitter' => $tweets,
+                            'latest_tweet' => $latest_tweet,
                             'facebook' => $likes,
                             'facebook_statuses' => $fb_statuses,
                             'instagram' => $insta,
@@ -60,6 +63,15 @@ class Social {
     
     public function write_file() {
         return file_put_contents('output.json', $this->output);
+    }
+    
+    private function get_tweet() {
+        $latest_tweet = $this->twitter->getLatestTweet();
+        
+//        echo '<pre>';
+//        print_r($latest_tweet);
+//        
+        return $latest_tweet;
     }
     
     private function get_tweets() {
