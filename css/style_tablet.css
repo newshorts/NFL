@@ -962,7 +962,7 @@ html {
 	#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 183px; font-size: 45px;  }
 	
 	#supporters_internal { padding: 20px 0 0 24px; display: inline-block; width: 500px; }
-	#supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
+	#supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 18px; }	
 	#supporters_internal em { color: #e75405; font-weight: bold; }
 	
 	#supporters_count { display: inline-block; float: right; width:420px; top: 90px; position: relative; }
@@ -1005,14 +1005,14 @@ html {
 	
 	#instagram {
 	    overflow: hidden;
-	    height: 345px; 
+	    height: 675px; 
 	    margin: 80px 0px 0px 0px;
 	    width: 909px;
-	    top: 100px;
+	    top: 65px;
 	    position: relative;   
 	}
 	
-	#instagram_footer { position: relative; height: 158px; padding: 50px 0px 0px 40px; width: 868px; top: 135px; }
+	#instagram_footer { position: relative; height: 158px; padding: 40px 0px 0px 40px; width: 868px; top: 75px; }
 	#instagram_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 183px; font-size: 45px;  }
 	
 	
@@ -1051,7 +1051,7 @@ html {
 		
 	}
 	
-	#instagram_social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 348px; 
+	#instagram_social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 18px; width: 330px; 
 		
 	}
 	
@@ -1059,7 +1059,7 @@ html {
 		
 	}
 	
-	#instagram_button { position: relative; top: -30px;  float: right; }
+	#instagram_button { position: relative; top: -30px; float: right; }
 	
 	.instagram_photo_count {
 		margin: 31px 0px 0px 0px; 
