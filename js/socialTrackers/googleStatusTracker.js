@@ -28,8 +28,6 @@ var GoogleStatusTracker = SocialTracker.extend({
         
         var entry = this.entries[0];
         
-        console.dir(this.entries[0])
-        
         if(typeof entry.content != "undefined") {
             this.post.content = entry.content;
         }
@@ -44,59 +42,73 @@ var GoogleStatusTracker = SocialTracker.extend({
             this.post.date = entry.published;
         }
         
-        if(typeof entry.object.attachements === "undefined") {
+        if(typeof entry.object.attachments === "undefined") {
             // break out
             this.formatBlank();
             return;
         }
         
-        var attachment = entry.object.attachements[0];
+        var attachment = entry.object.attachments[0];
         
-        if(typeof entry.object.attachements[0].content != "undefined") {
-            // has content of attachement
-            this.post.attachementContent = entry.object.attachements[0].content;
+        if(typeof attachment.content != "undefined") {
+            // has content of attachment
+            this.post.attachmentContent = attachment.content;
         }
         
-        if(typeof entry.object.attachements[0].displayName != "undefined") {
-            // has title of the attachement
-            this.post.attachementTitle = entry.object.attachements[0].displayName;
+        if(typeof attachment.displayName != "undefined") {
+            // has title of the attachment
+            this.post.attachmentTitle = attachment.displayName;
         }
         
-        if(typeof entry.object.attachements[0].embed != "undefined") {
+        if(typeof attachment.embed != "undefined") {
             // has embeded content
-            this.post.attachementEmbed = entry.object.attachements[0].embed.url;
+            this.post.attachmentEmbed = attachment.embed.url;
         }
         
-        if(typeof entry.object.attachements[0].image != "undefined") {
+        if(typeof attachment.image != "undefined") {
             // has image
-            this.post.attachementImage = entry.object.attachements[0].image.url;
+            this.post.attachmentImage = attachment.image.url;
+            this.post.attachmentImageWidth = attachment.image.width;
+            this.post.attachmentImageHeight = attachment.image.height;
         }
         
-        if(typeof entry.object.attachements[0].url != "undefined") {
+        if(typeof attachment.url != "undefined") {
             // has link out
-            this.post.attachementLink = entry.object.attachements[0].url;
+            this.post.attachmentLink = attachment.url;
         }
         
-        if(typeof entry.object.attachements[0].objectType != "undefined") {
+        if(typeof attachment.objectType != "undefined") {
             // has link out
-            this.post.attachementType = entry.object.attachements[0].objectType;
+            this.post.attachmentType = attachment.objectType;
         }
+        
+        console.dir(this.post)
         
         this.formatMedia();
         
     },
     
     formatMedia: function() {
-        $('#plus_post > div').append('<img src="'+this.post.attachementImage+'" alt="Plus Image Here..." />');
-        $('#plus_post > div').append('<h3>' + this.post.attachementTitle + '</h3>');
-        $('#plus_post > div').append('<p>' + this.post.attachementContent + '</p>');
-        $('#plus_post > div').append('<span>' + this.post.date + '</span>');
+        
+        if(this.post.attachmentType == 'photo') {
+            $('#plus_post > div').append('<img src="'+this.post.attachmentImage+'" alt="Plus Image Here..." />');
+            $('#plus_post > div').append('<h3>' + this.post.attachmentTitle + '</h3>');
+            $('#plus_post > div').append('<p>' + this.post.attachmentContent + '</p>');
+            $('#plus_post > div').append('<span>' + this.post.date + '</span>');
+        }
+        
+        if(this.post.attachmentType == 'video') {
+            $('#plus_post > div').append('<img src="'+this.post.attachmentImage+'" alt="Plus Image Here..." />');
+            $('#plus_post > div').append('<h3>' + this.post.attachmentTitle + '</h3>');
+            $('#plus_post > div').append('<p>' + this.post.attachmentContent + '</p>');
+            $('#plus_post > div').append('<span>' + this.post.date + '</span>');
+        }
+        
     },
     
     formatBlank: function() {
-//        $('#plus_post > div').append('<img src="'+this.post.attachementImage+'" alt="Plus Image Here..." />');
-        $('#plus_post > div').append('<h3>' + this.post.attachementTitle + '</h3>');
-        $('#plus_post > div').append('<p>' + this.post.attachementContent + '</p>');
+        $('#plus_post > div').append('<h3>' + this.post.attachmentTitle + '</h3>');
+        $('#plus_post > div').append('<p>' + this.post.attachmentContent + '</p>');
         $('#plus_post > div').append('<span>' + this.post.date + '</span>');
     }
 });
