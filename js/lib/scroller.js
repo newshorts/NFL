@@ -53,7 +53,7 @@ var Scroller = Class.extend({
         setInterval(function() {
             self.moveLeft();
             this.alternate *= -1;
-        }, 1000);
+        }, 5000);
     },
     
     moveLeft: function() {
@@ -119,9 +119,32 @@ var Scroller = Class.extend({
         $('.screenname p').text(tweet.name);
         $('.tweet_user').attr('href', userLink);
         $('.tweet_user').text(tweet.username);
-        var newText = this.wraptags
-        $('.tweet_text').html
+        var tags = this.wrapTags(tweet.text);
         
+        var parsedText = '';
+        for(var i = 0; i < tags.length; i++) {
+            parsedText = tweet.text.replace(tags[i].tag, tags[i].wrap);
+        }
+        
+        $('.tweet_text').html(parsedText);
+        
+    },
+    
+    wrapTags: function(text) {
+        var hashpattern = /(#[A-Za-z0-9-_]+)/g;
+        var hash = text.match(hashpattern);
+        var wrapped = new Array();
+        for(var i = 0; i < hash.length; i++) {
+            var tag = hash[i];
+            var noTag = hash[i].replace('#', '');
+            wrapped.push({
+                wrap: '<a href="http://search.twitter.com/search?q=&amp;tag='+noTag+'&amp;lang=all" class="tweet_hashtag" target="_blank">' + tag + '</a>',
+                tag: tag
+            });
+        }
+        
+        return wrapped;
+
     },
     
     getInstagrams: function() {
