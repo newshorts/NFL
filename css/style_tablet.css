@@ -11,7 +11,9 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/*
 div{ background-color: black; opacity: .7;  }
+*/
 
 a { color: #666666; text-decoration: none; line-height: inherit; }
 a:hover { color: #e75406; }
@@ -875,7 +877,73 @@ html {
     
 } /* close media query portrait */
 
- 
+
+
+	/*	--------------------------------------------------
+	    Instagram
+	    -------------------------------------------------- */
+	
+	#instagram {
+	    overflow: hidden;
+	    height: 345px; 
+	    margin: 80px 0px 0px 0px;
+	    width: 909px;
+	    top: 100px;
+	    position: relative;   
+	}
+	
+	#instagram_footer { position: relative; height: 158px; padding: 50px 0px 0px 40px; width: 868px; top: 135px; }
+	#instagram_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 183px; font-size: 45px;  }
+	
+	
+	
+	#instagram_count {
+		position: relative;
+		float: right;
+        width: 363px;
+        display: inline-block;
+        margin-top: -50px;
+        margin-right: 58px;
+	}
+	
+	#instagram_count .mediumNumbersOrange,
+	#instagram_count .mediumNumbersGrey {
+	    position: absolute;
+	    top: 41px;
+	    right: 0;
+	    text-align: right;
+	    direction: rtl;
+	    text-align: justify;
+	    white-space: pre;
+	    
+	}
+	
+	.photo_count {
+		font-family: 'ds-digitalitalic', Arial, sans-serif;
+	    font-size: 116px;
+	    color: #e75406;
+	    margin: 0px 0px 0px 0px;
+		
+	}
+	
+	
+	#instagram_social { padding: 16px 0 0 25px; width: 408px; position: relative; float: left; 
+		
+	}
+	
+	#instagram_social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 348px; 
+		
+	}
+	
+	#instagram_social em { color: #e75405; font-weight: bold; 
+		
+	}
+	
+	#instagram_button { position: relative; top: -30px;  float: right; }
+	
+	.instagram_photo_count {
+		margin: 31px 0px 0px 0px; 
+	}
  
              
 /* END OF IMPORTED TABLET BACKGROUND STYLES */             
