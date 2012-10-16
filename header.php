@@ -212,25 +212,10 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                             });
                         }, 3800);
                         
+                        	
                         
-                        // scotts intro animation
-//                        var beginAnimation = function() {
-//                            $(function(){
-//                               $("#intro").delay(3000).fadeOut(1000, function(){$(this).remove();});
-////                               $.cookie('sfsuperbowlintro', 'true', { expires: 1 });
-//                            });
-//                        }; 
-//
-//                                    // scotts intro animation	                
-//                        $('#intro').ready(function() {
-////                            var loadedBefore = $.cookie('sfsuperbowlintro'); // => "the_value"
-//                            if(loadedBefore == 'true') {
-//                                $('#intro').hide();
-//                                $('#main').css({ 'opacity' : 1 });
-//                            } else {
-//                                beginAnimation();
-//                            }
-//                        });
+                        
+                       
                     <?php endif; ?>
 		            
 //                    var nav = new PageNavigation('#wrap');
@@ -299,6 +284,48 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
             <?php if($_SESSION['sfsuperbowlintro']) : ?>
                 <div id="intro">
                     <img src="../images/intro_logo.png" id="introAnimation">
+                    <span>
                 </div>
+                
+                <div id="introtext1">
+                    <img src="../images/intro_text1.png" id="introAnimation">
+                    <span>
+                </div>
+                
+                <div id="introtext2">
+                    <img src="../images/intro_text2.png" id="introAnimation">
+                    <span>
+                </div>
+                
+                <div id="introtext3">
+                    <img src="../images/intro_text3.png" id="introAnimation">
+                    <span>
+                </div>
+                
+                <div id="introtext4">
+                    <img src="../images/intro_text4.png" id="introAnimation">
+                    <span>
+                </div>
+                
+                <div id="introtext5">
+                    <img src="../images/intro_text5.png" id="introAnimation">
+                    <span>
+                </div>
+                
+                <div id="introBG">
+                    <img src="../images/intro_bg.png" id="introAnimation">
+                </div>
+                
+                
+                
                 <?php $_SESSION['sfsuperbowlintro'] = false; ?>
             <?php endif; ?>
+            
+            
+            
+            
+            
+            
+            
+            
+            
