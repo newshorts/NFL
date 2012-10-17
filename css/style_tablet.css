@@ -171,7 +171,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 #social .links li { position: relative; float: left; }
 
-#twitter_number_count { height: 130px; width: 379px; float: right; position: relative; text-align: right; }
+#twitter_number_count { height: 130px; width: 379px; float: right; position: relative; float: right; }
 
 /* .tweets_count { margin: 0px 17px 0 0; position: relative; top: -49px; } */
 
@@ -291,9 +291,9 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#social p { font-size: 14px; width: 230px; }
 	#social .links { top: -20px; }
 	#tweet { width: 86px; }
-	#twitter_number_count { margin: 0px 18px 0px 0px; text-align: right; }
+	#twitter_number_count { margin: 0px 18px 0px 0px; float: right; }
 	.numbers_medium { margin: -28px 0px 0px 0px; }
-	.tweets_count {	margin: 0px 25px 0 0; position: relative; top: -50px; }
+	.tweets_count {	margin: 0px 25px 0 0; position: relative; top: -50px; right: 0; float: right; }
 
 
 /* SUPPORTERS STYLES LANDSCAPE */  
@@ -502,7 +502,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#social .links { top: 30px; float: left; }
 	#tweet { width: 86px; }
 	#twitter_number_count { top: 38px; right: 58px; }
-	.tweets_count {	margin: 0px 25px 0 0; position: relative; top: -76px; }
+	.tweets_count {	margin: 0px 25px 0 0; position: relative; top: -76px; right: 0; float: right; }
 	
 	/* SUPPORTERS STYLES PORTRAIT */ 
   
