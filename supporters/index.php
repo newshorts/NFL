@@ -25,7 +25,7 @@
 			</li>
 			<li id="facebook_box">
 				<div id="facebook_box_inner">
-					<div class="fb-like-box" data-href="http://facebook.com/SFSuperbowl"  data-border-color="#cccccc" data-width="425" data-height="185" data-show-faces="true" data-stream="false" data-header="false"></div>
+					<div class="fb-like-box" data-href="http://facebook.com/SFSuperbowl"  data-border-color="#cccccc" data-width="425" data-height="447" data-show-faces="true" data-stream="false" data-header="false"></div>
 				</div>
 			</li>
 		</ul>
