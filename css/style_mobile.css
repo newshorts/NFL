@@ -1,7 +1,7 @@
 /*	--------------------------------------------------
     GLOBAL STYLES
     -------------------------------------------------- */
-body { background: url(../images/bg-texture-dark.png) top left; font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 13px; font-size: 1.3rem; line-height: 18px; color: #555; -webkit-font-smoothing: antialiased; }
+body { /* background: url(../images/bg-texture-dark.png) top left; */ font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 13px; font-size: 1.3rem; line-height: 18px; color: #555; -webkit-font-smoothing: antialiased; }
 
 a { color: #666666; text-decoration: none; line-height: inherit; }
 p { font-style: italic; }
@@ -14,27 +14,21 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 html { }
 
 #dynamic {
-	background: url(images/backgrounds/bg-texture-dark.png) top left;
-    width: 92%;
+
+    width: 100%;
     min-width: 768px;
-    height: 85%;
+    height: 100%;
     position: fixed;
     top: 100%;
-    margin-top: -96%;
-    left: 27%;
-
-    margin-left: -23%;
-    
     overflow: hidden;
-     
-     z-index: 7;
+    z-index: 7;
     
 
 }
 
 
 
-#wrap { position: relative; background: url(../images/bg-texture-dark.png) scroll repeat; overflow: hidden; }
+#wrap { position: relative; background: url(../images/bg-texture-dark.png) scroll repeat; overflow: hidden; width: 100%;}
 
 #boardcontainer { background: url(../images/bg-texture-light.png) scroll repeat; width: 890px; top: 0px; left: 0px; position: absolute; margin-top: 0; margin-left: 1px; overflow: visible; z-index: 10; }
 
@@ -96,7 +90,7 @@ html { }
     
     #border { min-height: 570px; }
     #container { min-height: 565px; }
-    #wrap { width: 890px; height: 566px; top: 30px; left: 46px; }
+    #wrap { width: 1000px; height: 1000px;}
     #boardcontainer { height: 76px; }
     #boardcontainer .expanded { width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; }
     #boardcontainer .left { margin-top: 18px; }
@@ -172,7 +166,7 @@ html { }
 
 	#screen {
 	    display: block; 
-	    width: 909px; 
+	    width: 100%; 
 	    height: 909px; 
 	    position: absolute; 
 	    top: 0;
@@ -192,7 +186,7 @@ html { }
 	}*/
 	
 	#box1 { 
-	    width: 909px; 
+	    width: 768px; 
 	    height: 318px; 
 	    position: relative; 
 	    margin: 145px 0px 10px 0px;
