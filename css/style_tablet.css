@@ -822,13 +822,14 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	width: 106px;
 	height: 26px;
 	display: block;
+	margin: 12px 0px 12px 0px;
 }
 
 .sharebutton .facebook {
 	background: url(../images/share_fb.png) scroll no-repeat;
 }
 
-.sharebutton .twitter {
+.sharebutton .twittertweet {
 	background: url(../images/share_twitter.png) scroll no-repeat;
 }
 
