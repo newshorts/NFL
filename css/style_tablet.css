@@ -96,11 +96,160 @@ html {
 
 
 
+#wrap { position: relative; background: url(../images/bg-texture-dark.png) scroll repeat; overflow: hidden; }
+
+#boardcontainer { background: url(../images/bg-texture-light.png) scroll repeat; width: 890px; top: 0px; left: 0px; position: absolute; margin-top: 0; margin-left: 0; overflow: visible; z-index: 10; }
+
+#boardcontainer .left { float: left; margin-left: 30px; display:block; }
+
+#boardcontainer .right { position: absolute; width: 394px; height: 70px; }
+
+#boardcontainer .rightWrap { position: relative; width: 100%; height: 100%; overflow: visible; }
+	
+#boardcontainer .tabs { position: absolute;	left: 0px; height: 28px; }
+
+#boardcontainer .sharebutton { position: absolute; width: 109px; height: 22px; background: url(../images/share.png) scroll 0 0 no-repeat; background-size: 109px 22px; overflow: hidden; }
+		
+#boardcontainer .expanded { width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; }		
+
+
+
+
+/* MOVEMENT STYLES GLOBAL */ 
+
+#movement_left { width: 512px; float: left; margin: 10px 10px 0px 0px; position: relative; }
+
+#movement_header { position: relative; padding: 30px 0px 0px 30px; }
+
+#movement_header li div span { border-bottom: #cbcbcb 2px solid; margin: 4px 0px 4px 0px; }
+
+#movement_header li p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; margin: 25px 0px 0px 25px; }
+
+#movement_header li p a { color: #e75405; font-weight: bold;  }
+
+#movement_steps li { position: relative; float: left; }
+
+#movement_steps li:first-child img { margin-top: 20px; }
+
+#movement_steps li:nth-child(2) img { margin-top: 20px; }
+
+#movement_steps li:nth-child(1) .headline { top: -41px; }
+
+#movement_steps img { margin-top: 15px; }
+
+#movement_steps .headline { position: relative; float: left; margin-left: 45px; top: -25px; }
+
+#movement_steps h3 { font-size: 21px; font-family: 'FranklinGothicURW-HeaIta'; font-weight: normal; font-style: normal; color: #666666; text-decoration: none; }
+
+#movement_steps p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+
+#movement_steps p a { color: #e75405; font-weight: bold; }
+	
+#poster { margin-top: 10px; width: 379px; position: relative; float: right; overflow: hidden;}
+
+
+
+/* TWITTER STYLES GLOBAL */ 
+
+.twitter { position: relative;overflow: hidden; margin: 10px 0px; width: 909px; }
+
+#twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block;  z-index: 3; left: 9px; position: absolute; }
+
+.tweet_list { position: relative; }
+
+.unique_tweet { border-bottom: #ccc 2px solid; margin: 0 34px 0 34px; padding: 34px 0 0 0;  position: relative; width: 836px; }
+
+.unique_tweet li { float: left; list-style: none; position: relative; }
+
+.tweet_info { color: #e75405; font-family: Helvetica, Arial, sans-serif;  font-weight: bold;  font-size: 18px; height: 102px;  margin: 0 0 0 30px; padding: 0 0 0 0;  width: 215px; overflow: hidden; position: relative; }
+
+.tweet_info ul li { float: left; position: relative; }
+
+.avatar { margin-right: 7px; }
+
+.tweet_avatar { float: left; height: 48px; width: 48px; }
+
+.screenname { position: relative;  clear: right; width: 158px;}
+
+.username { float: left; }
+
+.tweet_user { color: #858585; font-weight: normal; text-decoration: none; font-family: Arial, Helvetica, sans-serif;  font-size: 12px; }
+
+.tweet{ height: 102px; width: 590px; }	
+
+.tweet:before { content: url(../images/quote_open.png); float: left; position: relative; width: 25px; height: 17px; } 
+
+.tweet:after { content: url(../images/quote_close.png); float: right; position: relative; width: 25px; height: 17px; }
+
+.tweet_text { color: #858585; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; margin: 0 0 0 50px; line-height: 26px; width: 530px; position: absolute; float: right; }
+
+.external_link { color: #a4bc27; text-decoration: underline; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
+
+.tweet_hashtag { color: #e75405; text-decoration: none;  font: Helvetica, Arial, sans-serif; }
+
+.at_user { color: #a4bc27; text-decoration: none; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
+
+#twitter_footer { position: relative; width: 868px; }	
+
+#twitter_footer li div span { border-bottom: #cbcbcb 2px solid; }
+
+#social { position: relative; float: left; }
+
+#social p { color: #767676; font-family: Arial, Helvetica, sans-serif; }
+
+#social .links { position: relative; float: right; }
+
+#social .links li { position: relative; float: left; }
+
+#twitter_number_count { height: 130px; width: 379px; float: right; position: relative; text-align: right; }
+
+.tweets_count { margin: 0px 17px 0 0; position: relative; top: -49px; }
 
 
 
 
 
+/* SUPPORTERS STYLES GLOBAL */
+
+#facebook_likes {margin: 10px 10px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; }
+
+#facebook_likes li { float: left; }
+
+#facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
+
+#facebook_like_button { height: 96px; }
+
+#facebook_cta { margin: 27px 0px 0px 0px; width: 51px; overflow: hidden; }
+
+#facebook_likes_count { position: relative; float: right; top: -34px;}  
+
+#facebook_count { /*top: -18px;*/ position: relative; }
+
+#google_pluses { height: 328px; width: 409px; margin: 10px 0px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 78px; } 
+
+#google_pluses li { float: left; }
+
+#google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 379px;  }
+
+#google_cta { margin: 27px 0px 0px 0px; width: 49px;  width: 39px;  }
+
+#google_plus_count { width: 380px; position: relative; float: right;  top: -17px; }
+
+#google_count { /*top: -18px;*/ position: relative; }
+
+#google_plus_count .numbers_small,
+
+#facebook_likes_count .numbers_small { position: absolute;  bottom: -41px; right: 5px; }
+
+/* google post styles - will need to be styles for tablet */
+#gfb_count_bg { margin: 26px 30px 0px 0px; text-align: right; }
+#supporters_count .numbers_medium, 
+#gfb_count .numbers_medium { position: absolute; bottom: 21px; right: 39px; }
+#plus_post { position: relative; top: 35px; height: 400px; width: 370px; border: #ccc 1px solid; padding: 10px 0px 0px 10px; }
+#plus_post div img {float: left; margin: 0px 10px 10px 0px; height: 80%; }
+#plus_post div h3 { padding-left: 5px; font-size: 18px; font-family: 'FranklinGothicURW-HeaIta'; font-weight: normal; font-style: normal; color: #e75405; text-decoration: none; }
+#plus_post div p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 220px; margin-right: 5px;  float: right; text-align: left; position: relative; }
+#plus_post div span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 12px; bottom: 5px; position: absolute;  }	
 
 
 
@@ -109,208 +258,72 @@ html {
 /* ============  LANDSCAPE STYLES ========================================================================================================================================================== */
 
 @media only screen and (orientation : landscape) {
-    #border {
-     background: url(../images/screen-border.png) scroll no-repeat;
-     min-height: 570px; }
+
+ /* BACKGROUND AND HEADER STYLES LANDSCAPE */      
     
+    #border { background: url(../images/screen-border.png) scroll no-repeat; min-height: 570px; }
     #container { min-height: 565px; }
-    
-    
-    #wrap {
-	    width: 891px;
-	    height: 566px;
-	    position: relative;
-	    background: url(../images/bg-texture-dark.png) scroll repeat;
-	    overflow: hidden;
-	    top: 30px;
-		left: 46px;
-	}
-    
-    #boardcontainer { 
-	    background: url(../images/bg-texture-light.png) scroll repeat;
-	    width: 890px; 
-	    height: 76px;
-	    top: 0px;
-	    left: 0px;
-	    position: absolute; 
-	    margin-top: 0; 
-	    margin-left: 0; 
-	    overflow: visible;
-	    z-index: 10;
-    
-    }
-    
-    #boardcontainer .expanded {
-	    width: 109px;
-	    height: 156px;
-	    background: url(../images/share_hover.png) scroll 0 0 no-repeat;
-	    background-size: 109px 156px;
-	}
-    
-    
-    #boardcontainer .left {
-		float: left;
-	    margin-top: 18px;
-	    margin-left: 30px;
-	    display:block;
-	}
-	
-	#boardcontainer .right {
-	    position: absolute;
-	    width: 394px;
-	    height: 70px;
-	    top: 0;
-	    right: -5px;
-	    overflow: visible;
-	}
-	
-	#boardcontainer .rightWrap {
-		position: relative;
-		width: 100%;
-		height: 100%;
-	    overflow: visible;
-	}
-	
-	#boardcontainer .tabs {
-		position: absolute;
-		bottom: -5px;
-		left: 0px;
-		width: 500px;
-		height: 28px;
-	}
-	
-	#boardcontainer .sharebutton {
-		position: absolute;
-		top: 15px;
-		right: 35px;
-		width: 109px;
-		height: 22px;
-		background: url(../images/share.png) scroll 0 0 no-repeat;
-		background-size: 109px 22px;
-		overflow: hidden;
-	}
-	
-	#boardcontainer .expanded {
-	    width: 109px;
-	    height: 156px;
-	    background: url(../images/share_hover.png) scroll 0 0 no-repeat;
-	    background-size: 109px 156px;
-	}
+    #wrap { width: 891px; height: 566px; top: 30px; left: 46px; }
+    #boardcontainer { height: 76px; }
+    #boardcontainer .expanded { width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; }
+    #boardcontainer .left { margin-top: 18px; }
+	#boardcontainer .right { top: 0; right: -5px; }
+	#boardcontainer .tabs { bottom: -5px; width: 500px; }
+	#boardcontainer .sharebutton { top: 15px; right: 35px; }
+
 
 
  /* MOVEMENT STYLES LANDSCAPE */   
-    
-    #movement_left { width: 512px; height: 473px; float: left; margin: 10px 10px 0px 0px; position: relative; top: 78px; }
-
-	
-	#movement_header { position: relative; height: 137px; padding: 30px 0px 0px 30px; width: 482px;  }
-	#movement_header li div span { border-bottom: #cbcbcb 2px solid; margin: 4px 0px 4px 0px; font-size: 25px; }
-	#movement_header li p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 420px; margin: 25px 0px 0px 25px; }
-	#movement_header li p a { color: #e75405; font-weight: bold;  }
-	
-	
+     
+    #movement_left { height: 473px; top: 78px; }
+   	#movement_header { height: 137px; width: 482px;  }
+	#movement_header li div span { font-size: 25px; }
+	#movement_header li p {  width: 420px; }
 	#movement_steps { padding: 0px 0px 0px 55px; }
-	#movement_steps li { border-bottom: #ccc 2px solid; position: relative; height: 87px;  width: 427px; float: left; padding: 8px 0px 0px 0px; }
+	#movement_steps li { border-bottom: #ccc 2px solid; height: 87px;  width: 427px;  padding: 8px 0px 0px 0px; }
 	#movement_steps li:first-child { border-top: #ccc 2px solid; }
-	#movement_steps li:first-child img { margin-top: 20px; }
-	#movement_steps li:nth-child(2) img { margin-top: 20px; } 
 	#movement_steps li:nth-child(3) { height: 77px; } 
-	
-	/* #movement_steps li:nth-child(2) { padding: 25px 0px 0px 0px; height: 77px; } */
-	
-	
-	#movement_steps li:nth-child(1) .headline { top: -41px; } 
 	#movement_steps li:nth-child(2) .headline { top: -33px; }
 	#movement_steps li:nth-child(3) .headline { top: -29px; } 
-	
-	#movement_steps img { margin-top: 15px; }
-	#movement_steps .headline { position: relative; float: left; margin-left: 45px; top: -25px; } 
-	
-	#movement_steps h3 { font-size: 21px; font-family: 'FranklinGothicURW-HeaIta'; font-weight: normal; font-style: normal; color: #666666; text-decoration: none; }
-	#movement_steps p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
-	#movement_steps p a { color: #e75405; font-weight: bold; }
-	
-	.right {float: right; position: relative; right: -135px; top: -40px; margin-left: 10px;  }
-	
-	#poster { margin-top: 10px; width: 379px; height: 465px; position: relative; float: right;  top: 78px; overflow: hidden;}
+	.right { float: right; position: relative; right: -135px; top: -40px; margin-left: 10px;  }
+	#poster { height: 465px; top: 78px; }
      
-     
-     
-     
+       
        
  /* TWITTER STYLES LANDSCAPE */   
  
- 
-    .twitter { height: 341px; position: relative; overflow: hidden; margin: 10px 0px; width: 909px; top: 80px; left: 3px;}
-	/* #twitter_overlay { background: url(../images/twitter_overlay.png) top left no-repeat; display: block; height: 347px; position: absolute; width: 996px; z-index: 3;}    */
+    .twitter { height: 341px; top: 80px; left: 3px;}
 	#twitter_overlay_top { background: url(../images/twitter_overlay_top.png) bottom left no-repeat; display: block; height: 107px; position: absolute; width:888px; z-index: 3; top: 90px; left: 9px; }
-	#twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 106px; position: absolute; width: 888px; bottom: 130px; z-index: 3; left: 9px } 
-	  
-	
-	.tweet_list { position: relative; top: -50px; }
-	
-	.unique_tweet { border-bottom: #ccc 2px solid; height: 110px; margin: 0 34px 0 34px; padding: 34px 0 0 0;  position: relative; width: 836px; }
-	.unique_tweet li { float: left; list-style: none; position: relative; }
-	
-	.tweet_info { color: #e75405; font-family: Helvetica, Arial, sans-serif;  font-weight: bold;  font-size: 18px; height: 102px;  margin: 0 0 0 30px; padding: 0 0 0 0;  width: 215px; overflow: hidden; position: relative; }
-	.tweet_info ul li { float: left; position: relative; }
-	.avatar { margin-right: 7px; }
-	.tweet_avatar { float: left; height: 48px; width: 48px; }
-	.screenname { position: relative;  clear: right; width: 158px;}
-	.username { float: left; }
-	.tweet_user { color: #858585; font-weight: normal; text-decoration: none; font-family: Arial, Helvetica, sans-serif;  font-size: 12px; }
-	
-	
-	.tweet{ height: 102px; width: 590px; }	
-	.tweet:before { content: url(../images/quote_open.png); float: left; position: relative; width: 25px; height: 17px; } 
-	.tweet:after { content: url(../images/quote_close.png); float: right; position: relative; width: 25px; height: 17px; top: 210px; }
-	
-	.tweet_text { color: #858585; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; margin: 0 0 0 50px; line-height: 26px; width: 530px; position: absolute; float: right; }
-	.external_link { color: #a4bc27; text-decoration: underline; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
-	.tweet_hashtag { color: #e75405; text-decoration: none;  font: Helvetica, Arial, sans-serif; }
-	.at_user { color: #a4bc27; text-decoration: none; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
-	
-	
-	#twitter_footer { position: relative; height: 91px; padding: 20px 0px 0px 30px; width: 868px; top: 83px; }
-	/* #twitter_footer #twitter_count { position: absolute; width: 300px; top: 0; right: 0px; } */
-	#twitter_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 123px; }
-	
-	#twitter_headline {
-		width: 490px; 
-	}
-	
-	
-	
-	#social { position: relative; float: left; padding: 20px 0 0 36px; width: 341px}
-	#social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 230px; }
-	#social .links { position: relative; float: right; top: -20px; }
-	#social .links li { position: relative; float: left; }
-	/*
-	#social .links a { text-decoration: none; }
-	#social .links span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; position: relative; top: -11px; }
-	*/
-	
-	/* #social img { margin-right: 7px; } */
+	#twitter_overlay_bottom  { height: 106px; width: 888px; bottom: 130px; } 
+	.tweet_list { top: -50px; }
+	.unique_tweet { height: 110px; }	
+	.tweet:after { top: 210px; }
+	#twitter_footer {  height: 91px; padding: 20px 0px 0px 30px; top: 83px; }
+	#twitter_footer li div span { padding-right: 123px; }
+	#twitter_headline { width: 490px; }
+	#social { padding: 20px 0 0 36px; width: 341px}
+	#social p { font-size: 14px; width: 230px; }
+	#social .links { top: -20px; }
 	#tweet { width: 86px; }
-	
-	
-	
-	#twitter_number_count {
-		height: 130px; 
-		width: 379px;
-		float: right;
-		position: relative;
-		top: -43px;
-		text-align: right; 
-	}
+	#twitter_number_count { top: -43px; text-align: right; }
 
-	.tweets_count {
-		margin: 0px 17px 0 0;
-		position: relative;
-		top: -49px; 
-	
-	}
-    
+
+
+/* SUPPORTERS STYLES LANDSCAPE */  
+ 
+  	.supporters { height: 497px; width: 997px; }
+	#supporters_main { height: 367px;  width: 997px; }
+	#supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; }
+	#facebook_likes { height: 328px; width: 409px; top: 78px; }
+	#facebook_header { width: 379px; }
+	#supporters_footer { background-color: #fff; position: relative; height: 91px; width: 867px; padding: 15px 0 0 30px; top: 80px; }
+	#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding: 4px 0px 4px 0px; }
+	#supporters_internal { padding: 20px 0 0 24px; display: inline-block; width: 500px; }
+	#supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
+	#supporters_internal em { color: #e75405; font-weight: bold; }
+	#supporters_count { display: inline-block; float: right; width:420px; top: 35px; position: relative; }
+	#google_plus_count .numbers_small,
+	#facebook_likes_count .numbers_small { position: absolute;  bottom: -41px; right: 5px; }    
 
 
 
@@ -463,12 +476,7 @@ html {
 	    Instagram
 	    -------------------------------------------------- */
 	
-	#instagram {
-	    overflow: hidden;
-	    height: 345px; 
-	    margin: 80px 0px 0px 0px;
-	    width: 909px; 
-	}
+	#instagram { overflow: hidden; height: 345px;  margin: 80px 0px 0px 0px; width: 909px; }
 	
 	#instagram_footer { position: relative; height: 108px; padding: 12px 0px 0px 30px; width: 909px; }
 	#instagram_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
@@ -524,426 +532,87 @@ html {
 	.instagram_photo_count {
 		margin: 31px 0px 0px 0px; 
 	}
-	
-	
-	/*	--------------------------------------------------
-	    Supporters
-	    -------------------------------------------------- */
-	.supporters { height: 497px; width: 997px; }
-	#supporters_main { height: 367px;  width: 997px; }
-	
-	
-	#supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; }
-	
-	#google_pluses { height: 328px; width: 409px; margin: 10px 0px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 78px; } 
-	#google_pluses li { float: left; }
-	
-	#google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 379px;  }
-	
-	#google_cta { margin: 27px 0px 0px 0px; width: 49px;  width: 39px;  }
-	
-	
-	
-	#facebook_likes { height: 328px; width: 409px; margin: 10px 10px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 78px; }
-	
-	#facebook_likes li {float: left;}
-	
-	#facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 379px; }
-	
-	#facebook_like_button { height: 96px; }
-	
-	#facebook_cta { margin: 27px 0px 0px 0px; width: 51px; overflow: hidden; }
-	
 
 
-
-	#supporters_footer { background-color: #fff; position: relative; height: 91px; width: 867px; padding: 15px 0 0 30px; top: 80px; }
-	
-	#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding: 4px 0px 4px 0px; }
-	
-	#supporters_internal { padding: 20px 0 0 24px; display: inline-block; width: 500px; }
-	#supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
-	#supporters_internal em { color: #e75405; font-weight: bold; }
-	
-	#supporters_count { display: inline-block; float: right; width:420px; top: 35px; position: relative; }
-	
-	
-	#google_plus_count { width: 380px; position: relative; float: right;  top: -17px; }
-	
-	#google_plus_count .numbers_small,
-	#facebook_likes_count .numbers_small {
-	    position: absolute;
-	    bottom: -41px;
-	    right: 5px;
-	}
-	
-	#google_count { /*top: -18px;*/ position: relative; }
-	
-	#facebook_likes_count { width: 380px; position: relative; float: right; top: -34px;  }
-	#facebook_count { /*top: -18px;*/ position: relative; }
-	
-	
-	
-	#gfb_count_bg {margin: 26px 30px 0px 0px; text-align: right; }
-	
-	/*.gfb_count { position: relative; right: 30px; top: -49px; }*/
-	
-	#supporters_count .numbers_medium, 
-	#gfb_count .numbers_medium {
-	    position: absolute;
-	    bottom: 21px;
-	    right: 39px;
-	}
-	
-	#plus_post {
-	position: relative; 
-	top: 35px;
-	height: 172px; 
-	width: 370px;
-	border: #ccc 1px solid;
-	padding: 10px 0px 0px 10px;   
-	 
-}
-
-#plus_post div img {float: left; margin: 0px 10px 10px 0px; width: 80%;  }
-
-#plus_post div h3 { 
-	padding-left: 5px; 
-	font-size: 18px;
-    font-family: 'FranklinGothicURW-HeaIta'; 
-    font-weight: normal; 
-    font-style: normal; 
-    color: #e75405; 
-    text-decoration: none; }
-    
-#plus_post div p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 220px; margin-right: 5px;  float: right; text-align: left; position: relative; }
-	
-#plus_post div span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 12px; bottom: 5px; position: absolute;  }	
-
-
-
-
-
+ 
 } /* close media query landscape */
 
 
 
 /* ============  PORTRAIT STYLES ========================================================================================================================================================== */
 
-
-
- @media only screen and (orientation : portrait) {
+@media only screen and (orientation : portrait) {
  
- 
- 	 #border {
- 	    background: url(../images/screen-border.png) scroll no-repeat;
-        min-height: 795px;
-
-    }
+	/* BACKGROUND AND HEADER STYLES LANDSCAPE */  
     
-    #container {
-    	min-height: 720px;
-
-    }
-
+ 	#border { background: url(../images/screen-border.png) scroll no-repeat; min-height: 795px; }
+    #container { min-height: 720px; }
+    #wrap { width: 890px; height: 1000px; top: 59px; left: 47px; }
+    #boardcontainer { height: 125px; }
+    #boardcontainer .left .headlineLargeGray { font-size: 60px; }
+	#boardcontainer .left { margin-top: 24px; }
+	#boardcontainer .right { top: 30px; left: 30px; }
+	#boardcontainer .tabs { top: 58px; width: 668px; font-size: 30px; }
+	#boardcontainer .tabs a.active { font-size: 30px; }
+	#boardcontainer .tabs dl, dd { font-size: 30px; }
+	#boardcontainer .sharebutton {  top: 56px; left: 708px; }
+	
+	
+	
+	/* MOVEMENT STYLES PORTRAIT */   
     
-    #wrap {
-	    width: 890px;
-	    height: 1000px;
-	    position: relative;
-	    background: url(../images/bg-texture-dark.png) scroll repeat;
-	    overflow: hidden;
-	    top: 59px;
-		left: 47px;
-		
-	}
-    
-    #boardcontainer { 
-	    background: url(../images/bg-texture-light.png) scroll repeat;
-	    width: 890px; 
-	    height: 125px;
-	    top: 0px;
-	    left: 0px;
-	    position: absolute; 
-	    margin-top: 0; 
-	    margin-left: 0; 
-	    overflow: visible;
-	    z-index: 10;
-    
-    }
-    
-    #boardcontainer .left .headlineLargeGray {
-		font-size: 60px;
-	}
-	
-	#boardcontainer .left {
-		float: left;
-	    margin-top: 24px;
-	    margin-left: 30px;
-	    display:block;
-	}
-	
-	#boardcontainer .right {
-	    position: absolute;
-	    width: 394px;
-	    height: 70px;
-	    top: 30px;
-	    left: 30px;
-	    overflow: visible;
-	}
-	
-	#boardcontainer .rightWrap {
-		position: relative;
-		width: 100%;
-		height: 100%;
-	    overflow: visible;
-	}
-	
-	#boardcontainer .tabs {
-		position: absolute;
-		top: 58px;
-		left: 0px;
-		width: 668px;
-		height: 28px;
-		font-size: 30px;
-	}
-	
-	#boardcontainer .tabs a.active {
-		font-size: 30px;
-	}
-	
-	#boardcontainer .tabs dl, dd {
-		font-size: 30px;
-	}
-	
-	
-	#boardcontainer .sharebutton {
-		position: absolute;
-		top: 56px;
-		left: 708px;
-		width: 109px;
-		height: 22px;
-		background: url(../images/share.png) scroll 0 0 no-repeat;
-		background-size: 109px 22px;
-		overflow: hidden;
-	}
-	
-	#boardcontainer .expanded {
-	    width: 109px;
-	    height: 156px;
-	    background: url(../images/share_hover.png) scroll 0 0 no-repeat;
-	    background-size: 109px 156px;
-	}
-	
-		
-/* MOVEMENT STYLES PORTRAIT */   
-    
-    #movement_left { width: 512px; height: 700px; float: left; margin: 10px 10px 0px 0px; position: relative; top: 133px; background: none;  }
-
-	
-	#movement_header { position: relative; height: 187px; padding: 30px 0px 0px 30px; width: 870px; margin-bottom: 10px; }
-	#movement_header li div span { border-bottom: #cbcbcb 2px solid; margin: 4px 0px 4px 0px; font-size: 45px;  padding-right: 30px; }
-	#movement_header li p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 730px; margin: 25px 0px 0px 25px; }
-	#movement_header li p a { color: #e75405; font-weight: bold;  }
-	
-	
+    #movement_left {height: 700px; top: 133px; background: none; }
+	#movement_header { height: 187px; width: 870px; margin-bottom: 10px; }
+	#movement_header li div span { font-size: 45px;  padding-right: 30px; }
+	#movement_header li p { width: 730px; }
 	#movement_steps { position: relative; }
-	#movement_steps li { position: relative; height: 142px; width: 472px; float: left; padding: 65px 0px 0px 40px; margin-bottom: 10px;  }
-	#movement_steps li:first-child img { margin-top: 20px; }
-	#movement_steps li:nth-child(2) img { margin-top: 20px; } 
-/* 	#movement_steps li:nth-child(3) { height: 77px; }  */
-	
-	/* #movement_steps li:nth-child(2) { padding: 25px 0px 0px 0px; height: 77px; } */
-	
-	
-	#movement_steps li:nth-child(1) .headline { top: -41px; width: 200px; } 
+	#movement_steps li { height: 142px; width: 472px;  padding: 65px 0px 0px 40px; margin-bottom: 10px;  }	
+	#movement_steps li:nth-child(1) .headline { width: 200px; } 
 	#movement_steps li:nth-child(2) .headline { top: -43px; }
 	#movement_steps li:nth-child(3) .headline { top: -39px; } 
-	
-	#movement_steps img { margin-top: 15px; }
-	#movement_steps .headline { position: relative; float: left; margin-left: 45px; top: -25px; width: 185px; } 
-	
-	#movement_steps h3 { font-size: 21px; font-family: 'FranklinGothicURW-HeaIta'; font-weight: normal; font-style: normal; color: #666666; text-decoration: none; }
-	#movement_steps p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 400px; }
-	#movement_steps p a { color: #e75405; font-weight: bold; }
-	
+	#movement_steps .headline { width: 185px; } 
+	#movement_steps p { width: 400px; }
 	.right { position: absolute; }
 	.right .facebook { margin-left: 45px;}
 	.right .google { margin-left: 90px;}
-	
-	#poster { background-color: #fff; margin-top: 10px; width: 379px; height: 560px; position: relative; float: right;  top: 361px; overflow: hidden; padding-top: 80px;  }
+	#poster { background-color: #fff; height: 560px; top: 361px; overflow: hidden; padding-top: 80px;  }
 			
 
     
- /* TWITTER STYLES PORTRAIT */   
+	/* TWITTER STYLES PORTRAIT */   
     
-   
-    .twitter { height: 627px; position: relative; overflow: hidden; margin: 10px 0px; width: 909px; top: 135px;}
-	/* #twitter_overlay { background: url(../images/twitter_overlay.png) top left no-repeat; display: block; height: 347px; position: absolute; width: 996px; z-index: 3;}    */
-/* 	#twitter_overlay_top { background: url(../images/twitter_overlay_top.png) top left no-repeat; display: block; height: 127px; position: absolute; width:889px; z-index: 3; top: 145px; left: 9px; } */
-	#twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 136px; position: absolute; width: 889px; bottom: 255px; z-index: 3; left: 9px } 
-	  
-	
-	.tweet_list { position: relative; top: 0px; }
-	
-	.unique_tweet { border-bottom: #ccc 2px solid; height: 143px; margin: 0 34px 0 34px; padding: 34px 0 0 0;  position: relative; width: 836px; }
-	.unique_tweet li { float: left; list-style: none; position: relative; }
-	
-	.tweet_info { color: #e75405; font-family: Helvetica, Arial, sans-serif;  font-weight: bold;  font-size: 18px; height: 102px;  margin: 0 0 0 30px; padding: 0 0 0 0;  width: 215px; overflow: hidden; position: relative; }
-	.tweet_info ul li { float: left; position: relative; }
-	.avatar { margin-right: 7px; }
-	.tweet_avatar { float: left; height: 48px; width: 48px; }
-	.screenname { position: relative;  clear: right; width: 158px;}
-	.username { float: left; }
-	.tweet_user { color: #858585; font-weight: normal; text-decoration: none; font-family: Arial, Helvetica, sans-serif;  font-size: 12px; }
-	
-	
-	.tweet{ height: 102px; width: 590px; }	
-	.tweet:before { content: url(../images/quote_open.png); float: left; position: relative; width: 25px; height: 17px; } 
-	.tweet_text:after { content: url(../images/quote_close.png); position: relative; width: 25px; height: 17px; padding-left: 25px;}
-	
-	.tweet_text { color: #858585; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; margin: 0 0 0 50px; line-height: 26px; width: 460px; position: absolute; float: right; }
-	.external_link { color: #a4bc27; text-decoration: underline; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
-	.tweet_hashtag { color: #e75405; text-decoration: none;  font: Helvetica, Arial, sans-serif; }
-	.at_user { color: #a4bc27; text-decoration: none; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
-	
-	
-	#twitter_footer { position: relative; height: 210px; padding: 50px 0px 0px 40px; width: 868px; top: 135px; }
-	/* #twitter_footer #twitter_count { position: absolute; width: 300px; top: 0; right: 0px; } */
-	#twitter_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 233px; font-size: 45px; }
-	
-	#twitter_headline {
-		width: 765px; 
-	}
-	
-	
-	
-	#social { position: relative; float: left; padding: 20px 0 0 36px; width: 441px}
-	#social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 18px; width: 270px; }
-	#social .links { position: relative; float: left; top: 30px; }
-	#social .links li { position: relative; float: left; }
-	/*
-	#social .links a { text-decoration: none; }
-	#social .links span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; position: relative; top: -11px; }
-	*/
-	
-	/* #social img { margin-right: 7px; } */
+    .twitter { height: 627px;   top: 135px;}
+	#twitter_overlay_bottom  {height: 136px;  width: 889px; bottom: 250px; }   
+	.tweet_list { top: 0px; }
+	.unique_tweet { height: 143px; }
+	.tweet:after { padding-left: 25px;}
+	#twitter_footer { height: 190px; padding: 50px 0px 0px 40px; top: 135px; }
+	#twitter_footer li div span { padding-right: 233px; font-size: 45px; }
+	#twitter_headline { width: 765px; }
+	#social { padding: 20px 0 0 36px; width: 441px}
+	#social p { font-size: 18px; width: 270px; }
+	#social .links { top: 30px; float: left; }
 	#tweet { width: 86px; }
+	#twitter_number_count { top: 15px; right: 40px; }
+
 	
 	
-	
-	#twitter_number_count {
-		height: 130px; 
-		width: 379px;
-		float: right;
-		position: relative;
-		top: 15px;
-		text-align: right;
-		right: 40px; 
-	}
-	
-	
-	#twitter_count_bg {
-		margin: 23px 25px 0 0;
-		
-	}
-	
-	.tweets_count {
-		margin: 0px 17px 0 0;
-		position: relative;
-		top: -49px; 
-	
-	}
-	
-	
- /* SUPPORTERS STYLES PORTRAIT */ 
+	/* SUPPORTERS STYLES PORTRAIT */ 
   
 	.supporters { height: 997px; width: 909px; }
-	
 	#supporters_main { height: 667px;  width: 909px; }
-	
-/* 	#supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; } */
-	
-	#facebook_likes { height: 625px; width: 410px; margin: 10px 10px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 135px; }
-	#facebook_likes li { float: left; }
-	#facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 380px; }
-	#facebook_like_button { height: 96px; }
-	#facebook_cta { margin: 27px 0px 0px 0px; width: 51px; overflow: hidden; }
-	
+	#facebook_likes { height: 625px; width: 410px; top: 135px; }
+	#facebook_header { width: 380px; }
 	#facebook_likes_count { width: 385px; position: relative; float: right; top: -34px;  }
 	#facebook_count { /*top: -18px;*/ position: relative; }
-	
-	#google_pluses { height: 625px; width: 410px; margin: 10px 0px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 135px;  } 
-	#google_pluses li { float: left; }
-	#google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 379px;  }
-	#google_cta { margin: 27px 0px 0px 0px; width: 49px;  width: 39px;  }
-
-	#google_plus_count { width: 385px; position: relative; float: right;  top: -17px; }
-	#google_count { /*top: -18px;*/ position: relative; }
-
 	#supporters_footer { position: relative; height: 158px; padding: 50px 0px 0px 40px; width: 868px; top: 135px; }
-	
 	#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 183px; font-size: 45px;  }
-	
 	#supporters_internal { padding: 20px 0 0 24px; display: inline-block; width: 500px; }
 	#supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 18px; }	
 	#supporters_internal em { color: #e75405; font-weight: bold; }
-	
 	#supporters_count { display: inline-block; float: right; width:420px; top: 90px; position: relative; }
-	
-	
-	
-	#google_plus_count .numbers_small,
-	#facebook_likes_count .numbers_small {
-	    position: absolute;
-	    bottom: -41px;
-	    right: 5px;
-	}
-	
-	
 
-	
 
-	
-	
-	
-	#gfb_count_bg {margin: 26px 30px 0px 0px; text-align: right; }
-	
-	/*.gfb_count { position: relative; right: 30px; top: -49px; }*/
-	
-	#supporters_count .numbers_medium, 
-	#gfb_count .numbers_medium {
-	    position: absolute;
-	    bottom: 21px;
-	    right: 39px;
-	}
-	
-	#plus_post {
-	position: relative; 
-	top: 35px;
-	height: 400px; 
-	width: 370px;
-	border: #ccc 1px solid;
-	padding: 10px 0px 0px 10px;   
-	 
-}
-
-#plus_post div img {float: left; margin: 0px 10px 10px 0px; height: 80%;  }
-
-#plus_post div h3 { 
-	padding-left: 5px; 
-	font-size: 18px;
-    font-family: 'FranklinGothicURW-HeaIta'; 
-    font-weight: normal; 
-    font-style: normal; 
-    color: #e75405; 
-    text-decoration: none; }
-    
-#plus_post div p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 220px; margin-right: 5px;  float: right; text-align: left; position: relative; }
-	
-#plus_post div span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 12px; bottom: 5px; position: absolute;  }	
-	
-    
 } /* close media query portrait */
 
 
@@ -1343,11 +1012,14 @@ html {
 
 
 
-             
-/* END OF IMPORTED TABLET BACKGROUND STYLES */             
+           
 
 
 
+
+/*==========================================================
+			GLOBAL CSS
+==========================================================*/
 
 
 #intro {
@@ -1366,24 +1038,6 @@ html {
 #header {
 	z-index: 10;
 }
-
-
-/*
-#boardcontainer { 
-    background: url(../images/bg-texture-light.png) scroll repeat;
-    width: 996px; 
-    height: 76px;
-    top: 0px;
-    left: 0px;
-    position: absolute; 
-    margin-top: 0; 
-    margin-left: 0; 
-    overflow: visible;
-    z-index: 10;
-    
-}
-*/
-
 
 
 .sharebutton ul {
@@ -1419,29 +1073,6 @@ html {
 .sharebutton .email {
 	background: url(../images/share_email.png) scroll no-repeat;
 }
-
-
-
-
-
-
-
-
-/*
-#dynamic {
-    width: 996px;
-    height: 497px;
-    position: relative;
-    top: 76px;
-
-    z-index: 1;
-
-}
-*/
-
-
-
-
 
 
 

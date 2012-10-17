@@ -208,24 +208,48 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	background: url(../images/share_fb.png) scroll no-repeat;
 }
 
+.sharebutton .facebook:hover {
+	background: url(../images/share_fb_over.png) scroll no-repeat;
+}
+
 .sharebutton .twitter {
 	background: url(../images/share_twitter.png) scroll no-repeat;
+}
+
+.sharebutton .twitter:hover {
+	background: url(../images/share_twitter_over.png) scroll no-repeat;
 }
 
 .sharebutton .google {
 	background: url(../images/share_google.png) scroll no-repeat;
 }
 
+.sharebutton .google:hover {
+	background: url(../images/share_google_over.png) scroll no-repeat;
+}
+
 .sharebutton .linkedin {
 	background: url(../images/share_linkedin.png) scroll no-repeat;
+}
+
+.sharebutton .linkedin:hover {
+	background: url(../images/share_linkedin_over.png) scroll no-repeat;
 }
 
 .sharebutton .tumblr {
 	background: url(../images/share_tumblr.png) scroll no-repeat;
 }
 
+.sharebutton .tumblr:hover {
+	background: url(../images/share_tumblr_over.png) scroll no-repeat;
+}
+
 .sharebutton .email {
 	background: url(../images/share_email.png) scroll no-repeat;
+}
+
+.sharebutton .email:hover {
+	background: url(../images/share_email_over.png) scroll no-repeat;
 }
 
 
