@@ -192,7 +192,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         sub = new Subscription();
                         
                     <?php if(DEVICE_TYPE != 'phone') : ?>   
-                    $(window).on('intro_loaded', function(evt, data) {    
+                    $(window).on('trigger_scroller', function(evt, data) {    
                         var scroller = new Scroller('.train', 1005);
                     });
                     <?php endif; ?>
@@ -251,7 +251,9 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         
                         var intro = new Intro();
                         intro.init();
-                                           
+                                         
+                    <?php else : ?>
+                        $(window).trigger('trigger_scroller');
                     <?php endif; ?>
 		            
 //                    var nav = new PageNavigation('#wrap');
@@ -349,20 +351,28 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     
             </div><!-- /header -->
             
-            <?php if($_SESSION['sfsuperbowlintro'] && DEVICE_TYPE != 'phone') : ?>
-                
-                <div id="intro">
-                    
-                    <div id="introWrap">
-                        <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_logo.png" id="introLogo" />
-                        <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_logo_big.png" id="introLogoBig" />
-                        <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_headline.png" id="introHeadline" />
-                        <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_copy.png" id="introCopy" />
+            <?php if(DEVICE_TYPE != 'phone') : ?>
+                <?php if($_SESSION['sfsuperbowlintro']) : ?>
+
+                    <div id="intro">
+
+                        <div id="introWrap">
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_logo.png" id="introLogo" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_logo_big.png" id="introLogoBig" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_headline.png" id="introHeadline" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_copy.png" id="introCopy" />
+                        </div>
                     </div>
-                </div>
-		
-                <?php $_SESSION['sfsuperbowlintro'] = false; ?>
+
+                    <?php $_SESSION['sfsuperbowlintro'] = false; ?>
+
+                <?php endif; ?>
+            
+            
+                
             <?php endif; ?>
+            
+                
             
         
             

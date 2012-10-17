@@ -132,11 +132,10 @@ var Intro = function() {
             });
         });
         
-        $(window).trigger('intro_loaded');
+        $(window).trigger('trigger_scroller');
     };
 
     var sequence = function() {
-
 
         delay(fadeInIntroLogoBig, 800);
         delay(fadeOutIntroLogoBig, 2700);
