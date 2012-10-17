@@ -192,8 +192,11 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         sub = new Subscription();
                         
                     <?php if(DEVICE_TYPE != 'phone') : ?>   
-                    $(window).on('trigger_scroller', function(evt, data) {    
-                        var scroller = new Scroller('.train', 1005);
+                    $(window).on('trigger_scroller', function(evt, data) {
+                        var orientation = Math.abs(window.orientation) == 90 ? 'landscape' : 'portrait';
+                        if(orientation == 'landscape') {
+                            var scroller = new Scroller('.train', 1005);
+                        }
                     });
                     <?php endif; ?>
                         
