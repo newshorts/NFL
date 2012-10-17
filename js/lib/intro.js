@@ -131,6 +131,8 @@ var Intro = function() {
                 display: 'none'
             });
         });
+        
+        $(window).trigger('intro_loaded');
     };
 
     var sequence = function() {
