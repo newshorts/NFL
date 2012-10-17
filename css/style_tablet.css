@@ -390,6 +390,7 @@ Numbers
 	
 	.trainCar .tweet_list {
 	    top: 0;
+	    width: 909px;
 	}
 	
 	.trainCompartmentLong {
@@ -401,6 +402,7 @@ Numbers
 	    margin-left: 10px;
 	    margin-right: 10px;
 	    float: left;
+	    overflow: hidden
 	}
 	
 	.trainCompartment {
@@ -450,23 +452,23 @@ Numbers
 	}
 	
 	.smallBoxHeading {
-	    top: 30px;
-	    left: 30px;
+	    top: 18px;
+	    left: 18px;
 	}
 	
 	.smallBoxIcon {
-	    top: 31px;
-	    left: 277px;
+	    top: 18px;
+	    left: 258px;
 	}
 	
 	.smallBoxIconLeft {
-	    top: 31px;
-	    left: 254px;
+	    top: 18px;
+	    left: 238px;
 	}
 	
 	.smallBoxHR {
-	    top: 47px;
-	    left: 28px;
+	    top: 38px;
+	    left: 18px;
 	    width: 268px;
 	
 	}
@@ -889,15 +891,17 @@ Numbers
 
 	#screen {
 	    display: block; 
-	    width: 996px; 
+	    width: 909px; 
 	    height: 492px; 
 	    position: absolute; 
 	    top: 0;
 	    left: 0;
+	    overflow: hidden;
 	}
 	
 	#screen li { 
 	    float: left;
+	    overflow: hidden;
 	}
 	
 	/*#box2:hover, #box3:hover, #box4:hover  {
@@ -905,7 +909,7 @@ Numbers
 	}*/
 	
 	#box1 { 
-	    width: 996px; 
+	    width: 909px; 
 	    height: 318px; 
 	    position: relative; 
 	    margin: 10px 0px 10px 0px;
@@ -942,7 +946,7 @@ Numbers
 	
 	#box2 {
 	    /*margin: 0px 5px 0px 0px;*/
-	    /*overflow: hidden;*/
+	    /* overflow: hidden; */
 	    /*width: 998px;*/
 	}
 	
@@ -952,7 +956,7 @@ Numbers
 	.trainCompartment .numbers_small{
 	    position: absolute;
 	    bottom: 18px;
-	    right: 29px;
+	    right: 8px;
 	}
 	
 	/* .trainCompartment:hover { background-color: white; } */
@@ -981,22 +985,24 @@ Numbers
 	.trainCompartmentLong {
 	    position: relative;
 	    display: block;
-	    width: 995px;
+	    width: 909px;
 	    height: 155px;
 	    background: url(../images/bg-texture-light.png) scroll repeat;
 	    margin-left: 10px;
 	    margin-right: 10px;
 	    float: left;
+	    overflow: hidden;
 	}
 	
 	.trainCompartment {
 	    float: left;
-	    width: 325px;
+	    width: 296px;
 	    height: 155px;
 	    position: relative;
 	    display: block;
 	    background: url(../images/bg-texture-light.png) scroll repeat;
 	    margin-left: 10px;
+	    overflow: hidden;
 	}
 	
 	.trainCompartment:first-child,
