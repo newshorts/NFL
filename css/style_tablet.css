@@ -1245,7 +1245,7 @@ Numbers
 .numbers_medium .eight { background-position: 0 -810px; }
 .numbers_medium .nine { background-position: 0 -900px; }
 .numbers_medium .comma { background-position: 0 -990px; right: 7px; top: 6px; width: 13px; }
-.numbers_medium .comma_gray { background-position: -45 -990px; right: 7px; top: 6px; width: 13px; }
+.numbers_medium .comma_gray { background-position: -45px -990px; right: 7px; top: 6px; width: 13px; }
 
 
 
@@ -1277,7 +1277,7 @@ Numbers
 .numbers_small .eight { background-position: 0 -648px; }
 .numbers_small .nine { background-position: 0 -720px; }
 .numbers_small .comma { background-position: 0 -792px; right: 2px; top: 7px; width: 13px; }
-.numbers_small .comma_gray { background-position: -30 -792px; right: 7px; top: 6px; width: 13px; }
+.numbers_small .comma_gray { background-position: -30px -792px; right: 7px; top: 6px; width: 13px; }
 
 
 
