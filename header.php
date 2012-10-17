@@ -22,7 +22,6 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
         <link rel="icon" type="image/png" href="<?php echo ROOT; ?>favicon.ico">
-        <meta name = "viewport" content = "width = 480">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="<?php echo ROOT; ?>js/lib/jquery.min.js">\x3C/script>')</script>
         <!--<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>-->
@@ -354,7 +353,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                        
                     </div>
                 </div>
-                
+		
+  
                 
                 
                 <?php $_SESSION['sfsuperbowlintro'] = false; ?>
