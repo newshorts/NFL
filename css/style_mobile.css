@@ -90,7 +90,7 @@ html { }
     
     #border { min-height: 570px; }
     #container { min-height: 565px; }
-    #wrap { width: 1000px; height: 1000px;}
+    #wrap { width: 768px; height: 1000px;}
     #boardcontainer { height: 76px; }
     #boardcontainer .expanded { width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; }
     #boardcontainer .left { margin-top: 18px; }
@@ -103,7 +103,7 @@ html { }
     #movement_left { width: 502px; height: 456px; top: 78px; left: 8px;}
    	#movement_header { width: 468px; height: 137px; padding: 18px 0px 0px 12px; }
 	#movement_header li div span { font-size: 25px; }
-	#movement_header li p { width: 420px; margin; }
+	#movement_header li p { width: 420px; }
 	#movement_steps { padding: 0px 0px 0px 37px; }
 	#movement_steps li { border-bottom: #ccc 2px solid; height: 87px;  width: 427px;  padding: 8px 0px 0px 0px; }
 	#movement_steps li:first-child { border-top: #ccc 2px solid; }
@@ -142,7 +142,7 @@ html { }
 	#movement_header li div span { font-size: 45px;  padding-right: 30px; }
 	#movement_header li p { font-size: 24px; line-height: 27px; width: 730px; }
 	#movement_steps { position: relative; }
-	#movement_steps li { height: 162px; width: 472px;  padding: 45px 0px 0px 40px; margin-bottom: 10px; font-size:  }	
+	#movement_steps li { height: 162px; width: 472px;  padding: 45px 0px 0px 40px; margin-bottom: 10px;}	
 	#movement_steps li:nth-child(1) .headline { top: -35px; width: 450px; } 
 	#movement_steps li:nth-child(2) .headline { top: -63px; }
 	#movement_steps li:nth-child(3) .headline { top: -49px; width: 350px; } 
@@ -350,11 +350,6 @@ html { }
 		
 /* END OF NUMBERS */
 
-
-
-
-    
-} /* close media query portrait */
 
 
 
