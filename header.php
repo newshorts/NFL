@@ -181,7 +181,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         $(this).addClass('expanded');
                     }
                 });
-                    
+                
                     // mikes
 //                    if(Modernizr.touch) {
 //                        $('*').on('touchstart touchend', function() {
@@ -191,17 +191,37 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         
                         sub = new Subscription();
                         
+//                        $(window).on('stop_scroller', function() {
+//                            scroller.stop();
+//                        });
+//                        
+//                        $(window).on('start_scroller', function() {
+//                            scroller.stop();
+//                        });
+                        
                     <?php if(DEVICE_TYPE == 'tablet') : ?>  
+                        
                     var scroller;
                     $(window).on('trigger_scroller', function(evt, data) {
-                        var orientation = Math.abs(window.orientation) == 90 ? 'landscape' : 'portrait';
-                        if(orientation == 'landscape') {
-                            console.log('view: ' + orientation + 'calling scroller')
-                            scroller = new Scroller('.train', 1005);
-                        } else {
-                            console.log('view: ' + orientation + 'not calling scroller')
-                        }
+//                        var orientation = Math.abs(window.orientation) == 90 ? 'landscape' : 'portrait';
+//                        if(orientation == 'landscape') {
+//                            console.log('view: ' + orientation + 'calling scroller')
+//                            scroller = new Scroller('.train', 1005);
+//                        } else {
+//                            console.log('view: ' + orientation + 'not calling scroller')
+//                        }
+
+                        scroller = new Scroller('.train', 1005);
                     });
+                    
+//                    $(window).on('orientationchange resize', function(evt) {
+//                        var orientation = Math.abs(window.orientation) == 90 ? 'landscape' : 'portrait';
+//                        if(orientation == 'portrait') {
+//                            $(window).trigger('stop_scroller');
+//                        } else {
+//                            $(window).trigger('start_scroller');
+//                        }
+//                    });
                     <?php endif; ?>
                         
                     <?php if(DEVICE_TYPE == 'computer') : ?>  

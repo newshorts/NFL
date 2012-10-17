@@ -5,6 +5,7 @@ var Scroller = Class.extend({
     cars: {},
     alternate: -1,
     dist: 0,
+    on: true,
     
     
     init: function(ul, dist) {
@@ -15,6 +16,28 @@ var Scroller = Class.extend({
         
         this.dist = dist;
         
+        // events
+        var self = this;
+        
+        $(window).on('stop_scroller', function() {
+            self.stop();
+        });
+        
+        $(window).on('start_scroller', function() {
+            self.start();
+        });
+        
+        $(window).on('orientationchange', function(evt) {
+            var orientation = Math.abs(window.orientation) == 90 ? 'landscape' : 'portrait';
+            
+            if(orientation == 'portrait') {
+                self.stop();
+            } else {
+                self.start();
+            }
+        });
+        
+        // setup
         this.setPositions();
         
         this.ticker();
@@ -51,8 +74,10 @@ var Scroller = Class.extend({
         var self = this;
         
         setInterval(function() {
-            self.moveLeft();
-            this.alternate *= -1;
+            if(self.on) {
+                self.moveLeft();
+                this.alternate *= -1;
+            }
         }, 5000);
     },
     
@@ -150,5 +175,13 @@ var Scroller = Class.extend({
     
     getInstagrams: function() {
         
+    },
+    
+    stop: function() {
+        this.on = false;
+    },
+    
+    start: function() {
+        this.on = true;
     }
 });
