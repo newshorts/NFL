@@ -72,15 +72,19 @@ html { }
 
 #movement_steps .headline { position: relative; float: left; margin-left: 45px; top: -25px; }
 
-#movement_steps h3 { font-size: 21px; font-family: 'FranklinGothicURW-HeaIta'; font-weight: normal; font-style: normal; color: #666666; text-decoration: none; }
+#movement_steps h3 { font-size: 50px; font-family: 'FranklinGothicURW-HeaIta'; font-weight: normal; font-style: normal; color: #666666; text-decoration: none; line-height: 55px; }
 
-#movement_steps p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+#movement_steps p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 36px; line-height: 41px; }
 
 #movement_steps p a { color: #e75405; font-weight: bold; }
 	
-#poster { margin-top: 10px; width: 468px; position: relative; /*float: right;*/ overflow: hidden; background: url(../images/bg-texture-light.png) scroll repeat; text-align: center; }
+#poster { margin-top: 10px; width: 100%; position: relative; /*float: right;*/ overflow: hidden; background: url(../images/bg-texture-light.png) scroll repeat; text-align: center; }
 
-#poster img { margin-top: 35px; }
+#poster img { margin: 35px 0; }
+
+#movement_mobile #movement_header { margin-top: 10px; }
+
+#movement_mobile #movement_steps { margin-top: 10px; }
 
 
  
@@ -90,7 +94,7 @@ html { }
  /* BACKGROUND AND HEADER STYLES LANDSCAPE */      
     
     #container { min-height: 480px; }
-    #wrap { width: 100%; height: 1000px;}
+    #wrap { width: 100%; height: 2000px;}
     #boardcontainer { height: 150px; }
 /*     #boardcontainer .expanded { width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; } */
     #boardcontainer .left { margin-top: 18px; }
@@ -103,13 +107,13 @@ html { }
  /* MOVEMENT STYLES LANDSCAPE */   
      
         #movement_left { width: 502px; height: 456px; top: 78px; left: 8px;}
-   	#movement_header { width: 468px; height: 137px; padding: 18px 0px 0px 0px; }
+   	#movement_header { width: 100%; height: 137px; padding: 18px 0px 0px 0px; }
 	#movement_header li div span { font-size: 25px; }
 	#movement_header li p { width: 420px; }
 	/*#movement_steps { padding: 0px 0px 0px 37px; }*/
-	#movement_steps li { border-bottom: #ccc 2px solid; height: 87px;  width: 468px;  padding: 8px 0px 0px 0px; }
+	#movement_steps li { border-bottom: #ccc 2px solid; /*height: 87px;*/  width: 100%;  padding: 8px 0px 0px 0px; }
 	/*#movement_steps li:first-child { border-top: #ccc 2px solid; }*/
-	#movement_steps li:nth-child(3) { height: 77px; } 
+	/*#movement_steps li:nth-child(3) { height: 77px; }*/ 
 	#movement_steps li:nth-child(2) .headline { top: -33px; }
 	#movement_steps li:nth-child(3) .headline { top: -29px; } 
 	.right { float: right; position: relative; right: -135px; top: -40px; margin: 0 0 0 10px;  }
@@ -147,11 +151,11 @@ html { }
 	/* MOVEMENT STYLES PORTRAIT */   
     
         #movement_left { height: 700px; top: 133px; background: none; }
-	#movement_header { height: 187px; width: 870px; margin-bottom: 10px; padding-top: 40px;  }
+	#movement_header { height: 187px; width: 100%; margin-top: 10px; margin-bottom: 10px; /*padding-top: 40px;*/  }
 	#movement_header li div span { font-size: 45px;  padding-right: 30px; }
 	#movement_header li p { font-size: 24px; line-height: 27px; width: 730px; }
 	#movement_steps { position: relative; }
-	#movement_steps li { height: 162px; width: 472px;  padding: 45px 0px 0px 40px; margin-bottom: 10px;}	
+	#movement_steps li { /*height: 162px;*/ width: 100%;  padding: 45px 0px 0px 40px; margin-bottom: 10px; margin-top: 10px;}	
 	#movement_steps li:nth-child(1) .headline { top: -35px; width: 450px; } 
 	#movement_steps li:nth-child(2) .headline { top: -63px; }
 	#movement_steps li:nth-child(3) .headline { top: -49px; width: 350px; } 
@@ -161,7 +165,7 @@ html { }
 	.right { position: absolute; left: 5px; bottom: -40px;  }
 	.right .facebook { margin-left: 45px; }
 	.right .google { margin-left: 90px; }
-	#poster { background-color: #fff; height: 560px; top: 361px; overflow: hidden; padding-top: 80px;  }
+	#poster { background-color: #fff; /*height: 560px;*/ margin-top: 10px; overflow: hidden; padding-top: 80px;  }
 
 
 	#box1 { width: 100%; height: 318px; position: relative; top: 370px; }
@@ -184,7 +188,7 @@ html { }
 	#screen {
 	    display: block; 
 	    width: 100%; 
-	    height: 100%%; 
+	    height: 100%; 
 	    position: absolute; 
 	    top: 0;
 	    left: 0;
@@ -559,13 +563,7 @@ html { }
     MOVEMENT
     -------------------------------------------------- */
 
-#movement_mobile #movement_header {
-    margin-top: 66px;
-}
 
-#movement_mobile #movement_steps {
-    margin-top: 10px;
-}
 
 
 

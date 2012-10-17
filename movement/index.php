@@ -7,7 +7,7 @@
     </div>
 <?php else : ?>
     <div id="dynamic">
-        <?php include('movement-mobile.php'); ?>
+        <?php include('movement.php'); ?>
     </div>
 <?php endif; ?>
 

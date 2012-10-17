@@ -28,6 +28,9 @@ var GoogleStatusTracker = SocialTracker.extend({
         
         var entry = this.entries[0];
         
+        console.log('entry coming next')
+        console.dir(entry)
+        
         if(typeof entry.content != "undefined") {
             this.post.content = entry.content;
         }
@@ -111,7 +114,7 @@ var GoogleStatusTracker = SocialTracker.extend({
         var russellFormat =             '<div>';
             russellFormat +=                media;
             russellFormat +=                '<h3>' + this.post.title + '</h3>';
-            russellFormat +=                '<span>' + this.post.date + '</span>';
+//            russellFormat +=                '<span>' + this.post.date + '</span>';
             russellFormat +=                '<p>' + this.post.content + '</p>';
             russellFormat +=                article;
             russellFormat +=            '</div>';
