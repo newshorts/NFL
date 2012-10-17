@@ -155,6 +155,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         
         <?php elseif(strpos($request, 'supporters')): ?>
         
+            <script src="<?php echo ROOT; ?>js/lib/pretty.js"></script>
+            <script src="<?php echo ROOT; ?>js/lib/date.js"></script>
             <script src="<?php echo ROOT; ?>js/lib/jquery.shorten.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/googleTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js"></script>

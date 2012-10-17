@@ -86,6 +86,10 @@ var GoogleStatusTracker = SocialTracker.extend({
             this.post.attachmentType = attachment.objectType;
         }
         
+        if(typeof attachment.plusoners != "undefined") {
+            this.post.attachmentPluses = attachment.plusoners.totalItems;
+        }
+        
         console.log('posting to media format')
         console.dir(this.post)
         
@@ -95,29 +99,29 @@ var GoogleStatusTracker = SocialTracker.extend({
     
     formatMedia: function() {
         
+        var entry = this.entries[0];
+        
         console.dir(this.post.attachmentType);
         
-        var media = ''
-        if(this.post.attachmentType == 'photo' || this.post.attachmentType == 'video') {
-            media = '<img src="'+this.post.attachmentImage+'" alt="Plus Image Here..." />';
+        var media = '';
+        if(entry.object.attachments[1].image.url) {
+            media = '<img src="'+entry.object.attachments[1].image.url+'" alt="Plus Image Here..." />';
         }
-        
-        var article = '';
-        
-        if(this.post.attachmentType == 'article') {
-            article +=                      '<div>';
-            article +=                          '<h4><a href="'+this.post.attachmentLink+'">' + this.post.attachmentTitle + '</a></h4>';
-            article +=                          '<p>'+this.post.attachmentContent+'</p>';
-            article +=                      '</div>';
-        }
-        
-        var russellFormat =             '<div>';
-            russellFormat +=                media;
-            russellFormat +=                '<h3>' + this.post.title + '</h3>';
-            russellFormat +=                '<span>' + this.post.date + '</span>';
-            russellFormat +=                '<p>' + this.post.content + '</p>';
-            russellFormat +=                article;
-            russellFormat +=            '</div>';
+            
+        var post =          '<ul>';
+            post +=             '<li><h3>'+entry.title+'</h3></li>';
+            post +=         '</ul>';
+            post +=         '<ul>';
+            post +=             '<li><span>'+media+'<span></li>';
+            post +=             '<li><h4>' + entry.object.attachments[0].displayName + '</h4></li>';
+            post +=             '<li><p>'+entry.object.attachments[0].content+'</p></li>';
+            post +=         '</ul>';
+            post +=         '<ul>';
+            post +=             (entry.plusoners > 0) ? '<li><span># of reccomendations</span></li>' : '';
+            post +=             '<li><span>' + prettyDate(entry.published) + '</span></li>';
+            post +=         '</ul>';
+            
+            
         
 //        if(this.post.attachmentType == 'photo') {
 //            $('#plus_post > div').append('<img src="'+this.post.attachmentImage+'" alt="Plus Image Here..." />');
@@ -144,7 +148,7 @@ var GoogleStatusTracker = SocialTracker.extend({
 //            return;
 //        }
         
-        $('#plus_post').append(russellFormat);
+        $('#plus_post').append(post);
         
         console.log('unable to post google status');
         return;
