@@ -478,12 +478,12 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
   
 	.supporters { height: 997px; width: 909px; }
 	#supporters_main { height: 667px;  width: 909px; }
-	#facebook_likes { height: 625px; width: 410px; top: 135px; }
+	#facebook_likes { width: 358px; height: 625px; top: 135px; }
 	#facebook_header { width: 380px; }
 	#facebook_likes_count { width: 385px; position: relative; float: right; top: -34px;  }
 	#facebook_count { /*top: -18px;*/ position: relative; }
 	
-	#google_pluses { height: 625px; width: 410px; top: 135px;}
+	#google_pluses { width: 358px; height: 625px; top: 135px;}
 	
 	#supporters_footer { position: relative; height: 158px; padding: 50px 0px 0px 40px; width: 868px; top: 135px; }
 	#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 183px; font-size: 45px;  }
