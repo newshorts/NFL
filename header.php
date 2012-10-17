@@ -22,7 +22,6 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
         <link rel="icon" type="image/png" href="<?php echo ROOT; ?>favicon.ico">
-        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="<?php echo ROOT; ?>js/lib/jquery.min.js">\x3C/script>')</script>
         <!--<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>-->
@@ -132,7 +131,12 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         
         <?php if(strpos($request, 'buzz')): ?>
         
-            <script src="<?php echo ROOT; ?>js/lib/scroller.js"></script>
+            <?php if(DEVICE_TYPE != 'phone') : ?>
+                <!-- no scroller for mobile -->
+                <script src="<?php echo ROOT; ?>js/lib/scroller.js"></script>
+            <?php endif; ?>
+            
+            <script src="<?php echo ROOT; ?>js/lib/intro.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/totalTracker.js"></script>
@@ -141,6 +145,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <?php elseif(strpos($request, 'instagram')): ?>
         
             <script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>
+            <!--<script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>-->
         
         <?php elseif(strpos($request, 'tweets')): ?>
         
@@ -150,6 +155,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         
         <?php elseif(strpos($request, 'supporters')): ?>
         
+            <script src="<?php echo ROOT; ?>js/lib/pretty.js"></script>
+            <script src="<?php echo ROOT; ?>js/lib/date.js"></script>
             <script src="<?php echo ROOT; ?>js/lib/jquery.shorten.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/googleTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js"></script>
@@ -166,8 +173,9 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
             (function($) {
                 $(window).load(function() {
                     
-                $('.sharebutton').on('click touchstart', function() {
+                $('.sharebutton').on('click touchstart touchend', function() {
                     if($(this).hasClass('expanded')) {
+                        var self = this;
                         $(this).removeClass('expanded');
                     } else {
                         $(this).addClass('expanded');
@@ -176,32 +184,55 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     
                     // mikes
 //                    if(Modernizr.touch) {
-//                        $('*').on('touchstart', function() {
+//                        $('*').on('touchstart touchend', function() {
 //                            $(this).trigger('click');
 //                        });
 //                    }
                         
                         sub = new Subscription();
                         
+                    <?php if(DEVICE_TYPE != 'phone') : ?>   
+                    $(window).on('trigger_scroller', function(evt, data) {
+                        var orientation = Math.abs(window.orientation) == 90 ? 'landscape' : 'portrait';
+                        if(orientation == 'landscape') {
+                            var scroller = new Scroller('.train', 1005);
+                        }
+                    });
+                    <?php endif; ?>
+                        
                     <?php if(strpos($request, 'buzz')): ?>
-                    
-                        var scroller = new Scroller('.train', 1005);
-                        var total = new TotalTracker('#total');
-                        var It = new InstagramTracker('#instagram_photo_count');
-                        var tt = new TwitterTracker('#twitter_count');
-                        var gfb = new GfbTracker('#gfb_count');
                         
-                        var It = new InstagramTracker('#instagram_photo_count1');
-                        var tt = new TwitterTracker('#twitter_count1');
-                        var gfb = new GfbTracker('#gfb_count1');
+                        <?php if(DEVICE_TYPE == 'phone') : ?>
+                            var total = new TotalTracker('#total');
+                            var It = new InstagramTracker('#instagram_photo_count');
+                            var tt = new TwitterTracker('#twitter_count');
+                            var gfb = new GfbTracker('#gfb_count');
+                        <?php else : ?>
+                            
+                            var total = new TotalTracker('#total');
+                            var It = new InstagramTracker('#instagram_photo_count');
+                            var tt = new TwitterTracker('#twitter_count');
+                            var gfb = new GfbTracker('#gfb_count');
+
+                            var It = new InstagramTracker('#instagram_photo_count1');
+                            var tt = new TwitterTracker('#twitter_count1');
+                            var gfb = new GfbTracker('#gfb_count1');
+
+                            var It = new InstagramTracker('#instagram_photo_count2');
+                            var tt = new TwitterTracker('#twitter_count2');
+                            var gfb = new GfbTracker('#gfb_count2');
+
+                            var It = new InstagramTracker('#instagram_photo_count3');
+                            var tt = new TwitterTracker('#twitter_count3');
+                            var gfb = new GfbTracker('#gfb_count3');
+                        <?php endif; ?>
                         
-                        var It = new InstagramTracker('#instagram_photo_count2');
-                        var tt = new TwitterTracker('#twitter_count2');
-                        var gfb = new GfbTracker('#gfb_count2');
+                            
         
                     <?php elseif(strpos($request, 'instagram')): ?>
                         
                         var It = new InstagramTracker('#instagram_photo_count');
+//                        var tt = new TwitterTracker('#t_count');
 
                     <?php elseif(strpos($request, 'tweets')): ?>
                         
@@ -219,159 +250,13 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 
                     <?php endif; ?>
                     
-                    <?php if($_SESSION['sfsuperbowlintro']) : ?>
+                    <?php if($_SESSION['sfsuperbowlintro'] && DEVICE_TYPE != 'phone') : ?>
                         
-//                        setTimeout(function() {
-//                            $('#intro .logo').animate({
-//                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
-//                                'filter': 'alpha(opacity=00)',
-//                                '-moz-opacity': '0.0',
-//                                '-khtml-opacity': '0.0',
-//                                'opacity': '0.0'
-//                            }, 500, function() {
-//                                // complete
-//                                $(this).css({
-//                                    display: 'none'
-//                                });
-//                                
-//                                setTimeout(function() {
-////                                    fadeInText1();
-//                                    sequence();
-//                                }, 200);
-//                            });
-//                        }, 3800);
-                        
-//                        var fadeInText1 = function() {
-//                            $('.text1').animate({
-//                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
-//                                'filter': 'alpha(opacity=100)',
-//                                '-moz-opacity': '1.0',
-//                                '-khtml-opacity': '1.0',
-//                                'opacity': '1.0'
-//                                
-//                            }, 500, function() {
-//                                // complete
-////                                delay(fadeInText2, 1000);
-//                            });
-//                        };
-//                        var fadeInText2 = function() {
-//                            $('.text2').animate({
-//                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
-//                                'filter': 'alpha(opacity=100)',
-//                                '-moz-opacity': '1.0',
-//                                '-khtml-opacity': '1.0',
-//                                'opacity': '1.0'
-//                            }, 500, function() {
-//                                // complete
-////                                delay(fadeInText3);
-//                            });
-//                        };
-//                        var fadeInText3 = function() {
-//                            $('.text3').animate({
-//                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
-//                                'filter': 'alpha(opacity=100)',
-//                                '-moz-opacity': '1.0',
-//                                '-khtml-opacity': '1.0',
-//                                'opacity': '1.0'
-//                            }, 500, function() {
-//                                // complete
-////                                delay(fadeInText4);
-//                            });
-//                        };
-//                        var fadeInText4 = function() {
-//                            $('.text4').animate({
-//                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
-//                                'filter': 'alpha(opacity=100)',
-//                                '-moz-opacity': '1.0',
-//                                '-khtml-opacity': '1.0',
-//                                'opacity': '1.0'
-//                            }, 500, function() {
-//                                // complete
-////                                delay(fadeInText5);
-//                            });
-//                        };
-//                        var fadeInText5 = function() {
-//                            $('.text5').animate({
-//                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
-//                                'filter': 'alpha(opacity=100)',
-//                                '-moz-opacity': '1.0',
-//                                '-khtml-opacity': '1.0',
-//                                'opacity': '1.0'
-//                            }, 500, function() {
-//                                // complete
-//                                delay(fadeOutIntro, 7500);
-//                            });
-//                        };
-//                        var fadeOutIntro = function() {
-//                            $('#intro').animate({
-//                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
-//                                'filter': 'alpha(opacity=00)',
-//                                '-moz-opacity': '0.0',
-//                                '-khtml-opacity': '0.0',
-//                                'opacity': '0.0'
-//                            }, 500, function() {
-//                                // complete
-//                                $(this).css({
-//                                    display: 'none'
-//                                });
-//                            });
-//                        };
-                        
-                        var fadeInHeadline = function() {
-                            $('#introHeadline').animate({
-                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
-                                'filter': 'alpha(opacity=100)',
-                                '-moz-opacity': '1.0',
-                                '-khtml-opacity': '1.0',
-                                'opacity': '1.0'
-                                
-                            }, 500, function() {
-                                // complete
-                            });
-                        };
-                        
-                        var fadeInCopy = function() {
-                            $('#introCopy').animate({
-                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
-                                'filter': 'alpha(opacity=100)',
-                                '-moz-opacity': '1.0',
-                                '-khtml-opacity': '1.0',
-                                'opacity': '1.0'
-                                
-                            }, 500, function() {
-                                // complete
-                            });
-                        };
-                        
-                        var fadeOutIntro = function() {
-                            $('#intro').animate({
-                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
-                                'filter': 'alpha(opacity=00)',
-                                '-moz-opacity': '0.0',
-                                '-khtml-opacity': '0.0',
-                                'opacity': '0.0'
-                            }, 500, function() {
-                                // complete
-                                $(this).css({
-                                    display: 'none'
-                                });
-                            });
-                        };
-                        
-                        var sequence = function() {
-                            delay(fadeInHeadline, 1000);
-                            delay(fadeInCopy, 3000);
-                            delay(fadeOutIntro, 14000);
-                        };
-                        
-                        var delay = function(func, time) {
-                            time = time || 80;
-                            setTimeout(func, time);
-                        }
-                        
-                        setTimeout(sequence, 200);
-                        
-                                               
+                        var intro = new Intro();
+                        intro.init();
+                                         
+                    <?php else : ?>
+                        $(window).trigger('trigger_scroller');
                     <?php endif; ?>
 		            
 //                    var nav = new PageNavigation('#wrap');
@@ -388,7 +273,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <?php elseif(DEVICE_TYPE == 'tablet'): ?>
             <link href="<?php echo ROOT; ?>css/style_tablet.css" type="text/css" rel="stylesheet" />
         <?php elseif(DEVICE_TYPE == 'phone'): ?>
-            <link href="<?php echo ROOT; ?>css/style_phone.css" type="text/css" rel="stylesheet" />
+            <link href="<?php echo ROOT; ?>css/style_mobile.css" type="text/css" rel="stylesheet" />
         <?php endif; ?>
         
         <!-- INTRO ANIMATION -->
@@ -424,7 +309,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
 	  if (d.getElementById(id)) return;
 	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=423821150969335";
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=369308779814605";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
     
@@ -432,8 +317,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <div id="background"></div>
         <div id="wrap">
         
-		<div id="container">
-		<div id="scaffold"></div>
+        <div id="container">
+            <div id="scaffold"></div>
             <div id="header">
                 <div id="boardcontainer">
                     
@@ -444,18 +329,18 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 	                <div class="right">
                             
 	                	<div class="rightWrap">
-                                    <div class="tabs">
-		                        <a href="<?php echo ROOT; ?>buzz" class="ajaxify <?php echo (strpos($request, 'buzz')) ? 'active' : ''; ?>"><?php echo (strpos($request, 'buzz')) ? 'SCOREBOARD' : 'SCOREBOARD'; ?></a> / <a href="<?php echo ROOT; ?>movement" class="ajaxify <?php echo (strpos($request, 'movement')) ? 'active' : ''; ?>" >JOIN THE MOVEMENT</a>
+                            <div class="tabs">
+                        <a href="<?php echo ROOT; ?>buzz" class="ajaxify <?php echo (strpos($request, 'buzz')) ? 'active' : ''; ?>"><?php echo (strpos($request, 'buzz')) ? 'SCOREBOARD' : 'SCOREBOARD'; ?></a> / <a href="<?php echo ROOT; ?>movement" class="ajaxify <?php echo (strpos($request, 'movement')) ? 'active' : ''; ?>" >JOIN THE MOVEMENT</a>
 		                    </div>
 		                    
 		                    <div class="sharebutton">
 
 			                    <ul>
-                                        <li><a class="facebook link" onclick='postToFeed(); return false;'></a><p id='msg'></p></li>
-                                        <li><a class="twitter link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Share%20SFSUPERBOWL%20This%20is%20going%20to%20be%20the%20story"></a></li>
-                                        <li><a class="google link" href="https://plus.google.com/share?url=http://www.sfsuperbowl.com" target="_blank"></a></li>
-                                        <!-- <li><link rel="image_src" href="http://www.labnol.org/screenshot.png" /></li> -->
-                                    </ul>
+                                                <li><a class="facebook link" onclick='postToFeed(); return false;'></a><p id='msg'></p></li>
+                                                <li><a class="twittertweet link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Let&rsquo;s&nbsp;bring&nbsp;the&nbsp;Bowl&nbsp;to&nbsp;the&nbsp;Bay!&nbsp;Show&nbsp;your&nbsp;support.#sfsuperbowl"></a></li>
+                                                <li><a class="google link" href="https://plus.google.com/share?url=http://www.sfsuperbowl.com" target="_blank"></a></li>
+                                                <!-- <li><link rel="image_src" href="http://www.labnol.org/screenshot.png" /></li> -->
+                                            </ul>
 
 		                    </div>
 		                    
@@ -469,33 +354,30 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     
             </div><!-- /header -->
             
-            <?php if($_SESSION['sfsuperbowlintro']) : ?>
-                
-                <div id="intro">
-                    <div id="introWrap">
-                        
-                        <img class="introItem " src="../images/intro_headline.png" id="introHeadline" />
-                        <img class="introItem " src="../images/intro_copy.png" id="introCopy" />
-                        
-                        <!-- text -->
-                        <!--<img src="../images/intro_bg.png" id="introAnimation" />-->
-<!--                        <img class="introCopy text1" src="../images/intro_text1.png" id="introAnimation" />
-                        <img class="introCopy text2" src="../images/intro_text2.png" id="introAnimation" />
-                        <img class="introCopy text3" src="../images/intro_text3.png" id="introAnimation" />
-                        <img class="introCopy text4" src="../images/intro_text4.png" id="introAnimation" />
-                        <img class="introCopy text5" src="../images/intro_text5.png" id="introAnimation" />-->
+            <?php if(DEVICE_TYPE != 'phone') : ?>
+                <?php if($_SESSION['sfsuperbowlintro']) : ?>
 
-                        <!-- logo -->
-<!--                        <img class="logo" src="../images/intro_logo.png" id="introAnimation">-->
+                    <div id="intro">
+
+                        <div id="introWrap">
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_logo.png" id="introLogo" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_logo_big.png" id="introLogoBig" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_headline.png" id="introHeadline" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_copy.png" id="introCopy" />
+                        </div>
                     </div>
-                </div>
+
+                    <?php $_SESSION['sfsuperbowlintro'] = false; ?>
+
+                <?php endif; ?>
+            
+            
                 
-                
-                
-                <?php $_SESSION['sfsuperbowlintro'] = false; ?>
             <?php endif; ?>
             
+                
             
+        
             
             
             

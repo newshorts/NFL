@@ -1,0 +1,93 @@
+<!-- 
+    Author: Mike Newell © 2012
+-->
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <style>
+            
+            .tweet_banner { display: inline-block; width: 1004px; height: 157; position: relative; }
+            
+            .tweet_banner > * { color: #666; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; line-height: 26px; }
+            
+            .tweet_banner a { color: inherit; text-decoration: none; color: #e75405; }
+            
+            .tweet_banner li { float: left; display: inline-block; position: absolute; }
+            
+            .tweet_banner .tweet_profile_img { top: 25%; left: 4%; }
+            
+            .tweet_banner .tweet_profile_img img { width: 83px; height: 83px; }
+            
+            .tweet_banner .tweet_name { top: 25%; left: 13%; }
+            
+            .tweet_banner .tweet_name p { margin-top: 0; margin-bottom: 12px; }
+            
+            .tweet_banner .tweet_name p:last-child {  font-weight: normal;  text-decoration: none;  font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+            
+            .tweet_banner .tweet_name p:last-child a { color: #858585; }
+            
+            .tweet_banner .tweet_content { width: 56%; top: 25%; left: 34%; }
+            
+            .tweet_banner .begin_quote { background: url(../../images/quote_open.png) scroll no-repeat; display: inline-block; position: absolute;  width: 25px;  height: 17px; top: 24px; left: -44px }
+            
+            .tweet_banner .end_quote { background: url(../../images/quote_close.png) scroll 98% 0 no-repeat;  display: inline-block; position: absolute;  width: 45px; height: 17px; white-space: pre; bottom: 26px; right: 0; }
+            
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <ul>
+<!--                <li id="tweet" class="trainCompartmentLong" data-pos="">
+                    <div class="tweet_list">
+                        <ul class="unique_tweet">
+                            <li class="tweet_info">
+                                <ul>
+                                    <li class="avatar">
+                                        <a class="tweet_avatar" href="http://twitter.com/newshorts" target="_blank">
+                                            <img src="http://a0.twimg.com/profile_images/1771921314/profile_normal.jpg" height="48" width="48" alt="newshorts's avatar" title="newshorts's avatar" border="0">
+                                        </a>
+                                    </li>
+                                    <li class="screenname">
+                                        <p>mike</p>
+                                    </li>
+                                    <br />
+                                    <li class="username">
+                                        <a class="tweet_user" href="http://twitter.com/newshorts" target="_blank">@newshorts</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="tweet"> 
+                                <p class="tweet_text">Another tweet from <a href="http://search.twitter.com/search?q=&amp;tag=gspsf&amp;lang=all" class="tweet_hashtag" target="_blank">#gspsf</a> and <a href="http://search.twitter.com/search?q=&amp;tag=cheerfulsundays&amp;lang=all" class="tweet_hashtag" target="_blank">#cheerfulsundays</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>-->
+                <li id="tweet" class="tweet_banner">
+                    <ul class="inner_tweet">
+                        <li class="tweet_profile_img">
+                            <a href="">
+                                <img src="http://a0.twimg.com/profile_images/1771921314/profile_normal.jpg" height="48" width="48" alt="newshorts's avatar" title="newshorts's avatar" border="0">
+                            </a>
+                        </li>
+                        <li class="tweet_name">
+                            <p><a href="http://twitter.com/newshorts" target="_blank">Mike</a></p>
+                            <p><a href="http://twitter.com/newshorts">@newshorts</a></p>
+                        </li>
+                        <li class="tweet_content">
+                            <p class="tweet_text">
+                                <span class="begin_quote"></span>Another tweet from <a href="http://search.twitter.com/search?q=&amp;tag=gspsf&amp;lang=all" class="tweet_hashtag" target="_blank">#gspsf</a> and <a href="http://search.twitter.com/search?q=&amp;tag=cheerfulsundays&amp;lang=all" class="tweet_hashtag" target="_blank">#cheerfulsundays</a><span class="end_quote"></span>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
