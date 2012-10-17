@@ -772,14 +772,33 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 
 #intro {
-    width: 1004px;
-    height: 528px;
-    position: absolute;
+    width: 890px;
+    height: 509px;
+    position: absolute;;
     top: 50%;
     left: 50%;
     margin-left: -501px;
     margin-top: -289px;
     z-index: 20;
+    
+    background: url(../images/bg-texture-light.png) scroll repeat;
+}
+
+#introWrap {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#intro .introItem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 890px;
+}
+
+.hidden {
+    opacity: 0;
 }
 
 
