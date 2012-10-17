@@ -245,9 +245,10 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
         
     /* INTRO ANIMATION */   
 
-    #intro { width: 909px; height: 566px; position: absolute; top: 50%; left: 50%; margin-left: -469px; margin-top: -279px; z-index: 20; background: url(../images/bg-texture-light.png) scroll repeat; }
+    #intro { width: 909px; height: 536px; position: absolute; top: 50%; left: 50%; margin-left: -469px; margin-top: -279px; z-index: 20; background: url(../images/bg-texture-light.png) scroll repeat; }
     #introWrap { position: relative; top: 0; left: 0; }
-    #intro .introItem { position: absolute; top: 0; left: 0; width: 860px; }
+    #intro .introItem { position: absolute; top: 0; left: 0; }
+    #intro img { width: 909px; height: 536px; }
     .hidden { opacity: 0; }
 
 
@@ -451,9 +452,10 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
         
         /* INTRO ANIMATION */   
         
-        #intro { width: 890px; height: 1000px; position: absolute; top: 50%; left: 50%; margin-left: -429px; margin-top: -499px; z-index: 20; background: url(../images/bg-texture-light.png) scroll repeat; text-align: center; vertical-align: middle; }
+        #intro { width: 900px; height: 990px; position: absolute; top: 50%; left: 50%; margin-left: -439px; margin-top: -510px; z-index: 20; background: url(../images/bg-texture-light.png) scroll repeat; text-align: center; vertical-align: middle; }
         #introWrap { position: relative; top: 0; left: 0; }
-        #intro .introItem { position: absolute; top: 0; left: 0; width: 860px; }
+        #intro .introItem { position: absolute; top: 0; left: 0; }
+        #intro img { width: 890px; position: absolute; top: 200px; }
         .hidden { opacity: 0; }
 	
 	
