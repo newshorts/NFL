@@ -295,7 +295,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#twitter_number_count { margin: 0px 18px 0px 0px; float: right; }
 
 	.numbers_medium { margin: -28px 0px 0px 0px; }
-	.tweets_count {	margin: 0px 25px 0 0; position: relative; top: -50px; right: 0; float: right; }
+	.tweets_count {	margin: 0px 18px 0 0; position: relative; top: -50px; right: 0; float: right; }
 
 
 /* SUPPORTERS STYLES LANDSCAPE */  
