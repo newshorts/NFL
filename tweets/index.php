@@ -31,6 +31,11 @@
 				</li>
 			</ul>
 		</li>
+                
+                <style>
+                    
+                </style>
+                
 		<li id="twitter_number_count">
 			<ul class="numbers_medium">
 				<li class="nil">0</li>
@@ -42,7 +47,9 @@
 				<li class="nil">0</li>
 			</ul>
 			<div id="twitter_count" class="tweets_count medium "></div>
+                        
 		</li>
+                
 	</ul>	
 </div>
 <?php include('../footer.php'); ?>
