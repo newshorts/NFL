@@ -242,6 +242,13 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#boardcontainer .tabs { bottom: -5px; width: 500px; }
 	#boardcontainer .sharebutton { top: 15px; right: 35px; }
 	#boardcontainer .expanded { width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; }
+        
+    /* INTRO ANIMATION */   
+
+    #intro { width: 909px; height: 566px; position: absolute; top: 50%; left: 50%; margin-left: -469px; margin-top: -279px; z-index: 20; background: url(../images/bg-texture-light.png) scroll repeat; }
+    #introWrap { position: relative; top: 0; left: 0; }
+    #intro .introItem { position: absolute; top: 0; left: 0; width: 860px; }
+    .hidden { opacity: 0; }
 
 
  /* MOVEMENT STYLES LANDSCAPE */   
@@ -439,6 +446,15 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#boardcontainer .tabs a.active { font-size: 30px; }
 	#boardcontainer .tabs dl, dd { font-size: 30px; }
 	#boardcontainer .sharebutton {  top: 56px; left: 708px; }
+        
+        
+        
+        /* INTRO ANIMATION */   
+        
+        #intro { width: 890px; height: 1000px; position: absolute; top: 50%; left: 50%; margin-left: -429px; margin-top: -499px; z-index: 20; background: url(../images/bg-texture-light.png) scroll repeat; text-align: center; vertical-align: middle; }
+        #introWrap { position: relative; top: 0; left: 0; }
+        #intro .introItem { position: absolute; top: 0; left: 0; width: 860px; }
+        .hidden { opacity: 0; }
 	
 	
 	
@@ -771,37 +787,6 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 /*==========================================================
 			GLOBAL CSS
 ==========================================================*/
-
-
-#intro {
-    width: 909px;
-    height: 509px;
-    position: absolute;;
-    top: 50%;
-    left: 50%;
-    margin-left: -488px;
-    margin-top: -289px;
-    z-index: 20;
-    
-    background: url(../images/bg-texture-light.png) scroll repeat;
-}
-
-#introWrap {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-#intro .introItem {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 860px;
-}
-
-.hidden {
-    opacity: 0;
-}
 
 
 

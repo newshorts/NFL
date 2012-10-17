@@ -131,9 +131,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         
         <?php if(strpos($request, 'buzz')): ?>
         
-            <?php if(DEVICE_TYPE == 'phone') : ?>
+            <?php if(DEVICE_TYPE != 'phone') : ?>
                 <!-- no scroller for mobile -->
-            <?php else : ?>
                 <script src="<?php echo ROOT; ?>js/lib/scroller.js"></script>
             <?php endif; ?>
             
@@ -193,7 +192,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         sub = new Subscription();
                         
                     <?php if(DEVICE_TYPE != 'phone') : ?>   
-                    $(window).on('intro_loaded', function(evt, data) {    
+                    $(window).on('trigger_scroller', function(evt, data) {    
                         var scroller = new Scroller('.train', 1005);
                     });
                     <?php endif; ?>
@@ -206,10 +205,6 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                             var tt = new TwitterTracker('#twitter_count');
                             var gfb = new GfbTracker('#gfb_count');
                         <?php else : ?>
-                            
-                            
-                            
-                            
                             
                             var total = new TotalTracker('#total');
                             var It = new InstagramTracker('#instagram_photo_count');
@@ -252,11 +247,13 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 
                     <?php endif; ?>
                     
-                    <?php if($_SESSION['sfsuperbowlintro'] && DEVICE_TYPE == 'computer') : ?>
+                    <?php if($_SESSION['sfsuperbowlintro'] && DEVICE_TYPE != 'phone') : ?>
                         
                         var intro = new Intro();
                         intro.init();
-                                           
+                                         
+                    <?php else : ?>
+                        $(window).trigger('trigger_scroller');
                     <?php endif; ?>
 		            
 //                    var nav = new PageNavigation('#wrap');
@@ -336,11 +333,11 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 		                    <div class="sharebutton">
 
 			                    <ul>
-                                    <li><a class="facebook link" onclick='postToFeed(); return false;'></a><p id='msg'></p></li>
-                                    <li><a class="twittertweet link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Let&rsquo;s&nbsp;bring&nbsp;the&nbsp;Bowl&nbsp;to&nbsp;the&nbsp;Bay!&nbsp;Show&nbsp;your&nbsp;support.#sfsuperbowl"></a></li>
-                                    <li><a class="google link" href="https://plus.google.com/share?url=http://www.sfsuperbowl.com" target="_blank"></a></li>
-                                    <!-- <li><link rel="image_src" href="http://www.labnol.org/screenshot.png" /></li> -->
-                                </ul>
+                                                <li><a class="facebook link" onclick='postToFeed(); return false;'></a><p id='msg'></p></li>
+                                                <li><a class="twittertweet link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Let&rsquo;s&nbsp;bring&nbsp;the&nbsp;Bowl&nbsp;to&nbsp;the&nbsp;Bay!&nbsp;Show&nbsp;your&nbsp;support.#sfsuperbowl"></a></li>
+                                                <li><a class="google link" href="https://plus.google.com/share?url=http://www.sfsuperbowl.com" target="_blank"></a></li>
+                                                <!-- <li><link rel="image_src" href="http://www.labnol.org/screenshot.png" /></li> -->
+                                            </ul>
 
 		                    </div>
 		                    
@@ -354,25 +351,28 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     
             </div><!-- /header -->
             
-            <?php if($_SESSION['sfsuperbowlintro'] && DEVICE_TYPE == 'computer') : ?>
-                
-                <div id="intro">
-                    
-                    <div id="introWrap">
-                        <img class="introItem hidden" src="../images/intro_logo.png" id="introLogo" />
-                        <img class="introItem hidden" src="../images/intro_logo_big.png" id="introLogoBig" />
-                        <img class="introItem hidden" src="../images/intro_headline.png" id="introHeadline" />
-                        <img class="introItem hidden" src="../images/intro_copy.png" id="introCopy" />
-                        
-                       
+            <?php if(DEVICE_TYPE != 'phone') : ?>
+                <?php if($_SESSION['sfsuperbowlintro']) : ?>
+
+                    <div id="intro">
+
+                        <div id="introWrap">
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_logo.png" id="introLogo" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_logo_big.png" id="introLogoBig" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_headline.png" id="introHeadline" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_copy.png" id="introCopy" />
+                        </div>
                     </div>
-                </div>
-		
-  
+
+                    <?php $_SESSION['sfsuperbowlintro'] = false; ?>
+
+                <?php endif; ?>
+            
+            
                 
-                
-                <?php $_SESSION['sfsuperbowlintro'] = false; ?>
             <?php endif; ?>
+            
+                
             
         
             
