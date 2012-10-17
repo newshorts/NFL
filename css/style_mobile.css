@@ -13,17 +13,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	
 html { }
 
-#dynamic {
-
-    width: 100%;
-    min-width: 768px;
-    height: 100%;
-    top: 100%;
-    overflow: hidden;
-    z-index: 7;
-    
-
-}
+#dynamic { width: 100%; min-width: 768px; height: 100%; top: 100%; overflow: hidden; z-index: 7; }
 
 
 
@@ -42,14 +32,6 @@ html { }
 #boardcontainer .sharebutton { display: none; position: absolute; width: 109px; height: 22px; background: url(../images/share.png) scroll 0 0 no-repeat; background-size: 109px 22px; overflow: hidden; }
 		
 #boardcontainer .expanded { display: none; width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; }	
-
-
-
-
-        
-	
-		
-/* END OF NUMBERS */
 
 
 
@@ -87,11 +69,6 @@ html { }
 
 #poster img { margin: 35px 0; }
 
-/*
-#movement_mobile #movement_header { margin-top: 10px; }
-
-#movement_mobile #movement_steps { margin-top: 10px; }
-*/
 
 
  
@@ -100,51 +77,7 @@ html { }
 
  /* BACKGROUND AND HEADER STYLES LANDSCAPE */      
     
-    #container { min-height: 480px; }
-    #wrap { width: 100%; height: 2000px;}
-    #boardcontainer { height: 150px; }
-/*     #boardcontainer .expanded { width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; } */
-    #boardcontainer .left { margin-top: 18px; }
-    #boardcontainer .left  .headlineLargeGray { font-size: 68px; }
-	#boardcontainer .right { top: 30px;  float: left; position: relative; }
-	#boardcontainer .tabs { width: 1000px; font-size: 50px; left: -100px; }
-	#boardcontainer .tabs a.active { font-size: 50px; }
-	#boardcontainer .sharebutton { top: 15px; right: 35px; }
- 
- /* MOVEMENT STYLES LANDSCAPE */   
-     
-    #movement_left { width: 502px; height: 456px; top: 78px; left: 8px;}
-   	#movement_header { width: 100%; height: 137px; padding: 18px 0px 0px 0px; }
-	#movement_header li div span { font-size: 25px; }
-	#movement_header li p { width: 420px; }
-	/*#movement_steps { padding: 0px 0px 0px 37px; }*/
-	#movement_steps li { border-bottom: #ccc 2px solid; /*height: 87px;*/  width: 100%;  padding: 8px 0px 0px 0px; }
-	/*#movement_steps li:first-child { border-top: #ccc 2px solid; }*/
-	/*#movement_steps li:nth-child(3) { height: 77px; }*/ 
-	#movement_steps li:nth-child(2) .headline { top: -33px; }
-	#movement_steps li:nth-child(3) .headline { top: -29px; } 
-	.right { float: right; position: relative; right: -135px; top: -40px; margin: 0 0 0 10px;  }
-	#poster { /*height: 456px;*/ top: 10px; /*right: 5px;*/ }
-
-        #box1 { top: 150px; }
-
-/*	#box1 { width: 100%; height: 318px; position: relative; top: 160px; }
-	#box1 .headlineMediumGray { position: absolute; top: 44px; left: 30px; font-size: 40px; }
-	#total { margin: 178px 0 0 52px; }
-	#totalBG { margin: 98px 0 0 52px; }
-	#box1 .numbers_large { position: absolute; bottom: 50px; right: 50px; }
-	#box1 #total, #box1 .largNumbersGrey { width: 100%px;  text-align: right; direction: rtl; text-align: justify; white-space: pre; }*/
-
-
-}
-
-
-@media only screen and (orientation: portrait) {
-
-/* BACKGROUND AND HEADER STYLES LANDSCAPE */  
-    
-
-    #wrap { width: 100%; height: 2000px; }
+    #wrap { width: 100%; height: 2475px; }
     #boardcontainer { height: 330px; }
     #boardcontainer .left .headlineLargeGray { font-size: 110px; line-height: 90px; }
 	#boardcontainer .left { margin-top: 44px; }
@@ -158,52 +91,133 @@ html { }
 	
 	/* MOVEMENT STYLES PORTRAIT */   
     
-    #movement_left { height: 700px; top: 138px; background: none; width: 100%; }
+    #movement_left { height: 1000px; top: 138px; background: none; width: 100%; }
 	#movement_header { height: 407px; width: 100%; margin-top: 10px; margin-bottom: 10px; top: 190px; padding-top: 60px;  }
 	#movement_header li div span { font-size: 50px;  padding-right: 10px; }
-	#movement_header li p { font-size: 48px;  width: 830px; line-height: 60px; }
+	#movement_header li p { font-size: 44px;  width: 830px; line-height: 60px; }
 	#movement_steps { position: relative; top: 190px;  }
-	#movement_steps li { /*height: 162px;*/ width: 100%;  padding: 45px 0px 0px 40px; margin-bottom: 10px; margin-top: 10px;}	
-	#movement_steps li:nth-child(1) .headline { top: -35px; width: 450px; } 
-	#movement_steps li:nth-child(2) .headline { top: -63px; }
-	#movement_steps li:nth-child(3) .headline { top: -49px; width: 350px; } 
-	#movement_steps .headline { width: 300px; }
-	#movement_steps .headline h3 {font-size: 40px; line-height: 36px; }
-	#movement_steps p { font-size: 60px; width: 350px; }
-	.right { position: absolute; left: 5px; bottom: -40px;  }
-	.right .facebook { margin-left: 45px; }
-	.right .google { margin-left: 90px; }
-	#poster { background-color: #fff; /*height: 560px;*/ margin-top: 10px; overflow: hidden; padding-top: 400px; top: 400px;  }
+	#movement_steps li { width: 100%; padding: 45px 0px 0px 40px; margin-bottom: 10px; margin-top: 10px;}	
+	#movement_steps li img { height: 40%; }	
+
+	#step_1 .img { position: relative; top: 40px; }
+	#step_2 .img { position: relative; top: 40px; }
+	#step_3 .img { position: relative; top: 50px; height: 85%;  }
+
+	#movement_steps li:nth-child(1) { padding-bottom: 25px;  height: 250px;  }
+	#movement_steps li:nth-child(2) { padding-bottom: 25px;  height: 250px;  }
+	#movement_steps li:nth-child(3) { padding-bottom: 25px;  height: 300px;  }
+
+
+	#movement_steps li:nth-child(1) .headline { top: -90px; left: 75px; width: 1000px;  } 
+	#movement_steps li:nth-child(2) .headline { top: -90px; left: 75px; width: 1000px;   }
+	#movement_steps li:nth-child(3) .headline { top: -240px; left: 75px; width: 550px; } 
+	#movement_steps .headline { width: 1000px; }
+	#movement_steps .headline h3 { font-size: 65px; line-height: 70px; }
+	#movement_steps p { font-size: 44px; width: 775px; }
+	.right {  height: 75%; position: absolute; left: 5px; top: 65px;  }
+	.right .facebook { margin-left: 95px; }
+	.right .google { margin-left: 195px; }
+	
+	#poster { background-color: #fff; /*height: 560px;*/ margin-top: 10px; top: 900px;  height: 1465px; }
 
 
 
-    #movement_left { height: 700px; top: 138px; background: none; width: 100%; }
+	/* BUZZ STYLES LANDSCAPE */
+	#box1 { width: 100%; height: 300px; padding: 50px; margin: 10px 0; position: relative; top: 343px; }
+	#box1 div img { height: 15%;} 
+	#box1 div span { font-size: 65px; }
+	
+	
+	#train_car1 a span { position: relative; left: -235px; top: 0px;  }
+	#train_car2 {}
+	#train_car3 {}
+	.train { width: 100%; margin: 20px 0px 20px 0px; top: 357px; position: relative; height: 1500px; }
+	
+/* 	.trainCar { height: 750px; } */
+	.trainCar li a span { font-size: 55px; float: left;  }
+	.trainCompartment { width: 100%; height: 150px; padding: 50px; position: relative; margin: 20px 0 20px 0; background: url(../images/bg-texture-light.png) scroll repeat; }
+	.numbers_medium {  margin: 0; width: 763px; position: relative; float: right; }
+	.countOrange {  margin: 0; width: 763px; position: relative; float: right; }
+	.smallBoxHeading { top: 30px; left: 30px; }
+	.smallBoxIcon { position: relative; float: right; right: 75px; height: 55%; top: -10px;}
+	.smallBoxIconLeft { position: relative; float: right; right: 70px; height: 55%; top: -10px; margin-left: 25px;  }
+	/* .smallBoxHR { top: 47px; left: 28px; width: 268px; } */
+
+
+}
+
+
+@media only screen and (orientation: portrait) {
+
+/* BACKGROUND AND HEADER STYLES LANDSCAPE */  
+    
+
+    #wrap { width: 100%; height: 2475px; }
+    #boardcontainer { height: 330px; }
+    #boardcontainer .left .headlineLargeGray { font-size: 110px; line-height: 90px; }
+	#boardcontainer .left { margin-top: 44px; }
+	#boardcontainer .right { top: 80px; left: 30px; }
+	#boardcontainer .tabs { top: 168px; width: 900px; font-size: 50px; }
+	#boardcontainer .tabs a.active { font-size: 50px; }
+	#boardcontainer .tabs dl, dd { font-size: 30px; }
+	#boardcontainer .sharebutton {  top: 56px; left: 708px; }
+	
+	
+	
+	/* MOVEMENT STYLES PORTRAIT */   
+    
+    #movement_left { height: 1000px; top: 138px; background: none; width: 100%; }
 	#movement_header { height: 407px; width: 100%; margin-top: 10px; margin-bottom: 10px; top: 190px; padding-top: 60px;  }
 	#movement_header li div span { font-size: 50px;  padding-right: 10px; }
-	#movement_header li p { font-size: 48px;  width: 830px; line-height: 60px; }
+	#movement_header li p { font-size: 44px;  width: 830px; line-height: 60px; }
 	#movement_steps { position: relative; top: 190px;  }
-	#movement_steps li { /*height: 162px;*/ width: 100%;  padding: 45px 0px 0px 40px; margin-bottom: 10px; margin-top: 10px;}
-	#movement_steps li img { height: 15%; }
-	#movement_steps li:nth-child(1) .headline { top: -75px; width: 450px; } 
-	#movement_steps li:nth-child(2) .headline { top: -63px; }
-	#movement_steps li:nth-child(3) .headline { top: -49px; width: 350px; } 
-	#movement_steps .headline { width: 300px; }
-	#movement_steps .headline h3 {font-size: 40px; line-height: 36px; }
-	#movement_steps p { font-size: 60px; width: 350px; }
-	.right { display: none; position: absolute; left: 5px; bottom: -40px;  }
-	.right .facebook { margin-left: 45px; }
-	.right .google { margin-left: 90px; }
-	#poster { background-color: #fff; /*height: 560px;*/ margin-top: 10px; overflow: hidden; padding-top: 400px; top: 400px;  }
+	#movement_steps li { width: 100%; padding: 45px 0px 0px 40px; margin-bottom: 10px; margin-top: 10px;}	
+	#movement_steps li img { height: 40%; }	
+
+	#step_1 .img { position: relative; top: 40px; }
+	#step_2 .img { position: relative; top: 40px; }
+	#step_3 .img { position: relative; top: 50px; height: 85%;  }
+
+	#movement_steps li:nth-child(1) { padding-bottom: 25px;  height: 250px;  }
+	#movement_steps li:nth-child(2) { padding-bottom: 25px;  height: 250px;  }
+	#movement_steps li:nth-child(3) { padding-bottom: 25px;  height: 300px;  }
 
 
-        #box1 { top: 330px; }
+	#movement_steps li:nth-child(1) .headline { top: -90px; left: 75px; width: 1000px;  } 
+	#movement_steps li:nth-child(2) .headline { top: -90px; left: 75px; width: 1000px;   }
+	#movement_steps li:nth-child(3) .headline { top: -240px; left: 75px; width: 550px; } 
+	#movement_steps .headline { width: 1000px; }
+	#movement_steps .headline h3 { font-size: 65px; line-height: 70px; }
+	#movement_steps p { font-size: 44px; width: 775px; }
+	.right {  height: 75%; position: absolute; left: 5px; top: 65px;  }
+	.right .facebook { margin-left: 95px; }
+	.right .google { margin-left: 195px; }
+	
+	#poster { background-color: #fff; /*height: 560px;*/ margin-top: 10px; top: 900px;  height: 1465px; }
 
-/*	#box1 { width: 100%; height: 318px; position: relative; top: 370px; }
-	#box1 .headlineMediumGray { position: absolute; top: 44px; left: 30px; font-size: 40px; }
-	#total { margin: 178px 0 0 52px; }
-	#totalBG { margin: 98px 0 0 52px; }
-	#box1 .numbers_large { position: absolute; bottom: 50px; right: 50px; }
-	#box1 #total, #box1 .largNumbersGrey { width: 100%px;  text-align: right; direction: rtl; text-align: justify; white-space: pre; }*/
+
+
+	/* BUZZ STYLES PORTRAIT */   
+    
+	#box1 { width: 100%; height: 300px; padding: 50px; margin: 10px 0; position: relative; top: 343px; }
+	#box1 div img { height: 15%;} 
+	#box1 div span { font-size: 65px; }
+	
+	
+	#train_car1 a span { position: relative; left: -235px; top: 0px;  }
+	#train_car2 {}
+	#train_car3 {}
+	.train { width: 100%; margin: 20px 0px 20px 0px; top: 357px; position: relative; height: 1500px; }
+	
+/* 	.trainCar { height: 750px; } */
+	.trainCar li a span { font-size: 55px; float: left;  }
+	.trainCompartment { width: 100%; height: 150px; padding: 50px; position: relative; margin: 20px 0 20px 0; background: url(../images/bg-texture-light.png) scroll repeat; }
+	.numbers_medium {  margin: 0; width: 763px; position: relative; float: right; }
+	.countOrange {  margin: 0; width: 763px; position: relative; float: right; }
+	.smallBoxHeading { top: 30px; left: 30px; }
+	.smallBoxIcon { position: relative; float: right; right: 75px; height: 55%; top: -10px;}
+	.smallBoxIconLeft { position: relative; float: right; right: 70px; height: 55%; top: -10px; margin-left: 25px;  }
+	/* .smallBoxHR { top: 47px; left: 28px; width: 268px; } */
 
 
 }
@@ -220,79 +234,6 @@ html { }
 			GLOBAL CSS
 ==========================================================*/
 
-/*
-
-#intro {
-    width: 860px;
-    height: 509px;
-    position: absolute;;
-    top: 50%;
-    left: 50%;
-    margin-left: -488px;
-    margin-top: -289px;
-    z-index: 20;
-    
-    background: url(../images/bg-texture-light.png) scroll repeat;
-}
-
-#introWrap {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-#intro .introItem {
-    position: absolute;
-    top: 0;
-    left: 0;
-   
- width: 860px;
-}*/
-
-.hidden {
-    opacity: 0;
-}
-
-
-
-#header {
-	z-index: 10;
-}
-
-
-.sharebutton ul {
-	margin-top: 36px;
-}
-
-.sharebutton ul li a {
-	width: 106px;
-	height: 26px;
-	display: block;
-}
-
-.sharebutton .facebook {
-	background: url(../images/share_fb.png) scroll no-repeat;
-}
-
-.sharebutton .twitter {
-	background: url(../images/share_twitter.png) scroll no-repeat;
-}
-
-.sharebutton .google {
-	background: url(../images/share_google.png) scroll no-repeat;
-}
-
-.sharebutton .linkedin {
-	background: url(../images/share_linkedin.png) scroll no-repeat;
-}
-
-.sharebutton .tumblr {
-	background: url(../images/share_tumblr.png) scroll no-repeat;
-}
-
-.sharebutton .email {
-	background: url(../images/share_email.png) scroll no-repeat;
-}
 
 /*	--------------------------------------------------
     Utility
@@ -627,11 +568,4 @@ html { }
     -------------------------------------------------- */
 
 #screen li { margin: 10px 0; }
-#box1 { width: 100%; height: 300px; padding: 50px; margin: 10px 0; position: relative; }
-.train { width: 100%; margin: 10px 0; }
-.trainCompartment { width: 100%; height: 155px; padding: 50px; position: relative; margin: 10px 0 0 0; background: url(../images/bg-texture-light.png) scroll repeat; }
-.countOrange { display: inline;  margin: 0; width: 263px; direction: rtl; text-align: justify; white-space: pre; }
-.smallBoxHeading { top: 30px; left: 30px; }
-.smallBoxIcon { top: 31px; left: 277px; }
-.smallBoxIconLeft { top: 31px; left: 254px; }
-.smallBoxHR { top: 47px; left: 28px; width: 268px; }
+

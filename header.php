@@ -146,6 +146,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <?php elseif(strpos($request, 'instagram')): ?>
         
             <script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>
+            <!--<script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>-->
         
         <?php elseif(strpos($request, 'tweets')): ?>
         
@@ -155,6 +156,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         
         <?php elseif(strpos($request, 'supporters')): ?>
         
+            <script src="<?php echo ROOT; ?>js/lib/pretty.js"></script>
+            <script src="<?php echo ROOT; ?>js/lib/date.js"></script>
             <script src="<?php echo ROOT; ?>js/lib/jquery.shorten.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/googleTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js"></script>
@@ -189,6 +192,12 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         
                         sub = new Subscription();
                         
+                    <?php if(DEVICE_TYPE != 'phone') : ?>   
+                    $(window).on('intro_loaded', function(evt, data) {    
+                        var scroller = new Scroller('.train', 1005);
+                    });
+                    <?php endif; ?>
+                        
                     <?php if(strpos($request, 'buzz')): ?>
                         
                         <?php if(DEVICE_TYPE == 'phone') : ?>
@@ -197,7 +206,10 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                             var tt = new TwitterTracker('#twitter_count');
                             var gfb = new GfbTracker('#gfb_count');
                         <?php else : ?>
-                            var scroller = new Scroller('.train', 1005);
+                            
+                            
+                            
+                            
                             
                             var total = new TotalTracker('#total');
                             var It = new InstagramTracker('#instagram_photo_count');
@@ -222,6 +234,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     <?php elseif(strpos($request, 'instagram')): ?>
                         
                         var It = new InstagramTracker('#instagram_photo_count');
+//                        var tt = new TwitterTracker('#t_count');
 
                     <?php elseif(strpos($request, 'tweets')): ?>
                         

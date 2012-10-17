@@ -28,5 +28,6 @@
                 <li class="nil">0</li>
             </ul>
             <div id="instagram_photo_count" class="instagram_photo_count mediumNumbersOrange medium"></div>
-	</li> 
+	</li>
+        
   </ul>   
