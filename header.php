@@ -472,11 +472,11 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 		                    <div class="sharebutton">
 
 			                    <ul>
-                                    <li><a class="facebook link" onclick='postToFeed(); return false;'></a><p id='msg'></p></li>
-                                    <li><a class="twitter link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Share%20SFSUPERBOWL%20This%20is%20going%20to%20be%20the%20story"></a></li>
-                                    <li><a class="google link" href="https://plus.google.com/share?url=http://www.sfsuperbowl.com" target="_blank"></a></li>
-                                    <!-- <li><link rel="image_src" href="http://www.labnol.org/screenshot.png" /></li> -->
-                                </ul>
+                                                <li><a class="facebook link" onclick='postToFeed(); return false;'></a><p id='msg'></p></li>
+                                                <li><a class="twitter link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Share%20SFSUPERBOWL%20This%20is%20going%20to%20be%20the%20story"></a></li>
+                                                <li><a class="google link" href="https://plus.google.com/share?url=http://www.sfsuperbowl.com" target="_blank"></a></li>
+                                                <!-- <li><link rel="image_src" href="http://www.labnol.org/screenshot.png" /></li> -->
+                                            </ul>
 
 		                    </div>
 		                    
@@ -500,16 +500,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         <img class="introItem hidden" src="../images/intro_headline.png" id="introHeadline" />
                         <img class="introItem hidden" src="../images/intro_copy.png" id="introCopy" />
                         
-                        <!-- text -->
-                        <!--<img src="../images/intro_bg.png" id="introAnimation" />-->
-<!--                        <img class="introCopy text1" src="../images/intro_text1.png" id="introAnimation" />
-                        <img class="introCopy text2" src="../images/intro_text2.png" id="introAnimation" />
-                        <img class="introCopy text3" src="../images/intro_text3.png" id="introAnimation" />
-                        <img class="introCopy text4" src="../images/intro_text4.png" id="introAnimation" />
-                        <img class="introCopy text5" src="../images/intro_text5.png" id="introAnimation" />-->
-
-                        <!-- logo -->
-<!--                        <img class="logo" src="../images/intro_logo.png" id="introAnimation">-->
+                       
                     </div>
                 </div>
                 
