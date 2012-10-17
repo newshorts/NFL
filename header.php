@@ -295,7 +295,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
 	  if (d.getElementById(id)) return;
 	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=423821150969335";
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=369308779814605";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
     
