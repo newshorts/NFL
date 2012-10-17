@@ -171,7 +171,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 #social .links li { position: relative; float: left; }
 
-#twitter_number_count { height: 130px; width: 379px; float: right; position: relative; float: right; }
+#twitter_number_count { height: 130px; width: 379px; float: right; position: relative; text-align: right; }
 
 .tweets_count { margin: 0px 17px 0 0; position: relative; top: -49px; }
 
@@ -284,7 +284,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#social p { font-size: 14px; width: 230px; }
 	#social .links { top: -20px; }
 	#tweet { width: 86px; }
-	#twitter_number_count { margin: 0px 18px 0px 0px; float: right; }
+	#twitter_number_count { margin: 0px 18px 0px 0px; text-align: right; }
 	.numbers_medium { margin: -28px 0px 0px 0px; }
 
 
@@ -398,8 +398,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#instagram_count { position: relative; float: right; width: 363px; display: inline-block; margin-top: 8px; margin-right: 28px; }
 	
 	#instagram_count .mediumNumbersOrange,
-	#instagram_count .mediumNumbersGrey,
-        #twitter_count { position: absolute; top: 0px; right: 0; text-align: right; direction: rtl; text-align: justify; white-space: pre; }
+	#instagram_count .mediumNumbersGrey { position: absolute; top: -30px; right: 0; text-align: right; direction: rtl; text-align: justify; white-space: pre; }
 	
 	.photo_count { font-family: 'ds-digitalitalic', Arial, sans-serif; font-size: 116px; color: #e75406; margin: 0px 0px 0px 0px; }
 	
@@ -424,11 +423,11 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
  
 	/* BACKGROUND AND HEADER STYLES LANDSCAPE */  
     
- 	#border { min-height: 795px; }
-    #container { min-height: 720px; }
-    #wrap { width: 890px; height: 1000px; top: 59px; left: 47px; }
-    #boardcontainer { height: 125px; }
-    #boardcontainer .left .headlineLargeGray { font-size: 60px; }
+	#border { min-height: 795px; }
+	#container { min-height: 720px; }
+	#wrap { width: 890px; height: 1000px; top: 59px; left: 47px; }
+	#boardcontainer { height: 125px; }
+	#boardcontainer .left .headlineLargeGray { font-size: 60px; }
 	#boardcontainer .left { margin-top: 24px; }
 	#boardcontainer .right { top: 30px; left: 30px; }
 	#boardcontainer .tabs { top: 58px; width: 668px; font-size: 30px; }
@@ -440,12 +439,12 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	
 	/* MOVEMENT STYLES PORTRAIT */   
     
-    #movement_left { height: 700px; top: 133px; background: none; }
+	#movement_left { height: 700px; top: 133px; background: none; }
 	#movement_header { height: 187px; width: 870px; margin-bottom: 10px; padding-top: 40px;  }
 	#movement_header li div span { font-size: 45px;  padding-right: 30px; }
 	#movement_header li p { font-size: 24px; line-height: 27px; width: 730px; }
 	#movement_steps { position: relative; }
-	#movement_steps li { height: 162px; width: 472px;  padding: 45px 0px 0px 40px; margin-bottom: 10px;  }	
+	#movement_steps li { height: 162px; width: 472px;  padding: 45px 0px 0px 40px; margin-bottom: 10px; font-size:  }	
 	#movement_steps li:nth-child(1) .headline { top: -35px; width: 450px; } 
 	#movement_steps li:nth-child(2) .headline { top: -63px; }
 	#movement_steps li:nth-child(3) .headline { top: -49px; width: 350px; } 
@@ -474,9 +473,6 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#social .links { top: 30px; float: left; }
 	#tweet { width: 86px; }
 	#twitter_number_count { top: 15px; right: 40px; }
-        #t_number_count { position: relative; float: right; width: 363px; display: inline-block; margin-top: 8px; margin-right: 28px; }
-        #t_number_count ul, 
-        #t_number_count #twitter_count { position: absolute; top: 48px; right: 0; display: block; width: 500px; }
 
 	
 	
