@@ -211,7 +211,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 //                            console.log('view: ' + orientation + 'not calling scroller')
 //                        }
 
-                        scroller = new Scroller('.train', 1005);
+                        scroller = new Scroller('.train', 1005, '<?php echo DEVICE_TYPE; ?>');
                     });
                     
 //                    $(window).on('orientationchange resize', function(evt) {
@@ -228,7 +228,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     var scroller;
                     $(window).on('trigger_scroller', function(evt, data) {
                         
-                        scroller = new Scroller('.train', 1005);
+                        scroller = new Scroller('.train', 1005, '<?php echo DEVICE_TYPE; ?>');
                         
 //                        var orientation = Math.abs(window.orientation) == 90 ? 'landscape' : 'portrait';
 //                        if(orientation == 'landscape') {

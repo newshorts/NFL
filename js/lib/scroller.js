@@ -6,15 +6,18 @@ var Scroller = Class.extend({
     alternate: -1,
     dist: 0,
     on: true,
+    deviceType: '',
     
     
-    init: function(ul, dist) {
+    init: function(ul, dist, type) {
         this._train = ul;
         this.train = $(this._train);
 //        this.cars = this.train.find('ul');
         this.cars = $(ul + ' > ul');
         
         this.dist = dist;
+        
+        this.deviceType = type;
         
         // events
         var self = this;
@@ -40,14 +43,21 @@ var Scroller = Class.extend({
     },
     
     checkOrientation: function() {
-        var orientation = Math.abs(window.orientation) == 90 ? 'landscape' : 'portrait';
-            
-        if(orientation == 'portrait') {
-            this.stop();
-            this.changeClassNames('small','medium');
-        } else {
+        
+        if(this.deviceType == 'tablet') {
+            var orientation = Math.abs(window.orientation) == 90 ? 'landscape' : 'portrait';
+
+            if(orientation == 'portrait') {
+                this.stop();
+                this.changeClassNames('small','medium');
+            } else {
+                this.start();
+                this.changeClassNames('medium','small');
+            }
+        }
+        
+        if(this.deviceType == 'computer') {
             this.start();
-            this.changeClassNames('medium','small');
         }
         
     },
