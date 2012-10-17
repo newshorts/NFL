@@ -512,9 +512,9 @@ Numbers
 	    Instagram
 	    -------------------------------------------------- */
 	
-	#instagram { overflow: hidden; height: 345px;  margin: 80px 0px 0px 0px; width: 909px; }
+	#instagram { overflow: hidden; height: 345px;  margin: 80px 0px 0px 0px; width: 909px; margin-top: 10px; top: 78px; position: relative; }
 	
-	#instagram_footer { position: relative; height: 108px; padding: 12px 0px 0px 30px; width: 909px; }
+	#instagram_footer { position: relative; height: 102px; padding: 12px 0px 0px 30px; width: 909px; margin-top: 10px; top: 76px;   }
 	#instagram_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
 	
 	
