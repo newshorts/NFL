@@ -121,7 +121,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         </script>
         
         <script src="<?php echo ROOT; ?>js/lib/class.js"></script>
-        <script src="<?php echo ROOT; ?>js/lib/jquery.easing.js"></script>
+<!--        <script src="<?php echo ROOT; ?>js/lib/jquery.easing.js"></script>-->
         
 <!--        <script src="<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js"></script>-->
 <!--        <script src="<?php echo ROOT; ?>js/lib/pageNavigation.js"></script>-->
@@ -191,12 +191,32 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         
                         sub = new Subscription();
                         
-                    <?php if(DEVICE_TYPE != 'phone') : ?>   
+                    <?php if(DEVICE_TYPE == 'tablet') : ?>  
+                    var scroller;
                     $(window).on('trigger_scroller', function(evt, data) {
                         var orientation = Math.abs(window.orientation) == 90 ? 'landscape' : 'portrait';
                         if(orientation == 'landscape') {
-                            var scroller = new Scroller('.train', 1005);
+                            console.log('view: ' + orientation + 'calling scroller')
+                            scroller = new Scroller('.train', 1005);
+                        } else {
+                            console.log('view: ' + orientation + 'not calling scroller')
                         }
+                    });
+                    <?php endif; ?>
+                        
+                    <?php if(DEVICE_TYPE == 'computer') : ?>  
+                    var scroller;
+                    $(window).on('trigger_scroller', function(evt, data) {
+                        
+                        scroller = new Scroller('.train', 1005);
+                        
+//                        var orientation = Math.abs(window.orientation) == 90 ? 'landscape' : 'portrait';
+//                        if(orientation == 'landscape') {
+//                            console.log('view: ' + orientation + 'calling scroller')
+//                            
+//                        } else {
+//                            console.log('view: ' + orientation + 'not calling scroller')
+//                        }
                     });
                     <?php endif; ?>
                         
