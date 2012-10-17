@@ -252,6 +252,6 @@
 
 <ul class="trainCar" data-pos="335">
     <li class="trainCompartmentLong" data-pos="">
-        <a href="http://www.facebook.com/sfsuperbowl" class="ajaxify"><img src="../images/coming-soon-facebook.jpg" /></a>
+        <a href="http://www.facebook.com/sfsuperbowl" class="ajaxify"><img src="../images/coming-soon-facebook.png" /></a>
     </li>
 </ul>
