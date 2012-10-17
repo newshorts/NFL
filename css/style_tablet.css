@@ -78,6 +78,8 @@ html {
     margin-top: -98%;
     left: 27%;
     margin-left: -25%;
+    
+    z-index: 5;
 }
 
 #dynamic {
@@ -90,6 +92,10 @@ html {
     margin-top: -96%;
     left: 27%;
     margin-left: -23%;
+    
+     overflow: hidden;
+     
+     z-index: 7;
     
     background: url(images/backgrounds/bg-texture-dark.png) top left;
 }
