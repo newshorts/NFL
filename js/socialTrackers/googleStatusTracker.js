@@ -105,7 +105,6 @@ var GoogleStatusTracker = SocialTracker.extend({
             article +=                      '<div>';
             article +=                          '<h4><a href="'+this.post.attachmentLink+'">' + this.post.attachmentTitle + '</a></h4>';
             article +=                          '<p>'+this.post.attachmentContent+'</p>';
-            article +=                          '<span>' + this.post.date + '</span>';
             article +=                      '</div>';
         }
         
