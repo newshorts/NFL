@@ -143,13 +143,21 @@ html { }
 	.smallBoxIconLeft { position: relative; float: right; right: 70px; height: 55%; top: -10px; margin-left: 25px;  }
 	/* .smallBoxHR { top: 47px; left: 28px; width: 268px; } */
 
+	.countGrey { display: inline; top: 68px; left: 34px; margin: 0; width: 263px; direction: rtl; text-align: justify; white-space: pre; }
+	.countOrange { display: inline; top: 107px; left: 34px; margin: 0; width: 263px; direction: rtl; text-align: justify; white-space: pre; }
+	.smallBoxHeading { top: 18px; left: 18px; }
+	.smallBoxIcon { top: 18px; left: 258px;	}
+	.smallBoxIconLeft { top: 18px; left: 238px; }
+	.smallBoxHR { top: 38px; left: 18px; width: 268px; }
+	.bottom, .bottom a { width: 296px; height: 155px; position: relative; display: block; }
+
 
 }
 
 
 @media only screen and (orientation: portrait) {
 
-/* BACKGROUND AND HEADER STYLES LANDSCAPE */  
+/* BACKGROUND AND HEADER STYLES PORTRAIT */  
     
 
     #wrap { width: 100%; height: 2475px; }
@@ -199,25 +207,157 @@ html { }
 
 	/* BUZZ STYLES PORTRAIT */   
     
+ #screen {
+    display: block; 
+    width: 996px; 
+    height: 492px; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+}
+
+#screen li { 
+    float: left;
+}   
+    
 	#box1 { width: 100%; height: 300px; padding: 50px; margin: 10px 0; position: relative; top: 343px; }
 	#box1 div img { height: 15%;} 
 	#box1 div span { font-size: 65px; }
 	
 	
-	#train_car1 a span { position: relative; left: -235px; top: 0px;  }
+	#train_car1 a span { position: relative; left: -5px; top: 0px;  }
 	#train_car2 {}
 	#train_car3 {}
 	.train { width: 100%; margin: 20px 0px 20px 0px; top: 357px; position: relative; height: 1500px; }
 	
-/* 	.trainCar { height: 750px; } */
+	#box1 { width: 890px; height: 288px; position: relative; margin: 88px 0px 10px 8px;	}
+	#box1 .headlineMediumGray { position: absolute; top: 38px; left: 30px; }
+	#total { margin: 339px 0 0 101px; left: 47px; position: absolute;  }
+	#box1 div { position: relative; top: 0px;}
+	
 	.trainCar li a span { font-size: 55px; float: left;  }
-	.trainCompartment { width: 100%; height: 150px; padding: 50px; position: relative; margin: 20px 0 20px 0; background: url(../images/bg-texture-light.png) scroll repeat; }
-	.numbers_medium {  margin: 0; width: 763px; position: relative; float: right; }
-	.countOrange {  margin: 0; width: 763px; position: relative; float: right; }
+	.trainCompartment { width: 100%; height: 250px; padding: 50px; position: relative; margin: 20px 0 20px 0; background: url(../images/bg-texture-light.png) scroll repeat; }
+	.trainComparment .numbers_small {  margin: 0; width: 663px; position: relative; float: right; right: 25px;  }
 	.smallBoxHeading { top: 30px; left: 30px; }
-	.smallBoxIcon { position: relative; float: right; right: 75px; height: 55%; top: -10px;}
-	.smallBoxIconLeft { position: relative; float: right; right: 70px; height: 55%; top: -10px; margin-left: 25px;  }
-	/* .smallBoxHR { top: 47px; left: 28px; width: 268px; } */
+	.smallBoxIcon { position: relative; float: right; right: 75px; height: 25%; top: -10px;}
+	.smallBoxIconLeft { position: relative; float: right; right: 70px; height: 25%; top: -10px; margin-left: 25px;  }
+
+
+.trainCar li ul { float: right; position: relative; right:85px; top: 70px;  }
+.trainCar li div { float: right; position: relative; top: -160px; left: -60px;  }
+
+.trainCar #train_car3 ul { float: right; position: relative; right: 0px; top: 70px;  }
+.trainCar #train_car3 div { float: right; position: relative; top: -155px; left: -155px;  }
+
+
+#box1 .numbers_large {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+
+
+
+
+/*
+.trainCompartment {
+    float: left;
+    width: 325px;
+    height: 155px;
+    position: relative;
+    display: block;
+    background: url(../images/bg-texture-light.png) scroll repeat;
+    margin-left: 10px;
+}
+*/
+
+/*
+.trainCompartment > a, .trainCompartmentLong > a {
+    display: block;
+}
+
+.trainCompartment a {
+    width: 325px;
+    height: 155px;
+}
+
+.trainCompartment:hover {
+    background: white;
+}
+
+.trainCompartment:first-child,
+.trainCompartmentLong:first-child{
+    margin-left: 0px;
+}
+*/
+
+
+
+
+/*#box3 {
+	margin: 0px 5px 0px 5px;
+}
+
+#box4 {
+	margin: 0px 0px 0px 5px;
+	padding-right: 1px;
+}*/
+
+.countGrey {
+    display: inline;
+    top: 78px;
+    left: 34px;
+    margin: 0;
+    width: 263px;
+    direction: rtl;
+    text-align: justify;
+    white-space: pre;
+}
+
+.countOrange {
+    display: inline;
+    top: 107px;
+    left: 34px;
+    margin: 0;
+    width: 263px;
+    direction: rtl;
+    text-align: justify;
+    white-space: pre;
+}
+
+/*
+.smallBoxHeading {
+    top: 30px;
+    left: 30px;
+}
+
+.smallBoxIcon {
+    top: 31px;
+    left: 277px;
+}
+
+.smallBoxIconLeft {
+    top: 31px;
+    left: 254px;
+}
+
+.smallBoxHR {
+    top: 47px;
+    left: 28px;
+    width: 268px;
+
+}
+
+*/
+.bottom, .bottom a { 
+    width: 325px; 
+    height: 155px; 
+    position: relative;
+    display: block;
+}
+
+
 
 
 }
@@ -538,8 +678,23 @@ html { }
 .numbers_small .comma { background-position: 0 -792px; right: 2px; top: 7px; width: 13px; }
 .numbers_small .comma_gray { background-position: -30px -792px; right: 7px; top: 6px; width: 13px; }
 
+/*	--------------------------------------------------
+    Twitter banner
+    -------------------------------------------------- */
 
-
+.tweet_banner { display: inline-block; width: 1004px; height: 157; position: relative; }
+.tweet_banner > * { color: #666; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; line-height: 26px; font-style: normal; }
+.tweet_banner a { color: inherit; text-decoration: none; color: #e75405; }
+.tweet_banner li { float: left; display: inline-block; position: absolute; }
+.tweet_banner .tweet_profile_img { top: 25%; left: 4%; }
+.tweet_banner .tweet_profile_img img { width: 83px; height: 83px; }
+.tweet_banner .tweet_name { top: 23%; left: 15%; width: 175px; }
+.tweet_banner .tweet_name p { margin-top: 0; margin-bottom: 0px; }
+.tweet_banner .tweet_name p:last-child {  font-weight: normal;  text-decoration: none;  font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+.tweet_banner .tweet_name p:last-child a { color: #858585; }
+.tweet_banner .tweet_content { width: 56%; top: 23%; left: 38%; }
+.tweet_banner .begin_quote { background: url(../images/quote_open.png) scroll no-repeat; display: inline-block; position: absolute;  width: 25px;  height: 17px; top: 4px; left: -44px }
+.tweet_banner .end_quote { background: url(../images/quote_close.png) scroll 98% 0 no-repeat;  display: inline-block; position: absolute;  width: 45px; height: 17px; white-space: pre; bottom: 3px; }
 .trainCompartment span { font-size: 23px;  } 
 
 
