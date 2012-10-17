@@ -357,10 +357,10 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     <div id="intro">
 
                         <div id="introWrap">
-                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_logo.png" id="introLogo" />
-                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_logo_big.png" id="introLogoBig" />
-                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_headline.png" id="introHeadline" />
-                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_copy.png" id="introCopy" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro_logo.png" id="introLogo" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro_logo_big.png" id="introLogoBig" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro_headline.png" id="introHeadline" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro_copy.png" id="introCopy" />
                         </div>
                     </div>
 
