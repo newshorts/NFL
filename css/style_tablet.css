@@ -155,7 +155,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 .tweet:before { content: url(../images/quote_open.png); float: left; position: relative; width: 25px; height: 17px; } 
 
-.tweet:after { content: url(../images/quote_close.png); float: right; position: relative; width: 25px; height: 17px; }
+.tweet_text:after { content: url(../images/quote_close.png); position: relative; width: 25px; height: 17px; padding-left: 25px; }
 
 .tweet_text { color: #858585; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; margin: 0 0 0 50px; line-height: 26px; width: 530px; position: absolute; float: right; }
 
@@ -251,16 +251,16 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
  /* MOVEMENT STYLES LANDSCAPE */   
      
-    #movement_left { height: 473px; top: 78px; }
+    #movement_left { height: 464px; top: 78px; }
    	#movement_header { height: 137px; width: 482px;  }
 	#movement_header li div span { font-size: 25px; }
 	#movement_header li p {  width: 420px; }
 	#movement_steps { padding: 0px 0px 0px 55px; }
 	#movement_steps li { border-bottom: #ccc 2px solid; height: 87px;  width: 427px;  padding: 8px 0px 0px 0px; }
 	#movement_steps li:first-child { border-top: #ccc 2px solid; }
-	#movement_steps li:nth-child(3) { height: 77px; } 
-	#movement_steps li:nth-child(2) .headline { top: -33px; }
-	#movement_steps li:nth-child(3) .headline { top: -29px; } 
+	#movement_steps li:nth-child(1) .headline { top: -26px; } 
+	#movement_steps li:nth-child(2) .headline { top: -40px; }
+	#movement_steps li:nth-child(3) .headline { top: -36px; height: 77px;  } 
 	.right { float: right; position: relative; right: -135px; top: -40px; margin-left: 10px;  }
 	#poster { height: 465px; top: 78px; }
      
@@ -512,9 +512,9 @@ Numbers
 	    Instagram
 	    -------------------------------------------------- */
 	
-	#instagram { overflow: hidden; height: 345px;  margin: 80px 0px 0px 0px; width: 909px; }
+	#instagram { overflow: hidden; height: 345px;  margin: 80px 0px 0px 0px; width: 909px; margin-top: 10px; top: 78px; position: relative; }
 	
-	#instagram_footer { position: relative; height: 108px; padding: 12px 0px 0px 30px; width: 909px; }
+	#instagram_footer { position: relative; height: 102px; padding: 12px 0px 0px 30px; width: 909px; margin-top: 10px; top: 76px;   }
 	#instagram_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
 	
 	
@@ -640,7 +640,7 @@ Numbers
 	#supporters_main { height: 667px;  width: 909px; }
 	#facebook_likes { height: 625px; width: 410px; top: 135px; }
 	#facebook_header { width: 380px; }
-	#facebook_likes_count { width: 385px; position: relative; float: right; top: -44px;  }
+	#facebook_likes_count { width: 385px; position: relative; float: right; top: -34px;  }
 	#facebook_count { /*top: -18px;*/ position: relative; }
 	
 	#google_pluses { height: 625px; width: 410px; top: 135px;}
@@ -671,7 +671,7 @@ Numbers
 	    overflow: hidden;
 	    height: 675px; 
 	    margin: 80px 0px 0px 0px;
-	    width: 909px;
+	    width: 911px;
 	    top: 65px;
 	    position: relative;   
 	}
