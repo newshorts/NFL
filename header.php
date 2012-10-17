@@ -146,6 +146,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <?php elseif(strpos($request, 'instagram')): ?>
         
             <script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>
+            <!--<script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>-->
         
         <?php elseif(strpos($request, 'tweets')): ?>
         
@@ -224,6 +225,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     <?php elseif(strpos($request, 'instagram')): ?>
                         
                         var It = new InstagramTracker('#instagram_photo_count');
+//                        var tt = new TwitterTracker('#t_count');
 
                     <?php elseif(strpos($request, 'tweets')): ?>
                         
