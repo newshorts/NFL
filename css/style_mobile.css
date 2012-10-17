@@ -46,6 +46,11 @@ html { }
 
 
 
+        
+	
+		
+/* END OF NUMBERS */
+
 
 
 /* MOVEMENT STYLES GLOBAL */ 
@@ -82,9 +87,11 @@ html { }
 
 #poster img { margin: 35px 0; }
 
+/*
 #movement_mobile #movement_header { margin-top: 10px; }
 
 #movement_mobile #movement_steps { margin-top: 10px; }
+*/
 
 
  
@@ -106,7 +113,7 @@ html { }
  
  /* MOVEMENT STYLES LANDSCAPE */   
      
-        #movement_left { width: 502px; height: 456px; top: 78px; left: 8px;}
+    #movement_left { width: 502px; height: 456px; top: 78px; left: 8px;}
    	#movement_header { width: 100%; height: 137px; padding: 18px 0px 0px 0px; }
 	#movement_header li div span { font-size: 25px; }
 	#movement_header li p { width: 420px; }
@@ -119,13 +126,14 @@ html { }
 	.right { float: right; position: relative; right: -135px; top: -40px; margin: 0 0 0 10px;  }
 	#poster { /*height: 456px;*/ top: 10px; /*right: 5px;*/ }
 
+        #box1 { top: 150px; }
 
-	#box1 { width: 100%; height: 318px; position: relative; top: 160px; }
+/*	#box1 { width: 100%; height: 318px; position: relative; top: 160px; }
 	#box1 .headlineMediumGray { position: absolute; top: 44px; left: 30px; font-size: 40px; }
 	#total { margin: 178px 0 0 52px; }
 	#totalBG { margin: 98px 0 0 52px; }
 	#box1 .numbers_large { position: absolute; bottom: 50px; right: 50px; }
-	#box1 #total, #box1 .largNumbersGrey { width: 100%px;  text-align: right; direction: rtl; text-align: justify; white-space: pre; }
+	#box1 #total, #box1 .largNumbersGrey { width: 100%px;  text-align: right; direction: rtl; text-align: justify; white-space: pre; }*/
 
 
 }
@@ -150,30 +158,52 @@ html { }
 	
 	/* MOVEMENT STYLES PORTRAIT */   
     
-        #movement_left { height: 700px; top: 133px; background: none; }
-	#movement_header { height: 187px; width: 100%; margin-top: 10px; margin-bottom: 10px; /*padding-top: 40px;*/  }
-	#movement_header li div span { font-size: 45px;  padding-right: 30px; }
-	#movement_header li p { font-size: 24px; line-height: 27px; width: 730px; }
-	#movement_steps { position: relative; }
+    #movement_left { height: 700px; top: 138px; background: none; width: 100%; }
+	#movement_header { height: 407px; width: 100%; margin-top: 10px; margin-bottom: 10px; top: 190px; padding-top: 60px;  }
+	#movement_header li div span { font-size: 50px;  padding-right: 10px; }
+	#movement_header li p { font-size: 48px;  width: 830px; line-height: 60px; }
+	#movement_steps { position: relative; top: 190px;  }
 	#movement_steps li { /*height: 162px;*/ width: 100%;  padding: 45px 0px 0px 40px; margin-bottom: 10px; margin-top: 10px;}	
 	#movement_steps li:nth-child(1) .headline { top: -35px; width: 450px; } 
 	#movement_steps li:nth-child(2) .headline { top: -63px; }
 	#movement_steps li:nth-child(3) .headline { top: -49px; width: 350px; } 
 	#movement_steps .headline { width: 300px; }
-	#movement_steps .headline h3 {font-size: 35px; line-height: 36px; }
-	#movement_steps p { font-size: 18px; width: 350px; }
+	#movement_steps .headline h3 {font-size: 40px; line-height: 36px; }
+	#movement_steps p { font-size: 60px; width: 350px; }
 	.right { position: absolute; left: 5px; bottom: -40px;  }
 	.right .facebook { margin-left: 45px; }
 	.right .google { margin-left: 90px; }
-	#poster { background-color: #fff; /*height: 560px;*/ margin-top: 10px; overflow: hidden; padding-top: 80px;  }
+	#poster { background-color: #fff; /*height: 560px;*/ margin-top: 10px; overflow: hidden; padding-top: 400px; top: 400px;  }
 
 
-	#box1 { width: 100%; height: 318px; position: relative; top: 370px; }
+
+    #movement_left { height: 700px; top: 138px; background: none; width: 100%; }
+	#movement_header { height: 407px; width: 100%; margin-top: 10px; margin-bottom: 10px; top: 190px; padding-top: 60px;  }
+	#movement_header li div span { font-size: 50px;  padding-right: 10px; }
+	#movement_header li p { font-size: 48px;  width: 830px; line-height: 60px; }
+	#movement_steps { position: relative; top: 190px;  }
+	#movement_steps li { /*height: 162px;*/ width: 100%;  padding: 45px 0px 0px 40px; margin-bottom: 10px; margin-top: 10px;}
+	#movement_steps li img { height: 15%; }
+	#movement_steps li:nth-child(1) .headline { top: -75px; width: 450px; } 
+	#movement_steps li:nth-child(2) .headline { top: -63px; }
+	#movement_steps li:nth-child(3) .headline { top: -49px; width: 350px; } 
+	#movement_steps .headline { width: 300px; }
+	#movement_steps .headline h3 {font-size: 40px; line-height: 36px; }
+	#movement_steps p { font-size: 60px; width: 350px; }
+	.right { display: none; position: absolute; left: 5px; bottom: -40px;  }
+	.right .facebook { margin-left: 45px; }
+	.right .google { margin-left: 90px; }
+	#poster { background-color: #fff; /*height: 560px;*/ margin-top: 10px; overflow: hidden; padding-top: 400px; top: 400px;  }
+
+
+        #box1 { top: 330px; }
+
+/*	#box1 { width: 100%; height: 318px; position: relative; top: 370px; }
 	#box1 .headlineMediumGray { position: absolute; top: 44px; left: 30px; font-size: 40px; }
 	#total { margin: 178px 0 0 52px; }
 	#totalBG { margin: 98px 0 0 52px; }
 	#box1 .numbers_large { position: absolute; bottom: 50px; right: 50px; }
-	#box1 #total, #box1 .largNumbersGrey { width: 100%px;  text-align: right; direction: rtl; text-align: justify; white-space: pre; }
+	#box1 #total, #box1 .largNumbersGrey { width: 100%px;  text-align: right; direction: rtl; text-align: justify; white-space: pre; }*/
 
 
 }
@@ -181,135 +211,7 @@ html { }
 
 
 
-/*	--------------------------------------------------
-    Numbers
-    -------------------------------------------------- */
 
-	#screen {
-	    display: block; 
-	    width: 100%; 
-	    height: 100%; 
-	    position: absolute; 
-	    top: 0;
-	    left: 0;
-	    overflow: hidden;
-	}
-	
-	#screen li { 
-	    float: left;
-	    overflow: hidden;
-	}
-	
-	
-	.tweet_banner { display: inline-block; width: 909px; height: 157px; position: relative; }
-
-	
-	.trainCompartment .numbers_small{
-	    position: absolute;
-	    bottom: 18px;
-	    right: 8px;
-	}
-	
-	.trainCompartment hr, .trainCompartment span, .trainCompartment img {
-	    position: absolute;
-	}
-	
-	.trainCompartment span { font-size: 23px;  } 
-	
-	.train {
-	    position: relative;
-	    top: 0;
-	    left: 0;
-	    width: 9999px;
-	    height: 155px;
-	    top: 170px;
-	}
-	
-	.trainCar .tweet_list {
-	    top: 0;
-	}
-	
-	.trainCompartmentLong {
-	    position: relative;
-	    display: block;
-	    width: 909px;
-	    height: 155px;
-	    background: url(../images/bg-texture-light.png) scroll repeat;
-	    margin-left: 10px;
-	    margin-right: 10px;
-	    float: left;
-	    overflow: hidden;
-	}
-	
-	.trainCompartment {
-	    float: left;
-	    width: 980px;
-	    height: 155px;
-	    position: relative;
-	    display: block;
-	    background: url(../images/bg-texture-light.png) scroll repeat;
-	    margin-left: 10px;
-	    overflow: hidden;
-	}
-	
-	.trainCompartment:first-child,
-	.trainCompartmentLong:first-child{
-	    margin-left: 0px;
-	}
-	
-	.countGrey {
-	    display: inline;
-	    top: 78px;
-	    left: 34px;
-	    margin: 0;
-	    width: 263px;
-	    direction: rtl;
-	    text-align: justify;
-	    white-space: pre;
-	}
-	
-	.countOrange {
-	    display: inline;
-	    top: 107px;
-	    left: 34px;
-	    margin: 0;
-	    width: 263px;
-	    direction: rtl;
-	    text-align: justify;
-	    white-space: pre;
-	}
-	
-	.smallBoxHeading {
-	    top: 30px;
-	    left: 30px;
-	}
-	
-	.smallBoxIcon {
-	    top: 31px;
-	    left: 277px;
-	}
-	
-	.smallBoxIconLeft {
-	    top: 31px;
-	    left: 254px;
-	}
-	
-	.smallBoxHR {
-	    top: 47px;
-	    left: 28px;
-	    width: 268px;
-	
-	}
-	
-	.bottom, .bottom a { 
-	    width: 325px; 
-	    height: 155px; 
-	    position: relative;
-	    display: block;
-	}
-	
-		
-/* END OF NUMBERS */
 
 
 
@@ -718,3 +620,18 @@ html { }
 .tweet_banner .tweet_content { width: 56%; top: 23%; left: 38%; }
 .tweet_banner .begin_quote { background: url(../images/quote_open.png) scroll no-repeat; display: inline-block; position: absolute;  width: 25px;  height: 17px; top: 4px; left: -44px }
 .tweet_banner .end_quote { background: url(../images/quote_close.png) scroll 98% 0 no-repeat;  display: inline-block; position: absolute;  width: 45px; height: 17px; white-space: pre; bottom: 3px; }
+
+
+/*	--------------------------------------------------
+    BUZZ
+    -------------------------------------------------- */
+
+#screen li { margin: 10px 0; }
+#box1 { width: 100%; height: 300px; padding: 50px; margin: 10px 0; position: relative; }
+.train { width: 100%; margin: 10px 0; }
+.trainCompartment { width: 100%; height: 155px; padding: 50px; position: relative; margin: 10px 0 0 0; background: url(../images/bg-texture-light.png) scroll repeat; }
+.countOrange { display: inline;  margin: 0; width: 263px; direction: rtl; text-align: justify; white-space: pre; }
+.smallBoxHeading { top: 30px; left: 30px; }
+.smallBoxIcon { top: 31px; left: 277px; }
+.smallBoxIconLeft { top: 31px; left: 254px; }
+.smallBoxHR { top: 47px; left: 28px; width: 268px; }

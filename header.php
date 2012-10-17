@@ -131,7 +131,12 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         
         <?php if(strpos($request, 'buzz')): ?>
         
-            <script src="<?php echo ROOT; ?>js/lib/scroller.js"></script>
+            <?php if(DEVICE_TYPE == 'phone') : ?>
+                <!-- no scroller for mobile -->
+            <?php else : ?>
+                <script src="<?php echo ROOT; ?>js/lib/scroller.js"></script>
+            <?php endif; ?>
+            
             <script src="<?php echo ROOT; ?>js/lib/intro.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>
@@ -168,55 +173,51 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     
                 $('.sharebutton').on('click touchstart touchend', function() {
                     if($(this).hasClass('expanded')) {
-                        
                         var self = this;
-                        
                         $(this).removeClass('expanded');
-                        
-//                        setTimeout(function() {
-//                            $(self).removeClass('expanded');
-//                        }, 100);
-                        
                     } else {
-                        
                         $(this).addClass('expanded');
-                        
-//                        setTimeout(function() {
-//                            $(self).addClass('expanded');
-//                        }, 100);
-                        
-                        
                     }
                 });
                     
                     // mikes
 //                    if(Modernizr.touch) {
-                        $('*').on('touchstart touchend', function() {
-                            $(this).trigger('click');
-                        });
+//                        $('*').on('touchstart touchend', function() {
+//                            $(this).trigger('click');
+//                        });
 //                    }
                         
                         sub = new Subscription();
                         
                     <?php if(strpos($request, 'buzz')): ?>
-                    
-                        var scroller = new Scroller('.train', 1005);
-                        var total = new TotalTracker('#total');
-                        var It = new InstagramTracker('#instagram_photo_count');
-                        var tt = new TwitterTracker('#twitter_count');
-                        var gfb = new GfbTracker('#gfb_count');
                         
-                        var It = new InstagramTracker('#instagram_photo_count1');
-                        var tt = new TwitterTracker('#twitter_count1');
-                        var gfb = new GfbTracker('#gfb_count1');
+                        <?php if(DEVICE_TYPE == 'phone') : ?>
+                            var total = new TotalTracker('#total');
+                            var It = new InstagramTracker('#instagram_photo_count');
+                            var tt = new TwitterTracker('#twitter_count');
+                            var gfb = new GfbTracker('#gfb_count');
+                        <?php else : ?>
+                            var scroller = new Scroller('.train', 1005);
+                            
+                            var total = new TotalTracker('#total');
+                            var It = new InstagramTracker('#instagram_photo_count');
+                            var tt = new TwitterTracker('#twitter_count');
+                            var gfb = new GfbTracker('#gfb_count');
+
+                            var It = new InstagramTracker('#instagram_photo_count1');
+                            var tt = new TwitterTracker('#twitter_count1');
+                            var gfb = new GfbTracker('#gfb_count1');
+
+                            var It = new InstagramTracker('#instagram_photo_count2');
+                            var tt = new TwitterTracker('#twitter_count2');
+                            var gfb = new GfbTracker('#gfb_count2');
+
+                            var It = new InstagramTracker('#instagram_photo_count3');
+                            var tt = new TwitterTracker('#twitter_count3');
+                            var gfb = new GfbTracker('#gfb_count3');
+                        <?php endif; ?>
                         
-                        var It = new InstagramTracker('#instagram_photo_count2');
-                        var tt = new TwitterTracker('#twitter_count2');
-                        var gfb = new GfbTracker('#gfb_count2');
-                        
-                        var It = new InstagramTracker('#instagram_photo_count3');
-                        var tt = new TwitterTracker('#twitter_count3');
-                        var gfb = new GfbTracker('#gfb_count3');
+                            
         
                     <?php elseif(strpos($request, 'instagram')): ?>
                         
@@ -295,7 +296,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
 	  if (d.getElementById(id)) return;
 	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=423821150969335";
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=369308779814605";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
     
