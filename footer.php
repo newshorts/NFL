@@ -1,4 +1,7 @@
+
+<?php if(DEVICE_TYPE != 'computer') : ?>
 <div id="border"></div>
+<?php endif; ?>
 
             </div><!-- /container --> 
 

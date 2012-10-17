@@ -18,7 +18,7 @@ html { }
     width: 100%;
     min-width: 768px;
     height: 100%;
-    position: fixed;
+    /*position: fixed;*/
     top: 100%;
     overflow: hidden;
     z-index: 7;
@@ -79,7 +79,9 @@ html { }
 
 #movement_steps p a { color: #e75405; font-weight: bold; }
 	
-#poster { margin-top: 10px; width: 379px; position: relative; float: right; overflow: hidden;}
+#poster { margin-top: 10px; width: 468px; position: relative; /*float: right;*/ overflow: hidden; background: url(../images/bg-texture-light.png) scroll repeat; text-align: center; }
+
+#poster img { margin-top: 35px; }
 
 
  
@@ -100,18 +102,18 @@ html { }
  
  /* MOVEMENT STYLES LANDSCAPE */   
      
-    #movement_left { width: 502px; height: 456px; top: 78px; left: 8px;}
-   	#movement_header { width: 468px; height: 137px; padding: 18px 0px 0px 12px; }
+        #movement_left { width: 502px; height: 456px; top: 78px; left: 8px;}
+   	#movement_header { width: 468px; height: 137px; padding: 18px 0px 0px 0px; }
 	#movement_header li div span { font-size: 25px; }
 	#movement_header li p { width: 420px; }
-	#movement_steps { padding: 0px 0px 0px 37px; }
-	#movement_steps li { border-bottom: #ccc 2px solid; height: 87px;  width: 427px;  padding: 8px 0px 0px 0px; }
-	#movement_steps li:first-child { border-top: #ccc 2px solid; }
+	/*#movement_steps { padding: 0px 0px 0px 37px; }*/
+	#movement_steps li { border-bottom: #ccc 2px solid; height: 87px;  width: 468px;  padding: 8px 0px 0px 0px; }
+	/*#movement_steps li:first-child { border-top: #ccc 2px solid; }*/
 	#movement_steps li:nth-child(3) { height: 77px; } 
 	#movement_steps li:nth-child(2) .headline { top: -33px; }
 	#movement_steps li:nth-child(3) .headline { top: -29px; } 
 	.right { float: right; position: relative; right: -135px; top: -40px; margin: 0 0 0 10px;  }
-	#poster { height: 456px; top: 78px; right: 5px; }
+	#poster { /*height: 456px;*/ top: 10px; /*right: 5px;*/ }
 
 
 }
@@ -123,7 +125,7 @@ html { }
     
  	#border { min-height: 795px; }
     #container { min-height: 720px; }
-    #wrap { width: 890px; height: 1000px; top: 59px; left: 47px; }
+    #wrap { width: 890px; height: 1000px; /*top: 59px; left: 47px;*/ }
     #boardcontainer { height: 125px; }
     #boardcontainer .left .headlineLargeGray { font-size: 60px; }
 	#boardcontainer .left { margin-top: 24px; }
@@ -137,7 +139,7 @@ html { }
 	
 	/* MOVEMENT STYLES PORTRAIT */   
     
-    #movement_left { height: 700px; top: 133px; background: none; }
+        #movement_left { height: 700px; top: 133px; background: none; }
 	#movement_header { height: 187px; width: 870px; margin-bottom: 10px; padding-top: 40px;  }
 	#movement_header li div span { font-size: 45px;  padding-right: 30px; }
 	#movement_header li p { font-size: 24px; line-height: 27px; width: 730px; }
@@ -596,9 +598,17 @@ html { }
 
 
 
+/*	--------------------------------------------------
+    MOVEMENT
+    -------------------------------------------------- */
 
+#movement_mobile #movement_header {
+    margin-top: 66px;
+}
 
-
+#movement_mobile #movement_steps {
+    margin-top: 10px;
+}
 
 
 

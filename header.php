@@ -256,7 +256,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <link href="<?php echo ROOT; ?>css/font.css" type="text/css" rel="stylesheet" />
         
         <?php if(DEVICE_TYPE == 'computer'): ?>
-            <link href="<?php echo ROOT; ?>css/style.css" type="text/css" rel="stylesheet" />
+            <link href="<?php echo ROOT; ?>css/style_mobile.css" type="text/css" rel="stylesheet" />
         <?php elseif(DEVICE_TYPE == 'tablet'): ?>
             <link href="<?php echo ROOT; ?>css/style_tablet.css" type="text/css" rel="stylesheet" />
         <?php elseif(DEVICE_TYPE == 'phone'): ?>
