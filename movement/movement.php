@@ -24,7 +24,6 @@
 				
 			</li>
 			
-			
 			<li id="step_2" class="bgTextureLight">
 				<div class="img">
 					<img src="../images/movement2.png">
