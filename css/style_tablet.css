@@ -47,6 +47,8 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
     margin-top: -98%;
     left: 27%;
     margin-left: -25%;
+    
+    z-index: 5;
 }
 
 #dynamic {
@@ -58,7 +60,14 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
     top: 100%;
     margin-top: -96%;
     left: 27%;
-    margin-left: -23%;   
+
+    margin-left: -23%;
+    
+     overflow: hidden;
+     
+     z-index: 7;
+    
+
 }
 
 
@@ -325,6 +334,9 @@ Numbers
 	#screen li { 
 	    float: left;
 	}
+	
+	
+	.tweet_banner { display: inline-block; width: 909px; height: 157px; position: relative; }
 	
 	/*#box2:hover, #box3:hover, #box4:hover  {
 	    background: white;
@@ -729,7 +741,7 @@ Numbers
 	#screen {
 	    display: block; 
 	    width: 909px; 
-	    height: 492px; 
+	    height: 909px; 
 	    position: absolute; 
 	    top: 0;
 	    left: 0;
@@ -741,6 +753,8 @@ Numbers
 	    overflow: hidden;
 	}
 	
+	
+	.tweet_banner { display: inline-block; width: 909px; height: 157px; position: relative; }
 	/*#box2:hover, #box3:hover, #box4:hover  {
 	    background: white;
 	}*/
@@ -749,7 +763,7 @@ Numbers
 	    width: 909px; 
 	    height: 318px; 
 	    position: relative; 
-	    margin: 10px 0px 10px 0px;
+	    margin: 145px 0px 10px 0px;
 	}
 	
 	#box1 .headlineMediumGray {
@@ -833,7 +847,7 @@ Numbers
 	
 	.trainCompartment {
 	    float: left;
-	    width: 296px;
+	    width: 600px;
 	    height: 155px;
 	    position: relative;
 	    display: block;
@@ -1276,3 +1290,23 @@ Numbers
 
 
 .trainCompartment span { font-size: 23px;  } 
+
+
+
+/*	--------------------------------------------------
+    Twitter banner
+    -------------------------------------------------- */
+
+
+.tweet_banner > * { color: #666; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; line-height: 26px; font-style: normal; }
+.tweet_banner a { color: inherit; text-decoration: none; color: #e75405; }
+.tweet_banner li { float: left; display: inline-block; position: absolute; }
+.tweet_banner .tweet_profile_img { top: 25%; left: 4%; }
+.tweet_banner .tweet_profile_img img { width: 83px; height: 83px; }
+.tweet_banner .tweet_name { top: 23%; left: 15%; }
+.tweet_banner .tweet_name p { margin-top: 0; margin-bottom: 0px; }
+.tweet_banner .tweet_name p:last-child {  font-weight: normal;  text-decoration: none;  font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+.tweet_banner .tweet_name p:last-child a { color: #858585; }
+.tweet_banner .tweet_content { width: 56%; top: 23%; left: 38%; }
+.tweet_banner .begin_quote { background: url(../images/quote_open.png) scroll no-repeat; display: inline-block; position: absolute;  width: 25px;  height: 17px; top: 4px; left: -44px }
+.tweet_banner .end_quote { background: url(../images/quote_close.png) scroll 98% 0 no-repeat;  display: inline-block; position: absolute;  width: 45px; height: 17px; white-space: pre; bottom: 3px; }

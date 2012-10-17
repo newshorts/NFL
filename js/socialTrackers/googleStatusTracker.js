@@ -94,30 +94,54 @@ var GoogleStatusTracker = SocialTracker.extend({
         
         console.dir(this.post.attachmentType);
         
-        if(this.post.attachmentType == 'photo') {
-            $('#plus_post > div').append('<img src="'+this.post.attachmentImage+'" alt="Plus Image Here..." />');
-            $('#plus_post > div').append('<h3>' + this.post.title + '</h3>');
-            $('#plus_post > div').append('<p>' + this.post.attachmentContent + '</p>');
-            $('#plus_post > div').append('<span>' + this.post.date + '</span>');
-            console.log('posting google status with photo');
-            return;
+        var media = ''
+        if(this.post.attachmentType == 'photo' || this.post.attachmentType == 'video') {
+            media = '<img src="'+this.post.attachmentImage+'" alt="Plus Image Here..." />';
         }
         
-        if(this.post.attachmentType == 'video') {
-            $('#plus_post > div').append('<img src="'+this.post.attachmentImage+'" alt="Plus Image Here..." />');
-            $('#plus_post > div').append('<h3>' + this.post.title + '</h3>');
-            $('#plus_post > div').append('<p>' + this.post.attachmentContent + '</p>');
-            $('#plus_post > div').append('<span>' + this.post.date + '</span>');
-            console.log('posting google status with video');
-            return;
-        }
+        var article = '';
         
         if(this.post.attachmentType == 'article') {
-            $('#plus_post > div').append('<h3>' + this.post.title + '</h3>');
-            $('#plus_post > div').append('<div><a href="'+this.post.attachmentLink+'"><h4>' + this.post.attachmentTitle + '</h4></a><p>'+this.post.attachmentContent+'</p><span>' + this.post.date + '</span></div>');
-            console.log('posting google status with article');
-            return;
+            article +=                      '<div>';
+            article +=                          '<h4><a href="'+this.post.attachmentLink+'">' + this.post.attachmentTitle + '</a></h4>';
+            article +=                          '<p>'+this.post.attachmentContent+'</p>';
+            article +=                      '</div>';
         }
+        
+        var russellFormat =             '<div>';
+            russellFormat +=                media;
+            russellFormat +=                '<h3>' + this.post.title + '</h3>';
+            russellFormat +=                '<span>' + this.post.date + '</span>';
+            russellFormat +=                '<p>' + this.post.content + '</p>';
+            russellFormat +=                article;
+            russellFormat +=            '</div>';
+        
+//        if(this.post.attachmentType == 'photo') {
+//            $('#plus_post > div').append('<img src="'+this.post.attachmentImage+'" alt="Plus Image Here..." />');
+//            $('#plus_post > div').append('<h3>' + this.post.title + '</h3>');
+//            $('#plus_post > div').append('<p>' + this.post.attachmentContent + '</p>');
+//            $('#plus_post > div').append('<span>' + this.post.date + '</span>');
+//            console.log('posting google status with photo');
+//            return;
+//        }
+        
+//        if(this.post.attachmentType == 'video') {
+//            $('#plus_post > div').append('<img src="'+this.post.attachmentImage+'" alt="Plus Image Here..." />');
+//            $('#plus_post > div').append('<h3>' + this.post.title + '</h3>');
+//            $('#plus_post > div').append('<p>' + this.post.attachmentContent + '</p>');
+//            $('#plus_post > div').append('<span>' + this.post.date + '</span>');
+//            console.log('posting google status with video');
+//            return;
+//        }
+        
+//        if(this.post.attachmentType == 'article') {
+//            $('#plus_post > div').append('<h3>' + this.post.title + '</h3>');
+//            $('#plus_post > div').append('<div><a href="'+this.post.attachmentLink+'"><h4>' + this.post.attachmentTitle + '</h4></a><p>'+this.post.attachmentContent+'</p><span>' + this.post.date + '</span></div>');
+//            console.log('posting google status with article');
+//            return;
+//        }
+        
+        $('#plus_post').append(russellFormat);
         
         console.log('unable to post google status');
         return;

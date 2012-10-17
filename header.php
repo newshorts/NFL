@@ -166,19 +166,34 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
             (function($) {
                 $(window).load(function() {
                     
-                $('.sharebutton').on('click touchstart', function() {
+                $('.sharebutton').on('click touchstart touchend', function() {
                     if($(this).hasClass('expanded')) {
+                        
+                        var self = this;
+                        
                         $(this).removeClass('expanded');
+                        
+//                        setTimeout(function() {
+//                            $(self).removeClass('expanded');
+//                        }, 100);
+                        
                     } else {
+                        
                         $(this).addClass('expanded');
+                        
+//                        setTimeout(function() {
+//                            $(self).addClass('expanded');
+//                        }, 100);
+                        
+                        
                     }
                 });
                     
                     // mikes
 //                    if(Modernizr.touch) {
-//                        $('*').on('touchstart', function() {
-//                            $(this).trigger('click');
-//                        });
+                        $('*').on('touchstart touchend', function() {
+                            $(this).trigger('click');
+                        });
 //                    }
                         
                         sub = new Subscription();
