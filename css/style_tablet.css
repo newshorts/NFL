@@ -63,7 +63,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
     margin-left: -23%;
     
-     overflow: hidden;
+    overflow: hidden;
      
      z-index: 7;
     
@@ -74,7 +74,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 #wrap { position: relative; background: url(../images/bg-texture-dark.png) scroll repeat; overflow: hidden; }
 
-#boardcontainer { background: url(../images/bg-texture-light.png) scroll repeat; width: 890px; top: 0px; left: 0px; position: absolute; margin-top: 0; margin-left: 0; overflow: visible; z-index: 10; }
+#boardcontainer { background: url(../images/bg-texture-light.png) scroll repeat; width: 890px; top: 0px; left: 0px; position: absolute; margin-top: 0; margin-left: 1px; overflow: visible; z-index: 10; }
 
 #boardcontainer .left { float: left; margin-left: 30px; display:block; }
 
@@ -239,7 +239,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
     
     #border { min-height: 570px; }
     #container { min-height: 565px; }
-    #wrap { width: 891px; height: 566px; top: 30px; left: 46px; }
+    #wrap { width: 890px; height: 566px; top: 30px; left: 46px; }
     #boardcontainer { height: 76px; }
     #boardcontainer .expanded { width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; }
     #boardcontainer .left { margin-top: 18px; }
@@ -251,37 +251,39 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
  /* MOVEMENT STYLES LANDSCAPE */   
      
-    #movement_left { height: 464px; top: 78px; }
-   	#movement_header { height: 137px; width: 482px;  }
+    #movement_left { width: 502px; height: 456px; top: 78px; left: 8px;}
+   	#movement_header { width: 468px; height: 137px; padding: 18px 0px 0px 12px; }
 	#movement_header li div span { font-size: 25px; }
-	#movement_header li p {  width: 420px; }
-	#movement_steps { padding: 0px 0px 0px 55px; }
+	#movement_header li p { width: 420px; margin; }
+	#movement_steps { padding: 0px 0px 0px 37px; }
 	#movement_steps li { border-bottom: #ccc 2px solid; height: 87px;  width: 427px;  padding: 8px 0px 0px 0px; }
 	#movement_steps li:first-child { border-top: #ccc 2px solid; }
-	#movement_steps li:nth-child(1) .headline { top: -26px; } 
-	#movement_steps li:nth-child(2) .headline { top: -40px; }
-	#movement_steps li:nth-child(3) .headline { top: -36px; height: 77px;  } 
-	.right { float: right; position: relative; right: -135px; top: -40px; margin-left: 10px;  }
-	#poster { height: 465px; top: 78px; }
+	#movement_steps li:nth-child(3) { height: 77px; } 
+	#movement_steps li:nth-child(2) .headline { top: -33px; }
+	#movement_steps li:nth-child(3) .headline { top: -29px; } 
+	.right { float: right; position: relative; right: -135px; top: -40px; margin: 0 0 0 10px;  }
+	#poster { height: 456px; top: 78px; right: 5px; }
+
      
        
        
  /* TWITTER STYLES LANDSCAPE */   
  
-    .twitter { height: 341px; top: 80px; left: 3px;}
+    .twitter { width: 890px; height: 341px; top: 80px; left: 8px;}
 	#twitter_overlay_top { background: url(../images/twitter_overlay_top.png) bottom left no-repeat; display: block; height: 107px; position: absolute; width:888px; z-index: 3; top: 90px; left: 9px; }
-	#twitter_overlay_bottom  { height: 106px; width: 888px; bottom: 130px; } 
+	#twitter_overlay_bottom  { height: 106px; width: 888px; bottom: 118px; } 
 	.tweet_list { top: -50px; }
 	.unique_tweet { height: 110px; }	
 	.tweet:after { top: 210px; }
-	#twitter_footer {  height: 91px; padding: 20px 0px 0px 30px; top: 83px; }
+	#twitter_footer { width: 888px; height: 91px; padding: 18px 0px 0px 18px; margin-left: 8px; top: 80px; }
 	#twitter_footer li div span { padding-right: 123px; }
 	#twitter_headline { width: 490px; }
-	#social { padding: 20px 0 0 36px; width: 341px}
+	#social { padding: 16px 0 0 24px; width: 341px}
 	#social p { font-size: 14px; width: 230px; }
 	#social .links { top: -20px; }
 	#tweet { width: 86px; }
-	#twitter_number_count { top: -43px; text-align: right; }
+	#twitter_number_count { margin: 0px 18px 0px 0px; text-align: right; }
+	.numbers_medium { margin: -28px 0px 0px 0px; }
 
 
 
@@ -318,131 +320,45 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 
 
-/*	--------------------------------------------------
-Numbers
--------------------------------------------------- */
+/*	NUMBERS STYLES LANDSCAPE */
 
-	#screen {
-	    display: block; 
-	    width: 909px; 
-	    height: 492px; 
-	    position: absolute; 
-	    top: 0;
-	    left: 0;
-	}
-	
-	#screen li { 
-	    float: left;
-	}
-	
-	
+	#screen { display: block; width: 909px; height: 492px; position: absolute; top: 0; left: 0; }
+	#screen li { float: left; }
 	.tweet_banner { display: inline-block; width: 909px; height: 157px; position: relative; }
-	
-	/*#box2:hover, #box3:hover, #box4:hover  {
-	    background: white;
-	}*/
-	
-	#box1 { 
-	    width: 909px; 
-	    height: 288px; 
-	    position: relative; 
-	    margin: 88px 0px 10px 0px;
+	#box1 { width: 890px; height: 288px; position: relative; margin: 88px 0px 10px 8px;	}
+	#box1 .headlineMediumGray { position: absolute; top: 18px; left: 30px; }
+	#total { margin: 178px 0 0 21px; }
+	#totalBG { margin: 98px 0 0 52px; }
+	#box1 .numbers_large { position: absolute; bottom: 48px; right: 18px; }
+	#box1 #total, #box1 .largNumbersGrey { /*position: absolute;*/ width: 899px; text-align: right; direction: rtl; text-align: justify; white-space: pre;
 	}
 	
-	#box1 .headlineMediumGray {
-	    position: absolute;
-	    top: 18px;
-	    left: 30px;
-	}
-	
-	#total {
-		margin: 178px 0 0 21px;
-	}
-	
-	#totalBG {
-			margin: 98px 0 0 52px;
-	}
-	
-	#box1 .numbers_large {
-	    position: absolute;
-	    bottom: 48px;
-	    right: 18px;
-	}
-	
-	#box1 #total, #box1 .largNumbersGrey {
-	    /*position: absolute;*/
-	    width: 899px;
-	    text-align: right;    
-	    direction: rtl;
-	    text-align: justify;
-	    white-space: pre;
-	}
-	
-	#box2 {
-	    /*margin: 0px 5px 0px 0px;*/
-	    /*overflow: hidden;*/
-	    /*width: 998px;*/
-	}
+	#box2 { /*margin: 0px 5px 0px 0px;*/ /*overflow: hidden;*/ /*width: 998px;*/ }
 	
 	/*#box2 .numbers_small,*/
 	/*#box3 .numbers_small,
 	#box4 .numbers_small {*/
-	.trainCompartment .numbers_small{
-	    position: absolute;
-	    bottom: 18px;
-	    right: 29px;
-	}
+	.trainCompartment .numbers_small{ position: absolute; bottom: 18px; right: 29px; }
 	
 	/* .trainCompartment:hover { background-color: white; } */
 	
 	/*#box2 span, #box2 img, #box2 hr,*/
 	/*#box3 span, #box3 img, #box3 hr,*/
 	/*#box4 span, #box4 img, #box4 hr {*/
-	.trainCompartment hr, .trainCompartment span, .trainCompartment img {
-	    position: absolute;
-	}
+	.trainCompartment hr, .trainCompartment span, .trainCompartment img { position: absolute; }
 	
-	.trainCompartment span { font-size: 23px;  } 
+	.trainCompartment span { font-size: 23px; } 
 	
-	.train {
-	    position: relative;
-	    top: 0;
-	    left: 0;
-	    width: 9999px;
-	    height: 155px;
-	}
+	.train { position: relative; top: 0; left: 8px; width: 9999px; height: 155px; }
 	
-	.trainCar .tweet_list {
-	    top: 0;
-	    width: 909px;
-	}
+	.trainCar .tweet_list { top: 0; width: 909px; }
 	
-	.trainCompartmentLong {
-	    position: relative;
-	    display: block;
-	    width: 909px;
-	    height: 155px;
-	    background: url(../images/bg-texture-light.png) scroll repeat;
-	    margin-left: 10px;
-	    margin-right: 10px;
-	    float: left;
-	    overflow: hidden
-	}
+	.trainCompartmentLong { position: relative; display: block; width: 890px; height: 158px; background: url(../images/bg-texture-light.png) scroll repeat; margin-left: 18px; margin-right: 10px; float: left; overflow: hidden; }
 	
-	.trainCompartment {
-	    float: left;
-	    width: 296px;
-	    height: 155px;
-	    position: relative;
-	    display: block;
-	    background: url(../images/bg-texture-light.png) scroll repeat;
-	    margin-left: 10px;
-	}
+	.trainCompartment { float: left; width: 290px; height: 158px; position: relative; display: block; background: url(../images/bg-texture-light.png) scroll repeat;  margin-left: 10px; }
 	
 	.trainCompartment:first-child,
-	.trainCompartmentLong:first-child{
-	    margin-left: 0px;
-	}
+	.trainCompartmentLong:first-child{ margin-left: 0px; }
 	
 	/*#box3 {
 		margin: 0px 5px 0px 5px;
@@ -453,85 +369,36 @@ Numbers
 		padding-right: 1px;
 	}*/
 	
-	.countGrey {
-	    display: inline;
-	    top: 68px;
-	    left: 34px;
-	    margin: 0;
-	    width: 263px;
-	    direction: rtl;
-	    text-align: justify;
-	    white-space: pre;
-	}
-	
-	.countOrange {
-	    display: inline;
-	    top: 107px;
-	    left: 34px;
-	    margin: 0;
-	    width: 263px;
-	    direction: rtl;
-	    text-align: justify;
-	    white-space: pre;
-	}
-	
-	.smallBoxHeading {
-	    top: 18px;
-	    left: 18px;
-	}
-	
-	.smallBoxIcon {
-	    top: 18px;
-	    left: 258px;
-	}
-	
-	.smallBoxIconLeft {
-	    top: 18px;
-	    left: 238px;
-	}
-	
-	.smallBoxHR {
-	    top: 38px;
-	    left: 18px;
-	    width: 268px;
-	
-	}
-	
-	.bottom, .bottom a { 
-	    width: 296px; 
-	    height: 155px; 
-	    position: relative;
-	    display: block;
-	}
+	.countGrey { display: inline; top: 68px; left: 34px; margin: 0; width: 263px; direction: rtl; text-align: justify; white-space: pre; }
+	.countOrange { display: inline; top: 107px; left: 34px; margin: 0; width: 263px; direction: rtl; text-align: justify; white-space: pre; }
+	.smallBoxHeading { top: 18px; left: 18px; }
+	.smallBoxIcon { top: 18px; left: 258px;	}
+	.smallBoxIconLeft { top: 18px; left: 238px; }
+	.smallBoxHR { top: 38px; left: 18px; width: 268px; }
+	.bottom, .bottom a { width: 296px; height: 155px; position: relative; display: block; }
 	
 		
-		
-	
 
-	/*	--------------------------------------------------
-	    Instagram
-	    -------------------------------------------------- */
+/*	INSTAGRAM STYLES LANDSCAPE */
 	
-	#instagram { overflow: hidden; height: 345px;  margin: 80px 0px 0px 0px; width: 909px; margin-top: 10px; top: 78px; position: relative; }
+	#instagram { overflow: hidden; width: 890px; height: 345px;  margin: 88px 0px 8px 8px; }
 	
-	#instagram_footer { position: relative; height: 102px; padding: 12px 0px 0px 30px; width: 909px; margin-top: 10px; top: 76px;   }
+	#instagram_footer { position: relative; width: 890px; height: 110px; padding: 10px 0px 0px 18px; margin: 0px 0px 0px 8px; }
 	#instagram_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
-	
-	
-	
+
 	#instagram_count {
 		position: relative;
 		float: right;
         width: 363px;
         display: inline-block;
-        margin-top: -50px;
-        margin-right: 58px;
+        margin-top: -25px;
+        margin-right: 28px;
 	}
 	
 	#instagram_count .mediumNumbersOrange,
 	#instagram_count .mediumNumbersGrey {
 	    position: absolute;
-	    top: 41px;
+	    top: -30px;
 	    right: 0;
 	    text-align: right;
 	    direction: rtl;
@@ -548,26 +415,14 @@ Numbers
 		
 	}
 	
+	#instagram_social { padding: 16px 0 0 25px; width: 408px; positionL: relative; float: left; }
 	
-	#instagram_social { padding: 16px 0 0 25px; width: 408px; positionL: relative; float: left; 
-		
-	}
-	
-	#instagram_social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 348px; 
-		
-	}
+	#instagram_social p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 308px; }
 	#instagram_social p a { color: #e75405; font-weight: bold;}
-	
-	
-	#instagram_social em { color: #e75405; font-weight: bold; 
-		
-	}
-	
+	#instagram_social em { color: #e75405; font-weight: bold; }
 	#instagram_button { position: relative; top: -30px;  float: right; }
 	
-	.instagram_photo_count {
-		margin: 31px 0px 0px 0px; 
-	}
+	.instagram_photo_count { margin: 31px 0px 0px 0px; }
 
 
  
