@@ -57,9 +57,7 @@
 			        <div id="google_count" class="small" google_data="0"><ul class="numbers_small"><li class="zero">0</li></ul></div>
 				</div>
 			</li>
-                        <li id="plus_post">
-                            
-                        </li>
+	        <li id="plus_post"></li>
 		</ul>
 	</div> <!---- CLOSE SUPPORTERS_MAIN ---->
 	

@@ -303,8 +303,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <div id="background"></div>
         <div id="wrap">
         
-		<div id="container">
-		<div id="scaffold"></div>
+        <div id="container">
+            <div id="scaffold"></div>
             <div id="header">
                 <div id="boardcontainer">
                     
@@ -360,7 +360,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                 <?php $_SESSION['sfsuperbowlintro'] = false; ?>
             <?php endif; ?>
             
-            
+        
             
             
             

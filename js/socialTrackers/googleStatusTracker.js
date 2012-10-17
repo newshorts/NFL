@@ -28,6 +28,9 @@ var GoogleStatusTracker = SocialTracker.extend({
         
         var entry = this.entries[0];
         
+        console.log('entry coming next')
+        console.dir(entry)
+        
         if(typeof entry.content != "undefined") {
             this.post.content = entry.content;
         }

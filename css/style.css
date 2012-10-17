@@ -1027,7 +1027,15 @@ display: none;
     font-family:  Arial, Helvetica, sans-serif; 
     font-weight: bold; 
     font-style: italic; 
-    color: #767676; 
+    color: #666666; 
+    text-decoration: none; }
+    
+#plus_post div h4 {	padding-left: 5px; 
+	font-size: 15px;
+    font-family:  Arial, Helvetica, sans-serif; 
+    font-weight: bold; 
+    font-style: italic; 
+    color: #e75405; 
     text-decoration: none; }
     
 #plus_post div p { color: #767676; font-style: bold; font-family: Arial, Helvetica, sans-serif; font-size: 12px; width: 220px; margin-right: 5px;  float: left; text-align: left; position: relative; }

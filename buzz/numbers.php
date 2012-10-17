@@ -9,7 +9,6 @@
 
 <ul id="screen">
 
-
     <li id="box1" class="bgTextureLight">
         <div class="headlineMediumGray">
             <img src="../images/buzz_sign.png"><span>SFSUPERBOWL BUZZ</span>
