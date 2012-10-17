@@ -466,7 +466,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#movement_header li div span { font-size: 45px;  padding-right: 30px; }
 	#movement_header li p { font-size: 24px; line-height: 27px; width: 730px; }
 	#movement_steps { position: relative; }
-	#movement_steps li { height: 162px; width: 458px; padding: 45px 0px 0px 40px; margin-bottom: 10px; font-size:  }	
+	#movement_steps li { height: 162px; width: 458px; padding: 45px 0px 0px 38px; margin-bottom: 10px; font-size: 23px; }	
 	#movement_steps li:nth-child(1) .headline { top: -28px; width: 450px; } 
 	#movement_steps li:nth-child(2) .headline { top: -30px; }
 	#movement_steps li:nth-child(3) .headline { top: -30px; width: 350px; }
@@ -477,12 +477,12 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	
 	#movement_steps .headline { width: 300px; }
 	#movement_steps .headline h3 {font-size: 21px; line-height: 23px; }
-	#movement_steps p { font-size: 18px; width: 350px; }
+	#movement_steps p { font-size: 18px; width: 350px; line-height: 23px; }
 	.right { position: absolute; left: 5px; bottom: -40px;  }
 	.right .facebook { margin-left: 45px; }
 	.right .google { margin-left: 90px; }
-	#poster { background-color: #fff; height: 560px; top: 339px; overflow: hidden; padding-top: 60px;  }
-			
+	#poster { background-color: #fff; height: 590px; width: 372px; top: 339px; right: 0px; overflow: hidden; float: right; padding-top: 50px; }
+	#poster img { max-width: 358px; }
 
     
 	/* TWITTER STYLES PORTRAIT */   
