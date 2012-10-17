@@ -772,12 +772,12 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 
 #intro {
-    width: 890px;
+    width: 860px;
     height: 509px;
     position: absolute;;
     top: 50%;
     left: 50%;
-    margin-left: -501px;
+    margin-left: -488px;
     margin-top: -289px;
     z-index: 20;
     
@@ -794,7 +794,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
     position: absolute;
     top: 0;
     left: 0;
-    width: 890px;
+    width: 860px;
 }
 
 .hidden {
