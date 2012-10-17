@@ -22,7 +22,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
         <link rel="icon" type="image/png" href="<?php echo ROOT; ?>favicon.ico">
-        
+        <meta name = "viewport" content = "width = device-width">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="<?php echo ROOT; ?>js/lib/jquery.min.js">\x3C/script>')</script>
         <!--<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>-->
@@ -407,7 +407,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <?php elseif(DEVICE_TYPE == 'tablet'): ?>
             <link href="<?php echo ROOT; ?>css/style_tablet.css" type="text/css" rel="stylesheet" />
         <?php elseif(DEVICE_TYPE == 'phone'): ?>
-            <link href="<?php echo ROOT; ?>css/style_phone.css" type="text/css" rel="stylesheet" />
+            <link href="<?php echo ROOT; ?>css/style_mobile.css" type="text/css" rel="stylesheet" />
         <?php endif; ?>
         
         <!-- INTRO ANIMATION -->
