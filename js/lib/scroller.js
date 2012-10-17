@@ -28,13 +28,7 @@ var Scroller = Class.extend({
         });
         
         $(window).on('orientationchange', function(evt) {
-            var orientation = Math.abs(window.orientation) == 90 ? 'landscape' : 'portrait';
-            
-            if(orientation == 'portrait') {
-                self.stop();
-            } else {
-                self.start();
-            }
+            self.checkOrientation();
         });
         
         // setup
@@ -43,6 +37,24 @@ var Scroller = Class.extend({
         this.ticker();
         
         this.getTweet();
+    },
+    
+    checkOrientation: function() {
+        var orientation = Math.abs(window.orientation) == 90 ? 'landscape' : 'portrait';
+            
+        if(orientation == 'portrait') {
+            this.stop();
+            this.changeClassNames('small','medium');
+        } else {
+            this.start();
+            this.changeClassNames('medium','small');
+        }
+        
+    },
+    
+    changeClassNames: function(from, to) {
+        $('.' + from).removeClass(from).addClass(to);
+        $('.numbers_' + from).removeClass('numbers_'+from).addClass('numbers_'+to);
     },
     
     setPositions: function() {
@@ -74,6 +86,9 @@ var Scroller = Class.extend({
         var self = this;
         
         setInterval(function() {
+            
+            self.checkOrientation();
+            
             if(self.on) {
                 self.moveLeft();
                 this.alternate *= -1;
