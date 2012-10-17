@@ -203,6 +203,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	width: 106px;
 	height: 26px;
 	display: block;
+	margin: 12px 0px 12px 0px;
 }
 
 .sharebutton ul li a:hover {
@@ -218,11 +219,11 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	background: url(../images/share_fb_over.png) scroll no-repeat;
 }
 
-.sharebutton .twitter {
+.sharebutton .twittertweet {
 	background: url(../images/share_twitter.png) scroll no-repeat;
 }
 
-.sharebutton .twitter:hover {
+.sharebutton .twittertweet:hover {
 	background: url(../images/share_twitter_over.png) scroll no-repeat;
 }
 

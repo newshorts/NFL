@@ -323,7 +323,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 
 			                    <ul>
                                     <li><a class="facebook link" onclick='postToFeed(); return false;'></a><p id='msg'></p></li>
-                                    <li><a class="twitter link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Let&rsquo;s&nbsp;bring&nbsp;the&nbsp;Bowl&nbsp;to&nbsp;the&nbsp;Bay!&nbsp;Show&nbsp;your&nbsp;support.#sfsuperbowl"></a></li>
+                                    <li><a class="twittertweet link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Let&rsquo;s&nbsp;bring&nbsp;the&nbsp;Bowl&nbsp;to&nbsp;the&nbsp;Bay!&nbsp;Show&nbsp;your&nbsp;support.#sfsuperbowl"></a></li>
                                     <li><a class="google link" href="https://plus.google.com/share?url=http://www.sfsuperbowl.com" target="_blank"></a></li>
                                     <!-- <li><link rel="image_src" href="http://www.labnol.org/screenshot.png" /></li> -->
                                 </ul>
