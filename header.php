@@ -444,18 +444,18 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 	                <div class="right">
                             
 	                	<div class="rightWrap">
-                                    <div class="tabs">
-		                        <a href="<?php echo ROOT; ?>buzz" class="ajaxify <?php echo (strpos($request, 'buzz')) ? 'active' : ''; ?>"><?php echo (strpos($request, 'buzz')) ? 'SCOREBOARD' : 'SCOREBOARD'; ?></a> / <a href="<?php echo ROOT; ?>movement" class="ajaxify <?php echo (strpos($request, 'movement')) ? 'active' : ''; ?>" >JOIN THE MOVEMENT</a>
+                            <div class="tabs">
+                        <a href="<?php echo ROOT; ?>buzz" class="ajaxify <?php echo (strpos($request, 'buzz')) ? 'active' : ''; ?>"><?php echo (strpos($request, 'buzz')) ? 'SCOREBOARD' : 'SCOREBOARD'; ?></a> / <a href="<?php echo ROOT; ?>movement" class="ajaxify <?php echo (strpos($request, 'movement')) ? 'active' : ''; ?>" >JOIN THE MOVEMENT</a>
 		                    </div>
 		                    
 		                    <div class="sharebutton">
 
 			                    <ul>
-                                        <li><a class="facebook link" onclick='postToFeed(); return false;'></a><p id='msg'></p></li>
-                                        <li><a class="twitter link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Share%20SFSUPERBOWL%20This%20is%20going%20to%20be%20the%20story"></a></li>
-                                        <li><a class="google link" href="https://plus.google.com/share?url=http://www.sfsuperbowl.com" target="_blank"></a></li>
-                                        <!-- <li><link rel="image_src" href="http://www.labnol.org/screenshot.png" /></li> -->
-                                    </ul>
+                                    <li><a class="facebook link" onclick='postToFeed(); return false;'></a><p id='msg'></p></li>
+                                    <li><a class="twitter link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Share%20SFSUPERBOWL%20This%20is%20going%20to%20be%20the%20story"></a></li>
+                                    <li><a class="google link" href="https://plus.google.com/share?url=http://www.sfsuperbowl.com" target="_blank"></a></li>
+                                    <!-- <li><link rel="image_src" href="http://www.labnol.org/screenshot.png" /></li> -->
+                                </ul>
 
 		                    </div>
 		                    
