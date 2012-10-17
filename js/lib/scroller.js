@@ -114,11 +114,12 @@ var Scroller = Class.extend({
         
         var userLink = 'http://twitter.com/' + tweet.username;
         
-        $('.tweet_avatar').attr('href', userLink);
-        $('.tweet_avatar img').attr('src', tweet.profile_img);
-        $('.screenname p').text(tweet.name);
-        $('.tweet_user').attr('href', userLink);
-        $('.tweet_user').text(tweet.username);
+        $('.tweet_profile_img a').attr('href', userLink);
+        $('.tweet_profile_img img').attr('src', tweet.profile_img);
+        $('.tweet_name p:first-child a').text(tweet.name);
+        $('.tweet_name p:first-child a').attr('href', userLink);
+        $('.tweet_name p:last-child a').attr('href', userLink);
+        $('.tweet_name p:last-child a').text(tweet.username);
         var tags = this.wrapTags(tweet.text);
         
         var parsedText = '';
@@ -126,7 +127,7 @@ var Scroller = Class.extend({
             parsedText = tweet.text.replace(tags[i].tag, tags[i].wrap);
         }
         
-        $('.tweet_text').html(parsedText);
+        $('.banner_tweet_text').html('<span class="begin_quote"></span>' + parsedText + '<span class="end_quote"></span>');
         
     },
     

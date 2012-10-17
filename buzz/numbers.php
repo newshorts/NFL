@@ -34,7 +34,6 @@
     </li>
     
     <li class="train">
-        <!--<ul class="train">-->
             
             <ul class="trainCar" data-pos="0">
                 <li class="trainCompartment" data-pos="">
@@ -91,34 +90,29 @@
             </ul>
             
             <ul class="trainCar" data-pos="335">
-                <li class="trainCompartmentLong" data-pos="">
+<!--                <li class="trainCompartmentLong" data-pos="">
                     <img src="../images/coming-soon-tweet.png" />
-                </li>
-<!--                <li id="tweet" class="trainCompartmentLong" data-pos="">
-                    <div class="tweet_list">
-                        <ul class="unique_tweet">
-                            <li class="tweet_info">
-                                <ul>
-                                    <li class="avatar">
-                                        <a class="tweet_avatar" href="http://twitter.com/newshorts" target="_blank">
-                                            <img src="http://a0.twimg.com/profile_images/1771921314/profile_normal.jpg" height="48" width="48" alt="newshorts's avatar" title="newshorts's avatar" border="0">
-                                        </a>
-                                    </li>
-                                    <li class="screenname">
-                                        <p>mike</p>
-                                    </li>
-                                    <br>
-                                    <li class="username">
-                                        <a class="tweet_user" href="http://twitter.com/newshorts" target="_blank">@newshorts</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="tweet"> 
-                                <p class="tweet_text">Another tweet from <a href="http://search.twitter.com/search?q=&amp;tag=gspsf&amp;lang=all" class="tweet_hashtag" target="_blank">#gspsf</a> and <a href="http://search.twitter.com/search?q=&amp;tag=cheerfulsundays&amp;lang=all" class="tweet_hashtag" target="_blank">#cheerfulsundays</a></p>
-                            </li>
-                        </ul>
-                    </div>
                 </li>-->
+                
+                
+                <li class="tweet_banner trainCompartmentLong">
+                    <ul class="inner_tweet">
+                        <li class="tweet_profile_img">
+                            <a href="">
+                                <img src="http://a0.twimg.com/profile_images/1771921314/profile_normal.jpg" height="48" width="48" alt="newshorts's avatar" title="newshorts's avatar" border="0">
+                            </a>
+                        </li>
+                        <li class="tweet_name">
+                            <p><a href="http://twitter.com/newshorts" target="_blank">Mike</a></p>
+                            <p><a href="http://twitter.com/newshorts">@newshorts</a></p>
+                        </li>
+                        <li class="tweet_content">
+                            <p class="banner_tweet_text">
+                                <span class="begin_quote"></span>Another tweet from <a href="http://search.twitter.com/search?q=&amp;tag=gspsf&amp;lang=all" class="tweet_hashtag" target="_blank">#gspsf</a> and <a href="http://search.twitter.com/search?q=&amp;tag=cheerfulsundays&amp;lang=all" class="tweet_hashtag" target="_blank">#cheerfulsundays</a><span class="end_quote"></span>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
             </ul>
             <ul class="trainCar" data-pos="0">
                 <li class="trainCompartment" data-pos="">
@@ -176,7 +170,7 @@
         
             <ul class="trainCar" data-pos="335">
                 <li class="trainCompartmentLong" data-pos="">
-                    <img src="../images/coming-soon-instagram.png" />
+                    <a href="<?php echo ROOT; ?>instagram/" class="ajaxify"><img src="../images/coming-soon-instagram.png" /></a>
                 </li>
             </ul>
         
@@ -236,7 +230,7 @@
         
             <ul class="trainCar" data-pos="335">
                 <li class="trainCompartmentLong" data-pos="">
-                    <img src="../images/coming-soon-twitter.jpg" />
+                    <a href="<?php echo ROOT; ?>tweets/" class="ajaxify"><img src="../images/coming-soon-twitter.jpg" /></a>
                 </li>
             </ul>
         
@@ -296,12 +290,9 @@
         
             <ul class="trainCar" data-pos="335">
                 <li class="trainCompartmentLong" data-pos="">
-                    <img src="../images/coming-soon-facebook.jpg" />
+                    <a href="<?php echo ROOT; ?>supporters/" class="ajaxify"><img src="../images/coming-soon-facebook.jpg" /></a>
                 </li>
             </ul>
-            
-            
-        <!--</ul>-->
     </li>
     
     

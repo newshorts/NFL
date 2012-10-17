@@ -198,6 +198,10 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         var It = new InstagramTracker('#instagram_photo_count2');
                         var tt = new TwitterTracker('#twitter_count2');
                         var gfb = new GfbTracker('#gfb_count2');
+                        
+                        var It = new InstagramTracker('#instagram_photo_count3');
+                        var tt = new TwitterTracker('#twitter_count3');
+                        var gfb = new GfbTracker('#gfb_count3');
         
                     <?php elseif(strpos($request, 'instagram')): ?>
                         
