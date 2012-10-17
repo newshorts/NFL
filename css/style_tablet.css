@@ -603,20 +603,21 @@ Numbers
 	
 	/* MOVEMENT STYLES PORTRAIT */   
     
-    #movement_left {height: 700px; top: 133px; background: none; }
-	#movement_header { height: 187px; width: 870px; margin-bottom: 10px; }
+    #movement_left { height: 700px; top: 133px; background: none; }
+	#movement_header { height: 187px; width: 870px; margin-bottom: 10px; padding-top: 40px;  }
 	#movement_header li div span { font-size: 45px;  padding-right: 30px; }
-	#movement_header li p { width: 730px; }
+	#movement_header li p { font-size: 24px; line-height: 27px; width: 730px; }
 	#movement_steps { position: relative; }
-	#movement_steps li { height: 142px; width: 472px;  padding: 65px 0px 0px 40px; margin-bottom: 10px;  }	
-	#movement_steps li:nth-child(1) .headline { width: 200px; } 
-	#movement_steps li:nth-child(2) .headline { top: -43px; }
-	#movement_steps li:nth-child(3) .headline { top: -39px; } 
-	#movement_steps .headline { width: 185px; } 
-	#movement_steps p { width: 400px; }
-	.right { position: absolute; }
-	.right .facebook { margin-left: 45px;}
-	.right .google { margin-left: 90px;}
+	#movement_steps li { height: 162px; width: 472px;  padding: 45px 0px 0px 40px; margin-bottom: 10px; font-size:  }	
+	#movement_steps li:nth-child(1) .headline { top: -35px; width: 450px; } 
+	#movement_steps li:nth-child(2) .headline { top: -63px; }
+	#movement_steps li:nth-child(3) .headline { top: -49px; width: 350px; } 
+	#movement_steps .headline { width: 300px; }
+	#movement_steps .headline h3 {font-size: 35px; line-height: 36px; }
+	#movement_steps p { font-size: 18px; width: 350px; }
+	.right { position: absolute; left: 5px; bottom: -40px;  }
+	.right .facebook { margin-left: 45px; }
+	.right .google { margin-left: 90px; }
 	#poster { background-color: #fff; height: 560px; top: 361px; overflow: hidden; padding-top: 80px;  }
 			
 
@@ -920,197 +921,6 @@ Numbers
 
     
 } /* close media query portrait */
-
-
-
-		
-	
-
-
-/*	--------------------------------------------------
-    MOVEMENT
-    -------------------------------------------------- */
-
-#movements { 
-    width: 996px; 
-    height: 483px;
-    position: relative; 
-    margin: 10px 0 0 0; 
-    z-index: 12;
-    top: 135px; 
-}
-
-
-#movements .left {
-	/*background: white;*/
-	width: 580px; 
-    height: 455px;
-	float: left;
-    display:block;
-    padding: 28px 0 0 28px;
-    margin: 0px 10px 0px 0px;
-    position: relative;
-    
-}
-
-#movements .right {
-	/*background: white;*/
-    position: absolute;
-    width: 378px;
-    height: 483px;
-    right: 0px;
-
-    overflow: hidden;
-}
-
-#movements p {
-	font-size: 14px; 
-	line-height: 1.5;
-	color: #767676;
-	margin: 12px 21px 25px 18px;
-}
-
-#movements a {
-	font-weight: bold;
-	color: #e75406;
-}
-
-#movements a:hover {
-	font-weight: bold;
-	color: #666666;
-}
-
-#movements hr { 
-	border: solid #cdcdcd;
-	border-width: 1px 0 0;
-	clear: both;
-	margin: 12px 30px 12px 0px;
-	height: 0;
-}
-
-#movements .img {
-	float: left;
-    left: 0px;
-    display:block;
-	margin: 16px 21px 21px 0px;
-}
-
-
-#movements .headline {
-	float: left;
-    display:block;
-    width: 498px;
-	margin: 25px 0px 32px 0px;
-}
-
-#movements .headline .left {
-	float: left;
-    display: block;
-    width: 468px;
-    height: 20px;
-    position: relative;
-}
-
-#movements .headline .right {
-    float: right;
-    display: block;
-    width: 33px;
-    height: 33px; 
-    position: relative;
-    margin-left: 8px; 
-    margin-top: -10px;
-    
-    behavior: url(../lib/pie/PIE.htc);
-}
-
-#movements .headline h3 {
-    display:block;
-    width: 318px;
-    font-size: 21px;
-    font-family: 'FranklinGothicURW-HeaIta'; 
-    font-weight: normal; 
-    font-style: normal; 
-    color: #666666;
-    height: 28px;
-    margin: -8px 0px 0px 0px;
-    text-decoration: none;
-}
-
-#movements .headline h3 a {
-    display:block;
-    width: 318px;
-    font-size: 21px;
-    font-family: 'FranklinGothicURW-HeaIta'; 
-    font-weight: normal; 
-    font-style: normal; 
-    color: #666666; 
-    text-decoration: none;
-}
-
-#movements .headline h3 a:hover {
-    display:block;
-    width: 318px;
-    font-size: 21px;
-    font-family: 'FranklinGothicURW-HeaIta'; 
-    font-weight: normal; 
-    font-style: normal; 
-    color: #e75406; 
-    text-decoration: none;
-}
-
-
-
-
-#movements #followSF {
-	float: left;
-	margin-top: -1px;
-}
-
-#movements .headline P {
-    font-size: 14px;
-    font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	line-height: 1.28;
-	color: #767676;
-	font-weight: normal; 
-    text-decoration: none;
-	margin: -5px 0px 0px 0px;
-}
-
-#movements .headline a {
-    font-size: 14px;
-    font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	line-height: 1.28;
-	color: #e75406;
-	font-weight: bold;
-    text-decoration: none;
-   	margin: -16px 0px 8px 0px;
-}
-
-#movements .headline a:hover {
-    font-size: 14px;
-    font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	line-height: 1.28;
-	color: #666666;
-	font-weight: bold;
-    text-decoration: none;
-    
-	margin: -16px 0px 8px 0px;
-}
-
-
- 
- 
- 
-
-
-
-
-
-
-
-
-           
-
 
 
 
