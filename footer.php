@@ -1,5 +1,5 @@
 <div id="border"></div>
-
+			</div>
         </div><!-- /wrap -->
     
  <!-- Twitter -->     
