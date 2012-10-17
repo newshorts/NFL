@@ -1165,6 +1165,25 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 .numbers_small .comma { background-position: 0 -792px; right: 2px; top: 7px; width: 13px; }
 .numbers_small .comma_gray { background-position: -30px -792px; right: 7px; top: 6px; width: 13px; }
 
+/*	--------------------------------------------------
+    Twitter banner
+    -------------------------------------------------- */
+
+.tweet_banner { display: inline-block; width: 1004px; height: 157; position: relative; }
+.tweet_banner > * { color: #666; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; line-height: 26px; font-style: normal; }
+.tweet_banner a { color: inherit; text-decoration: none; color: #e75405; }
+.tweet_banner li { float: left; display: inline-block; position: absolute; }
+.tweet_banner .tweet_profile_img { top: 25%; left: 4%; }
+.tweet_banner .tweet_profile_img img { width: 83px; height: 83px; }
+.tweet_banner .tweet_name { top: 23%; left: 15%; width: 175px; }
+.tweet_banner .tweet_name p { margin-top: 0; margin-bottom: 0px; }
+.tweet_banner .tweet_name p:last-child {  font-weight: normal;  text-decoration: none;  font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+.tweet_banner .tweet_name p:last-child a { color: #858585; }
+.tweet_banner .tweet_content { width: 56%; top: 23%; left: 38%; }
+.tweet_banner .begin_quote { background: url(../images/quote_open.png) scroll no-repeat; display: inline-block; position: absolute;  width: 25px;  height: 17px; top: 4px; left: -44px }
+.tweet_banner .end_quote { background: url(../images/quote_close.png) scroll 98% 0 no-repeat;  display: inline-block; position: absolute;  width: 45px; height: 17px; white-space: pre; bottom: 3px; }
+
+
 
 
 .trainCompartment span { font-size: 23px;  } 

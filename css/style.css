@@ -894,39 +894,6 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 
-/*#news li  p { color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; position: relative; width: 290px; float: left; margin: 10px 0px 0px 145px; }
-
-#news li div a { color: #e75405; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; float: right; position: relative; }
-
-
-#news li {
-border-bottom: #cbcbcb 1px solid;
-	position: relative;
-	width: 422px;
-	height: 91px;
-	padding: 0px 0px 0px 0px;
-	float: left;
-}
-
-#news li:nth-of-type(1) {
-	top: -15px;
-	height: 106px;
-}
-
-#news {
-	
-}
-
-#news li .img {
- float: left;
- position: absolute;
- margin: 5px 0px 0px 5px;
-
-}
-
-#news a:nth-of-type(2) {
-display: none;
-}*/
 
 
 
@@ -941,13 +908,6 @@ display: none;
 #google_cta { margin: 37px 0px 0px 0px; width: 49px;  width: 39px;  }
 
 
-/*
-#google_pluses li div span { font-size: 24px; font-family: 'FranklinGothicURW-HeaIta';  color: #666666;  text-decoration: none; }
-#google_pluses li div { margin: 30px 0 0 0; }
-
-#google_cta img { margin: 0 10px 0 0; }
-#google_cta span {position: relative; top: -15px; }
-*/
 
 
 #facebook_likes { height: 318px; width: 459px; margin: 10px 10px 0px 0px; padding: 30px 0px 0px 35px; position: relative; float: left;}
@@ -960,13 +920,6 @@ display: none;
 
 #facebook_cta { margin: 37px 0px 0px 0px; width: 49px; overflow: hidden; }
 
-/*
-#facebook_likes li div span { font-size: 24px; font-family: 'FranklinGothicURW-HeaIta'; color: #666666; text-decoration: none; }
-#facebook_likes li div { margin: 30px 0 0 0; }
-
-#facebook_cta img { margin: 0 10px 0 0; }
-#facebook_cta span { position: relative; top: -15px; }
-*/
 
 
 
