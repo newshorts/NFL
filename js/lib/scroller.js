@@ -17,7 +17,7 @@ var Scroller = Class.extend({
         
         this.setPositions();
         
-        this.ticker();
+//        this.ticker();
         
         this.getTweet();
     },
