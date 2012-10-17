@@ -133,6 +133,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <?php if(strpos($request, 'buzz')): ?>
         
             <script src="<?php echo ROOT; ?>js/lib/scroller.js"></script>
+            <script src="<?php echo ROOT; ?>js/lib/intro.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/totalTracker.js"></script>
@@ -238,160 +239,10 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 
                     <?php endif; ?>
                     
-                    <?php if($_SESSION['sfsuperbowlintro']) : ?>
+                    <?php if($_SESSION['sfsuperbowlintro'] && DEVICE_TYPE == 'computer') : ?>
                         
-                        var fadeInIntroLogoBig = function() {
-                            $('#introLogoBig').animate({
-                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
-                                'filter': 'alpha(opacity=100)',
-                                '-moz-opacity': '1.0',
-                                '-khtml-opacity': '1.0',
-                                'opacity': '1.0'
-                                
-                            }, 500, function() {
-                                // complete
-                            });
-                        };
-                        
-                        var fadeOutIntroLogoBig = function() {
-                            $('#introLogoBig').animate({
-                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
-                                'filter': 'alpha(opacity=00)',
-                                '-moz-opacity': '0.0',
-                                '-khtml-opacity': '0.0',
-                                'opacity': '0.0'
-                            }, 500, function() {
-                                // complete
-                                $(this).css({
-                                    display: 'none'
-                                });
-                            });
-                        };
-                        
-                        var fadeInIntroLogo = function() {
-                            $('#introLogo').animate({
-                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
-                                'filter': 'alpha(opacity=100)',
-                                '-moz-opacity': '1.0',
-                                '-khtml-opacity': '1.0',
-                                'opacity': '1.0'
-                                
-                            }, 1500, function() {
-                                // complete
-                            });
-                        };
-                        
-                        var fadeOutIntroLogo = function() {
-                            $('#introLogo').animate({
-                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
-                                'filter': 'alpha(opacity=00)',
-                                '-moz-opacity': '0.0',
-                                '-khtml-opacity': '0.0',
-                                'opacity': '0.0'
-                            }, 1500, function() {
-                                // complete
-                                $(this).css({
-                                    display: 'none'
-                                });
-                            });
-                        };
-                        
-                        var fadeInHeadline = function() {
-                            $('#introHeadline').animate({
-                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
-                                'filter': 'alpha(opacity=100)',
-                                '-moz-opacity': '1.0',
-                                '-khtml-opacity': '1.0',
-                                'opacity': '1.0'
-                                
-                            }, 1500, function() {
-                                // complete
-                            });
-                        };
-                        
-                        var fadeOutHeadline = function() {
-                            $('#introHeadline').animate({
-                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
-                                'filter': 'alpha(opacity=00)',
-                                '-moz-opacity': '0.0',
-                                '-khtml-opacity': '0.0',
-                                'opacity': '0.0'
-                            }, 1500, function() {
-                                // complete
-                                $(this).css({
-                                    display: 'none'
-                                });
-                            });
-                        };
-                        
-                        var fadeInCopy = function() {
-                            $('#introCopy').animate({
-                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
-                                'filter': 'alpha(opacity=100)',
-                                '-moz-opacity': '1.0',
-                                '-khtml-opacity': '1.0',
-                                'opacity': '1.0'
-                                
-                            }, 1500, function() {
-                                // complete
-                            });
-                        };
-                        
-                        var fadeOutCopy = function() {
-                            $('#introCopy').animate({
-                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
-                                'filter': 'alpha(opacity=00)',
-                                '-moz-opacity': '0.0',
-                                '-khtml-opacity': '0.0',
-                                'opacity': '0.0'
-                            }, 1500, function() {
-                                // complete
-                                $(this).css({
-                                    display: 'none'
-                                });
-                            });
-                        };
-                        
-                        var fadeOutIntro = function() {
-                            $('#intro').animate({
-                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
-                                'filter': 'alpha(opacity=00)',
-                                '-moz-opacity': '0.0',
-                                '-khtml-opacity': '0.0',
-                                'opacity': '0.0'
-                            }, 500, function() {
-                                // complete
-                                $(this).css({
-                                    display: 'none'
-                                });
-                            });
-                        };
-                        
-                        var sequence = function() {
-
-                            
-                            delay(fadeInIntroLogoBig, 800);
-                            delay(fadeOutIntroLogoBig, 2700);
-                            
-                            delay(fadeInIntroLogo, 3400);
-                            delay(fadeInHeadline, 3400);
-                            
-                            delay(fadeInCopy, 5200);
-                            
-                            delay(fadeOutIntroLogo, 15000);
-                            delay(fadeOutHeadline, 15000);
-                            delay(fadeOutCopy, 15000);
-                            
-                            delay(fadeOutIntro, 16500);
-
-                        };
-                        
-                        var delay = function(func, time) {
-                            time = time || 80;
-                            setTimeout(func, time);
-                        }
-                        
-                        setTimeout(sequence, 200);
+                        var intro = new Intro();
+                        intro.init();
                                            
                     <?php endif; ?>
 		            
@@ -490,7 +341,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     
             </div><!-- /header -->
             
-            <?php if($_SESSION['sfsuperbowlintro']) : ?>
+            <?php if($_SESSION['sfsuperbowlintro'] && DEVICE_TYPE == 'computer') : ?>
                 
                 <div id="intro">
                     
