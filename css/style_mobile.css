@@ -18,7 +18,6 @@ html { }
     width: 100%;
     min-width: 768px;
     height: 100%;
-    /*position: fixed;*/
     top: 100%;
     overflow: hidden;
     z-index: 7;
@@ -30,7 +29,7 @@ html { }
 
 #wrap { position: relative; background: url(../images/bg-texture-dark.png) scroll repeat; overflow: hidden; width: 100%;}
 
-#boardcontainer { background: url(../images/bg-texture-light.png) scroll repeat; width: 890px; top: 0px; left: 0px; position: absolute; margin-top: 0; margin-left: 1px; overflow: visible; z-index: 10; }
+#boardcontainer { background: url(../images/bg-texture-light.png) scroll repeat; width: 100%; top: 0px; left: 0px; position: absolute; margin-top: 0; margin-left: 1px; overflow: visible; z-index: 10; }
 
 #boardcontainer .left { float: left; margin-left: 30px; display:block; }
 
@@ -40,9 +39,9 @@ html { }
 	
 #boardcontainer .tabs { position: absolute;	left: 0px; height: 28px; }
 
-#boardcontainer .sharebutton { position: absolute; width: 109px; height: 22px; background: url(../images/share.png) scroll 0 0 no-repeat; background-size: 109px 22px; overflow: hidden; }
+#boardcontainer .sharebutton { display: none; position: absolute; width: 109px; height: 22px; background: url(../images/share.png) scroll 0 0 no-repeat; background-size: 109px 22px; overflow: hidden; }
 		
-#boardcontainer .expanded { width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; }	
+#boardcontainer .expanded { display: none; width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; }	
 
 
 
@@ -90,14 +89,15 @@ html { }
 
  /* BACKGROUND AND HEADER STYLES LANDSCAPE */      
     
-    #border { min-height: 570px; }
-    #container { min-height: 565px; }
-    #wrap { width: 768px; height: 1000px;}
-    #boardcontainer { height: 76px; }
-    #boardcontainer .expanded { width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; }
+    #container { min-height: 480px; }
+    #wrap { width: 100%; height: 1000px;}
+    #boardcontainer { height: 150px; }
+/*     #boardcontainer .expanded { width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; } */
     #boardcontainer .left { margin-top: 18px; }
-	#boardcontainer .right { top: 0; right: -5px; }
-	#boardcontainer .tabs { bottom: -5px; width: 500px; }
+    #boardcontainer .left  .headlineLargeGray { font-size: 68px; }
+	#boardcontainer .right { top: 30px;  float: left; position: relative; }
+	#boardcontainer .tabs { width: 1000px; font-size: 50px; left: -100px; }
+	#boardcontainer .tabs a.active { font-size: 50px; }
 	#boardcontainer .sharebutton { top: 15px; right: 35px; }
  
  /* MOVEMENT STYLES LANDSCAPE */   
@@ -116,6 +116,14 @@ html { }
 	#poster { /*height: 456px;*/ top: 10px; /*right: 5px;*/ }
 
 
+	#box1 { width: 100%; height: 318px; position: relative; top: 160px; }
+	#box1 .headlineMediumGray { position: absolute; top: 44px; left: 30px; font-size: 40px; }
+	#total { margin: 178px 0 0 52px; }
+	#totalBG { margin: 98px 0 0 52px; }
+	#box1 .numbers_large { position: absolute; bottom: 50px; right: 50px; }
+	#box1 #total, #box1 .largNumbersGrey { width: 100%px;  text-align: right; direction: rtl; text-align: justify; white-space: pre; }
+
+
 }
 
 
@@ -123,15 +131,14 @@ html { }
 
 /* BACKGROUND AND HEADER STYLES LANDSCAPE */  
     
- 	#border { min-height: 795px; }
-    #container { min-height: 720px; }
-    #wrap { width: 890px; height: 1000px; /*top: 59px; left: 47px;*/ }
-    #boardcontainer { height: 125px; }
-    #boardcontainer .left .headlineLargeGray { font-size: 60px; }
-	#boardcontainer .left { margin-top: 24px; }
-	#boardcontainer .right { top: 30px; left: 30px; }
-	#boardcontainer .tabs { top: 58px; width: 668px; font-size: 30px; }
-	#boardcontainer .tabs a.active { font-size: 30px; }
+
+    #wrap { width: 100%; height: 2000px; }
+    #boardcontainer { height: 330px; }
+    #boardcontainer .left .headlineLargeGray { font-size: 110px; line-height: 90px; }
+	#boardcontainer .left { margin-top: 44px; }
+	#boardcontainer .right { top: 80px; left: 30px; }
+	#boardcontainer .tabs { top: 168px; width: 900px; font-size: 50px; }
+	#boardcontainer .tabs a.active { font-size: 50px; }
 	#boardcontainer .tabs dl, dd { font-size: 30px; }
 	#boardcontainer .sharebutton {  top: 56px; left: 708px; }
 	
@@ -157,6 +164,14 @@ html { }
 	#poster { background-color: #fff; height: 560px; top: 361px; overflow: hidden; padding-top: 80px;  }
 
 
+	#box1 { width: 100%; height: 318px; position: relative; top: 370px; }
+	#box1 .headlineMediumGray { position: absolute; top: 44px; left: 30px; font-size: 40px; }
+	#total { margin: 178px 0 0 52px; }
+	#totalBG { margin: 98px 0 0 52px; }
+	#box1 .numbers_large { position: absolute; bottom: 50px; right: 50px; }
+	#box1 #total, #box1 .largNumbersGrey { width: 100%px;  text-align: right; direction: rtl; text-align: justify; white-space: pre; }
+
+
 }
 
 
@@ -169,7 +184,7 @@ html { }
 	#screen {
 	    display: block; 
 	    width: 100%; 
-	    height: 909px; 
+	    height: 100%%; 
 	    position: absolute; 
 	    top: 0;
 	    left: 0;
@@ -183,66 +198,14 @@ html { }
 	
 	
 	.tweet_banner { display: inline-block; width: 909px; height: 157px; position: relative; }
-	/*#box2:hover, #box3:hover, #box4:hover  {
-	    background: white;
-	}*/
+
 	
-	#box1 { 
-	    width: 768px; 
-	    height: 318px; 
-	    position: relative; 
-	    margin: 145px 0px 10px 0px;
-	}
-	
-	#box1 .headlineMediumGray {
-	    position: absolute;
-	    top: 44px;
-	    left: 30px;
-	}
-	
-	#total {
-		margin: 178px 0 0 52px;
-	}
-	
-	#totalBG {
-			margin: 98px 0 0 52px;
-	}
-	
-	#box1 .numbers_large {
-	    position: absolute;
-	    bottom: 50px;
-	    right: 50px;
-	}
-	
-	#box1 #total, #box1 .largNumbersGrey {
-	    /*position: absolute;*/
-	    width: 899px;
-	    text-align: right;    
-	    direction: rtl;
-	    text-align: justify;
-	    white-space: pre;
-	}
-	
-	#box2 {
-	    /*margin: 0px 5px 0px 0px;*/
-	    /* overflow: hidden; */
-	    /*width: 998px;*/
-	}
-	
-	/*#box2 .numbers_small,*/
-	/*#box3 .numbers_small,
-	#box4 .numbers_small {*/
 	.trainCompartment .numbers_small{
 	    position: absolute;
 	    bottom: 18px;
 	    right: 8px;
 	}
 	
-	/* .trainCompartment:hover { background-color: white; } */
-	
-	/*#box2 span, #box2 img, #box2 hr,*/
-	/*#box3 span, #box3 img, #box3 hr,*/
-	/*#box4 span, #box4 img, #box4 hr {*/
 	.trainCompartment hr, .trainCompartment span, .trainCompartment img {
 	    position: absolute;
 	}
@@ -255,6 +218,7 @@ html { }
 	    left: 0;
 	    width: 9999px;
 	    height: 155px;
+	    top: 170px;
 	}
 	
 	.trainCar .tweet_list {
@@ -275,7 +239,7 @@ html { }
 	
 	.trainCompartment {
 	    float: left;
-	    width: 600px;
+	    width: 980px;
 	    height: 155px;
 	    position: relative;
 	    display: block;
@@ -288,15 +252,6 @@ html { }
 	.trainCompartmentLong:first-child{
 	    margin-left: 0px;
 	}
-	
-	/*#box3 {
-		margin: 0px 5px 0px 5px;
-	}
-	
-	#box4 {
-		margin: 0px 0px 0px 5px;
-		padding-right: 1px;
-	}*/
 	
 	.countGrey {
 	    display: inline;
@@ -359,6 +314,7 @@ html { }
 			GLOBAL CSS
 ==========================================================*/
 
+/*
 
 #intro {
     width: 860px;
@@ -383,8 +339,9 @@ html { }
     position: absolute;
     top: 0;
     left: 0;
-    width: 860px;
-}
+   
+ width: 860px;
+}*/
 
 .hidden {
     opacity: 0;
@@ -637,6 +594,12 @@ html { }
     height: 21px;
     overlflow: hidden;
 }
+
+
+
+
+
+
 
 
 /*	--------------------------------------------------
