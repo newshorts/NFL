@@ -825,9 +825,9 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 }
 
 .tweets_count {
-	margin: 0px 25px 0 0;
+	margin: 0px 0 0 0;
 	position: relative;
-	top: -49px;
+	top: 130px;
 
 }
 
