@@ -58,9 +58,7 @@
 				</div>
 			</li>
                         <li id="plus_post">
-                            <div>
-                                
-                            </div>
+                            
                         </li>
 		</ul>
 	</div> <!---- CLOSE SUPPORTERS_MAIN ---->
