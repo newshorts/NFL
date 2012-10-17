@@ -89,11 +89,13 @@ html { }
     
     #container { min-height: 480px; }
     #wrap { width: 100%; height: 1000px;}
-    #boardcontainer { height: 76px; }
-    #boardcontainer .expanded { width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; }
+    #boardcontainer { height: 150px; }
+/*     #boardcontainer .expanded { width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; } */
     #boardcontainer .left { margin-top: 18px; }
-	#boardcontainer .right { top: 0; right: -5px; }
-	#boardcontainer .tabs { bottom: -5px; width: 500px; }
+    #boardcontainer .left  .headlineLargeGray { font-size: 68px; }
+	#boardcontainer .right { top: 30px;  float: left; position: relative; }
+	#boardcontainer .tabs { width: 1000px; font-size: 50px; left: -100px; }
+	#boardcontainer .tabs a.active { font-size: 50px; }
 	#boardcontainer .sharebutton { top: 15px; right: 35px; }
  
  /* MOVEMENT STYLES LANDSCAPE */   
@@ -112,6 +114,14 @@ html { }
 	#poster { height: 456px; top: 78px; right: 5px; }
 
 
+	#box1 { width: 100%; height: 318px; position: relative; top: 160px; }
+	#box1 .headlineMediumGray { position: absolute; top: 44px; left: 30px; font-size: 40px; }
+	#total { margin: 178px 0 0 52px; }
+	#totalBG { margin: 98px 0 0 52px; }
+	#box1 .numbers_large { position: absolute; bottom: 50px; right: 50px; }
+	#box1 #total, #box1 .largNumbersGrey { width: 100%px;  text-align: right; direction: rtl; text-align: justify; white-space: pre; }
+
+
 }
 
 
@@ -123,12 +133,12 @@ html { }
  	#border { min-height: 795px; }
     #container { min-height: 720px; }
 */
-    #wrap { width: 100%; height: 1000px; }
-    #boardcontainer { height: 250px; }
+    #wrap { width: 100%; height: 2000px; }
+    #boardcontainer { height: 330px; }
     #boardcontainer .left .headlineLargeGray { font-size: 110px; line-height: 90px; }
-	#boardcontainer .left { margin-top: 24px; }
-	#boardcontainer .right { top: 60px; left: 30px; }
-	#boardcontainer .tabs { top: 168px; width: 668px; font-size: 50px; }
+	#boardcontainer .left { margin-top: 44px; }
+	#boardcontainer .right { top: 80px; left: 30px; }
+	#boardcontainer .tabs { top: 168px; width: 900px; font-size: 50px; }
 	#boardcontainer .tabs a.active { font-size: 50px; }
 	#boardcontainer .tabs dl, dd { font-size: 30px; }
 	#boardcontainer .sharebutton {  top: 56px; left: 708px; }
@@ -153,6 +163,14 @@ html { }
 	.right .facebook { margin-left: 45px; }
 	.right .google { margin-left: 90px; }
 	#poster { background-color: #fff; height: 560px; top: 361px; overflow: hidden; padding-top: 80px;  }
+
+
+	#box1 { width: 100%; height: 318px; position: relative; top: 370px; }
+	#box1 .headlineMediumGray { position: absolute; top: 44px; left: 30px; font-size: 40px; }
+	#total { margin: 178px 0 0 52px; }
+	#totalBG { margin: 98px 0 0 52px; }
+	#box1 .numbers_large { position: absolute; bottom: 50px; right: 50px; }
+	#box1 #total, #box1 .largNumbersGrey { width: 100%px;  text-align: right; direction: rtl; text-align: justify; white-space: pre; }
 
 
 }
@@ -181,65 +199,14 @@ html { }
 	
 	
 	.tweet_banner { display: inline-block; width: 909px; height: 157px; position: relative; }
-	/*#box2:hover, #box3:hover, #box4:hover  {
-	    background: white;
-	}*/
+
 	
-	#box1 { 
-	    width: 100%; 
-	    height: 318px; 
-	    position: relative; 
-	}
-	
-	#box1 .headlineMediumGray {
-	    position: absolute;
-	    top: 44px;
-	    left: 30px;
-	}
-	
-	#total {
-		margin: 178px 0 0 52px;
-	}
-	
-	#totalBG {
-			margin: 98px 0 0 52px;
-	}
-	
-	#box1 .numbers_large {
-	    position: absolute;
-	    bottom: 50px;
-	    right: 50px;
-	}
-	
-	#box1 #total, #box1 .largNumbersGrey {
-	    /*position: absolute;*/
-	    width: 100%px;
-	    text-align: right;    
-	    direction: rtl;
-	    text-align: justify;
-	    white-space: pre;
-	}
-	
-	#box2 {
-	    /*margin: 0px 5px 0px 0px;*/
-	    /* overflow: hidden; */
-	    /*width: 998px;*/
-	}
-	
-	/*#box2 .numbers_small,*/
-	/*#box3 .numbers_small,
-	#box4 .numbers_small {*/
 	.trainCompartment .numbers_small{
 	    position: absolute;
 	    bottom: 18px;
 	    right: 8px;
 	}
 	
-	/* .trainCompartment:hover { background-color: white; } */
-	
-	/*#box2 span, #box2 img, #box2 hr,*/
-	/*#box3 span, #box3 img, #box3 hr,*/
-	/*#box4 span, #box4 img, #box4 hr {*/
 	.trainCompartment hr, .trainCompartment span, .trainCompartment img {
 	    position: absolute;
 	}
@@ -252,6 +219,7 @@ html { }
 	    left: 0;
 	    width: 9999px;
 	    height: 155px;
+	    top: 170px;
 	}
 	
 	.trainCar .tweet_list {
@@ -272,7 +240,7 @@ html { }
 	
 	.trainCompartment {
 	    float: left;
-	    width: 600px;
+	    width: 980px;
 	    height: 155px;
 	    position: relative;
 	    display: block;
@@ -285,15 +253,6 @@ html { }
 	.trainCompartmentLong:first-child{
 	    margin-left: 0px;
 	}
-	
-	/*#box3 {
-		margin: 0px 5px 0px 5px;
-	}
-	
-	#box4 {
-		margin: 0px 0px 0px 5px;
-		padding-right: 1px;
-	}*/
 	
 	.countGrey {
 	    display: inline;
@@ -356,6 +315,7 @@ html { }
 			GLOBAL CSS
 ==========================================================*/
 
+/*
 
 #intro {
     width: 860px;
@@ -380,7 +340,8 @@ html { }
     position: absolute;
     top: 0;
     left: 0;
-    width: 860px;
+   
+*/ width: 860px;
 }
 
 .hidden {
