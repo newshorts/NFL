@@ -27,11 +27,11 @@ var Subscription = Class.extend({
             self._data = data;
             var len = self.subs.length;
             
-            console.log('only polling once')
+//            console.log('only polling once')
             
             for(var i = 0; i < len; i++) {
                 $(window).trigger(self.subs[i], data);
-                console.log('but emitting many events')
+//                console.log('but emitting many events')
             }
             
 //            $(window).trigger(self._eventName, data);

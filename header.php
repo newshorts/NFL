@@ -123,8 +123,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <script src="<?php echo ROOT; ?>js/lib/class.js"></script>
         <script src="<?php echo ROOT; ?>js/lib/jquery.easing.js"></script>
         
-        <script src="<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js"></script>
-        <script src="<?php echo ROOT; ?>js/lib/pageNavigation.js"></script>
+<!--        <script src="<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js"></script>-->
+<!--        <script src="<?php echo ROOT; ?>js/lib/pageNavigation.js"></script>-->
         <script src="<?php echo ROOT; ?>js/socialTrackers/subscription.js"></script>
         <script src="<?php echo ROOT; ?>js/socialTrackers/socialTracker.js"></script>
         

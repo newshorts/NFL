@@ -20,7 +20,7 @@ var SocialTracker = Class.extend({
 
         sub.addSubscription(eventName);
         
-        console.dir(elem)
+//        console.dir(elem)
         
         this._eventName = eventName;
         this._url = url;
@@ -109,8 +109,8 @@ var SocialTracker = Class.extend({
             var formattedNum = self.formatNumber(oldNum + self.count);
             self.setText(formattedNum);
             
-            console.log('count: ' + self.count)
-            console.log('delta: ' + self.delta)
+//            console.log('count: ' + self.count)
+//            console.log('delta: ' + self.delta)
 
             if(self.count > self.delta) {
                 self.destroyTimer();
@@ -125,7 +125,7 @@ var SocialTracker = Class.extend({
         var length = str.length;
         
         // reformat numbers here
-        console.log(str.charAt(length - 1));
+//        console.log(str.charAt(length - 1));
         
         var classSize = this.getSize();
         
