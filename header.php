@@ -200,7 +200,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         
                     <?php if(strpos($request, 'buzz')): ?>
                     
-//                        var scroller = new Scroller('.train', 1005);
+                        var scroller = new Scroller('.train', 1005);
                         var total = new TotalTracker('#total');
                         var It = new InstagramTracker('#instagram_photo_count');
                         var tt = new TwitterTracker('#twitter_count');
@@ -374,8 +374,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                             delay(fadeOutIntroLogoBig, 2700);
                             
                             delay(fadeInIntroLogo, 3400);
-                            
                             delay(fadeInHeadline, 3400);
+                            
                             delay(fadeInCopy, 5200);
                             
                             delay(fadeOutIntroLogo, 15000);
@@ -392,8 +392,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         }
                         
                         setTimeout(sequence, 200);
-                        
-                                               
+                                           
                     <?php endif; ?>
 		            
 //                    var nav = new PageNavigation('#wrap');
