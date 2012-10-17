@@ -1024,7 +1024,7 @@ display: none;
 #plus_post ul li { position: relative; float: left; }
 #plus_post ul:nth-child(1) { }
 #plus_post ul:nth-child(1) li span img { height: 85%; }
-#plus_post ul:nth-child(2) { margin-left: 100px; top: -113px; width: 350px;}
+#plus_post ul:nth-child(2) { margin-left: 100px; top: -113px; width: 310px;}
 #plus_post ul:nth-child(2) li h3 { font-size: 15px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #666666; }
 #plus_post ul:nth-child(2) li h4 { font-size: 14px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; color: #e75405; }
 #plus_post ul:nth-child(2) li p { color: #767676;  font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
