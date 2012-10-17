@@ -256,7 +256,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <link href="<?php echo ROOT; ?>css/font.css" type="text/css" rel="stylesheet" />
         
         <?php if(DEVICE_TYPE == 'computer'): ?>
-            <link href="<?php echo ROOT; ?>css/style.css" type="text/css" rel="stylesheet" />
+            <link href="<?php echo ROOT; ?>css/style_tablet.css" type="text/css" rel="stylesheet" />
         <?php elseif(DEVICE_TYPE == 'tablet'): ?>
             <link href="<?php echo ROOT; ?>css/style_tablet.css" type="text/css" rel="stylesheet" />
         <?php elseif(DEVICE_TYPE == 'phone'): ?>
@@ -304,8 +304,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <div id="background"></div>
         <div id="wrap">
         
-		<div id="container">
-		<div id="scaffold"></div>
+        <div id="container">
+            <div id="scaffold"></div>
             <div id="header">
                 <div id="boardcontainer">
                     
@@ -360,7 +360,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                 <?php $_SESSION['sfsuperbowlintro'] = false; ?>
             <?php endif; ?>
             
-            
+        </div><!-- /container --> 
             
             
             
