@@ -1,5 +1,7 @@
 <div id="border"></div>
+
             </div><!-- /container --> 
+
         </div><!-- /wrap -->
     
  <!-- Twitter -->     

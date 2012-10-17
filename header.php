@@ -22,7 +22,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
         <link rel="icon" type="image/png" href="<?php echo ROOT; ?>favicon.ico">
-        <meta name = "viewport" content = "width = 480">
+<!--         <meta name = "viewport" content = "width = device-width" /> -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="<?php echo ROOT; ?>js/lib/jquery.min.js">\x3C/script>')</script>
         <!--<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>-->
@@ -323,11 +323,11 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 		                    <div class="sharebutton">
 
 			                    <ul>
-                                                <li><a class="facebook link" onclick='postToFeed(); return false;'></a><p id='msg'></p></li>
-                                                <li><a class="twitter link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Share%20SFSUPERBOWL%20This%20is%20going%20to%20be%20the%20story"></a></li>
-                                                <li><a class="google link" href="https://plus.google.com/share?url=http://www.sfsuperbowl.com" target="_blank"></a></li>
-                                                <!-- <li><link rel="image_src" href="http://www.labnol.org/screenshot.png" /></li> -->
-                                            </ul>
+                                    <li><a class="facebook link" onclick='postToFeed(); return false;'></a><p id='msg'></p></li>
+                                    <li><a class="twitter link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Let&rsquo;s&nbsp;bring&nbsp;the&nbsp;Bowl&nbsp;to&nbsp;the&nbsp;Bay!&nbsp;Show&nbsp;your&nbsp;support.#sfsuperbowl"></a></li>
+                                    <li><a class="google link" href="https://plus.google.com/share?url=http://www.sfsuperbowl.com" target="_blank"></a></li>
+                                    <!-- <li><link rel="image_src" href="http://www.labnol.org/screenshot.png" /></li> -->
+                                </ul>
 
 		                    </div>
 		                    
@@ -354,7 +354,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                        
                     </div>
                 </div>
-                
+		
+  
                 
                 
                 <?php $_SESSION['sfsuperbowlintro'] = false; ?>
