@@ -109,10 +109,11 @@ var GoogleStatusTracker = SocialTracker.extend({
         }
             
         var post =          '<ul>';
-            post +=             '<li><h3>'+entry.title+'</h3></li>';
+            post +=             '<li><span>'+media+'<span></li>';
+
             post +=         '</ul>';
             post +=         '<ul>';
-            post +=             '<li><span>'+media+'<span></li>';
+            post +=             '<li><h3>'+entry.title+'</h3></li>';
             post +=             '<li><h4>' + entry.object.attachments[0].displayName + '</h4></li>';
             post +=             '<li><p>'+entry.object.attachments[0].content+'</p></li>';
             post +=         '</ul>';

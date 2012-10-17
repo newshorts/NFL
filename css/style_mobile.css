@@ -123,7 +123,25 @@ html { }
 
 
 	/* BUZZ STYLES LANDSCAPE */
-    #box1 { top: 150px; }
+	#box1 { width: 100%; height: 300px; padding: 50px; margin: 10px 0; position: relative; top: 343px; }
+	#box1 div img { height: 15%;} 
+	#box1 div span { font-size: 65px; }
+	
+	
+	#train_car1 a span { position: relative; left: -235px; top: 0px;  }
+	#train_car2 {}
+	#train_car3 {}
+	.train { width: 100%; margin: 20px 0px 20px 0px; top: 357px; position: relative; height: 1500px; }
+	
+/* 	.trainCar { height: 750px; } */
+	.trainCar li a span { font-size: 55px; float: left;  }
+	.trainCompartment { width: 100%; height: 150px; padding: 50px; position: relative; margin: 20px 0 20px 0; background: url(../images/bg-texture-light.png) scroll repeat; }
+	.numbers_medium {  margin: 0; width: 763px; position: relative; float: right; }
+	.countOrange {  margin: 0; width: 763px; position: relative; float: right; }
+	.smallBoxHeading { top: 30px; left: 30px; }
+	.smallBoxIcon { position: relative; float: right; right: 75px; height: 55%; top: -10px;}
+	.smallBoxIconLeft { position: relative; float: right; right: 70px; height: 55%; top: -10px; margin-left: 25px;  }
+	/* .smallBoxHR { top: 47px; left: 28px; width: 268px; } */
 
 
 }
