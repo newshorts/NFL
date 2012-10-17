@@ -1,5 +1,5 @@
 <?php include('header.php'); ?>
     <div id="intro">
-        <img src="images/intro_logo.png">
+        <img src="<?php echo ROOT; ?>images/intro/intro_logo_big.png">
     </div><!-- /intro -->
 <?php include('footer.php'); ?>
