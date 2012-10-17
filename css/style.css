@@ -203,6 +203,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	width: 106px;
 	height: 26px;
 	display: block;
+	margin: 12px 0px 12px 0px;
 }
 
 .sharebutton ul li a:hover {
@@ -218,11 +219,11 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 	background: url(../images/share_fb_over.png) scroll no-repeat;
 }
 
-.sharebutton .twitter {
+.sharebutton .twittertweet {
 	background: url(../images/share_twitter.png) scroll no-repeat;
 }
 
-.sharebutton .twitter:hover {
+.sharebutton .twittertweet:hover {
 	background: url(../images/share_twitter_over.png) scroll no-repeat;
 }
 
@@ -278,7 +279,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 /* #movement_steps li:nth-child(2) { padding: 25px 0px 0px 0px; height: 77px; } */
 
 
-#movement_steps li:nth-child(1) .headline { top: -41px; } 
+#movement_steps li:nth-child(1) .headline { top: -24px; } 
 #movement_steps li:nth-child(2) .headline { top: -33px; }
 #movement_steps li:nth-child(3) .headline { top: -29px; } 
 
@@ -1027,7 +1028,15 @@ display: none;
     font-family:  Arial, Helvetica, sans-serif; 
     font-weight: bold; 
     font-style: italic; 
-    color: #767676; 
+    color: #666666; 
+    text-decoration: none; }
+    
+#plus_post div h4 {	padding-left: 5px; 
+	font-size: 15px;
+    font-family:  Arial, Helvetica, sans-serif; 
+    font-weight: bold; 
+    font-style: italic; 
+    color: #e75405; 
     text-decoration: none; }
     
 #plus_post div p { color: #767676; font-style: bold; font-family: Arial, Helvetica, sans-serif; font-size: 12px; width: 220px; margin-right: 5px;  float: left; text-align: left; position: relative; }

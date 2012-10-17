@@ -34,6 +34,7 @@
     
     <li class="train">
 
+
         <?php
         
             if(DEVICE_TYPE == 'computer') {

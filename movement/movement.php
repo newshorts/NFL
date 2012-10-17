@@ -29,9 +29,10 @@
 					<img src="../images/movement2.png">
 				</div>
 				<div class="headline">
-					<h3 class="headlineSmallGray"><a href="../images/movement_poster.png" target="_blank">COMING SOON: THE LIVING LOGO</a></h3>
-					<p>Use your smartphone to unlock exclusive <a href="https://twitter.com/search/realtime?q=%23SFSuperbowl&src=typd" target="_blank";>&#35;SFSuperbowl</a> content.</p>
+					<h3 class="headlineSmallGray"><a href="../images/movement_poster.png" target="_blank">SHARE THE LOGO >></a></h3>
+					<p>Grow the movement. <a href="image files goes here" target="_blank">Download</a> or <a href="pdf file goes here" target="_blank">print</a> the logo.</p>
 				</div>
+
 			</li>
 			
 			<li id="step_3" class="bgTextureLight">
@@ -39,11 +40,13 @@
 					<img src="../images/movement3.png">
 				</div>
 				<div class="headline">
-					<h3 class="headlineSmallGray"><a href="../images/movement_poster.png" target="_blank">SHARE THE LOGO >></a></h3>
-					<p>Grow the movement. <a href="image files goes here" target="_blank">Download</a> or <a href="pdf file goes here" target="_blank">print</a> the logo.</p>
+					<h3 class="headlineSmallGray"><a href="../images/movement_poster.png" target="_blank">COMING SOON: THE LIVING LOGO</a></h3>
+					<p>Use your smartphone to unlock exclusive <a href="https://twitter.com/search/realtime?q=%23SFSuperbowl&src=typd" target="_blank";>&#35;SFSuperBowl</a> content.</p>
 				</div>
-
 			</li>
+			
+			
+			
 		</ul>
 	</div>		
 	<div id="poster">
