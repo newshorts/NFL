@@ -462,21 +462,26 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
     
     #movement_left { height: 700px; top: 133px; background: none; margin: 10px 0px 0px 8px; }
 
-	#movement_header { height: 187px; width: 870px; margin-bottom: 10px; padding-top: 40px;  }
+	#movement_header { height: 158px; width: 859px; margin-bottom: 10px; padding-top: 38px;  }
 	#movement_header li div span { font-size: 45px;  padding-right: 30px; }
 	#movement_header li p { font-size: 24px; line-height: 27px; width: 730px; }
 	#movement_steps { position: relative; }
-	#movement_steps li { height: 162px; width: 472px; padding: 45px 0px 0px 40px; margin-bottom: 10px; font-size:  }	
-	#movement_steps li:nth-child(1) .headline { top: -35px; width: 450px; } 
-	#movement_steps li:nth-child(2) .headline { top: -63px; }
-	#movement_steps li:nth-child(3) .headline { top: -49px; width: 350px; } 
+	#movement_steps li { height: 162px; width: 458px; padding: 45px 0px 0px 40px; margin-bottom: 10px; font-size:  }	
+	#movement_steps li:nth-child(1) .headline { top: -28px; width: 450px; } 
+	#movement_steps li:nth-child(2) .headline { top: -30px; }
+	#movement_steps li:nth-child(3) .headline { top: -30px; width: 350px; }
+	
+	#movement_steps li:first-child img { margin-top: 28px; }
+	#movement_steps li:nth-child(2) img { margin-top: 32px; }
+	#movement_steps li:nth-child(3) img { margin-top: 30px; }
+	
 	#movement_steps .headline { width: 300px; }
 	#movement_steps .headline h3 {font-size: 21px; line-height: 23px; }
 	#movement_steps p { font-size: 18px; width: 350px; }
 	.right { position: absolute; left: 5px; bottom: -40px;  }
 	.right .facebook { margin-left: 45px; }
 	.right .google { margin-left: 90px; }
-	#poster { background-color: #fff; height: 560px; top: 361px; overflow: hidden; padding-top: 80px;  }
+	#poster { background-color: #fff; height: 560px; top: 339px; overflow: hidden; padding-top: 60px;  }
 			
 
     
@@ -550,12 +555,6 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	
 	
 
-	/*	--------------------------------------------------
-	    Instagram
-	    -------------------------------------------------- */
-	
-	
-	
 
 	/* INSTAGRAM STYLES PORTRAIT */
 	
