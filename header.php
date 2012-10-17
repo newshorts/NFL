@@ -200,7 +200,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         
                     <?php if(strpos($request, 'buzz')): ?>
                     
-//                        var scroller = new Scroller('.train', 1005);
+                        var scroller = new Scroller('.train', 1005);
                         var total = new TotalTracker('#total');
                         var It = new InstagramTracker('#instagram_photo_count');
                         var tt = new TwitterTracker('#twitter_count');
