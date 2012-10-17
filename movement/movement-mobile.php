@@ -1,8 +1,4 @@
 
-
-fucking test
-
-
 <div id="movement_mobile">
     <ul id="movement_header" class="bgTextureLight">
             <li id="movement_headline">
