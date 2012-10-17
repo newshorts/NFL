@@ -65,6 +65,7 @@ var Scroller = Class.extend({
     changeClassNames: function(from, to) {
         $('.' + from).removeClass(from).addClass(to);
         $('.numbers_' + from).removeClass('numbers_'+from).addClass('numbers_'+to);
+        $('.' + from + 'NumbersOrange').removeClass(from + 'NumbersOrange').addClass(to + 'NumbersOrange');
     },
     
     setPositions: function() {
