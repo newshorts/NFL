@@ -192,6 +192,12 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         
                         sub = new Subscription();
                         
+                    <?php if(DEVICE_TYPE != 'phone') : ?>   
+                    $(window).on('intro_loaded', function(evt, data) {    
+                        var scroller = new Scroller('.train', 1005);
+                    });
+                    <?php endif; ?>
+                        
                     <?php if(strpos($request, 'buzz')): ?>
                         
                         <?php if(DEVICE_TYPE == 'phone') : ?>
@@ -200,7 +206,10 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                             var tt = new TwitterTracker('#twitter_count');
                             var gfb = new GfbTracker('#gfb_count');
                         <?php else : ?>
-                            var scroller = new Scroller('.train', 1005);
+                            
+                            
+                            
+                            
                             
                             var total = new TotalTracker('#total');
                             var It = new InstagramTracker('#instagram_photo_count');
