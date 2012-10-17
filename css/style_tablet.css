@@ -290,7 +290,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#social p { font-size: 14px; width: 230px; }
 	#social .links { top: -20px; }
 	#tweet { width: 86px; }
-	#twitter_number_count { margin: 0px 18px 0px 0px; text-align: right; }
+	#twitter_number_count { margin: 0px 18px 0px 0px; /* text-align: right;  */}
 	.numbers_medium { margin: -28px 0px 0px 0px; }
 	.tweets_count {	margin: 0px 25px 0 0; position: relative; top: -50px; }
 
@@ -460,7 +460,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	
 	/* MOVEMENT STYLES PORTRAIT */   
     
-    #movement_left { height: 700px; top: 133px; background: none; margin: 10px 0px 0px 8px; }
+    #movement_left { height: 700px; top: 133px; background: none; margin: 10px 0px 0px 8px; position: relative; float: left; }
 
 	#movement_header { height: 158px; width: 859px; margin-bottom: 10px; padding-top: 38px;  }
 	#movement_header li div span { font-size: 45px;  padding-right: 30px; }
@@ -476,13 +476,13 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#movement_steps li:nth-child(3) img { margin-top: 30px; }
 	
 	#movement_steps .headline { width: 300px; }
-	#movement_steps .headline h3 {font-size: 21px; line-height: 23px; }
+	#movement_steps .headline h3 { font-size: 21px; line-height: 23px; }
 	#movement_steps p { font-size: 18px; width: 350px; line-height: 23px; }
-	.right { position: absolute; left: 5px; bottom: -40px;  }
+	.right { position: absolute; left: 5px; bottom: -40px; }
 	.right .facebook { margin-left: 45px; }
 	.right .google { margin-left: 90px; }
-	#poster { background-color: #fff; height: 590px; width: 372px; top: 339px; right: 0px; overflow: hidden; float: right; padding-top: 50px; }
-	#poster img { max-width: 358px; }
+	#poster { background-color: #fff; height: 590px; width: 378px; top: 339px; overflow: hidden; float: left; padding-top: 50px; }
+	/* #poster img { max-width: 358px; } */
 
     
 	/* TWITTER STYLES PORTRAIT */   
