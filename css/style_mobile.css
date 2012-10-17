@@ -57,7 +57,7 @@ html { background-color: #000000; }
 
 @media only screen and (orientation: portrait) {
 body {
- background: url(../images/mobile_background.jpg) top left no-repeat;
+ background: url(../images/mobile_background_portrait.jpg) top left no-repeat;
 /* -webkit-background-size: auto 100%; */
 
 }
@@ -66,7 +66,7 @@ body {
 @media only screen and (orientation: landscape) {
 body {
 
- background: url(../images/mobile_background.jpg) top left no-repeat; 
+ background: url(../images/mobile_background_landscape.jpg) top left no-repeat; 
 /*
 -webkit-background-size: 100% auto;
 }
