@@ -588,7 +588,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     margin-left: 10px;
 }
 
-.trainCompartment a, .trainCompartmentLong a {
+.trainCompartment > a, .trainCompartmentLong > a {
     display: block;
 }
 
@@ -1178,7 +1178,7 @@ div {
 .tweet_banner li { float: left; display: inline-block; position: absolute; }
 .tweet_banner .tweet_profile_img { top: 25%; left: 4%; }
 .tweet_banner .tweet_profile_img img { width: 83px; height: 83px; }
-.tweet_banner .tweet_name { top: 23%; left: 15%; }
+.tweet_banner .tweet_name { top: 23%; left: 15%; width: 175px; }
 .tweet_banner .tweet_name p { margin-top: 0; margin-bottom: 0px; }
 .tweet_banner .tweet_name p:last-child {  font-weight: normal;  text-decoration: none;  font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
 .tweet_banner .tweet_name p:last-child a { color: #858585; }
