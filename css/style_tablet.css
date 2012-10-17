@@ -325,7 +325,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 	#screen { display: block; width: 890px; height: 492px; position: absolute; top: 0; left: 0; }
 	#screen li { float: left; }
-	.tweet_banner { display: inline-block; width: 909px; height: 157px; position: relative; }
+	.tweet_banner { display: inline-block; width: 890px; height: 157px; position: relative; }
 	#box1 { width: 890px; height: 288px; position: relative; margin: 88px 0px 10px 8px;	}
 	#box1 .headlineMediumGray { position: absolute; top: 18px; left: 30px; }
 	#total { margin: 178px 0 0 21px; }
@@ -352,7 +352,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	
 	.train { position: relative; top: 0; left: 8px; width: 9999px; height: 155px; }
 	
-	.trainCar .tweet_list { top: 0; width: 909px; }
+	.trainCar .tweet_list { top: 0; width: 890px; }
 	
 	.trainCompartmentLong { position: relative; display: block; width: 890px; height: 158px; background: url(../images/bg-texture-light.png) scroll repeat; margin-left: 18px; margin-right: 10px; float: left; overflow: hidden; }
 	
@@ -772,7 +772,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 
 #intro {
-    width: 860px;
+    width: 909px;
     height: 509px;
     position: absolute;;
     top: 50%;
