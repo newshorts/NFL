@@ -35,7 +35,7 @@
     
     <li class="train">
             
-            <ul class="trainCar" data-pos="0">
+<!--            <ul class="trainCar" data-pos="0">
                 <li class="trainCompartment" data-pos="">
                     <a href="<?php echo ROOT; ?>tweets/" class="ajaxify">
                         <span class="headlineSmallGray smallBoxHeading">TWEETS</span>
@@ -90,28 +90,25 @@
             </ul>
             
             <ul class="trainCar" data-pos="335">
-<!--                <li class="trainCompartmentLong" data-pos="">
-                    <img src="../images/coming-soon-tweet.png" />
-                </li>-->
-                
-                
                 <li class="tweet_banner trainCompartmentLong">
-                    <ul class="inner_tweet">
-                        <li class="tweet_profile_img">
-                            <a href="">
-                                <img src="http://a0.twimg.com/profile_images/1771921314/profile_normal.jpg" height="48" width="48" alt="newshorts's avatar" title="newshorts's avatar" border="0">
-                            </a>
-                        </li>
-                        <li class="tweet_name">
-                            <p><a href="http://twitter.com/newshorts" target="_blank">Mike</a></p>
-                            <p><a href="http://twitter.com/newshorts">@newshorts</a></p>
-                        </li>
-                        <li class="tweet_content">
-                            <p class="banner_tweet_text">
-                                <span class="begin_quote"></span>Another tweet from <a href="http://search.twitter.com/search?q=&amp;tag=gspsf&amp;lang=all" class="tweet_hashtag" target="_blank">#gspsf</a> and <a href="http://search.twitter.com/search?q=&amp;tag=cheerfulsundays&amp;lang=all" class="tweet_hashtag" target="_blank">#cheerfulsundays</a><span class="end_quote"></span>
-                            </p>
-                        </li>
-                    </ul>
+                    <a href="<?php echo ROOT; ?>tweets/">
+                        <ul class="inner_tweet">
+                            <li class="tweet_profile_img">
+                                <a href="">
+                                    <img src="http://a0.twimg.com/profile_images/1771921314/profile_normal.jpg" height="48" width="48" alt="newshorts's avatar" title="newshorts's avatar" border="0">
+                                </a>
+                            </li>
+                            <li class="tweet_name">
+                                <p><a href="http://twitter.com/newshorts" target="_blank">Mike</a></p>
+                                <p><a href="http://twitter.com/newshorts">@newshorts</a></p>
+                            </li>
+                            <li class="tweet_content">
+                                <p class="banner_tweet_text">
+                                    <span class="begin_quote"></span>Another tweet from <a href="http://search.twitter.com/search?q=&amp;tag=gspsf&amp;lang=all" class="tweet_hashtag" target="_blank">#gspsf</a> and <a href="http://search.twitter.com/search?q=&amp;tag=cheerfulsundays&amp;lang=all" class="tweet_hashtag" target="_blank">#cheerfulsundays</a><span class="end_quote"></span>
+                                </p>
+                            </li>
+                        </ul>
+                    </a>
                 </li>
             </ul>
             <ul class="trainCar" data-pos="0">
@@ -226,15 +223,16 @@
                         <div id="gfb_count2" class="smallNumbersOrange countOrange small"></div>
                     </a>
                 </li>
-            </ul>
+            </ul>-->
         
             <ul class="trainCar" data-pos="335">
                 <li class="trainCompartmentLong" data-pos="">
-                    <a href="<?php echo ROOT; ?>tweets/" class="ajaxify"><img src="../images/coming-soon-twitter.jpg" /></a>
+                    <a href="https://twitter.com/share?url=https%3A%2F%2Fsfsuperbowl.com" class="ajaxify"><img src="../images/coming-soon-twitter.jpg" /></a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </li>
             </ul>
         
-            <ul class="trainCar" data-pos="0">
+<!--            <ul class="trainCar" data-pos="0">
                 <li class="trainCompartment" data-pos="">
                     <a href="<?php echo ROOT; ?>tweets/" class="ajaxify">
                         <span class="headlineSmallGray smallBoxHeading">TWEETS</span>
@@ -290,64 +288,9 @@
         
             <ul class="trainCar" data-pos="335">
                 <li class="trainCompartmentLong" data-pos="">
-                    <a href="<?php echo ROOT; ?>supporters/" class="ajaxify"><img src="../images/coming-soon-facebook.jpg" /></a>
+                    <a href="http://www.facebook.com/sfsuperbowl" class="ajaxify"><img src="../images/coming-soon-facebook.jpg" /></a>
                 </li>
-            </ul>
+            </ul>-->
     </li>
-    
-    
-    
-    
-<!--    <li id="box2" class="bottom bgTextureLight">
-        <a href="<?php echo ROOT; ?>tweets/" class="ajaxify">
-            <span class="headlineSmallGray smallBoxHeading">TWEETS</span>
-            <img class="smallBoxIcon" src="../images/icon_twitter.png">
-            <hr class="smallBoxHR" />
-            <ul class="numbers_small">
-                <li class="nil">0</li>
-                <li class="nil">0</li>
-                <li class="nil">0</li>
-                <li class="comma">,</li>
-                <li class="nil">0</li>
-                <li class="nil">0</li>
-                <li class="nil">0</li>
-            </ul>
-            <div id="twitter_count" class="smallNumbersOrange countOrange small"></div>
-        </a>
-    </li>
-    <li id="box3" class="bottom bgTextureLight">
-        <a href="<?php echo ROOT; ?>instagram/" class="ajaxify">
-            <span class="headlineSmallGray smallBoxHeading">PHOTOS</span>
-            <img class="smallBoxIcon" src="../images/icon_instagram.png">
-            <hr class="smallBoxHR" />
-            <ul class="numbers_small">
-                <li class="nil">0</li>
-                <li class="nil">0</li>
-                <li class="nil">0</li>
-                <li class="comma">,</li>
-                <li class="nil">0</li>
-                <li class="nil">0</li>
-                <li class="nil">0</li>
-            </ul>
-            <div id="instagram_photo_count" class="smallNumbersOrange countOrange small"></div>
-        </a>
-    </li>
-    <li id="box4" class="bottom bgTextureLight">
-        <a href="<?php echo ROOT; ?>supporters/" class="ajaxify">
-            <span class="headlineSmallGray smallBoxHeading">SUPPORTERS</span>
-            <img class="smallBoxIconLeft" src="../images/icon_facebook.png"><img class="smallBoxIcon" src="../images/icon_google.png">
-            <hr class="smallBoxHR" />
-            <ul class="numbers_small">
-                <li class="nil">0</li>
-                <li class="nil">0</li>
-                <li class="nil">0</li>
-                <li class="comma">,</li>
-                <li class="nil">0</li>
-                <li class="nil">0</li>
-                <li class="nil">0</li>
-            </ul>
-            <div id="gfb_count" class="smallNumbersOrange countOrange small"></div>
-        </a>
-    </li>-->
     
 </ul>

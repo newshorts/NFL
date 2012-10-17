@@ -240,104 +240,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     
                     <?php if($_SESSION['sfsuperbowlintro']) : ?>
                         
-//                        setTimeout(function() {
-//                            $('#intro .logo').animate({
-//                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
-//                                'filter': 'alpha(opacity=00)',
-//                                '-moz-opacity': '0.0',
-//                                '-khtml-opacity': '0.0',
-//                                'opacity': '0.0'
-//                            }, 500, function() {
-//                                // complete
-//                                $(this).css({
-//                                    display: 'none'
-//                                });
-//                                
-//                                setTimeout(function() {
-////                                    fadeInText1();
-//                                    sequence();
-//                                }, 200);
-//                            });
-//                        }, 3800);
-                        
-//                        var fadeInText1 = function() {
-//                            $('.text1').animate({
-//                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
-//                                'filter': 'alpha(opacity=100)',
-//                                '-moz-opacity': '1.0',
-//                                '-khtml-opacity': '1.0',
-//                                'opacity': '1.0'
-//                                
-//                            }, 500, function() {
-//                                // complete
-////                                delay(fadeInText2, 1000);
-//                            });
-//                        };
-//                        var fadeInText2 = function() {
-//                            $('.text2').animate({
-//                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
-//                                'filter': 'alpha(opacity=100)',
-//                                '-moz-opacity': '1.0',
-//                                '-khtml-opacity': '1.0',
-//                                'opacity': '1.0'
-//                            }, 500, function() {
-//                                // complete
-////                                delay(fadeInText3);
-//                            });
-//                        };
-//                        var fadeInText3 = function() {
-//                            $('.text3').animate({
-//                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
-//                                'filter': 'alpha(opacity=100)',
-//                                '-moz-opacity': '1.0',
-//                                '-khtml-opacity': '1.0',
-//                                'opacity': '1.0'
-//                            }, 500, function() {
-//                                // complete
-////                                delay(fadeInText4);
-//                            });
-//                        };
-//                        var fadeInText4 = function() {
-//                            $('.text4').animate({
-//                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
-//                                'filter': 'alpha(opacity=100)',
-//                                '-moz-opacity': '1.0',
-//                                '-khtml-opacity': '1.0',
-//                                'opacity': '1.0'
-//                            }, 500, function() {
-//                                // complete
-////                                delay(fadeInText5);
-//                            });
-//                        };
-//                        var fadeInText5 = function() {
-//                            $('.text5').animate({
-//                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
-//                                'filter': 'alpha(opacity=100)',
-//                                '-moz-opacity': '1.0',
-//                                '-khtml-opacity': '1.0',
-//                                'opacity': '1.0'
-//                            }, 500, function() {
-//                                // complete
-//                                delay(fadeOutIntro, 7500);
-//                            });
-//                        };
-//                        var fadeOutIntro = function() {
-//                            $('#intro').animate({
-//                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
-//                                'filter': 'alpha(opacity=00)',
-//                                '-moz-opacity': '0.0',
-//                                '-khtml-opacity': '0.0',
-//                                'opacity': '0.0'
-//                            }, 500, function() {
-//                                // complete
-//                                $(this).css({
-//                                    display: 'none'
-//                                });
-//                            });
-//                        };
-                        
-                        var fadeInHeadline = function() {
-                            $('#introHeadline').animate({
+                        var fadeInIntroLogoBig = function() {
+                            $('#introLogoBig').animate({
                                 '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
                                 'filter': 'alpha(opacity=100)',
                                 '-moz-opacity': '1.0',
@@ -349,6 +253,77 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                             });
                         };
                         
+                        var fadeOutIntroLogoBig = function() {
+                            $('#introLogoBig').animate({
+                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
+                                'filter': 'alpha(opacity=00)',
+                                '-moz-opacity': '0.0',
+                                '-khtml-opacity': '0.0',
+                                'opacity': '0.0'
+                            }, 500, function() {
+                                // complete
+                                $(this).css({
+                                    display: 'none'
+                                });
+                            });
+                        };
+                        
+                        var fadeInIntroLogo = function() {
+                            $('#introLogo').animate({
+                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
+                                'filter': 'alpha(opacity=100)',
+                                '-moz-opacity': '1.0',
+                                '-khtml-opacity': '1.0',
+                                'opacity': '1.0'
+                                
+                            }, 1500, function() {
+                                // complete
+                            });
+                        };
+                        
+                        var fadeOutIntroLogo = function() {
+                            $('#introLogo').animate({
+                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
+                                'filter': 'alpha(opacity=00)',
+                                '-moz-opacity': '0.0',
+                                '-khtml-opacity': '0.0',
+                                'opacity': '0.0'
+                            }, 1500, function() {
+                                // complete
+                                $(this).css({
+                                    display: 'none'
+                                });
+                            });
+                        };
+                        
+                        var fadeInHeadline = function() {
+                            $('#introHeadline').animate({
+                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
+                                'filter': 'alpha(opacity=100)',
+                                '-moz-opacity': '1.0',
+                                '-khtml-opacity': '1.0',
+                                'opacity': '1.0'
+                                
+                            }, 1500, function() {
+                                // complete
+                            });
+                        };
+                        
+                        var fadeOutHeadline = function() {
+                            $('#introHeadline').animate({
+                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
+                                'filter': 'alpha(opacity=00)',
+                                '-moz-opacity': '0.0',
+                                '-khtml-opacity': '0.0',
+                                'opacity': '0.0'
+                            }, 1500, function() {
+                                // complete
+                                $(this).css({
+                                    display: 'none'
+                                });
+                            });
+                        };
+                        
                         var fadeInCopy = function() {
                             $('#introCopy').animate({
                                 '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
@@ -357,8 +332,23 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                                 '-khtml-opacity': '1.0',
                                 'opacity': '1.0'
                                 
-                            }, 500, function() {
+                            }, 1500, function() {
                                 // complete
+                            });
+                        };
+                        
+                        var fadeOutCopy = function() {
+                            $('#introCopy').animate({
+                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
+                                'filter': 'alpha(opacity=00)',
+                                '-moz-opacity': '0.0',
+                                '-khtml-opacity': '0.0',
+                                'opacity': '0.0'
+                            }, 1500, function() {
+                                // complete
+                                $(this).css({
+                                    display: 'none'
+                                });
                             });
                         };
                         
@@ -378,9 +368,22 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         };
                         
                         var sequence = function() {
-                            delay(fadeInHeadline, 1000);
-                            delay(fadeInCopy, 3000);
-                            delay(fadeOutIntro, 14000);
+
+                            
+                            delay(fadeInIntroLogoBig, 800);
+                            delay(fadeOutIntroLogoBig, 2700);
+                            
+                            delay(fadeInIntroLogo, 3400);
+                            
+                            delay(fadeInHeadline, 3400);
+                            delay(fadeInCopy, 5200);
+                            
+                            delay(fadeOutIntroLogo, 15000);
+                            delay(fadeOutHeadline, 15000);
+                            delay(fadeOutCopy, 15000);
+                            
+                            delay(fadeOutIntro, 16500);
+
                         };
                         
                         var delay = function(func, time) {

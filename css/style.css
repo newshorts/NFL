@@ -747,8 +747,8 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 .twitter { height: 347px; position: relative;  overflow: hidden; margin: 10px 0px; width: 996px; }
 /* #twitter_overlay { background: url(../images/twitter_overlay.png) top left no-repeat; display: block; height: 347px; position: absolute; width: 996px; z-index: 3;}    */
-#twitter_overlay_top { background: url(../images/twitter_overlay_top.png) top left no-repeat; display: block; height: 127px; position: absolute; width: 996px; z-index: 3; }
-#twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 136px; position: absolute; width: 996px; top: 211px; z-index: 3; } 
+#twitter_overlay_top { background: url(../images/twitter_overlay_top.png) top left no-repeat; display: block; height: 127px; position: absolute; width: 996px; top: 10px; z-index: 3; }
+#twitter_overlay_bottom  { background: url(../images/twitter_overlay_bottom.png) top left no-repeat; display: block; height: 136px; position: absolute; width: 996px; top: 222px; z-index: 3; } 
   
 .tweet_list { position: relative; top:-50px; }
 
