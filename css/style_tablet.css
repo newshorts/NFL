@@ -269,14 +269,14 @@ html {
 
 
 
-	/*	--------------------------------------------------
-	    Numbers
-	    -------------------------------------------------- */
-	
+/*	--------------------------------------------------
+Numbers
+-------------------------------------------------- */
+
 	#screen {
 	    display: block; 
 	    width: 909px; 
-	    height: 566px; 
+	    height: 492px; 
 	    position: absolute; 
 	    top: 0;
 	    left: 0;
@@ -286,34 +286,40 @@ html {
 	    float: left;
 	}
 	
-	#box2:hover, #box3:hover, #box4:hover  {
-    	background: white;
-    }
+	/*#box2:hover, #box3:hover, #box4:hover  {
+	    background: white;
+	}*/
 	
 	#box1 { 
 	    width: 909px; 
-	    height: 318px; 
+	    height: 288px; 
 	    position: relative; 
-	    margin: 84px 0px 4px 0px;
+	    margin: 88px 0px 10px 0px;
 	}
 	
 	#box1 .headlineMediumGray {
 	    position: absolute;
-	    top: 44px;
+	    top: 18px;
 	    left: 30px;
 	}
 	
 	#total {
-		margin: 168px 0 0 52px;
+		margin: 178px 0 0 21px;
 	}
 	
 	#totalBG {
 			margin: 98px 0 0 52px;
 	}
 	
-	#box1 #total, #box1 .largNumbersGrey {
+	#box1 .numbers_large {
 	    position: absolute;
-	    width: 888px;
+	    bottom: 48px;
+	    right: 18px;
+	}
+	
+	#box1 #total, #box1 .largNumbersGrey {
+	    /*position: absolute;*/
+	    width: 899px;
 	    text-align: right;    
 	    direction: rtl;
 	    text-align: justify;
@@ -321,48 +327,82 @@ html {
 	}
 	
 	#box2 {
-		width: 296px; 
-	    height: 136px; 
-	    position: relative; 
-		margin: 0px 0px 0px 0px;
+	    /*margin: 0px 5px 0px 0px;*/
+	    /*overflow: hidden;*/
+	    /*width: 998px;*/
 	}
 	
-	
-	#box2 .numbers_small,
-	#box3 .numbers_small,
-	#box4 .numbers_small {
+	/*#box2 .numbers_small,*/
+	/*#box3 .numbers_small,
+	#box4 .numbers_small {*/
+	.trainCompartment .numbers_small{
 	    position: absolute;
-	    bottom: 58px;
-	    right: 21px;
+	    bottom: 18px;
+	    right: 29px;
 	}
-
-
 	
-	#box2 span, #box2 img, #box2 hr,
-	#box3 span, #box3 img, #box3 hr,
-	#box4 span, #box4 img, #box4 hr {
+	/* .trainCompartment:hover { background-color: white; } */
+	
+	/*#box2 span, #box2 img, #box2 hr,*/
+	/*#box3 span, #box3 img, #box3 hr,*/
+	/*#box4 span, #box4 img, #box4 hr {*/
+	.trainCompartment hr, .trainCompartment span, .trainCompartment img {
 	    position: absolute;
 	}
 	
-	#box3 {
-		width: 296px; 
-	    height: 136px; 
-	    position: relative; 
-		margin: 0px 0px 0px 5px;
+	.trainCompartment span { font-size: 23px;  } 
+	
+	.train {
+	    position: relative;
+	    top: 0;
+	    left: 0;
+	    width: 9999px;
+	    height: 155px;
+	}
+	
+	.trainCar .tweet_list {
+	    top: 0;
+	}
+	
+	.trainCompartmentLong {
+	    position: relative;
+	    display: block;
+	    width: 909px;
+	    height: 155px;
+	    background: url(../images/bg-texture-light.png) scroll repeat;
+	    margin-left: 10px;
+	    margin-right: 10px;
+	    float: left;
+	}
+	
+	.trainCompartment {
+	    float: left;
+	    width: 296px;
+	    height: 155px;
+	    position: relative;
+	    display: block;
+	    background: url(../images/bg-texture-light.png) scroll repeat;
+	    margin-left: 10px;
+	}
+	
+	.trainCompartment:first-child,
+	.trainCompartmentLong:first-child{
+	    margin-left: 0px;
+	}
+	
+	/*#box3 {
+		margin: 0px 5px 0px 5px;
 	}
 	
 	#box4 {
-		width: 296px; 
-	    height: 136px; 
-	    position: relative; 
 		margin: 0px 0px 0px 5px;
 		padding-right: 1px;
-	}
+	}*/
 	
 	.countGrey {
 	    display: inline;
-	    top: 78px;
-	    left: 26px;
+	    top: 68px;
+	    left: 34px;
 	    margin: 0;
 	    width: 263px;
 	    direction: rtl;
@@ -373,7 +413,7 @@ html {
 	.countOrange {
 	    display: inline;
 	    top: 107px;
-	    left: 26px;
+	    left: 34px;
 	    margin: 0;
 	    width: 263px;
 	    direction: rtl;
@@ -382,36 +422,36 @@ html {
 	}
 	
 	.smallBoxHeading {
-	    top: 12px;
-	    left: 21px;
+	    top: 30px;
+	    left: 30px;
 	}
 	
 	.smallBoxIcon {
-	    top: 12px;
-	    left: 258px;
+	    top: 31px;
+	    left: 277px;
 	}
 	
 	.smallBoxIconLeft {
-	    top: 12px;
-	    left: 238px;
+	    top: 31px;
+	    left: 254px;
 	}
 	
 	.smallBoxHR {
-	    top: 24px;
-	    left: 18px;
-	    width: 258px;
+	    top: 47px;
+	    left: 28px;
+	    width: 268px;
+	
 	}
 	
 	.bottom, .bottom a { 
-	    width: 293px; 
+	    width: 296px; 
 	    height: 155px; 
 	    position: relative;
 	    display: block;
 	}
 	
-	
-	
-	
+		
+		
 	
 
 	/*	--------------------------------------------------
@@ -813,11 +853,8 @@ html {
 	
 #plus_post div span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 12px; bottom: 5px; position: absolute;  }	
 	
-    
-} /* close media query portrait */
-
-
-
+	
+	
 	/*	--------------------------------------------------
 	    Instagram
 	    -------------------------------------------------- */
@@ -885,7 +922,203 @@ html {
 	.instagram_photo_count {
 		margin: 31px 0px 0px 0px; 
 	}
+
+
+
+
+/*	--------------------------------------------------
+    Numbers
+    -------------------------------------------------- */
+
+	#screen {
+	    display: block; 
+	    width: 996px; 
+	    height: 492px; 
+	    position: absolute; 
+	    top: 0;
+	    left: 0;
+	}
 	
+	#screen li { 
+	    float: left;
+	}
+	
+	/*#box2:hover, #box3:hover, #box4:hover  {
+	    background: white;
+	}*/
+	
+	#box1 { 
+	    width: 996px; 
+	    height: 318px; 
+	    position: relative; 
+	    margin: 10px 0px 10px 0px;
+	}
+	
+	#box1 .headlineMediumGray {
+	    position: absolute;
+	    top: 44px;
+	    left: 30px;
+	}
+	
+	#total {
+		margin: 178px 0 0 52px;
+	}
+	
+	#totalBG {
+			margin: 98px 0 0 52px;
+	}
+	
+	#box1 .numbers_large {
+	    position: absolute;
+	    bottom: 50px;
+	    right: 50px;
+	}
+	
+	#box1 #total, #box1 .largNumbersGrey {
+	    /*position: absolute;*/
+	    width: 899px;
+	    text-align: right;    
+	    direction: rtl;
+	    text-align: justify;
+	    white-space: pre;
+	}
+	
+	#box2 {
+	    /*margin: 0px 5px 0px 0px;*/
+	    /*overflow: hidden;*/
+	    /*width: 998px;*/
+	}
+	
+	/*#box2 .numbers_small,*/
+	/*#box3 .numbers_small,
+	#box4 .numbers_small {*/
+	.trainCompartment .numbers_small{
+	    position: absolute;
+	    bottom: 18px;
+	    right: 29px;
+	}
+	
+	/* .trainCompartment:hover { background-color: white; } */
+	
+	/*#box2 span, #box2 img, #box2 hr,*/
+	/*#box3 span, #box3 img, #box3 hr,*/
+	/*#box4 span, #box4 img, #box4 hr {*/
+	.trainCompartment hr, .trainCompartment span, .trainCompartment img {
+	    position: absolute;
+	}
+	
+	.trainCompartment span { font-size: 23px;  } 
+	
+	.train {
+	    position: relative;
+	    top: 0;
+	    left: 0;
+	    width: 9999px;
+	    height: 155px;
+	}
+	
+	.trainCar .tweet_list {
+	    top: 0;
+	}
+	
+	.trainCompartmentLong {
+	    position: relative;
+	    display: block;
+	    width: 995px;
+	    height: 155px;
+	    background: url(../images/bg-texture-light.png) scroll repeat;
+	    margin-left: 10px;
+	    margin-right: 10px;
+	    float: left;
+	}
+	
+	.trainCompartment {
+	    float: left;
+	    width: 325px;
+	    height: 155px;
+	    position: relative;
+	    display: block;
+	    background: url(../images/bg-texture-light.png) scroll repeat;
+	    margin-left: 10px;
+	}
+	
+	.trainCompartment:first-child,
+	.trainCompartmentLong:first-child{
+	    margin-left: 0px;
+	}
+	
+	/*#box3 {
+		margin: 0px 5px 0px 5px;
+	}
+	
+	#box4 {
+		margin: 0px 0px 0px 5px;
+		padding-right: 1px;
+	}*/
+	
+	.countGrey {
+	    display: inline;
+	    top: 78px;
+	    left: 34px;
+	    margin: 0;
+	    width: 263px;
+	    direction: rtl;
+	    text-align: justify;
+	    white-space: pre;
+	}
+	
+	.countOrange {
+	    display: inline;
+	    top: 107px;
+	    left: 34px;
+	    margin: 0;
+	    width: 263px;
+	    direction: rtl;
+	    text-align: justify;
+	    white-space: pre;
+	}
+	
+	.smallBoxHeading {
+	    top: 30px;
+	    left: 30px;
+	}
+	
+	.smallBoxIcon {
+	    top: 31px;
+	    left: 277px;
+	}
+	
+	.smallBoxIconLeft {
+	    top: 31px;
+	    left: 254px;
+	}
+	
+	.smallBoxHR {
+	    top: 47px;
+	    left: 28px;
+	    width: 268px;
+	
+	}
+	
+	.bottom, .bottom a { 
+	    width: 325px; 
+	    height: 155px; 
+	    position: relative;
+	    display: block;
+	}
+	
+		
+/* END OF NUMBERS */
+
+
+
+
+    
+} /* close media query portrait */
+
+
+
+		
 	
 
 
@@ -1063,148 +1296,6 @@ html {
  
  
  
- 
- 	/*	--------------------------------------------------
-	    Numbers
-	    -------------------------------------------------- */
-	
-	#screen {
-	    display: block; 
-	    width: 890px; 
-	    height: 888px; 
-	    position: absolute; 
-	    top: 58px;
-	    left: 0;
-	}
-	
-	#screen li { 
-	    float: left;
-	}
-	
-	#box2:hover, #box3:hover, #box4:hover  {
-    	background: white;
-    }
-	
-	#box1 { 
-	    width: 909px; 
-	    height: 298px;
-	    position: relative; 
-	    margin: 84px 0px 4px 0px;
-	}
-	
-	#box1 .headlineMediumGray {
-	    position: absolute;
-	    top: 44px;
-	    left: 30px;
-	}
-	
-	#total {
-		margin: 168px 0 0 52px;
-	}
-	
-	#totalBG {
-			margin: 98px 0 0 52px;
-	}
-	
-	#box1 #total, #box1 .largNumbersGrey {
-	    position: absolute;
-	    width: 888px;
-	    text-align: right;    
-	    direction: rtl;
-	    text-align: justify;
-	    white-space: pre;
-	}
-	
-	#box2 {
-		width: 909px; 
-	    height: 108px; 
-	    position: relative; 
-		margin: 0px 0px 0px 0px;
-	}
-	
-	
-	#box2 .numbers_small,
-	#box3 .numbers_small,
-	#box4 .numbers_small {
-	    position: absolute;
-	    bottom: 58px;
-	    right: 21px;
-	}
-
-
-	
-	#box2 span, #box2 img, #box2 hr,
-	#box3 span, #box3 img, #box3 hr,
-	#box4 span, #box4 img, #box4 hr {
-	    position: absolute;
-	}
-	
-	#box3 {
-		width: 909px; 
-	    height: 108px; 
-	    position: relative; 
-		margin: 0px 0px 0px 5px;
-	}
-	
-	#box4 {
-		width: 909px; 
-	    height: 108px; 
-	    position: relative; 
-		margin: 0px 0px 0px 5px;
-		padding-right: 1px;
-	}
-	
-	.countGrey {
-	    display: inline;
-	    top: 78px;
-	    left: 26px;
-	    margin: 0;
-	    width: 263px;
-	    direction: rtl;
-	    text-align: justify;
-	    white-space: pre;
-	}
-	
-	.countOrange {
-	    display: inline;
-	    top: 107px;
-	    left: 26px;
-	    margin: 0;
-	    width: 263px;
-	    direction: rtl;
-	    text-align: justify;
-	    white-space: pre;
-	}
-	
-	.smallBoxHeading {
-	    top: 12px;
-	    left: 21px;
-	}
-	
-	.smallBoxIcon {
-	    top: 12px;
-	    left: 258px;
-	}
-	
-	.smallBoxIconLeft {
-	    top: 12px;
-	    left: 238px;
-	}
-	
-	.smallBoxHR {
-	    top: 24px;
-	    left: 18px;
-	    width: 258px;
-	}
-	
-	.bottom, .bottom a { 
-	    width: 293px; 
-	    height: 155px; 
-	    position: relative;
-	    display: block;
-	}
-	
-/* END OF NUMBERS */
 
 
 
