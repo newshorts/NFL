@@ -77,15 +77,10 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 #boardcontainer { background: url(../images/bg-texture-light.png) scroll repeat; width: 890px; top: 0px; left: 0px; position: absolute; margin-top: 0; margin-left: 1px; overflow: visible; z-index: 10; }
 
 #boardcontainer .left { float: left; margin-left: 30px; display:block; }
-
 #boardcontainer .right { position: absolute; width: 394px; height: 70px; }
-
 #boardcontainer .rightWrap { position: relative; width: 100%; height: 100%; overflow: visible; }
-	
 #boardcontainer .tabs { position: absolute;	left: 0px; height: 28px; }
-
 #boardcontainer .sharebutton { position: absolute; width: 109px; height: 22px; background: url(../images/share.png) scroll 0 0 no-repeat; background-size: 109px 22px; overflow: hidden; }
-		
 #boardcontainer .expanded { width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; }		
 
 
@@ -239,14 +234,14 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
     
     #border { min-height: 570px; }
     #container { min-height: 565px; }
-    #wrap { width: 890px; height: 566px; top: 30px; left: 46px; }
+    #wrap { width: 909px; height: 566px; top: 30px; left: 46px; }
     #boardcontainer { height: 76px; }
-    #boardcontainer .expanded { width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; }
+    
     #boardcontainer .left { margin-top: 18px; }
 	#boardcontainer .right { top: 0; right: -5px; }
 	#boardcontainer .tabs { bottom: -5px; width: 500px; }
 	#boardcontainer .sharebutton { top: 15px; right: 35px; }
-
+	#boardcontainer .expanded { width: 109px; height: 156px; background: url(../images/share_hover.png) scroll 0 0 no-repeat; background-size: 109px 156px; }
 
 
  /* MOVEMENT STYLES LANDSCAPE */   
@@ -258,12 +253,18 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#movement_steps { padding: 0px 0px 0px 37px; }
 	#movement_steps li { border-bottom: #ccc 2px solid; height: 87px;  width: 427px;  padding: 8px 0px 0px 0px; }
 	#movement_steps li:first-child { border-top: #ccc 2px solid; }
-	#movement_steps li:nth-child(3) { height: 77px; } 
+	#movement_steps li:first-child img { margin-top: 20px; }
+	#movement_steps li:nth-child(2) img { margin-top: 12px; }
+	#movement_steps li:nth-child(3) img { margin-top: 21px; }
+	
+	#movement_steps li:nth-child(1) { height: 77px; top: -12px; }
+	#movement_steps li:nth-child(1) .headline { top: -28px; } 
 	#movement_steps li:nth-child(2) .headline { top: -33px; }
-	#movement_steps li:nth-child(3) .headline { top: -29px; } 
-	.right { float: right; position: relative; right: -135px; top: -40px; margin: 0 0 0 10px;  }
+	#movement_steps li:nth-child(3) .headline { top: -46px; margin-top: 8px; } 
+	.right { float: right; position: relative; right: -135px; top: -46px; margin: 0 0 0 10px;  }
 	#poster { height: 456px; top: 78px; right: 5px; }
 
+	
      
        
        
@@ -330,7 +331,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#box1 .headlineMediumGray { position: absolute; top: 18px; left: 30px; }
 	#total { margin: 178px 0 0 21px; }
 	#totalBG { margin: 98px 0 0 52px; }
-	#box1 .numbers_large { position: absolute; bottom: 48px; right: 18px; }
+	#box1 .numbers_large { position: absolute; bottom: 48px; right: 8px; }
 	#box1 #total, #box1 .largNumbersGrey { /*position: absolute;*/ width: 899px; text-align: right; direction: rtl; text-align: justify; white-space: pre;
 	}
 	
@@ -339,7 +340,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	/*#box2 .numbers_small,*/
 	/*#box3 .numbers_small,
 	#box4 .numbers_small {*/
-	.trainCompartment .numbers_small{ position: absolute; bottom: 18px; right: 29px; }
+	.trainCompartment .numbers_small{ position: absolute; bottom: 18px; right: 8px; }
 	
 	/* .trainCompartment:hover { background-color: white; } */
 	
@@ -356,8 +357,13 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	
 	.trainCompartmentLong { position: relative; display: block; width: 890px; height: 158px; background: url(../images/bg-texture-light.png) scroll repeat; margin-left: 18px; margin-right: 10px; float: left; overflow: hidden; }
 	
-	.trainCompartment { float: left; width: 290px; height: 158px; position: relative; display: block; background: url(../images/bg-texture-light.png) scroll repeat;  margin-left: 10px; }
+	.trainCompartmentLong img { max-width: 890px; }
+		
 	
+	
+	
+	.trainCompartment { float: left; width: 290px; height: 158px; position: relative; display: block; background: url(../images/bg-texture-light.png) scroll repeat;  margin-left: 10px; }
+		
 	.trainCompartment:first-child,
 	.trainCompartmentLong:first-child{ margin-left: 0px; }
 	

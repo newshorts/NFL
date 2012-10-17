@@ -278,7 +278,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 /* #movement_steps li:nth-child(2) { padding: 25px 0px 0px 0px; height: 77px; } */
 
 
-#movement_steps li:nth-child(1) .headline { top: -41px; } 
+#movement_steps li:nth-child(1) .headline { top: -24px; } 
 #movement_steps li:nth-child(2) .headline { top: -33px; }
 #movement_steps li:nth-child(3) .headline { top: -29px; } 
 
