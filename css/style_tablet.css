@@ -323,7 +323,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 /*	NUMBERS STYLES LANDSCAPE */
 
-	#screen { display: block; width: 909px; height: 492px; position: absolute; top: 0; left: 0; }
+	#screen { display: block; width: 890px; height: 492px; position: absolute; top: 0; left: 0; }
 	#screen li { float: left; }
 	.tweet_banner { display: inline-block; width: 909px; height: 157px; position: relative; }
 	#box1 { width: 890px; height: 288px; position: relative; margin: 88px 0px 10px 8px;	}
