@@ -227,7 +227,7 @@
         
             <ul class="trainCar" data-pos="335">
                 <li class="trainCompartmentLong" data-pos="">
-                    <a href="https://twitter.com/share?url=https%3A%2F%2Fsfsuperbowl.com" class="ajaxify"><img src="../images/coming-soon-twitter.jpg" /></a>
+                    <a class="twitter link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Let&rsquo;s&nbsp;bring&nbsp;the&nbsp;Bowl&nbsp;to&nbsp;the&nbsp;Bay!&nbsp;Show&nbsp;your&nbsp;support.#sfsuperbowl"><img src="../images/coming-soon-twitter.jpg" /></a>
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </li>
             </ul>
