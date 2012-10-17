@@ -22,7 +22,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
         <link rel="icon" type="image/png" href="<?php echo ROOT; ?>favicon.ico">
-        <meta name = "viewport" content = "width = device-width">
+        <meta name = "viewport" content = "width = 480">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="<?php echo ROOT; ?>js/lib/jquery.min.js">\x3C/script>')</script>
         <!--<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>-->
@@ -200,7 +200,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         
                     <?php if(strpos($request, 'buzz')): ?>
                     
-//                        var scroller = new Scroller('.train', 1005);
+                        var scroller = new Scroller('.train', 1005);
                         var total = new TotalTracker('#total');
                         var It = new InstagramTracker('#instagram_photo_count');
                         var tt = new TwitterTracker('#twitter_count');
@@ -374,8 +374,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                             delay(fadeOutIntroLogoBig, 2700);
                             
                             delay(fadeInIntroLogo, 3400);
-                            
                             delay(fadeInHeadline, 3400);
+                            
                             delay(fadeInCopy, 5200);
                             
                             delay(fadeOutIntroLogo, 15000);
@@ -392,8 +392,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         }
                         
                         setTimeout(sequence, 200);
-                        
-                                               
+                                           
                     <?php endif; ?>
 		            
 //                    var nav = new PageNavigation('#wrap');
@@ -494,9 +493,10 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
             <?php if($_SESSION['sfsuperbowlintro']) : ?>
                 
                 <div id="intro">
-                    <img class="introItem " src="../images/intro_logo.png" />
+                    
                     <div id="introWrap">
-                        
+                        <img class="introItem hidden" src="../images/intro_logo.png" id="introLogo" />
+                        <img class="introItem hidden" src="../images/intro_logo_big.png" id="introLogoBig" />
                         <img class="introItem hidden" src="../images/intro_headline.png" id="introHeadline" />
                         <img class="introItem hidden" src="../images/intro_copy.png" id="introCopy" />
                         

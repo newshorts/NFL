@@ -35,7 +35,7 @@
     
     <li class="train">
             
-<!--            <ul class="trainCar" data-pos="0">
+            <ul class="trainCar" data-pos="0">
                 <li class="trainCompartment" data-pos="">
                     <a href="<?php echo ROOT; ?>tweets/" class="ajaxify">
                         <span class="headlineSmallGray smallBoxHeading">TWEETS</span>
@@ -223,7 +223,7 @@
                         <div id="gfb_count2" class="smallNumbersOrange countOrange small"></div>
                     </a>
                 </li>
-            </ul>-->
+            </ul>
         
             <ul class="trainCar" data-pos="335">
                 <li class="trainCompartmentLong" data-pos="">
@@ -232,7 +232,7 @@
                 </li>
             </ul>
         
-<!--            <ul class="trainCar" data-pos="0">
+            <ul class="trainCar" data-pos="0">
                 <li class="trainCompartment" data-pos="">
                     <a href="<?php echo ROOT; ?>tweets/" class="ajaxify">
                         <span class="headlineSmallGray smallBoxHeading">TWEETS</span>
@@ -290,7 +290,7 @@
                 <li class="trainCompartmentLong" data-pos="">
                     <a href="http://www.facebook.com/sfsuperbowl" class="ajaxify"><img src="../images/coming-soon-facebook.jpg" /></a>
                 </li>
-            </ul>-->
+            </ul>
     </li>
     
 </ul>
