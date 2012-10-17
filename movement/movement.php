@@ -16,9 +16,12 @@
 					<img src="../images/movement1.png">
 				</div>
 				<div class="headline">
-					<h3 class="headlineSmallGray"><a href="../images/movement_poster.png" target="_blank">SHARE THE LOGO >></a></h3>
-					<p>Grow the movement. <a href="image files goes here" target="_blank">Download</a> or <a href="pdf file goes here" target="_blank">print</a> the logo.</p>
+					<h3 class="headlineSmallGray" id="followSF">FOLLOW @SFSUPERBOWL</h3>
+					<div class="right"><a class="google link" href="https://plus.google.com/u/0/116535953378851378506/" target="_blank"><img src="../images/follow_google.png"></a></div>
+					<div class="right"><a class="facebook link" href="https://www.facebook.com/SFSuperbowl" target="_blank"><img src="../images/follow_facebook.png"></a><p id='msg'></p></div>
+					<div class="right"><a class="twitter_link link" href="https://twitter.com/SFSuperbowl" target="_blank"><img src="../images/follow_twitter.png"></a></div>
 				</div>
+				
 			</li>
 			
 			<li id="step_2" class="bgTextureLight">
@@ -36,11 +39,10 @@
 					<img src="../images/movement3.png">
 				</div>
 				<div class="headline">
-					<h3 class="headlineSmallGray" id="followSF">FOLLOW @SFSUPERBOWL</h3>
-					<div class="right"><a class="google link" href="https://plus.google.com/u/0/116535953378851378506/" target="_blank"><img src="../images/follow_google.png"></a></div>
-					<div class="right"><a class="facebook link" href="https://www.facebook.com/SFSuperbowl" target="_blank"><img src="../images/follow_facebook.png"></a><p id='msg'></p></div>
-					<div class="right"><a class="twitter_link link" href="https://twitter.com/SFSuperbowl" target="_blank"><img src="../images/follow_twitter.png"></a></div>
+					<h3 class="headlineSmallGray"><a href="../images/movement_poster.png" target="_blank">SHARE THE LOGO >></a></h3>
+					<p>Grow the movement. <a href="image files goes here" target="_blank">Download</a> or <a href="pdf file goes here" target="_blank">print</a> the logo.</p>
 				</div>
+
 			</li>
 		</ul>
 	</div>		
