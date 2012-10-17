@@ -209,18 +209,47 @@ html {
 
 
 
+/* SUPPORTERS STYLES GLOBAL */
 
+#facebook_likes {margin: 10px 10px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; }
 
+#facebook_likes li { float: left; }
 
+#facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; }
 
+#facebook_like_button { height: 96px; }
 
+#facebook_cta { margin: 27px 0px 0px 0px; width: 51px; overflow: hidden; }
 
+#facebook_likes_count { position: relative; float: right; top: -34px;}  
 
+#facebook_count { /*top: -18px;*/ position: relative; }
 
+#google_pluses { height: 328px; width: 409px; margin: 10px 0px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 78px; } 
 
+#google_pluses li { float: left; }
 
+#google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 379px;  }
 
+#google_cta { margin: 27px 0px 0px 0px; width: 49px;  width: 39px;  }
 
+#google_plus_count { width: 380px; position: relative; float: right;  top: -17px; }
+
+#google_count { /*top: -18px;*/ position: relative; }
+
+#google_plus_count .numbers_small,
+
+#facebook_likes_count .numbers_small { position: absolute;  bottom: -41px; right: 5px; }
+
+/* google post styles - will need to be styles for tablet */
+#gfb_count_bg { margin: 26px 30px 0px 0px; text-align: right; }
+#supporters_count .numbers_medium, 
+#gfb_count .numbers_medium { position: absolute; bottom: 21px; right: 39px; }
+#plus_post { position: relative; top: 35px; height: 400px; width: 370px; border: #ccc 1px solid; padding: 10px 0px 0px 10px; }
+#plus_post div img {float: left; margin: 0px 10px 10px 0px; height: 80%; }
+#plus_post div h3 { padding-left: 5px; font-size: 18px; font-family: 'FranklinGothicURW-HeaIta'; font-weight: normal; font-style: normal; color: #e75405; text-decoration: none; }
+#plus_post div p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 220px; margin-right: 5px;  float: right; text-align: left; position: relative; }
+#plus_post div span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 12px; bottom: 5px; position: absolute;  }	
 
 
 
@@ -247,53 +276,54 @@ html {
  /* MOVEMENT STYLES LANDSCAPE */   
      
     #movement_left { height: 473px; top: 78px; }
-    
-	#movement_header { height: 137px; width: 482px;  }
+   	#movement_header { height: 137px; width: 482px;  }
 	#movement_header li div span { font-size: 25px; }
 	#movement_header li p {  width: 420px; }
-
 	#movement_steps { padding: 0px 0px 0px 55px; }
 	#movement_steps li { border-bottom: #ccc 2px solid; height: 87px;  width: 427px;  padding: 8px 0px 0px 0px; }
 	#movement_steps li:first-child { border-top: #ccc 2px solid; }
 	#movement_steps li:nth-child(3) { height: 77px; } 
-
 	#movement_steps li:nth-child(2) .headline { top: -33px; }
 	#movement_steps li:nth-child(3) .headline { top: -29px; } 
-
 	.right { float: right; position: relative; right: -135px; top: -40px; margin-left: 10px;  }
-	
 	#poster { height: 465px; top: 78px; }
      
        
        
  /* TWITTER STYLES LANDSCAPE */   
  
- 
     .twitter { height: 341px; top: 80px; left: 3px;}
 	#twitter_overlay_top { background: url(../images/twitter_overlay_top.png) bottom left no-repeat; display: block; height: 107px; position: absolute; width:888px; z-index: 3; top: 90px; left: 9px; }
 	#twitter_overlay_bottom  { height: 106px; width: 888px; bottom: 130px; } 
-	  
 	.tweet_list { top: -50px; }
-	
 	.unique_tweet { height: 110px; }	
-	
 	.tweet:after { top: 210px; }
-
 	#twitter_footer {  height: 91px; padding: 20px 0px 0px 30px; top: 83px; }
 	#twitter_footer li div span { padding-right: 123px; }
-	
 	#twitter_headline { width: 490px; }
-
 	#social { padding: 20px 0 0 36px; width: 341px}
 	#social p { font-size: 14px; width: 230px; }
 	#social .links { top: -20px; }
-
 	#tweet { width: 86px; }
-	
 	#twitter_number_count { top: -43px; text-align: right; }
 
 
-    
+
+/* SUPPORTERS STYLES LANDSCAPE */  
+ 
+  	.supporters { height: 497px; width: 997px; }
+	#supporters_main { height: 367px;  width: 997px; }
+	#supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; }
+	#facebook_likes { height: 328px; width: 409px; top: 78px; }
+	#facebook_header { width: 379px; }
+	#supporters_footer { background-color: #fff; position: relative; height: 91px; width: 867px; padding: 15px 0 0 30px; top: 80px; }
+	#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding: 4px 0px 4px 0px; }
+	#supporters_internal { padding: 20px 0 0 24px; display: inline-block; width: 500px; }
+	#supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
+	#supporters_internal em { color: #e75405; font-weight: bold; }
+	#supporters_count { display: inline-block; float: right; width:420px; top: 35px; position: relative; }
+	#google_plus_count .numbers_small,
+	#facebook_likes_count .numbers_small { position: absolute;  bottom: -41px; right: 5px; }    
 
 
 
@@ -446,12 +476,7 @@ html {
 	    Instagram
 	    -------------------------------------------------- */
 	
-	#instagram {
-	    overflow: hidden;
-	    height: 345px; 
-	    margin: 80px 0px 0px 0px;
-	    width: 909px; 
-	}
+	#instagram { overflow: hidden; height: 345px;  margin: 80px 0px 0px 0px; width: 909px; }
 	
 	#instagram_footer { position: relative; height: 108px; padding: 12px 0px 0px 30px; width: 909px; }
 	#instagram_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
@@ -507,106 +532,9 @@ html {
 	.instagram_photo_count {
 		margin: 31px 0px 0px 0px; 
 	}
-	
-	
-	/*	--------------------------------------------------
-	    Supporters
-	    -------------------------------------------------- */
-	.supporters { height: 497px; width: 997px; }
-	#supporters_main { height: 367px;  width: 997px; }
-	
-	
-	#supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; }
-	
-	#google_pluses { height: 328px; width: 409px; margin: 10px 0px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 78px; } 
-	#google_pluses li { float: left; }
-	
-	#google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 379px;  }
-	
-	#google_cta { margin: 27px 0px 0px 0px; width: 49px;  width: 39px;  }
-	
-	
-	
-	#facebook_likes { height: 328px; width: 409px; margin: 10px 10px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 78px; }
-	
-	#facebook_likes li {float: left;}
-	
-	#facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 379px; }
-	
-	#facebook_like_button { height: 96px; }
-	
-	#facebook_cta { margin: 27px 0px 0px 0px; width: 51px; overflow: hidden; }
-	
 
 
-
-	#supporters_footer { background-color: #fff; position: relative; height: 91px; width: 867px; padding: 15px 0 0 30px; top: 80px; }
-	
-	#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding: 4px 0px 4px 0px; }
-	
-	#supporters_internal { padding: 20px 0 0 24px; display: inline-block; width: 500px; }
-	#supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
-	#supporters_internal em { color: #e75405; font-weight: bold; }
-	
-	#supporters_count { display: inline-block; float: right; width:420px; top: 35px; position: relative; }
-	
-	
-	#google_plus_count { width: 380px; position: relative; float: right;  top: -17px; }
-	
-	#google_plus_count .numbers_small,
-	#facebook_likes_count .numbers_small {
-	    position: absolute;
-	    bottom: -41px;
-	    right: 5px;
-	}
-	
-	#google_count { /*top: -18px;*/ position: relative; }
-	
-	#facebook_likes_count { width: 380px; position: relative; float: right; top: -34px;  }
-	#facebook_count { /*top: -18px;*/ position: relative; }
-	
-	
-	
-	#gfb_count_bg {margin: 26px 30px 0px 0px; text-align: right; }
-	
-	/*.gfb_count { position: relative; right: 30px; top: -49px; }*/
-	
-	#supporters_count .numbers_medium, 
-	#gfb_count .numbers_medium {
-	    position: absolute;
-	    bottom: 21px;
-	    right: 39px;
-	}
-	
-	#plus_post {
-	position: relative; 
-	top: 35px;
-	height: 172px; 
-	width: 370px;
-	border: #ccc 1px solid;
-	padding: 10px 0px 0px 10px;   
-	 
-}
-
-#plus_post div img {float: left; margin: 0px 10px 10px 0px; width: 80%;  }
-
-#plus_post div h3 { 
-	padding-left: 5px; 
-	font-size: 18px;
-    font-family: 'FranklinGothicURW-HeaIta'; 
-    font-weight: normal; 
-    font-style: normal; 
-    color: #e75405; 
-    text-decoration: none; }
-    
-#plus_post div p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 220px; margin-right: 5px;  float: right; text-align: left; position: relative; }
-	
-#plus_post div span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 12px; bottom: 5px; position: absolute;  }	
-
-
-
-
-
+ 
 } /* close media query landscape */
 
 
@@ -686,27 +614,14 @@ html {
  /* SUPPORTERS STYLES PORTRAIT */ 
   
 	.supporters { height: 997px; width: 909px; }
-	
 	#supporters_main { height: 667px;  width: 909px; }
-	
-/* 	#supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; } */
-	
-	#facebook_likes { height: 625px; width: 410px; margin: 10px 10px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 135px; }
-	#facebook_likes li { float: left; }
-	#facebook_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 380px; }
-	#facebook_like_button { height: 96px; }
-	#facebook_cta { margin: 27px 0px 0px 0px; width: 51px; overflow: hidden; }
+		
+	#facebook_likes { height: 625px; width: 410px; top: 135px; }
+	#facebook_header { width: 380px; }
+
 	
 	#facebook_likes_count { width: 385px; position: relative; float: right; top: -34px;  }
 	#facebook_count { /*top: -18px;*/ position: relative; }
-	
-	#google_pluses { height: 625px; width: 410px; margin: 10px 0px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 135px;  } 
-	#google_pluses li { float: left; }
-	#google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 379px;  }
-	#google_cta { margin: 27px 0px 0px 0px; width: 49px;  width: 39px;  }
-
-	#google_plus_count { width: 385px; position: relative; float: right;  top: -17px; }
-	#google_count { /*top: -18px;*/ position: relative; }
 
 	#supporters_footer { position: relative; height: 158px; padding: 50px 0px 0px 40px; width: 868px; top: 135px; }
 	
@@ -717,58 +632,7 @@ html {
 	#supporters_internal em { color: #e75405; font-weight: bold; }
 	
 	#supporters_count { display: inline-block; float: right; width:420px; top: 90px; position: relative; }
-	
-	
-	
-	#google_plus_count .numbers_small,
-	#facebook_likes_count .numbers_small {
-	    position: absolute;
-	    bottom: -41px;
-	    right: 5px;
-	}
-	
-	
 
-	
-
-	
-	
-	
-	#gfb_count_bg {margin: 26px 30px 0px 0px; text-align: right; }
-	
-	/*.gfb_count { position: relative; right: 30px; top: -49px; }*/
-	
-	#supporters_count .numbers_medium, 
-	#gfb_count .numbers_medium {
-	    position: absolute;
-	    bottom: 21px;
-	    right: 39px;
-	}
-	
-	#plus_post {
-	position: relative; 
-	top: 35px;
-	height: 400px; 
-	width: 370px;
-	border: #ccc 1px solid;
-	padding: 10px 0px 0px 10px;   
-	 
-}
-
-#plus_post div img {float: left; margin: 0px 10px 10px 0px; height: 80%;  }
-
-#plus_post div h3 { 
-	padding-left: 5px; 
-	font-size: 18px;
-    font-family: 'FranklinGothicURW-HeaIta'; 
-    font-weight: normal; 
-    font-style: normal; 
-    color: #e75405; 
-    text-decoration: none; }
-    
-#plus_post div p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 220px; margin-right: 5px;  float: right; text-align: left; position: relative; }
-	
-#plus_post div span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 12px; bottom: 5px; position: absolute;  }	
 	
     
 } /* close media query portrait */
