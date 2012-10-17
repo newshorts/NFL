@@ -594,191 +594,87 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
     Numbers
     -------------------------------------------------- */
 
-	#screen {
-	    display: block; 
-	    width: 909px; 
-	    height: 909px; 
-	    position: absolute; 
-	    top: 0;
-	    left: 0;
-	    overflow: hidden;
-	}
+		/* BUZZ STYLES PORTRAIT */   
+ #screen {
+    display: block; 
+    width: 996px; 
+    height: 492px; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+}
+
+#screen li { 
+    float: left;
+}   
+    
+	#box1 { width: 100%; height: 300px; padding: 50px; margin: 10px 0; position: relative; top: 57px; }
+	#box1 div img { height: 12%;} 
+	#box1 div span { font-size: 45px; }
 	
-	#screen li { 
-	    float: left;
-	    overflow: hidden;
-	}
 	
+	#train_car1 a span { position: relative; left: -5px; top: 0px;  }
+	#train_car2 {}
+	#train_car3 {}
+	.train { width: 100%; margin: 20px 0px 20px 0px; top: 27px; position: relative; height: 1500px; }
 	
-	.tweet_banner { display: inline-block; width: 909px; height: 157px; position: relative; }
-	/*#box2:hover, #box3:hover, #box4:hover  {
-	    background: white;
-	}*/
+	#box1 { width: 835px; height: 198px; position: relative; margin: 88px 0px 10px 8px;	}
+	#box1 .headlineMediumGray { position: absolute; top: 38px; left: 30px; }
+	#total { margin: 249px 0 0 101px; left: 50px; position: absolute;  }
+	#box1 div { position: relative; top: 0px; }
 	
-	#box1 { 
-	    width: 909px; 
-	    height: 318px; 
-	    position: relative; 
-	    margin: 145px 0px 10px 0px;
-	}
-	
-	#box1 .headlineMediumGray {
-	    position: absolute;
-	    top: 44px;
-	    left: 30px;
-	}
-	
-	#total {
-		margin: 178px 0 0 52px;
-	}
-	
-	#totalBG {
-			margin: 98px 0 0 52px;
-	}
-	
-	#box1 .numbers_large {
-	    position: absolute;
-	    bottom: 50px;
-	    right: 50px;
-	}
-	
-	#box1 #total, #box1 .largNumbersGrey {
-	    /*position: absolute;*/
-	    width: 899px;
-	    text-align: right;    
-	    direction: rtl;
-	    text-align: justify;
-	    white-space: pre;
-	}
-	
-	#box2 {
-	    /*margin: 0px 5px 0px 0px;*/
-	    /* overflow: hidden; */
-	    /*width: 998px;*/
-	}
-	
-	/*#box2 .numbers_small,*/
-	/*#box3 .numbers_small,
-	#box4 .numbers_small {*/
-	.trainCompartment .numbers_small{
-	    position: absolute;
-	    bottom: 18px;
-	    right: 8px;
-	}
-	
-	/* .trainCompartment:hover { background-color: white; } */
-	
-	/*#box2 span, #box2 img, #box2 hr,*/
-	/*#box3 span, #box3 img, #box3 hr,*/
-	/*#box4 span, #box4 img, #box4 hr {*/
-	.trainCompartment hr, .trainCompartment span, .trainCompartment img {
-	    position: absolute;
-	}
-	
-	.trainCompartment span { font-size: 23px;  } 
-	
-	.train {
-	    position: relative;
-	    top: 0;
-	    left: 0;
-	    width: 9999px;
-	    height: 155px;
-	}
-	
-	.trainCar .tweet_list {
-	    top: 0;
-	}
-	
-	.trainCompartmentLong {
-	    position: relative;
-	    display: block;
-	    width: 909px;
-	    height: 155px;
-	    background: url(../images/bg-texture-light.png) scroll repeat;
-	    margin-left: 10px;
-	    margin-right: 10px;
-	    float: left;
-	    overflow: hidden;
-	}
-	
-	.trainCompartment {
-	    float: left;
-	    width: 600px;
-	    height: 155px;
-	    position: relative;
-	    display: block;
-	    background: url(../images/bg-texture-light.png) scroll repeat;
-	    margin-left: 10px;
-	    overflow: hidden;
-	}
-	
-	.trainCompartment:first-child,
-	.trainCompartmentLong:first-child{
-	    margin-left: 0px;
-	}
-	
-	/*#box3 {
-		margin: 0px 5px 0px 5px;
-	}
-	
-	#box4 {
-		margin: 0px 0px 0px 5px;
-		padding-right: 1px;
-	}*/
-	
-	.countGrey {
-	    display: inline;
-	    top: 78px;
-	    left: 34px;
-	    margin: 0;
-	    width: 263px;
-	    direction: rtl;
-	    text-align: justify;
-	    white-space: pre;
-	}
-	
-	.countOrange {
-	    display: inline;
-	    top: 107px;
-	    left: 34px;
-	    margin: 0;
-	    width: 263px;
-	    direction: rtl;
-	    text-align: justify;
-	    white-space: pre;
-	}
-	
-	.smallBoxHeading {
-	    top: 30px;
-	    left: 30px;
-	}
-	
-	.smallBoxIcon {
-	    top: 31px;
-	    left: 277px;
-	}
-	
-	.smallBoxIconLeft {
-	    top: 31px;
-	    left: 254px;
-	}
-	
-	.smallBoxHR {
-	    top: 47px;
-	    left: 28px;
-	    width: 268px;
-	
-	}
-	
-	.bottom, .bottom a { 
-	    width: 325px; 
-	    height: 155px; 
-	    position: relative;
-	    display: block;
-	}
-	
-		
-/* END OF NUMBERS */
+	.trainCar li a span { font-size: 55px; float: left;  }
+	.trainCompartment { width: 100%; height: 85px; padding: 50px; position: relative; margin: 10px 0 0px 0; background: url(../images/bg-texture-light.png) scroll repeat; }
+	.trainComparment .numbers_medium {  margin: 0; width: 663px; position: relative; float: right; right: 25px;  }
+	.smallBoxHeading { top: 30px; left: 30px; }
+	.smallBoxIcon { position: relative; float: right; right: 75px; height: 25%; top: -10px;}
+	.smallBoxIconLeft { position: relative; float: right; right: 70px; height: 25%; top: -10px; margin-left: 25px;  }
+
+
+.trainCar li ul { float: right; position: relative; right: 85px; top: 70px;  }
+.trainCar li div { float: right; position: relative; top: -160px; left: -60px;  }
+
+.trainCar #train_car3 ul { float: right; position: relative; right: 0px; top: 70px;  }
+.trainCar #train_car3 div { float: right; position: relative; top: -155px; left: -155px;  }
+
+
+#box1 .numbers_large {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+
+
+.countGrey {
+    display: inline;
+    top: 78px;
+    left: 34px;
+    margin: 0;
+    width: 263px;
+    direction: rtl;
+    text-align: justify;
+    white-space: pre;
+}
+
+.countOrange {
+    display: inline;
+    top: 107px;
+    left: 34px;
+    margin: 0;
+    width: 263px;
+    direction: rtl;
+    text-align: justify;
+    white-space: pre;
+}
+
+
+.bottom, .bottom a { 
+    width: 325px; 
+    height: 155px; 
+    position: relative;
+    display: block;
+}
 
 
 
