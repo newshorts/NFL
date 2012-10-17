@@ -11,7 +11,7 @@
             </div>
 	</li>
 	<li id="instagram_social">
-            <p>Share why the Bay Area is the perfect site for Superbowl L. Tag your photos <a href="https://twitter.com/search/realtime?q=%23SFSuperbowl&src=typd" target="_blank">#SFSuperBowl</a>.</p>
+            <p>Share why the Bay Area is the perfect site for Super Bowl L. Tag your photos <a href="https://twitter.com/search/realtime?q=%23SFSuperbowl&src=typd" target="_blank">#SFSuperBowl</a>.</p>
             <ul class="links">
                 <li id="instagram_button"><a href="http://instagr.am" target="_blank"><img src="../images/instagram_button.png"></a></li>
             </ul>
