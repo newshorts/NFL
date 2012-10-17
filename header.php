@@ -238,7 +238,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 
                     <?php endif; ?>
                     
-                    <?php //if($_SESSION['sfsuperbowlintro']) : ?>
+                    <?php if($_SESSION['sfsuperbowlintro']) : ?>
                         
                         
                         var fadeInIntroLogoBig = function() {
@@ -277,8 +277,23 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                                 '-khtml-opacity': '1.0',
                                 'opacity': '1.0'
                                 
-                            }, 1000, function() {
+                            }, 1500, function() {
                                 // complete
+                            });
+                        };
+                        
+                        var fadeOutIntroLogo = function() {
+                            $('#introLogo').animate({
+                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
+                                'filter': 'alpha(opacity=00)',
+                                '-moz-opacity': '0.0',
+                                '-khtml-opacity': '0.0',
+                                'opacity': '0.0'
+                            }, 1500, function() {
+                                // complete
+                                $(this).css({
+                                    display: 'none'
+                                });
                             });
                         };
                         
@@ -290,8 +305,23 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                                 '-khtml-opacity': '1.0',
                                 'opacity': '1.0'
                                 
-                            }, 1000, function() {
+                            }, 1500, function() {
                                 // complete
+                            });
+                        };
+                        
+                        var fadeOutHeadline = function() {
+                            $('#introHeadline').animate({
+                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
+                                'filter': 'alpha(opacity=00)',
+                                '-moz-opacity': '0.0',
+                                '-khtml-opacity': '0.0',
+                                'opacity': '0.0'
+                            }, 1500, function() {
+                                // complete
+                                $(this).css({
+                                    display: 'none'
+                                });
                             });
                         };
                         
@@ -303,8 +333,23 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                                 '-khtml-opacity': '1.0',
                                 'opacity': '1.0'
                                 
-                            }, 1000, function() {
+                            }, 1500, function() {
                                 // complete
+                            });
+                        };
+                        
+                        var fadeOutCopy = function() {
+                            $('#introCopy').animate({
+                                '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
+                                'filter': 'alpha(opacity=00)',
+                                '-moz-opacity': '0.0',
+                                '-khtml-opacity': '0.0',
+                                'opacity': '0.0'
+                            }, 1500, function() {
+                                // complete
+                                $(this).css({
+                                    display: 'none'
+                                });
                             });
                         };
                         
@@ -330,9 +375,14 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                             
                             delay(fadeInIntroLogo, 3400);
                             
-                            delay(fadeInHeadline, 4000);
-                            delay(fadeInCopy, 4600);
-                            delay(fadeOutIntro, 15000);
+                            delay(fadeInHeadline, 3400);
+                            delay(fadeInCopy, 5200);
+                            
+                            delay(fadeOutIntroLogo, 15000);
+                            delay(fadeOutHeadline, 15000);
+                            delay(fadeOutCopy, 15000);
+                            
+                            delay(fadeOutIntro, 16500);
                         };
                         
                         var delay = function(func, time) {
@@ -343,7 +393,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         setTimeout(sequence, 200);
                         
                                                
-                    <?php //endif; ?>
+                    <?php endif; ?>
 		            
 //                    var nav = new PageNavigation('#wrap');
                     
@@ -440,7 +490,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     
             </div><!-- /header -->
             
-            <?php //if($_SESSION['sfsuperbowlintro']) : ?>
+            <?php if($_SESSION['sfsuperbowlintro']) : ?>
                 
                 <div id="intro">
                     
@@ -466,7 +516,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                 
                 
                 <?php $_SESSION['sfsuperbowlintro'] = false; ?>
-            <?php //endif; ?>
+            <?php endif; ?>
             
             
             
