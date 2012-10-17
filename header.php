@@ -200,7 +200,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         
                     <?php if(strpos($request, 'buzz')): ?>
                     
-                        var scroller = new Scroller('.train', 1005);
+//                        var scroller = new Scroller('.train', 1005);
                         var total = new TotalTracker('#total');
                         var It = new InstagramTracker('#instagram_photo_count');
                         var tt = new TwitterTracker('#twitter_count');
@@ -239,7 +239,6 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     <?php endif; ?>
                     
                     <?php if($_SESSION['sfsuperbowlintro']) : ?>
-                        
                         
                         var fadeInIntroLogoBig = function() {
                             $('#introLogoBig').animate({
@@ -369,6 +368,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         };
                         
                         var sequence = function() {
+
                             
                             delay(fadeInIntroLogoBig, 800);
                             delay(fadeOutIntroLogoBig, 2700);
@@ -383,6 +383,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                             delay(fadeOutCopy, 15000);
                             
                             delay(fadeOutIntro, 16500);
+
                         };
                         
                         var delay = function(func, time) {
@@ -493,10 +494,9 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
             <?php if($_SESSION['sfsuperbowlintro']) : ?>
                 
                 <div id="intro">
-                    
+                    <img class="introItem " src="../images/intro_logo.png" />
                     <div id="introWrap">
-                        <img class="introItem hidden" src="../images/intro_logo_big.png" id="introLogoBig" />
-                        <img class="introItem hidden" src="../images/intro_logo.png" id="introLogo" />
+                        
                         <img class="introItem hidden" src="../images/intro_headline.png" id="introHeadline" />
                         <img class="introItem hidden" src="../images/intro_copy.png" id="introCopy" />
                         

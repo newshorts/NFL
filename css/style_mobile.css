@@ -1,0 +1,74 @@
+/*	--------------------------------------------------
+    GLOBAL STYLES
+    -------------------------------------------------- */
+/*
+body { font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 13px; font-size: 1.3rem; line-height: 18px; color: #555; -webkit-font-smoothing: antialiased; }
+
+a { color: #666666; text-decoration: none; line-height: inherit; }
+p { font-style: italic; }
+a:hover { color: #e75406; }
+a:focus { color: #e75406; outline: none; }
+p a, p a:visited { line-height: inherit; }
+
+hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30px 12px 0px; height: 0; }
+	
+html { background-color: #000000; }
+*/
+
+#dynamic { display: none; }
+#boardcontainer { display: none; }
+/*
+
+#container { background-color: red;position: absolute; overflow: none; } */
+
+
+/*
+#border {
+	background: url(../images/screen-border.png) scroll no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+ 
+    width: 40%;
+    min-width: 320px;
+    height: 98%;
+    position: fixed;
+    top: 100%;
+    margin-top: -100.5%;
+    left: 27%;
+    margin-left: -27.25%;
+    right: 100%;
+    margin-right: -87.25%;
+    
+    z-index: 5;
+}
+
+*/
+/*
+#dynamic {
+	background: url(images/backgrounds/bg-texture-dark.png) top left;
+
+    
+
+}
+*/
+
+
+@media only screen and (orientation: portrait) {
+body {
+ background: url(../images/mobile_background.jpg) top left no-repeat;
+/* -webkit-background-size: auto 100%; */
+
+}
+}
+ 
+@media only screen and (orientation: landscape) {
+body {
+
+ background: url(../images/mobile_background.jpg) top left no-repeat; 
+/*
+-webkit-background-size: 100% auto;
+}
+*/
+}
