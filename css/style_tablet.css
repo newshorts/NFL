@@ -201,7 +201,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 #facebook_count { /*top: -18px;*/ position: relative; }
 
-#google_pluses { height: 328px; width: 409px; margin: 10px 0px 0px 0px; padding: 20px 0px 0px 35px; position: relative; float: left; top: 78px; } 
+
 
 #google_pluses li { float: left; }
 
@@ -289,27 +289,28 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 /* SUPPORTERS STYLES LANDSCAPE */  
  
-  	.supporters { height: 497px; width: 997px; }
+  	.supporters { height: 497px; width: 890px; }
 	#supporters_main { height: 367px;  width: 997px; }
 	#supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; }
-	#facebook_likes { height: 328px; width: 409px; top: 78px; }
+	#facebook_likes { height: 328px; width: 409px; top: 78px; left: 8px; margin-right: 18px; }
 	#facebook_header { width: 379px; }
 	#facebook_likes_count { width: 385px; position: relative; float: right; top: -19px;  }
 	#facebook_count { /*top: -18px;*/ position: relative; }
 	
-	#supporters_footer { background-color: #fff; position: relative; height: 91px; width: 867px; padding: 15px 0 0 30px; top: 80px; }
+	#supporters_footer { background-color: #fff; position: relative; width: 860px; height: 80px; padding: 15px 0 0 30px; margin: 0px 6px 6px 8px; top: 80px; }
 	#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding: 4px 0px 4px 0px; }
 	#supporters_internal { padding: 20px 0 0 24px; display: inline-block; width: 500px; }
 	#supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }	
 	#supporters_internal em { color: #e75405; font-weight: bold; }
-	#supporters_count { display: inline-block; float: right; width:420px; top: 35px; position: relative; }
+	#supporters_count { display: inline-block; float: right; width:420px; top: 32px; position: relative; }
 
 
 /*
 	#google_plus_count .numbers_small,
 	#facebook_likes_count .numbers_small { position: absolute;  bottom: -41px; right: 5px; } 
 */   
-
+	#google_pluses { height: 328px; width: 409px; margin: 10px 0px 0px 0px; padding: 20px 0px 0px 27px; position: relative; float: left; top: 78px; }
+	
 	#plus_post { position: relative; background-color: #fff; top: 70px; height: 129px; width: 360px; border: #ccc 1px solid; padding: 15px 0px 0px 15px; }
 	#plus_post div img {float: left; margin: 0px 15px 15px 0px; height: 85%;  }
 	#plus_post div h3 { padding-left: 5px; font-size: 15px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #767676; text-decoration: none; }
@@ -386,34 +387,12 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#instagram_footer { position: relative; width: 890px; height: 110px; padding: 10px 0px 0px 18px; margin: 0px 0px 0px 8px; }
 	#instagram_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 177px; }
 
-	#instagram_count {
-		position: relative;
-		float: right;
-        width: 363px;
-        display: inline-block;
-        margin-top: -25px;
-        margin-right: 28px;
-	}
+	#instagram_count { position: relative; float: right; width: 363px; display: inline-block; margin-top: 8px; margin-right: 28px; }
 	
 	#instagram_count .mediumNumbersOrange,
-	#instagram_count .mediumNumbersGrey {
-	    position: absolute;
-	    top: -30px;
-	    right: 0;
-	    text-align: right;
-	    direction: rtl;
-	    text-align: justify;
-	    white-space: pre;
-	    
-	}
+	#instagram_count .mediumNumbersGrey { position: absolute; top: -30px; right: 0; text-align: right; direction: rtl; text-align: justify; white-space: pre; }
 	
-	.photo_count {
-		font-family: 'ds-digitalitalic', Arial, sans-serif;
-	    font-size: 116px;
-	    color: #e75406;
-	    margin: 0px 0px 0px 0px;
-		
-	}
+	.photo_count { font-family: 'ds-digitalitalic', Arial, sans-serif; font-size: 116px; color: #e75406; margin: 0px 0px 0px 0px; }
 	
 	#instagram_social { padding: 16px 0 0 25px; width: 408px; positionL: relative; float: left; }
 	
@@ -422,7 +401,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#instagram_social em { color: #e75405; font-weight: bold; }
 	#instagram_button { position: relative; top: -30px;  float: right; }
 	
-	.instagram_photo_count { margin: 31px 0px 0px 0px; }
+	.instagram_photo_count { margin: 28px 0px 0px 0px; }
 
 
  
