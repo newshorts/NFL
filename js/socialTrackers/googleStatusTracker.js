@@ -44,6 +44,7 @@ var GoogleStatusTracker = SocialTracker.extend({
         
         if(typeof entry.object.attachments === "undefined") {
             // break out
+            console.log('going to blank format')
             this.formatBlank();
             return;
         }
@@ -82,6 +83,7 @@ var GoogleStatusTracker = SocialTracker.extend({
             this.post.attachmentType = attachment.objectType;
         }
         
+        console.log('posting to media format')
         console.dir(this.post)
         
         this.formatMedia();
@@ -90,11 +92,15 @@ var GoogleStatusTracker = SocialTracker.extend({
     
     formatMedia: function() {
         
+        console.dir(this.post.attachmentType);
+        
         if(this.post.attachmentType == 'photo') {
             $('#plus_post > div').append('<img src="'+this.post.attachmentImage+'" alt="Plus Image Here..." />');
             $('#plus_post > div').append('<h3>' + this.post.title + '</h3>');
             $('#plus_post > div').append('<p>' + this.post.attachmentContent + '</p>');
             $('#plus_post > div').append('<span>' + this.post.date + '</span>');
+            console.log('posting google status with photo');
+            return;
         }
         
         if(this.post.attachmentType == 'video') {
@@ -102,7 +108,19 @@ var GoogleStatusTracker = SocialTracker.extend({
             $('#plus_post > div').append('<h3>' + this.post.title + '</h3>');
             $('#plus_post > div').append('<p>' + this.post.attachmentContent + '</p>');
             $('#plus_post > div').append('<span>' + this.post.date + '</span>');
+            console.log('posting google status with video');
+            return;
         }
+        
+        if(this.post.attachmentType == 'article') {
+            $('#plus_post > div').append('<h3>' + this.post.title + '</h3>');
+            $('#plus_post > div').append('<div><a href="'+this.post.attachmentLink+'"><h4>' + this.post.attachmentTitle + '</h4></a><p>'+this.post.attachmentContent+'</p><span>' + this.post.date + '</span></div>');
+            console.log('posting google status with article');
+            return;
+        }
+        
+        console.log('unable to post google status');
+        return;
         
     },
     
@@ -110,6 +128,7 @@ var GoogleStatusTracker = SocialTracker.extend({
         $('#plus_post > div').append('<h3>' + this.post.title + '</h3>');
         $('#plus_post > div').append('<p>' + this.post.attachmentContent + '</p>');
         $('#plus_post > div').append('<span>' + this.post.date + '</span>');
+        console.log('posting blank format');
     },
     
     cropImage: function() {
