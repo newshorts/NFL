@@ -367,7 +367,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         </div>
                     </div>
 
-                    <?php //$_SESSION['sfsuperbowlintro'] = false; ?>
+                    <?php $_SESSION['sfsuperbowlintro'] = false; ?>
 
                 <?php endif; ?>
             
