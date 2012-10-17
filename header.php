@@ -493,9 +493,10 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
             <?php if($_SESSION['sfsuperbowlintro']) : ?>
                 
                 <div id="intro">
-                    <img class="introItem " src="../images/intro_logo.png" />
+                    
                     <div id="introWrap">
-                        
+                        <img class="introItem hidden" src="../images/intro_logo.png" id="introLogo" />
+                        <img class="introItem hidden" src="../images/intro_logo_big.png" id="introLogoBig" />
                         <img class="introItem hidden" src="../images/intro_headline.png" id="introHeadline" />
                         <img class="introItem hidden" src="../images/intro_copy.png" id="introCopy" />
                         
