@@ -170,12 +170,14 @@ html { }
 	.trainComparment .numbers_small {  margin: 0; width: 763px; position: relative; float: right; right: 25px;  }
 	.smallBoxHeading { top: 30px; left: 30px; }
 	.hidden { display: none;}
-	.trainComparment ul:nthchild(1) {  float: left; position: relative; right:65px; top: 80px;  }
-	.trainCar li div { display: block; float: left; position: relative; top: 80px; left: -180px;  }
+	
+	
+	.trainCar #train_car1 ul {  float: left; position: relative; right:65px; top: 10px;  }
+	.trainCar #train_car1 div { display: block; float: left; position: relative; top: 80px; left: -140px;  }
 
 
-	.trainComparment ul:nthchild(2) { float: left; position: relative; right:85px; top: 370px;  }
-	.trainCar li div { float: left; position: relative; top: 80px; left: -220px;  }
+	.trainCar #train_car2 ul { float: left; position: relative; right:85px; top: 10px;  }
+	.trainCar #train_car2 div { float: left; position: relative; top: 80px; left: -140px;  }
 
 /*
 	.trainCar #train_car2 ul { float: right; position: relative; right: 0px; top: 100px;  }
@@ -183,7 +185,7 @@ html { }
 */
 
 	.trainCar #train_car3 ul { float: right; position: relative; right: 0px; top: 80px;  }
-	.trainCar #train_car3 div { float: left; position: relative; top: -25px; left: -410px;  }
+	.trainCar #train_car3 div { float: left; position: relative; top: -25px; left: -385px;  }
 
 
 
@@ -313,7 +315,7 @@ html { }
 	
 	
 	.trainCar #train_car1 ul{  float: left; position: relative; right:65px; top: 5px;  }
-	.trainCar #train_car1 div { display: block; float: left; position: relative; top: 80px; left: -190px;  }
+	.trainCar #train_car1 div { display: block; float: left; position: relative; top: 80px; left: -140px;  }
 
 
 	.trainCar #train_car2 ul { float: left; position: relative; right: 85px; top: 5px;  }
@@ -325,7 +327,7 @@ html { }
 */
 
 	.trainCar #train_car3 ul { float: right; position: relative; right: 0px; top: 110px;  }
-	.trainCar #train_car3 div { float: left; position: relative; top: -25px; left: -310px;  }
+	.trainCar #train_car3 div { float: left; position: relative; top: -25px; left: -270px;  }
 
 
 #box1 .numbers_large {
