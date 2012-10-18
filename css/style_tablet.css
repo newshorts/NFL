@@ -307,7 +307,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; }
 	#facebook_likes { height: 328px; width: 414px; top: 78px; left: 8px; margin-right: 18px; }
 	#facebook_header { width: 373px; }
-	#facebook_likes_count { width: 375px; position: relative; float: right; top: -13px;  }
+	#facebook_likes_count { width: 375px; position: relative; float: right; top: -23px;  }
 	#facebook_count { /*top: -18px;*/ position: relative; }
 	
 	#google_pluses { height: 328px; width: 391px; margin: 10px 0px 0px 0px; padding: 20px 0px 0px 45px; position: relative; float: left; top: 78px; }
@@ -321,7 +321,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#supporters_internal em { color: #e75405; font-weight: bold; }
 	#supporters_count { display: inline-block; float: right; width: 420px; top: 32px; position: relative; }
 
-	#plus_post { position: relative; background-color: #fff;  top: 70px; height: 127px; width: 345px; border: #ccc 1px solid; overflow: hidden; padding: 15px 0px 0px 15px; }
+	#plus_post { position: relative; background-color: #fff;  top: 70px; height: 132px; width: 345px; border: #ccc 1px solid; overflow: hidden; padding: 15px 0px 0px 15px; }
 
 	#plus_post a:nth-child(1) { display: block; height: 127px; width: 345px; position: absolute; z-index: 2; }
 	#plus_post a:nth-child(1):hover { background-color: #fff 50%; cursor: pointer; }
