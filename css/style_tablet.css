@@ -305,13 +305,13 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
   	.supporters { height: 497px; width: 890px; }
 	#supporters_main { height: 367px;  width: 997px; }
 	#supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; }
-	#facebook_likes { height: 328px; width: 414px; top: 78px; left: 8px; margin-right: 18px; }
+	#facebook_likes { height: 288px; width: 414px; top: 98px; left: 8px; margin-right: 18px; }
 	#facebook_header { width: 373px; }
-	#facebook_likes_count { width: 375px; position: relative; float: right; top: 13px;  }
+	#facebook_likes_count { width: 375px; position: relative; float: right; top: 23px;  }
 	#facebook_count { /*top: -18px;*/ position: relative; }
 	
-	#google_pluses { height: 328px; width: 390px; margin: 10px 0px 0px 0px; padding: 20px 0px 0px 45px; position: relative; float: left; top: 78px; }
-    #google_plus_count { width: 365px; top: -8px; }
+	#google_pluses { height: 288px; width: 390px; margin: 10px 0px 0px 0px; padding: 40px 0px 0px 45px; position: relative; float: left; top: 78px; }
+    #google_plus_count { width: 365px; top: -28px; }
     #google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 359px;  }
 	
 	#supporters_footer { background-color: #fff; position: relative; width: 860px; height: 80px; padding: 15px 0 0 30px; margin: 0px 6px 6px 8px; top: 80px; }
