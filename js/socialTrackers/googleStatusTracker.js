@@ -124,7 +124,7 @@ var GoogleStatusTracker = SocialTracker.extend({
         }
         
         var post =      '<a href="'+entry.url+'" target="_blank"><ul class="single_post">';
-            post +=             '<li>';
+            post +=             '<li id="first_li">';
             post +=                 '<div class="image_mask"><span>'+media+'</span></div>';
             post +=             '</li>';
             post +=             '<li>';
