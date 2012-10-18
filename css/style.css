@@ -290,7 +290,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 #movement_steps p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
 #movement_steps p a { color: #e75405; font-weight: bold; }
 
-.right {float: right; position: relative; right: -215px; top: -40px; margin-left: 10px;  }
+.right {float: right; position: relative; right: -215px; top: -48px; margin-left: 10px;  }
 
 #poster { margin-top: 10px; width: 380px; height: 485px; position: relative; float: right;  }
 

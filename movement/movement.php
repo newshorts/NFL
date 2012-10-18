@@ -7,7 +7,7 @@
 				</div>
 			</li>
 			<li>
-				<p>Our bid for the Super Bowl starts with you. Help us show why the Bay Area will be a perfect host for Super Bowl 50. Simply tweet, share or post with <a href="https://twitter.com/search/realtime?q=%23SFSuperbowl&src=typd" target="_blank";>&#35;SFSuperBowl</a> to show your support.</p>
+				<p>Our bid for the Super Bowl starts with you. Help us show why the Bay Area will be the perfect host for Super Bowl 50. Simply Tweet, share or post with <a href="https://twitter.com/search/realtime?q=%23SFSuperbowl&src=typd" target="_blank";>&#35;SFSuperBowl</a> to show your support.</p>
 			</li>
 		</ul>	
 		<ul id="movement_steps">
