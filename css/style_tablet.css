@@ -374,7 +374,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	
 	.trainCompartmentLong { position: relative; display: block; width: 890px; height: 158px; background: url(../images/bg-texture-light.png) scroll repeat; margin-left: 18px; margin-right: 10px; float: left; overflow: hidden; }
 	
-	.trainCompartmentLong img { max-width: 890px; }
+	.trainCompartmentLong img, .trainCompartmentLong  { max-width: 890px; }
 		
 	
 	
