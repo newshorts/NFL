@@ -24,7 +24,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <meta itemprop="image" content="http://www.sfsuperbowl.com/images/fb/sfsb_128x128.jpg">
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
+        <meta property="og:image" content="http://www.sfsuperbowl.com/images/fb/sfsb_128x128.jpg" />
         <link rel="icon" type="image/png" href="<?php echo ROOT; ?>favicon.ico">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="<?php echo ROOT; ?>js/lib/jquery.min.js">\x3C/script>')</script>
@@ -298,7 +298,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
     
     
     <!-- FACEBOOK JS -->
-    <meta property="og:image" content="http://www.sfsuperbowl.com/images/fb/sfsb_128x128.jpg" />
+    
     <script src='http://connect.facebook.net/en_US/all.js'></script>
     
     <div id="fb-root"></div>
