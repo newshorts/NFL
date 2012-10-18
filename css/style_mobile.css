@@ -717,7 +717,7 @@ html { }
 .tweet_banner .tweet_content { width: 56%; top: 23%; left: 38%; }
 .tweet_banner .begin_quote { background: url(../images/quote_open.png) scroll no-repeat; display: inline-block; position: absolute;  width: 25px;  height: 17px; top: 4px; left: -44px }
 .tweet_banner .end_quote { background: url(../images/quote_close.png) scroll 98% 0 no-repeat;  display: inline-block; position: absolute;  width: 45px; height: 17px; white-space: pre; bottom: 3px; }
-.trainCompartment span { font-size: 23px;  } 
+.trainCompartment span { font-size: 23px; } 
 
 
 
