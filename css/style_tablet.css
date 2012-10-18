@@ -307,10 +307,10 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; }
 	#facebook_likes { height: 328px; width: 414px; top: 78px; left: 8px; margin-right: 18px; }
 	#facebook_header { width: 373px; }
-	#facebook_likes_count { width: 375px; position: relative; float: right; top: -23px;  }
+	#facebook_likes_count { width: 375px; position: relative; float: right; top: 13px;  }
 	#facebook_count { /*top: -18px;*/ position: relative; }
 	
-	#google_pluses { height: 328px; width: 389px; margin: 10px 0px 0px 0px; padding: 20px 0px 0px 45px; position: relative; float: left; top: 78px; }
+	#google_pluses { height: 328px; width: 390px; margin: 10px 0px 0px 0px; padding: 20px 0px 0px 45px; position: relative; float: left; top: 78px; }
     #google_plus_count { width: 365px; top: -8px; }
     #google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 359px;  }
 	
