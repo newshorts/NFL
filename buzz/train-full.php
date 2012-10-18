@@ -55,7 +55,7 @@
 
 <ul class="trainCar" data-pos="335">
     <li class="tweet_banner trainCompartmentLong">
-        <a href="<?php echo ROOT; ?>tweets/">
+        <!--<a href="<?php echo ROOT; ?>tweets/">-->
             <ul class="inner_tweet">
                 <li class="tweet_profile_img">
                     <a href="">
@@ -72,7 +72,7 @@
                     </p>
                 </li>
             </ul>
-        </a>
+        <!--</a>-->
     </li>
 </ul>
 <ul class="trainCar" data-pos="0">
