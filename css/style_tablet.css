@@ -773,6 +773,12 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
     text-decoration: none;
 }
 
+.headlineHashTag {
+    position: relative;
+    top: 2px;
+    width: 20px;
+}
+
 .smallNumbersOrange {
     font-family: 'ds-digitalitalic', Arial, sans-serif;
     font-size: 71px;
