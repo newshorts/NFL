@@ -33,11 +33,11 @@ class Social {
         
         $likes = $this->get_likes();
         
-        $insta = $this->get_instagram_count('iwearshortscasbah');
-        $insta += $this->get_instagram_count('iwearshortscas');
+        $insta = $this->get_instagram_count('iwearshortscasbahstuff');
+        $insta += $this->get_instagram_count('iwearshortscasstuff');
         
-        $photos[] = $this->get_instagram_photos('iwearshortscasbah');
-        $photos[] =  $this->get_instagram_photos('iwearshortscas');
+        $photos[] = $this->get_instagram_photos('iwearshortscasbahstuff');
+        $photos[] =  $this->get_instagram_photos('iwearshortscasstuff');
         
         $fb_statuses = $this->get_facebook_statuses();
         
