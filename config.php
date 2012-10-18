@@ -18,6 +18,28 @@ $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') 
 
 define('DEVICE_TYPE', $deviceType);
 
+function is_home() {
+    return ($request == 'http://sfsuperbowl.com' || strpos($request, 'localhost')) ? 'true' : 'false';
+}
+
+function is_instagram() {
+    return strpos($request, 'instagram');
+}
+
+function is_tweets() {
+    return strpos($request, 'tweets');
+}
+
+function is_supporters() {
+    return strpos($request, 'supporters');
+}
+
+function is_movement() {
+    return strpos($request, 'movement');
+}
+
+
+
 /* setcookie("sfsuperbowlintro", true); */
 
 

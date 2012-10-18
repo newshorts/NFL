@@ -238,7 +238,7 @@ class Tag extends TwitterTracker {
      * @access public
      * @param string $tag a string to search twitter for
      */
-    public function __construct($tag = '#cheerfulsundays+OR+#gspsf') {
+    public function __construct($tag = '#sfsuper+OR+#sfsuperbowl') {
         parent::__construct();
         $this->tag_name = $tag;
     }

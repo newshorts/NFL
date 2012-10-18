@@ -10,14 +10,17 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
     
 ?>
 <!DOCTYPE html>
-<html  itemscope itemtype="http://schema.org/Event" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml">
-<!--
- GOOGLE+ 
-<html>
- Facebook 
-<html >
 
--->
+
+
+<html  itemscope itemtype="http://schema.org/Event" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml">
+    
+    
+    <?php echo is_home(); ?>
+<?php echo is_instagram(); ?>
+<?php echo is_supporters(); ?>
+<?php echo is_movement(); ?>
+<?php echo is_tweets(); ?>
 
     <head>
     	
@@ -136,8 +139,9 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <script src="<?php echo ROOT; ?>js/socialTrackers/subscription.js"></script>
         <script src="<?php echo ROOT; ?>js/socialTrackers/socialTracker.js"></script>
         
+        <?php echo $request; ?>
         
-        <?php if(strpos($request, 'buzz')): ?>
+        <?php if(is_home()): ?>
         
             <?php if(DEVICE_TYPE != 'phone') : ?>
                 <!-- no scroller for mobile -->
@@ -150,18 +154,18 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
             <script src="<?php echo ROOT; ?>js/socialTrackers/totalTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js"></script>
         
-        <?php elseif(strpos($request, 'instagram')): ?>
+        <?php elseif(is_instagram()): ?>
         
             <script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>
             <!--<script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>-->
         
-        <?php elseif(strpos($request, 'tweets')): ?>
+        <?php elseif(is_tweets()): ?>
         
             <script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>
         
-        <?php elseif(strpos($request, 'movement')): ?>
+        <?php elseif(is_movement()): ?>
         
-        <?php elseif(strpos($request, 'supporters')): ?>
+        <?php elseif(is_supporters()): ?>
         
             <script src="<?php echo ROOT; ?>js/lib/pretty.js"></script>
             <script src="<?php echo ROOT; ?>js/lib/date.js"></script>
@@ -192,7 +196,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                 
                         sub = new Subscription();
                         
-                    <?php if(strpos($request, 'buzz')): ?>
+                    <?php if(is_home()): ?>
                         
                         <?php if(DEVICE_TYPE == 'phone') : ?>
                             var total = new TotalTracker('#total');
@@ -226,18 +230,18 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                             
                         <?php endif; ?>
                         
-                    <?php elseif(strpos($request, 'instagram')): ?>
+                    <?php elseif(is_instagram()): ?>
                         
                         var It = new InstagramTracker('#instagram_photo_count');
 //                        var tt = new TwitterTracker('#t_count');
 
-                    <?php elseif(strpos($request, 'tweets')): ?>
+                    <?php elseif(is_tweets()): ?>
                         
                         var tt = new TwitterTracker('#twitter_count');
 
-                    <?php elseif(strpos($request, 'movement')): ?>
+                    <?php elseif(is_movement()): ?>
 
-                    <?php elseif(strpos($request, 'supporters')): ?>
+                    <?php elseif(is_supporters()): ?>
                         
                         var gst = new GoogleStatusTracker('#google_statuses');
 //                        var fst = new FacebookStatusTracker('#facebook_statuses');
