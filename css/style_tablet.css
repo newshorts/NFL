@@ -259,8 +259,8 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
     #movement_left { width: 502px; height: 456px; top: 78px; left: 8px;}
    	#movement_header { width: 468px; height: 137px; padding: 18px 0px 0px 12px; }
 	#movement_header li div span { font-size: 25px; }
-	#movement_header li p { width: 420px; }
-	#movement_steps { padding: 0px 0px 0px 37px; }
+	#movement_header li p { width: 420px; margin-left: 18px; }
+	#movement_steps { padding: 0px 0px 0px 28px; }
 	#movement_steps li { border-bottom: #ccc 2px solid; height: 87px;  width: 427px;  padding: 8px 0px 0px 0px; }
 	#movement_steps li:first-child { border-top: #ccc 2px solid; }
 	#movement_steps li:first-child img { margin-top: 20px; }
@@ -760,7 +760,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 
 .headlineMediumGray {
-    font-size: 21px;
+    font-size: 24px;
     font-family: 'FranklinGothicURW-HeaIta'; 
     font-weight: normal; 
     font-style: normal; 

@@ -116,7 +116,7 @@ var GoogleStatusTracker = SocialTracker.extend({
         
         var entry = this.entries[0];
         
-        console.dir(this.post.attachmentType);
+//        console.dir(this.post.attachmentType);
         
         var media = '';
         if(entry.object.attachments[1].image.url) {

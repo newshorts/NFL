@@ -38,7 +38,7 @@
           picture: 'http://www.sfsuperbowl.com/images/fb/sfsb_128x128.jpg',
           name: 'SFSUPERBOWL',
           caption: '',
-          description: 'Help bring the Bowl to the bay. Share why you think the Bay Area is a perfect host for Super Bowl L. Use #SFSuperbowl or Like this page for updates, news and events.'
+          description: 'Help bring the Bowl to the bay. Share why you think the Bay Area is a perfect host for Super Bowl 50. Use #SFSuperbowl or Like this page for updates, news and events.'
         };
 
         function callback(response) {
