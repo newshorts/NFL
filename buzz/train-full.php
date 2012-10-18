@@ -3,7 +3,7 @@
     <li class="trainCompartment" data-pos="">
         <a href="<?php echo ROOT; ?>tweets/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">TWEETS</span>
-            <img class="smallBoxIcon" src="../images/icon_twitter.png">
+            <img class="smallBoxIcon" src="<?php echo ROOT; ?>images/icon_twitter.png">
             <hr class="smallBoxHR" />
             <ul class="numbers_small">
                 <li class="nil">0</li>
@@ -20,7 +20,7 @@
     <li class="trainCompartment" data-pos="">
         <a href="<?php echo ROOT; ?>instagram/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">PHOTOS</span>
-            <img class="smallBoxIcon" src="../images/icon_instagram.png">
+            <img class="smallBoxIcon" src="<?php echo ROOT; ?>images/icon_instagram.png">
             <hr class="smallBoxHR" />
             <ul class="numbers_small">
                 <li class="nil">0</li>
@@ -37,7 +37,7 @@
     <li class="trainCompartment" data-pos="">
         <a href="<?php echo ROOT; ?>supporters/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">SUPPORTERS</span>
-            <img class="smallBoxIconLeft" src="../images/icon_facebook.png"><img class="smallBoxIcon" src="../images/icon_google.png">
+            <img class="smallBoxIconLeft" src="<?php echo ROOT; ?>images/icon_facebook.png"><img class="smallBoxIcon" src="<?php echo ROOT; ?>images/icon_google.png">
             <hr class="smallBoxHR" />
             <ul class="numbers_small">
                 <li class="nil">0</li>
@@ -79,7 +79,7 @@
     <li class="trainCompartment" data-pos="">
         <a href="<?php echo ROOT; ?>tweets/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">TWEETS</span>
-            <img class="smallBoxIcon" src="../images/icon_twitter.png">
+            <img class="smallBoxIcon" src="<?php echo ROOT; ?>images/icon_twitter.png">
             <hr class="smallBoxHR" />
             <ul class="numbers_small">
                 <li class="nil">0</li>
@@ -96,7 +96,7 @@
     <li class="trainCompartment" data-pos="">
         <a href="<?php echo ROOT; ?>instagram/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">PHOTOS</span>
-            <img class="smallBoxIcon" src="../images/icon_instagram.png">
+            <img class="smallBoxIcon" src="<?php echo ROOT; ?>images/icon_instagram.png">
             <hr class="smallBoxHR" />
             <ul class="numbers_small">
                 <li class="nil">0</li>
@@ -113,7 +113,7 @@
     <li class="trainCompartment" data-pos="">
         <a href="<?php echo ROOT; ?>supporters/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">SUPPORTERS</span>
-            <img class="smallBoxIconLeft" src="../images/icon_facebook.png"><img class="smallBoxIcon" src="../images/icon_google.png">
+            <img class="smallBoxIconLeft" src="<?php echo ROOT; ?>images/icon_facebook.png"><img class="smallBoxIcon" src="<?php echo ROOT; ?>images/icon_google.png">
             <hr class="smallBoxHR" />
             <ul class="numbers_small">
                 <li class="nil">0</li>
@@ -131,7 +131,7 @@
 
 <ul class="trainCar" data-pos="335">
     <li class="trainCompartmentLong" data-pos="">
-        <a href="<?php echo ROOT; ?>instagram/" class="ajaxify"><img src="../images/coming-soon-instagram.png" /></a>
+        <a href="<?php echo ROOT; ?>instagram/" class="ajaxify"><img src="<?php echo ROOT; ?>images/coming-soon-instagram.png" /></a>
     </li>
 </ul>
 
@@ -139,7 +139,7 @@
     <li class="trainCompartment" data-pos="">
         <a href="<?php echo ROOT; ?>tweets/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">TWEETS</span>
-            <img class="smallBoxIcon" src="../images/icon_twitter.png">
+            <img class="smallBoxIcon" src="<?php echo ROOT; ?>images/icon_twitter.png">
             <hr class="smallBoxHR" />
             <ul class="numbers_small">
                 <li class="nil">0</li>
@@ -156,7 +156,7 @@
     <li class="trainCompartment" data-pos="">
         <a href="<?php echo ROOT; ?>instagram/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">PHOTOS</span>
-            <img class="smallBoxIcon" src="../images/icon_instagram.png">
+            <img class="smallBoxIcon" src="<?php echo ROOT; ?>images/icon_instagram.png">
             <hr class="smallBoxHR" />
             <ul class="numbers_small">
                 <li class="nil">0</li>
@@ -173,7 +173,7 @@
     <li class="trainCompartment" data-pos="">
         <a href="<?php echo ROOT; ?>supporters/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">SUPPORTERS</span>
-            <img class="smallBoxIconLeft" src="../images/icon_facebook.png"><img class="smallBoxIcon" src="../images/icon_google.png">
+            <img class="smallBoxIconLeft" src="<?php echo ROOT; ?>images/icon_facebook.png"><img class="smallBoxIcon" src="<?php echo ROOT; ?>images/icon_google.png">
             <hr class="smallBoxHR" />
             <ul class="numbers_small">
                 <li class="nil">0</li>
@@ -193,7 +193,7 @@
     <li class="trainCompartmentLong" data-pos="">
 
         <!-- the anchor below had a class of twitter which was fucking it all up removed (by mike) and it fixed the buzz page -->
-        <a class=" link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Let&rsquo;s&nbsp;bring&nbsp;the&nbsp;Bowl&nbsp;to&nbsp;the&nbsp;Bay!&nbsp;Show&nbsp;your&nbsp;support.#sfsuperbowl"><img src="../images/coming-soon-twitter.png" /></a>
+        <a class=" link" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Let&rsquo;s&nbsp;bring&nbsp;the&nbsp;Bowl&nbsp;to&nbsp;the&nbsp;Bay!&nbsp;Show&nbsp;your&nbsp;support.#sfsuperbowl"><img src="<?php echo ROOT; ?>images/coming-soon-twitter.png" /></a>
 
 
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -204,7 +204,7 @@
     <li class="trainCompartment" data-pos="">
         <a href="<?php echo ROOT; ?>tweets/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">TWEETS</span>
-            <img class="smallBoxIcon" src="../images/icon_twitter.png">
+            <img class="smallBoxIcon" src="<?php echo ROOT; ?>images/icon_twitter.png">
             <hr class="smallBoxHR" />
             <ul class="numbers_small">
                 <li class="nil">0</li>
@@ -221,7 +221,7 @@
     <li class="trainCompartment" data-pos="">
         <a href="<?php echo ROOT; ?>instagram/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">PHOTOS</span>
-            <img class="smallBoxIcon" src="../images/icon_instagram.png">
+            <img class="smallBoxIcon" src="<?php echo ROOT; ?>images/icon_instagram.png">
             <hr class="smallBoxHR" />
             <ul class="numbers_small">
                 <li class="nil">0</li>
@@ -238,7 +238,7 @@
     <li class="trainCompartment" data-pos="">
         <a href="<?php echo ROOT; ?>supporters/" class="ajaxify">
             <span class="headlineSmallGray smallBoxHeading">SUPPORTERS</span>
-            <img class="smallBoxIconLeft" src="../images/icon_facebook.png"><img class="smallBoxIcon" src="../images/icon_google.png">
+            <img class="smallBoxIconLeft" src="<?php echo ROOT; ?>images/icon_facebook.png"><img class="smallBoxIcon" src="<?php echo ROOT; ?>images/icon_google.png">
             <hr class="smallBoxHR" />
             <ul class="numbers_small">
                 <li class="nil">0</li>
@@ -256,6 +256,6 @@
 
 <ul class="trainCar" data-pos="335">
     <li class="trainCompartmentLong" data-pos="">
-        <a href="http://www.facebook.com/sfsuperbowl" class="ajaxify"><img src="../images/coming-soon-facebook.png" /></a>
+        <a href="http://www.facebook.com/sfsuperbowl" class="ajaxify"><img src="<?php echo ROOT; ?>images/coming-soon-facebook.png" /></a>
     </li>
 </ul>

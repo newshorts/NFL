@@ -13,7 +13,7 @@ var Subscription = Class.extend({
     
     init: function() {
         
-        this._url = '../services/output.json';
+        this._url = 'http://sfsuperbowl.com/services/output.json';
         
         this.getData();
         this.ticker();
@@ -22,21 +22,37 @@ var Subscription = Class.extend({
     
     getData: function() {
         var self = this;
-        $.getJSON(this._url,function(data){
-            
-            self._data = data;
-            var len = self.subs.length;
-            
-//            console.log('only polling once')
-            
-            for(var i = 0; i < len; i++) {
-                $(window).trigger(self.subs[i], data);
-//                console.log('but emitting many events')
+//        $.getJSON(this._url,function(data){
+//            
+//            self._data = data;
+//            var len = self.subs.length;
+//            
+////            console.log('only polling once')
+//            
+//            for(var i = 0; i < len; i++) {
+//                $(window).trigger(self.subs[i], data);
+////                console.log('but emitting many events')
+//            }
+//            
+////            $(window).trigger(self._eventName, data);
+//            
+//        });
+        
+        $.ajax({
+            url:this._url,
+            dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
+            success:function(data){
+                self._data = data;
+                var len = self.subs.length;
+                for(var i = 0; i < len; i++) {
+                    $(window).trigger(self.subs[i], data);
+                }
+            },
+            error:function(){
+                console.log("Error: unable to retrieve json file");
             }
-            
-//            $(window).trigger(self._eventName, data);
-            
         });
+        
     },
     
     ticker: function() {
