@@ -77,7 +77,7 @@ var SocialTracker = Class.extend({
     
     update: function(newNum) {
         
-        console.log('update: ' + this._name)
+//        console.log('update: ' + this._name)
 //        console.dir(this)
         
         var oldNum = parseInt(this._elem.attr(this._name));
