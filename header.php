@@ -26,7 +26,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
          <meta property="og:url" content="http://SFSuperBowl.com" />
          <meta property="og:title" content="SFSuperBowl || San Francisco Super Bowl 50" />
-        <meta property="og:image" content="http://www.sfsuperbowl.com/images/fb/sfsb_128x128.jpg" />
+        <meta property="og:image" content="http://www.sfsuperbowl.com/images/fb/sfsb_200x200.jpg" />
         <link rel="image_src" href="http://www.sfsuperbowl.com/images/fb/sfsb_128x128.jpg" />
         <link rel="icon" type="image/png" href="<?php echo ROOT; ?>favicon.ico">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
