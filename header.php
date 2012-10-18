@@ -15,13 +15,6 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 
 <html  itemscope itemtype="http://schema.org/Event" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml">
     
-    
-    <?php echo is_home(); ?>
-<?php echo is_instagram(); ?>
-<?php echo is_supporters(); ?>
-<?php echo is_movement(); ?>
-<?php echo is_tweets(); ?>
-
     <head>
     	
         <title>SFSuperBowl || San Francisco Super Bowl 50</title>
@@ -138,8 +131,6 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 <!--        <script src="<?php echo ROOT; ?>js/lib/pageNavigation.js"></script>-->
         <script src="<?php echo ROOT; ?>js/socialTrackers/subscription.js"></script>
         <script src="<?php echo ROOT; ?>js/socialTrackers/socialTracker.js"></script>
-        
-        <?php echo $request; ?>
         
         <?php if(is_home()): ?>
         

@@ -105,16 +105,32 @@ and open the template in the editor.
 //                                }
 //                            });
 
-                            $.getJSON('../../services/output.json', function(data) {
-                                console.dir(data);
-                                
-                                $(data.output.photos).each(function(idx) {
-                                    $(window).trigger({
-                                        type: 'newPhotos',
-                                        detail: data.output.photos[idx]
-                                    })
-                                });
+                            $.ajax({
+                                url:'http://sfsuperbowl.com/services/output.json.php?callback=?',
+                                dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
+                                success: function(data){
+                                    $(data.output.photos).each(function(idx) {
+                                        $(window).trigger({
+                                            type: 'newPhotos',
+                                            detail: data.output.photos[idx]
+                                        })
+                                    });
+                                },
+                                error: function(){
+                                    console.log("Error unable to retrieve json file from instagram page");
+                                },
                             });
+
+//                            $.getJSON('../../services/output.json', function(data) {
+//                                console.dir(data);
+//                                
+//                                $(data.output.photos).each(function(idx) {
+//                                    $(window).trigger({
+//                                        type: 'newPhotos',
+//                                        detail: data.output.photos[idx]
+//                                    })
+//                                });
+//                            });
                         };
                         
                         var photosLoaded = function(data) {

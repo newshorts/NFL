@@ -152,11 +152,24 @@ var Scroller = Class.extend({
         
         var self = this;
         
-        $.getJSON('../services/output.json', function(data) {
-            var tweet = data.output.latest_tweet[0];
+        $.ajax({
+            url:'http://sfsuperbowl.com/services/output.json.php?callback=?',
+            dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
+            success: function(data){
+                var tweet = data.output.latest_tweet[0];
             
-            self.replaceTweetData(tweet);
+                self.replaceTweetData(tweet);
+            },
+            error: function(){
+                console.log("Error unable to retrieve json file from instagram page");
+            },
         });
+        
+//        $.getJSON('../services/output.json', function(data) {
+//            var tweet = data.output.latest_tweet[0];
+//            
+//            self.replaceTweetData(tweet);
+//        });
     },
     
     replaceTweetData: function(tweet) {
