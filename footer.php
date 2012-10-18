@@ -12,6 +12,8 @@
     
     <script src="<?php echo ROOT; ?>/tweets/tweet.js" charset="utf-8"></script>
     
+    
+    
 <!-- G+ -->    
     <script type="text/javascript">
 	  (function() {
@@ -20,6 +22,37 @@
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 	  })();
 	</script>
+	
+	
+	
+<!-- FACEBOOK --> 
+	<script> 
+      FB.init({appId: "YOUR_APP_ID", status: true, cookie: true});
+
+      function postToFeed() {
+
+        // calling the API ...
+        var obj = {
+          method: 'feed',
+          link: 'http://www.sfsuperbowl.com/',
+          picture: 'http://www.sfsuperbowl.com/images/fb/sfsb_128x128.jpg',
+          name: 'SFSUPERBOWL',
+          caption: '',
+          description: 'Help bring the Bowl to the bay. Share why you think the Bay Area is a perfect host for Super Bowl L. Use #SFSuperbowl or Like this page for updates, news and events.'
+        };
+
+        function callback(response) {
+          document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+        }
+
+        FB.ui(obj, callback);
+      }
+    
+    </script>	
+	
+
+
+
 
     </body>
     
