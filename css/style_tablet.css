@@ -521,7 +521,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#supporters_main { height: 667px;  width: 909px; }
 	#facebook_likes { width: 425px; height: 627px; top: 135px; margin: 10px 0px 0px 8px; padding: 14px 0px 0px 18px; position: relative; float: left; }
 	#facebook_header { width: 398px; }
-	#facebook_likes_count { width: 388px; position: relative; float: right; top: -2px;  }
+	#facebook_likes_count { width: 388px; position: relative; float: right; top: 12px;  }
 	#facebook_count { /*top: -18px;*/ position: relative; }
 	
 	#supporters_footer { position: relative; height: 168px; padding: 38px 0px 0px 28px; width: 868px; top: 130px; margin: 0px 0px 0px 8px; }
