@@ -105,12 +105,11 @@ var GoogleStatusTracker = SocialTracker.extend({
         
         var media = '';
         if(entry.object.attachments[1].image.url) {
-            media = '<img src="'+entry.object.attachments[1].image.url+'" alt="Plus Image Here..." />';
+            media = '<a href="'+entry.url+'"><img src="'+entry.object.attachments[1].image.url+'" alt="Plus Image Here..." /></a>';
         }
             
         var post =          '<ul>';
             post +=             '<li><span>'+media+'<span></li>';
-
             post +=         '</ul>';
             post +=         '<ul>';
             post +=             '<li><h3>'+entry.title+'</h3></li>';
@@ -118,12 +117,12 @@ var GoogleStatusTracker = SocialTracker.extend({
             post +=             '<li><p>'+entry.object.attachments[0].content+'</p></li>';
             post +=         '</ul>';
             post +=         '<ul>';
-            post +=             (entry.plusoners > 0) ? '<li><span># of reccomendations</span></li>' : '';
+            post +=             (entry.plusoners > 0) ? '<li><span class="plusones">'+entry.plusoners.totalItems+'</span></li>' : '';
+            post +=             (entry.plusoners > 0) ? '<li><span class="replies">'+entry.replies.totalItems+'</span></li>' : '';
+            post +=             (entry.plusoners > 0) ? '<li><span class="resharers">'+entry.resharers.totalItems+'</span></li>' : '';
             post +=             '<li><span>' + prettyDate(entry.published) + '</span></li>';
             post +=         '</ul>';
             
-            
-        
 //        if(this.post.attachmentType == 'photo') {
 //            $('#plus_post > div').append('<img src="'+this.post.attachmentImage+'" alt="Plus Image Here..." />');
 //            $('#plus_post > div').append('<h3>' + this.post.title + '</h3>');
