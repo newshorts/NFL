@@ -564,7 +564,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 	/* INSTAGRAM STYLES PORTRAIT */
 	
-	#instagram { overflow: hidden; height: 675px; margin: 80px 0px 0px 8px; width: 888px; top: 65px; position: relative; }
+	#instagram { height: 675px; margin: 80px 0px 0px 8px; width: 888px; top: 65px; position: relative;  }
 	
 	#instagram_footer { position: relative; height: 158px; padding: 28px 0px 0px 28px; width: 888px; top: 75px; margin: 0 0 0 8px; }
 	#instagram_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 0px; font-size: 45px;  }
