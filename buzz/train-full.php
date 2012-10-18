@@ -59,16 +59,16 @@
             <ul class="inner_tweet">
                 <li class="tweet_profile_img">
                     <a href="">
-                        <img src="http://a0.twimg.com/profile_images/1771921314/profile_normal.jpg" height="48" width="48" alt="newshorts's avatar" title="newshorts's avatar" border="0">
+                        <img src="https://twimg0-a.akamaihd.net/profile_images/2621304744/5r42a4oil9jp0t6w5ik6_normal.jpeg" height="48" width="48" alt="newshorts's avatar" title="newshorts's avatar" border="0">
                     </a>
                 </li>
                 <li class="tweet_name">
-                    <p><a href="http://twitter.com/newshorts" target="_blank">Mike</a></p>
-                    <p><a href="http://twitter.com/newshorts">@newshorts</a></p>
+                    <p><a href="http://twitter.com/newshorts" target="_blank">Russell Shearer</a></p>
+                    <p><a href="http://twitter.com/newshorts">@russellshearer</a></p>
                 </li>
                 <li class="tweet_content">
                     <p class="banner_tweet_text">
-                        <span class="begin_quote"></span>Another tweet from <a href="http://search.twitter.com/search?q=&amp;tag=gspsf&amp;lang=all" class="tweet_hashtag" target="_blank">#gspsf</a> and <a href="http://search.twitter.com/search?q=&amp;tag=cheerfulsundays&amp;lang=all" class="tweet_hashtag" target="_blank">#cheerfulsundays</a><span class="end_quote"></span>
+                        <span class="begin_quote"></span>Let's get Super Bowl 50 in San Fran! <a href="http://search.twitter.com/search?q=&amp;tag=gspsf&amp;lang=all" class="tweet_hashtag" target="_blank">#sfsuperbowl</a> SF represent! <a href="http://search.twitter.com/search?q=&amp;tag=cheerfulsundays&amp;lang=all" class="tweet_hashtag" target="_blank">#sfsuper</a><span class="end_quote"></span>
                     </p>
                 </li>
             </ul>

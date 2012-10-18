@@ -156,13 +156,24 @@ var Scroller = Class.extend({
             url:'http://sfsuperbowl.com/services/output.json.php?callback=?',
             dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
             success: function(data){
-                var tweet = data.output.latest_tweet[0];
-            
-                self.replaceTweetData(tweet);
+                
+                if(typeof data.output.latest_tweet != "undefined") {
+                    
+                    if(data.output.latest_tweet.length > 0) {
+                        var tweet = data.output.latest_tweet[0];
+                        self.replaceTweetData(tweet);
+                    } else {
+                        console.log('no tweets')
+                    }
+                    
+                } else {
+                    console.log('tweets is undefined')
+                }
+                
             },
             error: function(){
                 console.log("Error unable to retrieve json file from instagram page");
-            },
+            }
         });
         
 //        $.getJSON('../services/output.json', function(data) {
