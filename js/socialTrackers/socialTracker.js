@@ -76,6 +76,10 @@ var SocialTracker = Class.extend({
     // TIMING FUNCTIONS
     
     update: function(newNum) {
+        
+        console.log('update: ' + this._name)
+//        console.dir(this)
+        
         var oldNum = parseInt(this._elem.attr(this._name));
         this.setAttribute(newNum);
         this.delta = Math.abs(oldNum - newNum);
