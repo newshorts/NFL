@@ -15,9 +15,9 @@ class Social {
     public function __construct($filename = 'get') {
         $this->filename = $filename;
         
-        $tag = '#iwearshortscas+OR+#iwearshortscasbah';
-        
-        $this->twitter = new TwitterTracker($tag);
+        //$tag = '#iwearshortscas+OR+#iwearshortscasbah';
+        // do not pass tags to twitter tracker
+        $this->twitter = new TwitterTracker();
         
     }
     
