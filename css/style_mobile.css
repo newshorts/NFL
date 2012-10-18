@@ -179,7 +179,6 @@ html { }
 
 	.trainCar #train_car3 ul { float: right; position: relative; right: 0px; top: 100px;  }
 	.trainCar #train_car3 div { float: left; position: relative; top: -25px; left: -490px;  }
-}
 
 
 
@@ -305,7 +304,7 @@ html { }
 	
 	
 	
-	.trainComparment ul:nthchild(1) { dispaly: none; margin: 0; width: 663px; position: relative; float: left; right: 25px;  }
+	.trainComparment ul:nthchild(1) { display: none; margin: 0; width: 663px; position: relative; float: left; right: 25px;  }
 	.smallBoxHeading { top: 30px; left: 30px; }
 
 	.hidden { display: none;}
@@ -323,51 +322,6 @@ html { }
 }
 
 
-
-
-/*
-.trainCompartment {
-    float: left;
-    width: 325px;
-    height: 155px;
-    position: relative;
-    display: block;
-    background: url(../images/bg-texture-light.png) scroll repeat;
-    margin-left: 10px;
-}
-*/
-
-/*
-.trainCompartment > a, .trainCompartmentLong > a {
-    display: block;
-}
-
-.trainCompartment a {
-    width: 325px;
-    height: 155px;
-}
-
-.trainCompartment:hover {
-    background: white;
-}
-
-.trainCompartment:first-child,
-.trainCompartmentLong:first-child{
-    margin-left: 0px;
-}
-*/
-
-
-
-
-/*#box3 {
-	margin: 0px 5px 0px 5px;
-}
-
-#box4 {
-	margin: 0px 0px 0px 5px;
-	padding-right: 1px;
-}*/
 
 .countGrey {
     display: inline;
