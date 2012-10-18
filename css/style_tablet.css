@@ -625,19 +625,19 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	
 	.trainCar li a span { font-size: 55px; float: left;  }
 	.trainCompartment { width: 100%; height: 85px; padding: 50px; position: relative; margin: 10px 0 0px 0; background: url(../images/bg-texture-light.png) scroll repeat; }
-	.trainComparment .numbers_medium {  margin: 0; width: 563px; position: absolute; left: 145px;  }
-	.trainComparment div .numbers_medium {  margin: 0; width: 563px; position: absolute; left: 145px;  }
+/* 	.trainComparment .numbers_medium {  margin: 0; width: 563px; position: relative; left: 145px;  } */
+	.trainComparment div .numbers_medium {  margin: 0; width: 563px; position: relative;  }
 
 	.smallBoxHeading { top: 30px; left: 30px; }
 	.smallBoxIcon { position: relative; float: right; right: 75px; height: 25%; top: -10px;}
 	.smallBoxIconLeft { position: relative; float: right; right: 70px; height: 25%; top: -10px; margin-left: 25px;  }
 
 
-.trainCar li ul { float: right; position: relative; right: 85px; top: 40px;  }
-.trainCar li div { float: right; position: relative; top: -190px; left: -60px;  }
+.trainCar li ul { float: right; position: relative; right: 185px; top: 0px;  }
+.trainCar li div { float: right; position: relative; left: 360px; top: 0px;  }
 
-.trainCar #train_car3 ul { float: right; position: relative; right: -25px; top: -10px;  }
-.trainCar #train_car3 div { float: right; position: relative; top: -155px; left: -155px;  }
+.trainCar #train_car3 ul { float: right; position: relative; right: 125px; top: -60px; }
+.trainCar #train_car3 div { float: right; position: relative; left: 60px; top: -15px; }
 
 
 #box1 .numbers_large {
