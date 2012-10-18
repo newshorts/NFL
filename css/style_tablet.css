@@ -307,7 +307,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; }
 	#facebook_likes { height: 328px; width: 414px; top: 78px; left: 8px; margin-right: 18px; }
 	#facebook_header { width: 373px; }
-	#facebook_likes_count { width: 375px; position: relative; float: right; top: -33px;  }
+	#facebook_likes_count { width: 375px; position: relative; float: right; top: -39px;  }
 	#facebook_count { /*top: -18px;*/ position: relative; }
 	
 	#google_pluses { height: 328px; width: 391px; margin: 10px 0px 0px 0px; padding: 20px 0px 0px 45px; position: relative; float: left; top: 78px; }
