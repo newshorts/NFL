@@ -10,14 +10,22 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
     
 ?>
 <!DOCTYPE html>
-<html itemtype="http://schema.org/">
+<html  itemscope itemtype="http://schema.org/Event" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml">
+<!--
+ GOOGLE+ 
+<html>
+ Facebook 
+<html >
+
+-->
+
     <head>
     	
         <title>SFSuperBowl || 2016</title>
         <!-- GOOGLE+ META TAGS FOR DEFAULT THUMBNAIL IMAGE -->
-        <meta itemprop="SFSUPERBOWL" content="BRING THE BOWL TO THE BAY">
-        <meta itemprop="description" content="Our bid for the Super Bowl starts with you. Help us show why the Bay Area will be a perfect host for Super Bowl L. Simply tweet, share or post with #SFSuperBowl to show your support.">
-        <meta itemprop="image" content="http://www.sfsuperbowl.com/images/movement_poster.png">
+        <meta itemprop="name" content="SFSUPERBOWL">
+        <meta itemprop="description" content="Our bid for the 2016 Super Bowl starts with you. Share why you think the Bay Area would be a perfect host for Super Bowl L. Use #SFSuperbowl or add us to your Circles page for updates, news and events. Together we can bring the Bowl to the bay.">
+        <meta itemprop="image" content="http://www.sfsuperbowl.com/images/fb/sfsb_128x128.jpg">
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
@@ -182,63 +190,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     }
                 });
                 
-                    // mikes
-//                    if(Modernizr.touch) {
-//                        $('*').on('touchstart touchend', function() {
-//                            $(this).trigger('click');
-//                        });
-//                    }
-                        
                         sub = new Subscription();
-                        
-//                        $(window).on('stop_scroller', function() {
-//                            scroller.stop();
-//                        });
-//                        
-//                        $(window).on('start_scroller', function() {
-//                            scroller.stop();
-//                        });
-                        
-                    <?php if(DEVICE_TYPE == 'tablet') : ?>  
-                        
-                    var scroller;
-                    $(window).on('trigger_scroller', function(evt, data) {
-//                        var orientation = Math.abs(window.orientation) == 90 ? 'landscape' : 'portrait';
-//                        if(orientation == 'landscape') {
-//                            console.log('view: ' + orientation + 'calling scroller')
-//                            scroller = new Scroller('.train', 1005);
-//                        } else {
-//                            console.log('view: ' + orientation + 'not calling scroller')
-//                        }
-
-                        scroller = new Scroller('.train', 1005, '<?php echo DEVICE_TYPE; ?>');
-                    });
-                    
-//                    $(window).on('orientationchange resize', function(evt) {
-//                        var orientation = Math.abs(window.orientation) == 90 ? 'landscape' : 'portrait';
-//                        if(orientation == 'portrait') {
-//                            $(window).trigger('stop_scroller');
-//                        } else {
-//                            $(window).trigger('start_scroller');
-//                        }
-//                    });
-                    <?php endif; ?>
-                        
-                    <?php if(DEVICE_TYPE == 'computer') : ?>  
-                    var scroller;
-                    $(window).on('trigger_scroller', function(evt, data) {
-                        
-                        scroller = new Scroller('.train', 1005, '<?php echo DEVICE_TYPE; ?>');
-                        
-//                        var orientation = Math.abs(window.orientation) == 90 ? 'landscape' : 'portrait';
-//                        if(orientation == 'landscape') {
-//                            console.log('view: ' + orientation + 'calling scroller')
-//                            
-//                        } else {
-//                            console.log('view: ' + orientation + 'not calling scroller')
-//                        }
-                    });
-                    <?php endif; ?>
                         
                     <?php if(strpos($request, 'buzz')): ?>
                         
@@ -265,10 +217,15 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                             var It = new InstagramTracker('#instagram_photo_count3');
                             var tt = new TwitterTracker('#twitter_count3');
                             var gfb = new GfbTracker('#gfb_count3');
+                            
+                            
+                            var scroller;
+                            $(window).on('trigger_scroller', function(evt, data) {
+                                scroller = new Scroller('.train', 1005, '<?php echo DEVICE_TYPE; ?>');
+                            });
+                            
                         <?php endif; ?>
                         
-                            
-        
                     <?php elseif(strpos($request, 'instagram')): ?>
                         
                         var It = new InstagramTracker('#instagram_photo_count');
@@ -344,6 +301,10 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
     
     <body data-device="<?php echo DEVICE_TYPE; ?>">
     
+    
+    <!-- FACEBOOK JS -->
+    <script src='http://connect.facebook.net/en_US/all.js'></script>
+    
     <div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
@@ -352,6 +313,10 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=369308779814605";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
+    <!-- END FACEBOOK JS -->
+    
+    
+    
     
        
         <div id="background"></div>
@@ -400,10 +365,11 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                     <div id="intro">
 
                         <div id="introWrap">
-                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_logo.png" id="introLogo" />
                             <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_logo_big.png" id="introLogoBig" />
-                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_headline.png" id="introHeadline" />
-                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/intro_copy.png" id="introCopy" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/frame1.png" id="introLogo" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/frame2.png" id="introHeadline" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/frame3.png" id="introCopy" />
+                            <img class="introItem hidden" src="<?php echo ROOT; ?>images/intro/frame4.png" id="introCopy2" />
                         </div>
                     </div>
 

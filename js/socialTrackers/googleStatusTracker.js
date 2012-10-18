@@ -16,7 +16,7 @@ var GoogleStatusTracker = SocialTracker.extend({
                 
                 self.entries = data.output.google_statuses.items;
 
-                self.output();
+                self.outputPost();
                 
                 once = false;
             }
@@ -24,76 +24,91 @@ var GoogleStatusTracker = SocialTracker.extend({
         });
     },
     
-    output: function() {
+//    output: function() {
+//        
+//        var entry = this.entries[0];
+//        
+//        console.log('entry coming next')
+//        console.dir(entry)
+//        
+//        if(typeof entry.content != "undefined") {
+//            this.post.content = entry.content;
+//        }
+//        
+//        if(typeof entry.title != "undefined") {
+//            // has title
+//            this.post.title = entry.title;
+//        }
+//        
+//        if(typeof entry.published != "undefined") {
+//            // has title
+//            this.post.date = entry.published;
+//        }
+//        
+//        if(typeof entry.object.attachments === "undefined") {
+//            // break out
+//            console.log('going to blank format')
+//            this.formatBlank();
+//            return;
+//        }
+//        
+//        var attachment = entry.object.attachments[0];
+//        
+//        if(typeof attachment.content != "undefined") {
+//            // has content of attachment
+//            this.post.attachmentContent = attachment.content;
+//        }
+//        
+//        if(typeof attachment.displayName != "undefined") {
+//            // has title of the attachment
+//            this.post.attachmentTitle = attachment.displayName;
+//        }
+//        
+//        if(typeof attachment.embed != "undefined") {
+//            // has embeded content
+//            this.post.attachmentEmbed = attachment.embed.url;
+//        }
+//        
+//        if(typeof attachment.image != "undefined") {
+//            // has image
+//            this.post.attachmentImage = attachment.image.url;
+//            this.post.attachmentImageWidth = attachment.image.width;
+//            this.post.attachmentImageHeight = attachment.image.height;
+//        }
+//        
+//        if(typeof attachment.url != "undefined") {
+//            // has link out
+//            this.post.attachmentLink = attachment.url;
+//        }
+//        
+//        if(typeof attachment.objectType != "undefined") {
+//            // has link out
+//            this.post.attachmentType = attachment.objectType;
+//        }
+//        
+//        if(typeof attachment.plusoners != "undefined") {
+//            this.post.attachmentPluses = attachment.plusoners.totalItems;
+//        }
+//        
+//        console.log('posting to media format')
+//        console.dir(this.post)
+//        
+//        this.formatMedia();
+//        
+//    },
+    
+    outputPost: function() {
         
-        var entry = this.entries[0];
+        var entries = this.entries;
         
-        console.log('entry coming next')
-        console.dir(entry)
+        var output = '';
         
-        if(typeof entry.content != "undefined") {
-            this.post.content = entry.content;
+        for(var i = 0, len = entries.length; i < len; i++) {
+            output += this.formatMedia(entries[i]);
         }
         
-        if(typeof entry.title != "undefined") {
-            // has title
-            this.post.title = entry.title;
-        }
+        $('#plus_post').append(output);
         
-        if(typeof entry.published != "undefined") {
-            // has title
-            this.post.date = entry.published;
-        }
-        
-        if(typeof entry.object.attachments === "undefined") {
-            // break out
-            console.log('going to blank format')
-            this.formatBlank();
-            return;
-        }
-        
-        var attachment = entry.object.attachments[0];
-        
-        if(typeof attachment.content != "undefined") {
-            // has content of attachment
-            this.post.attachmentContent = attachment.content;
-        }
-        
-        if(typeof attachment.displayName != "undefined") {
-            // has title of the attachment
-            this.post.attachmentTitle = attachment.displayName;
-        }
-        
-        if(typeof attachment.embed != "undefined") {
-            // has embeded content
-            this.post.attachmentEmbed = attachment.embed.url;
-        }
-        
-        if(typeof attachment.image != "undefined") {
-            // has image
-            this.post.attachmentImage = attachment.image.url;
-            this.post.attachmentImageWidth = attachment.image.width;
-            this.post.attachmentImageHeight = attachment.image.height;
-        }
-        
-        if(typeof attachment.url != "undefined") {
-            // has link out
-            this.post.attachmentLink = attachment.url;
-        }
-        
-        if(typeof attachment.objectType != "undefined") {
-            // has link out
-            this.post.attachmentType = attachment.objectType;
-        }
-        
-        if(typeof attachment.plusoners != "undefined") {
-            this.post.attachmentPluses = attachment.plusoners.totalItems;
-        }
-        
-        console.log('posting to media format')
-        console.dir(this.post)
-        
-        this.formatMedia();
         
     },
     
@@ -107,21 +122,25 @@ var GoogleStatusTracker = SocialTracker.extend({
         if(entry.object.attachments[1].image.url) {
             media = '<a href="'+entry.url+'"><img src="'+entry.object.attachments[1].image.url+'" alt="Plus Image Here..." /></a>';
         }
-            
-        var post =          '<ul>';
-            post +=             '<li><span>'+media+'<span></li>';
-            post +=         '</ul>';
-            post +=         '<ul>';
-            post +=             '<li><h3>'+entry.title+'</h3></li>';
-            post +=             '<li><h4>' + entry.object.attachments[0].displayName + '</h4></li>';
-            post +=             '<li><p>'+entry.object.attachments[0].content+'</p></li>';
-            post +=         '</ul>';
-            post +=         '<ul>';
-            post +=             (entry.plusoners > 0) ? '<li><span class="plusones">'+entry.plusoners.totalItems+'</span></li>' : '';
-            post +=             (entry.plusoners > 0) ? '<li><span class="replies">'+entry.replies.totalItems+'</span></li>' : '';
-            post +=             (entry.plusoners > 0) ? '<li><span class="resharers">'+entry.resharers.totalItems+'</span></li>' : '';
-            post +=             '<li><span>' + prettyDate(entry.published) + '</span></li>';
-            post +=         '</ul>';
+        
+        var post =      '<div class="single_post">';
+            post +=         '<a href="'+entry.url+'" class="post_anchor_wrap">';
+            post +=             '<ul>';
+            post +=                 '<li><span>'+media+'<span></li>';
+            post +=             '</ul>';
+            post +=             '<ul>';
+            post +=                 '<li><h3>'+entry.title+'</h3></li>';
+            post +=                 '<li><h4>' + entry.object.attachments[0].displayName + '</h4></li>';
+            post +=                 '<li><p>'+entry.object.attachments[0].content+'</p></li>';
+            post +=             '</ul>';
+            post +=             '<ul>';
+            post +=                 (entry.plusoners > 0) ? '<li><span class="plusones">'+entry.plusoners.totalItems+'</span></li>' : '';
+            post +=                 (entry.plusoners > 0) ? '<li><span class="replies">'+entry.replies.totalItems+'</span></li>' : '';
+            post +=                 (entry.plusoners > 0) ? '<li><span class="resharers">'+entry.resharers.totalItems+'</span></li>' : '';
+            post +=                 '<li><span>' + prettyDate(entry.published) + '</span></li>';
+            post +=             '</ul>';
+            post +=         '</a>';
+            post +=     '</div>';
             
 //        if(this.post.attachmentType == 'photo') {
 //            $('#plus_post > div').append('<img src="'+this.post.attachmentImage+'" alt="Plus Image Here..." />');
@@ -148,10 +167,10 @@ var GoogleStatusTracker = SocialTracker.extend({
 //            return;
 //        }
         
-        $('#plus_post').append(post);
-        
-        console.log('unable to post google status');
-        return;
+//        $('#plus_post').append(post);
+//        
+//        console.log('unable to post google status');
+        return post;
         
     },
     

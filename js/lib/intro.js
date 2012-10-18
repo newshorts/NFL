@@ -117,7 +117,38 @@ var Intro = function() {
             });
         });
     };
+    
+    
+    var fadeInCopy2 = function() {
+        $('#introCopy2').animate({
+            '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)",
+            'filter': 'alpha(opacity=100)',
+            '-moz-opacity': '1.0',
+            '-khtml-opacity': '1.0',
+            'opacity': '1.0'
 
+        }, 1500, function() {
+            // complete
+        });
+    };
+
+    var fadeOutCopy2 = function() {
+        $('#introCopy2').animate({
+            '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
+            'filter': 'alpha(opacity=00)',
+            '-moz-opacity': '0.0',
+            '-khtml-opacity': '0.0',
+            'opacity': '0.0'
+        }, 1500, function() {
+            // complete
+            $(this).css({
+                display: 'none'
+            });
+        });
+    };
+    
+    
+    
     var fadeOutIntro = function() {
         $('#intro').animate({
             '-ms-filter': "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)",
@@ -141,13 +172,14 @@ var Intro = function() {
         delay(fadeOutIntroLogoBig, 2700);
 
         delay(fadeInIntroLogo, 3400);
-        delay(fadeInHeadline, 3400);
-
-        delay(fadeInCopy, 5200);
+        delay(fadeInHeadline, 5200);
+        delay(fadeInCopy, 6600);
+        delay(fadeInCopy2, 7000);
 
         delay(fadeOutIntroLogo, 15000);
         delay(fadeOutHeadline, 15000);
         delay(fadeOutCopy, 15000);
+        delay(fadeOutCopy2, 15000);
 
         delay(fadeOutIntro, 16500);
 

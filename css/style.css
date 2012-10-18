@@ -340,6 +340,11 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     text-decoration: none;
 }
 
+.headlineHashTag {
+    position: relative;
+    top: 2px;
+}
+
 .smallNumbersOrange {
     font-family: 'ds-digitalitalic', Arial, sans-serif;
     font-size: 71px;

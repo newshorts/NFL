@@ -15,7 +15,7 @@
 	<ul id="twitter_footer" class="bgTextureLight">
 		<li id="twitter_headline">
 			<div class="headlineMediumGray">
-				<img src="../images/buzz_sign.png"><span>SFSUPERBOWL TWEETS</span>
+				<img class="headlineHashTag" src="../images/buzz_sign.png"><span>SFSUPERBOWL TWEETS</span>
 			</div>
 		</li>
 		<li id="social">

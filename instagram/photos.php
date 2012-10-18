@@ -7,7 +7,7 @@
   <ul id="instagram_footer" class="bgTextureLight">
 	<li>
             <div class="headlineMediumGray">
-                <img src="../images/buzz_sign.png"><span>SFSUPERBOWL PHOTOS</span>
+                <img class="headlineHashTag" src="<?php echo ROOT; ?>images/buzz_sign.png"><span>SFSUPERBOWL PHOTOS</span>
             </div>
 	</li>
 	<li id="instagram_social">
