@@ -578,7 +578,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 .trainCompartmentLong {
     position: relative;
     display: block;
-    width: 995px;
+    width: 996px;
     height: 155px;
     background: url(../images/bg-texture-light.png) scroll repeat;
     margin-left: 10px;
@@ -588,7 +588,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 .trainCompartment {
     float: left;
-    width: 325px;
+    width: 326px;
     height: 155px;
     position: relative;
     display: block;
