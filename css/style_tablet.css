@@ -524,7 +524,7 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#facebook_likes_count { width: 388px; position: relative; float: right; top: 9px;  }
 	#facebook_count { /*top: -18px;*/ position: relative; }
 	
-	#supporters_footer { position: relative; height: 168px; padding: 38px 0px 0px 28px; width: 868px; top: 130px; margin: 0px 0px 0px 8px; }
+	#supporters_footer { position: relative; height: 168px; padding: 38px 0px 0px 28px; width: 865px; top: 130px; margin: 0px 0px 0px 8px; }
 	#supporters_footer li div span { border-bottom: #cbcbcb 2px solid; padding-right: 198px; font-size: 45px;  }
 	#supporters_internal { padding: 20px 0 0 24px; display: inline-block; width: 500px; }
 	#supporters_internal p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 18px; }	
