@@ -10,22 +10,22 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
     
 ?>
 <!DOCTYPE html>
-<html itemtype="http://schema.org/">
+<html  itemscope itemtype="http://schema.org/Event" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml">
+<!--
+ GOOGLE+ 
+<html>
+ Facebook 
+<html >
 
-<!-- GOOGLE+ -->
-<html itemscope itemtype="http://schema.org/Event">
-<!-- Facebook -->
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml">
-
-
+-->
 
     <head>
     	
         <title>SFSuperBowl || 2016</title>
         <!-- GOOGLE+ META TAGS FOR DEFAULT THUMBNAIL IMAGE -->
         <meta itemprop="name" content="SFSUPERBOWL">
-		<meta itemprop="description" content="Our bid for the 2016 Super Bowl starts with you. Share why you think the Bay Area would be a perfect host for Super Bowl L. Use #SFSuperbowl or add us to your Circles page for updates, news and events. Together we can bring the Bowl to the bay.">
-		<meta itemprop="image" content="http://www.sfsuperbowl.com/images/fb/sfsb_128x128.jpg">
+        <meta itemprop="description" content="Our bid for the 2016 Super Bowl starts with you. Share why you think the Bay Area would be a perfect host for Super Bowl L. Use #SFSuperbowl or add us to your Circles page for updates, news and events. Together we can bring the Bowl to the bay.">
+        <meta itemprop="image" content="http://www.sfsuperbowl.com/images/fb/sfsb_128x128.jpg">
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
