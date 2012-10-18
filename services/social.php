@@ -15,7 +15,9 @@ class Social {
     public function __construct($filename = 'get') {
         $this->filename = $filename;
         
-        $this->twitter = new TwitterTracker();
+        $tag = '#iwearshortscas+OR+#iwearshortscasbah';
+        
+        $this->twitter = new TwitterTracker($tag);
         
     }
     
@@ -31,11 +33,11 @@ class Social {
         
         $likes = $this->get_likes();
         
-        $insta = $this->get_instagram_count('sfsuperbowl');
-        $insta += $this->get_instagram_count('sfsuper');
+        $insta = $this->get_instagram_count('iwearshortscasbah');
+        $insta += $this->get_instagram_count('iwearshortscas');
         
-        $photos[] = $this->get_instagram_photos('sfsuperbowl');
-        $photos[] =  $this->get_instagram_photos('sfsuper');
+        $photos[] = $this->get_instagram_photos('iwearshortscasbah');
+        $photos[] =  $this->get_instagram_photos('iwearshortscas');
         
         $fb_statuses = $this->get_facebook_statuses();
         
