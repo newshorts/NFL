@@ -13,7 +13,7 @@ var Subscription = Class.extend({
     
     init: function() {
         
-        this._url = 'http://sfsuperbowl.com/services/output.json.php';
+        this._url = 'http://sfsuperbowl.com/services/output.json.php?callback=?';
         
         this.getData();
         this.ticker();
