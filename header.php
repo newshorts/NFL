@@ -298,6 +298,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
     
     
     <!-- FACEBOOK JS -->
+    <meta property="og:image" content="http://www.sfsuperbowl.com/images/fb/sfsb_128x128.jpg" />
     <script src='http://connect.facebook.net/en_US/all.js'></script>
     
     <div id="fb-root"></div>
