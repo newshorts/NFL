@@ -27,7 +27,7 @@
 	
 <!-- FACEBOOK --> 
 	<script> 
-      FB.init({appId: "YOUR_APP_ID", status: true, cookie: true});
+      FB.init({appId: "369308779814605", status: true, cookie: true});
 
       function postToFeed() {
 
