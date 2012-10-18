@@ -50,7 +50,7 @@ var Subscription = Class.extend({
             },
             error: function(){
                 console.log("Error unable to retrieve json file");
-            }
+            },
         });
         
     },
