@@ -37,11 +37,11 @@
 				<div id="google_cta">
 					<div class="g-plusone" data-annotation="none" data-href="http://sfsuperbowl.com"></div>
 					<script type="text/javascript">
-						(function() {
-							var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-							po.src = 'https://apis.google.com/js/plusone.js';
-							var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-						})();
+                                            (function() {
+                                                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                                    po.src = 'https://apis.google.com/js/plusone.js';
+                                                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                            })();
 					</script>
 				</div>
 				<div id="google_plus_count">

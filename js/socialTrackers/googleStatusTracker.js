@@ -123,10 +123,6 @@ var GoogleStatusTracker = SocialTracker.extend({
             post +=             '<li><span>' + prettyDate(entry.published) + '</span></li>';
             post +=         '</ul>';
             
-        
-            
-            
-        
 //        if(this.post.attachmentType == 'photo') {
 //            $('#plus_post > div').append('<img src="'+this.post.attachmentImage+'" alt="Plus Image Here..." />');
 //            $('#plus_post > div').append('<h3>' + this.post.title + '</h3>');
