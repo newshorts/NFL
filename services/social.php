@@ -34,10 +34,10 @@ class Social {
         $likes = $this->get_likes();
         
         $insta = $this->get_instagram_count('sfsuperbowl');
-        $insta += $this->get_instagram_count('sfsuper');
+//        $insta += $this->get_instagram_count('sfsuper');
         
         $photos[] = $this->get_instagram_photos('sfsuperbowl');
-        $photos[] =  $this->get_instagram_photos('sfsuper');
+//        $photos[] =  $this->get_instagram_photos('sfsuper');
         
         $fb_statuses = $this->get_facebook_statuses();
         
