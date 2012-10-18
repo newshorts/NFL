@@ -23,13 +23,13 @@
 			<p>Build the buzz.</p>
 			<ul class="links">
 				<li id="tweet">
-					<a onclick="_gaq.push(['_trackSocial', 'twitter', 'share', 'share_tweet']);" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Let&rsquo;s&nbsp;bring&nbsp;the&nbsp;Bowl&nbsp;to&nbsp;the&nbsp;Bay!&nbsp;Show&nbsp;your&nbsp;support.#sfsuperbowl" class="twitter-share-button" data-dnt="true" data-count="none" data-size="large">Tweet</a>
-					
+					<a onclick="_gaq.push(['_trackSocial', 'twitter', 'share', 'tweets_share']);" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Let&rsquo;s&nbsp;bring&nbsp;the&nbsp;Bowl&nbsp;to&nbsp;the&nbsp;Bay!&nbsp;Show&nbsp;your&nbsp;support.#sfsuperbowl" class="twitter-share-button" data-dnt="true" data-count="none" data-size="large">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</li>
 				
 				<li id="follow">
-					<a onclick="_gaq.push(['_trackSocial', 'twitter', 'share', 'share_follow']);" href="https://twitter.com/sfsuperbowl" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow</a>
-					
+					<a onclick="_gaq.push(['_trackSocial', 'twitter', 'share', 'tweets_follow']);" href="https://twitter.com/sfsuperbowl" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</li>
 			</ul>
 		</li>
