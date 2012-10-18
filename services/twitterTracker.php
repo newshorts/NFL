@@ -241,7 +241,7 @@ class Tag extends TwitterTracker {
      * #sfsuperbowl+OR+#sfsuper
      * 
      */
-    public function __construct($tag = '#iwearshortscasbahsss+OR+#iwearshortscasbahss') {
+    public function __construct($tag = '#sfsuperbowl+OR+#sfsuper') {
         parent::__construct();
         $this->tag_name = $tag;
     }
