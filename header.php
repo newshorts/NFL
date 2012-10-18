@@ -327,7 +327,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                 <div id="boardcontainer">
                     
 	                <div class="left">
-	                    <h2 class="headlineLargeGray"><a href="../buzz/">BRING THE BOWL TO THE BAY</a></h2>
+	                    <h2 class="headlineLargeGray"><a href="<?php echo ROOT; ?>">BRING THE BOWL TO THE BAY</a></h2>
 	                </div>
 	                
 	                <div class="right">
