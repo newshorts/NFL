@@ -27,7 +27,7 @@ and open the template in the editor.
                 height: 316px;
                 overflow: hidden;
                 position: absolute;
-                top: -225px;
+                top: -25px;
                 left: -125px;
                 overflow: hidden;
             }
@@ -145,7 +145,14 @@ and open the template in the editor.
                         };
                         
                         var outputImages = function(data) {
+                            
+                            console.log('output photos not working, data object coming next')
+                            console.dir(data)
+                            
                             $(data).each(function(idx) {
+                            //for(var idx = 0; idx < data.length; idx++) {
+                                
+                            
                                 
                                 var notInArr = true;
                                 
@@ -163,20 +170,25 @@ and open the template in the editor.
                                 }
 
                                 if(notInArr) {
-                                    console.log('inserting new image')
+                                    
                                     var img = new Image();
                                     img.style.display = 'none';
                                     $(img).one('load', addImageToScreen);
                                     img.src = data[idx].images.low_resolution.url;
                                     imgArr.push(img);
                                 }
-                                
-                            });
+                            //} // end for
+                            }); // end each
                         };
                         
                         var addImageToScreen = function(evt) {
+                        
                             // add the images in a brick array fashion
                             var img = evt.currentTarget;
+                            
+                            console.log('inserting new image')
+                            console.dir(img)
+                            
                             var selector = (Math.floor(Math.random()*3) + 1);
                             
                             var widths = {
