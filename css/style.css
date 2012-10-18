@@ -290,7 +290,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 #movement_steps p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
 #movement_steps p a { color: #e75405; font-weight: bold; }
 
-.right {float: right; position: relative; right: -215px; top: -40px; margin-left: 10px;  }
+.right {float: right; position: relative; right: -215px; top: -48px; margin-left: 10px;  }
 
 #poster { margin-top: 10px; width: 380px; height: 485px; position: relative; float: right;  }
 
@@ -857,53 +857,6 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 #supporters_follow span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; position: relative; top: -8px; }
 
 
-#news li {
-    position: relative;
-    display: inline-block;
-    width: 404px;
-    height: 89px;
-    margin: 0;
-    padding: 0;
-    top: -16px;
-    border-bottom: 1px solid #cacaca;
-    
-    font-size: 14px;
-    font-family: Helvetica, Arial, sans-serif;
-    color: #666;
-    font-weight: bolder;
-}
-
-#news li .imgContainer {
-    position: relative;
-    overflow: hidden;
-    width: 50px;
-    height: 50px;
-    top: 20px;
-    left: 335px;
-}
-
-#news li .imgContainer img {
-    position: absolute;
-    top: -5px;
-    left: -25px;
-    width: 100px;
-}
-
-#news li .post {
-    display: block;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 310px;
-}
-
-#news li a {
-    color: #e75406;
-}
-
-
-
-
 
 
 #supporter_numbers { position: relative; float: right; height: 347px; width: 475px;  margin: 10px 0; }
@@ -918,7 +871,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 
 
-#facebook_likes { height: 318px; width: 459px; margin: 10px 10px 0px 0px; padding: 30px 0px 0px 35px; position: relative; float: left;}
+#facebook_likes { height: 318px; width: 464px; margin: 10px 10px 0px 0px; padding: 30px 0px 0px 30px; position: relative; float: left;}
 
 #facebook_likes li {float: left;}
 
@@ -979,7 +932,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 #plus_post ul:nth-child(2) { margin-left: 100px; top: -113px; width: 310px;}
 #plus_post ul:nth-child(2) li h3 { font-size: 15px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #666666; }
 #plus_post ul:nth-child(2) li h4 { font-size: 14px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; color: #e75405; }
-#plus_post ul:nth-child(2) li p { color: #767676;  font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+#plus_post ul:nth-child(2) li p { color: #767676;  font-family: Arial, Helvetica, sans-serif; font-size: 12px; overflow: hidden; text-overflow: ellipsis;  }
 #plus_post ul:nth-child(3) li span { color: #767676;  font-family: Arial, Helvetica, sans-serif; font-style: italic; font-size: 10px; }
 
 
