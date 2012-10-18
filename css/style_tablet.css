@@ -321,19 +321,24 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 	#supporters_internal em { color: #e75405; font-weight: bold; }
 	#supporters_count { display: inline-block; float: right; width: 420px; top: 32px; position: relative; }
 
-	#plus_post { position: relative; background-color: #fff;  top: 70px; height: 127px; width: 345px; border: #ccc 1px solid; padding: 15px 0px 0px 15px; overflow: hidden; }
+	#plus_post { position: relative; background-color: #fff;  top: 70px; height: 127px; width: 345px; border: #ccc 1px solid; overflow: hidden; padding: 15px 0px 0px 15px; }
 
-
+	#plus_post a:nth-child(1) { display: block; height: 127px; width: 345px; position: absolute; z-index: 2; }
+	#plus_post a:nth-child(1):hover { background-color: #fff 50%; cursor: pointer; }
+	.single_post { position: relative; width: 345px; height: 127px; /* padding: 15px 0px 0px 15px;   */}
+	.single_post li { position: relative; float: left; }
+	.single_post li #image_mask { height: 112px; width: 90px; overflow: hidden; margin-right: 15px; }
+	#image_mask span { float: left; }
 	
-	#plus_post ul { position: relative; float: left; }
-	#plus_post ul li { position: relative; float: left; }
-	#plus_post ul:nth-child(1) { }
-	#plus_post ul:nth-child(1) li span img { height: 75%; }
-	#plus_post ul:nth-child(2) { margin-left: 90px; top: -98px; width: 275px;}
-	#plus_post ul:nth-child(2) li h3 { font-size: 15px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #666666; }
-	#plus_post ul:nth-child(2) li h4 { font-size: 14px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; color: #e75405; }
-	#plus_post ul:nth-child(2) li p { color: #767676;  font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
-	#plus_post ul:nth-child(3) li span { color: #767676;  font-family: Arial, Helvetica, sans-serif; font-style: italic; font-size: 10px; }
+	#first_li { width: 105px; height: 132px; }
+	.single_post li { margin-bottom: 35px; }
+	.single_post li:nth-child(2), .single_post li:nth-child(3) { width: 225px; padding-top: 5px; }
+	
+	.single_post li h3 { font-size: 14px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #e75405; width: 215px; }
+	
+	.single_post li h4 { font-size: 13px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #666666; width: 215px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+	
+	.single_post li p { font-size: 12px; font-family:  Arial, Helvetica, sans-serif;  font-style: italic; color: #666666; width: 285px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;width: 215px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 	
 
 	#facebook_box { background-color: #fff; height: 145px; overflow: hidden; border: #ccc 1px solid; width: 370px; position: relative; top: 25px; }
@@ -532,41 +537,38 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 
 
-	#plus_post { background-color: #fff; position: relative; top: 65px; height: 480px; width: 398px; border: #ccc 1px solid; padding: 10px 0px 0px 10px; overflow: hidden; }
-	#plus_post div img {float: left; margin: 0px 10px 10px 0px; height: 80%; max-width: 388px; }
-	#plus_post div h3 { padding-left: 5px; font-size: 18px; font-family: 'FranklinGothicURW-HeaIta'; font-weight: normal; font-style: normal; color: #e75405; text-decoration: none; }
-	#plus_post div p { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 14px; width: 220px; margin: 5px 5px 5px 5px; float: left; text-align: left; position: relative; }
-	#plus_post div span { color: #767676; font-family: Arial, Helvetica, sans-serif; font-size: 12px; bottom: 5px; position: absolute; margin: 5px 5px 5px 5px;  }	
 
 	#facebook_box { background-color: #fff; width: 398px; height: 450px; overflow: hidden; border: #ccc 1px solid; position: relative; top: 30px; padding: 10px 0px 0px 10px; }
 	#facebook_box_inner { position: relative; top: -1px; left: -2px; }
 
 
 	
-	#google_pluses { width: 422px; height: 625px; top: 135px; margin: 10px 0px 0px 10px; padding: 18px 0px 0px 18px; position: relative; float: left;}
+	#google_pluses { width: 422px; height: 623px; top: 135px; margin: 10px 0px 0px 10px; padding: 18px 0px 0px 18px; position: relative; float: left;}
     #google_plus_count { width: 388px; top: -18px; }
     #google_header { border-bottom: #cbcbcb 2px solid; padding-bottom: 7px; width: 398px; }
 	
 	
-	#plus_post { position: relative; background-color: #fff;  top: 70px; height: 427px;  width: 420px; border: #ccc 1px solid; }
-	#plus_post a { cursor: pointer; height: 427px;  width: 390px; padding: 15px 0px 0px 15px; }
-	.single_post { height: 427px; width: 390px; }
+	#plus_post { background-color: #fff; position: relative; top: 70px; height: 445px; width: 398px; border: #ccc 1px solid; overflow: hidden; padding: 15px 0px 0px 15px; }
 
+	#plus_post ul { position: relative; float: left; }
+/* 	#plus_post ul li { position: relative; float: left; } */
 
-
-
-/*
-	#plus_post ul:nth-child(1) { }
-	#plus_post ul:nth-child(1) li span img { height: 25%; }
-	#plus_post ul:nth-child(2) { margin-left: 100px; top: -113px; width: 280px;}
-	#plus_post ul:nth-child(2) li h3 { font-size: 15px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #666666; }
-	#plus_post ul:nth-child(2) li h4 { font-size: 14px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; color: #e75405; }
-	#plus_post ul:nth-child(2) li p { color: #767676;  font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
-	#plus_post ul:nth-child(3) li span { color: #767676;  font-family: Arial, Helvetica, sans-serif; font-style: italic; font-size: 10px; }
-*/
-		
+	#plus_post a { display: block; height: 142px; width: 420px; position: absolute; z-index: 2; }
+	#plus_post a:hover { background-color: #fff 50%; cursor: pointer; }
+	.single_post { position: relative; width: 383; height: 143px; border-bottom: #ccc 1px solid; margin-bottom: 10px;  }
+	.single_post li { position: relative; float: left; }
+	.single_post li #image_mask { height: 112px; width: 90px; overflow: hidden; margin-right: 15px; }
+	#image_mask span { float: left; }
 	
+	#first_li { width: 105px; height: 90px; }
+	.single_post li { margin-bottom: 35px; }
+	.single_post li:nth-child(2), .single_post li:nth-child(3) { width: 235px; padding-top: 5px; float: right; }
 	
+	.single_post li h3 { font-size: 14px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #e75405; width: 235px; }
+	
+	.single_post li h4 { font-size: 13px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #666666; width: 235px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+	
+	.single_post li p { font-size: 12px; font-family:  Arial, Helvetica, sans-serif;  font-style: italic; color: #666666; width: 285px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;width: 235px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
 
 	/* INSTAGRAM STYLES PORTRAIT */
