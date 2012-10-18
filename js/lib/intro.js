@@ -173,15 +173,15 @@ var Intro = function() {
 
         delay(fadeInIntroLogo, 3400);
         delay(fadeInHeadline, 5200);
-        delay(fadeInCopy, 6600);
-        delay(fadeInCopy2, 7000);
+        delay(fadeInCopy, 7800);
+        delay(fadeInCopy2, 8200);
 
-        delay(fadeOutIntroLogo, 15000);
-        delay(fadeOutHeadline, 15000);
-        delay(fadeOutCopy, 15000);
-        delay(fadeOutCopy2, 15000);
+        delay(fadeOutIntroLogo, 17000);
+        delay(fadeOutHeadline, 17000);
+        delay(fadeOutCopy, 17000);
+        delay(fadeOutCopy2, 17000);
 
-        delay(fadeOutIntro, 16500);
+        delay(fadeOutIntro, 18500);
 
     };
 
