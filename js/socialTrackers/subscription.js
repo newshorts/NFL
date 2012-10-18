@@ -13,7 +13,7 @@ var Subscription = Class.extend({
     
     init: function() {
         
-        this._url = 'http://sfsuperbowl.com/services/output.json';
+        this._url = 'http://sfsuperbowl.com/services/output.json.php?callback=?';
         
         this.getData();
         this.ticker();
@@ -41,16 +41,16 @@ var Subscription = Class.extend({
         $.ajax({
             url:this._url,
             dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
-            success:function(data){
+            success: function(data){
                 self._data = data;
                 var len = self.subs.length;
                 for(var i = 0; i < len; i++) {
                     $(window).trigger(self.subs[i], data);
                 }
             },
-            error:function(){
-                console.log("Error: unable to retrieve json file");
-            }
+            error: function(){
+                console.log("Error unable to retrieve json file");
+            },
         });
         
     },

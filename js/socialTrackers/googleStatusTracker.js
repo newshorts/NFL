@@ -116,31 +116,31 @@ var GoogleStatusTracker = SocialTracker.extend({
         
         var entry = this.entries[0];
         
-        console.dir(this.post.attachmentType);
+//        console.dir(this.post.attachmentType);
         
         var media = '';
         if(entry.object.attachments[1].image.url) {
             media = '<a href="'+entry.url+'"><img src="'+entry.object.attachments[1].image.url+'" alt="Plus Image Here..." /></a>';
         }
         
-        var post =      '<div class="single_post">';
-            post +=         '<a href="'+entry.url+'" class="post_anchor_wrap">';
-            post +=             '<ul>';
-            post +=                 '<li><span>'+media+'<span></li>';
-            post +=             '</ul>';
-            post +=             '<ul>';
-            post +=                 '<li><h3>'+entry.title+'</h3></li>';
-            post +=                 '<li><h4>' + entry.object.attachments[0].displayName + '</h4></li>';
-            post +=                 '<li><p>'+entry.object.attachments[0].content+'</p></li>';
-            post +=             '</ul>';
-            post +=             '<ul>';
-            post +=                 (entry.plusoners > 0) ? '<li><span class="plusones">'+entry.plusoners.totalItems+'</span></li>' : '';
-            post +=                 (entry.plusoners > 0) ? '<li><span class="replies">'+entry.replies.totalItems+'</span></li>' : '';
-            post +=                 (entry.plusoners > 0) ? '<li><span class="resharers">'+entry.resharers.totalItems+'</span></li>' : '';
-            post +=                 '<li><span>' + prettyDate(entry.published) + '</span></li>';
-            post +=             '</ul>';
-            post +=         '</a>';
-            post +=     '</div>';
+        var post =      '<a href="'+entry.url+'" target="_blank"><ul class="single_post">';
+            post +=             '<li>';
+            post +=                 '<div class="image_mask"><span>'+media+'</span></div>';
+            post +=             '</li>';
+            post +=             '<li>';
+            post +=                 '<h3>'+entry.title+'</h3>';
+            post +=				'</li>';
+            post +=				'<li>';
+            post +=                 '<h4>' + entry.object.attachments[0].displayName + '</h4>';
+            post +=                 '<p>'+entry.object.attachments[0].content+'</p>';
+            post +=             '</li>';
+//            post +=             '<li>';
+//            post +=                 (entry.plusoners > 0) ? '<span class="plusones">'+entry.plusoners.totalItems+'</span>' : '';
+//            post +=                 (entry.plusoners > 0) ? '<span class="replies">'+entry.replies.totalItems+'</span>' : '';
+//            post +=                 (entry.plusoners > 0) ? '<span class="resharers">'+entry.resharers.totalItems+'</span>' : '';
+//            post +=                 '<span>' + prettyDate(entry.published) + '</span>';
+ //           post +=             '</li>';
+            post +=     '</ul></a>';
             
 //        if(this.post.attachmentType == 'photo') {
 //            $('#plus_post > div').append('<img src="'+this.post.attachmentImage+'" alt="Plus Image Here..." />');
