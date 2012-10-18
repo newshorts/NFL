@@ -21,7 +21,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 
     <head>
     	
-        <title>SFSuperBowl || 2016</title>
+        <title>SFSuperBowl || San Francisco Super Bowl 50</title>
         <!-- GOOGLE+ META TAGS FOR DEFAULT THUMBNAIL IMAGE -->
         <meta itemprop="name" content="SFSUPERBOWL">
         <meta itemprop="description" content="Our bid for the 2016 Super Bowl starts with you. Share why you think the Bay Area would be a perfect host for Super Bowl 50. Use #SFSuperbowl or add us to your Circles page for updates, news and events. Together we can bring the Bowl to the bay.">
