@@ -30,7 +30,7 @@
 				</div>
 				<div class="headline">
 					<h3 class="headlineSmallGray"><a href="../images/movement_poster.png" target="_blank">SHARE THE LOGO >></a></h3>
-					<p>Grow the movement. <a href="image files goes here" target="_blank">Download</a> or <a href="pdf file goes here" target="_blank">print</a> the logo.</p>
+					<p>Grow the movement. <a href="../posters/SFSB_Poster.png" target="_blank">Download</a> or <a href="../posters/SFSB_Poster.pdf" target="_blank">print</a> the logo.</p>
 				</div>
 
 			</li>
@@ -50,7 +50,7 @@
 		</ul>
 	</div>		
 	<div id="poster">
-	    <a href="#" target="_blank"><img src="../images/movement_poster.png"></a>
+	    <a href="../posters/SFSB_Poster.png" target="_blank"><img src="../images/movement_poster.png"></a>
 	</div>
 
 	
