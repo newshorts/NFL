@@ -141,6 +141,8 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 .screenname { position: relative;  clear: right; width: 158px;}
 
+.screenname p a {color: #e75405; font-family: Helvetica, Arial, sans-serif;  font-weight: bold;  font-size: 18px;}
+
 .username { float: left; }
 
 .tweet_user { color: #858585; font-weight: normal; text-decoration: none; font-family: Arial, Helvetica, sans-serif;  font-size: 12px; }
@@ -153,11 +155,11 @@ html { background: url(../images/clouds.png) no-repeat center center fixed;  -we
 
 .tweet_text { color: #858585; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; margin: 0 0 0 50px; line-height: 26px; width: 530px; position: absolute; float: right; }
 
-.external_link { color: #a4bc27; text-decoration: underline; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
+.external_link { color:#e75405; text-decoration: underline; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
 
 .tweet_hashtag { color: #e75405; text-decoration: none;  font: Helvetica, Arial, sans-serif; }
 
-.at_user { color: #a4bc27; text-decoration: none; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
+.at_user { color: #e75405; text-decoration: none; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
 
 #twitter_footer { position: relative; width: 868px; }	
 

@@ -34,7 +34,7 @@
 
       tweet_avatar : "{avatar}",
       tweet_user : "{user}",
-      tweet_name : "{name}",
+      tweet_name : "{from_user}",
       
       
 
@@ -183,6 +183,8 @@
       o.item = item;
       o.source = item.source;
       o.screen_name = item.from_user || item.user.screen_name;
+      o.name = item.from_user_name || item.user.name;
+
       // The actual user name is not returned by all Twitter APIs, so please do not
       // file an issue if it is empty:
       o.retweet = typeof(item.retweeted_status) != 'undefined';
@@ -216,7 +218,7 @@
       o.user = t('<a class="tweet_user" href="{user_url}" target="_blank">@{screen_name}</a>', o);
       o.avatar = o.avatar_size ?
         t('<a class="tweet_avatar" href="{avatar_profile_url}" target="_blank"><img src="{avatar_url}" height="{avatar_size}" width="{avatar_size}" alt="{avatar_screen_name}\'s avatar" title="{avatar_screen_name}\'s avatar" border="0"/></a>', o) : '';
-      o.name = item.from_user_name || item.user.name;
+      o.from_user = t('<a class="tweet_user" href="{user_url}" target="_blank">{name}</a>', o);
 
 //=============  TWEET LI   =============//
 
