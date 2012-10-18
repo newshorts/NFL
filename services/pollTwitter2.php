@@ -3,7 +3,7 @@
 
 require_once 'twitterTracker.php';
 
-sleep(30);
+sleep(35);
 
 $sfsuperbowl = new Tag();
 
