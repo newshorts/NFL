@@ -765,6 +765,9 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 .avatar { margin-right: 7px; }
 .tweet_avatar { float: left; height: 48px; width: 48px; }
 .screenname { position: relative;  clear: right; width: 158px;}
+.screenname p a {color: #e75405; font-family: Helvetica, Arial, sans-serif;  font-weight: bold;  font-size: 18px;}
+/* .screenname p a:hover {color: #858585; } */
+
 .username { float: left; }
 .tweet_user { color: #858585; font-weight: normal; text-decoration: none; font-family: Arial, Helvetica, sans-serif;  font-size: 12px; }
 
@@ -774,9 +777,9 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 .tweet_text:after { content: url(../images/quote_close.png); position: relative; width: 25px; height: 17px; padding-left: 25px;}
 
 .tweet_text { color: #858585; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; margin: 0 0 0 50px; line-height: 26px; width: 608px; position: absolute; float: right; }
-.external_link { color: #a4bc27; text-decoration: underline; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
+.external_link { color: #e75405; text-decoration: underline; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
 .tweet_hashtag { color: #e75405; text-decoration: none;  font: Helvetica, Arial, sans-serif; }
-.at_user { color: #a4bc27; text-decoration: none; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
+.at_user { color: #e75405; text-decoration: none; font-family: Helvetica, Arial, sans-serif;  font-size: 24px; }
 
 
 #twitter_footer { position: relative; height: 106px; padding: 20px 0px 0px 30px; width: 966px; }
