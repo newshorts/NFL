@@ -8,7 +8,7 @@
 			  </li>
 			  <li id="facebook_like_button">
 				<div id="facebook_cta">
-					<div class="fb-like" data-href="http://sfsuperbowl.com" data-send="false" data-width="49" data-show-faces="false" data-font="arial"></div>
+					<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fsfsuperbowl.com&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=35&amp;appId=423821150969335" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
 				</div>
                 <div id="facebook_likes_count">
                     <ul class="numbers_small">                                       
