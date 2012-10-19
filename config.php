@@ -25,11 +25,16 @@ function is_home($current) {
 
 //    $current = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
     
-    $remote1 = 'http://sfsuperbowl.com/';
-    $remote2 = 'http://sfsuperbowl.com';
-    $remote3 = 'http://sfsuperbowl.com/index.php';
+    $remotes = array(
+        'http://sfsuperbowl.com/', 
+        'http://sfsuperbowl.com',
+        'http://sfsuperbowl.com/index.php',
+        'http://www.sfsuperbowl.com/', 
+        'http://www.sfsuperbowl.com',
+        'http://www.sfsuperbowl.com/index.php'
+        );
     
-    if($current === $remote1 || $current === $remote2 || $current === $remote3) {
+    if(in_array($current, $remotes)) {
         return true;
     }
     
