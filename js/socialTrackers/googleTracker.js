@@ -13,6 +13,9 @@ var GoogleTracker = SocialTracker.extend({
         var self = this;
         
         $(window).on('google_data', function(evt, data) {
+            
+            console.dir(data)
+            
             self.update(parseInt(data.output.google));
         });
         

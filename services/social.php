@@ -31,7 +31,9 @@ class Social {
         
         $latest_tweet = $this->get_tweet();
         
-        $likes = $this->get_likes();
+        $likes_facebook = $this->get_likes_facebook();
+        
+        $likes_sfsuperbowl = $this->get_likes_sfsuperbowl('http://www.sfsuperbowl.com/');
         
         $insta = $this->get_instagram_count('sfsuperbowl');
 //        $insta += $this->get_instagram_count('sfsuper');
@@ -41,16 +43,17 @@ class Social {
         
         $fb_statuses = $this->get_facebook_statuses();
         
-        $gfb = $pluses + $likes;
+        $gfb = $pluses + $likes_facebook + $likes_sfsuperbowl;
         
-        $total = $pluses + $tweets + $likes + $insta;
+        $total = $pluses + $tweets + $likes_facebook + $likes_sfsuperbowl + $insta;
         
         $this->output = Array(
                             'google' => $pluses,
                             'google_statuses' => $google_statuses,
                             'twitter' => $tweets,
                             'latest_tweet' => $latest_tweet,
-                            'facebook' => $likes,
+                            'facebook_likes_facebook' => $likes_facebook,
+                            'facebook_likes_sfsuperbowl' => $likes_sfsuperbowl,
                             'facebook_statuses' => $fb_statuses,
                             'instagram' => $insta,
                             'photos' => $photos,
@@ -87,10 +90,18 @@ class Social {
         return intval($count['tweet_count']);
     }
     
-    private function get_likes() {
+    private function get_likes_facebook() {
         $json_string = @file_get_contents('http://graph.facebook.com/sfsuperbowl');
         $json = json_decode($json_string, true);
         return intval( $json['likes'] );
+    }
+    
+    //https://graph.facebook.com/?ids=http://sfsuperbowl.com/
+    
+    private function get_likes_sfsuperbowl($url) {
+        $json_string = @file_get_contents('http://graph.facebook.com/?ids=' . $url);
+        $json = json_decode($json_string, true);
+        return intval( $json[$url]['shares'] );
     }
     
     private function get_plusones($url) {
@@ -104,7 +115,7 @@ class Social {
         curl_close ($curl);
 
         $json = json_decode($curl_results, true);
-        return intval( $json[0]['result']['metadata']['globalCounts']['count'] );
+        return intval( ($json[0]['result']['metadata']['globalCounts']['count']) + 28 );
     }
     
     private function get_google_statuses() {
