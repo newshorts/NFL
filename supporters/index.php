@@ -20,7 +20,7 @@
                         <li class="nil">0</li>
                         <li class="nil">0</li>
                     </ul>
-			        <div id="facebook_count" class="small"><ul class="numbers_small"><li class="one">1</li></ul></div>
+                    <div id="facebook_count" class="small"><ul class="numbers_small"><li class="one">1</li></ul></div>
                 </div>
 			</li>
 			<li id="facebook_box">

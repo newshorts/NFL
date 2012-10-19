@@ -116,11 +116,16 @@ var GoogleStatusTracker = SocialTracker.extend({
         
         var entry = this.entries[0];
         
-//        console.dir(this.post.attachmentType);
+        if(typeof entry.object.attachments === "undefined") {
+            // break out
+            console.log('going to blank format')
+            return;
+        }
         
+//        console.dir(this.post.attachmentType);
         var media = '';
-        if(entry.object.attachments[1].image.url) {
-            media = '<a href="'+entry.url+'"><img src="'+entry.object.attachments[1].image.url+'" alt="Plus Image Here..." /></a>';
+        if(entry.object.attachments[0].image.url) {
+            media = '<a href="'+entry.url+'"><img src="'+entry.object.attachments[0].image.url+'" alt="Plus Image Here..." /></a>';
         }
         
         var post =      '<a href="'+entry.url+'" target="_blank"><ul class="single_post">';
