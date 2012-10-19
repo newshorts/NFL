@@ -25,6 +25,7 @@ function is_home($current) {
 
 //    $current = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
     
+    // remote environment
     $remotes = array(
         'http://sfsuperbowl.com/', 
         'http://sfsuperbowl.com',
@@ -38,10 +39,15 @@ function is_home($current) {
         return true;
     }
     
-    $local1 = 'http://localhost.com/GSP/clients/NFL/';
-    $local2 = 'http://localhost/GSP/clients/NFL/';
+    // local environments
+    $locals - array(
+        'http://localhost.com/GSP/clients/NFL/',
+        'http://localhost/GSP/clients/NFL/',
+        'http://localhost.com/GSP/NFL/',
+        'http://localhost/GSP/NFL/'
+    );
     
-    if($current === $local1 || $current === $local2) {
+    if(in_array($current, $locals)) {
         return true;
     }
     
