@@ -32,7 +32,9 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <!-- GOOGLE+ META TAGS FOR DEFAULT THUMBNAIL IMAGE -->
         <meta itemprop="name" content="SFSUPERBOWL">
         <meta itemprop="description" content="Our bid for the 2016 Super Bowl starts with you. Share why you think the Bay Area would be a perfect host for Super Bowl 50. Use #SFSuperbowl or add us to your Circles page for updates, news and events. Together we can bring the Bowl to the bay.">
+        <meta name="keywords" content="San Francisco, SFSuperBowl, SF Super Bowl, SFSuper Bowl, San Francisco Super Bowl 50, SFSuperBowl 50, #sfsuperbowl, @sfsuperbowl, bring the bowl to the bay," />
         <meta itemprop="image" content="http://www.sfsuperbowl.com/images/fb/sfsb_128x128.jpg">
+        
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
          <meta property="og:url" content="http://SFSuperBowl.com" />
