@@ -40,7 +40,7 @@ function is_home($current) {
     }
     
     // local environments
-    $locals - array(
+    $locals = array(
         'http://localhost.com/GSP/clients/NFL/',
         'http://localhost/GSP/clients/NFL/',
         'http://localhost.com/GSP/NFL/',
