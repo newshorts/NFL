@@ -10,7 +10,7 @@ class Social {
     public $filename;
     protected $output = Array();
     
-    private $debug = false;
+    private $debug = true;
     
     protected $twitter;
     
