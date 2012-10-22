@@ -182,7 +182,7 @@ var GoogleStatusTracker = SocialTracker.extend({
     },
     
     cropImage: function() {
-        
+        // do nothing
     }
     
 });
