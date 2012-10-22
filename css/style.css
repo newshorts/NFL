@@ -939,7 +939,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 #image_mask span { float: left; }
 
 #first_li { width: 105px; }
-.single_post li { margin-bottom: 35px; }
+.single_post li { margin-bottom: 27px; }
 .single_post li:nth-child(2), .single_post li:nth-child(3) { width: 285px; padding-top: 5px; }
 
 .single_post li h3 { font-size: 14px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #e75405; width: 285px; }
