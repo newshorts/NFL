@@ -122,11 +122,21 @@ var GoogleStatusTracker = SocialTracker.extend({
             return;
         }
         
+//        if(typeof entry.object.attachments[0].displayName === "undefined") {
+//            // break out
+//            console.log('going to blank format')
+//            return;
+//        }
+        
 //        console.dir(this.post.attachmentType);
         var media = '';
         if(entry.object.attachments[0].image.url) {
             media = '<a href="'+entry.url+'"><img src="'+entry.object.attachments[0].image.url+'" alt="Plus Image Here..." /></a>';
         }
+        
+        var displayName = (typeof entry.object.attachments[0].displayName === "undefined") ? '' : entry.object.attachments[0].displayName;
+        var content = (entry.object.attachments[0].content.search(/.jpg/i) > 0) ? '' : entry.object.attachments[0].content;
+//        var content = entry.object.attachments[0].content;
         
         var post =      '<a href="'+entry.url+'" target="_blank"><ul class="single_post">';
             post +=             '<li id="first_li">';
@@ -136,8 +146,8 @@ var GoogleStatusTracker = SocialTracker.extend({
             post +=                 '<h3>'+entry.title+'</h3>';
             post +=				'</li>';
             post +=				'<li>';
-            post +=                 '<h4>' + entry.object.attachments[0].displayName + '</h4>';
-            post +=                 '<p>'+entry.object.attachments[0].content+'</p>';
+            post +=                 '<h4>' + displayName + '</h4>';
+            post +=                 '<p>'+content+'</p>';
             post +=             '</li>';
 //            post +=             '<li>';
 //            post +=                 (entry.plusoners > 0) ? '<span class="plusones">'+entry.plusoners.totalItems+'</span>' : '';
