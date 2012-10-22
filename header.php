@@ -10,7 +10,18 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
     
 ?>
 <!DOCTYPE html>
+<?php
+    //print_r($_SERVER);
+    
+    //echo 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 
+
+//    var_dump(is_home($request));
+//    var_dump(is_instagram($request));
+//    var_dump(is_tweets($request));
+//    var_dump(is_supporters($request));
+//    var_dump(is_movement($request));
+?>
 
 
 <html  itemscope itemtype="http://schema.org/Event" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml">
@@ -21,143 +32,48 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
         <!-- GOOGLE+ META TAGS FOR DEFAULT THUMBNAIL IMAGE -->
         <meta itemprop="name" content="SFSUPERBOWL">
         <meta itemprop="description" content="Our bid for the 2016 Super Bowl starts with you. Share why you think the Bay Area would be a perfect host for Super Bowl 50. Use #SFSuperbowl or add us to your Circles page for updates, news and events. Together we can bring the Bowl to the bay.">
+        <meta name="keywords" content="San Francisco, SFSuperBowl, SF Super Bowl, SFSuper Bowl, San Francisco Super Bowl 50, SFSuperBowl 50, #sfsuperbowl, @sfsuperbowl, bring the bowl to the bay," />
+        <meta name="google-site-verification" content="N__k_-zpjY7nczMv8lOYfz8OTg-IaJbHJWKRJ1Jz-sY" />
         <meta itemprop="image" content="http://www.sfsuperbowl.com/images/fb/sfsb_128x128.jpg">
         
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <meta property="og:url" content="http://SFSuperBowl.com" />
+         <meta property="og:title" content="SFSuperBowl || San Francisco Super Bowl 50" />
+        <meta property="og:image" content="http://www.sfsuperbowl.com/images/fb/sfsb_200x200.jpg" />
+        <link rel="image_src" href="http://www.sfsuperbowl.com/images/fb/sfsb_128x128.jpg" />
         <link rel="icon" type="image/png" href="<?php echo ROOT; ?>favicon.ico">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="<?php echo ROOT; ?>js/lib/jquery.min.js">\x3C/script>')</script>
-        <!--<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>-->
-        
-<!--        <script src="<?php echo ROOT; ?>js/lib/modernizr.custom.nfl.js"></script>-->
-        
-        <script>
-//            Modernizr.load([
-//                
-//                {
-//                    load: '//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js',
-//                    complete: function () {
-//                        if ( !window.jQuery ) {
-//                            console.log('unable to find jquery, loading modernizr local version')
-//                            Modernizr.load('<?php echo ROOT; ?>js/lib/jquery.min.js');
-//                        } else {
-//                            Modernizr.load('<?php echo ROOT; ?>js/lib/class.js');
-//                            Modernizr.load('<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js');
-//                            Modernizr.load('<?php echo ROOT; ?>js/lib/pageNavigation.js');
-//                            Modernizr.load('<?php echo ROOT; ?>js/socialTrackers/socialTracker.js');
-//                            Modernizr.load('<?php echo ROOT; ?>js/socialTrackers/googleTracker.js');
-//                            Modernizr.load('<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js');
-//                            Modernizr.load('<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js');
-//                            Modernizr.load('<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js');
-//                            Modernizr.load('<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js');
-//                            Modernizr.load('<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js');
-//                            Modernizr.load('<?php echo ROOT; ?>js/socialTrackers/totalTracker.js');
-//                        }
-//                    }
-//                }
-//                
-////                {
-////                    var fst = new FacebookStatusTracker('#facebook_statuses');
-////                    
-////                    var gt = new GoogleTracker('#google_count');
-////                    var ft = new FacebookTracker('#facebook_count');
-////                    var tt = new TwitterTracker('#twitter_count');
-////                    var It = new InstagramTracker('#instagram_photo_count');
-////                    var gfb = new GfbTracker('#gfb_count');
-////                    var total = new TotalTracker('#total');
-////                }
-////                
-////                {load: '<?php echo ROOT; ?>js/lib/class.js'},
-//                {load: '<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js'},
-//                {load: '<?php echo ROOT; ?>js/lib/pageNavigation.js'},
-//                {load: '<?php echo ROOT; ?>js/socialTrackers/socialTracker.js'},
-//                {load: '<?php echo ROOT; ?>js/socialTrackers/googleTracker.js'},
-//                {load: '<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js'},
-//                {load: '<?php echo ROOT; ?>js/socialTrackers/facebookTracker.js'},
-//                {load: '<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js'},
-//                {load: '<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js'},
-//                {load: '<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js'},
-//                {load: '<?php echo ROOT; ?>js/lib/jquery.cookie.js'},
-//                {
-//                    load: '<?php echo ROOT; ?>js/socialTrackers/totalTracker.js',
-////                    complete: function() {
-////                        var fst = new FacebookStatusTracker('#facebook_statuses');
-////                    
-////                        var gt = new GoogleTracker('#google_count');
-////                        var ft = new FacebookTracker('#facebook_count');
-////                        var tt = new TwitterTracker('#twitter_count');
-////                        var It = new InstagramTracker('#instagram_photo_count');
-////                        var gfb = new GfbTracker('#gfb_count');
-////                        var total = new TotalTracker('#total');
-////                        
-////                    }
-////                }
-//                
-//                // Presentational polyfills
-////                {
-////                    // Logical list of things we would normally need
-////                    test : Modernizr.fontface && Modernizr.canvas && Modernizr.cssgradients,
-////                    // Modernizr.load loads css and javascript by default
-////                    nope : ['presentational-polyfill.js', 'presentational.css']
-////                },
-////                // Functional polyfills
-////                {
-////                    // This just has to be truthy
-////                    test : Modernizr.websockets && window.JSON,
-////                    // socket-io.js and json2.js
-////                    nope : 'functional-polyfills.js',
-////                    // You can also give arrays of resources to load.
-////                    both : [ 'app.js', 'extra.js' ],
-////                    complete : function () {
-////                    // Run this after everything in this group has downloaded
-////                    // and executed, as well everything in all previous groups
-////                    myApp.init();
-////                    }
-////                },
-////                
-////                
-////                
-//                // Run your analytics after you've already kicked off all the rest
-//                // of your app.
-////                'post-analytics.js'
-//            ]);
-        </script>
-        
         <script src="<?php echo ROOT; ?>js/lib/class.js"></script>
-<!--        <script src="<?php echo ROOT; ?>js/lib/jquery.easing.js"></script>-->
-        
-<!--        <script src="<?php echo ROOT; ?>js/lib/jquery.ba-bbq.min.js"></script>-->
-<!--        <script src="<?php echo ROOT; ?>js/lib/pageNavigation.js"></script>-->
         <script src="<?php echo ROOT; ?>js/socialTrackers/subscription.js"></script>
         <script src="<?php echo ROOT; ?>js/socialTrackers/socialTracker.js"></script>
-        
-        <?php if(is_home()): ?>
-        
+        <?php if(is_home($request)): ?>
+            
             <?php if(DEVICE_TYPE != 'phone') : ?>
-                <!-- no scroller for mobile -->
+                <!-- home and not phone -->
                 <script src="<?php echo ROOT; ?>js/lib/scroller.js"></script>
             <?php endif; ?>
-            
+            <!-- home -->
             <script src="<?php echo ROOT; ?>js/lib/intro.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/totalTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/gfbTracker.js"></script>
         
-        <?php elseif(is_instagram()): ?>
-        
+        <?php elseif(is_instagram($request)): ?>
+            <!-- instagram -->
             <script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>
             <!--<script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>-->
         
-        <?php elseif(is_tweets()): ?>
-        
+        <?php elseif(is_tweets($request)): ?>
+            <!-- tweets -->
             <script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>
         
-        <?php elseif(is_movement()): ?>
-        
-        <?php elseif(is_supporters()): ?>
-        
+        <?php elseif(is_movement($request)): ?>
+            <!-- movement -->
+        <?php elseif(is_supporters($request)): ?>
+            <!-- supporters -->
             <script src="<?php echo ROOT; ?>js/lib/pretty.js"></script>
             <script src="<?php echo ROOT; ?>js/lib/date.js"></script>
             <script src="<?php echo ROOT; ?>js/lib/jquery.shorten.js"></script>
@@ -168,7 +84,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
             <!--<script src="<?php echo ROOT; ?>js/socialTrackers/facebookStatusTracker.js"></script>-->
             
         <?php endif; ?>
-        
+        <!-- setup -->
         <script>
             /*
              *  ATTENTION: One window load function initiates all scripts
@@ -187,7 +103,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                 
                         sub = new Subscription();
                         
-                    <?php if(is_home()): ?>
+                    <?php if(is_home($request)): ?>
                         
                         <?php if(DEVICE_TYPE == 'phone') : ?>
                             var total = new TotalTracker('#total');
@@ -221,18 +137,18 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                             
                         <?php endif; ?>
                         
-                    <?php elseif(is_instagram()): ?>
+                    <?php elseif(is_instagram($request)): ?>
                         
                         var It = new InstagramTracker('#instagram_photo_count');
 //                        var tt = new TwitterTracker('#t_count');
 
-                    <?php elseif(is_tweets()): ?>
+                    <?php elseif(is_tweets($request)): ?>
                         
                         var tt = new TwitterTracker('#twitter_count');
 
-                    <?php elseif(is_movement()): ?>
+                    <?php elseif(is_movement($request)): ?>
 
-                    <?php elseif(is_supporters()): ?>
+                    <?php elseif(is_supporters($request)): ?>
                         
                         var gst = new GoogleStatusTracker('#google_statuses');
 //                        var fst = new FacebookStatusTracker('#facebook_statuses');
@@ -298,6 +214,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
     
     
     <!-- FACEBOOK JS -->
+    
     <script src='http://connect.facebook.net/en_US/all.js'></script>
     
     <div id="fb-root"></div>
@@ -323,7 +240,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                 <div id="boardcontainer">
                     
 	                <div class="left">
-	                    <h2 class="headlineLargeGray"><a href="../buzz/">BRING THE BOWL TO THE BAY</a></h2>
+	                    <h2 class="headlineLargeGray"><a href="<?php echo ROOT; ?>">BRING THE BOWL TO THE BAY</a></h2>
 	                </div>
 	                
 	                <div class="right">

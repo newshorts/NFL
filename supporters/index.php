@@ -20,7 +20,7 @@
                         <li class="nil">0</li>
                         <li class="nil">0</li>
                     </ul>
-			        <div id="facebook_count" class="small" facebook_data="1"><ul class="numbers_small"><li class="one">1</li></ul></div>
+                    <div id="facebook_count" class="small"><ul class="numbers_small"><li class="one">1</li></ul></div>
                 </div>
 			</li>
 			<li id="facebook_box">
@@ -54,7 +54,7 @@
                                     <li class="nil">0</li>
                                     <li class="nil">0</li>
                                 </ul>
-			        <div id="google_count" class="small" google_data="0"><ul class="numbers_small"><li class="zero">0</li></ul></div>
+			        <div id="google_count" class="small"><ul class="numbers_small"><li class="zero">0</li></ul></div>
 				</div>
 			</li>
 	        <li id="plus_post"></li>

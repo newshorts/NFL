@@ -10,6 +10,8 @@ class Social {
     public $filename;
     protected $output = Array();
     
+    private $debug = false;
+    
     protected $twitter;
     
     public function __construct($filename = 'get') {
@@ -31,26 +33,28 @@ class Social {
         
         $latest_tweet = $this->get_tweet();
         
-        $likes = $this->get_likes();
+        $likes_facebook = $this->get_likes_facebook();
         
-        $insta = $this->get_instagram_count('sfsuperbowl');
-//        $insta += $this->get_instagram_count('sfsuper');
+        $likes_sfsuperbowl = $this->get_likes_sfsuperbowl('http://www.sfsuperbowl.com/');
         
         $photos[] = $this->get_instagram_photos('sfsuperbowl');
-//        $photos[] =  $this->get_instagram_photos('sfsuper');
+        
+        //  TODO: this shouldnt have to call instagram again
+        $insta = $this->get_instagram_count('sfsuperbowl');
         
         $fb_statuses = $this->get_facebook_statuses();
         
-        $gfb = $pluses + $likes;
+        $gfb = $pluses + $likes_facebook + $likes_sfsuperbowl;
         
-        $total = $pluses + $tweets + $likes + $insta;
+        $total = $pluses + $tweets + $likes_facebook + $likes_sfsuperbowl + $insta;
         
         $this->output = Array(
                             'google' => $pluses,
                             'google_statuses' => $google_statuses,
                             'twitter' => $tweets,
                             'latest_tweet' => $latest_tweet,
-                            'facebook' => $likes,
+                            'facebook_likes_facebook' => $likes_facebook,
+                            'facebook_likes_sfsuperbowl' => $likes_sfsuperbowl,
                             'facebook_statuses' => $fb_statuses,
                             'instagram' => $insta,
                             'photos' => $photos,
@@ -87,10 +91,30 @@ class Social {
         return intval($count['tweet_count']);
     }
     
-    private function get_likes() {
+    private function get_likes_facebook() {
         $json_string = @file_get_contents('http://graph.facebook.com/sfsuperbowl');
         $json = json_decode($json_string, true);
+        
+        if($this->debug) {
+            echo '<pre> Facebook likes on facebook: ';
+            print_r($json);
+        }
+        
         return intval( $json['likes'] );
+    }
+    
+    //https://graph.facebook.com/?ids=http://sfsuperbowl.com/
+    
+    private function get_likes_sfsuperbowl($url) {
+        $json_string = @file_get_contents('http://graph.facebook.com/?ids=' . $url);
+        $json = json_decode($json_string, true);
+        
+        if($this->debug) {
+            echo '<pre> Facebook likes on sfsuperbowl: ';
+            print_r($json);
+        }
+        
+        return intval( $json[$url]['shares'] );
     }
     
     private function get_plusones($url) {
@@ -104,7 +128,14 @@ class Social {
         curl_close ($curl);
 
         $json = json_decode($curl_results, true);
-        return intval( $json[0]['result']['metadata']['globalCounts']['count'] );
+        
+        
+        if($this->debug) {
+            echo '<pre> Google Plus ones: ';
+            print_r($json);
+        }
+        
+        return intval( ($json[0]['result']['metadata']['globalCounts']['count']) + 28 );
     }
     
     private function get_google_statuses() {
@@ -112,6 +143,12 @@ class Social {
         // url: https://www.googleapis.com/plus/v1/people/116535953378851378506/activities/public?key={YOUR_API_KEY}
         $json_string = file_get_contents('https://www.googleapis.com/plus/v1/people/116535953378851378506/activities/public?key=AIzaSyBHW-NafE0H1igaSWyAktBw8ADlkDkC8Dc');
         $json = json_decode($json_string, true);
+        
+        if($this->debug) {
+            echo '<pre> Google statuses: ';
+            print_r($json);
+        }
+        
         return $json;
     }
     
@@ -120,6 +157,12 @@ class Social {
 //        $json_string = file_get_contents('https://api.instagram.com/v1/tags/search?q='.$tag.'&access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9');
         $json_string = file_get_contents('https://api.instagram.com/v1/tags/'.$tag.'?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9');
         $json = json_decode($json_string, true);
+        
+        if($this->debug) {
+            echo '<pre> instagram photo count: ';
+            print_r($json);
+        }
+        
         return intval( $json['data']['media_count'] );
     }
     
@@ -127,6 +170,12 @@ class Social {
         //snow/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9
         $json_string = file_get_contents('https://api.instagram.com/v1/tags/'.$tag.'/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9');
         $json = json_decode($json_string, true);
+        
+        if($this->debug) {
+            echo '<pre> instagram photos: ';
+            print_r($json);
+        }
+        
         return $json;
     }
     
@@ -144,6 +193,12 @@ class Social {
         $content = curl_exec($ch);
         curl_close($ch);
         $json = json_decode($content, true);
+        
+        if($this->debug) {
+            echo '<pre> Facebook statuses: ';
+            print_r($json);
+        }
+        
         return $json;
         
     }
