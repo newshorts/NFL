@@ -24,79 +24,6 @@ var GoogleStatusTracker = SocialTracker.extend({
         });
     },
     
-//    output: function() {
-//        
-//        var entry = this.entries[0];
-//        
-//        console.log('entry coming next')
-//        console.dir(entry)
-//        
-//        if(typeof entry.content != "undefined") {
-//            this.post.content = entry.content;
-//        }
-//        
-//        if(typeof entry.title != "undefined") {
-//            // has title
-//            this.post.title = entry.title;
-//        }
-//        
-//        if(typeof entry.published != "undefined") {
-//            // has title
-//            this.post.date = entry.published;
-//        }
-//        
-//        if(typeof entry.object.attachments === "undefined") {
-//            // break out
-//            console.log('going to blank format')
-//            this.formatBlank();
-//            return;
-//        }
-//        
-//        var attachment = entry.object.attachments[0];
-//        
-//        if(typeof attachment.content != "undefined") {
-//            // has content of attachment
-//            this.post.attachmentContent = attachment.content;
-//        }
-//        
-//        if(typeof attachment.displayName != "undefined") {
-//            // has title of the attachment
-//            this.post.attachmentTitle = attachment.displayName;
-//        }
-//        
-//        if(typeof attachment.embed != "undefined") {
-//            // has embeded content
-//            this.post.attachmentEmbed = attachment.embed.url;
-//        }
-//        
-//        if(typeof attachment.image != "undefined") {
-//            // has image
-//            this.post.attachmentImage = attachment.image.url;
-//            this.post.attachmentImageWidth = attachment.image.width;
-//            this.post.attachmentImageHeight = attachment.image.height;
-//        }
-//        
-//        if(typeof attachment.url != "undefined") {
-//            // has link out
-//            this.post.attachmentLink = attachment.url;
-//        }
-//        
-//        if(typeof attachment.objectType != "undefined") {
-//            // has link out
-//            this.post.attachmentType = attachment.objectType;
-//        }
-//        
-//        if(typeof attachment.plusoners != "undefined") {
-//            this.post.attachmentPluses = attachment.plusoners.totalItems;
-//        }
-//        
-//        console.log('posting to media format')
-//        console.dir(this.post)
-//        
-//        this.formatMedia();
-//        
-//    },
-    
     outputPost: function() {
         
         var entries = this.entries;
@@ -194,10 +121,6 @@ var GoogleStatusTracker = SocialTracker.extend({
         $('#plus_post > div').append('<p>' + this.post.attachmentContent + '</p>');
         $('#plus_post > div').append('<span>' + this.post.date + '</span>');
         console.log('posting blank format');
-    },
-    
-    cropImage: function() {
-        // do nothing
     }
     
 });
