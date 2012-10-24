@@ -931,7 +931,7 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 
 #plus_post { position: relative; background-color: #fff;  top: 70px; height: 142px;  width: 420px; border: #ccc 1px solid; overflow: hidden; }
-#plus_post a:nth-child(1) { display: block; height: 142px; width: 420px; position: absolute; z-index: 2; }
+/*#plus_post a:nth-child(1) { display: block; height: 142px; width: 420px; position: absolute; z-index: 2; }
 #plus_post a:nth-child(1):hover { background-color: #fff 50%; cursor: pointer; }
 .single_post { position: relative; width: 390; height: 112px; padding: 15px 15px 15px 15px;  }
 .single_post li { position: relative; float: left; }
@@ -946,9 +946,47 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 
 .single_post li h4 { font-size: 13px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #666666; width: 259px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
-.single_post li p { font-size: 12px; font-family:  Arial, Helvetica, sans-serif;  font-style: italic; color: #666666; width: 259px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;width: 285px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.single_post li p { font-size: 12px; font-family:  Arial, Helvetica, sans-serif;  font-style: italic; color: #666666; width: 259px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;width: 285px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }*/
 
+.single_post {
+    display: block;
+    width: 420px;
+    height: 142px;
+    position: relative;
+    padding-top: 36px;
+    
+    font-family:  Arial, Helvetica, sans-serif; 
+    font-weight: bold; 
+    font-style: italic; 
+    color: #e75405;
+}
 
+.single_post li {
+    float: left;
+}
+
+.single_post .image {
+    width: 100px;
+    margin-left: 20px;
+}
+
+.single_post .image img {
+    width: 100px;
+    padding: 2px;
+    border: #ccc 1px solid;
+}
+
+.single_post .title {
+    width: 260px;
+    padding: 0px 20px;
+    font-size: 14px; 
+}
+
+.single_post .meta {
+    width: 121px;
+    font-size: 10px;
+    margin-left: 20px;
+}
 
 
 

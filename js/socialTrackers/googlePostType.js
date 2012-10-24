@@ -1,4 +1,4 @@
-var Post = Class.extend({
+var GooglePost = Class.extend({
     
     /**
      * Post reference to get all data for the entry
@@ -12,12 +12,20 @@ var Post = Class.extend({
      * @var object
      */
     object: {},
+    
     /**
      * An array of attachments for the post
      * @access public
      * @var array
      */
     attachments: new Array(),
+    
+    /**
+     * Formatted post for output to page
+     * @access public
+     * @var string
+     */
+    formattedPost: '',
     
     /**
      * Construct
@@ -30,19 +38,46 @@ var Post = Class.extend({
      * this.post.url;
      */
     init: function(entry) {
+        
+        var str = '';
+        
+        if(typeof entry === "undefined") {
+            return;
+        }
+
+        if(typeof entry.object === "undefined") {
+            return;
+        }
+        
         this.post = entry;
         this.object = entry.object;
-        this.attachments = entry.object.attachments;
-       
+        
         switch(this.post.verb) {
             case 'post':
-                // do some stuff here???
+                
+                if(typeof entry.object.attachments !== "undefined") {
+                    this.attachments = entry.object.attachments;
+                    str = this.formatPostWithAttachments()
+                } else {
+                    str = this.formatPostWithoutAttachments()
+                }
+
                 break;
             case 'share':
-                // so some stuff
+                
+                if(typeof entry.object.attachments !== "undefined") {
+                    this.attachments = entry.object.attachments;
+                    str = this.formatShareWithAttachments()
+                } else {
+                    str = this.formatShareWithoutAttachments()
+                }
+                
                 break;
+                
         }
-            
+        
+        this.formattedPost = str;
+        
     },
     
     /**
@@ -54,15 +89,15 @@ var Post = Class.extend({
         
         var results = {};
         
-        for(var i = 0; l = this.attachments.length; i++) {
+        for(var i = 0, l = this.attachments.length; i < l; i++) {
             
-            var id = (i === 0) ? 'id="first_li"' : '';
+//            var firstClass = (i === 0) ? 'class="first_li"' : '';
             
             switch(this.attachments[i].objectType) {
                 case 'video':
                     
-                    var output =        '<li '+id+'>';
-                    output +=               '<div id="video">';
+                    var output =        '<li class="video">';
+                    output +=               '<div>';
                     output +=                   '<span>';
                     output +=                       '<a href="'+this.attachments[i].embed.url+'">';
                     output +=                           '<img src="'+this.attachments[i].image.url+'" />';
@@ -74,8 +109,8 @@ var Post = Class.extend({
                     results.video = output;
                     break;
                 case 'photo':
-                    var output =        '<li '+id+'>';
-                    output +=               '<div id="image">';
+                    var output =        '<li class="image">';
+                    output +=               '<div>';
                     output +=                   '<span>';
                     output +=                       '<a href="'+this.attachments[i].url+'">';
                     output +=                           '<img src="'+this.attachments[i].image.url+'" />';
@@ -87,8 +122,8 @@ var Post = Class.extend({
                     results.photo = output;
                     break;
                 case 'article':
-                    var output =        '<li '+id+'>';
-                    output +=               '<div id="article">';
+                    var output =        '<li class="article">';
+                    output +=               '<div>';
                     output +=                   '<h4><a href="'+this.attachments[i].url+'">'+this.attachments[i].displayName+'</a></h4>';
                     output +=                   '<p>'+this.attachments[i].content+'</p>';
                     output +=               '</div>';
@@ -111,76 +146,132 @@ var Post = Class.extend({
      */
     formatPostWithAttachments: function() {
         
-        var entry = this.entry;
+        var entry = this.post;
         var object = this.object;
         var attachments = this.attachments;
         
         var media = this.formatAttachments();
         
-        var post =      '<a href="'+entry.url+'" target="_blank">';
+//        var post =      '<a href="'+entry.url+'" target="_blank">';
+        var post =      '';
             post +=         '<ul class="single_post">';    
             post +=             (typeof media.photo === "undefined") ? '' : media.photo;
             post +=             (typeof media.video === "undefined") ? '' : media.video;
-            post +=             '<li>';
-            post +=                 '<h3>'+entry.title+'</h3>';
+            post +=             '<li class="title">';
+            post +=                 '<h3><a href="'+entry.url+'">'+entry.title+'</a></h3>';
             post +=             '</li>';
             post +=             (typeof media.article === "undefined") ? '' : media.article;
-            post +=             '<li>';
+            post +=             '<li class="meta">';
             post +=                 (entry.plusoners > 0) ? '<span class="plusones">'+entry.plusoners.totalItems+'</span>' : '';
             post +=                 (entry.plusoners > 0) ? '<span class="replies">'+entry.replies.totalItems+'</span>' : '';
             post +=                 (entry.plusoners > 0) ? '<span class="resharers">'+entry.resharers.totalItems+'</span>' : '';
             post +=                 '<span>' + prettyDate(entry.published) + '</span>';
             post +=             '</li>';
             post +=         '</ul>'
-            post +=     '</a>';
+//            post +=     '</a>';
+            post +=     '';
             
         return post;
-    }
-    
-    
+    },
     
     /**
      * Format a post without media and return a string of html
      * @access public
      * @return string 
      */
-//    formatPostPlain: function() {
-//        var entry = this.entry;
-//        var object = this.object;
-//        var attachments = this.attachments;
-//        
+    formatPostWithoutAttachments: function() {
+        var entry = this.post;
+        var object = this.object;
+        var attachments = this.attachments;
+        
 //        var post =      '<a href="'+entry.url+'" target="_blank">';
-//            post +=         '<ul class="single_post">';    
-//            post +=             '<li>';
-//            post +=                 '<h3>'+entry.title+'</h3>';
-//            post +=             '</li>';
-//            post +=             '<li>';
-//            post +=                 (entry.plusoners > 0) ? '<span class="plusones">'+entry.plusoners.totalItems+'</span>' : '';
-//            post +=                 (entry.plusoners > 0) ? '<span class="replies">'+entry.replies.totalItems+'</span>' : '';
-//            post +=                 (entry.plusoners > 0) ? '<span class="resharers">'+entry.resharers.totalItems+'</span>' : '';
-//            post +=                 '<span>' + prettyDate(entry.published) + '</span>';
-//            post +=             '</li>';
-//            post +=         '</ul>'
+        var post =      '';
+            post +=         '<ul class="single_post">';    
+            post +=             '<li class="title">';
+            post +=                 '<h3><a href="'+entry.url+'">'+entry.title+'</a></h3>';
+            post +=             '</li>';
+            post +=             '<li class="meta">';
+            post +=                 (entry.plusoners > 0) ? '<span class="plusones">'+entry.plusoners.totalItems+'</span>' : '';
+            post +=                 (entry.plusoners > 0) ? '<span class="replies">'+entry.replies.totalItems+'</span>' : '';
+            post +=                 (entry.plusoners > 0) ? '<span class="resharers">'+entry.resharers.totalItems+'</span>' : '';
+            post +=                 '<span>' + prettyDate(entry.published) + '</span>';
+            post +=             '</li>';
+            post +=         '</ul>'
 //            post +=     '</a>';
-//    }
+            post +=     '';
+            
+        return post;
+    },
+    
+    /**
+     * Format a post with media and return an html output
+     * @access public
+     * @return string 
+     */
+    formatShareWithAttachments: function() {
+        
+        var entry = this.post;
+        var object = this.object;
+        var attachments = this.attachments;
+        
+        var media = this.formatAttachments();
+        
+//        var post =      '<a href="'+entry.url+'" target="_blank">';
+        var post =      '';
+            post +=         '<ul class="single_post">';    
+            post +=             (typeof media.photo === "undefined") ? '' : media.photo;
+            post +=             (typeof media.video === "undefined") ? '' : media.video;
+            post +=             '<li class="title">';
+            post +=                 '<h3><a href="'+entry.url+'">'+entry.title+'</a></h3>';
+            post +=             '</li>';
+            post +=             (typeof media.article === "undefined") ? '' : media.article;
+            post +=             '<li class="meta">';
+            post +=                 (entry.plusoners > 0) ? '<span class="plusones">'+entry.plusoners.totalItems+'</span>' : '';
+            post +=                 (entry.plusoners > 0) ? '<span class="replies">'+entry.replies.totalItems+'</span>' : '';
+            post +=                 (entry.plusoners > 0) ? '<span class="resharers">'+entry.resharers.totalItems+'</span>' : '';
+            post +=                 '<span>' + prettyDate(entry.published) + '</span>';
+            post +=             '</li>';
+            post +=         '</ul>'
+//            post +=     '</a>';
+            post +=     '';
+            
+        return post;
+    },
+    
+    /**
+     * Format a post without media and return a string of html
+     * @access public
+     * @return string 
+     */
+    formatShareWithoutAttachments: function() {
+        var entry = this.post;
+        var object = this.object;
+        var attachments = this.attachments;
+        
+//        var post =      '<a href="'+entry.url+'" target="_blank">';
+        var post =      '';
+            post +=         '<ul class="single_post">';    
+            post +=             '<li class="title">';
+            post +=                 '<h3><a href="'+entry.url+'">'+entry.title+'</a></h3>';
+            post +=             '</li>';
+            post +=             '<li>';
+            post +=                 '<p>'+entry.annotation+'</p>';
+            post +=             '</li>';
+            post +=             '<li class="meta">';
+            post +=                 (entry.plusoners > 0) ? '<span class="plusones">'+entry.plusoners.totalItems+'</span>' : '';
+            post +=                 (entry.plusoners > 0) ? '<span class="replies">'+entry.replies.totalItems+'</span>' : '';
+            post +=                 (entry.plusoners > 0) ? '<span class="resharers">'+entry.resharers.totalItems+'</span>' : '';
+            post +=                 '<span>' + prettyDate(entry.published) + '</span>';
+            post +=             '</li>';
+            post +=         '</ul>'
+//            post +=     '</a>';
+            post +=     '';
+            
+        return post;
+    },
+    
+    getFormattedPost: function() {
+        return this.formattedPost;
+    }
     
 });
-
-//
-//var ImagePost = Post.extend({
-//    init: function(e) {
-//       this._super();
-//    }
-//});
-//
-//var LinkPost = Post.extend({
-//    init: function(e) {
-//       this._super();
-//    }
-//});
-//
-//var RegularPost = Post.extend({
-//    init: function(e) {
-//       this._super();
-//    }
-//});
