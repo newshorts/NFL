@@ -7,7 +7,7 @@
 				<span>FACEBOOK</span>
 			  </li>
 			  <li id="facebook_like_button">
-				<div id="facebook_cta">
+				<div id="facebook_cta" onclick="_gaq.push(['_trackSocial', 'facebook', 'share', 'support_like']); return false; ">
 					<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fsfsuperbowl.com&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=35&amp;appId=423821150969335" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
 				</div>
                 <div id="facebook_likes_count">
@@ -34,7 +34,7 @@
 				<span>GOOGLE+</span>
 			</li>
 			<li>
-				<div id="google_cta">
+				<div id="google_cta" onclick="_gaq.push(['_trackSocial', 'google', 'share', 'support_plus']); return false; ">
 					<div class="g-plusone" data-annotation="none" data-href="http://sfsuperbowl.com"></div>
 					<script type="text/javascript">
                                             (function() {
