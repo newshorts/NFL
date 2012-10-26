@@ -246,14 +246,14 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                 <div id="boardcontainer">
                     
 	                <div class="left">
-	                    <h2 class="headlineLargeGray"><a onclick="_gaq.push(['_trackEvent', 'bay', 'click']); return false;" href="<?php echo ROOT; ?>">BRING THE BOWL TO THE BAY</a></h2>
+	                    <h2 class="headlineLargeGray"><a onclick="_gaq.push(['_trackEvent', 'bay', 'click']);" href="<?php echo ROOT; ?>">BRING THE BOWL TO THE BAY</a></h2>
 	                </div>
 	                
 	                <div class="right">
                             
 	                	<div class="rightWrap">
                             <div class="tabs">
-                        <a onclick="_gaq.push(['_trackEvent', 'scoreboard', 'click']); return false;" href="<?php echo ROOT; ?>" class="ajaxify <?php echo (strpos($request, 'buzz')) ? 'active' : ''; ?>"><?php echo (strpos($request, 'buzz')) ? 'SCOREBOARD' : 'SCOREBOARD'; ?></a><span>l</span><a href="<?php echo ROOT; ?>movement" class="ajaxify <?php echo (strpos($request, 'movement')) ? 'active' : ''; ?>" >JOIN THE MOVEMENT</a>
+                        <a onclick="_gaq.push(['_trackEvent', 'scoreboard', 'click']);" href="<?php echo ROOT; ?>" class="ajaxify <?php echo (strpos($request, 'buzz')) ? 'active' : ''; ?>"><?php echo (strpos($request, 'buzz')) ? 'SCOREBOARD' : 'SCOREBOARD'; ?></a><span>l</span><a onclick="_gaq.push(['_trackPageview', '/home/movement/']);" href="<?php echo ROOT; ?>movement" class="ajaxify <?php echo (strpos($request, 'movement')) ? 'active' : ''; ?>" >JOIN THE MOVEMENT</a>
 		                    </div>
 		                    
 		                    <div class="sharebutton">
