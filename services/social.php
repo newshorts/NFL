@@ -37,6 +37,8 @@ class Social {
         
         $likes_sfsuperbowl = $this->get_likes_sfsuperbowl('http://www.sfsuperbowl.com/');
         
+        $likes_combined = $likes_facebook + $likes_sfsuperbowl;
+        
         $photos[] = $this->get_instagram_photos('sfsuperbowl');
         
         //  TODO: this shouldnt have to call instagram again
@@ -55,6 +57,7 @@ class Social {
                             'latest_tweet' => $latest_tweet,
                             'facebook_likes_facebook' => $likes_facebook,
                             'facebook_likes_sfsuperbowl' => $likes_sfsuperbowl,
+                            'facebook_likes_combined' => $likes_combined,
                             'facebook_statuses' => $fb_statuses,
                             'instagram' => $insta,
                             'photos' => $photos,
