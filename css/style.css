@@ -942,11 +942,11 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
 .single_post li { margin-bottom: 27px; }
 .single_post li:nth-child(2), .single_post li:nth-child(3) { width: 259px; padding-top: 5px; margin-left: 5px; }
 
-.single_post li h3 { font-size: 14px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #e75405; width: 259px; }
+.single_post h3 { font-size: 14px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #e75405; width: 259px; }
 
-.single_post li h4 { font-size: 13px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #666666; width: 259px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.single_post h4 { font-size: 13px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #666666; width: 259px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
-.single_post li p { font-size: 12px; font-family:  Arial, Helvetica, sans-serif;  font-style: italic; color: #666666; width: 259px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;width: 285px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.single_post p { font-size: 12px; font-family:  Arial, Helvetica, sans-serif;  font-style: italic; color: #666666; width: 259px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;width: 285px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
 
 
