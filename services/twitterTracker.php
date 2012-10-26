@@ -46,6 +46,15 @@ class TwitterTracker {
     private $ts;
     
     /**
+     * @deprecated - in favor of keeping things separate
+     * 
+     * Twitter zend extension
+     * @access private
+     * @var object
+     */
+    private $t;
+    
+    /**
      * Construct
      * @access public
      */
@@ -99,7 +108,8 @@ class TwitterTracker {
         $this->table_name = 'tweets';
         
         // twitter
-        $this->ts  = new Zend_Service_Twitter_Search('json');
+        $this->ts   = new Zend_Service_Twitter_Search('json');
+        
         
     }
     
