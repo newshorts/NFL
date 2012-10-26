@@ -52,7 +52,7 @@ class Social {
         
         $gfb = $pluses + $likes_facebook + $likes_sfsuperbowl;
         
-        $total = $pluses + $tweets + $likes_facebook + $likes_sfsuperbowl + $insta;
+        $total = $pluses + $twitter_total + $likes_combined + $insta;
         
         $this->output = Array(
                             'google' => $pluses,
