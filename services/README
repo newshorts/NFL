@@ -42,8 +42,7 @@ pollTwitter3.php    */1             sleep(45)       calls twitter + writes new t
 Service             Rate Limit                          Current Rate
 ________________________________________________________________________________
 
-Twitter             every 5s (180/15 min)               every 15s (60/15 min) *for new tweets
-Twitter             every 5s (180/15 min)               every 60s (15/15 min) *for new followers
+Twitter             every 5s (180/15 min)               2 every 15s (120 / 15 min) *for new tweets and followers
 Facebook            every 1s (600/600 seconds)          3 every 15s (720 / hour)
 Instagram           every 1s (5,000/hour)               2 every 15s (480 / hour)
 Google+             every 10s (10,000/day)              2 every 15s (480 / hour or 11,520/day)

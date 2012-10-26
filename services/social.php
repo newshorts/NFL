@@ -33,6 +33,10 @@ class Social {
         
         $latest_tweet = $this->get_tweet();
         
+        $twitter_followers = $this->get_twitter_followers('sfsuperbowl');
+        
+        $twitter_total = $tweets + $twitter_followers;
+        
         $likes_facebook = $this->get_likes_facebook();
         
         $likes_sfsuperbowl = $this->get_likes_sfsuperbowl('http://www.sfsuperbowl.com/');
@@ -54,6 +58,8 @@ class Social {
                             'google' => $pluses,
                             'google_statuses' => $google_statuses,
                             'twitter' => $tweets,
+                            'twitter_followers' => $twitter_followers,
+                            'twitter_total' => $twitter_total,
                             'latest_tweet' => $latest_tweet,
                             'facebook_likes_facebook' => $likes_facebook,
                             'facebook_likes_sfsuperbowl' => $likes_sfsuperbowl,
@@ -204,6 +210,18 @@ class Social {
         
         return $json;
         
+    }
+    
+    private function get_twitter_followers($user) {
+        $json_string = @file_get_contents('http://api.twitter.com/1/followers/ids.json?cursor=-1&screen_name=' . $user);
+        $json = json_decode($json_string, true);
+
+        if($this->debug) {
+            echo '<pre> twitter followers: ';
+            print_r($json);
+        }
+
+        return intval( count($json['ids']) );
     }
 }
 
