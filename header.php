@@ -28,20 +28,20 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
     
     <head>
     	
-        <title>SFSuperBowl || San Francisco Super Bowl 50</title>
+        <title>SFSuperBowl | San Francisco Super Bowl L | Official Bid Committee Site</title>
         <!-- GOOGLE+ META TAGS FOR DEFAULT THUMBNAIL IMAGE -->
         <meta itemprop="name" content="SFSUPERBOWL">
-        <meta itemprop="description" content="Our bid for the 2016 Super Bowl starts with you. Share why you think the Bay Area would be a perfect host for Super Bowl 50. Use #SFSuperbowl or add us to your Circles page for updates, news and events. Together we can bring the Bowl to the bay.">
+        <meta itemprop="description" content="Official site for the SF Super Bowl L Bid Committee. Our bid for the 2016 Super Bowl starts with you. Share why you think the Bay Area would be a perfect host for the Super Bowl. And help us bring the Bowl to the Bay.">
 <!--         <meta name="title" content="San Francisco Super Bowl 2016 | SF Super Bowl"> -->
-        <meta name="description" content="Bring the Super Bowl to the Bay in 2016.  Join the movement and show support by sharing #SFSuperBowl on Twitter, Facebook, Google+ and Instagram.  Download or print the iconic logo and start to build the buzz about football's championship game.">
-        <meta name="keywords" content="San Francisco, SFSuperBowl, SF Super Bowl, SFSuper Bowl, San Francisco Super Bowl 50, SFSuperBowl 50, #sfsuperbowl, @sfsuperbowl, bring the bowl to the bay," />
+        <meta name="description" content="Official site for the SF Super Bowl L Bid Committee. Our bid for the 2016 Super Bowl starts with you. Share why you think the Bay Area would be a perfect host for the Super Bowl. And help us bring the Bowl to the Bay.">
+        <meta name="keywords" content="Official San Francisco Super Bowl Bid Committee, SF Super Bowl, San Francisco Super Bowl 50, SFSuperBowl 50, San Franciso Super Bowl L, #sfsuperbowl, @sfsuperbowl, bring the bowl to the bay" />
         <meta name="google-site-verification" content="N__k_-zpjY7nczMv8lOYfz8OTg-IaJbHJWKRJ1Jz-sY" />
         <meta itemprop="image" content="http://www.sfsuperbowl.com/images/fb/sfsb_128x128.jpg">
         
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta property="og:url" content="http://SFSuperBowl.com" />
-        <meta property="og:title" content="SFSuperBowl || San Francisco Super Bowl 50" />
+        <meta property="og:title" content="SFSuperBowl | San Francisco Super Bowl L | Official Bid Committee Site" />
         <meta property="og:image" content="http://www.sfsuperbowl.com/images/fb/sfsb_200x200.jpg" />
         <link rel="image_src" href="http://www.sfsuperbowl.com/images/fb/sfsb_128x128.jpg" />
         <link rel="icon" type="image/png" href="<?php echo ROOT; ?>favicon.ico">
