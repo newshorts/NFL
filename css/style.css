@@ -989,8 +989,31 @@ hr { border: solid #cdcdcd; border-width: 1px 0 0; clear: both; margin: 12px 30p
     width: 121px;
     font-size: 10px;
     margin-left: 20px;
+
+
 }
 
+.single_post meta li {
+    float: right;
+    position: relative; 
+}
+    
+.single_post .article {
+    width: 260px;
+    font-size: 10px;
+    margin-left: 20px;
+    color: #e75405
+}
+
+
+.single_post h3 { font-size: 14px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #666666; width: 259px; }
+
+.single_post .article h4 { font-size: 13px; font-family:  Arial, Helvetica, sans-serif; font-weight: bold; font-style: italic; color: #e75405; width: 259px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.single_post .article a { color: #e75405; }
+
+.single_post .article p { display: none; }
+
+/* .single_post p { font-size: 12px; font-family:  Arial, Helvetica, sans-serif;  font-style: italic; color: #666666; width: 259px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;width: 285px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; } */
 
 
 
