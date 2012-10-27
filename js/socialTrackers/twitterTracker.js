@@ -14,7 +14,7 @@ var TwitterTracker = SocialTracker.extend({
         
         $(window).on('twitter_data', function(evt, data) {
 //            console.log('twitter tracking every time')
-            self.update(parseInt(data.output.twitter_total));
+            self.update(parseInt(data.output.twitter));
         });
         
 //        window.addEventListener('twitter_data', function(evt) {

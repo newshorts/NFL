@@ -50,9 +50,9 @@ class Social {
         
         $fb_statuses = $this->get_facebook_statuses();
         
-        $gfb = $pluses + $likes_facebook + $likes_sfsuperbowl;
+        $gfb = $pluses + $likes_facebook + $likes_sfsuperbowl + $twitter_followers;
         
-        $total = $pluses + $twitter_total + $likes_combined + $insta;
+        $total = $pluses + $tweets + $likes_combined + $insta;
         
         $this->output = Array(
                             'google' => $pluses,
