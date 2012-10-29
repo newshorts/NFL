@@ -55,7 +55,7 @@ class Social {
         
         $fb_statuses = $this->get_facebook_statuses();
         
-        $gfb = $pluses + $likes_facebook + $likes_sfsuperbowl + $twitter_followers;
+        $gfb = $pluses + $likes_facebook + $likes_sfsuperbowl;
         
         $total = $gfb + $tweets + $insta;
         
