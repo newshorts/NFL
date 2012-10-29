@@ -1,9 +1,14 @@
 <?php
 require_once 'twitterTracker.php';
+require_once 'twitteroauth/twitteroauth.php';
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+
+define('CONSUMER_KEY', 'ztPcwPFJZ9RrFHK3Em4Nw');
+define('CONSUMER_SECRET', '0f7pDbnRg1y8aFrCTj1gGHTKYg69TMlu7q65UR4TABM');
+define('OAUTH_CALLBACK', 'http://example.com/twitteroauth/callback.php');
 
 class Social {
 
@@ -213,22 +218,18 @@ class Social {
     }
     
     private function get_twitter_followers($user) {
-//        $json_string = @file_get_contents('http://api.twitter.com/1/followers/ids.json?cursor=-1&screen_name=' . $user);
-//        $json = json_decode($json_string, true);
-//
-//        if($this->debug) {
-//            echo '<pre> twitter followers: ';
-//            print_r($json);
-//        }
-//
-//        return intval( count($json['ids']) );
+        $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, '850078843-its7oIEsjmvlZZHb81feiSrHdA8dXy86RkQHXXoM', 'OCIrXAJ8y6Q5hFpEiFSWy6SuF6EA00vPJ3nF12gv8');
+
+        $rate_limit = $connection->get('account/rate_limit_status');
+        $output = $connection->get('followers/ids');
+
+        //print_r($rate_limit);
+        if($this->debug) {
+            echo "rate limit: ". $rate_limit->hourly_limit ." hits remaining: ".$rate_limit->remaining_hits . " \r\n count: ".intval(count($output->ids))." \r\n <pre> ";
+            print_r($output);
+        }
         
-        return 0;
-        
-//        $time = 
-//        
-//        
-//        $output = curl --get 'https://api.twitter.com/1.1/followers/ids.json' --data 'cursor=-1&screen_name=sfsuperbowl' --header 'Authorization: OAuth oauth_consumer_key="ztPcwPFJZ9RrFHK3Em4Nw", oauth_nonce="a40b40d6b366c51341165879a26c8274", oauth_signature="NKw9U53jM8sJhELeKwSxLxg%2FYp8%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1351298881", oauth_token="850078843-its7oIEsjmvlZZHb81feiSrHdA8dXy86RkQHXXoM", oauth_version="1.0"' --verbose
+        return intval(count($output->ids));
     }
 }
 
