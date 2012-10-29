@@ -232,6 +232,11 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 	  js = d.createElement(s); js.id = id;
 	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=369308779814605";
 	  fjs.parentNode.insertBefore(js, fjs);
+          
+            FB.Event.subscribe('edge.create', function(href, widget) {
+                _gaq.push(['_trackSocial', 'facebook', 'share', 'support_like']);
+            });
+          
 	}(document, 'script', 'facebook-jssdk'));</script>
     <!-- END FACEBOOK JS -->
     
