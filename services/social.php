@@ -10,7 +10,7 @@ class Social {
     public $filename;
     protected $output = Array();
     
-    private $debug = true;
+    private $debug = false;
     
     protected $twitter;
     
@@ -213,15 +213,22 @@ class Social {
     }
     
     private function get_twitter_followers($user) {
-        $json_string = @file_get_contents('http://api.twitter.com/1/followers/ids.json?cursor=-1&screen_name=' . $user);
-        $json = json_decode($json_string, true);
-
-        if($this->debug) {
-            echo '<pre> twitter followers: ';
-            print_r($json);
-        }
-
-        return intval( count($json['ids']) );
+//        $json_string = @file_get_contents('http://api.twitter.com/1/followers/ids.json?cursor=-1&screen_name=' . $user);
+//        $json = json_decode($json_string, true);
+//
+//        if($this->debug) {
+//            echo '<pre> twitter followers: ';
+//            print_r($json);
+//        }
+//
+//        return intval( count($json['ids']) );
+        
+        return 0;
+        
+//        $time = 
+//        
+//        
+//        $output = curl --get 'https://api.twitter.com/1.1/followers/ids.json' --data 'cursor=-1&screen_name=sfsuperbowl' --header 'Authorization: OAuth oauth_consumer_key="ztPcwPFJZ9RrFHK3Em4Nw", oauth_nonce="a40b40d6b366c51341165879a26c8274", oauth_signature="NKw9U53jM8sJhELeKwSxLxg%2FYp8%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1351298881", oauth_token="850078843-its7oIEsjmvlZZHb81feiSrHdA8dXy86RkQHXXoM", oauth_version="1.0"' --verbose
     }
 }
 
