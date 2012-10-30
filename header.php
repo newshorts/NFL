@@ -234,6 +234,9 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 	  fjs.parentNode.insertBefore(js, fjs);
           
             FB.Event.subscribe('edge.create', function(href, widget) {
+                console.dir(href)
+                console.dir(widget)
+                console.log('inside facebook callback')
                 _gaq.push(['_trackSocial', 'facebook', 'share', 'support_like']);
             });
           

@@ -35,20 +35,22 @@
 			</li>
 			<li>
 				<div id="google_cta" onclick="_gaq.push(['_trackSocial', 'google', 'share', 'support_plus']);">
-					<div class="g-plusone" data-annotation="none" data-href="http://sfsuperbowl.com" data-callback="googlePlusOne"></div>
-					<script type="text/javascript">
-                                            (function() {
-                                                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                                                    po.src = 'https://apis.google.com/js/plusone.js';
-                                                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-                                                    
-                                                    googlePlusOne = function(params) {
-                                                        if(params.state == 'on') {
-                                                            _gaq.push(['_trackSocial', 'google', 'share', 'support_plus1']);
-                                                        }
-                                                    };
-                                            })();
-					</script>
+                                    <div class="g-plusone" data-annotation="none" data-href="http://sfsuperbowl.com" data-callback="googlePlusOne"></div>
+                                    <script type="text/javascript">
+                                        (function() {
+                                                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                                po.src = 'https://apis.google.com/js/plusone.js';
+                                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+
+                                                googlePlusOne = function(params) {
+                                                    console.dir(params)
+                                                    if(params.state == 'on') {
+                                                        console.log('inside the if statement')
+                                                        _gaq.push(['_trackSocial', 'google', 'share', 'support_plus1']);
+                                                    }
+                                                };
+                                        })();
+                                    </script>
 				</div>
 				<div id="google_plus_count">
                                 <ul class="numbers_small">
