@@ -16,7 +16,9 @@ input,
 select,
 textarea {
     color: #222;
+
 }
+
 
 body {
 	width: 1024px;
@@ -24,12 +26,14 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
+    overflow: hidden; 
     margin-left: -512px;
-    overflow: scroll;
     font-size: 1em;
     line-height: 1.4;
-    background-color: black; 
+    background-color: black;
+    
 }
+
 
 a { font-family: georgia; font-style: italic; color: #585858; text-decoration: none; line-height: inherit; }
 a:hover { font-style: italic; font-weight: bold; /* background-color: #fff600;  */color: #585858; text-decoration: none; line-height: inherit; }
