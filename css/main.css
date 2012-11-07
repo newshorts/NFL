@@ -120,22 +120,24 @@ li {
    Author's custom styles
    ========================================================================== */
 
+/*
 #container {
 	height: 660px;
     top: 0px;
     left: 0px;
-    margin-left: -512px;
+    margin-left: -412px;
     margin-top: -328px;
 	position: absolute;
-/* 	left: 50%;  */
+
 }
+*/
 
 #main_content {
 	height: 416px; 
 	width: 1024px;
 	position: absolute;
 	top: 0px;
-	margin: 21px auto ;
+	margin: 0 auto ;
 	
 }
 
@@ -144,13 +146,13 @@ li {
 	width: 1024px;
 	position: absolute;
 	top: 0px;
-	margin: 21px auto;
+	margin: 21px auto 0px;
 	left: 85px;
 }
 
 
 #main_contentLeft {
-	background-color: #000000; 
+/* 	background-color: #000000;  */
 	color: #ffffff;
 	height: 416px; 
 	width: 180px;
@@ -175,12 +177,13 @@ li {
 
 
 #menu_content {
-	background-color: #000; 
+/* 	background-color: #000;  */
 	height: 244px; 
 	width: 1024px;
 	margin: 0px 0px 0px 0px;
 	position: absolute;
 	top: 0px; 
+	
 }
 
 #main_contentLeft p { 
@@ -201,18 +204,18 @@ li {
 
 
 #nav {
-	height: 180px; 
+	height: 157px; 
 	overflow: hidden;
 	width: 1024px;
 	top: 0px;
 	padding: 0px 0px 0px 0px;
-	margin: 10px 0px 0px 0px; 
+	margin: 0px 0px 0px 0px; 
 }
 
 #thumbnails {
 	height: 125px; 
 	width: 100%;
-	margin: 0px 0px 10px 0px;
+	margin: 0px 0px 0px 0px;
 	overflow-x:scroll;
 	overflow-y: hidden; 
 }
@@ -251,7 +254,8 @@ li {
 
 #thumbnails ul .active a p { color: #fff600; }
 
-#years { background-color: #f3f3f3; border-bottom: #ebebeb 1px solid; height: 44px; width: 1024px; }
+#years { background-color: #f3f3f3; border-bottom: #ebebeb 1px solid; height: 44px; width: 1024px; top: -13px;
+position: relative;}
 
 #years .year { height: 44px; width: 62px; padding: 0px 0px 0px 30px; right: 6px; }
 
