@@ -1,0 +1,42 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery.min.js">\x3C/script>')</script>
+        <script src="js/class.js"></script>
+        <script src="js/socialTracker.js"></script>
+        <script src="js/googleTracker.js"></script>
+        <script src="js/twitterTracker.js"></script>
+        <script src="js/facebookTracker.js"></script>
+        <script src="js/instagramTracker.js"></script>
+        
+        <script>
+            (function($) {
+                $(window).load(function() {
+                    var gt = new GoogleTracker('#google');
+                    var ft = new FacebookTracker('#facebook');
+                    var tt = new TwitterTracker('#twitter');
+                    var It = new InstagramTracker('#instagram');
+                });
+            })(jQuery);
+        </script>
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="num">
+                <p>
+                    Google: <span id="google"></span><br />
+                    Facebook: <span id="facebook"></span><br />
+                    Twitter: <span id="twitter"></span><br />
+                    Instagram: <span id="instagram"></span><br />
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

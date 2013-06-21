@@ -57,7 +57,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                 <script src="<?php echo ROOT; ?>js/lib/scroller.js"></script>
             <?php endif; ?>
             <!-- home -->
-            <script src="<?php echo ROOT; ?>js/lib/intro.js"></script>
+           <!--  <script src="<?php echo ROOT; ?>js/lib/intro.js"></script> -->
             <script src="<?php echo ROOT; ?>js/socialTrackers/instagramTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/twitterTracker.js"></script>
             <script src="<?php echo ROOT; ?>js/socialTrackers/totalTracker.js"></script>
@@ -234,9 +234,6 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 	  fjs.parentNode.insertBefore(js, fjs);
           
             FB.Event.subscribe('edge.create', function(href, widget) {
-                console.dir(href)
-                console.dir(widget)
-                console.log('inside facebook callback')
                 _gaq.push(['_trackSocial', 'facebook', 'share', 'support_like']);
             });
           
@@ -256,7 +253,8 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                 <div id="boardcontainer">
                     
 	                <div class="left">
-	                    <h2 class="headlineLargeGray"><a onclick="_gaq.push(['_trackEvent', 'bay', 'click']);" href="<?php echo ROOT; ?>">BRING THE BOWL TO THE BAY</a></h2>
+	                    <h2 class="headlineLargeGray"><a onclick="_gaq.push(['_trackEvent', 'bay', 'click']);" href="<?php echo ROOT; ?>">SUPER BOWL L</a></h2>
+	                    <p class="headlineTinyGray">Official San Francisco Super Bowl Host Committee Website</p>
 	                </div>
 	                
 	                <div class="right">
@@ -266,14 +264,13 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
                         <a onclick="_gaq.push(['_trackEvent', 'scoreboard', 'click']);" href="<?php echo ROOT; ?>" class="ajaxify <?php echo (strpos($request, 'buzz')) ? 'active' : ''; ?>"><?php echo (strpos($request, 'buzz')) ? 'SCOREBOARD' : 'SCOREBOARD'; ?></a><span>l</span><a onclick="_gaq.push(['_trackPageview', '/home/movement/']);" href="<?php echo ROOT; ?>movement" class="ajaxify <?php echo (strpos($request, 'movement')) ? 'active' : ''; ?>" >JOIN THE MOVEMENT</a>
 		                    </div>
 		                    
-		                    <div class="sharebutton">
+		                    <div class="rightsocial">
 
-			                    <ul>
-                                                <li><a class="facebook link" onclick="_gaq.push(['_trackSocial', 'facebook', 'share', 'share_post']); postToFeed(); return false; "></a><p id='msg'></p></li>
-                                                <li><a class="twittertweet link" onclick="_gaq.push(['_trackSocial', 'twitter', 'share', 'share_tweet']);" href="https://twitter.com/intent/tweet?button_hashtag=SFSUPERBOWL&text=Let&rsquo;s&nbsp;bring&nbsp;the&nbsp;Bowl&nbsp;to&nbsp;the&nbsp;Bay!&nbsp;Show&nbsp;your&nbsp;support.#sfsuperbowl"></a></li>
-                                                <li><a class="google link" onclick="_gaq.push(['_trackSocial', 'google', 'share', 'share_plus1']);" href="https://plus.google.com/share?url=http://www.sfsuperbowl.com" target="_blank"></a></li>
-                                                <!-- <li><link rel="image_src" href="http://www.labnol.org/screenshot.png" /></li> -->
-                                            </ul>
+			                 <div class="rightshare"><a onclick="_gaq.push(['_trackSocial', 'google', 'share', 'join_pluspage']); " class="google link" href="https://plus.google.com/u/0/116535953378851378506/" target="_blank"><img src="http://www.sfsuperbowl.com/images/follow_google_s.png"></a></div>
+			                 
+					<div class="rightshare"><a onclick="_gaq.push(['_trackSocial', 'facebook', 'share', 'join_page']);" class="facebook link" href="https://www.facebook.com/SFSuperbowl" target="_blank"><img src="http://www.sfsuperbowl.com/images/follow_facebook_s.png"></a><p id='msg'></p></div>
+					
+					<div class="rightshare"><a onclick="_gaq.push(['_trackSocial', 'twitter', 'share', 'join_feed']);" class="twitter_link link" href="https://twitter.com/SFSuperbowl" target="_blank"><img src="http://www.sfsuperbowl.com/images/follow_twitter_s.png"></a></div>
 
 		                    </div>
 		                    
@@ -286,6 +283,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
 	            </div><!-- /boardcontainer-->
                     
             </div><!-- /header -->
+<!--
             
             <?php if(DEVICE_TYPE != 'phone') : ?>
                 <?php if($_SESSION['sfsuperbowlintro']) : ?>
@@ -308,6 +306,7 @@ if(!isset($_SESSION['sfsuperbowlintro'])) {
             
                 
             <?php endif; ?>
+-->
             
                 
             

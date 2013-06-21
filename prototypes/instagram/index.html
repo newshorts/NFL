@@ -1,0 +1,236 @@
+<!-- 
+    Author: Mike Newell © 2012
+-->
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instagram API Prototype</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/isotope.css" />
+        <!--<link rel="stylesheet" type="text/css" href="css/style.css" />-->
+        <style>
+            body {
+                width: 1400px;
+                height: 316px;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                background: url(images/bg-texture-dark.png) scroll repeat #ccc;
+            }
+            
+            #wrap {
+                width: 1400px;
+                height: 316px;
+                overflow: hidden;
+                position: absolute;
+                top: -25px;
+                left: -125px;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../javascripts/jquery.min.js">\x3C/script>')</script>
+        <script src="js/jquery.isotope.min.js"></script>
+        <script>
+            //https://api.instagram.com/v1/tags/snow/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9
+            
+            (function() {
+                $(window).load(function() {
+                    
+                    var Instagram = function() {
+                        
+//                        var _access_token;
+                        var canvas = $('#canvas');
+                        var imgArr = new Array();
+                        
+                        var init = function() {
+                            
+                            $('#wrap').isotope({
+                                itemSelector: '.item',
+                                masonry: {
+                                    columnWidth: 100
+                                },
+                                sortBy: 'random'
+                            });
+                            
+//                            _access_token = access_token;
+                            
+//                            window.addEventListener('newPhotos', photosLoaded, false);
+                            $(window).bind('newPhotos', function(evt) {
+                                console.dir(evt)
+                                photosLoaded(evt.detail.data);
+                            });
+                            
+                            getNewPhotos();
+                            /* getNewPhotos('cheerfulsundays'); */
+//                            setTimeout(function() {
+//                                getNewPhotos('sanfrancisco');
+//                            }, 7500);
+//                            getNewPhotos('football');
+                            
+                            shuffle();
+                        };
+                        
+                        var getNewPhotos = function() {
+                            
+//                            console.log('https://api.instagram.com/v1/tags/'+tag+'/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9')
+                            
+//                            $.ajax({
+///*                                 url: 'https://api.instagram.com/v1/tags/'+searchTag+'/media/recent?access_token=' + _access_token, */
+//                                url: 'https://api.instagram.com/v1/tags/'+tag+'/media/recent?access_token=231409256.05e13af.c3f64f166e634b1c967cc819f12061d9',
+//                                type: 'GET',
+//                                dataType: 'jsonp',
+//                                success: function(data) {
+//    //                                console.log('data returned')
+//                                    console.dir(data);
+//                                    
+//                                    $(window).trigger({
+//                                        type:"newPhotos",
+//                                        detail: data
+//                                    });
+//
+////                                    var evt = new CustomEvent('newPhotos', {
+////                                        detail: data
+////                                    });
+////                                    window.dispatchEvent(evt);
+//                                }
+//                            });
+
+                            $.ajax({
+                                url:'http://sfsuperbowl.com/services/output.json.php?callback=?',
+                                dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
+                                success: function(data){
+                                    $(data.output.photos).each(function(idx) {
+                                        $(window).trigger({
+                                            type: 'newPhotos',
+                                            detail: data.output.photos[idx]
+                                        })
+                                    });
+                                },
+                                error: function(){
+                                    console.log("Error unable to retrieve json file from instagram page");
+                                },
+                            });
+
+//                            $.getJSON('../../services/output.json', function(data) {
+//                                console.dir(data);
+//                                
+//                                $(data.output.photos).each(function(idx) {
+//                                    $(window).trigger({
+//                                        type: 'newPhotos',
+//                                        detail: data.output.photos[idx]
+//                                    })
+//                                });
+//                            });
+                        };
+                        
+                        var photosLoaded = function(data) {
+                            
+                            console.log('custom event dispatched')
+                            outputImages(data);
+                            setTimeout(function() {
+                                console.log('dipatching get new photos again');
+                                getNewPhotos();
+                            }, 15000);
+                            
+                        };
+                        
+                        var outputImages = function(data) {
+                            
+                            console.log('output photos not working, data object coming next')
+                            console.dir(data)
+                            
+                            $(data).each(function(idx) {
+                            //for(var idx = 0; idx < data.length; idx++) {
+                                
+                            
+                                
+                                var notInArr = true;
+                                
+                                if(imgArr.length > 0) {
+                                    
+                                    $(imgArr).each(function(i) {
+                                        var remote = data[idx].images.low_resolution.url,
+                                            local = imgArr[i].src;
+
+                                        if(remote == local) {
+                                            notInArr = false;
+                                        }
+                                    });
+                                    
+                                }
+
+                                if(notInArr) {
+                                    
+                                    var img = new Image();
+                                    img.style.display = 'none';
+                                    $(img).one('load', addImageToScreen);
+                                    img.src = data[idx].images.low_resolution.url;
+                                    imgArr.push(img);
+                                }
+                            //} // end for
+                            }); // end each
+                        };
+                        
+                        var addImageToScreen = function(evt) {
+                        
+                            // add the images in a brick array fashion
+                            var img = evt.currentTarget;
+                            
+                            console.log('inserting new image')
+                            console.dir(img)
+                            
+                            var selector = (Math.floor(Math.random()*3) + 1);
+                            
+                            var widths = {
+                                1: 200,
+                                2: 200,
+                                3: 200
+                            };
+                            
+                            var newImage = $('<img class="item" src="'+img.src+'" />');
+                            $(newImage).css({
+                                'width': widths[selector]
+                            });
+                            
+                            $('#wrap').append(newImage).isotope('insert', newImage);
+                            
+//                            console.dir(evt)
+                            
+                        };
+                        
+                        var shuffle = function() {
+                            setInterval(function() {
+
+                                $('#wrap').isotope('shuffle', function() {
+                                    // complete
+//                                    console.log('shuffle')
+                                });
+                                
+                            }, 10000)
+                            
+                        };
+                        
+                        init();
+                    };
+                    
+                    var photos = new Instagram();
+//                    setTimeout(function() {
+//                        var cheerful = new Instagram('231409256.05e13af.c3f64f166e634b1c967cc819f12061d9', 'cheerfulsundays');
+//                    }, 1000);
+                    
+                });
+            })(jQuery);
+            
+        </script>
+    </body>
+</html>

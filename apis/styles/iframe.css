@@ -1,0 +1,303 @@
+/* 
+    Document   : style
+    Created on : Oct 3, 2012, 3:35:13 PM
+    Author     : mike_newell
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0 0 0 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	
+}
+
+html {
+		font-size: 62.5%; 
+	}
+	
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body { background-color: #FFFFFF; font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 13px; font-size: 1.3rem; line-height: 18px; color: #555; position: relative; -webkit-font-smoothing: antialiased; margin: 16px 0 16px 18px; }
+
+#container { background: transparent no-repeat 100% 0; height: 1013px;}
+
+#screen { background-color: white; height: 565px; width: 1003px; position: relative; left: 428px; top: 210px;}
+#screen li { float: left;   }
+
+
+#menu { background-color: #e2e2e2; width: 994px; height: 68px; position: relative; left: 5px; top: 5px; }
+#box1 { background-color: #e2e2e2; width: 993px; height: 300px; position: relative; left: 5px; top: 5px;  }
+.bottom { background-color: #e2e2e2; width: 328px; height: 250px; position: relative; margin-top: 10px; margin-left: 5px; }
+
+#boxcontainer { font-family: FranklinGothicURW-HeaIta; font-weight: normal; font-style: normal; color: #666666; background-color: #FFF; width: 288px; position: absolute; margin-top: 0; margin-left: 0; display:block; float:left; }
+
+#boxcontainer .left { width: 138px; height: 28px; position: absolute; display:block; float:left; }
+#boxcontainer .right { width: 16px; height: 28px; position: relative; display:block; float:right; margin-left: 8px; }
+
+
+#boardcontainer { font-family: FranklinGothicURW-HeaIta; font-weight: normal; font-style: normal; color: #666666; background-color: #FFF; width: 968px; position: absolute; margin-top: 0; margin-left: 0; }
+
+#boardcontainer .headline { font-family: FranklinGothicURW-HeaIta; font-size: 29px; font-weight: normal; font-style: normal; color: #666666; width: 668px; position: absolute; display:block; float:left; margin-top: 0; margin-left: 0; }
+
+
+
+
+@media handheld, only screen and (max-width: 1024px) {
+   #container { background: transparent url(images/background_tablet_landscape.jpg) no-repeat 50% 0; height: 990px;}
+
+   #screen { background-color: white; height: 496px; width: 882px; position: relative; left: 72px; top: 62px;} 
+  
+   #screen li { float: left;   }
+    
+   #box1 { background-color: #e2e2e2; width: 872px; height: 290px; position: relative; left: 5px; top: 5px;  }
+   .bottom { background-color: #e2e2e2; width: 287px; height: 190px; position: relative; margin-top: 10px; margin-left: 5px; }
+
+
+}
+
+
+@media handheld, only screen and (max-width: 768px) {
+   #container { background: transparent url(images/background_tablet_portrait.jpg) no-repeat 50% 0; height: 990px;}
+
+   #screen { background-color: white; height: 656px; width: 703px; position: relative; left: 32px; top: 54px;} 
+  
+   #screen li { float: left;   }
+    
+   #box1 { background-color: #e2e2e2; width: 693px; height: 300px; position: relative; left: 5px; top: 5px;  }
+   .bottom { background-color: #e2e2e2; width: 693px; height: 106px; position: relative; margin-top: 10px; margin-left: 5px; }
+
+
+}
+
+@media handheld, only screen and (max-width: 480px) {
+   #container { background: transparent url(images/background_mobile_landscape.jpg) no-repeat 50% 0; height: 990px;}
+
+   #screen { background-color: white; height: 236px; width: 413px; position: relative; left: 34px; top: 28px; } 
+  
+   #screen li { float: left;   }
+    
+   #box1 { background-color: #e2e2e2; width: 403px; height: 95px; position: relative; left: 5px; top: 5px;  }
+   .bottom { background-color: #e2e2e2; width: 403px; height: 35px; position: relative; margin-top: 10px; margin-left: 5px; }
+
+
+}
+
+
+@media handheld, only screen and (max-width: 320px) {
+   #container { background: transparent url(images/background_mobile_portrait.jpg) no-repeat 50% 0; height: 480px;}
+
+   #screen { background-color: white; height: 400px; width: 293px; position: relative; left: 13px; top: 33px;}
+   #screen li { float: left;   }
+    
+   #box1 { background-color: #e2e2e2; width: 283px; height: 200px; position: relative; left: 5px; top: 5px;  }
+   .bottom { background-color: #e2e2e2; width: 283px; height: 55px; position: relative; margin-top: 10px; margin-left: 5px; }
+
+}
+
+
+
+
+/*	--------------------------------------------------
+	:: Lists
+	-------------------------------------------------- */
+	ul, ol { margin-bottom: 18px; }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	li { margin-bottom: 12px; }
+	ul.large li { line-height: 21px; }
+
+/*	--------------------------------------------------
+    :: Typography
+	-------------------------------------------------- */
+	h1, h2, h3, h4, h5, h6 { color: #666666; font-weight: normal; line-height: 1.25 }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 { font-size: 46px; font-size: 4.6rem; font-weight: normal; margin-bottom: 12px;}
+	h2 { font-size: 35px; font-size: 3.5rem; font-weight: normal; margin-bottom: 9px; }
+	h3 { font-size: 28px; font-size: 2.8rem; font-weight: normal; margin-bottom: 9px; }
+	h4 { font-size: 21px; font-size: 2.1rem; font-weight: normal; margin-bottom: 3px; }
+	h5 { font-size: 18px; font-size: 1.8rem; font-weight: normal; margin-bottom: 8px;  }
+	h6 { font-size: 15px; font-size: 1.5rem; font-weight: normal; margin-bottom: 8px; }
+
+	.subheader { color: #777; font-weight: 300; margin-bottom: 24px; }
+
+	p { font-size: 13px; font-size: 1.3rem; line-height: 1.25; margin: 0 0 18px; }
+	p img { margin: 0; }
+	p.lead { font-size: 18px; font-size: 1.8rem; line-height: 1.5;  }
+	
+	em, i { font-style: italic; line-height: inherit; }
+	strong, b { font-weight: bold; line-height: inherit; }
+	small { font-size: 60%; line-height: inherit; }
+	
+	h1 small, h2 small, h3 small, h4 small, h5 small { color: #777; }
+	
+	/*	Blockquotes  */
+	blockquote, blockquote p { line-height: 20px; color: #777; }
+	blockquote { margin: 0 0 18px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+	blockquote cite { display: block; font-size: 12px; font-size: 1.2rem; color: #555; }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited { color: #555; }
+	
+	hr { border: solid #ddd; border-width: 2px 0 0; clear: both; margin: 12px 0px 12px 0px; height: 0; }
+	
+	abbr, acronym { text-transform: uppercase; font-size: 90%; color: #222; border-bottom: 1px solid #ddd; cursor: help; }
+	abbr { text-transform: none; }
+
+	/**
+ 	 * Print styles.
+	 *
+	 * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+	 * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
+	 */
+	.print-only { display: none !important; }
+	@media print {
+		* { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+		-ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+		p a, p a:visited { color: #444 !important; text-decoration: underline; }
+		p a[href]:after { content: " (" attr(href) ")"; }
+		abbr[title]:after { content: " (" attr(title) ")"; }
+		.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+		pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+		thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+		tr, img { page-break-inside: avoid; }
+		@page { margin: 0.5cm; }
+		p, h2, h3 { orphans: 3; widows: 3; }
+		h2, h3{ page-break-after: avoid; }
+		.hide-on-print { display: none !important; }
+		.print-only { display: block !important; }
+	}
+
+
+
+/*	--------------------------------------------------
+	Panels
+	-------------------------------------------------- */
+	div.panel {
+		padding: 18px 0px 0px 18px;
+		background: #efefef;
+		background: -moz-linear-gradient(top, #FFFFFF 0%, #F4F4F4 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F4F4F4));
+		background: -o-linear-gradient(top, #ffffff 0%,#f4f4f4 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
+		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+		margin: 0 0 20px 0;
+	}
+	
+	
+
+
+
+@font-face {
+    font-family: 'ds-digitalitalic';
+    src: url('ds-digii-webfont.eot');
+    src: url('ds-digii-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ds-digii-webfont.woff') format('woff'),
+         url('ds-digii-webfont.ttf') format('truetype'),
+         url('ds-digii-webfont.svg#ds-digitalitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+.scoreboard {
+	font-family: 'ds-digitalitalic', Arial, sans-serif;
+	font-size: 238px;
+	color: #e75406;
+	height: auto;
+	margin: 138px 0 48px 18px;
+}
+
+.numberboard {
+	font-family: 'ds-digitalitalic', Arial, sans-serif;
+	font-size: 75px;
+	color: #e75406;
+	margin: 38px 0 48px 0;
+}
+
+
+
+
+
+
+
+
+
+/* @license
+ * MyFonts Webfont Build ID 2382004, 2012-10-10T22:20:37-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Franklin Gothic Heavy Italic by URW++
+ * URL: http://www.myfonts.com/fonts/urw/franklin-gothic/t-heavy-italic/
+ * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
+ * Licensed pageviews: 100,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2382004
+ * 
+ * © 2012 Bitstream Inc
+*/
+
+
+
+  
+@font-face {font-family: 'FranklinGothicURW-HeaIta';src: url('webfonts/2458B4_0_0.eot');src: url('webfonts/2458B4_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2458B4_0_0.woff') format('woff'),url('webfonts/2458B4_0_0.ttf') format('truetype');}
+ 
+.FranklinGothicURW-HeaIta { 
+	font-family: FranklinGothicURW-HeaIta;
+	font-weight: normal;
+	font-style: normal;
+}
+
+

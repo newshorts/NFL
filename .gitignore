@@ -1,7 +1,0 @@
-# ignore the following  
-local-config.php
-.htpasswd
-.htaccess
-prototypes/number-behavior/get/output.json
-services/output.json
-services/test.php
