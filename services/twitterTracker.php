@@ -99,13 +99,13 @@ class TwitterTracker {
         } catch (Zend_Db_Adapter_Exception $e) {
             // perhaps a failed login credential, or perhaps the RDBMS is not running
             if($is_local) {
-                echo 'failed login credentials\n';
+//                echo 'failed login credentials\n';
                 print_r($e);
             }
         } catch (Zend_Exception $e) {
             // perhaps factory() failed to load the specified Adapter class
             if($is_local) {
-                echo 'failed to load specified adapter class\n';
+//                echo 'failed to load specified adapter class\n';
                 print_r($e);
             }
         }
@@ -117,6 +117,8 @@ class TwitterTracker {
 //        $this->ts   = new Zend_Service_Twitter_Search('json');
         
         // codebird - for search
+        // NOTE: I will try with alex to make this work first, if it's not possible to upgrade php to 5.3 then I will write my own library referencing this:
+        // https://github.com/thatericsmith/simple-php-twitter-getter/blob/master/TwitterGetter.php
         \Codebird\Codebird::setConsumerKey('Mr3tmdYJtDUBHFCIi0tPQw', 'yPFzdcuzEj0fc8jwuzrE4LdJhmNGnaiqlfv8aOVwGRU'); // static, see 'Using multiple Codebird instances'
         $cb = \Codebird\Codebird::getInstance();
         $cb->setToken('850078843-rKjQFWOzZzPSUCdEyQIJOHvQo6Yna1ohGP8El83K', 'wE6HRo7mPguFT7atpJGHURUccuW5kXYKvLa1WevS0Y');
@@ -124,19 +126,19 @@ class TwitterTracker {
         
         $file = "bearer.txt";
         if(file_exists($file)) {
-            echo "using " . $file;
-            echo '<br />';
+//            echo "using " . $file;
+//            echo '<br />';
             $bearer_token = file_get_contents($file);
-            echo "using b token: " . $bearer_token;
-            echo '<br />';
+//            echo "using b token: " . $bearer_token;
+//            echo '<br />';
             \Codebird\Codebird::setBearerToken($bearer_token);
         } else {
-            echo "getting new bearer token";
-            echo '<br />';
+//            echo "getting new bearer token";
+//            echo '<br />';
             $reply = $this->cb->oauth2_token();
             $bearer_token = $reply->access_token;
-            echo "setting new bearer toekn to file: " . $bearer_token;
-            echo '<br />';
+//            echo "setting new bearer toekn to file: " . $bearer_token;
+//            echo '<br />';
             file_put_contents($file, $bearer_token);
         }
         
@@ -298,7 +300,7 @@ class Tag extends TwitterTracker {
     public function search() {
 //        echo "<pre>";
         $this->results = $this->searchForTag($this->tag_name);
-//        var_dump($this->results);
+        var_dump($this->results);
         $this->parseResults();
         $this->checkTweets();
     }
@@ -318,8 +320,8 @@ class Tag extends TwitterTracker {
         $tweets = array();
         
         foreach($this->results->statuses as $status) {
-            var_dump($status);
-            var_dump($status->user);
+//            var_dump($status);
+//            var_dump($status->user);
             
             $status = array(
                 'tid' => $status->id_str, 

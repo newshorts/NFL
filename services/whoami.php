@@ -1,4 +1,4 @@
-<?php
+<?php //echo exec('whoami'); ?>
 
-echo exec('whoami');
-?>
+
+<?php phpinfo(); ?>
