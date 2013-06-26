@@ -41,7 +41,8 @@ var Subscription = Class.extend({
         $.ajax({
             url:this._url,
             dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
-            success: function(data){
+            success: function(data){ 
+                console.log(data)
                 self._data = data;
                 var len = self.subs.length;
                 for(var i = 0; i < len; i++) {

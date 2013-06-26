@@ -15,7 +15,6 @@ require_once ('codebird.php');
  * 
  */
 
-
 /**
  * Twitter Tracking Base Class
  *
