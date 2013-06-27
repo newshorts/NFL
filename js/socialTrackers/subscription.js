@@ -13,7 +13,14 @@ var Subscription = Class.extend({
     
     init: function() {
         
-        this._url = 'http://sfsuperbowl.com/services/output.json.php?callback=?';
+        // TODO - make an exception for localhost
+        var loc = 'http://www.sfsuperbowl.com';
+        
+        if(window.location.href.search(/localhost/i) > -1) {
+            loc = 'http://localhost.com/GSP/clients/NFL';
+        }
+        
+        this._url = loc + '/services/output.json.php?callback=?';
         
         this.getData();
         this.ticker();

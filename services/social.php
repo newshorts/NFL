@@ -15,7 +15,7 @@ class Social {
     public $filename;
     protected $output = Array();
     
-    private $debug = false;
+    private $debug = true;
     
     protected $twitter;
     
@@ -82,6 +82,7 @@ class Social {
     }
     
     public function write_file() {
+//        return file_put_contents('output.json', json_encode(Array('output' =>  'test')));
         return file_put_contents('output.json', $this->output);
     }
     
@@ -217,6 +218,12 @@ class Social {
         
     }
     
+    /**
+     * TODO - this needs to use codebird as well
+     * 
+     * @param type $user
+     * @return type
+     */
     private function get_twitter_followers($user) {
         $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, '850078843-its7oIEsjmvlZZHb81feiSrHdA8dXy86RkQHXXoM', 'OCIrXAJ8y6Q5hFpEiFSWy6SuF6EA00vPJ3nF12gv8');
 
