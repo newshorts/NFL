@@ -255,8 +255,14 @@
     function load(widget) {
       var loading = $('<p class="loading">'+s.loading_text+'</p>');
       if (s.loading_text) $(widget).not(":has(.tweet_list)").empty().append(loading);
-      $.getJSON(build_api_url(), function(data){
-        var tweets = $.map(data.results || data, extract_template_data);
+      // TODO replace this with url of output.json
+//      $.getJSON(build_api_url(), function(data){
+        $.getJSON('../services/output.json', function(data){
+            console.log('fetching data from the database instead')
+            console.log(data.output.last_100_tweets)
+          // TODO - look up map from jquery, find out what it takes as parameters and build the final object based on that
+//        var tweets = $.map(data.results || data, extract_template_data);
+        var tweets = $.map(data.output.last_100_tweets || data, extract_template_data);
         tweets = $.grep(tweets, s.filter).sort(s.comparator).slice(0, s.count);
         $(widget).trigger("tweet:retrieved", [tweets]);
       });

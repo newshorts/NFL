@@ -42,6 +42,8 @@ class Social {
         
         $twitter_total = $tweets + $twitter_followers;
         
+        $last_100_tweets = $this->get_last_tweets(30);
+        
         $likes_facebook = $this->get_likes_facebook();
         
         $likes_sfsuperbowl = $this->get_likes_sfsuperbowl('http://www.sfsuperbowl.com/');
@@ -66,6 +68,7 @@ class Social {
                             'twitter_followers' => $twitter_followers,
                             'twitter_total' => $twitter_total,
                             'latest_tweet' => $latest_tweet,
+                            'last_100_tweets' => $last_100_tweets,
                             'facebook_likes_facebook' => $likes_facebook,
                             'facebook_likes_sfsuperbowl' => $likes_sfsuperbowl,
                             'facebook_likes_combined' => $likes_combined,
@@ -104,6 +107,41 @@ class Social {
 
         $count = $this->twitter->getTagCount();
         return intval($count['tweet_count']);
+    }
+    
+    /**
+     * returns a formatted array of items that should be parsable by the tweet.js
+     * @param type $count
+     * @return array
+     */
+    private function get_last_tweets($count = 100) {
+        $tweets = $this->twitter->getLastTweets($count);   
+        
+        $items = array();
+        
+        // TODO format this into customized array
+        foreach($tweets as $tweet) {
+            $item = array(
+                'from_user' => $tweet['name'],
+                'from_user_name' => $tweet['username'],
+                'user' => array(
+                    'profile_image_url_https' => $tweet['profile_img'],
+                    'profile_image_url' => $tweet['profile_img']
+                ),
+                'profile_image_url' => $tweet['profile_img'],
+                'text' => $tweet['text'],
+                'created_at' => $tweet['time']
+            );
+            
+            array_push($items, $item);
+        }
+        
+        if($this->debug) {
+            echo '<pre> Formatted tweets from the database: ';
+            print_r($items);
+        }
+        
+        return $items;
     }
     
     private function get_likes_facebook() {
@@ -232,7 +270,7 @@ class Social {
 
         //print_r($rate_limit);
         if($this->debug) {
-            echo "rate limit: ". $rate_limit->hourly_limit ." hits remaining: ".$rate_limit->remaining_hits . " \r\n count: ".intval(count($output->ids))." \r\n <pre> ";
+//            echo "rate limit: ". $rate_limit->hourly_limit ." hits remaining: ".$rate_limit->remaining_hits . " \r\n count: ".intval(count($output->ids))." \r\n <pre> ";
             print_r($output);
         }
         

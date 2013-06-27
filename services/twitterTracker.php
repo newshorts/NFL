@@ -227,6 +227,20 @@ class TwitterTracker {
         return $result[0];
         
     }
+    /**
+     * Returns an array of the most recent tweets from the database based on the $count param
+     * 
+     * @param type $count
+     * @return array
+     */
+    public function getLastTweets($count) {
+        
+        $this->db->setFetchMode(Zend_Db::FETCH_ASSOC);
+        
+        $results = $this->db->fetchAll('SELECT time, profile_img, name, username, text FROM '.$this->table_name.' ORDER BY time DESC LIMIT ' . $count);
+        
+        return $results;
+    }
     
     /**
      * Get latest tweet from database and output the json
